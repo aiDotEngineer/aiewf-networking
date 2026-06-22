@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050505;
+  --foreground: #f7f7f7;
 }
 
 @theme inline {
@@ -12,15 +12,98 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+::selection {
+  background: #f8e18e;
+  color: #050505;
+}
+
+@layer components {
+  .input {
+    min-height: 2.75rem;
+    width: 100%;
+    border: 1px solid rgb(255 255 255 / 0.14);
+    background: rgb(0 0 0 / 0.42);
+    padding: 0.625rem 0.75rem;
+    color: white;
+    outline: none;
+    transition: border-color 160ms ease, background 160ms ease;
+  }
+
+  .input:focus {
+    border-color: rgb(248 225 142 / 0.75);
+    background: rgb(0 0 0 / 0.7);
+  }
+
+  .small-input {
+    height: 2rem;
+    border: 1px solid rgb(255 255 255 / 0.14);
+    background: rgb(0 0 0 / 0.42);
+    padding: 0 0.5rem;
+    color: white;
+    outline: none;
+  }
+
+  .small-input:focus-visible {
+    border-color: rgb(248 225 142 / 0.75);
+    box-shadow: 0 0 0 2px rgb(248 225 142 / 0.18);
+  }
+
+  .button-primary {
+    display: inline-flex;
+    min-height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid rgb(248 225 142 / 0.8);
+    background: #f8e18e;
+    padding: 0.5rem 0.75rem;
+    color: #050505;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: transform 140ms ease, background 140ms ease;
+  }
+
+  .button-primary:hover:not(:disabled) {
+    transform: translateY(-1px);
+    background: #ffeaa6;
+  }
+
+  .button-quiet {
+    display: inline-flex;
+    min-height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid rgb(255 255 255 / 0.13);
+    background: rgb(255 255 255 / 0.045);
+    padding: 0.5rem 0.75rem;
+    color: rgb(255 255 255 / 0.74);
+    font-size: 0.875rem;
+    font-weight: 650;
+    transition: border-color 140ms ease, color 140ms ease, background 140ms ease;
+  }
+
+  .button-quiet:hover:not(:disabled) {
+    border-color: rgb(248 225 142 / 0.55);
+    background: rgb(248 225 142 / 0.1);
+    color: #f8e18e;
+  }
 }
