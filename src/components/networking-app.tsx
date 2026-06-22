@@ -4,6 +4,7 @@ import { api } from "../../convex/_generated/api";
 import type { Doc, Id } from "../../convex/_generated/dataModel";
 import { useMutation, useQuery } from "convex/react";
 import {
+  ArrowRight,
   Building2,
   CalendarDays,
   Check,
@@ -12,16 +13,20 @@ import {
   Database,
   Download,
   Gauge,
+  Handshake,
   LayoutDashboard,
   ListChecks,
   Loader2,
   LockKeyhole,
   Mail,
   Menu,
+  Monitor,
   MapPin,
   MessageSquare,
+  QrCode,
   RotateCcw,
   Search,
+  Send,
   Settings2,
   ShieldCheck,
   SlidersHorizontal,
@@ -31,6 +36,7 @@ import {
   Users,
   X,
 } from "lucide-react";
+import QRCode from "qrcode";
 import { FormEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 type Account = Doc<"accounts">;
@@ -56,6 +62,49 @@ type MeetingDoc = Doc<"meetings"> & {
   attendee: Account | null;
   request: Doc<"meetingRequests"> | null;
 };
+type DeskMatchDoc = Doc<"deskMatchRequests"> & {
+  attendee: Account | null;
+  suggestedCompany: Company | null;
+  meetingRequest: Doc<"meetingRequests"> | null;
+};
+type RoomDisplayData = {
+  settings: {
+    eventName: string;
+    roomName: string;
+    activeTables: number;
+    slotMinutes: number;
+  };
+  date: string;
+  nowMinute: number;
+  nowLabel: string;
+  counts: {
+    live: number;
+    upcoming: number;
+    openCompanies: number;
+    pendingRequests: number;
+  };
+  nextMeetings: Array<{
+    meetingId: Id<"meetings">;
+    tableNumber: number;
+    startMinute: number;
+    endMinute: number;
+    label: string;
+    status: string;
+    companyName: string;
+    attendeeName: string;
+    attendeeTitle: string;
+  }>;
+  opportunities: Array<{
+    companyId: Id<"companies">;
+    companyName: string;
+    tier: string;
+    hostNames: string[];
+    topics: string[];
+    startMinute: number;
+    label: string;
+    pendingRequests: number;
+  }>;
+};
 type CompanyCsvRow = {
   name: string;
   tier?: string;
@@ -67,7 +116,7 @@ type CompanyCsvRow = {
   optedIn?: boolean;
   description?: string;
 };
-type View = "marketplace" | "requests" | "schedule" | "companies" | "admin";
+type View = "attendee" | "display" | "marketplace" | "requests" | "schedule" | "companies" | "desk" | "admin";
 type RunAction = (task: () => Promise<unknown>, success: string) => Promise<boolean>;
 
 const dateLabels: Record<string, string> = {
@@ -84,6 +133,11 @@ const statusStyles: Record<string, string> = {
   declined: "border-white/10 bg-white/5 text-white/55",
   cancelled: "border-red-300/30 bg-red-300/10 text-red-100",
   no_show: "border-red-300/30 bg-red-300/10 text-red-100",
+  requested: "border-[#f8e18e]/35 bg-[#f8e18e]/10 text-[#f8e18e]",
+  matched: "border-sky-300/30 bg-sky-300/10 text-sky-100",
+  closed: "border-white/10 bg-white/5 text-white/55",
+  "opted in": "border-emerald-300/30 bg-emerald-300/10 text-emerald-100",
+  hidden: "border-white/10 bg-white/5 text-white/55",
 };
 
 function cn(...parts: Array<string | false | null | undefined>) {
@@ -109,6 +163,28 @@ function nextCounterStartMinute(
   return slotLabels.find((slot) => slot.minute > preferredStartMinute)?.minute;
 }
 
+function companySlotsForDate(
+  companyId: Id<"companies">,
+  date: string,
+  availability: Availability[],
+  slotLabels: Array<{ minute: number; label: string }>,
+  slotMinutes: number,
+) {
+  const windows = availability.filter(
+    (window) => window.companyId === companyId && window.date === date,
+  );
+  return slotLabels.filter((slot) =>
+    windows.some(
+      (window) =>
+        slot.minute >= window.startMinute && slot.minute + slotMinutes <= window.endMinute,
+    ),
+  );
+}
+
+function isOpenRequestStatus(status: RequestDoc["status"]) {
+  return status !== "cancelled" && status !== "declined";
+}
+
 function userFacingError(error: unknown) {
   if (!(error instanceof Error)) return "Action failed.";
   const raw = error.message.trim();
@@ -119,12 +195,14 @@ function userFacingError(error: unknown) {
 function isViewAvailable(view: View, actor: Account | null) {
   if (!actor) return false;
   if (view === "admin") return actor.role === "admin";
+  if (view === "desk") return actor.role === "admin";
   if (view === "marketplace") return actor.role !== "company";
+  if (view === "attendee") return actor.role !== "company";
   return true;
 }
 
 function fallbackView(actor: Account | null): View {
-  return actor?.role === "company" ? "requests" : "marketplace";
+  return actor?.role === "company" ? "requests" : "attendee";
 }
 
 function csvDownload(filename: string, rows: string[][]) {
@@ -269,12 +347,30 @@ export function NetworkingApp() {
   const sessionStartedRef = useRef(false);
   const sessionRequestRef = useRef(0);
   const [sessionToken, setSessionToken] = useState<string | null>(null);
-  const [actorEmail, setActorEmail] = useState("admin@aiewf.test");
+  const [actorEmail, setActorEmail] = useState("priya@leadership.test");
   const data = useQuery(
     api.networking.getBootstrap,
     sessionToken ? { sessionToken } : "skip",
   );
-  const [activeView, setActiveView] = useState<View>("marketplace");
+  const [activeView, setActiveView] = useState<View>(() => {
+    if (typeof window === "undefined") return "attendee";
+    const surface = new URLSearchParams(window.location.search).get("surface");
+    if (surface === "display") return "display";
+    return "attendee";
+  });
+  const displayDate = data?.settings?.startDate ?? "2026-06-30";
+  const displayNowMinute = data?.settings
+    ? data.settings.dayStartMinute + Math.max(0, data.settings.slotMinutes - 7)
+    : undefined;
+  const roomDisplay = useQuery(
+    api.networking.getRoomDisplay,
+    data?.settings && activeView === "display"
+      ? {
+          date: displayDate,
+          nowMinute: displayNowMinute,
+        }
+      : "skip",
+  );
   const [selectedRequestId, setSelectedRequestId] = useState<Id<"meetingRequests"> | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [actionPending, setActionPending] = useState(false);
@@ -313,7 +409,9 @@ export function NetworkingApp() {
     if (!accounts?.length || sessionStartedRef.current) return;
     sessionStartedRef.current = true;
     const initialEmail =
-      accounts.find((account) => account.role === "admin")?.email ?? accounts[0].email;
+      accounts.find((account) => account.role === "attendee")?.email ??
+      accounts.find((account) => account.role === "admin")?.email ??
+      accounts[0].email;
     startSession(initialEmail);
   }, [accounts, startSession]);
 
@@ -322,9 +420,11 @@ export function NetworkingApp() {
   }
 
   const actor = data?.actor ?? null;
+  const deskRequests = (data?.deskRequests ?? []) as DeskMatchDoc[];
   const effectiveActiveView = isViewAvailable(activeView, actor)
     ? activeView
     : fallbackView(actor);
+  const wideView = effectiveActiveView === "attendee" || effectiveActiveView === "desk";
   const selectedRequest =
     data?.requests.find((request) => request._id === selectedRequestId) ??
     data?.requests.find((request) => request.status === "pending") ??
@@ -389,6 +489,15 @@ export function NetworkingApp() {
     );
   }
 
+  if (effectiveActiveView === "display") {
+    return (
+      <RoomDisplayView
+        roomDisplay={roomDisplay as RoomDisplayData | null | undefined}
+        onExit={() => setActiveView(fallbackView(actor))}
+      />
+    );
+  }
+
   return (
     <main className="min-h-screen bg-[#050505] text-white">
       <TopStrip settings={data.settings} />
@@ -408,10 +517,34 @@ export function NetworkingApp() {
             </button>
           </div>
         )}
-        <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[220px_minmax(0,1fr)_360px]">
+        <div
+          className={cn(
+            "grid min-w-0 grid-cols-[minmax(0,1fr)] gap-4",
+            wideView
+              ? "lg:grid-cols-[220px_minmax(0,1fr)]"
+              : "lg:grid-cols-[220px_minmax(0,1fr)_360px]",
+          )}
+        >
           <Navigation actor={actor} activeView={effectiveActiveView} onChange={setActiveView} />
           <section className="min-w-0">
-            <MetricStrip settings={data.settings} stats={stats} />
+            {effectiveActiveView !== "attendee" && (
+              <MetricStrip settings={data.settings} stats={stats} />
+            )}
+            {actor && effectiveActiveView === "attendee" && (
+              <AttendeeExperience
+                actionPending={actionPending}
+                actor={actor}
+                availability={data.availability}
+                companies={data.companies}
+                deskRequests={deskRequests}
+                meetings={data.meetings}
+                requests={data.requests}
+                runAction={runAction}
+                sessionToken={sessionToken}
+                settings={data.settings}
+                slotLabels={data.slotLabels}
+              />
+            )}
             {actor && effectiveActiveView === "marketplace" && (
               <Marketplace
                 actionPending={actionPending}
@@ -458,6 +591,18 @@ export function NetworkingApp() {
                 sessionToken={sessionToken}
               />
             )}
+            {actor && effectiveActiveView === "desk" && (
+              <DeskQueueView
+                actionPending={actionPending}
+                actor={actor}
+                companies={data.companies}
+                deskRequests={deskRequests}
+                requests={data.requests}
+                runAction={runAction}
+                sessionToken={sessionToken}
+                slotLabels={data.slotLabels}
+              />
+            )}
             {actor && effectiveActiveView === "admin" && (
               <AdminView
                 key={`${data.settings._id}:${data.settings.updatedAt}`}
@@ -473,15 +618,17 @@ export function NetworkingApp() {
               />
             )}
           </section>
-          <DetailPanel
-            actionPending={actionPending}
-            actor={actor}
-            request={selectedRequest}
-            runAction={runAction}
-            sessionToken={sessionToken}
-            settings={data.settings}
-            slotLabels={data.slotLabels}
-          />
+          {!wideView && (
+            <DetailPanel
+              actionPending={actionPending}
+              actor={actor}
+              request={selectedRequest}
+              runAction={runAction}
+              sessionToken={sessionToken}
+              settings={data.settings}
+              slotLabels={data.slotLabels}
+            />
+          )}
         </div>
       </div>
     </main>
@@ -569,14 +716,18 @@ function Navigation({
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const allItems: Array<{ id: View; label: string; icon: ReactNode }> = [
+    { id: "attendee", label: "Attendee", icon: <Users size={16} /> },
+    { id: "display", label: "Room display", icon: <Monitor size={16} /> },
     { id: "marketplace", label: "Marketplace", icon: <Search size={16} /> },
     { id: "requests", label: "Requests", icon: <ListChecks size={16} /> },
     { id: "schedule", label: "Schedule", icon: <CalendarDays size={16} /> },
     { id: "companies", label: "Companies", icon: <Building2 size={16} /> },
+    { id: "desk", label: "Desk queue", icon: <Handshake size={16} /> },
     { id: "admin", label: "Admin", icon: <Settings2 size={16} /> },
   ];
   const items = allItems.filter((item) => {
-    if (item.id === "admin") return actor?.role === "admin";
+    if (item.id === "admin" || item.id === "desk") return actor?.role === "admin";
+    if (item.id === "attendee") return actor?.role !== "company";
     if (item.id === "marketplace") return actor?.role !== "company";
     return true;
   });
@@ -628,7 +779,7 @@ function Navigation({
         ))}
       </nav>
       <div className="mt-4 hidden border-t border-white/10 pt-4 text-xs leading-5 text-white/45 lg:block">
-        Double opt-in by default. Companies must accept before table assignment.
+        1:1 requests with desk-assisted matching for attendees who want help.
       </div>
     </aside>
   );
@@ -659,6 +810,795 @@ function MetricStrip({
           <div className="mt-1 text-xs text-white/50">{metric.label}</div>
         </div>
       ))}
+    </div>
+  );
+}
+
+function AttendeeExperience({
+  actionPending,
+  actor,
+  availability,
+  companies,
+  deskRequests,
+  meetings,
+  requests,
+  runAction,
+  sessionToken,
+  settings,
+  slotLabels,
+}: {
+  actionPending: boolean;
+  actor: Account;
+  availability: Availability[];
+  companies: Company[];
+  deskRequests: DeskMatchDoc[];
+  meetings: MeetingDoc[];
+  requests: RequestDoc[];
+  runAction: RunAction;
+  sessionToken: string;
+  settings: Settings;
+  slotLabels: Array<{ minute: number; label: string }>;
+}) {
+  const createRequest = useMutation(api.networking.createRequest);
+  const createDeskMatchRequest = useMutation(api.networking.createDeskMatchRequest);
+  const updateDeskMatchStatus = useMutation(api.networking.updateDeskMatchStatus);
+  const [date, setDate] = useState(settings.startDate);
+  const [preferredStartMinute, setPreferredStartMinute] = useState(
+    slotLabels[1]?.minute ?? settings.dayStartMinute,
+  );
+  const [intent, setIntent] = useState("");
+  const [topicText, setTopicText] = useState("agents; evals; production AI");
+  const effectivePreferredStartMinute = slotLabels.some(
+    (slot) => slot.minute === preferredStartMinute,
+  )
+    ? preferredStartMinute
+    : slotLabels[0]?.minute ?? settings.dayStartMinute;
+
+  if (actor.role !== "attendee") {
+    return (
+      <section className="border border-white/10 bg-[#101010] p-6">
+        <Users className="text-[#f8e18e]" />
+        <h2 className="mt-4 text-xl font-semibold">Attendee account required</h2>
+        <p className="mt-2 max-w-xl text-sm leading-6 text-white/55">
+          Switch to an attendee fake account to use the attendee networking experience.
+        </p>
+      </section>
+    );
+  }
+
+  const eligibleCompanies = companies
+    .filter((company) => company.optedIn)
+    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
+  const myRequests = requests.filter((request) => request.attendeeAccountId === actor._id);
+  const dailyCount = myRequests.filter(
+    (request) => request.date === date && isOpenRequestStatus(request.status),
+  ).length;
+  const atRequestCap = dailyCount >= settings.attendeeRequestCapPerDay;
+  const openRequestCompanyIds = new Set(
+    myRequests
+      .filter((request) => request.date === date && isOpenRequestStatus(request.status))
+      .map((request) => request.companyId),
+  );
+  const myMeetings = meetings
+    .filter(
+      (meeting) =>
+        meeting.attendeeAccountId === actor._id &&
+        meeting.status !== "cancelled" &&
+        meeting.date === date,
+    )
+    .sort((a, b) => a.startMinute - b.startMinute);
+  const myDeskRequests = deskRequests
+    .filter((request) => request.attendeeAccountId === actor._id)
+    .sort((a, b) => b.updatedAt - a.updatedAt);
+  const openDeskRequest = myDeskRequests.find(
+    (request) =>
+      request.date === date && (request.status === "requested" || request.status === "matched"),
+  );
+  const topicQuery = `${intent} ${topicText}`.toLowerCase();
+  const recommendations = eligibleCompanies
+    .map((company) => {
+      const slots = companySlotsForDate(
+        company._id,
+        date,
+        availability,
+        slotLabels,
+        settings.slotMinutes,
+      );
+      const nextSlot =
+        slots.find((slot) => slot.minute >= effectivePreferredStartMinute) ?? slots[0] ?? null;
+      const topicScore = company.topics.filter((topic) => {
+        const normalizedTopic = topic.toLowerCase();
+        return (
+          topicQuery.includes(normalizedTopic) ||
+          normalizedTopic.split(/\s+/).some((part) => part.length > 3 && topicQuery.includes(part))
+        );
+      }).length;
+      return { company, nextSlot, topicScore };
+    })
+    .filter((item) => item.nextSlot && !openRequestCompanyIds.has(item.company._id))
+    .sort(
+      (a, b) =>
+        b.topicScore - a.topicScore ||
+        Number(b.company.sponsor) - Number(a.company.sponsor) ||
+        a.company.priority - b.company.priority ||
+        a.company.name.localeCompare(b.company.name),
+    )
+    .slice(0, 4);
+
+  function requestCompany(company: Company, startMinute: number) {
+    const trimmedIntent = intent.trim();
+    const reason =
+      trimmedIntent.length >= 8
+        ? trimmedIntent
+        : `Meet ${company.name} about practical AI deployment and partnerships.`;
+    void runAction(
+      () =>
+        createRequest({
+          sessionToken,
+          companyId: company._id,
+          date,
+          preferredStartMinute: startMinute,
+          reason,
+          context: `${actor.title}. Requested from the attendee concierge view.`,
+        }),
+      `Request sent to ${company.name}.`,
+    );
+  }
+
+  function askDesk() {
+    const trimmedIntent = intent.trim();
+    void runAction(
+      () =>
+        createDeskMatchRequest({
+          sessionToken,
+          date,
+          preferredStartMinute: effectivePreferredStartMinute,
+          intent: trimmedIntent,
+          topics: topicText,
+        }),
+      "Desk match request added.",
+    );
+  }
+
+  return (
+    <div className="grid gap-4">
+      <section className="border border-white/10 bg-[#101010]">
+        <div className="grid gap-5 p-4 sm:p-5 xl:grid-cols-[minmax(0,1fr)_360px]">
+          <div className="min-w-0">
+            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#f8e18e]">
+              <Sparkles size={14} />
+              <span>Attendee mode</span>
+            </div>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-5xl">
+              Got 30 minutes? Make it count.
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
+              Share what you want to find, then request a company directly or ask the room desk to make a practical match.
+            </p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              <Field label="Date">
+                <select className="input" value={date} onChange={(event) => setDate(event.target.value)}>
+                  <option value="2026-06-30">Tue Jun 30</option>
+                  <option value="2026-07-01">Wed Jul 1</option>
+                </select>
+              </Field>
+              <Field label="Best time">
+                <select
+                  className="input"
+                  value={effectivePreferredStartMinute}
+                  onChange={(event) => setPreferredStartMinute(Number(event.target.value))}
+                >
+                  {slotLabels.map((slot) => (
+                    <option key={slot.minute} value={slot.minute}>
+                      {slot.label}
+                    </option>
+                  ))}
+                </select>
+              </Field>
+            </div>
+          </div>
+          <div className="grid gap-3">
+            <Field label="What are you looking for?">
+              <textarea
+                className="input min-h-28 resize-none"
+                value={intent}
+                onChange={(event) => setIntent(event.target.value)}
+                placeholder="Production agent observability, eval tooling, enterprise deployment patterns..."
+              />
+            </Field>
+            <Field label="Topics">
+              <input
+                className="input"
+                value={topicText}
+                onChange={(event) => setTopicText(event.target.value)}
+              />
+            </Field>
+            <button
+              type="button"
+              className="button-primary"
+              disabled={actionPending || Boolean(openDeskRequest) || intent.trim().length < 8}
+              onClick={askDesk}
+            >
+              <Handshake size={16} /> Ask the desk to match me
+            </button>
+            <div className="text-xs leading-5 text-white/45">
+              {openDeskRequest
+                ? `Desk request is ${openDeskRequest.status}.`
+                : `${dailyCount}/${settings.attendeeRequestCapPerDay} direct company requests used for ${dateLabels[date]}.`}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_360px]">
+        <section className="border border-white/10 bg-[#101010]">
+          <SectionHeader
+            icon={<ArrowRight size={17} />}
+            title="Recommended next"
+            detail={`${recommendations.length} options`}
+          />
+          <div className="grid gap-3 p-3 sm:grid-cols-2">
+            {recommendations.length === 0 && (
+              <div className="sm:col-span-2">
+                <EmptyState
+                  title="No direct options available"
+                  detail="Try a different time, or ask the room desk to route you to a useful match."
+                />
+              </div>
+            )}
+            {recommendations.map(({ company, nextSlot, topicScore }) => (
+              <article key={company._id} className="grid min-h-[220px] gap-4 border border-white/10 bg-black/25 p-4">
+                <div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h3 className="text-xl font-semibold">{company.name}</h3>
+                    <Badge accent={topicScore > 0}>{company.tier}</Badge>
+                  </div>
+                  <p className="mt-2 line-clamp-3 text-sm leading-6 text-white/60">
+                    {company.description}
+                  </p>
+                  <TagRow items={company.topics} />
+                </div>
+                <div className="flex flex-wrap items-center justify-between gap-3 self-end">
+                  <div>
+                    <div className="text-xs uppercase tracking-[0.12em] text-white/45">Next slot</div>
+                    <div className="mt-1 font-mono text-lg text-[#f8e18e]">{nextSlot?.label}</div>
+                  </div>
+                  <button
+                    type="button"
+                    className="button-primary"
+                    disabled={actionPending || atRequestCap || !nextSlot}
+                    onClick={() => {
+                      if (!nextSlot) return;
+                      requestCompany(company, nextSlot.minute);
+                    }}
+                  >
+                    <Send size={15} /> Request
+                  </button>
+                </div>
+              </article>
+            ))}
+          </div>
+          {atRequestCap && (
+            <div className="border-t border-white/10 px-4 py-3 text-xs leading-5 text-white/45">
+              Daily request cap reached for {dateLabels[date]}. Desk requests are separate.
+            </div>
+          )}
+        </section>
+
+        <div className="grid gap-4">
+          <section className="border border-white/10 bg-[#101010]">
+            <SectionHeader
+              icon={<CalendarDays size={17} />}
+              title="Your schedule"
+              detail={`${myMeetings.length} confirmed`}
+            />
+            <div className="divide-y divide-white/10">
+              {myMeetings.length === 0 && (
+                <EmptyState
+                  title="Nothing confirmed yet"
+                  detail="Accepted company requests will appear here with table assignment."
+                />
+              )}
+              {myMeetings.map((meeting) => (
+                <div key={meeting._id} className="p-4">
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="font-semibold">{meeting.company?.name ?? "Company"}</div>
+                    <StatusBadge status={meeting.status} />
+                  </div>
+                  <div className="mt-2 grid gap-2 text-sm text-white/60">
+                    <span className="flex items-center gap-2">
+                      <Clock3 size={14} /> {dateLabels[meeting.date]} · {minuteLabel(meeting.startMinute)}
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <MapPin size={14} /> Table {meeting.tableNumber}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="border border-white/10 bg-[#101010]">
+            <SectionHeader
+              icon={<ListChecks size={17} />}
+              title="Your requests"
+              detail={`${myRequests.length + myDeskRequests.length} total`}
+            />
+            <div className="divide-y divide-white/10">
+              {myRequests.length === 0 && myDeskRequests.length === 0 && (
+                <EmptyState
+                  title="No requests yet"
+                  detail="Direct company requests and desk matches will show here."
+                />
+              )}
+              {myRequests.slice(0, 5).map((request) => (
+                <div key={request._id} className="p-4 text-sm">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="font-semibold">{request.company?.name ?? "Company"}</span>
+                    <StatusBadge status={request.status} />
+                  </div>
+                  <div className="mt-1 text-white/45">
+                    {dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}
+                  </div>
+                </div>
+              ))}
+              {myDeskRequests.slice(0, 3).map((request) => (
+                <div key={request._id} className="p-4 text-sm">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="font-semibold">Desk match</span>
+                    <StatusBadge status={request.status} />
+                  </div>
+                  <div className="mt-1 text-white/45">
+                    {request.suggestedCompany
+                      ? `Suggested ${request.suggestedCompany.name}`
+                      : `${dateLabels[request.date]} · ${minuteLabel(request.preferredStartMinute)}`}
+                  </div>
+                  {request.status === "requested" && (
+                    <button
+                      type="button"
+                      className="button-quiet mt-3"
+                      disabled={actionPending}
+                      onClick={() =>
+                        void runAction(
+                          () =>
+                            updateDeskMatchStatus({
+                              sessionToken,
+                              deskMatchRequestId: request._id,
+                              status: "cancelled",
+                            }),
+                          "Desk request cancelled.",
+                        )
+                      }
+                    >
+                      <X size={15} /> Cancel
+                    </button>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DeskQueueView({
+  actionPending,
+  actor,
+  companies,
+  deskRequests,
+  requests,
+  runAction,
+  sessionToken,
+  slotLabels,
+}: {
+  actionPending: boolean;
+  actor: Account;
+  companies: Company[];
+  deskRequests: DeskMatchDoc[];
+  requests: RequestDoc[];
+  runAction: RunAction;
+  sessionToken: string;
+  slotLabels: Array<{ minute: number; label: string }>;
+}) {
+  const assignDeskMatch = useMutation(api.networking.assignDeskMatch);
+  const updateDeskMatchStatus = useMutation(api.networking.updateDeskMatchStatus);
+  const [companySelections, setCompanySelections] = useState<Record<string, Id<"companies">>>({});
+  const [timeSelections, setTimeSelections] = useState<Record<string, number>>({});
+  const [notes, setNotes] = useState<Record<string, string>>({});
+
+  if (actor.role !== "admin") {
+    return (
+      <section className="border border-white/10 bg-[#101010] p-6">
+        <ShieldCheck className="text-[#f8e18e]" />
+        <h2 className="mt-4 text-xl font-semibold">Admin access required</h2>
+        <p className="mt-2 text-sm text-white/55">Switch to admin@aiewf.test to operate the desk queue.</p>
+      </section>
+    );
+  }
+
+  const companyOptions = companies
+    .filter((company) => company.optedIn)
+    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
+  const visible = deskRequests
+    .slice()
+    .sort(
+      (a, b) =>
+        Number(a.status !== "requested") - Number(b.status !== "requested") ||
+        b.updatedAt - a.updatedAt,
+    );
+
+  function hasOpenRequestForCompany(request: DeskMatchDoc, companyId: Id<"companies">) {
+    return requests.some(
+      (meetingRequest) =>
+        meetingRequest.attendeeAccountId === request.attendeeAccountId &&
+        meetingRequest.companyId === companyId &&
+        meetingRequest.date === request.date &&
+        isOpenRequestStatus(meetingRequest.status),
+    );
+  }
+
+  function topicScore(company: Company, request: DeskMatchDoc) {
+    const topicText = request.topics.join(" ").toLowerCase();
+    return company.topics.filter((topic) => {
+      const normalizedTopic = topic.toLowerCase();
+      return (
+        topicText.includes(normalizedTopic) ||
+        normalizedTopic.split(/\s+/).some((part) => part.length > 3 && topicText.includes(part))
+      );
+    }).length;
+  }
+
+  function suggestedCompanyFor(request: DeskMatchDoc) {
+    const candidates = companyOptions.filter(
+      (company) => !hasOpenRequestForCompany(request, company._id),
+    );
+    const rankedCandidates = candidates.length > 0 ? candidates : companyOptions;
+    return (
+      rankedCandidates
+        .slice()
+        .sort(
+          (a, b) =>
+            topicScore(b, request) - topicScore(a, request) ||
+            a.priority - b.priority ||
+            a.name.localeCompare(b.name),
+        )[0] ?? companyOptions[0]
+    );
+  }
+
+  return (
+    <section className="border border-white/10 bg-[#101010]">
+      <SectionHeader
+        icon={<Handshake size={17} />}
+        title="Desk match queue"
+        detail={`${visible.filter((request) => request.status === "requested").length} open`}
+      />
+      <div className="divide-y divide-white/10">
+        {visible.length === 0 && (
+          <EmptyState
+            title="No desk requests"
+            detail="Attendees who ask for help finding a match will appear here."
+          />
+        )}
+        {visible.map((request) => {
+          const suggestedCompany = suggestedCompanyFor(request);
+          const selectedCompanyId =
+            companySelections[request._id] ?? suggestedCompany?._id ?? companyOptions[0]?._id;
+          const selectedTime = timeSelections[request._id] ?? request.preferredStartMinute;
+          const selectedNote = notes[request._id] ?? "";
+          const selectedCompanyBlocked =
+            !selectedCompanyId || hasOpenRequestForCompany(request, selectedCompanyId);
+          return (
+            <div key={request._id} className="grid gap-4 p-4 xl:grid-cols-[minmax(0,1fr)_420px]">
+              <div className="min-w-0">
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-lg font-semibold">{request.attendee?.displayName ?? "Attendee"}</h3>
+                  <StatusBadge status={request.status} />
+                  <span className="text-xs text-white/45">
+                    {dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}
+                  </span>
+                </div>
+                <p className="mt-2 max-w-3xl text-sm leading-6 text-white/65">{request.intent}</p>
+                <TagRow items={request.topics} />
+                <p className="mt-3 text-xs text-white/45">{request.attendee?.title}</p>
+                {request.suggestedCompany && (
+                  <div className="mt-3 border border-sky-300/20 bg-sky-300/10 p-3 text-sm text-sky-100">
+                    Suggested {request.suggestedCompany.name}
+                    {request.meetingRequest ? ` · request ${request.meetingRequest.status}` : ""}
+                  </div>
+                )}
+              </div>
+              <div className="grid gap-3">
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <Field label="Company">
+                    <select
+                      className="input"
+                      disabled={request.status !== "requested" || companyOptions.length === 0}
+                      value={selectedCompanyId ?? ""}
+                      onChange={(event) =>
+                        setCompanySelections({
+                          ...companySelections,
+                          [request._id]: event.target.value as Id<"companies">,
+                        })
+                      }
+                    >
+                      {companyOptions.length === 0 && <option value="">No opted-in companies</option>}
+                      {companyOptions.map((company) => (
+                        <option
+                          disabled={hasOpenRequestForCompany(request, company._id)}
+                          key={company._id}
+                          value={company._id}
+                        >
+                          {company.name}
+                          {hasOpenRequestForCompany(request, company._id)
+                            ? " (already requested)"
+                            : ""}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
+                  <Field label="Time">
+                    <select
+                      className="input"
+                      disabled={request.status !== "requested"}
+                      value={selectedTime}
+                      onChange={(event) =>
+                        setTimeSelections({
+                          ...timeSelections,
+                          [request._id]: Number(event.target.value),
+                        })
+                      }
+                    >
+                      {slotLabels.map((slot) => (
+                        <option key={slot.minute} value={slot.minute}>
+                          {slot.label}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
+                </div>
+                <Field label="Desk note">
+                  <input
+                    className="input"
+                    disabled={request.status !== "requested"}
+                    value={selectedNote}
+                    onChange={(event) => setNotes({ ...notes, [request._id]: event.target.value })}
+                    placeholder="Why this company is a useful match"
+                  />
+                </Field>
+                {request.status === "requested" ? (
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      className="button-primary"
+                      disabled={actionPending || selectedCompanyBlocked}
+                      onClick={() => {
+                        if (!selectedCompanyId || selectedCompanyBlocked) return;
+                        void runAction(
+                          () =>
+                            assignDeskMatch({
+                              sessionToken,
+                              deskMatchRequestId: request._id,
+                              companyId: selectedCompanyId,
+                              preferredStartMinute: selectedTime,
+                              note: selectedNote,
+                            }),
+                          "Desk match sent to company.",
+                        );
+                      }}
+                    >
+                      <Send size={15} /> Send company request
+                    </button>
+                    <button
+                      type="button"
+                      className="button-quiet"
+                      disabled={actionPending}
+                      onClick={() =>
+                        void runAction(
+                          () =>
+                            updateDeskMatchStatus({
+                              sessionToken,
+                              deskMatchRequestId: request._id,
+                              status: "closed",
+                            }),
+                          "Desk request closed.",
+                        )
+                      }
+                    >
+                      <Check size={15} /> Close
+                    </button>
+                  </div>
+                ) : (
+                  <div className="text-xs leading-5 text-white/45">
+                    This desk request is {request.status}.
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+function RoomDisplayView({
+  onExit,
+  roomDisplay,
+}: {
+  onExit: () => void;
+  roomDisplay: RoomDisplayData | null | undefined;
+}) {
+  const [qrDataUrl, setQrDataUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    const attendeeUrl = `${window.location.origin}/?surface=attendee`;
+    void QRCode.toDataURL(attendeeUrl, {
+      margin: 1,
+      width: 240,
+      color: { dark: "#050505", light: "#ffffff" },
+    }).then(setQrDataUrl);
+  }, []);
+
+  if (roomDisplay === undefined) {
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-[#050505] px-6 text-white">
+        <div className="flex items-center gap-3 text-[#f8e18e]">
+          <Loader2 className="animate-spin" />
+          <span>Loading room display</span>
+        </div>
+      </main>
+    );
+  }
+
+  if (roomDisplay === null) {
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-[#050505] px-6 text-white">
+        <section className="border border-white/10 bg-[#101010] p-6">
+          <h1 className="text-xl font-semibold">Room display unavailable</h1>
+          <button type="button" className="button-primary mt-4" onClick={onExit}>
+            Exit display
+          </button>
+        </section>
+      </main>
+    );
+  }
+
+  return (
+    <main className="min-h-screen bg-[#050505] text-white xl:h-screen xl:overflow-hidden">
+      <div className="mx-auto grid min-h-screen w-full max-w-[1920px] grid-rows-[auto_minmax(0,1fr)] gap-4 px-4 py-4 sm:px-6 lg:px-8 xl:h-full xl:min-h-0">
+        <header className="grid gap-4 border-b border-white/10 pb-4 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <div className="min-w-0">
+            <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#f8e18e]">
+              <Monitor size={16} />
+              <span>{roomDisplay.settings.eventName}</span>
+            </div>
+            <div className="mt-3 flex flex-wrap items-end gap-x-5 gap-y-2">
+              <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
+                Networking Room
+              </h1>
+              <div className="pb-1 font-mono text-xl text-white/60">
+                {dateLabels[roomDisplay.date]} · {roomDisplay.nowLabel}
+              </div>
+            </div>
+            <p className="mt-3 max-w-4xl text-lg leading-8 text-white/58">
+              {roomDisplay.settings.roomName} · scan to request a 1:1 or ask the desk for a match.
+            </p>
+          </div>
+          <div className="grid grid-cols-[110px_minmax(0,1fr)] items-center gap-4 justify-self-start lg:justify-self-end">
+            <div className="flex aspect-square items-center justify-center bg-white p-2">
+              {qrDataUrl ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img alt="Attendee request QR code" className="h-full w-full" src={qrDataUrl} />
+              ) : (
+                <QrCode className="text-black" size={56} />
+              )}
+            </div>
+            <div className="text-sm leading-6 text-white/60">
+              <div className="font-semibold text-white">Scan to get started</div>
+              <div>or chat with the room desk.</div>
+              <button type="button" className="button-quiet mt-3" onClick={onExit}>
+                Exit display
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <div className="grid min-h-0 gap-4 xl:grid-cols-[minmax(0,1fr)_420px] xl:overflow-hidden">
+          <section className="min-h-0 overflow-hidden border border-white/10 bg-[#101010]">
+            <SectionHeader
+              icon={<Table2 size={18} />}
+              title="Now and next"
+              detail={`${roomDisplay.counts.live} live · ${roomDisplay.counts.upcoming} upcoming`}
+            />
+            <div className="grid max-h-[calc(100vh-230px)] gap-3 overflow-y-auto p-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+              {roomDisplay.nextMeetings.length === 0 && (
+                <div className="sm:col-span-2 xl:col-span-3 2xl:col-span-4">
+                  <EmptyState
+                    title="No upcoming meetings"
+                    detail="Accepted 1:1 meetings will appear on this display."
+                  />
+                </div>
+              )}
+              {roomDisplay.nextMeetings.map((meeting) => (
+                <article
+                  key={meeting.meetingId}
+                  className="grid min-h-[230px] gap-4 border border-white/10 bg-white/[0.045] p-4"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="font-mono text-2xl text-[#f8e18e]">T{meeting.tableNumber}</div>
+                    <StatusBadge status={meeting.status} />
+                  </div>
+                  <div>
+                    <div className="text-xs uppercase tracking-[0.12em] text-white/45">
+                      {meeting.label}
+                    </div>
+                    <h2 className="mt-2 text-2xl font-semibold leading-tight">
+                      {meeting.companyName}
+                    </h2>
+                  </div>
+                  <div className="self-end border-t border-white/10 pt-3">
+                    <div className="text-sm font-semibold">{meeting.attendeeName}</div>
+                    <div className="mt-1 line-clamp-2 text-xs leading-5 text-white/45">
+                      {meeting.attendeeTitle}
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <aside className="grid min-h-0 gap-4 xl:grid-rows-[auto_minmax(0,1fr)] xl:overflow-hidden">
+            <section className="grid grid-cols-2 gap-2">
+              <DisplayStat label="Open companies" value={roomDisplay.counts.openCompanies} />
+              <DisplayStat label="Pending" value={roomDisplay.counts.pendingRequests} />
+              <DisplayStat label="Tables" value={roomDisplay.settings.activeTables} />
+              <DisplayStat label="Slot length" value={`${roomDisplay.settings.slotMinutes}m`} />
+            </section>
+            <section className="min-h-0 overflow-hidden border border-white/10 bg-[#101010]">
+              <SectionHeader
+                icon={<Sparkles size={18} />}
+                title="Open next"
+                detail={`${roomDisplay.opportunities.length} options`}
+              />
+              <div className="divide-y divide-white/10 xl:max-h-[calc(100vh-360px)] xl:overflow-y-auto">
+                {roomDisplay.opportunities.length === 0 && (
+                  <EmptyState
+                    title="No open slots"
+                    detail="Check the desk for manual routing."
+                  />
+                )}
+                {roomDisplay.opportunities.map((opportunity) => (
+                  <div key={`${opportunity.companyId}-${opportunity.startMinute}`} className="p-4">
+                    <div className="flex items-start justify-between gap-3">
+                      <div>
+                        <div className="text-lg font-semibold leading-tight">
+                          {opportunity.companyName}
+                        </div>
+                        <div className="mt-1 text-xs text-white/45">
+                          {opportunity.hostNames.join(", ") || opportunity.tier}
+                        </div>
+                      </div>
+                      <div className="font-mono text-[#f8e18e]">{opportunity.label}</div>
+                    </div>
+                    <TagRow items={opportunity.topics} />
+                  </div>
+                ))}
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+function DisplayStat({ label, value }: { label: string; value: ReactNode }) {
+  return (
+    <div className="border border-white/10 bg-[#101010] p-4">
+      <div className="text-3xl font-semibold">{value}</div>
+      <div className="mt-1 text-xs uppercase tracking-[0.12em] text-white/45">{label}</div>
     </div>
   );
 }
@@ -701,7 +1641,9 @@ function Marketplace({
     eligibleCompanies[0];
   const effectiveSelectedCompanyId = selectedCompany?._id ?? "";
   const myRequests = requests.filter((request) => request.attendeeAccountId === actor._id);
-  const dailyCount = myRequests.filter((request) => request.date === date && request.status !== "cancelled").length;
+  const dailyCount = myRequests.filter(
+    (request) => request.date === date && isOpenRequestStatus(request.status),
+  ).length;
   const atRequestCap = dailyCount >= settings.attendeeRequestCapPerDay;
   const availableSlots = selectedCompany
     ? slotLabels.filter((slot) =>

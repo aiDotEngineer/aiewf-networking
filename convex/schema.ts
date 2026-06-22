@@ -15,10 +15,23 @@ const requestStatus = v.union(
   v.literal("cancelled"),
 );
 
+const requestOrigin = v.union(
+  v.literal("attendee_request"),
+  v.literal("desk_queue"),
+  v.literal("admin_match"),
+);
+
 const meetingStatus = v.union(
   v.literal("confirmed"),
   v.literal("completed"),
   v.literal("no_show"),
+  v.literal("cancelled"),
+);
+
+const deskMatchStatus = v.union(
+  v.literal("requested"),
+  v.literal("matched"),
+  v.literal("closed"),
   v.literal("cancelled"),
 );
 
@@ -108,10 +121,18 @@ export default defineSchema({
     responseNote: v.optional(v.string()),
     respondedByAccountId: v.optional(v.id("accounts")),
     meetingId: v.optional(v.id("meetings")),
+    origin: v.optional(requestOrigin),
+    createdByAccountId: v.optional(v.id("accounts")),
+    adminNote: v.optional(v.string()),
     createdAt: v.number(),
     updatedAt: v.number(),
   })
     .index("by_attendeeAccountId_and_date", ["attendeeAccountId", "date"])
+    .index("by_attendeeAccountId_and_companyId_and_date", [
+      "attendeeAccountId",
+      "companyId",
+      "date",
+    ])
     .index("by_companyId_and_status", ["companyId", "status"])
     .index("by_companyId_and_date", ["companyId", "date"])
     .index("by_status", ["status"])
@@ -145,6 +166,23 @@ export default defineSchema({
       "startMinute",
     ])
     .index("by_status", ["status"]),
+
+  deskMatchRequests: defineTable({
+    attendeeAccountId: v.id("accounts"),
+    date: v.string(),
+    preferredStartMinute: v.number(),
+    intent: v.string(),
+    topics: v.array(v.string()),
+    status: deskMatchStatus,
+    suggestedCompanyId: v.optional(v.id("companies")),
+    meetingRequestId: v.optional(v.id("meetingRequests")),
+    note: v.optional(v.string()),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_status", ["status"])
+    .index("by_attendeeAccountId", ["attendeeAccountId"])
+    .index("by_date_and_status", ["date", "status"]),
 
   importBatches: defineTable({
     importedByAccountId: v.id("accounts"),
