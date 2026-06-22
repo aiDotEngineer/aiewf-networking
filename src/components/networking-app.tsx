@@ -31,7 +31,7 @@ import {
   Users,
   X,
 } from "lucide-react";
-import { FormEvent, ReactNode, useEffect, useMemo, useRef, useState, useTransition } from "react";
+import { FormEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 type Account = Doc<"accounts">;
 type Company = Doc<"companies">;
@@ -55,6 +55,17 @@ type MeetingDoc = Doc<"meetings"> & {
   company: Company | null;
   attendee: Account | null;
   request: Doc<"meetingRequests"> | null;
+};
+type CompanyCsvRow = {
+  name: string;
+  tier?: string;
+  contactEmail?: string;
+  hostNames?: string;
+  topics?: string;
+  wantsToMeet?: string;
+  sponsor?: boolean;
+  optedIn?: boolean;
+  description?: string;
 };
 type View = "marketplace" | "requests" | "schedule" | "companies" | "admin";
 type RunAction = (task: () => Promise<unknown>, success: string) => Promise<boolean>;
@@ -89,6 +100,13 @@ function minuteLabel(minute: number) {
 
 function canHostRespond(status: RequestDoc["status"]) {
   return status === "pending" || status === "countered";
+}
+
+function nextCounterStartMinute(
+  slotLabels: Array<{ minute: number; label: string }>,
+  preferredStartMinute: number,
+) {
+  return slotLabels.find((slot) => slot.minute > preferredStartMinute)?.minute;
 }
 
 function userFacingError(error: unknown) {
@@ -171,31 +189,76 @@ function parseCsvTable(text: string) {
   return rows;
 }
 
-function parseCompanyCsv(text: string) {
+const companyCsvHeaders = new Set([
+  "name",
+  "tier",
+  "contactEmail",
+  "hostNames",
+  "topics",
+  "wantsToMeet",
+  "sponsor",
+  "optedIn",
+  "description",
+]);
+
+function parseCompanyCsvBoolean(value: string) {
+  return ["true", "yes", "1", "y"].includes(value.trim().toLowerCase());
+}
+
+function parseCompanyCsv(text: string): { rows: CompanyCsvRow[]; error: string | null } {
   const table = parseCsvTable(text);
-  if (table.length < 2) return [];
+  if (table.length < 2) {
+    return { rows: [], error: "CSV needs a header row and at least one company row." };
+  }
   const headers = table[0].map((item) => item.trim());
-  return table.slice(1).map((values) => {
-    const row: Record<string, string | boolean> = {};
+  if (!headers.includes("name")) {
+    return { rows: [], error: "CSV must include a name column." };
+  }
+  const unknownHeader = headers.find((header) => header && !companyCsvHeaders.has(header));
+  if (unknownHeader) {
+    return { rows: [], error: `Unknown CSV column: ${unknownHeader}.` };
+  }
+
+  const rows = table.slice(1).map((values) => {
+    const row: CompanyCsvRow = { name: "" };
     headers.forEach((header, index) => {
       const value = values[index] ?? "";
-      row[header] =
-        header === "sponsor" || header === "optedIn"
-          ? ["true", "yes", "1", "y"].includes(value.toLowerCase())
-          : value;
+      switch (header) {
+        case "name":
+          row.name = value;
+          break;
+        case "tier":
+          row.tier = value;
+          break;
+        case "contactEmail":
+          row.contactEmail = value;
+          break;
+        case "hostNames":
+          row.hostNames = value;
+          break;
+        case "topics":
+          row.topics = value;
+          break;
+        case "wantsToMeet":
+          row.wantsToMeet = value;
+          break;
+        case "sponsor":
+          row.sponsor = parseCompanyCsvBoolean(value);
+          break;
+        case "optedIn":
+          row.optedIn = parseCompanyCsvBoolean(value);
+          break;
+        case "description":
+          row.description = value;
+          break;
+      }
     });
-    return row as {
-      name: string;
-      tier?: string;
-      contactEmail?: string;
-      hostNames?: string;
-      topics?: string;
-      wantsToMeet?: string;
-      sponsor?: boolean;
-      optedIn?: boolean;
-      description?: string;
-    };
+    return row;
   });
+  if (rows.some((row) => !row.name.trim())) {
+    return { rows: [], error: "Every CSV row needs a company name." };
+  }
+  return { rows, error: null };
 }
 
 export function NetworkingApp() {
@@ -204,6 +267,7 @@ export function NetworkingApp() {
   const startDemoSession = useMutation(api.networking.startDemoSession);
   const seedStartedRef = useRef(false);
   const sessionStartedRef = useRef(false);
+  const sessionRequestRef = useRef(0);
   const [sessionToken, setSessionToken] = useState<string | null>(null);
   const [actorEmail, setActorEmail] = useState("admin@aiewf.test");
   const data = useQuery(
@@ -214,7 +278,7 @@ export function NetworkingApp() {
   const [selectedRequestId, setSelectedRequestId] = useState<Id<"meetingRequests"> | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [actionPending, setActionPending] = useState(false);
-  const [isPending, startTransition] = useTransition();
+  const [sessionPending, setSessionPending] = useState(false);
   const actionLockRef = useRef(false);
 
   useEffect(() => {
@@ -224,28 +288,37 @@ export function NetworkingApp() {
     }
   }, [accounts, ensureDemoData]);
 
+  const startSession = useCallback((email: string) => {
+    const requestId = sessionRequestRef.current + 1;
+    sessionRequestRef.current = requestId;
+    setActorEmail(email);
+    setSessionToken(null);
+    setNotice(null);
+    setSessionPending(true);
+    void startDemoSession({ email })
+      .then((result) => {
+        if (sessionRequestRef.current !== requestId) return;
+        setSessionToken(result.token);
+      })
+      .catch((error) => {
+        if (sessionRequestRef.current !== requestId) return;
+        setNotice(userFacingError(error));
+      })
+      .finally(() => {
+        if (sessionRequestRef.current === requestId) setSessionPending(false);
+      });
+  }, [startDemoSession]);
+
   useEffect(() => {
     if (!accounts?.length || sessionStartedRef.current) return;
     sessionStartedRef.current = true;
     const initialEmail =
       accounts.find((account) => account.role === "admin")?.email ?? accounts[0].email;
-    void startDemoSession({ email: initialEmail })
-      .then((result) => {
-        setActorEmail(initialEmail);
-        setSessionToken(result.token);
-      })
-      .catch((error) => setNotice(error.message));
-  }, [accounts, startDemoSession]);
+    startSession(initialEmail);
+  }, [accounts, startSession]);
 
   function changeAccount(email: string) {
-    setActorEmail(email);
-    setSessionToken(null);
-    setNotice(null);
-    startTransition(() => {
-      void startDemoSession({ email })
-        .then((result) => setSessionToken(result.token))
-        .catch((error) => setNotice(error.message));
-    });
+    startSession(email);
   }
 
   const actor = data?.actor ?? null;
@@ -297,9 +370,20 @@ export function NetworkingApp() {
         <div className="flex max-w-md flex-col items-center gap-4 text-center">
           <Loader2 className="animate-spin text-[#f8e18e]" />
           <h1 className="text-2xl font-semibold">Preparing networking room</h1>
-          <p className="text-sm leading-6 text-white/60">
-            Initializing the Convex data model and opening a scoped fake session.
-          </p>
+          {notice ? (
+            <>
+              <p className="text-sm leading-6 text-red-200">{notice}</p>
+              {accounts?.length ? (
+                <button className="button-primary" onClick={() => startSession(actorEmail)}>
+                  Retry session
+                </button>
+              ) : null}
+            </>
+          ) : (
+            <p className="text-sm leading-6 text-white/60">
+              Initializing the Convex data model and opening a scoped fake session.
+            </p>
+          )}
         </div>
       </main>
     );
@@ -313,7 +397,7 @@ export function NetworkingApp() {
           accounts={data.accounts}
           actor={actor}
           actorEmail={actorEmail}
-          isPending={isPending}
+          isPending={sessionPending}
           onActorChange={changeAccount}
         />
         {notice && (
@@ -376,6 +460,7 @@ export function NetworkingApp() {
             )}
             {actor && effectiveActiveView === "admin" && (
               <AdminView
+                key={`${data.settings._id}:${data.settings.updatedAt}`}
                 actionPending={actionPending}
                 actor={actor}
                 companies={data.companies}
@@ -782,39 +867,63 @@ function RequestQueue({
       <SectionHeader icon={<ListChecks size={17} />} title="Request queue" detail={`${visible.length} visible`} />
       <div className="divide-y divide-white/10">
         {visible.length === 0 && <EmptyState title="No visible requests" detail="Requests will appear here when attendees ask for time with this company." />}
-        {visible.map((request) => (
-          <div key={request._id} className="grid gap-3 p-4 xl:grid-cols-[minmax(0,1fr)_270px]">
-            <button onClick={() => onSelect(request._id)} className="min-w-0 text-left">
-              <div className="flex flex-wrap items-center gap-2">
-                <h3 className="font-semibold">{request.company?.name ?? "Company"}</h3>
-                <StatusBadge status={request.status} />
-                <span className="text-xs text-white/45">{dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}</span>
+        {visible.map((request) => {
+          const counterStartMinute = nextCounterStartMinute(
+            slotLabels,
+            request.preferredStartMinute,
+          );
+
+          return (
+            <div key={request._id} className="grid gap-3 p-4 xl:grid-cols-[minmax(0,1fr)_270px]">
+              <button onClick={() => onSelect(request._id)} className="min-w-0 text-left">
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="font-semibold">{request.company?.name ?? "Company"}</h3>
+                  <StatusBadge status={request.status} />
+                  <span className="text-xs text-white/45">{dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}</span>
+                </div>
+                <p className="mt-2 text-sm leading-6 text-white/60">{request.reason}</p>
+                <p className="mt-2 text-xs text-white/45">{request.attendee?.displayName} · {request.attendee?.title}</p>
+              </button>
+              <div className="flex flex-wrap items-center gap-2 xl:justify-end">
+                {actor.role !== "attendee" && canHostRespond(request.status) && (
+                  <>
+                    <button className="button-quiet" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "decline", note: "Declined from queue." }), "Request declined.")}>
+                      <X size={15} /> Decline
+                    </button>
+                    <button
+                      className="button-quiet"
+                      disabled={actionPending || counterStartMinute === undefined}
+                      onClick={() => {
+                        if (counterStartMinute === undefined) return;
+                        void runAction(
+                          () =>
+                            respond({
+                              sessionToken,
+                              requestId: request._id,
+                              action: "counter",
+                              counterStartMinute,
+                              note: "Counter-proposed to the next available slot.",
+                            }),
+                          "Counter sent.",
+                        );
+                      }}
+                    >
+                      <Clock3 size={15} /> Counter
+                    </button>
+                    <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "accept", note: "Accepted from queue." }), "Request accepted and table assigned.")}>
+                      <Check size={15} /> Accept
+                    </button>
+                  </>
+                )}
+                {actor.role === "attendee" && request.status === "countered" && request.attendeeAccountId === actor._id && (
+                  <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => confirmCounter({ sessionToken, requestId: request._id }), "Counter confirmed.")}>
+                    <Check size={15} /> Confirm counter
+                  </button>
+                )}
               </div>
-              <p className="mt-2 text-sm leading-6 text-white/60">{request.reason}</p>
-              <p className="mt-2 text-xs text-white/45">{request.attendee?.displayName} · {request.attendee?.title}</p>
-            </button>
-            <div className="flex flex-wrap items-center gap-2 xl:justify-end">
-              {actor.role !== "attendee" && canHostRespond(request.status) && (
-                <>
-                  <button className="button-quiet" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "decline", note: "Declined from queue." }), "Request declined.")}>
-                    <X size={15} /> Decline
-                  </button>
-                  <button className="button-quiet" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "counter", counterStartMinute: slotLabels.find((slot) => slot.minute > request.preferredStartMinute)?.minute ?? request.preferredStartMinute, note: "Counter-proposed to the next available slot." }), "Counter sent.")}>
-                    <Clock3 size={15} /> Counter
-                  </button>
-                  <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "accept", note: "Accepted from queue." }), "Request accepted and table assigned.")}>
-                    <Check size={15} /> Accept
-                  </button>
-                </>
-              )}
-              {actor.role === "attendee" && request.status === "countered" && request.attendeeAccountId === actor._id && (
-                <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => confirmCounter({ sessionToken, requestId: request._id }), "Counter confirmed.")}>
-                  <Check size={15} /> Confirm counter
-                </button>
-              )}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
@@ -1050,8 +1159,14 @@ function AdminView({
           </div>
           <textarea value={csv} onChange={(event) => setCsv(event.target.value)} className="input min-h-52 resize-y font-mono text-xs" />
           <button className="button-primary" disabled={actionPending} onClick={() => {
-            const rows = parseCompanyCsv(csv);
-            void runAction(() => upsertCompanies({ sessionToken, rows }), `${rows.length} CSV rows processed.`);
+            const parsed = parseCompanyCsv(csv);
+            void runAction(
+              () =>
+                parsed.error
+                  ? Promise.reject(new Error(parsed.error))
+                  : upsertCompanies({ sessionToken, rows: parsed.rows }),
+              parsed.error ? "" : `${parsed.rows.length} CSV rows processed.`,
+            );
           }}><Upload size={15} /> Import company CSV</button>
           <div className="border-t border-white/10 pt-3">
             <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">Recent imports</div>
@@ -1085,6 +1200,9 @@ function DetailPanel({
 }) {
   const respond = useMutation(api.networking.respondToRequest);
   const confirmCounter = useMutation(api.networking.confirmCounter);
+  const counterStartMinute = request
+    ? nextCounterStartMinute(slotLabels, request.preferredStartMinute)
+    : undefined;
   return (
     <aside className="border border-white/10 bg-[#101010] p-4 lg:sticky lg:top-4 lg:h-[calc(100vh-92px)] lg:overflow-y-auto">
       <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]"><LayoutDashboard size={17} /> Request detail</div>
@@ -1104,7 +1222,24 @@ function DetailPanel({
               <>
                 <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "accept", note: "Accepted from detail panel." }), "Request accepted.")}><Check size={15} /> Accept</button>
                 <div className="grid grid-cols-2 gap-2">
-                  <button className="button-quiet" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "counter", counterStartMinute: slotLabels.find((slot) => slot.minute > request.preferredStartMinute)?.minute ?? request.preferredStartMinute, note: "Counter-proposed from detail panel." }), "Counter sent.")}><Clock3 size={15} /> Counter</button>
+                  <button
+                    className="button-quiet"
+                    disabled={actionPending || counterStartMinute === undefined}
+                    onClick={() => {
+                      if (counterStartMinute === undefined) return;
+                      void runAction(
+                        () =>
+                          respond({
+                            sessionToken,
+                            requestId: request._id,
+                            action: "counter",
+                            counterStartMinute,
+                            note: "Counter-proposed from detail panel.",
+                          }),
+                        "Counter sent.",
+                      );
+                    }}
+                  ><Clock3 size={15} /> Counter</button>
                   <button className="button-quiet" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "decline", note: "Declined from detail panel." }), "Request declined.")}><X size={15} /> Decline</button>
                 </div>
               </>

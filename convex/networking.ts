@@ -11,6 +11,10 @@ const SETTINGS_KEY = "default";
 const EVENT_DATES = ["2026-06-30", "2026-07-01"];
 const SESSION_TTL_MS = 1000 * 60 * 60 * 24 * 14;
 const MAX_IMPORT_ROWS = 100;
+const DEFAULT_AVAILABILITY_WINDOWS = [
+  { startMinute: 10 * 60 + 40, endMinute: 12 * 60 + 40, note: "Morning block" },
+  { startMinute: 14 * 60, endMinute: 16 * 60, note: "Afternoon block" },
+];
 
 const meetingStatusValidator = v.union(
   v.literal("confirmed"),
@@ -55,6 +59,12 @@ function minuteLabel(minute: number) {
 function validatePositiveInteger(name: string, value: number) {
   if (!Number.isInteger(value) || value <= 0) {
     throw new Error(`${name} must be a positive integer.`);
+  }
+}
+
+function validateMinuteOfDay(name: string, value: number) {
+  if (!Number.isInteger(value) || value < 0 || value > 24 * 60) {
+    throw new Error(`${name} must be an integer minute between 0 and 1440.`);
   }
 }
 
@@ -130,6 +140,28 @@ async function hasAvailability(
       startMinute >= window.startMinute &&
       startMinute + slotMinutes <= window.endMinute,
   );
+}
+
+async function ensureDefaultAvailability(ctx: MutationCtx, companyId: Id<"companies">) {
+  const timestamp = now();
+  for (const date of EVENT_DATES) {
+    const existing = await ctx.db
+      .query("availability")
+      .withIndex("by_companyId_and_date", (q) =>
+        q.eq("companyId", companyId).eq("date", date),
+      )
+      .take(1);
+    if (existing.length > 0) continue;
+
+    for (const availabilityWindow of DEFAULT_AVAILABILITY_WINDOWS) {
+      await ctx.db.insert("availability", {
+        companyId,
+        date,
+        ...availabilityWindow,
+        updatedAt: timestamp,
+      });
+    }
+  }
 }
 
 async function companyMeetingsForDay(
@@ -449,22 +481,14 @@ async function insertDemoData(ctx: MutationCtx) {
 
   for (const companyId of Object.values(companyIds)) {
     for (const date of EVENT_DATES) {
-      await ctx.db.insert("availability", {
-        companyId,
-        date,
-        startMinute: 10 * 60 + 40,
-        endMinute: 12 * 60 + 40,
-        note: "Morning block",
-        updatedAt: timestamp,
-      });
-      await ctx.db.insert("availability", {
-        companyId,
-        date,
-        startMinute: 14 * 60,
-        endMinute: 16 * 60,
-        note: "Afternoon block",
-        updatedAt: timestamp,
-      });
+      for (const availabilityWindow of DEFAULT_AVAILABILITY_WINDOWS) {
+        await ctx.db.insert("availability", {
+          companyId,
+          date,
+          ...availabilityWindow,
+          updatedAt: timestamp,
+        });
+      }
     }
   }
 
@@ -749,7 +773,9 @@ export const createRequest = mutation({
       companyId: args.companyId,
       date: args.date,
       preferredStartMinute: args.preferredStartMinute,
-      ...(args.alternateStartMinute ? { alternateStartMinute: args.alternateStartMinute } : {}),
+      ...(args.alternateStartMinute !== undefined
+        ? { alternateStartMinute: args.alternateStartMinute }
+        : {}),
       reason: args.reason.trim(),
       context: args.context.trim(),
       status: "pending",
@@ -805,17 +831,25 @@ export const respondToRequest = mutation({
       return { status: "countered" };
     }
 
+    let acceptedStartMinute = request.preferredStartMinute;
+    if (request.status === "countered") {
+      if (request.counterStartMinute === undefined) {
+        throw new Error("Request does not have a counter-proposal.");
+      }
+      acceptedStartMinute = request.counterStartMinute;
+    }
+    const responseNote = args.note?.trim() || "Accepted by host.";
     const meetingId = await createConfirmedMeeting(
       ctx,
       settings,
       request,
-      request.preferredStartMinute,
-      args.note?.trim() || "Accepted by host.",
+      acceptedStartMinute,
+      responseNote,
     );
     await ctx.db.patch(request._id, {
       status: "accepted",
       meetingId,
-      responseNote: args.note?.trim() || "Accepted by host.",
+      responseNote,
       respondedByAccountId: actor._id,
       updatedAt: now(),
     });
@@ -865,6 +899,8 @@ export const updateSettings = mutation({
     const actor = await requireActor(ctx, args.sessionToken);
     requireAdmin(actor);
     const settings = await requireSettings(ctx);
+    validateMinuteOfDay("dayStartMinute", args.dayStartMinute);
+    validateMinuteOfDay("dayEndMinute", args.dayEndMinute);
     validatePositiveInteger("slotMinutes", args.slotMinutes);
     validatePositiveInteger("activeTables", args.activeTables);
     validatePositiveInteger("reserveTables", args.reserveTables);
@@ -900,6 +936,9 @@ export const setCompanyOptIn = mutation({
     const actor = await requireActor(ctx, args.sessionToken);
     requireAdmin(actor);
     await ctx.db.patch(args.companyId, { optedIn: args.optedIn, updatedAt: now() });
+    if (args.optedIn) {
+      await ensureDefaultAvailability(ctx, args.companyId);
+    }
     return { updated: true };
   },
 });
@@ -934,6 +973,7 @@ export const upsertCompaniesFromRows = mutation({
       const name = row.name.trim();
       if (!name) continue;
       const slug = slugify(name);
+      if (!slug) throw new Error(`Company name "${name}" must include letters or numbers.`);
       const existing = await ctx.db
         .query("companies")
         .withIndex("by_slug", (q) => q.eq("slug", slug))
@@ -950,14 +990,20 @@ export const upsertCompaniesFromRows = mutation({
         sponsor: row.sponsor ?? true,
         optedIn: row.optedIn ?? false,
         priority: existing?.priority ?? 50,
-        notes: "Imported from admin CSV paste.",
+        notes: existing?.notes ?? "Imported from admin CSV paste.",
         updatedAt: now(),
       };
       if (existing) {
         await ctx.db.patch(existing._id, fields);
+        if (fields.optedIn) {
+          await ensureDefaultAvailability(ctx, existing._id);
+        }
         updated += 1;
       } else {
-        await ctx.db.insert("companies", fields);
+        const companyId = await ctx.db.insert("companies", fields);
+        if (fields.optedIn) {
+          await ensureDefaultAvailability(ctx, companyId);
+        }
         inserted += 1;
       }
     }
@@ -1033,7 +1079,11 @@ export const moveMeeting = mutation({
     const request = await ctx.db.get(meeting.requestId);
     if (!request) throw new Error("Linked request not found.");
     const maxTable = settings.activeTables + settings.reserveTables;
-    if (args.tableNumber < 1 || args.tableNumber > maxTable) {
+    if (
+      !Number.isInteger(args.tableNumber) ||
+      args.tableNumber < 1 ||
+      args.tableNumber > maxTable
+    ) {
       throw new Error("Table is outside configured inventory.");
     }
     assertSlotInDay(settings, args.startMinute);
