@@ -11,10 +11,6 @@ const SETTINGS_KEY = "default";
 const EVENT_DATES = ["2026-06-30", "2026-07-01"];
 const SESSION_TTL_MS = 1000 * 60 * 60 * 24 * 14;
 const MAX_IMPORT_ROWS = 100;
-const DEFAULT_AVAILABILITY_WINDOWS = [
-  { startMinute: 10 * 60 + 40, endMinute: 12 * 60 + 40, note: "Morning block" },
-  { startMinute: 14 * 60, endMinute: 16 * 60, note: "Afternoon block" },
-];
 
 const meetingStatusValidator = v.union(
   v.literal("confirmed"),
@@ -138,39 +134,59 @@ async function hasAvailability(
   startMinute: number,
   slotMinutes: number,
 ) {
-  const windows = await ctx.db
-    .query("availability")
+  const blocks = await ctx.db
+    .query("availabilityBlocks")
     .withIndex("by_companyId_and_date", (q) =>
       q.eq("companyId", companyId).eq("date", date),
     )
-    .take(24);
-  return windows.some(
-    (window) =>
-      startMinute >= window.startMinute &&
-      startMinute + slotMinutes <= window.endMinute,
+    .take(200);
+  return !blocks.some(
+    (block) => startMinute < block.endMinute && startMinute + slotMinutes > block.startMinute,
   );
 }
 
-async function ensureDefaultAvailability(ctx: MutationCtx, companyId: Id<"companies">) {
-  const timestamp = now();
-  for (const date of EVENT_DATES) {
-    const existing = await ctx.db
-      .query("availability")
-      .withIndex("by_companyId_and_date", (q) =>
-        q.eq("companyId", companyId).eq("date", date),
-      )
-      .take(1);
-    if (existing.length > 0) continue;
+async function availabilityBlocksForEvent(
+  ctx: QueryCtx | MutationCtx,
+  visibleCompanyIds?: Set<Id<"companies">>,
+) {
+  const blocksByDate = await Promise.all(
+    EVENT_DATES.map((date) =>
+      ctx.db
+        .query("availabilityBlocks")
+        .withIndex("by_date", (q) => q.eq("date", date))
+        .collect(),
+    ),
+  );
+  const blocks = blocksByDate.flat();
+  return visibleCompanyIds
+    ? blocks.filter((block) => visibleCompanyIds.has(block.companyId))
+    : blocks;
+}
 
-    for (const availabilityWindow of DEFAULT_AVAILABILITY_WINDOWS) {
-      await ctx.db.insert("availability", {
-        companyId,
-        date,
-        ...availabilityWindow,
-        updatedAt: timestamp,
-      });
-    }
-  }
+async function companySlotOccupancyForEvent(
+  ctx: QueryCtx | MutationCtx,
+  visibleCompanyIds: Set<Id<"companies">>,
+) {
+  const meetingsByDate = await Promise.all(
+    EVENT_DATES.map((date) =>
+      ctx.db
+        .query("meetings")
+        .withIndex("by_date", (q) => q.eq("date", date))
+        .collect(),
+    ),
+  );
+  return meetingsByDate
+    .flat()
+    .filter(
+      (meeting) =>
+        meeting.status !== "cancelled" && visibleCompanyIds.has(meeting.companyId),
+    )
+    .map((meeting) => ({
+      companyId: meeting.companyId,
+      date: meeting.date,
+      startMinute: meeting.startMinute,
+      endMinute: meeting.endMinute,
+    }));
 }
 
 async function companyMeetingsForDay(
@@ -313,7 +329,7 @@ async function assertBookableSlot(
     startMinute,
     settings.slotMinutes,
   );
-  if (!available) throw new Error("Selected time is outside company availability.");
+  if (!available) throw new Error("Selected time is blocked by company availability.");
 
   if (
     await hasCompanyMeetingConflict(
@@ -397,6 +413,7 @@ async function clearDemoData(ctx: MutationCtx) {
     "meetings",
     "meetingRequests",
     "deskMatchRequests",
+    "availabilityBlocks",
     "availability",
     "demoSessions",
     "accounts",
@@ -505,19 +522,6 @@ async function insertDemoData(ctx: MutationCtx) {
       active: true,
       updatedAt: timestamp,
     });
-  }
-
-  for (const companyId of Object.values(companyIds)) {
-    for (const date of EVENT_DATES) {
-      for (const availabilityWindow of DEFAULT_AVAILABILITY_WINDOWS) {
-        await ctx.db.insert("availability", {
-          companyId,
-          date,
-          ...availabilityWindow,
-          updatedAt: timestamp,
-        });
-      }
-    }
   }
 
   const acceptedRequestId = await ctx.db.insert("meetingRequests", {
@@ -688,6 +692,8 @@ export const getBootstrap = query({
         : (await ctx.db.query("availability").take(500)).filter((window) =>
             visibleCompanyIds.has(window.companyId),
           );
+    const availabilityBlocks = await availabilityBlocksForEvent(ctx, visibleCompanyIds);
+    const companySlotOccupancy = await companySlotOccupancyForEvent(ctx, visibleCompanyIds);
 
     let requests: Array<Doc<"meetingRequests">> = [];
     let meetings: Array<Doc<"meetings">> = [];
@@ -745,9 +751,11 @@ export const getBootstrap = query({
           title: account.title,
           track: account.track ?? null,
           companyId: account.companyId ?? null,
-        })),
+      })),
       companies,
       availability,
+      availabilityBlocks,
+      companySlotOccupancy,
       requests: requests.map((request) => ({
         ...request,
         company: companiesById.get(request.companyId) ?? null,
@@ -803,25 +811,25 @@ export const getRoomDisplay = query({
       settings.dayEndMinute,
       Math.max(settings.dayStartMinute, args.nowMinute ?? settings.dayStartMinute),
     );
-    const [companies, availability, meetings, pendingRequests] = await Promise.all([
+    const [companies, availabilityBlocks, meetings, pendingRequests] = await Promise.all([
       ctx.db
         .query("companies")
         .withIndex("by_optedIn", (q) => q.eq("optedIn", true))
         .take(200),
       ctx.db
-        .query("availability")
+        .query("availabilityBlocks")
         .withIndex("by_date", (q) => q.eq("date", args.date))
-        .take(500),
+        .collect(),
       ctx.db
         .query("meetings")
         .withIndex("by_date_and_startMinute", (q) => q.eq("date", args.date))
-        .take(500),
+        .collect(),
       ctx.db
         .query("meetingRequests")
         .withIndex("by_date_and_status", (q) =>
           q.eq("date", args.date).eq("status", "pending"),
         )
-        .take(500),
+        .collect(),
     ]);
 
     const activeMeetings = meetings.filter((meeting) => meeting.status !== "cancelled");
@@ -855,18 +863,16 @@ export const getRoomDisplay = query({
       .slice()
       .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name))
       .flatMap((company) => {
-        const companyWindows = availability.filter((window) => window.companyId === company._id);
+        const companyBlocks = availabilityBlocks.filter((block) => block.companyId === company._id);
         const companyMeetings = activeMeetings.filter(
           (meeting) => meeting.companyId === company._id,
         );
         const openSlot = slotStarts.find((slotStart) => {
           if (slotStart < displayNowMinute) return false;
-          const inWindow = companyWindows.some(
-            (window) =>
-              slotStart >= window.startMinute &&
-              slotStart + slotMinutes <= window.endMinute,
+          const blocked = companyBlocks.some(
+            (block) => slotStart < block.endMinute && slotStart + slotMinutes > block.startMinute,
           );
-          if (!inWindow) return false;
+          if (blocked) return false;
           return !companyMeetings.some((meeting) =>
             overlaps(meeting, slotStart, slotMinutes),
           );
@@ -1018,7 +1024,7 @@ export const assignDeskMatch = mutation({
         settings.slotMinutes,
       ))
     ) {
-      throw new Error("Selected time is outside company availability.");
+      throw new Error("Selected time is blocked by company availability.");
     }
     if (
       await hasCompanyMeetingConflict(
@@ -1147,7 +1153,19 @@ export const createRequest = mutation({
         settings.slotMinutes,
       ))
     ) {
-      throw new Error("Preferred time is outside company availability.");
+      throw new Error("Preferred time is blocked by company availability.");
+    }
+    if (
+      args.alternateStartMinute !== undefined &&
+      !(await hasAvailability(
+        ctx,
+        args.companyId,
+        args.date,
+        args.alternateStartMinute,
+        settings.slotMinutes,
+      ))
+    ) {
+      throw new Error("Alternate time is blocked by company availability.");
     }
 
     return await ctx.db.insert("meetingRequests", {
@@ -1320,10 +1338,88 @@ export const setCompanyOptIn = mutation({
     const actor = await requireActor(ctx, args.sessionToken);
     requireAdmin(actor);
     await ctx.db.patch(args.companyId, { optedIn: args.optedIn, updatedAt: now() });
-    if (args.optedIn) {
-      await ensureDefaultAvailability(ctx, args.companyId);
-    }
     return { updated: true };
+  },
+});
+
+export const setCompanySlotBlock = mutation({
+  args: {
+    sessionToken: v.string(),
+    companyId: v.id("companies"),
+    date: v.string(),
+    startMinute: v.number(),
+    blocked: v.boolean(),
+    reason: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const settings = await requireSettings(ctx);
+    const actor = await requireActor(ctx, args.sessionToken);
+    if (!isCompanyOperator(actor, args.companyId)) {
+      throw new Error("Company or admin access required.");
+    }
+    assertValidEventDate(args.date);
+    assertSlotInDay(settings, args.startMinute);
+
+    const company = await ctx.db.get(args.companyId);
+    if (!company) throw new Error("Company not found.");
+    if (!company.optedIn && args.blocked) {
+      throw new Error("Hidden companies do not need slot blocks.");
+    }
+
+    const endMinute = args.startMinute + settings.slotMinutes;
+    const existingBlocks = await ctx.db
+      .query("availabilityBlocks")
+      .withIndex("by_companyId_and_date", (q) =>
+        q.eq("companyId", args.companyId).eq("date", args.date),
+      )
+      .take(200);
+    const exactBlocks = existingBlocks.filter(
+      (block) => block.startMinute === args.startMinute && block.endMinute === endMinute,
+    );
+    const overlappingBlocks = existingBlocks.filter(
+      (block) => args.startMinute < block.endMinute && endMinute > block.startMinute,
+    );
+
+    if (!args.blocked) {
+      for (const block of overlappingBlocks) await ctx.db.delete(block._id);
+      return { blocked: false };
+    }
+
+    if (
+      await hasCompanyMeetingConflict(
+        ctx,
+        args.companyId,
+        args.date,
+        args.startMinute,
+        settings.slotMinutes,
+      )
+    ) {
+      throw new Error("Move or cancel the confirmed meeting before blocking this slot.");
+    }
+
+    const reason = args.reason?.trim() || "Company opted out of this slot.";
+    if (exactBlocks.length > 0) {
+      await ctx.db.patch(exactBlocks[0]._id, {
+        reason,
+        updatedByAccountId: actor._id,
+        updatedAt: now(),
+      });
+      for (const block of exactBlocks.slice(1)) await ctx.db.delete(block._id);
+      return { blocked: true };
+    }
+
+    for (const block of overlappingBlocks) await ctx.db.delete(block._id);
+    await ctx.db.insert("availabilityBlocks", {
+      companyId: args.companyId,
+      date: args.date,
+      startMinute: args.startMinute,
+      endMinute,
+      reason,
+      updatedByAccountId: actor._id,
+      createdAt: now(),
+      updatedAt: now(),
+    });
+    return { blocked: true };
   },
 });
 
@@ -1379,15 +1475,9 @@ export const upsertCompaniesFromRows = mutation({
       };
       if (existing) {
         await ctx.db.patch(existing._id, fields);
-        if (fields.optedIn) {
-          await ensureDefaultAvailability(ctx, existing._id);
-        }
         updated += 1;
       } else {
-        const companyId = await ctx.db.insert("companies", fields);
-        if (fields.optedIn) {
-          await ensureDefaultAvailability(ctx, companyId);
-        }
+        await ctx.db.insert("companies", fields);
         inserted += 1;
       }
     }

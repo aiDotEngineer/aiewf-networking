@@ -41,8 +41,14 @@ import { FormEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState
 
 type Account = Doc<"accounts">;
 type Company = Doc<"companies">;
-type Availability = Doc<"availability">;
+type AvailabilityBlock = Doc<"availabilityBlocks">;
 type Settings = Doc<"eventSettings">;
+type CompanySlotOccupancy = {
+  companyId: Id<"companies">;
+  date: string;
+  startMinute: number;
+  endMinute: number;
+};
 type DemoAccount = {
   _id: Id<"accounts">;
   email: string;
@@ -124,6 +130,12 @@ const dateLabels: Record<string, string> = {
   "2026-07-01": "Wed Jul 1",
 };
 
+function eventDateEntries(settings: Settings) {
+  return [settings.startDate, settings.endDate]
+    .filter((date, index, dates) => dates.indexOf(date) === index)
+    .map((date) => [date, dateLabels[date] ?? date] as const);
+}
+
 const statusStyles: Record<string, string> = {
   pending: "border-yellow-300/30 bg-yellow-300/10 text-yellow-100",
   countered: "border-sky-300/30 bg-sky-300/10 text-sky-100",
@@ -166,18 +178,47 @@ function nextCounterStartMinute(
 function companySlotsForDate(
   companyId: Id<"companies">,
   date: string,
-  availability: Availability[],
+  availabilityBlocks: AvailabilityBlock[],
+  companySlotOccupancy: CompanySlotOccupancy[],
   slotLabels: Array<{ minute: number; label: string }>,
   slotMinutes: number,
 ) {
-  const windows = availability.filter(
-    (window) => window.companyId === companyId && window.date === date,
+  return slotLabels.filter(
+    (slot) =>
+      !isCompanySlotBlocked(companyId, date, slot.minute, availabilityBlocks, slotMinutes) &&
+      !isCompanySlotOccupied(companyId, date, slot.minute, companySlotOccupancy, slotMinutes),
   );
-  return slotLabels.filter((slot) =>
-    windows.some(
-      (window) =>
-        slot.minute >= window.startMinute && slot.minute + slotMinutes <= window.endMinute,
-    ),
+}
+
+function isCompanySlotBlocked(
+  companyId: Id<"companies">,
+  date: string,
+  startMinute: number,
+  availabilityBlocks: AvailabilityBlock[],
+  slotMinutes: number,
+) {
+  return availabilityBlocks.some(
+    (block) =>
+      block.companyId === companyId &&
+      block.date === date &&
+      startMinute < block.endMinute &&
+      startMinute + slotMinutes > block.startMinute,
+  );
+}
+
+function isCompanySlotOccupied(
+  companyId: Id<"companies">,
+  date: string,
+  startMinute: number,
+  companySlotOccupancy: CompanySlotOccupancy[],
+  slotMinutes: number,
+) {
+  return companySlotOccupancy.some(
+    (meeting) =>
+      meeting.companyId === companyId &&
+      meeting.date === date &&
+      startMinute < meeting.endMinute &&
+      startMinute + slotMinutes > meeting.startMinute,
   );
 }
 
@@ -420,6 +461,8 @@ export function NetworkingApp() {
   }
 
   const actor = data?.actor ?? null;
+  const availabilityBlocks = (data?.availabilityBlocks ?? []) as AvailabilityBlock[];
+  const companySlotOccupancy = (data?.companySlotOccupancy ?? []) as CompanySlotOccupancy[];
   const deskRequests = (data?.deskRequests ?? []) as DeskMatchDoc[];
   const effectiveActiveView = isViewAvailable(activeView, actor)
     ? activeView
@@ -534,7 +577,8 @@ export function NetworkingApp() {
               <AttendeeExperience
                 actionPending={actionPending}
                 actor={actor}
-                availability={data.availability}
+                availabilityBlocks={availabilityBlocks}
+                companySlotOccupancy={companySlotOccupancy}
                 companies={data.companies}
                 deskRequests={deskRequests}
                 meetings={data.meetings}
@@ -549,7 +593,8 @@ export function NetworkingApp() {
               <Marketplace
                 actionPending={actionPending}
                 actor={actor}
-                availability={data.availability}
+                availabilityBlocks={availabilityBlocks}
+                companySlotOccupancy={companySlotOccupancy}
                 companies={data.companies}
                 requests={data.requests}
                 runAction={runAction}
@@ -585,10 +630,12 @@ export function NetworkingApp() {
               <CompaniesView
                 actionPending={actionPending}
                 actor={actor}
-                availability={data.availability}
+                availabilityBlocks={availabilityBlocks}
                 companies={data.companies}
                 runAction={runAction}
                 sessionToken={sessionToken}
+                settings={data.settings}
+                slotLabels={data.slotLabels}
               />
             )}
             {actor && effectiveActiveView === "desk" && (
@@ -817,7 +864,8 @@ function MetricStrip({
 function AttendeeExperience({
   actionPending,
   actor,
-  availability,
+  availabilityBlocks,
+  companySlotOccupancy,
   companies,
   deskRequests,
   meetings,
@@ -829,7 +877,8 @@ function AttendeeExperience({
 }: {
   actionPending: boolean;
   actor: Account;
-  availability: Availability[];
+  availabilityBlocks: AvailabilityBlock[];
+  companySlotOccupancy: CompanySlotOccupancy[];
   companies: Company[];
   deskRequests: DeskMatchDoc[];
   meetings: MeetingDoc[];
@@ -900,7 +949,8 @@ function AttendeeExperience({
       const slots = companySlotsForDate(
         company._id,
         date,
-        availability,
+        availabilityBlocks,
+        companySlotOccupancy,
         slotLabels,
         settings.slotMinutes,
       );
@@ -1606,7 +1656,8 @@ function DisplayStat({ label, value }: { label: string; value: ReactNode }) {
 function Marketplace({
   actionPending,
   actor,
-  availability,
+  availabilityBlocks,
+  companySlotOccupancy,
   companies,
   requests,
   runAction,
@@ -1616,7 +1667,8 @@ function Marketplace({
 }: {
   actionPending: boolean;
   actor: Account;
-  availability: Availability[];
+  availabilityBlocks: AvailabilityBlock[];
+  companySlotOccupancy: CompanySlotOccupancy[];
   companies: Company[];
   requests: RequestDoc[];
   runAction: RunAction;
@@ -1625,13 +1677,22 @@ function Marketplace({
   slotLabels: Array<{ minute: number; label: string }>;
 }) {
   const createRequest = useMutation(api.networking.createRequest);
-  const eligibleCompanies = companies
-    .filter((company) => company.optedIn)
-    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
-  const [selectedCompanyId, setSelectedCompanyId] = useState<Id<"companies"> | "">(
-    eligibleCompanies[0]?._id ?? "",
-  );
   const [date, setDate] = useState("2026-06-30");
+  const eligibleCompanies = companies
+    .filter(
+      (company) =>
+        company.optedIn &&
+        companySlotsForDate(
+          company._id,
+          date,
+          availabilityBlocks,
+          companySlotOccupancy,
+          slotLabels,
+          settings.slotMinutes,
+        ).length > 0,
+    )
+    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
+  const [selectedCompanyId, setSelectedCompanyId] = useState<Id<"companies"> | "">("");
   const [preferredStartMinute, setPreferredStartMinute] = useState(10 * 60 + 40);
   const [alternateStartMinute, setAlternateStartMinute] = useState<number | "">("");
   const [reason, setReason] = useState("");
@@ -1646,12 +1707,15 @@ function Marketplace({
   ).length;
   const atRequestCap = dailyCount >= settings.attendeeRequestCapPerDay;
   const availableSlots = selectedCompany
-    ? slotLabels.filter((slot) =>
-        availability
-          .filter((window) => window.companyId === selectedCompany._id && window.date === date)
-          .some((window) => slot.minute >= window.startMinute && slot.minute < window.endMinute),
+    ? companySlotsForDate(
+        selectedCompany._id,
+        date,
+        availabilityBlocks,
+        companySlotOccupancy,
+        slotLabels,
+        settings.slotMinutes,
       )
-    : slotLabels;
+    : [];
   const hasAvailability = availableSlots.length > 0;
   const effectivePreferredStartMinute = availableSlots.some(
     (slot) => slot.minute === preferredStartMinute,
@@ -1701,7 +1765,7 @@ function Marketplace({
       <section className="border border-white/10 bg-[#101010]">
         <SectionHeader icon={<Sparkles size={17} />} title="Opted-in companies" detail={`${eligibleCompanies.length} available`} />
         <div className="divide-y divide-white/10">
-          {eligibleCompanies.length === 0 && <EmptyState title="No companies are open" detail="Ask an admin to opt companies into the networking room before attendees request meetings." />}
+          {eligibleCompanies.length === 0 && <EmptyState title="No companies are open" detail={`No opted-in companies have open slots for ${dateLabels[date]}.`} />}
           {eligibleCompanies.map((company) => (
             <button
               key={company._id}
@@ -1769,7 +1833,7 @@ function Marketplace({
             <MessageSquare size={16} /> Request meeting
           </button>
           {actor.role !== "attendee" && <p className="text-xs leading-5 text-white/45">Switch to an attendee account to submit requests.</p>}
-          {actor.role === "attendee" && !hasAvailability && <p className="text-xs leading-5 text-white/45">This company has not opened availability for the selected date.</p>}
+          {actor.role === "attendee" && !hasAvailability && <p className="text-xs leading-5 text-white/45">All slots are blocked for this company on the selected date.</p>}
           {actor.role === "attendee" && atRequestCap && <p className="text-xs leading-5 text-white/45">Daily request cap reached for this date.</p>}
         </div>
       </form>
@@ -1964,50 +2028,178 @@ function ScheduleView({
 function CompaniesView({
   actionPending,
   actor,
-  availability,
+  availabilityBlocks,
   companies,
   runAction,
   sessionToken,
+  settings,
+  slotLabels,
 }: {
   actionPending: boolean;
   actor: Account;
-  availability: Availability[];
+  availabilityBlocks: AvailabilityBlock[];
   companies: Company[];
   runAction: RunAction;
   sessionToken: string;
+  settings: Settings;
+  slotLabels: Array<{ minute: number; label: string }>;
 }) {
   const setCompanyOptIn = useMutation(api.networking.setCompanyOptIn);
+  const sortedCompanies = companies
+    .slice()
+    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
+  const totalEventSlots = slotLabels.length * eventDateEntries(settings).length;
   return (
     <section className="border border-white/10 bg-[#101010]">
       <SectionHeader icon={<Building2 size={17} />} title="Company inventory" detail={`${companies.length} companies`} />
       <div className="divide-y divide-white/10">
         {companies.length === 0 && <EmptyState title="No companies loaded" detail="Import or seed company data before opening attendee requests." />}
-        {companies.slice().sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name)).map((company) => (
-          <div key={company._id} className="grid gap-4 p-4 lg:grid-cols-[minmax(0,1fr)_220px]">
-            <div>
-              <div className="flex flex-wrap items-center gap-2">
-                <h3 className="text-lg font-semibold">{company.name}</h3>
-                <StatusBadge status={company.optedIn ? "opted in" : "hidden"} />
-                <span className="text-xs text-white/45">{company.tier}</span>
+        {sortedCompanies.map((company) => {
+          const companyBlocks = availabilityBlocks.filter((block) => block.companyId === company._id);
+          const availabilitySummary = !company.optedIn
+            ? "Hidden from attendee booking"
+            : companyBlocks.length >= totalEventSlots
+              ? "All slots blocked"
+              : "Available by default";
+          const canManageSlots =
+            actor.role === "admin" || (actor.role === "company" && actor.companyId === company._id);
+          return (
+            <div key={company._id} className="grid gap-4 p-4 xl:grid-cols-[minmax(0,1fr)_220px]">
+              <div className="min-w-0">
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-lg font-semibold">{company.name}</h3>
+                  <StatusBadge status={company.optedIn ? "opted in" : "hidden"} />
+                  <span className="text-xs text-white/45">{company.tier}</span>
+                </div>
+                <p className="mt-2 text-sm leading-6 text-white/60">{company.description}</p>
+                <TagRow items={[...company.topics, ...company.wantsToMeet].slice(0, 8)} />
+                <div className="mt-3 flex flex-wrap gap-3 text-xs text-white/45">
+                  <span className="flex items-center gap-1"><Mail size={13} />{company.contactEmail}</span>
+                  <span className="flex items-center gap-1"><Clock3 size={13} />{availabilitySummary}</span>
+                  <span className="flex items-center gap-1"><CalendarDays size={13} />{companyBlocks.length} blocked slots</span>
+                </div>
+                {canManageSlots && (
+                  <CompanyAvailabilityControls
+                    actionPending={actionPending}
+                    availabilityBlocks={availabilityBlocks}
+                    company={company}
+                    runAction={runAction}
+                    sessionToken={sessionToken}
+                    settings={settings}
+                    slotLabels={slotLabels}
+                  />
+                )}
               </div>
-              <p className="mt-2 text-sm leading-6 text-white/60">{company.description}</p>
-              <TagRow items={[...company.topics, ...company.wantsToMeet].slice(0, 8)} />
-              <div className="mt-3 flex flex-wrap gap-3 text-xs text-white/45">
-                <span className="flex items-center gap-1"><Mail size={13} />{company.contactEmail}</span>
-                <span className="flex items-center gap-1"><Clock3 size={13} />{availability.filter((window) => window.companyId === company._id).length} windows</span>
-              </div>
+              {actor.role === "admin" && (
+                <div className="flex items-center gap-2 lg:justify-end">
+                  <button className={company.optedIn ? "button-quiet" : "button-primary"} disabled={actionPending} onClick={() => void runAction(() => setCompanyOptIn({ sessionToken, companyId: company._id, optedIn: !company.optedIn }), company.optedIn ? "Company hidden." : "Company opted in.")}>
+                    {company.optedIn ? <X size={15} /> : <Check size={15} />}{company.optedIn ? "Hide" : "Opt in"}
+                  </button>
+                </div>
+              )}
             </div>
-            {actor.role === "admin" && (
-              <div className="flex items-center gap-2 lg:justify-end">
-                <button className={company.optedIn ? "button-quiet" : "button-primary"} disabled={actionPending} onClick={() => void runAction(() => setCompanyOptIn({ sessionToken, companyId: company._id, optedIn: !company.optedIn }), company.optedIn ? "Company hidden." : "Company opted in.")}>
-                  {company.optedIn ? <X size={15} /> : <Check size={15} />}{company.optedIn ? "Hide" : "Opt in"}
-                </button>
-              </div>
-            )}
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
+  );
+}
+
+function CompanyAvailabilityControls({
+  actionPending,
+  availabilityBlocks,
+  company,
+  runAction,
+  sessionToken,
+  settings,
+  slotLabels,
+}: {
+  actionPending: boolean;
+  availabilityBlocks: AvailabilityBlock[];
+  company: Company;
+  runAction: RunAction;
+  sessionToken: string;
+  settings: Settings;
+  slotLabels: Array<{ minute: number; label: string }>;
+}) {
+  const setCompanySlotBlock = useMutation(api.networking.setCompanySlotBlock);
+  const eventDates = eventDateEntries(settings);
+  const companyBlocks = availabilityBlocks.filter((block) => block.companyId === company._id);
+
+  return (
+    <div className="mt-4 border border-white/10 bg-black/25 p-3">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">
+          Slot opt-outs
+        </div>
+        <div className="font-mono text-xs text-[#f8e18e]">
+          {companyBlocks.length} blocked / {slotLabels.length * eventDates.length} total
+        </div>
+      </div>
+      {!company.optedIn ? (
+        <p className="mt-3 text-sm leading-6 text-white/50">
+          Hidden companies are outside attendee booking.
+        </p>
+      ) : (
+        <div className="mt-3 grid gap-4">
+          {eventDates.map(([date, label]) => {
+            const dayBlocks = companyBlocks.filter((block) => block.date === date);
+            return (
+              <div key={date} className="grid gap-2">
+                <div className="flex items-center justify-between gap-3 text-xs">
+                  <span className="font-semibold text-white/70">{label}</span>
+                  <span className="text-white/45">{dayBlocks.length} blocked</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 md:grid-cols-5 2xl:grid-cols-8">
+                  {slotLabels.map((slot) => {
+                    const blocked = isCompanySlotBlocked(
+                      company._id,
+                      date,
+                      slot.minute,
+                      availabilityBlocks,
+                      settings.slotMinutes,
+                    );
+                    return (
+                      <button
+                        key={`${date}:${slot.minute}`}
+                        type="button"
+                        aria-label={`${blocked ? "Restore" : "Block"} ${company.name} on ${label} at ${slot.label}`}
+                        aria-pressed={blocked}
+                        className={cn(
+                          "flex h-12 min-w-0 flex-col items-center justify-center border px-2 text-xs font-semibold leading-tight transition",
+                          blocked
+                            ? "border-red-300/35 bg-red-300/10 text-red-100 hover:border-red-200"
+                            : "border-emerald-300/20 bg-emerald-300/5 text-emerald-100 hover:border-emerald-200/60",
+                        )}
+                        disabled={actionPending}
+                        onClick={() =>
+                          void runAction(
+                            () =>
+                              setCompanySlotBlock({
+                                sessionToken,
+                                companyId: company._id,
+                                date,
+                                startMinute: slot.minute,
+                                blocked: !blocked,
+                              }),
+                            blocked ? "Slot restored." : "Slot blocked.",
+                          )
+                        }
+                      >
+                        <span>{slot.label}</span>
+                        <span className="mt-0.5 text-[10px] font-medium opacity-70">
+                          {blocked ? "Blocked" : "Open"}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 }
 

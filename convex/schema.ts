@@ -108,6 +108,19 @@ export default defineSchema({
     .index("by_companyId_and_date", ["companyId", "date"])
     .index("by_date", ["date"]),
 
+  availabilityBlocks: defineTable({
+    companyId: v.id("companies"),
+    date: v.string(),
+    startMinute: v.number(),
+    endMinute: v.number(),
+    reason: v.string(),
+    updatedByAccountId: v.optional(v.id("accounts")),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_companyId_and_date", ["companyId", "date"])
+    .index("by_date", ["date"]),
+
   meetingRequests: defineTable({
     attendeeAccountId: v.id("accounts"),
     companyId: v.id("companies"),
