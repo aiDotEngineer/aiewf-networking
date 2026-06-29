@@ -2,10 +2,8 @@
 
 import { api } from "../../convex/_generated/api";
 import type { Doc, Id } from "../../convex/_generated/dataModel";
-import { useMutation, useQuery } from "convex/react";
+import { useAction, useMutation, useQuery } from "convex/react";
 import {
-  ArrowRight,
-  Building2,
   CalendarDays,
   Check,
   ChevronRight,
@@ -13,65 +11,81 @@ import {
   Database,
   Download,
   Gauge,
-  Handshake,
-  LayoutDashboard,
+  Import,
   ListChecks,
   Loader2,
   LockKeyhole,
-  Mail,
   Menu,
   Monitor,
-  MapPin,
-  MessageSquare,
   QrCode,
   RotateCcw,
   Search,
   Send,
   Settings2,
-  ShieldCheck,
   SlidersHorizontal,
-  Sparkles,
   Table2,
-  Upload,
+  UserCheck,
   Users,
   X,
 } from "lucide-react";
 import QRCode from "qrcode";
-import { FormEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, ReactNode, useCallback, useEffect, useRef, useState } from "react";
 
-type Account = Doc<"accounts">;
-type Company = Doc<"companies">;
-type AvailabilityBlock = Doc<"availabilityBlocks">;
-type Settings = Doc<"eventSettings">;
-type CompanySlotOccupancy = {
-  companyId: Id<"companies">;
-  date: string;
-  startMinute: number;
-  endMinute: number;
-};
-type DemoAccount = {
+type Account = {
   _id: Id<"accounts">;
   email: string;
   displayName: string;
-  role: Account["role"];
+  firstName: string;
+  lastName: string;
+  role: "admin" | "participant";
   title: string;
-  track: string | null;
-  companyId: Id<"companies"> | null;
+  company: string;
+  ticketType: string;
+  ticketCategory: "leadership" | "speaker" | "sponsor" | "other";
+  registrationStatus: string;
+  profileImageUrl: string;
+  city: string;
+  country: string;
+  companySize: string;
+  networkingIntent: string;
+  topics: string[];
+  signedUp: boolean;
+  directoryOptIn: boolean;
+  profileComplete: boolean;
+  active: boolean;
 };
-type RequestDoc = Doc<"meetingRequests"> & {
-  company: Company | null;
-  attendee: Account | null;
-  meeting: Doc<"meetings"> | null;
+type DemoAccount = Pick<Account, "_id" | "email" | "displayName" | "role" | "title" | "company" | "signedUp" | "directoryOptIn">;
+type Settings = Doc<"eventSettings">;
+type AvailabilitySlot = Doc<"participantAvailability"> & {
+  participantCount?: number;
+  groupOpen?: boolean;
 };
-type MeetingDoc = Doc<"meetings"> & {
-  company: Company | null;
-  attendee: Account | null;
-  request: Doc<"meetingRequests"> | null;
+type MeetingParticipant = Doc<"meetingParticipants"> & { account: Account | null };
+type Meeting = Doc<"meetings"> & {
+  host: Account | null;
+  participants: MeetingParticipant[];
 };
-type DeskMatchDoc = Doc<"deskMatchRequests"> & {
-  attendee: Account | null;
-  suggestedCompany: Company | null;
-  meetingRequest: Doc<"meetingRequests"> | null;
+type MeetingRequest = Doc<"meetingRequests"> & {
+  requester: Account | null;
+  target: Account | null;
+  meeting: Meeting | null;
+};
+type ImportBatch = Doc<"importBatches">;
+type Bootstrap = {
+  settings: Settings;
+  actor: Account;
+  accounts: Array<Account | null>;
+  participants: Array<Account | null>;
+  myAvailability: AvailabilitySlot[];
+  allAvailability: AvailabilitySlot[];
+  requests: MeetingRequest[];
+  meetings: Meeting[];
+  importBatches: ImportBatch[];
+  slotLabels: Array<{ minute: number; label: string }>;
+};
+type PublicConfig = {
+  settings: Settings | null;
+  demoLoginEnabled: boolean;
 };
 type RoomDisplayData = {
   settings: {
@@ -79,6 +93,7 @@ type RoomDisplayData = {
     roomName: string;
     activeTables: number;
     slotMinutes: number;
+    maxMeetingGroupSize: number;
   };
   date: string;
   nowMinute: number;
@@ -86,8 +101,8 @@ type RoomDisplayData = {
   counts: {
     live: number;
     upcoming: number;
-    openCompanies: number;
     pendingRequests: number;
+    openTables: number;
   };
   nextMeetings: Array<{
     meetingId: Id<"meetings">;
@@ -96,45 +111,19 @@ type RoomDisplayData = {
     endMinute: number;
     label: string;
     status: string;
-    companyName: string;
-    attendeeName: string;
-    attendeeTitle: string;
-  }>;
-  opportunities: Array<{
-    companyId: Id<"companies">;
-    companyName: string;
-    tier: string;
-    hostNames: string[];
-    topics: string[];
-    startMinute: number;
-    label: string;
-    pendingRequests: number;
+    participantCount: number;
+    participants: Array<Account | null>;
   }>;
 };
-type CompanyCsvRow = {
-  name: string;
-  tier?: string;
-  contactEmail?: string;
-  hostNames?: string;
-  topics?: string;
-  wantsToMeet?: string;
-  sponsor?: boolean;
-  optedIn?: boolean;
-  description?: string;
-};
-type View = "attendee" | "display" | "marketplace" | "requests" | "schedule" | "companies" | "desk" | "admin";
+type View = "directory" | "profile" | "requests" | "schedule" | "admin" | "display";
 type RunAction = (task: () => Promise<unknown>, success: string) => Promise<boolean>;
+
+const sessionStorageKey = "aiewf-networking-session";
 
 const dateLabels: Record<string, string> = {
   "2026-06-30": "Tue Jun 30",
   "2026-07-01": "Wed Jul 1",
 };
-
-function eventDateEntries(settings: Settings) {
-  return [settings.startDate, settings.endDate]
-    .filter((date, index, dates) => dates.indexOf(date) === index)
-    .map((date) => [date, dateLabels[date] ?? date] as const);
-}
 
 const statusStyles: Record<string, string> = {
   pending: "border-yellow-300/30 bg-yellow-300/10 text-yellow-100",
@@ -145,12 +134,41 @@ const statusStyles: Record<string, string> = {
   declined: "border-white/10 bg-white/5 text-white/55",
   cancelled: "border-red-300/30 bg-red-300/10 text-red-100",
   no_show: "border-red-300/30 bg-red-300/10 text-red-100",
-  requested: "border-[#f8e18e]/35 bg-[#f8e18e]/10 text-[#f8e18e]",
-  matched: "border-sky-300/30 bg-sky-300/10 text-sky-100",
-  closed: "border-white/10 bg-white/5 text-white/55",
-  "opted in": "border-emerald-300/30 bg-emerald-300/10 text-emerald-100",
+  speaker: "border-sky-300/30 bg-sky-300/10 text-sky-100",
+  leadership: "border-[#f8e18e]/35 bg-[#f8e18e]/10 text-[#f8e18e]",
+  sponsor: "border-violet-300/30 bg-violet-300/10 text-violet-100",
+  other: "border-white/10 bg-white/5 text-white/55",
+  opted_in: "border-emerald-300/30 bg-emerald-300/10 text-emerald-100",
   hidden: "border-white/10 bg-white/5 text-white/55",
 };
+
+const participantCsvHeaders = new Set([
+  "Profile Picture",
+  "First Name",
+  "Last Name",
+  "Email",
+  "Registration Status",
+  "Ticket Type",
+  "Company",
+  "Title",
+  "Holder Text Block 2",
+  "Holder Company Size",
+  "Holder Job Title",
+  "Holder State",
+  "Holder Company Name",
+  "Holder Country",
+  "Holder City",
+  "Buyer Email",
+  "Holder Email",
+  "Buyer Last Name",
+  "Holder Last Name",
+  "Buyer First Name",
+  "Holder First Name",
+  "UTM Referrer",
+  "UTM Campaign",
+  "UTM Medium",
+  "UTM Source",
+]);
 
 function cn(...parts: Array<string | false | null | undefined>) {
   return parts.filter(Boolean).join(" ");
@@ -164,66 +182,10 @@ function minuteLabel(minute: number) {
   return `${hour12}:${mins.toString().padStart(2, "0")} ${suffix}`;
 }
 
-function canHostRespond(status: RequestDoc["status"]) {
-  return status === "pending" || status === "countered";
-}
-
-function nextCounterStartMinute(
-  slotLabels: Array<{ minute: number; label: string }>,
-  preferredStartMinute: number,
-) {
-  return slotLabels.find((slot) => slot.minute > preferredStartMinute)?.minute;
-}
-
-function companySlotsForDate(
-  companyId: Id<"companies">,
-  date: string,
-  availabilityBlocks: AvailabilityBlock[],
-  companySlotOccupancy: CompanySlotOccupancy[],
-  slotLabels: Array<{ minute: number; label: string }>,
-  slotMinutes: number,
-) {
-  return slotLabels.filter(
-    (slot) =>
-      !isCompanySlotBlocked(companyId, date, slot.minute, availabilityBlocks, slotMinutes) &&
-      !isCompanySlotOccupied(companyId, date, slot.minute, companySlotOccupancy, slotMinutes),
-  );
-}
-
-function isCompanySlotBlocked(
-  companyId: Id<"companies">,
-  date: string,
-  startMinute: number,
-  availabilityBlocks: AvailabilityBlock[],
-  slotMinutes: number,
-) {
-  return availabilityBlocks.some(
-    (block) =>
-      block.companyId === companyId &&
-      block.date === date &&
-      startMinute < block.endMinute &&
-      startMinute + slotMinutes > block.startMinute,
-  );
-}
-
-function isCompanySlotOccupied(
-  companyId: Id<"companies">,
-  date: string,
-  startMinute: number,
-  companySlotOccupancy: CompanySlotOccupancy[],
-  slotMinutes: number,
-) {
-  return companySlotOccupancy.some(
-    (meeting) =>
-      meeting.companyId === companyId &&
-      meeting.date === date &&
-      startMinute < meeting.endMinute &&
-      startMinute + slotMinutes > meeting.startMinute,
-  );
-}
-
-function isOpenRequestStatus(status: RequestDoc["status"]) {
-  return status !== "cancelled" && status !== "declined";
+function eventDateEntries(settings: Settings) {
+  return [settings.startDate, settings.endDate]
+    .filter((date, index, dates) => dates.indexOf(date) === index)
+    .map((date) => [date, dateLabels[date] ?? date] as const);
 }
 
 function userFacingError(error: unknown) {
@@ -233,17 +195,8 @@ function userFacingError(error: unknown) {
   return (convexMessage?.[1] ?? raw).trim();
 }
 
-function isViewAvailable(view: View, actor: Account | null) {
-  if (!actor) return false;
-  if (view === "admin") return actor.role === "admin";
-  if (view === "desk") return actor.role === "admin";
-  if (view === "marketplace") return actor.role !== "company";
-  if (view === "attendee") return actor.role !== "company";
-  return true;
-}
-
-function fallbackView(actor: Account | null): View {
-  return actor?.role === "company" ? "requests" : "attendee";
+function activeOutgoingStatus(status: MeetingRequest["status"]) {
+  return status === "pending" || status === "countered" || status === "accepted";
 }
 
 function csvDownload(filename: string, rows: string[][]) {
@@ -274,7 +227,6 @@ function parseCsvTable(text: string) {
   for (let index = 0; index < text.length; index += 1) {
     const char = text[index];
     const next = text[index + 1];
-
     if (char === '"') {
       if (quoted && next === '"') {
         value += '"';
@@ -284,13 +236,11 @@ function parseCsvTable(text: string) {
       }
       continue;
     }
-
     if (char === "," && !quoted) {
       row.push(value.trim());
       value = "";
       continue;
     }
-
     if ((char === "\n" || char === "\r") && !quoted) {
       if (char === "\r" && next === "\n") index += 1;
       row.push(value.trim());
@@ -299,133 +249,111 @@ function parseCsvTable(text: string) {
       value = "";
       continue;
     }
-
     value += char;
   }
-
   row.push(value.trim());
   if (row.some(Boolean)) rows.push(row);
   return rows;
 }
 
-const companyCsvHeaders = new Set([
-  "name",
-  "tier",
-  "contactEmail",
-  "hostNames",
-  "topics",
-  "wantsToMeet",
-  "sponsor",
-  "optedIn",
-  "description",
-]);
-
-function parseCompanyCsvBoolean(value: string) {
-  return ["true", "yes", "1", "y"].includes(value.trim().toLowerCase());
+function parseParticipantCsv(text: string): { rows: Array<Record<string, string>>; error: string | null } {
+  const table = parseCsvTable(text);
+  if (table.length < 2) return { rows: [], error: "CSV needs a header row and at least one participant row." };
+  const headers = table[0].map((header) => header.trim());
+  const missingRequired = ["Email", "Holder Email", "Ticket Type"].every((header) => !headers.includes(header));
+  if (missingRequired) return { rows: [], error: "CSV must include Email or Holder Email plus ticket data." };
+  const unknownHeader = headers.find((header) => header && !participantCsvHeaders.has(header));
+  if (unknownHeader) return { rows: [], error: `Unknown CSV column: ${unknownHeader}.` };
+  return {
+    rows: table.slice(1).map((values) =>
+      Object.fromEntries(headers.map((header, index) => [header, values[index] ?? ""])),
+    ),
+    error: null,
+  };
 }
 
-function parseCompanyCsv(text: string): { rows: CompanyCsvRow[]; error: string | null } {
-  const table = parseCsvTable(text);
-  if (table.length < 2) {
-    return { rows: [], error: "CSV needs a header row and at least one company row." };
-  }
-  const headers = table[0].map((item) => item.trim());
-  if (!headers.includes("name")) {
-    return { rows: [], error: "CSV must include a name column." };
-  }
-  const unknownHeader = headers.find((header) => header && !companyCsvHeaders.has(header));
-  if (unknownHeader) {
-    return { rows: [], error: `Unknown CSV column: ${unknownHeader}.` };
-  }
-
-  const rows = table.slice(1).map((values) => {
-    const row: CompanyCsvRow = { name: "" };
-    headers.forEach((header, index) => {
-      const value = values[index] ?? "";
-      switch (header) {
-        case "name":
-          row.name = value;
-          break;
-        case "tier":
-          row.tier = value;
-          break;
-        case "contactEmail":
-          row.contactEmail = value;
-          break;
-        case "hostNames":
-          row.hostNames = value;
-          break;
-        case "topics":
-          row.topics = value;
-          break;
-        case "wantsToMeet":
-          row.wantsToMeet = value;
-          break;
-        case "sponsor":
-          row.sponsor = parseCompanyCsvBoolean(value);
-          break;
-        case "optedIn":
-          row.optedIn = parseCompanyCsvBoolean(value);
-          break;
-        case "description":
-          row.description = value;
-          break;
-      }
-    });
-    return row;
-  });
-  if (rows.some((row) => !row.name.trim())) {
-    return { rows: [], error: "Every CSV row needs a company name." };
-  }
-  return { rows, error: null };
+function visibleAccounts(accounts: Array<Account | null> | undefined) {
+  return (accounts ?? []).filter((account): account is Account => Boolean(account));
 }
 
 export function NetworkingApp() {
-  const accounts = useQuery(api.networking.listDemoAccounts, {});
+  const publicConfig = useQuery(api.networking.getPublicConfig, {}) as PublicConfig | undefined;
+  const demoLoginEnabled = publicConfig?.demoLoginEnabled ?? false;
+  const accounts = useQuery(api.networking.listDemoAccounts, demoLoginEnabled ? {} : "skip") as DemoAccount[] | undefined;
   const ensureDemoData = useMutation(api.networking.ensureDemoData);
   const startDemoSession = useMutation(api.networking.startDemoSession);
+  const logoutSession = useMutation(api.networking.logout);
+  const requestMagicLink = useAction(api.networking.requestMagicLink);
+  const verifyMagicLink = useAction(api.networking.verifyMagicLink);
   const seedStartedRef = useRef(false);
-  const sessionStartedRef = useRef(false);
   const sessionRequestRef = useRef(0);
-  const [sessionToken, setSessionToken] = useState<string | null>(null);
+  const tokenVerificationStartedRef = useRef(false);
+  const actionLockRef = useRef(false);
+  const [initialAuthToken] = useState(() => {
+    if (typeof window === "undefined") return null;
+    return new URL(window.location.href).searchParams.get("authToken");
+  });
+  const [sessionToken, setSessionTokenState] = useState<string | null>(() => {
+    if (typeof window === "undefined") return null;
+    return window.localStorage.getItem(sessionStorageKey);
+  });
   const [actorEmail, setActorEmail] = useState("priya@leadership.test");
   const data = useQuery(
     api.networking.getBootstrap,
     sessionToken ? { sessionToken } : "skip",
-  );
+  ) as Bootstrap | null | undefined;
   const [activeView, setActiveView] = useState<View>(() => {
-    if (typeof window === "undefined") return "attendee";
-    const surface = new URLSearchParams(window.location.search).get("surface");
-    if (surface === "display") return "display";
-    return "attendee";
+    if (typeof window === "undefined") return "directory";
+    return new URLSearchParams(window.location.search).get("surface") === "display"
+      ? "display"
+      : "directory";
   });
-  const displayDate = data?.settings?.startDate ?? "2026-06-30";
-  const displayNowMinute = data?.settings
-    ? data.settings.dayStartMinute + Math.max(0, data.settings.slotMinutes - 7)
-    : undefined;
-  const roomDisplay = useQuery(
-    api.networking.getRoomDisplay,
-    data?.settings && activeView === "display"
-      ? {
-          date: displayDate,
-          nowMinute: displayNowMinute,
-        }
-      : "skip",
-  );
-  const [selectedRequestId, setSelectedRequestId] = useState<Id<"meetingRequests"> | null>(null);
-  const [notice, setNotice] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(() => initialAuthToken ? "Verifying login link..." : null);
   const [actionPending, setActionPending] = useState(false);
-  const [sessionPending, setSessionPending] = useState(false);
-  const actionLockRef = useRef(false);
+  const [sessionPending, setSessionPending] = useState(Boolean(initialAuthToken));
+
+  const setSessionToken = useCallback((token: string | null) => {
+    setSessionTokenState(token);
+    if (typeof window === "undefined") return;
+    if (token) window.localStorage.setItem(sessionStorageKey, token);
+    else window.localStorage.removeItem(sessionStorageKey);
+  }, []);
 
   useEffect(() => {
-    if (accounts && accounts.length === 0 && !seedStartedRef.current) {
-      seedStartedRef.current = true;
-      void ensureDemoData({}).catch((error) => setNotice(error.message));
+    if (!demoLoginEnabled || accounts === undefined || accounts.length > 0 || seedStartedRef.current) return;
+    seedStartedRef.current = true;
+    void ensureDemoData({}).catch((error) => setNotice(userFacingError(error)));
+  }, [accounts, demoLoginEnabled, ensureDemoData]);
+
+  useEffect(() => {
+    if (!initialAuthToken || typeof window === "undefined" || tokenVerificationStartedRef.current) return;
+    const url = new URL(window.location.href);
+    tokenVerificationStartedRef.current = true;
+    void verifyMagicLink({ token: initialAuthToken })
+      .then((result) => {
+        setSessionToken(result.token);
+        url.searchParams.delete("authToken");
+        window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+        setNotice("Signed in.");
+      })
+      .catch((error) => {
+        setSessionToken(null);
+        setNotice(userFacingError(error));
+      })
+      .finally(() => setSessionPending(false));
+  }, [initialAuthToken, setSessionToken, verifyMagicLink]);
+
+  useEffect(() => {
+    if (sessionToken && data === null) {
+      queueMicrotask(() => {
+        setSessionToken(null);
+        setNotice("Session expired. Send yourself a new login link.");
+      });
     }
-  }, [accounts, ensureDemoData]);
+  }, [data, sessionToken, setSessionToken]);
 
   const startSession = useCallback((email: string) => {
+    if (!demoLoginEnabled) return;
     const requestId = sessionRequestRef.current + 1;
     sessionRequestRef.current = requestId;
     setActorEmail(email);
@@ -444,50 +372,35 @@ export function NetworkingApp() {
       .finally(() => {
         if (sessionRequestRef.current === requestId) setSessionPending(false);
       });
-  }, [startDemoSession]);
+  }, [demoLoginEnabled, setSessionToken, startDemoSession]);
 
-  useEffect(() => {
-    if (!accounts?.length || sessionStartedRef.current) return;
-    sessionStartedRef.current = true;
-    const initialEmail =
-      accounts.find((account) => account.role === "attendee")?.email ??
-      accounts.find((account) => account.role === "admin")?.email ??
-      accounts[0].email;
-    startSession(initialEmail);
-  }, [accounts, startSession]);
+  const requestLoginLink = useCallback((email: string) => {
+    setSessionPending(true);
+    setNotice(null);
+    void requestMagicLink({ email, redirectPath: "/?surface=directory" })
+      .then(() => setNotice("Check your email for a login link."))
+      .catch((error) => setNotice(userFacingError(error)))
+      .finally(() => setSessionPending(false));
+  }, [requestMagicLink]);
 
-  function changeAccount(email: string) {
-    startSession(email);
-  }
+  const signOut = useCallback(() => {
+    const token = sessionToken;
+    setSessionToken(null);
+    setNotice("Signed out.");
+    if (token) void logoutSession({ sessionToken: token }).catch(() => null);
+  }, [logoutSession, sessionToken, setSessionToken]);
 
-  const actor = data?.actor ?? null;
-  const availabilityBlocks = (data?.availabilityBlocks ?? []) as AvailabilityBlock[];
-  const companySlotOccupancy = (data?.companySlotOccupancy ?? []) as CompanySlotOccupancy[];
-  const deskRequests = (data?.deskRequests ?? []) as DeskMatchDoc[];
-  const effectiveActiveView = isViewAvailable(activeView, actor)
-    ? activeView
-    : fallbackView(actor);
-  const wideView = effectiveActiveView === "attendee" || effectiveActiveView === "desk";
-  const selectedRequest =
-    data?.requests.find((request) => request._id === selectedRequestId) ??
-    data?.requests.find((request) => request.status === "pending") ??
-    data?.requests[0] ??
-    null;
-
-  const stats = useMemo(() => {
-    if (!data?.settings) {
-      return { confirmed: 0, pending: 0, capacity: 0, optedIn: 0 };
-    }
-    const slotsPerDay = Math.floor(
-      (data.settings.dayEndMinute - data.settings.dayStartMinute) / data.settings.slotMinutes,
-    );
-    return {
-      confirmed: data.meetings.filter((meeting) => meeting.status !== "cancelled").length,
-      pending: data.requests.filter((request) => request.status === "pending").length,
-      capacity: data.settings.activeTables * slotsPerDay * 2,
-      optedIn: data.companies.filter((company) => company.optedIn).length,
-    };
-  }, [data]);
+  const settings = data?.settings ?? publicConfig?.settings ?? null;
+  const displayDate = settings?.startDate ?? "2026-06-30";
+  const displayNowMinute = settings
+    ? settings.dayStartMinute + Math.max(0, settings.slotMinutes)
+    : undefined;
+  const roomDisplay = useQuery(
+    api.networking.getRoomDisplay,
+    settings && activeView === "display"
+      ? { date: displayDate, nowMinute: displayNowMinute }
+      : "skip",
+  ) as RoomDisplayData | null | undefined;
 
   const runAction: RunAction = async (task, success) => {
     if (actionLockRef.current) return false;
@@ -507,50 +420,64 @@ export function NetworkingApp() {
     }
   };
 
-  if (!accounts || !sessionToken || !data || !data.settings) {
+  if (activeView === "display") {
+    return <RoomDisplayView roomDisplay={roomDisplay} onExit={() => setActiveView("directory")} />;
+  }
+
+  if (!publicConfig) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-[#050505] px-6 text-white">
         <div className="flex max-w-md flex-col items-center gap-4 text-center">
           <Loader2 className="animate-spin text-[#f8e18e]" />
           <h1 className="text-2xl font-semibold">Preparing networking room</h1>
-          {notice ? (
-            <>
-              <p className="text-sm leading-6 text-red-200">{notice}</p>
-              {accounts?.length ? (
-                <button className="button-primary" onClick={() => startSession(actorEmail)}>
-                  Retry session
-                </button>
-              ) : null}
-            </>
-          ) : (
-            <p className="text-sm leading-6 text-white/60">
-              Initializing the Convex data model and opening a scoped fake session.
-            </p>
-          )}
+          <p className="text-sm leading-6 text-white/60">Loading event settings.</p>
         </div>
       </main>
     );
   }
 
-  if (effectiveActiveView === "display") {
+  if (!sessionToken || data === null) {
     return (
-      <RoomDisplayView
-        roomDisplay={roomDisplay as RoomDisplayData | null | undefined}
-        onExit={() => setActiveView(fallbackView(actor))}
+      <LoginView
+        accounts={accounts ?? []}
+        demoLoginEnabled={demoLoginEnabled}
+        isPending={sessionPending}
+        notice={notice}
+        onDemoLogin={startSession}
+        onDismissNotice={() => setNotice(null)}
+        onRequestLink={requestLoginLink}
+        settings={settings}
       />
     );
   }
+
+  if (!data?.settings) {
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-[#050505] px-6 text-white">
+        <div className="flex max-w-md flex-col items-center gap-4 text-center">
+          <Loader2 className="animate-spin text-[#f8e18e]" />
+          <h1 className="text-2xl font-semibold">Opening your session</h1>
+          <p className="text-sm leading-6 text-white/60">{notice || "Checking your secure session."}</p>
+        </div>
+      </main>
+    );
+  }
+
+  const actor = data.actor;
+  const stats = dashboardStats(data);
 
   return (
     <main className="min-h-screen bg-[#050505] text-white">
       <TopStrip settings={data.settings} />
       <div className="mx-auto flex w-full max-w-[1520px] flex-col gap-4 px-3 py-4 sm:px-5 lg:px-6">
         <Header
-          accounts={data.accounts}
           actor={actor}
           actorEmail={actorEmail}
+          demoAccounts={accounts ?? []}
+          demoLoginEnabled={demoLoginEnabled}
           isPending={sessionPending}
-          onActorChange={changeAccount}
+          onActorChange={startSession}
+          onLogout={signOut}
         />
         {notice && (
           <div className="flex items-center justify-between border border-[#f8e18e]/30 bg-[#f8e18e]/10 px-3 py-2 text-sm text-[#f8e18e]">
@@ -560,28 +487,36 @@ export function NetworkingApp() {
             </button>
           </div>
         )}
-        <div
-          className={cn(
-            "grid min-w-0 grid-cols-[minmax(0,1fr)] gap-4",
-            wideView
-              ? "lg:grid-cols-[220px_minmax(0,1fr)]"
-              : "lg:grid-cols-[220px_minmax(0,1fr)_360px]",
-          )}
-        >
-          <Navigation actor={actor} activeView={effectiveActiveView} onChange={setActiveView} />
+        <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[220px_minmax(0,1fr)]">
+          <Navigation actor={actor} activeView={activeView} onChange={setActiveView} />
           <section className="min-w-0">
-            {effectiveActiveView !== "attendee" && (
-              <MetricStrip settings={data.settings} stats={stats} />
-            )}
-            {actor && effectiveActiveView === "attendee" && (
-              <AttendeeExperience
+            <MetricStrip settings={data.settings} stats={stats} />
+            {activeView === "directory" && (
+              <DirectoryView
                 actionPending={actionPending}
                 actor={actor}
-                availabilityBlocks={availabilityBlocks}
-                companySlotOccupancy={companySlotOccupancy}
-                companies={data.companies}
-                deskRequests={deskRequests}
-                meetings={data.meetings}
+                participants={visibleAccounts(data.participants)}
+                requests={data.requests}
+                runAction={runAction}
+                sessionToken={sessionToken}
+                settings={data.settings}
+              />
+            )}
+            {activeView === "profile" && (
+              <ProfileView
+                actionPending={actionPending}
+                actor={actor}
+                availability={data.myAvailability}
+                runAction={runAction}
+                sessionToken={sessionToken}
+                settings={data.settings}
+                slotLabels={data.slotLabels}
+              />
+            )}
+            {activeView === "requests" && (
+              <RequestsView
+                actionPending={actionPending}
+                actor={actor}
                 requests={data.requests}
                 runAction={runAction}
                 sessionToken={sessionToken}
@@ -589,32 +524,7 @@ export function NetworkingApp() {
                 slotLabels={data.slotLabels}
               />
             )}
-            {actor && effectiveActiveView === "marketplace" && (
-              <Marketplace
-                actionPending={actionPending}
-                actor={actor}
-                availabilityBlocks={availabilityBlocks}
-                companySlotOccupancy={companySlotOccupancy}
-                companies={data.companies}
-                requests={data.requests}
-                runAction={runAction}
-                sessionToken={sessionToken}
-                settings={data.settings}
-                slotLabels={data.slotLabels}
-              />
-            )}
-            {actor && effectiveActiveView === "requests" && (
-              <RequestQueue
-                actionPending={actionPending}
-                actor={actor}
-                onSelect={setSelectedRequestId}
-                requests={data.requests}
-                runAction={runAction}
-                sessionToken={sessionToken}
-                slotLabels={data.slotLabels}
-              />
-            )}
-            {actor && effectiveActiveView === "schedule" && (
+            {activeView === "schedule" && (
               <ScheduleView
                 actionPending={actionPending}
                 actor={actor}
@@ -623,63 +533,41 @@ export function NetworkingApp() {
                 sessionToken={sessionToken}
                 settings={data.settings}
                 slotLabels={data.slotLabels}
-                onSelectRequest={setSelectedRequestId}
               />
             )}
-            {actor && effectiveActiveView === "companies" && (
-              <CompaniesView
-                actionPending={actionPending}
-                actor={actor}
-                availabilityBlocks={availabilityBlocks}
-                companies={data.companies}
-                runAction={runAction}
-                sessionToken={sessionToken}
-                settings={data.settings}
-                slotLabels={data.slotLabels}
-              />
-            )}
-            {actor && effectiveActiveView === "desk" && (
-              <DeskQueueView
-                actionPending={actionPending}
-                actor={actor}
-                companies={data.companies}
-                deskRequests={deskRequests}
-                requests={data.requests}
-                runAction={runAction}
-                sessionToken={sessionToken}
-                slotLabels={data.slotLabels}
-              />
-            )}
-            {actor && effectiveActiveView === "admin" && (
+            {activeView === "admin" && (
               <AdminView
-                key={`${data.settings._id}:${data.settings.updatedAt}`}
                 actionPending={actionPending}
                 actor={actor}
-                companies={data.companies}
                 importBatches={data.importBatches}
+                participants={visibleAccounts(data.participants)}
                 meetings={data.meetings}
+                requests={data.requests}
                 runAction={runAction}
                 sessionToken={sessionToken}
                 setSessionToken={setSessionToken}
                 settings={data.settings}
+                demoLoginEnabled={demoLoginEnabled}
               />
             )}
           </section>
-          {!wideView && (
-            <DetailPanel
-              actionPending={actionPending}
-              actor={actor}
-              request={selectedRequest}
-              runAction={runAction}
-              sessionToken={sessionToken}
-              settings={data.settings}
-              slotLabels={data.slotLabels}
-            />
-          )}
         </div>
       </div>
     </main>
   );
+}
+
+function dashboardStats(data: Bootstrap) {
+  const slotsPerDay = Math.floor(
+    (data.settings.dayEndMinute - data.settings.dayStartMinute) / data.settings.slotMinutes,
+  );
+  const participants = visibleAccounts(data.participants);
+  return {
+    visibleParticipants: participants.filter((participant) => participant.directoryOptIn).length,
+    pending: data.requests.filter((request) => request.status === "pending").length,
+    confirmed: data.meetings.filter((meeting) => meeting.status !== "cancelled").length,
+    capacity: data.settings.activeTables * slotsPerDay * eventDateEntries(data.settings).length,
+  };
 }
 
 function TopStrip({ settings }: { settings: Settings }) {
@@ -688,66 +576,184 @@ function TopStrip({ settings }: { settings: Settings }) {
       <div className="mx-auto flex max-w-[1520px] flex-wrap items-center justify-between gap-2">
         <span>AIE World Fair Networking</span>
         <span className="font-mono normal-case tracking-normal">
-          Room 3001 · June 30 - July 1 · {settings.activeTables} active tables ·{" "}
-          {settings.reserveTables} reserve
+          Room 3001 · {settings.activeTables} tables · {settings.slotMinutes}m slots · groups up to {settings.maxMeetingGroupSize}
         </span>
       </div>
     </div>
   );
 }
 
-function Header({
+function LoginView({
   accounts,
-  actor,
-  actorEmail,
+  demoLoginEnabled,
   isPending,
-  onActorChange,
+  notice,
+  onDemoLogin,
+  onDismissNotice,
+  onRequestLink,
+  settings,
 }: {
   accounts: DemoAccount[];
-  actor: Account | null;
+  demoLoginEnabled: boolean;
+  isPending: boolean;
+  notice: string | null;
+  onDemoLogin: (email: string) => void;
+  onDismissNotice: () => void;
+  onRequestLink: (email: string) => void;
+  settings: Settings | null;
+}) {
+  const [email, setEmail] = useState("");
+  const [demoEmail, setDemoEmail] = useState(accounts[0]?.email ?? "");
+  const effectiveDemoEmail = demoEmail || accounts[0]?.email || "";
+
+  function submit(event: FormEvent) {
+    event.preventDefault();
+    onRequestLink(email);
+  }
+
+  return (
+    <main className="min-h-screen bg-[#050505] text-white">
+      {settings && <TopStrip settings={settings} />}
+      <div className="mx-auto grid min-h-[calc(100vh-40px)] w-full max-w-[1120px] place-items-center px-4 py-8">
+        <section className="grid w-full max-w-xl gap-4 border border-white/10 bg-[#101010] p-5">
+          <div>
+            <div className="font-mono text-xs text-[#f8e18e]">$ ai.engineer/wf/networking</div>
+            <h1 className="mt-3 text-3xl font-semibold tracking-tight">Networking Room</h1>
+            <p className="mt-2 text-sm leading-6 text-white/55">
+              Sign in with the email on your AIE World Fair registration.
+            </p>
+          </div>
+
+          {notice && (
+            <div className="flex items-center justify-between border border-[#f8e18e]/30 bg-[#f8e18e]/10 px-3 py-2 text-sm text-[#f8e18e]">
+              <span>{notice}</span>
+              <button aria-label="Dismiss notice" onClick={onDismissNotice} type="button">
+                <X size={16} />
+              </button>
+            </div>
+          )}
+
+          <form onSubmit={submit} className="grid gap-3">
+            <Field label="Email">
+              <input
+                autoComplete="email"
+                className="input"
+                inputMode="email"
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="you@company.com"
+                required
+                type="email"
+                value={email}
+              />
+            </Field>
+            <button className="button-primary" disabled={isPending} type="submit">
+              {isPending ? <Loader2 className="animate-spin" size={16} /> : <Send size={16} />}
+              Send login link
+            </button>
+          </form>
+
+          {demoLoginEnabled && (
+            <div className="grid gap-3 border-t border-white/10 pt-4">
+              <Field label="Demo account">
+                <select
+                  className="input"
+                  disabled={!accounts.length || isPending}
+                  onChange={(event) => setDemoEmail(event.target.value)}
+                  value={effectiveDemoEmail}
+                >
+                  {accounts.map((account) => (
+                    <option key={account._id} value={account.email}>
+                      {account.displayName} · {account.role} · {account.email}
+                    </option>
+                  ))}
+                </select>
+              </Field>
+              <button
+                className="button-quiet"
+                disabled={!effectiveDemoEmail || isPending}
+                onClick={() => onDemoLogin(effectiveDemoEmail)}
+                type="button"
+              >
+                <LockKeyhole size={15} /> Open demo session
+              </button>
+            </div>
+          )}
+        </section>
+      </div>
+    </main>
+  );
+}
+
+function Header({
+  actor,
+  actorEmail,
+  demoAccounts,
+  demoLoginEnabled,
+  isPending,
+  onActorChange,
+  onLogout,
+}: {
+  actor: Account;
   actorEmail: string;
+  demoAccounts: DemoAccount[];
+  demoLoginEnabled: boolean;
   isPending: boolean;
   onActorChange: (email: string) => void;
+  onLogout: () => void;
 }) {
   return (
     <header className="grid gap-3 border border-white/10 bg-[#101010] p-3 sm:grid-cols-[1fr_auto] sm:p-4">
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-2 text-xs text-white/55">
-          <span className="font-mono text-[#f8e18e]">$ curl -sL ai.engineer/wf/networking</span>
+          <span className="font-mono text-[#f8e18e]">$ ai.engineer/wf/networking</span>
           <span className="hidden sm:inline">·</span>
-          <span>Company 1:1s</span>
+          <span>Peer booking room</span>
         </div>
         <div className="mt-2 flex flex-wrap items-end gap-3">
           <h1 className="text-2xl font-semibold tracking-tight sm:text-4xl">
-            Networking Room Ops
+            Networking Room
           </h1>
-          {actor && <RolePill role={actor.role} />}
+          <RolePill actor={actor} />
         </div>
       </div>
-      <label className="grid min-w-0 gap-1 text-xs text-white/55">
-        Fake account
-        <select
-          value={actorEmail}
-          onChange={(event) => onActorChange(event.target.value)}
-          className="h-11 w-full min-w-0 max-w-full border border-white/15 bg-black px-3 text-sm font-medium text-white outline-none transition focus:border-[#f8e18e] sm:min-w-[310px]"
-        >
-          {accounts.map((account) => (
-            <option key={account._id} value={account.email}>
-              {account.displayName} · {account.role} · {account.email}
-            </option>
-          ))}
-        </select>
-        {isPending && <span className="text-[#f8e18e]">Syncing action...</span>}
-      </label>
+      <div className="grid min-w-0 gap-2 sm:min-w-[340px]">
+        <div className="flex min-w-0 items-center justify-between gap-3 border border-white/10 bg-black/30 px-3 py-2">
+          <div className="min-w-0">
+            <div className="truncate text-sm font-semibold">{actor.displayName}</div>
+            <div className="truncate text-xs text-white/45">{actor.email}</div>
+          </div>
+          <button className="button-quiet h-9 px-2 text-xs" onClick={onLogout} type="button">
+            Sign out
+          </button>
+        </div>
+        {demoLoginEnabled && (
+          <label className="grid min-w-0 gap-1 text-xs text-white/55">
+            Demo account
+            <select
+              value={actorEmail}
+              onChange={(event) => onActorChange(event.target.value)}
+              className="h-10 w-full min-w-0 max-w-full border border-white/15 bg-black px-3 text-sm font-medium text-white outline-none transition focus:border-[#f8e18e]"
+            >
+              {demoAccounts.map((account) => (
+                <option key={account._id} value={account.email}>
+                  {account.displayName} · {account.role} · {account.email}
+                </option>
+              ))}
+            </select>
+            {isPending && <span className="text-[#f8e18e]">Syncing session...</span>}
+          </label>
+        )}
+      </div>
     </header>
   );
 }
 
-function RolePill({ role }: { role: Account["role"] }) {
+function RolePill({ actor }: { actor: Account }) {
   return (
     <span className="inline-flex items-center gap-1 border border-white/10 bg-white/[0.06] px-2 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white/70">
       <LockKeyhole size={12} />
-      {role}
+      {actor.role}
+      {actor.role === "participant" ? ` · ${actor.directoryOptIn ? "opted in" : "hidden"}` : ""}
     </span>
   );
 }
@@ -758,26 +764,19 @@ function Navigation({
   onChange,
 }: {
   activeView: View;
-  actor: Account | null;
+  actor: Account;
   onChange: (view: View) => void;
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const allItems: Array<{ id: View; label: string; icon: ReactNode }> = [
-    { id: "attendee", label: "Attendee", icon: <Users size={16} /> },
-    { id: "display", label: "Room display", icon: <Monitor size={16} /> },
-    { id: "marketplace", label: "Marketplace", icon: <Search size={16} /> },
+    { id: "directory", label: "Directory", icon: <Search size={16} /> },
+    { id: "profile", label: "Profile", icon: <UserCheck size={16} /> },
     { id: "requests", label: "Requests", icon: <ListChecks size={16} /> },
     { id: "schedule", label: "Schedule", icon: <CalendarDays size={16} /> },
-    { id: "companies", label: "Companies", icon: <Building2 size={16} /> },
-    { id: "desk", label: "Desk queue", icon: <Handshake size={16} /> },
+    { id: "display", label: "Room display", icon: <Monitor size={16} /> },
     { id: "admin", label: "Admin", icon: <Settings2 size={16} /> },
   ];
-  const items = allItems.filter((item) => {
-    if (item.id === "admin" || item.id === "desk") return actor?.role === "admin";
-    if (item.id === "attendee") return actor?.role !== "company";
-    if (item.id === "marketplace") return actor?.role !== "company";
-    return true;
-  });
+  const items = allItems.filter((item) => item.id !== "admin" || actor.role === "admin");
   const activeItem = items.find((item) => item.id === activeView) ?? items[0];
 
   return (
@@ -792,7 +791,7 @@ function Navigation({
       >
         <span className="flex min-w-0 items-center gap-2">
           {mobileOpen ? <X className="shrink-0" size={17} /> : <Menu className="shrink-0" size={17} />}
-          <span>Menu </span>
+          <span>Menu</span>
         </span>
         <span className="truncate text-xs font-medium uppercase tracking-[0.12em] text-[#f8e18e]">
           Current: {activeItem?.label ?? "Navigation"}
@@ -820,13 +819,16 @@ function Navigation({
                 : "border-transparent text-white/60 hover:border-white/10 hover:bg-white/[0.05] hover:text-white",
             )}
           >
-            <span className="flex min-w-0 items-center gap-2"><span className="shrink-0">{item.icon}</span><span className="truncate">{item.label}</span></span>
+            <span className="flex min-w-0 items-center gap-2">
+              <span className="shrink-0">{item.icon}</span>
+              <span className="truncate">{item.label}</span>
+            </span>
             <ChevronRight className="hidden lg:block" size={14} />
           </button>
         ))}
       </nav>
       <div className="mt-4 hidden border-t border-white/10 pt-4 text-xs leading-5 text-white/45 lg:block">
-        1:1 requests with desk-assisted matching for attendees who want help.
+        Opt-in participants request time with each other. Accepted groups take one table, up to four people.
       </div>
     </aside>
   );
@@ -837,13 +839,13 @@ function MetricStrip({
   stats,
 }: {
   settings: Settings;
-  stats: { confirmed: number; pending: number; capacity: number; optedIn: number };
+  stats: { visibleParticipants: number; pending: number; confirmed: number; capacity: number };
 }) {
   const metrics = [
+    { label: "Visible people", value: stats.visibleParticipants, icon: <Users size={16} /> },
+    { label: "Pending", value: stats.pending, icon: <ListChecks size={16} /> },
     { label: "Confirmed", value: stats.confirmed, icon: <Check size={16} /> },
-    { label: "Pending", value: stats.pending, icon: <MessageSquare size={16} /> },
-    { label: "Capacity", value: stats.capacity, icon: <Gauge size={16} /> },
-    { label: "Opted-in", value: stats.optedIn, icon: <Building2 size={16} /> },
+    { label: "Table slots", value: stats.capacity, icon: <Gauge size={16} /> },
   ];
   return (
     <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
@@ -861,14 +863,412 @@ function MetricStrip({
   );
 }
 
-function AttendeeExperience({
+function DirectoryView({
   actionPending,
   actor,
-  availabilityBlocks,
-  companySlotOccupancy,
-  companies,
-  deskRequests,
-  meetings,
+  participants,
+  requests,
+  runAction,
+  sessionToken,
+  settings,
+}: {
+  actionPending: boolean;
+  actor: Account;
+  participants: Account[];
+  requests: MeetingRequest[];
+  runAction: RunAction;
+  sessionToken: string;
+  settings: Settings;
+}) {
+  const createPeerRequest = useMutation(api.networking.createPeerRequest);
+  const [query, setQuery] = useState("");
+  const [ticketFilter, setTicketFilter] = useState("all");
+  const [date, setDate] = useState(settings.startDate);
+  const [selectedId, setSelectedId] = useState<Id<"accounts"> | null>(null);
+  const [selectedSlot, setSelectedSlot] = useState<number | "">("");
+  const [reason, setReason] = useState("");
+  const selected =
+    participants.find((participant) => participant._id === selectedId) ??
+    participants.find((participant) => participant._id !== actor._id) ??
+    null;
+  const availability = useQuery(
+    api.networking.getParticipantAvailability,
+    selected ? { accountId: selected._id, date } : "skip",
+  ) as AvailabilitySlot[] | undefined;
+
+  const activeOutgoingForDay = requests.filter(
+    (request) =>
+      request.requesterAccountId === actor._id &&
+      request.date === date &&
+      activeOutgoingStatus(request.status),
+  );
+  const atCap = activeOutgoingForDay.length >= settings.outgoingRequestCapPerDay;
+  const openTargetIds = new Set(activeOutgoingForDay.map((request) => request.targetAccountId));
+  const normalizedQuery = query.trim().toLowerCase();
+  const filtered = participants
+    .filter((participant) => participant.role === "participant" && participant._id !== actor._id)
+    .filter((participant) => participant.signedUp && participant.directoryOptIn)
+    .filter((participant) => ticketFilter === "all" || participant.ticketCategory === ticketFilter)
+    .filter((participant) => {
+      if (!normalizedQuery) return true;
+      const haystack = [
+        participant.displayName,
+        participant.company,
+        participant.title,
+        participant.networkingIntent,
+        participant.topics.join(" "),
+        participant.city,
+        participant.country,
+      ].join(" ").toLowerCase();
+      return haystack.includes(normalizedQuery);
+    })
+    .sort((a, b) => a.company.localeCompare(b.company) || a.displayName.localeCompare(b.displayName));
+  const availableSlots = (availability ?? []).filter((slot) => slot.available && slot.groupOpen !== false);
+  const fallbackSlot: number | "" = availableSlots.length > 0 ? availableSlots[0].startMinute : "";
+  const effectiveSelectedSlot: number | "" =
+    selectedSlot !== "" && availableSlots.some((slot) => slot.startMinute === selectedSlot)
+      ? selectedSlot
+      : fallbackSlot;
+
+  function submitRequest(event: FormEvent) {
+    event.preventDefault();
+    if (!selected || effectiveSelectedSlot === "" || atCap) return;
+    void runAction(
+      () =>
+        createPeerRequest({
+          sessionToken,
+          targetAccountId: selected._id,
+          date,
+          preferredStartMinute: effectiveSelectedSlot,
+          reason,
+          context: `${actor.title}, ${actor.company}`,
+        }),
+      `Request sent to ${selected.displayName}.`,
+    ).then((completed) => {
+      if (completed) setReason("");
+    });
+  }
+
+  if (actor.role !== "participant") {
+    return (
+      <section className="border border-white/10 bg-[#101010] p-6">
+        <Users className="text-[#f8e18e]" />
+        <h2 className="mt-4 text-xl font-semibold">Participant account required</h2>
+        <p className="mt-2 text-sm leading-6 text-white/55">
+          Sign in as a participant to browse the networking directory.
+        </p>
+      </section>
+    );
+  }
+
+  return (
+    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_380px]">
+      <section className="border border-white/10 bg-[#101010]">
+        <SectionHeader icon={<Search size={17} />} title="Participant directory" detail={`${filtered.length} visible`} />
+        <div className="grid gap-3 border-b border-white/10 p-4 md:grid-cols-[minmax(0,1fr)_180px_160px]">
+          <Field label="Search">
+            <input
+              className="input"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Company, name, title, intent..."
+            />
+          </Field>
+          <Field label="Ticket">
+            <select className="input" value={ticketFilter} onChange={(event) => setTicketFilter(event.target.value)}>
+              <option value="all">All tickets</option>
+              <option value="leadership">Leadership</option>
+              <option value="speaker">Speaker</option>
+              <option value="sponsor">Sponsor</option>
+              <option value="other">Other</option>
+            </select>
+          </Field>
+          <Field label="Date">
+            <select className="input" value={date} onChange={(event) => setDate(event.target.value)}>
+              {eventDateEntries(settings).map(([value, label]) => (
+                <option key={value} value={value}>{label}</option>
+              ))}
+            </select>
+          </Field>
+        </div>
+        <div className="grid gap-3 p-3 md:grid-cols-2 2xl:grid-cols-3">
+          {filtered.length === 0 && (
+            <div className="md:col-span-2 2xl:col-span-3">
+              <EmptyState title="No matching participants" detail="Try a broader company, name, or topic search." />
+            </div>
+          )}
+          {filtered.map((participant) => (
+            <button
+              key={participant._id}
+              className={cn(
+                "grid min-h-[210px] gap-3 border p-4 text-left transition",
+                selected?._id === participant._id
+                  ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
+                  : "border-white/10 bg-black/25 hover:border-white/25 hover:bg-white/[0.045]",
+              )}
+              onClick={() => {
+                setSelectedId(participant._id);
+                setSelectedSlot("");
+              }}
+            >
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-lg font-semibold leading-tight">{participant.displayName}</h3>
+                  <StatusBadge status={participant.ticketCategory} />
+                </div>
+                <p className="mt-2 text-sm leading-6 text-white/65">
+                  {participant.title || "Title TBD"} · {participant.company || "Company TBD"}
+                </p>
+                <p className="mt-2 line-clamp-3 text-sm leading-6 text-white/50">
+                  {participant.networkingIntent || "No networking intent added yet."}
+                </p>
+              </div>
+              <div className="self-end">
+                <TagRow items={participant.topics.length ? participant.topics : [participant.city, participant.country].filter(Boolean)} />
+                {openTargetIds.has(participant._id) && (
+                  <div className="mt-3 text-xs text-[#f8e18e]">Active request already open</div>
+                )}
+              </div>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <form onSubmit={submitRequest} className="border border-white/10 bg-[#101010] p-4 xl:sticky xl:top-4 xl:self-start">
+        <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
+          <Send size={16} /> Request time
+        </div>
+        <div className="mt-1 text-xs text-white/45">
+          {activeOutgoingForDay.length}/{settings.outgoingRequestCapPerDay} active outgoing requests for {dateLabels[date]}.
+        </div>
+        {!actor.profileComplete || !actor.directoryOptIn ? (
+          <div className="mt-4 border border-yellow-300/20 bg-yellow-300/10 p-3 text-sm leading-6 text-yellow-100">
+            Confirm your profile and opt into the directory before sending requests.
+          </div>
+        ) : selected ? (
+          <div className="mt-4 grid gap-3">
+            <div className="border border-white/10 bg-black/30 p-3">
+              <div className="text-lg font-semibold">{selected.displayName}</div>
+              <div className="mt-1 text-sm text-white/55">{selected.title} · {selected.company}</div>
+            </div>
+            <Field label="Available slot">
+              <select
+                className="input"
+                disabled={!availableSlots.length}
+                value={effectiveSelectedSlot}
+                onChange={(event) => setSelectedSlot(Number(event.target.value))}
+              >
+                {availableSlots.length ? (
+                  availableSlots.map((slot) => (
+                    <option key={slot._id} value={slot.startMinute}>
+                      {minuteLabel(slot.startMinute)}
+                      {slot.participantCount && slot.participantCount > 1
+                        ? ` · group ${slot.participantCount}/${settings.maxMeetingGroupSize}`
+                        : ""}
+                    </option>
+                  ))
+                ) : (
+                  <option value="">No open slots</option>
+                )}
+              </select>
+            </Field>
+            <Field label="Why meet?">
+              <textarea
+                className="input min-h-28 resize-none"
+                value={reason}
+                onChange={(event) => setReason(event.target.value)}
+                placeholder="Specific reason, context, or topic for the conversation."
+                required
+              />
+            </Field>
+            <button
+              className="button-primary"
+              disabled={
+                actionPending ||
+                atCap ||
+                !availableSlots.length ||
+                reason.trim().length < 8 ||
+                openTargetIds.has(selected._id)
+              }
+              type="submit"
+            >
+              <Send size={16} /> Send request
+            </button>
+            {atCap && <p className="text-xs leading-5 text-white/45">Request cap reached for this day.</p>}
+          </div>
+        ) : (
+          <EmptyState title="Select a participant" detail="Choose someone from the directory to see open times." />
+        )}
+      </form>
+    </div>
+  );
+}
+
+function ProfileView({
+  actionPending,
+  actor,
+  availability,
+  runAction,
+  sessionToken,
+  settings,
+  slotLabels,
+}: {
+  actionPending: boolean;
+  actor: Account;
+  availability: AvailabilitySlot[];
+  runAction: RunAction;
+  sessionToken: string;
+  settings: Settings;
+  slotLabels: Array<{ minute: number; label: string }>;
+}) {
+  const updateMyProfile = useMutation(api.networking.updateMyProfile);
+  const setMyAvailability = useMutation(api.networking.setMyAvailability);
+  const [form, setForm] = useState({
+    displayName: actor.displayName,
+    title: actor.title,
+    company: actor.company,
+    city: actor.city,
+    country: actor.country,
+    networkingIntent: actor.networkingIntent,
+    topics: actor.topics.join("; "),
+    directoryOptIn: actor.directoryOptIn,
+  });
+
+  if (actor.role !== "participant") {
+    return (
+      <section className="border border-white/10 bg-[#101010] p-6">
+        <UserCheck className="text-[#f8e18e]" />
+        <h2 className="mt-4 text-xl font-semibold">Admin profile</h2>
+        <p className="mt-2 text-sm text-white/55">Switch to a participant to manage profile and availability.</p>
+      </section>
+    );
+  }
+
+  function saveProfile(event: FormEvent) {
+    event.preventDefault();
+    void runAction(
+      () =>
+        updateMyProfile({
+          sessionToken,
+          ...form,
+        }),
+      "Profile confirmed.",
+    );
+  }
+
+  return (
+    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_520px]">
+      <form onSubmit={saveProfile} className="border border-white/10 bg-[#101010]">
+        <SectionHeader icon={<UserCheck size={17} />} title="Profile confirmation" detail={actor.profileComplete ? "complete" : "needs fields"} />
+        <div className="grid gap-4 p-4 sm:grid-cols-2">
+          <Field label="Name">
+            <input className="input" value={form.displayName} onChange={(event) => setForm({ ...form, displayName: event.target.value })} required />
+          </Field>
+          <Field label="Company">
+            <input className="input" value={form.company} onChange={(event) => setForm({ ...form, company: event.target.value })} required />
+          </Field>
+          <Field label="Title">
+            <input className="input" value={form.title} onChange={(event) => setForm({ ...form, title: event.target.value })} required />
+          </Field>
+          <Field label="Location">
+            <input
+              className="input"
+              value={[form.city, form.country].filter(Boolean).join(", ")}
+              onChange={(event) => {
+                const [city, country = ""] = event.target.value.split(",").map((part) => part.trim());
+                setForm({ ...form, city, country });
+              }}
+            />
+          </Field>
+          <div className="sm:col-span-2">
+            <Field label="Networking intent">
+              <textarea
+                className="input min-h-24 resize-none"
+                value={form.networkingIntent}
+                onChange={(event) => setForm({ ...form, networkingIntent: event.target.value })}
+                placeholder="Who do you want to meet and why?"
+              />
+            </Field>
+          </div>
+          <div className="sm:col-span-2">
+            <Field label="Topics">
+              <input
+                className="input"
+                value={form.topics}
+                onChange={(event) => setForm({ ...form, topics: event.target.value })}
+                placeholder="agents; evals; consumer AI"
+              />
+            </Field>
+          </div>
+          <Toggle label="Show me in the booking directory" checked={form.directoryOptIn} onChange={(value) => setForm({ ...form, directoryOptIn: value })} />
+        </div>
+        <div className="border-t border-white/10 p-4">
+          <button className="button-primary" disabled={actionPending} type="submit">
+            <Check size={15} /> Confirm profile
+          </button>
+        </div>
+      </form>
+
+      <section className="border border-white/10 bg-[#101010]">
+        <SectionHeader icon={<Clock3 size={17} />} title="Your availability" detail="toggle open slots" />
+        <div className="grid gap-4 p-4">
+          {eventDateEntries(settings).map(([date, label]) => {
+            const dayAvailability = availability.filter((slot) => slot.date === date);
+            return (
+              <div key={date} className="grid gap-2">
+                <div className="flex items-center justify-between gap-3 text-xs">
+                  <span className="font-semibold text-white/70">{label}</span>
+                  <span className="text-white/45">{dayAvailability.filter((slot) => slot.available).length} open</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  {slotLabels.map((slot) => {
+                    const availabilitySlot = dayAvailability.find((item) => item.startMinute === slot.minute);
+                    const available = availabilitySlot?.available ?? false;
+                    return (
+                      <button
+                        key={`${date}:${slot.minute}`}
+                        type="button"
+                        aria-pressed={available}
+                        className={cn(
+                          "flex h-12 min-w-0 flex-col items-center justify-center border px-2 text-xs font-semibold leading-tight transition",
+                          available
+                            ? "border-emerald-300/25 bg-emerald-300/10 text-emerald-100"
+                            : "border-white/10 bg-white/[0.035] text-white/45",
+                        )}
+                        disabled={actionPending || !actor.profileComplete}
+                        onClick={() =>
+                          void runAction(
+                            () =>
+                              setMyAvailability({
+                                sessionToken,
+                                date,
+                                startMinute: slot.minute,
+                                available: !available,
+                              }),
+                            available ? "Slot hidden." : "Slot opened.",
+                          )
+                        }
+                      >
+                        <span>{slot.label}</span>
+                        <span className="mt-0.5 text-[10px] font-medium opacity-70">
+                          {available ? "Open" : "Hidden"}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function RequestsView({
+  actionPending,
+  actor,
   requests,
   runAction,
   sessionToken,
@@ -877,599 +1277,496 @@ function AttendeeExperience({
 }: {
   actionPending: boolean;
   actor: Account;
-  availabilityBlocks: AvailabilityBlock[];
-  companySlotOccupancy: CompanySlotOccupancy[];
-  companies: Company[];
-  deskRequests: DeskMatchDoc[];
-  meetings: MeetingDoc[];
-  requests: RequestDoc[];
+  requests: MeetingRequest[];
   runAction: RunAction;
   sessionToken: string;
   settings: Settings;
   slotLabels: Array<{ minute: number; label: string }>;
 }) {
-  const createRequest = useMutation(api.networking.createRequest);
-  const createDeskMatchRequest = useMutation(api.networking.createDeskMatchRequest);
-  const updateDeskMatchStatus = useMutation(api.networking.updateDeskMatchStatus);
-  const [date, setDate] = useState(settings.startDate);
-  const [preferredStartMinute, setPreferredStartMinute] = useState(
-    slotLabels[1]?.minute ?? settings.dayStartMinute,
-  );
-  const [intent, setIntent] = useState("");
-  const [topicText, setTopicText] = useState("agents; evals; production AI");
-  const effectivePreferredStartMinute = slotLabels.some(
-    (slot) => slot.minute === preferredStartMinute,
-  )
-    ? preferredStartMinute
-    : slotLabels[0]?.minute ?? settings.dayStartMinute;
-
-  if (actor.role !== "attendee") {
-    return (
-      <section className="border border-white/10 bg-[#101010] p-6">
-        <Users className="text-[#f8e18e]" />
-        <h2 className="mt-4 text-xl font-semibold">Attendee account required</h2>
-        <p className="mt-2 max-w-xl text-sm leading-6 text-white/55">
-          Switch to an attendee fake account to use the attendee networking experience.
-        </p>
-      </section>
-    );
-  }
-
-  const eligibleCompanies = companies
-    .filter((company) => company.optedIn)
-    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
-  const myRequests = requests.filter((request) => request.attendeeAccountId === actor._id);
-  const dailyCount = myRequests.filter(
-    (request) => request.date === date && isOpenRequestStatus(request.status),
-  ).length;
-  const atRequestCap = dailyCount >= settings.attendeeRequestCapPerDay;
-  const openRequestCompanyIds = new Set(
-    myRequests
-      .filter((request) => request.date === date && isOpenRequestStatus(request.status))
-      .map((request) => request.companyId),
-  );
-  const myMeetings = meetings
-    .filter(
-      (meeting) =>
-        meeting.attendeeAccountId === actor._id &&
-        meeting.status !== "cancelled" &&
-        meeting.date === date,
-    )
-    .sort((a, b) => a.startMinute - b.startMinute);
-  const myDeskRequests = deskRequests
-    .filter((request) => request.attendeeAccountId === actor._id)
-    .sort((a, b) => b.updatedAt - a.updatedAt);
-  const openDeskRequest = myDeskRequests.find(
-    (request) =>
-      request.date === date && (request.status === "requested" || request.status === "matched"),
-  );
-  const topicQuery = `${intent} ${topicText}`.toLowerCase();
-  const recommendations = eligibleCompanies
-    .map((company) => {
-      const slots = companySlotsForDate(
-        company._id,
-        date,
-        availabilityBlocks,
-        companySlotOccupancy,
-        slotLabels,
-        settings.slotMinutes,
-      );
-      const nextSlot =
-        slots.find((slot) => slot.minute >= effectivePreferredStartMinute) ?? slots[0] ?? null;
-      const topicScore = company.topics.filter((topic) => {
-        const normalizedTopic = topic.toLowerCase();
-        return (
-          topicQuery.includes(normalizedTopic) ||
-          normalizedTopic.split(/\s+/).some((part) => part.length > 3 && topicQuery.includes(part))
-        );
-      }).length;
-      return { company, nextSlot, topicScore };
+  const respond = useMutation(api.networking.respondToPeerRequest);
+  const confirmCounter = useMutation(api.networking.confirmCounter);
+  const cancelRequest = useMutation(api.networking.cancelRequest);
+  const visible = requests
+    .filter((request) => {
+      if (actor.role === "admin") return true;
+      return request.requesterAccountId === actor._id || request.targetAccountId === actor._id;
     })
-    .filter((item) => item.nextSlot && !openRequestCompanyIds.has(item.company._id))
-    .sort(
-      (a, b) =>
-        b.topicScore - a.topicScore ||
-        Number(b.company.sponsor) - Number(a.company.sponsor) ||
-        a.company.priority - b.company.priority ||
-        a.company.name.localeCompare(b.company.name),
-    )
-    .slice(0, 4);
-
-  function requestCompany(company: Company, startMinute: number) {
-    const trimmedIntent = intent.trim();
-    const reason =
-      trimmedIntent.length >= 8
-        ? trimmedIntent
-        : `Meet ${company.name} about practical AI deployment and partnerships.`;
-    void runAction(
-      () =>
-        createRequest({
-          sessionToken,
-          companyId: company._id,
-          date,
-          preferredStartMinute: startMinute,
-          reason,
-          context: `${actor.title}. Requested from the attendee concierge view.`,
-        }),
-      `Request sent to ${company.name}.`,
-    );
-  }
-
-  function askDesk() {
-    const trimmedIntent = intent.trim();
-    void runAction(
-      () =>
-        createDeskMatchRequest({
-          sessionToken,
-          date,
-          preferredStartMinute: effectivePreferredStartMinute,
-          intent: trimmedIntent,
-          topics: topicText,
-        }),
-      "Desk match request added.",
-    );
-  }
-
-  return (
-    <div className="grid gap-4">
-      <section className="border border-white/10 bg-[#101010]">
-        <div className="grid gap-5 p-4 sm:p-5 xl:grid-cols-[minmax(0,1fr)_360px]">
-          <div className="min-w-0">
-            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#f8e18e]">
-              <Sparkles size={14} />
-              <span>Attendee mode</span>
-            </div>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-5xl">
-              Got 30 minutes? Make it count.
-            </h2>
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
-              Share what you want to find, then request a company directly or ask the room desk to make a practical match.
-            </p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              <Field label="Date">
-                <select className="input" value={date} onChange={(event) => setDate(event.target.value)}>
-                  <option value="2026-06-30">Tue Jun 30</option>
-                  <option value="2026-07-01">Wed Jul 1</option>
-                </select>
-              </Field>
-              <Field label="Best time">
-                <select
-                  className="input"
-                  value={effectivePreferredStartMinute}
-                  onChange={(event) => setPreferredStartMinute(Number(event.target.value))}
-                >
-                  {slotLabels.map((slot) => (
-                    <option key={slot.minute} value={slot.minute}>
-                      {slot.label}
-                    </option>
-                  ))}
-                </select>
-              </Field>
-            </div>
-          </div>
-          <div className="grid gap-3">
-            <Field label="What are you looking for?">
-              <textarea
-                className="input min-h-28 resize-none"
-                value={intent}
-                onChange={(event) => setIntent(event.target.value)}
-                placeholder="Production agent observability, eval tooling, enterprise deployment patterns..."
-              />
-            </Field>
-            <Field label="Topics">
-              <input
-                className="input"
-                value={topicText}
-                onChange={(event) => setTopicText(event.target.value)}
-              />
-            </Field>
-            <button
-              type="button"
-              className="button-primary"
-              disabled={actionPending || Boolean(openDeskRequest) || intent.trim().length < 8}
-              onClick={askDesk}
-            >
-              <Handshake size={16} /> Ask the desk to match me
-            </button>
-            <div className="text-xs leading-5 text-white/45">
-              {openDeskRequest
-                ? `Desk request is ${openDeskRequest.status}.`
-                : `${dailyCount}/${settings.attendeeRequestCapPerDay} direct company requests used for ${dateLabels[date]}.`}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_360px]">
-        <section className="border border-white/10 bg-[#101010]">
-          <SectionHeader
-            icon={<ArrowRight size={17} />}
-            title="Recommended next"
-            detail={`${recommendations.length} options`}
-          />
-          <div className="grid gap-3 p-3 sm:grid-cols-2">
-            {recommendations.length === 0 && (
-              <div className="sm:col-span-2">
-                <EmptyState
-                  title="No direct options available"
-                  detail="Try a different time, or ask the room desk to route you to a useful match."
-                />
-              </div>
-            )}
-            {recommendations.map(({ company, nextSlot, topicScore }) => (
-              <article key={company._id} className="grid min-h-[220px] gap-4 border border-white/10 bg-black/25 p-4">
-                <div>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <h3 className="text-xl font-semibold">{company.name}</h3>
-                    <Badge accent={topicScore > 0}>{company.tier}</Badge>
-                  </div>
-                  <p className="mt-2 line-clamp-3 text-sm leading-6 text-white/60">
-                    {company.description}
-                  </p>
-                  <TagRow items={company.topics} />
-                </div>
-                <div className="flex flex-wrap items-center justify-between gap-3 self-end">
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.12em] text-white/45">Next slot</div>
-                    <div className="mt-1 font-mono text-lg text-[#f8e18e]">{nextSlot?.label}</div>
-                  </div>
-                  <button
-                    type="button"
-                    className="button-primary"
-                    disabled={actionPending || atRequestCap || !nextSlot}
-                    onClick={() => {
-                      if (!nextSlot) return;
-                      requestCompany(company, nextSlot.minute);
-                    }}
-                  >
-                    <Send size={15} /> Request
-                  </button>
-                </div>
-              </article>
-            ))}
-          </div>
-          {atRequestCap && (
-            <div className="border-t border-white/10 px-4 py-3 text-xs leading-5 text-white/45">
-              Daily request cap reached for {dateLabels[date]}. Desk requests are separate.
-            </div>
-          )}
-        </section>
-
-        <div className="grid gap-4">
-          <section className="border border-white/10 bg-[#101010]">
-            <SectionHeader
-              icon={<CalendarDays size={17} />}
-              title="Your schedule"
-              detail={`${myMeetings.length} confirmed`}
-            />
-            <div className="divide-y divide-white/10">
-              {myMeetings.length === 0 && (
-                <EmptyState
-                  title="Nothing confirmed yet"
-                  detail="Accepted company requests will appear here with table assignment."
-                />
-              )}
-              {myMeetings.map((meeting) => (
-                <div key={meeting._id} className="p-4">
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="font-semibold">{meeting.company?.name ?? "Company"}</div>
-                    <StatusBadge status={meeting.status} />
-                  </div>
-                  <div className="mt-2 grid gap-2 text-sm text-white/60">
-                    <span className="flex items-center gap-2">
-                      <Clock3 size={14} /> {dateLabels[meeting.date]} · {minuteLabel(meeting.startMinute)}
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <MapPin size={14} /> Table {meeting.tableNumber}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section className="border border-white/10 bg-[#101010]">
-            <SectionHeader
-              icon={<ListChecks size={17} />}
-              title="Your requests"
-              detail={`${myRequests.length + myDeskRequests.length} total`}
-            />
-            <div className="divide-y divide-white/10">
-              {myRequests.length === 0 && myDeskRequests.length === 0 && (
-                <EmptyState
-                  title="No requests yet"
-                  detail="Direct company requests and desk matches will show here."
-                />
-              )}
-              {myRequests.slice(0, 5).map((request) => (
-                <div key={request._id} className="p-4 text-sm">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-semibold">{request.company?.name ?? "Company"}</span>
-                    <StatusBadge status={request.status} />
-                  </div>
-                  <div className="mt-1 text-white/45">
-                    {dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}
-                  </div>
-                </div>
-              ))}
-              {myDeskRequests.slice(0, 3).map((request) => (
-                <div key={request._id} className="p-4 text-sm">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-semibold">Desk match</span>
-                    <StatusBadge status={request.status} />
-                  </div>
-                  <div className="mt-1 text-white/45">
-                    {request.suggestedCompany
-                      ? `Suggested ${request.suggestedCompany.name}`
-                      : `${dateLabels[request.date]} · ${minuteLabel(request.preferredStartMinute)}`}
-                  </div>
-                  {request.status === "requested" && (
-                    <button
-                      type="button"
-                      className="button-quiet mt-3"
-                      disabled={actionPending}
-                      onClick={() =>
-                        void runAction(
-                          () =>
-                            updateDeskMatchStatus({
-                              sessionToken,
-                              deskMatchRequestId: request._id,
-                              status: "cancelled",
-                            }),
-                          "Desk request cancelled.",
-                        )
-                      }
-                    >
-                      <X size={15} /> Cancel
-                    </button>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function DeskQueueView({
-  actionPending,
-  actor,
-  companies,
-  deskRequests,
-  requests,
-  runAction,
-  sessionToken,
-  slotLabels,
-}: {
-  actionPending: boolean;
-  actor: Account;
-  companies: Company[];
-  deskRequests: DeskMatchDoc[];
-  requests: RequestDoc[];
-  runAction: RunAction;
-  sessionToken: string;
-  slotLabels: Array<{ minute: number; label: string }>;
-}) {
-  const assignDeskMatch = useMutation(api.networking.assignDeskMatch);
-  const updateDeskMatchStatus = useMutation(api.networking.updateDeskMatchStatus);
-  const [companySelections, setCompanySelections] = useState<Record<string, Id<"companies">>>({});
-  const [timeSelections, setTimeSelections] = useState<Record<string, number>>({});
-  const [notes, setNotes] = useState<Record<string, string>>({});
-
-  if (actor.role !== "admin") {
-    return (
-      <section className="border border-white/10 bg-[#101010] p-6">
-        <ShieldCheck className="text-[#f8e18e]" />
-        <h2 className="mt-4 text-xl font-semibold">Admin access required</h2>
-        <p className="mt-2 text-sm text-white/55">Switch to admin@aiewf.test to operate the desk queue.</p>
-      </section>
-    );
-  }
-
-  const companyOptions = companies
-    .filter((company) => company.optedIn)
-    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
-  const visible = deskRequests
-    .slice()
-    .sort(
-      (a, b) =>
-        Number(a.status !== "requested") - Number(b.status !== "requested") ||
-        b.updatedAt - a.updatedAt,
-    );
-
-  function hasOpenRequestForCompany(request: DeskMatchDoc, companyId: Id<"companies">) {
-    return requests.some(
-      (meetingRequest) =>
-        meetingRequest.attendeeAccountId === request.attendeeAccountId &&
-        meetingRequest.companyId === companyId &&
-        meetingRequest.date === request.date &&
-        isOpenRequestStatus(meetingRequest.status),
-    );
-  }
-
-  function topicScore(company: Company, request: DeskMatchDoc) {
-    const topicText = request.topics.join(" ").toLowerCase();
-    return company.topics.filter((topic) => {
-      const normalizedTopic = topic.toLowerCase();
-      return (
-        topicText.includes(normalizedTopic) ||
-        normalizedTopic.split(/\s+/).some((part) => part.length > 3 && topicText.includes(part))
-      );
-    }).length;
-  }
-
-  function suggestedCompanyFor(request: DeskMatchDoc) {
-    const candidates = companyOptions.filter(
-      (company) => !hasOpenRequestForCompany(request, company._id),
-    );
-    const rankedCandidates = candidates.length > 0 ? candidates : companyOptions;
-    return (
-      rankedCandidates
-        .slice()
-        .sort(
-          (a, b) =>
-            topicScore(b, request) - topicScore(a, request) ||
-            a.priority - b.priority ||
-            a.name.localeCompare(b.name),
-        )[0] ?? companyOptions[0]
-    );
-  }
+    .sort((a, b) => b.updatedAt - a.updatedAt);
 
   return (
     <section className="border border-white/10 bg-[#101010]">
-      <SectionHeader
-        icon={<Handshake size={17} />}
-        title="Desk match queue"
-        detail={`${visible.filter((request) => request.status === "requested").length} open`}
-      />
+      <SectionHeader icon={<ListChecks size={17} />} title="Request queue" detail={`${visible.length} visible`} />
       <div className="divide-y divide-white/10">
-        {visible.length === 0 && (
-          <EmptyState
-            title="No desk requests"
-            detail="Attendees who ask for help finding a match will appear here."
-          />
-        )}
+        {visible.length === 0 && <EmptyState title="No requests yet" detail="Incoming and outgoing booking requests will appear here." />}
         {visible.map((request) => {
-          const suggestedCompany = suggestedCompanyFor(request);
-          const selectedCompanyId =
-            companySelections[request._id] ?? suggestedCompany?._id ?? companyOptions[0]?._id;
-          const selectedTime = timeSelections[request._id] ?? request.preferredStartMinute;
-          const selectedNote = notes[request._id] ?? "";
-          const selectedCompanyBlocked =
-            !selectedCompanyId || hasOpenRequestForCompany(request, selectedCompanyId);
+          const incoming = request.targetAccountId === actor._id;
+          const counterStartMinute =
+            slotLabels.find((slot) => slot.minute > request.preferredStartMinute)?.minute ??
+            slotLabels[0]?.minute;
           return (
-            <div key={request._id} className="grid gap-4 p-4 xl:grid-cols-[minmax(0,1fr)_420px]">
+            <article key={request._id} className="grid gap-4 p-4 xl:grid-cols-[minmax(0,1fr)_330px]">
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="text-lg font-semibold">{request.attendee?.displayName ?? "Attendee"}</h3>
+                  <h3 className="font-semibold">
+                    {request.requester?.displayName ?? "Requester"} → {request.target?.displayName ?? "Participant"}
+                  </h3>
                   <StatusBadge status={request.status} />
-                  <span className="text-xs text-white/45">
-                    {dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}
-                  </span>
+                  <span className="text-xs text-white/45">{dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}</span>
                 </div>
-                <p className="mt-2 max-w-3xl text-sm leading-6 text-white/65">{request.intent}</p>
-                <TagRow items={request.topics} />
-                <p className="mt-3 text-xs text-white/45">{request.attendee?.title}</p>
-                {request.suggestedCompany && (
-                  <div className="mt-3 border border-sky-300/20 bg-sky-300/10 p-3 text-sm text-sky-100">
-                    Suggested {request.suggestedCompany.name}
-                    {request.meetingRequest ? ` · request ${request.meetingRequest.status}` : ""}
+                <p className="mt-2 text-sm leading-6 text-white/60">{request.reason}</p>
+                <p className="mt-2 text-xs text-white/45">
+                  {request.context || `${request.requester?.title ?? ""} ${request.requester?.company ?? ""}`.trim()}
+                </p>
+                {request.meeting && (
+                  <div className="mt-3 border border-emerald-300/20 bg-emerald-300/10 p-3 text-sm text-emerald-100">
+                    Table {request.meeting.tableNumber} · group {request.meeting.participantCount}/{settings.maxMeetingGroupSize}
                   </div>
                 )}
+                {request.responseNote && <p className="mt-2 text-xs text-white/45">{request.responseNote}</p>}
               </div>
-              <div className="grid gap-3">
-                <div className="grid gap-3 sm:grid-cols-2">
-                  <Field label="Company">
-                    <select
-                      className="input"
-                      disabled={request.status !== "requested" || companyOptions.length === 0}
-                      value={selectedCompanyId ?? ""}
-                      onChange={(event) =>
-                        setCompanySelections({
-                          ...companySelections,
-                          [request._id]: event.target.value as Id<"companies">,
-                        })
-                      }
-                    >
-                      {companyOptions.length === 0 && <option value="">No opted-in companies</option>}
-                      {companyOptions.map((company) => (
-                        <option
-                          disabled={hasOpenRequestForCompany(request, company._id)}
-                          key={company._id}
-                          value={company._id}
-                        >
-                          {company.name}
-                          {hasOpenRequestForCompany(request, company._id)
-                            ? " (already requested)"
-                            : ""}
-                        </option>
-                      ))}
-                    </select>
-                  </Field>
-                  <Field label="Time">
-                    <select
-                      className="input"
-                      disabled={request.status !== "requested"}
-                      value={selectedTime}
-                      onChange={(event) =>
-                        setTimeSelections({
-                          ...timeSelections,
-                          [request._id]: Number(event.target.value),
-                        })
-                      }
-                    >
-                      {slotLabels.map((slot) => (
-                        <option key={slot.minute} value={slot.minute}>
-                          {slot.label}
-                        </option>
-                      ))}
-                    </select>
-                  </Field>
-                </div>
-                <Field label="Desk note">
-                  <input
-                    className="input"
-                    disabled={request.status !== "requested"}
-                    value={selectedNote}
-                    onChange={(event) => setNotes({ ...notes, [request._id]: event.target.value })}
-                    placeholder="Why this company is a useful match"
-                  />
-                </Field>
-                {request.status === "requested" ? (
-                  <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap items-center gap-2 xl:justify-end">
+                {(incoming || actor.role === "admin") && (request.status === "pending" || request.status === "countered") && (
+                  <>
                     <button
-                      type="button"
-                      className="button-primary"
-                      disabled={actionPending || selectedCompanyBlocked}
-                      onClick={() => {
-                        if (!selectedCompanyId || selectedCompanyBlocked) return;
-                        void runAction(
-                          () =>
-                            assignDeskMatch({
-                              sessionToken,
-                              deskMatchRequestId: request._id,
-                              companyId: selectedCompanyId,
-                              preferredStartMinute: selectedTime,
-                              note: selectedNote,
-                            }),
-                          "Desk match sent to company.",
-                        );
-                      }}
-                    >
-                      <Send size={15} /> Send company request
-                    </button>
-                    <button
-                      type="button"
                       className="button-quiet"
                       disabled={actionPending}
                       onClick={() =>
                         void runAction(
-                          () =>
-                            updateDeskMatchStatus({
-                              sessionToken,
-                              deskMatchRequestId: request._id,
-                              status: "closed",
-                            }),
-                          "Desk request closed.",
+                          () => respond({ sessionToken, requestId: request._id, action: "decline", note: "Declined from queue." }),
+                          "Request declined.",
                         )
                       }
                     >
-                      <Check size={15} /> Close
+                      <X size={15} /> Decline
                     </button>
-                  </div>
-                ) : (
-                  <div className="text-xs leading-5 text-white/45">
-                    This desk request is {request.status}.
-                  </div>
+                    <button
+                      className="button-quiet"
+                      disabled={actionPending || counterStartMinute === undefined}
+                      onClick={() => {
+                        if (counterStartMinute === undefined) return;
+                        void runAction(
+                          () =>
+                            respond({
+                              sessionToken,
+                              requestId: request._id,
+                              action: "counter",
+                              counterStartMinute,
+                              note: `Countered to ${minuteLabel(counterStartMinute)}.`,
+                            }),
+                          "Counter sent.",
+                        );
+                      }}
+                    >
+                      <Clock3 size={15} /> Counter
+                    </button>
+                    <button
+                      className="button-primary"
+                      disabled={actionPending}
+                      onClick={() =>
+                        void runAction(
+                          () => respond({ sessionToken, requestId: request._id, action: "accept", note: "Accepted from queue." }),
+                          "Request accepted.",
+                        )
+                      }
+                    >
+                      <Check size={15} /> Accept
+                    </button>
+                  </>
+                )}
+                {request.requesterAccountId === actor._id && request.status === "countered" && (
+                  <button
+                    className="button-primary"
+                    disabled={actionPending}
+                    onClick={() => void runAction(() => confirmCounter({ sessionToken, requestId: request._id }), "Counter confirmed.")}
+                  >
+                    <Check size={15} /> Confirm counter
+                  </button>
+                )}
+                {request.requesterAccountId === actor._id && (request.status === "pending" || request.status === "countered") && (
+                  <button
+                    className="button-quiet"
+                    disabled={actionPending}
+                    onClick={() => void runAction(() => cancelRequest({ sessionToken, requestId: request._id }), "Request cancelled.")}
+                  >
+                    <X size={15} /> Cancel
+                  </button>
                 )}
               </div>
-            </div>
+            </article>
           );
         })}
       </div>
     </section>
+  );
+}
+
+function ScheduleView({
+  actionPending,
+  actor,
+  meetings,
+  runAction,
+  sessionToken,
+  settings,
+  slotLabels,
+}: {
+  actionPending: boolean;
+  actor: Account;
+  meetings: Meeting[];
+  runAction: RunAction;
+  sessionToken: string;
+  settings: Settings;
+  slotLabels: Array<{ minute: number; label: string }>;
+}) {
+  const moveMeeting = useMutation(api.networking.moveMeeting);
+  const updateMeetingStatus = useMutation(api.networking.updateMeetingStatus);
+  const visible = meetings
+    .filter((meeting) => {
+      if (actor.role === "admin") return true;
+      return meeting.participants.some((participant) => participant.accountId === actor._id);
+    })
+    .sort((a, b) => a.date.localeCompare(b.date) || a.startMinute - b.startMinute || a.tableNumber - b.tableNumber);
+
+  return (
+    <section className="border border-white/10 bg-[#101010]">
+      <SectionHeader
+        icon={<CalendarDays size={17} />}
+        title="Confirmed schedule"
+        detail={`${visible.length} meetings`}
+        action={
+          <button
+            className="button-quiet"
+            onClick={() =>
+              csvDownload("aiewf-networking-schedule.csv", [
+                ["date", "time", "table", "participants", "status"],
+                ...visible.map((meeting) => [
+                  meeting.date,
+                  minuteLabel(meeting.startMinute),
+                  String(meeting.tableNumber),
+                  meeting.participants.map((participant) => participant.account?.displayName ?? "Participant").join("; "),
+                  meeting.status,
+                ]),
+              ])
+            }
+          >
+            <Download size={15} /> Export
+          </button>
+        }
+      />
+      <div className="grid gap-3 p-3 lg:grid-cols-2">
+        {visible.length === 0 && (
+          <div className="lg:col-span-2">
+            <EmptyState title="No confirmed meetings" detail="Accepted requests will appear here with table assignment." />
+          </div>
+        )}
+        {visible.map((meeting) => (
+          <article key={meeting._id} className="grid gap-4 border border-white/10 bg-black/25 p-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <div className="font-mono text-lg text-[#f8e18e]">Table {meeting.tableNumber}</div>
+                <div className="mt-1 text-sm text-white/55">
+                  {dateLabels[meeting.date]} · {minuteLabel(meeting.startMinute)}
+                </div>
+              </div>
+              <StatusBadge status={meeting.status} />
+            </div>
+            <div className="grid gap-2">
+              {meeting.participants.map((participant) => (
+                <div key={participant._id} className="flex items-start justify-between gap-3 border border-white/10 bg-black/30 p-3">
+                  <div>
+                    <div className="font-semibold">{participant.account?.displayName ?? "Participant"}</div>
+                    <div className="mt-1 text-xs text-white/45">
+                      {participant.account?.title} · {participant.account?.company}
+                    </div>
+                  </div>
+                  <Badge>{participant.role}</Badge>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {actor.role === "admin" ? (
+                <>
+                  <select
+                    aria-label="Move meeting time"
+                    className="small-input w-28"
+                    disabled={actionPending}
+                    value={meeting.startMinute}
+                    onChange={(event) =>
+                      void runAction(
+                        () =>
+                          moveMeeting({
+                            sessionToken,
+                            meetingId: meeting._id,
+                            startMinute: Number(event.target.value),
+                            tableNumber: meeting.tableNumber,
+                          }),
+                        "Meeting moved.",
+                      )
+                    }
+                  >
+                    {slotLabels.map((slot) => (
+                      <option key={slot.minute} value={slot.minute}>{slot.label}</option>
+                    ))}
+                  </select>
+                  <select
+                    aria-label="Reassign table"
+                    className="small-input w-20"
+                    disabled={actionPending}
+                    value={meeting.tableNumber}
+                    onChange={(event) =>
+                      void runAction(
+                        () =>
+                          moveMeeting({
+                            sessionToken,
+                            meetingId: meeting._id,
+                            startMinute: meeting.startMinute,
+                            tableNumber: Number(event.target.value),
+                          }),
+                        "Table reassigned.",
+                      )
+                    }
+                  >
+                    {Array.from({ length: settings.activeTables + settings.reserveTables }, (_, index) => (
+                      <option key={index + 1} value={index + 1}>T{index + 1}</option>
+                    ))}
+                  </select>
+                </>
+              ) : (
+                <button
+                  className="button-quiet"
+                  disabled={actionPending}
+                  onClick={() =>
+                    void runAction(
+                      () =>
+                        updateMeetingStatus({
+                          sessionToken,
+                          meetingId: meeting._id,
+                          status: meeting.status === "completed" ? "confirmed" : "completed",
+                        }),
+                      "Meeting status updated.",
+                    )
+                  }
+                >
+                  <Check size={15} /> Toggle done
+                </button>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function AdminView({
+  actionPending,
+  actor,
+  demoLoginEnabled,
+  importBatches,
+  meetings,
+  participants,
+  requests,
+  runAction,
+  sessionToken,
+  setSessionToken,
+  settings,
+}: {
+  actionPending: boolean;
+  actor: Account;
+  demoLoginEnabled: boolean;
+  importBatches: ImportBatch[];
+  participants: Account[];
+  meetings: Meeting[];
+  requests: MeetingRequest[];
+  runAction: RunAction;
+  sessionToken: string;
+  setSessionToken: (token: string | null) => void;
+  settings: Settings;
+}) {
+  const updateSettings = useMutation(api.networking.updateSettings);
+  const upsertParticipants = useMutation(api.networking.upsertParticipantsFromRows);
+  const setParticipantOptIn = useMutation(api.networking.setParticipantOptIn);
+  const resetDemoData = useMutation(api.networking.resetDemoData);
+  const [form, setForm] = useState({
+    dayStartMinute: settings.dayStartMinute,
+    dayEndMinute: settings.dayEndMinute,
+    slotMinutes: settings.slotMinutes,
+    activeTables: settings.activeTables,
+    reserveTables: settings.reserveTables,
+    outgoingRequestCapPerDay: settings.outgoingRequestCapPerDay,
+    maxMeetingGroupSize: settings.maxMeetingGroupSize,
+    allowCounters: settings.allowCounters,
+  });
+  const [csv, setCsv] = useState("First Name,Last Name,Email,Registration Status,Ticket Type,Company,Title,Holder Email,Holder Company Name,Holder Job Title\nAda,Lovelace,ada@example.com,REGISTERED,AI Leadership (All Access),Analytical Engines,Founder,ada@example.com,Analytical Engines,Founder");
+
+  if (actor.role !== "admin") {
+    return (
+      <section className="border border-white/10 bg-[#101010] p-6">
+        <Settings2 className="text-[#f8e18e]" />
+        <h2 className="mt-4 text-xl font-semibold">Admin access required</h2>
+      </section>
+    );
+  }
+
+  function saveSettings(event: FormEvent) {
+    event.preventDefault();
+    void runAction(() => updateSettings({ sessionToken, ...form }), "Settings updated.");
+  }
+
+  return (
+    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_420px]">
+      <section className="grid gap-4">
+        <form onSubmit={saveSettings} className="border border-white/10 bg-[#101010]">
+          <SectionHeader icon={<SlidersHorizontal size={17} />} title="Room settings" detail="admin controls" />
+          <div className="grid gap-4 p-4 sm:grid-cols-2">
+            <NumberField label="Day start minute" value={form.dayStartMinute} onChange={(value) => setForm({ ...form, dayStartMinute: value })} />
+            <NumberField label="Day end minute" value={form.dayEndMinute} onChange={(value) => setForm({ ...form, dayEndMinute: value })} />
+            <NumberField label="Slot minutes" value={form.slotMinutes} onChange={(value) => setForm({ ...form, slotMinutes: value })} />
+            <NumberField label="Active tables" value={form.activeTables} onChange={(value) => setForm({ ...form, activeTables: value })} />
+            <NumberField label="Reserve tables" value={form.reserveTables} onChange={(value) => setForm({ ...form, reserveTables: value })} />
+            <NumberField label="Outgoing cap" value={form.outgoingRequestCapPerDay} onChange={(value) => setForm({ ...form, outgoingRequestCapPerDay: value })} />
+            <NumberField label="Max group size" value={form.maxMeetingGroupSize} onChange={(value) => setForm({ ...form, maxMeetingGroupSize: value })} />
+            <Toggle label="Allow counters" checked={form.allowCounters} onChange={(value) => setForm({ ...form, allowCounters: value })} />
+          </div>
+          <div className="flex flex-wrap gap-2 border-t border-white/10 p-4">
+            <button className="button-primary" disabled={actionPending} type="submit">
+              <Settings2 size={15} /> Save settings
+            </button>
+            {demoLoginEnabled && (
+              <button
+                type="button"
+                className="button-quiet"
+                disabled={actionPending}
+                onClick={() =>
+                  void runAction(
+                    () =>
+                      resetDemoData({ sessionToken }).then((result) => {
+                        setSessionToken(result.token);
+                      }),
+                    "Demo data reset.",
+                  )
+                }
+              >
+                <RotateCcw size={15} /> Reset demo data
+              </button>
+            )}
+          </div>
+        </form>
+
+        <section className="border border-white/10 bg-[#101010]">
+          <SectionHeader icon={<Users size={17} />} title="Participant inventory" detail={`${participants.length} rows`} />
+          <div className="grid gap-3 p-3">
+            {participants.slice(0, 60).map((participant) => (
+              <div key={participant._id} className="grid gap-3 border border-white/10 bg-black/25 p-3 md:grid-cols-[minmax(0,1fr)_auto]">
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h3 className="font-semibold">{participant.displayName}</h3>
+                    <StatusBadge status={participant.directoryOptIn ? "opted_in" : "hidden"} />
+                    <StatusBadge status={participant.ticketCategory} />
+                  </div>
+                  <p className="mt-1 text-sm text-white/55">{participant.title || "Missing title"} · {participant.company || "Missing company"}</p>
+                  <p className="mt-1 text-xs text-white/40">{participant.email}</p>
+                </div>
+                <button
+                  className={participant.directoryOptIn ? "button-quiet" : "button-primary"}
+                  disabled={actionPending}
+                  onClick={() =>
+                    void runAction(
+                      () =>
+                        setParticipantOptIn({
+                          sessionToken,
+                          accountId: participant._id,
+                          directoryOptIn: !participant.directoryOptIn,
+                        }),
+                      participant.directoryOptIn ? "Participant hidden." : "Participant opted in.",
+                    )
+                  }
+                >
+                  {participant.directoryOptIn ? <X size={15} /> : <Check size={15} />}
+                  {participant.directoryOptIn ? "Hide" : "Opt in"}
+                </button>
+              </div>
+            ))}
+          </div>
+        </section>
+      </section>
+
+      <section className="border border-white/10 bg-[#101010] p-4 xl:sticky xl:top-4 xl:self-start">
+        <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
+          <Database size={16} /> Data ops
+        </div>
+        <div className="mt-4 grid grid-cols-2 gap-2">
+          <button
+            className="button-quiet"
+            onClick={() =>
+              csvDownload("aiewf-participants.csv", [
+                ["name", "email", "company", "title", "ticket", "signedUp", "directoryOptIn"],
+                ...participants.map((participant) => [
+                  participant.displayName,
+                  participant.email,
+                  participant.company,
+                  participant.title,
+                  participant.ticketType,
+                  String(participant.signedUp),
+                  String(participant.directoryOptIn),
+                ]),
+              ])
+            }
+          >
+            <Download size={15} /> People
+          </button>
+          <button
+            className="button-quiet"
+            onClick={() =>
+              csvDownload("aiewf-meetings.csv", [
+                ["date", "time", "table", "participants", "status"],
+                ...meetings.map((meeting) => [
+                  meeting.date,
+                  minuteLabel(meeting.startMinute),
+                  String(meeting.tableNumber),
+                  meeting.participants.map((participant) => participant.account?.displayName ?? "").join("; "),
+                  meeting.status,
+                ]),
+              ])
+            }
+          >
+            <Download size={15} /> Meetings
+          </button>
+        </div>
+        <textarea
+          value={csv}
+          onChange={(event) => setCsv(event.target.value)}
+          className="input mt-4 min-h-64 resize-y font-mono text-xs"
+        />
+        <button
+          className="button-primary mt-3 w-full"
+          disabled={actionPending}
+          onClick={() => {
+            const parsed = parseParticipantCsv(csv);
+            void runAction(
+              () =>
+                parsed.error
+                  ? Promise.reject(new Error(parsed.error))
+                  : upsertParticipants({ sessionToken, rows: parsed.rows }),
+              parsed.error ? "" : `${parsed.rows.length} participant rows processed.`,
+            );
+          }}
+        >
+          <Import size={15} /> Import participant CSV
+        </button>
+        <div className="mt-4 grid gap-2 border-t border-white/10 pt-4">
+          <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">Recent imports</div>
+          {importBatches.length === 0 && <p className="text-xs leading-5 text-white/45">No import batches yet.</p>}
+          {importBatches.map((batch) => (
+            <div key={batch._id} className="border border-white/10 bg-black/30 p-2 text-xs text-white/60">
+              {batch.summary} · missing company {batch.missingCompanyRows} · missing title {batch.missingTitleRows}
+            </div>
+          ))}
+        </div>
+        <div className="mt-4 border-t border-white/10 pt-4 text-xs leading-5 text-white/45">
+          {requests.length} requests · {meetings.length} meetings currently in Convex.
+        </div>
+      </section>
+    </div>
   );
 }
 
@@ -1483,8 +1780,8 @@ function RoomDisplayView({
   const [qrDataUrl, setQrDataUrl] = useState<string | null>(null);
 
   useEffect(() => {
-    const attendeeUrl = `${window.location.origin}/?surface=attendee`;
-    void QRCode.toDataURL(attendeeUrl, {
+    const participantUrl = `${window.location.origin}/?surface=directory`;
+    void QRCode.toDataURL(participantUrl, {
       margin: 1,
       width: 240,
       color: { dark: "#050505", light: "#ffffff" },
@@ -1533,21 +1830,21 @@ function RoomDisplayView({
               </div>
             </div>
             <p className="mt-3 max-w-4xl text-lg leading-8 text-white/58">
-              {roomDisplay.settings.roomName} · scan to request a 1:1 or ask the desk for a match.
+              {roomDisplay.settings.roomName} · scan to opt in, set availability, and book peer meetings.
             </p>
           </div>
           <div className="grid grid-cols-[110px_minmax(0,1fr)] items-center gap-4 justify-self-start lg:justify-self-end">
             <div className="flex aspect-square items-center justify-center bg-white p-2">
               {qrDataUrl ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img alt="Attendee request QR code" className="h-full w-full" src={qrDataUrl} />
+                <img alt="Networking app QR code" className="h-full w-full" src={qrDataUrl} />
               ) : (
                 <QrCode className="text-black" size={56} />
               )}
             </div>
             <div className="text-sm leading-6 text-white/60">
               <div className="font-semibold text-white">Scan to get started</div>
-              <div>or chat with the room desk.</div>
+              <div>Groups max out at {roomDisplay.settings.maxMeetingGroupSize} people.</div>
               <button type="button" className="button-quiet mt-3" onClick={onExit}>
                 Exit display
               </button>
@@ -1555,88 +1852,44 @@ function RoomDisplayView({
           </div>
         </header>
 
-        <div className="grid min-h-0 gap-4 xl:grid-cols-[minmax(0,1fr)_420px] xl:overflow-hidden">
+        <div className="grid min-h-0 gap-4 xl:grid-cols-[minmax(0,1fr)_360px] xl:overflow-hidden">
           <section className="min-h-0 overflow-hidden border border-white/10 bg-[#101010]">
             <SectionHeader
               icon={<Table2 size={18} />}
               title="Now and next"
               detail={`${roomDisplay.counts.live} live · ${roomDisplay.counts.upcoming} upcoming`}
             />
-            <div className="grid max-h-[calc(100vh-230px)] gap-3 overflow-y-auto p-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            <div className="grid max-h-[calc(100vh-230px)] gap-3 overflow-y-auto p-3 sm:grid-cols-2 xl:grid-cols-3">
               {roomDisplay.nextMeetings.length === 0 && (
-                <div className="sm:col-span-2 xl:col-span-3 2xl:col-span-4">
-                  <EmptyState
-                    title="No upcoming meetings"
-                    detail="Accepted 1:1 meetings will appear on this display."
-                  />
+                <div className="sm:col-span-2 xl:col-span-3">
+                  <EmptyState title="No upcoming meetings" detail="Accepted peer meetings will appear on this display." />
                 </div>
               )}
               {roomDisplay.nextMeetings.map((meeting) => (
-                <article
-                  key={meeting.meetingId}
-                  className="grid min-h-[230px] gap-4 border border-white/10 bg-white/[0.045] p-4"
-                >
+                <article key={meeting.meetingId} className="grid min-h-[230px] gap-4 border border-white/10 bg-white/[0.045] p-4">
                   <div className="flex items-center justify-between gap-3">
                     <div className="font-mono text-2xl text-[#f8e18e]">T{meeting.tableNumber}</div>
                     <StatusBadge status={meeting.status} />
                   </div>
                   <div>
-                    <div className="text-xs uppercase tracking-[0.12em] text-white/45">
-                      {meeting.label}
-                    </div>
+                    <div className="text-xs uppercase tracking-[0.12em] text-white/45">{meeting.label}</div>
                     <h2 className="mt-2 text-2xl font-semibold leading-tight">
-                      {meeting.companyName}
+                      {meeting.participants.filter(Boolean).map((participant) => participant?.displayName).slice(0, 2).join(" + ")}
                     </h2>
                   </div>
-                  <div className="self-end border-t border-white/10 pt-3">
-                    <div className="text-sm font-semibold">{meeting.attendeeName}</div>
-                    <div className="mt-1 line-clamp-2 text-xs leading-5 text-white/45">
-                      {meeting.attendeeTitle}
-                    </div>
+                  <div className="self-end border-t border-white/10 pt-3 text-sm text-white/55">
+                    Group {meeting.participantCount}/{roomDisplay.settings.maxMeetingGroupSize}
                   </div>
                 </article>
               ))}
             </div>
           </section>
 
-          <aside className="grid min-h-0 gap-4 xl:grid-rows-[auto_minmax(0,1fr)] xl:overflow-hidden">
-            <section className="grid grid-cols-2 gap-2">
-              <DisplayStat label="Open companies" value={roomDisplay.counts.openCompanies} />
-              <DisplayStat label="Pending" value={roomDisplay.counts.pendingRequests} />
-              <DisplayStat label="Tables" value={roomDisplay.settings.activeTables} />
-              <DisplayStat label="Slot length" value={`${roomDisplay.settings.slotMinutes}m`} />
-            </section>
-            <section className="min-h-0 overflow-hidden border border-white/10 bg-[#101010]">
-              <SectionHeader
-                icon={<Sparkles size={18} />}
-                title="Open next"
-                detail={`${roomDisplay.opportunities.length} options`}
-              />
-              <div className="divide-y divide-white/10 xl:max-h-[calc(100vh-360px)] xl:overflow-y-auto">
-                {roomDisplay.opportunities.length === 0 && (
-                  <EmptyState
-                    title="No open slots"
-                    detail="Check the desk for manual routing."
-                  />
-                )}
-                {roomDisplay.opportunities.map((opportunity) => (
-                  <div key={`${opportunity.companyId}-${opportunity.startMinute}`} className="p-4">
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <div className="text-lg font-semibold leading-tight">
-                          {opportunity.companyName}
-                        </div>
-                        <div className="mt-1 text-xs text-white/45">
-                          {opportunity.hostNames.join(", ") || opportunity.tier}
-                        </div>
-                      </div>
-                      <div className="font-mono text-[#f8e18e]">{opportunity.label}</div>
-                    </div>
-                    <TagRow items={opportunity.topics} />
-                  </div>
-                ))}
-              </div>
-            </section>
+          <aside className="grid gap-2 self-start">
+            <DisplayStat label="Open tables" value={roomDisplay.counts.openTables} />
+            <DisplayStat label="Pending" value={roomDisplay.counts.pendingRequests} />
+            <DisplayStat label="Tables" value={roomDisplay.settings.activeTables} />
+            <DisplayStat label="Slot length" value={`${roomDisplay.settings.slotMinutes}m`} />
           </aside>
         </div>
       </div>
@@ -1653,743 +1906,17 @@ function DisplayStat({ label, value }: { label: string; value: ReactNode }) {
   );
 }
 
-function Marketplace({
-  actionPending,
-  actor,
-  availabilityBlocks,
-  companySlotOccupancy,
-  companies,
-  requests,
-  runAction,
-  sessionToken,
-  settings,
-  slotLabels,
-}: {
-  actionPending: boolean;
-  actor: Account;
-  availabilityBlocks: AvailabilityBlock[];
-  companySlotOccupancy: CompanySlotOccupancy[];
-  companies: Company[];
-  requests: RequestDoc[];
-  runAction: RunAction;
-  sessionToken: string;
-  settings: Settings;
-  slotLabels: Array<{ minute: number; label: string }>;
-}) {
-  const createRequest = useMutation(api.networking.createRequest);
-  const [date, setDate] = useState("2026-06-30");
-  const eligibleCompanies = companies
-    .filter(
-      (company) =>
-        company.optedIn &&
-        companySlotsForDate(
-          company._id,
-          date,
-          availabilityBlocks,
-          companySlotOccupancy,
-          slotLabels,
-          settings.slotMinutes,
-        ).length > 0,
-    )
-    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
-  const [selectedCompanyId, setSelectedCompanyId] = useState<Id<"companies"> | "">("");
-  const [preferredStartMinute, setPreferredStartMinute] = useState(10 * 60 + 40);
-  const [alternateStartMinute, setAlternateStartMinute] = useState<number | "">("");
-  const [reason, setReason] = useState("");
-  const [context, setContext] = useState("");
-  const selectedCompany =
-    eligibleCompanies.find((company) => company._id === selectedCompanyId) ??
-    eligibleCompanies[0];
-  const effectiveSelectedCompanyId = selectedCompany?._id ?? "";
-  const myRequests = requests.filter((request) => request.attendeeAccountId === actor._id);
-  const dailyCount = myRequests.filter(
-    (request) => request.date === date && isOpenRequestStatus(request.status),
-  ).length;
-  const atRequestCap = dailyCount >= settings.attendeeRequestCapPerDay;
-  const availableSlots = selectedCompany
-    ? companySlotsForDate(
-        selectedCompany._id,
-        date,
-        availabilityBlocks,
-        companySlotOccupancy,
-        slotLabels,
-        settings.slotMinutes,
-      )
-    : [];
-  const hasAvailability = availableSlots.length > 0;
-  const effectivePreferredStartMinute = availableSlots.some(
-    (slot) => slot.minute === preferredStartMinute,
-  )
-    ? preferredStartMinute
-    : availableSlots[0]?.minute;
-  const effectiveAlternateStartMinute =
-    alternateStartMinute !== "" &&
-    availableSlots.some((slot) => slot.minute === alternateStartMinute)
-      ? alternateStartMinute
-      : "";
-  const canSubmit =
-    actor.role === "attendee" &&
-    Boolean(effectiveSelectedCompanyId) &&
-    hasAvailability &&
-    effectivePreferredStartMinute !== undefined &&
-    !atRequestCap &&
-    !actionPending;
-
-  function submit(event: FormEvent) {
-    event.preventDefault();
-    if (!effectiveSelectedCompanyId || effectivePreferredStartMinute === undefined || !canSubmit) {
-      return;
-    }
-    void runAction(
-      () =>
-        createRequest({
-          sessionToken,
-          companyId: effectiveSelectedCompanyId,
-          date,
-          preferredStartMinute: effectivePreferredStartMinute,
-          ...(effectiveAlternateStartMinute === "" ? {} : { alternateStartMinute: effectiveAlternateStartMinute }),
-          reason,
-          context,
-        }),
-      "Meeting request submitted.",
-    ).then((completed) => {
-      if (completed) {
-        setReason("");
-        setContext("");
-      }
-    });
-  }
-
-  return (
-    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_360px]">
-      <section className="border border-white/10 bg-[#101010]">
-        <SectionHeader icon={<Sparkles size={17} />} title="Opted-in companies" detail={`${eligibleCompanies.length} available`} />
-        <div className="divide-y divide-white/10">
-          {eligibleCompanies.length === 0 && <EmptyState title="No companies are open" detail={`No opted-in companies have open slots for ${dateLabels[date]}.`} />}
-          {eligibleCompanies.map((company) => (
-            <button
-              key={company._id}
-              onClick={() => setSelectedCompanyId(company._id)}
-              className={cn(
-                "grid w-full gap-3 p-4 text-left transition sm:grid-cols-[1fr_auto]",
-                effectiveSelectedCompanyId === company._id ? "bg-[#f8e18e]/10" : "hover:bg-white/[0.04]",
-              )}
-            >
-              <div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="text-lg font-semibold">{company.name}</h3>
-                  <Badge>{company.tier}</Badge>
-                  {company.sponsor && <Badge accent>sponsor</Badge>}
-                </div>
-                <p className="mt-2 max-w-3xl text-sm leading-6 text-white/60">{company.description}</p>
-                <TagRow items={company.topics} />
-              </div>
-              <div className="text-left sm:text-right">
-                <div className="text-sm font-semibold">{myRequests.filter((request) => request.companyId === company._id).length} requests</div>
-                <div className="mt-1 text-xs text-white/45">{company.hostNames.join(", ") || "Host TBD"}</div>
-              </div>
-            </button>
-          ))}
-        </div>
-      </section>
-      <form onSubmit={submit} className="border border-white/10 bg-[#101010] p-4">
-        <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
-          <MessageSquare size={16} /> Request meeting
-        </div>
-        <div className="mt-1 text-xs text-white/45">
-          {dailyCount}/{settings.attendeeRequestCapPerDay} requests used for {dateLabels[date]}
-        </div>
-        <div className="mt-4 grid gap-3">
-          <Field label="Company">
-            <select className="input" value={effectiveSelectedCompanyId} onChange={(e) => setSelectedCompanyId(e.target.value as Id<"companies">)} required>
-              {eligibleCompanies.length === 0 && <option value="">No opted-in companies</option>}
-              {eligibleCompanies.map((company) => <option key={company._id} value={company._id}>{company.name}</option>)}
-            </select>
-          </Field>
-          <Field label="Date">
-            <select className="input" value={date} onChange={(e) => setDate(e.target.value)}>
-              <option value="2026-06-30">Tue Jun 30</option>
-              <option value="2026-07-01">Wed Jul 1</option>
-            </select>
-          </Field>
-          <Field label="Preferred time">
-            <select className="input" value={hasAvailability ? effectivePreferredStartMinute : ""} onChange={(e) => setPreferredStartMinute(Number(e.target.value))} disabled={!hasAvailability}>
-              {hasAvailability ? availableSlots.map((slot) => <option key={slot.minute} value={slot.minute}>{slot.label}</option>) : <option value="">No availability for this date</option>}
-            </select>
-          </Field>
-          <Field label="Alternate time">
-            <select className="input" value={effectiveAlternateStartMinute} onChange={(e) => setAlternateStartMinute(e.target.value === "" ? "" : Number(e.target.value))} disabled={!hasAvailability}>
-              <option value="">No alternate</option>
-              {availableSlots.map((slot) => <option key={slot.minute} value={slot.minute}>{slot.label}</option>)}
-            </select>
-          </Field>
-          <Field label="Reason">
-            <textarea className="input min-h-24 resize-none" value={reason} onChange={(e) => setReason(e.target.value)} placeholder="What should the company know before accepting?" required />
-          </Field>
-          <Field label="Context">
-            <textarea className="input min-h-20 resize-none" value={context} onChange={(e) => setContext(e.target.value)} placeholder="Role, company, buying/research intent" />
-          </Field>
-          <button className="button-primary" disabled={!canSubmit} type="submit">
-            <MessageSquare size={16} /> Request meeting
-          </button>
-          {actor.role !== "attendee" && <p className="text-xs leading-5 text-white/45">Switch to an attendee account to submit requests.</p>}
-          {actor.role === "attendee" && !hasAvailability && <p className="text-xs leading-5 text-white/45">All slots are blocked for this company on the selected date.</p>}
-          {actor.role === "attendee" && atRequestCap && <p className="text-xs leading-5 text-white/45">Daily request cap reached for this date.</p>}
-        </div>
-      </form>
-    </div>
-  );
-}
-
-function RequestQueue({
-  actionPending,
-  actor,
-  onSelect,
-  requests,
-  runAction,
-  sessionToken,
-  slotLabels,
-}: {
-  actionPending: boolean;
-  actor: Account;
-  onSelect: (id: Id<"meetingRequests">) => void;
-  requests: RequestDoc[];
-  runAction: RunAction;
-  sessionToken: string;
-  slotLabels: Array<{ minute: number; label: string }>;
-}) {
-  const respond = useMutation(api.networking.respondToRequest);
-  const confirmCounter = useMutation(api.networking.confirmCounter);
-  const visible = requests
-    .filter((request) => {
-      if (actor.role === "admin") return true;
-      if (actor.role === "company") return actor.companyId === request.companyId;
-      return actor._id === request.attendeeAccountId;
-    })
-    .sort((a, b) => b.updatedAt - a.updatedAt);
-
-  return (
-    <section className="border border-white/10 bg-[#101010]">
-      <SectionHeader icon={<ListChecks size={17} />} title="Request queue" detail={`${visible.length} visible`} />
-      <div className="divide-y divide-white/10">
-        {visible.length === 0 && <EmptyState title="No visible requests" detail="Requests will appear here when attendees ask for time with this company." />}
-        {visible.map((request) => {
-          const counterStartMinute = nextCounterStartMinute(
-            slotLabels,
-            request.preferredStartMinute,
-          );
-
-          return (
-            <div key={request._id} className="grid gap-3 p-4 xl:grid-cols-[minmax(0,1fr)_270px]">
-              <button onClick={() => onSelect(request._id)} className="min-w-0 text-left">
-                <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="font-semibold">{request.company?.name ?? "Company"}</h3>
-                  <StatusBadge status={request.status} />
-                  <span className="text-xs text-white/45">{dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}</span>
-                </div>
-                <p className="mt-2 text-sm leading-6 text-white/60">{request.reason}</p>
-                <p className="mt-2 text-xs text-white/45">{request.attendee?.displayName} · {request.attendee?.title}</p>
-              </button>
-              <div className="flex flex-wrap items-center gap-2 xl:justify-end">
-                {actor.role !== "attendee" && canHostRespond(request.status) && (
-                  <>
-                    <button className="button-quiet" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "decline", note: "Declined from queue." }), "Request declined.")}>
-                      <X size={15} /> Decline
-                    </button>
-                    <button
-                      className="button-quiet"
-                      disabled={actionPending || counterStartMinute === undefined}
-                      onClick={() => {
-                        if (counterStartMinute === undefined) return;
-                        void runAction(
-                          () =>
-                            respond({
-                              sessionToken,
-                              requestId: request._id,
-                              action: "counter",
-                              counterStartMinute,
-                              note: "Counter-proposed to the next available slot.",
-                            }),
-                          "Counter sent.",
-                        );
-                      }}
-                    >
-                      <Clock3 size={15} /> Counter
-                    </button>
-                    <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "accept", note: "Accepted from queue." }), "Request accepted and table assigned.")}>
-                      <Check size={15} /> Accept
-                    </button>
-                  </>
-                )}
-                {actor.role === "attendee" && request.status === "countered" && request.attendeeAccountId === actor._id && (
-                  <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => confirmCounter({ sessionToken, requestId: request._id }), "Counter confirmed.")}>
-                    <Check size={15} /> Confirm counter
-                  </button>
-                )}
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  );
-}
-
-function ScheduleView({
-  actionPending,
-  actor,
-  meetings,
-  onSelectRequest,
-  runAction,
-  sessionToken,
-  settings,
-  slotLabels,
-}: {
-  actionPending: boolean;
-  actor: Account;
-  meetings: MeetingDoc[];
-  onSelectRequest: (id: Id<"meetingRequests">) => void;
-  runAction: RunAction;
-  sessionToken: string;
-  settings: Settings;
-  slotLabels: Array<{ minute: number; label: string }>;
-}) {
-  const moveMeeting = useMutation(api.networking.moveMeeting);
-  const updateMeetingStatus = useMutation(api.networking.updateMeetingStatus);
-  const visible = meetings
-    .filter((meeting) => actor.role === "admin" || actor.companyId === meeting.companyId || actor._id === meeting.attendeeAccountId)
-    .sort((a, b) => a.date.localeCompare(b.date) || a.startMinute - b.startMinute || a.tableNumber - b.tableNumber);
-  return (
-    <section className="border border-white/10 bg-[#101010]">
-      <SectionHeader
-        icon={<CalendarDays size={17} />}
-        title="Confirmed schedule"
-        detail={`${visible.length} meetings`}
-        action={<button className="button-quiet" onClick={() => csvDownload("aiewf-networking-schedule.csv", [["date", "time", "table", "company", "attendee", "status"], ...visible.map((meeting) => [meeting.date, minuteLabel(meeting.startMinute), String(meeting.tableNumber), meeting.company?.name ?? "", meeting.attendee?.displayName ?? "", meeting.status])])}><Download size={15} /> Export schedule</button>}
-      />
-      <div className="overflow-x-auto">
-        <table className="w-full min-w-[820px] border-collapse text-left text-sm">
-          <thead className="border-b border-white/10 text-xs uppercase tracking-[0.12em] text-white/45">
-            <tr><th className="px-4 py-3">Date</th><th className="px-4 py-3">Time</th><th className="px-4 py-3">Table</th><th className="px-4 py-3">Company</th><th className="px-4 py-3">Attendee</th><th className="px-4 py-3">Status</th><th className="px-4 py-3">Ops</th></tr>
-          </thead>
-          <tbody className="divide-y divide-white/10">
-            {visible.length === 0 && (
-              <tr>
-                <td colSpan={7}>
-                  <EmptyState title="No confirmed meetings" detail="Accepted requests will appear here with their assigned tables." />
-                </td>
-              </tr>
-            )}
-            {visible.map((meeting) => (
-              <tr key={meeting._id} className="align-top">
-                <td className="px-4 py-3">{dateLabels[meeting.date]}</td>
-                <td className="px-4 py-3 font-mono text-[#f8e18e]">{minuteLabel(meeting.startMinute)}</td>
-                <td className="px-4 py-3">Table {meeting.tableNumber}</td>
-                <td className="px-4 py-3">{meeting.company?.name}</td>
-                <td className="px-4 py-3"><button className="text-left hover:text-[#f8e18e]" onClick={() => onSelectRequest(meeting.requestId)}>{meeting.attendee?.displayName}</button><div className="text-xs text-white/45">{meeting.attendee?.title}</div></td>
-                <td className="px-4 py-3"><StatusBadge status={meeting.status} /></td>
-                <td className="px-4 py-3">
-                  {actor.role === "admin" ? (
-                    <div className="flex flex-wrap gap-2">
-                      <select
-                        aria-label={`Move ${meeting.company?.name ?? "company"} meeting time`}
-                        className="small-input w-28"
-                        disabled={actionPending}
-                        value={meeting.startMinute}
-                        onChange={(e) => void runAction(() => moveMeeting({ sessionToken, meetingId: meeting._id, startMinute: Number(e.target.value), tableNumber: meeting.tableNumber }), "Meeting moved.")}
-                      >
-                        {slotLabels.map((slot) => <option key={slot.minute} value={slot.minute}>{slot.label}</option>)}
-                      </select>
-                      <select
-                        aria-label={`Reassign ${meeting.company?.name ?? "company"} meeting table`}
-                        className="small-input w-20"
-                        disabled={actionPending}
-                        value={meeting.tableNumber}
-                        onChange={(e) => void runAction(() => moveMeeting({ sessionToken, meetingId: meeting._id, startMinute: meeting.startMinute, tableNumber: Number(e.target.value) }), "Table reassigned.")}
-                      >
-                        {Array.from({ length: settings.activeTables + settings.reserveTables }, (_, index) => <option key={index + 1} value={index + 1}>T{index + 1}</option>)}
-                      </select>
-                    </div>
-                  ) : (
-                    <button className="button-quiet" disabled={actionPending} onClick={() => void runAction(() => updateMeetingStatus({ sessionToken, meetingId: meeting._id, status: meeting.status === "completed" ? "confirmed" : "completed" }), "Meeting status updated.")}>
-                      <Check size={15} /> Toggle done
-                    </button>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </section>
-  );
-}
-
-function CompaniesView({
-  actionPending,
-  actor,
-  availabilityBlocks,
-  companies,
-  runAction,
-  sessionToken,
-  settings,
-  slotLabels,
-}: {
-  actionPending: boolean;
-  actor: Account;
-  availabilityBlocks: AvailabilityBlock[];
-  companies: Company[];
-  runAction: RunAction;
-  sessionToken: string;
-  settings: Settings;
-  slotLabels: Array<{ minute: number; label: string }>;
-}) {
-  const setCompanyOptIn = useMutation(api.networking.setCompanyOptIn);
-  const sortedCompanies = companies
-    .slice()
-    .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
-  const totalEventSlots = slotLabels.length * eventDateEntries(settings).length;
-  return (
-    <section className="border border-white/10 bg-[#101010]">
-      <SectionHeader icon={<Building2 size={17} />} title="Company inventory" detail={`${companies.length} companies`} />
-      <div className="divide-y divide-white/10">
-        {companies.length === 0 && <EmptyState title="No companies loaded" detail="Import or seed company data before opening attendee requests." />}
-        {sortedCompanies.map((company) => {
-          const companyBlocks = availabilityBlocks.filter((block) => block.companyId === company._id);
-          const availabilitySummary = !company.optedIn
-            ? "Hidden from attendee booking"
-            : companyBlocks.length >= totalEventSlots
-              ? "All slots blocked"
-              : "Available by default";
-          const canManageSlots =
-            actor.role === "admin" || (actor.role === "company" && actor.companyId === company._id);
-          return (
-            <div key={company._id} className="grid gap-4 p-4 xl:grid-cols-[minmax(0,1fr)_220px]">
-              <div className="min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="text-lg font-semibold">{company.name}</h3>
-                  <StatusBadge status={company.optedIn ? "opted in" : "hidden"} />
-                  <span className="text-xs text-white/45">{company.tier}</span>
-                </div>
-                <p className="mt-2 text-sm leading-6 text-white/60">{company.description}</p>
-                <TagRow items={[...company.topics, ...company.wantsToMeet].slice(0, 8)} />
-                <div className="mt-3 flex flex-wrap gap-3 text-xs text-white/45">
-                  <span className="flex items-center gap-1"><Mail size={13} />{company.contactEmail}</span>
-                  <span className="flex items-center gap-1"><Clock3 size={13} />{availabilitySummary}</span>
-                  <span className="flex items-center gap-1"><CalendarDays size={13} />{companyBlocks.length} blocked slots</span>
-                </div>
-                {canManageSlots && (
-                  <CompanyAvailabilityControls
-                    actionPending={actionPending}
-                    availabilityBlocks={availabilityBlocks}
-                    company={company}
-                    runAction={runAction}
-                    sessionToken={sessionToken}
-                    settings={settings}
-                    slotLabels={slotLabels}
-                  />
-                )}
-              </div>
-              {actor.role === "admin" && (
-                <div className="flex items-center gap-2 lg:justify-end">
-                  <button className={company.optedIn ? "button-quiet" : "button-primary"} disabled={actionPending} onClick={() => void runAction(() => setCompanyOptIn({ sessionToken, companyId: company._id, optedIn: !company.optedIn }), company.optedIn ? "Company hidden." : "Company opted in.")}>
-                    {company.optedIn ? <X size={15} /> : <Check size={15} />}{company.optedIn ? "Hide" : "Opt in"}
-                  </button>
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  );
-}
-
-function CompanyAvailabilityControls({
-  actionPending,
-  availabilityBlocks,
-  company,
-  runAction,
-  sessionToken,
-  settings,
-  slotLabels,
-}: {
-  actionPending: boolean;
-  availabilityBlocks: AvailabilityBlock[];
-  company: Company;
-  runAction: RunAction;
-  sessionToken: string;
-  settings: Settings;
-  slotLabels: Array<{ minute: number; label: string }>;
-}) {
-  const setCompanySlotBlock = useMutation(api.networking.setCompanySlotBlock);
-  const eventDates = eventDateEntries(settings);
-  const companyBlocks = availabilityBlocks.filter((block) => block.companyId === company._id);
-
-  return (
-    <div className="mt-4 border border-white/10 bg-black/25 p-3">
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">
-          Slot opt-outs
-        </div>
-        <div className="font-mono text-xs text-[#f8e18e]">
-          {companyBlocks.length} blocked / {slotLabels.length * eventDates.length} total
-        </div>
-      </div>
-      {!company.optedIn ? (
-        <p className="mt-3 text-sm leading-6 text-white/50">
-          Hidden companies are outside attendee booking.
-        </p>
-      ) : (
-        <div className="mt-3 grid gap-4">
-          {eventDates.map(([date, label]) => {
-            const dayBlocks = companyBlocks.filter((block) => block.date === date);
-            return (
-              <div key={date} className="grid gap-2">
-                <div className="flex items-center justify-between gap-3 text-xs">
-                  <span className="font-semibold text-white/70">{label}</span>
-                  <span className="text-white/45">{dayBlocks.length} blocked</span>
-                </div>
-                <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 md:grid-cols-5 2xl:grid-cols-8">
-                  {slotLabels.map((slot) => {
-                    const blocked = isCompanySlotBlocked(
-                      company._id,
-                      date,
-                      slot.minute,
-                      availabilityBlocks,
-                      settings.slotMinutes,
-                    );
-                    return (
-                      <button
-                        key={`${date}:${slot.minute}`}
-                        type="button"
-                        aria-label={`${blocked ? "Restore" : "Block"} ${company.name} on ${label} at ${slot.label}`}
-                        aria-pressed={blocked}
-                        className={cn(
-                          "flex h-12 min-w-0 flex-col items-center justify-center border px-2 text-xs font-semibold leading-tight transition",
-                          blocked
-                            ? "border-red-300/35 bg-red-300/10 text-red-100 hover:border-red-200"
-                            : "border-emerald-300/20 bg-emerald-300/5 text-emerald-100 hover:border-emerald-200/60",
-                        )}
-                        disabled={actionPending}
-                        onClick={() =>
-                          void runAction(
-                            () =>
-                              setCompanySlotBlock({
-                                sessionToken,
-                                companyId: company._id,
-                                date,
-                                startMinute: slot.minute,
-                                blocked: !blocked,
-                              }),
-                            blocked ? "Slot restored." : "Slot blocked.",
-                          )
-                        }
-                      >
-                        <span>{slot.label}</span>
-                        <span className="mt-0.5 text-[10px] font-medium opacity-70">
-                          {blocked ? "Blocked" : "Open"}
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      )}
-    </div>
-  );
-}
-
-function AdminView({
-  actionPending,
-  actor,
-  companies,
-  importBatches,
-  meetings,
-  runAction,
-  sessionToken,
-  setSessionToken,
-  settings,
-}: {
-  actionPending: boolean;
-  actor: Account;
-  companies: Company[];
-  importBatches: Array<Doc<"importBatches">>;
-  meetings: MeetingDoc[];
-  runAction: RunAction;
-  sessionToken: string;
-  setSessionToken: (token: string) => void;
-  settings: Settings;
-}) {
-  const updateSettings = useMutation(api.networking.updateSettings);
-  const upsertCompanies = useMutation(api.networking.upsertCompaniesFromRows);
-  const resetDemoData = useMutation(api.networking.resetDemoData);
-  const [form, setForm] = useState({
-    dayStartMinute: settings.dayStartMinute,
-    dayEndMinute: settings.dayEndMinute,
-    slotMinutes: settings.slotMinutes,
-    activeTables: settings.activeTables,
-    reserveTables: settings.reserveTables,
-    attendeeRequestCapPerDay: settings.attendeeRequestCapPerDay,
-    companyAcceptCapPerDay: settings.companyAcceptCapPerDay,
-    allowCounters: settings.allowCounters,
-    sponsorsOnlyDefault: settings.sponsorsOnlyDefault,
-  });
-  const [csv, setCsv] = useState("name,tier,contactEmail,hostNames,topics,wantsToMeet,sponsor,optedIn,description\nAnthropic,Lab,anthropic-hosts@aiewf.test,Dana Lee,agents;evals,enterprise leaders;AI engineers,true,false,Imported candidate sponsor");
-
-  if (actor.role !== "admin") {
-    return <section className="border border-white/10 bg-[#101010] p-6"><ShieldCheck className="text-[#f8e18e]" /><h2 className="mt-4 text-xl font-semibold">Admin access required</h2><p className="mt-2 text-sm text-white/55">Switch to admin@aiewf.test to manage room settings.</p></section>;
-  }
-
-  function saveSettings(event: FormEvent) {
-    event.preventDefault();
-    void runAction(() => updateSettings({ sessionToken, ...form }), "Settings updated.");
-  }
-
-  return (
-    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_380px]">
-      <form onSubmit={saveSettings} className="border border-white/10 bg-[#101010]">
-        <SectionHeader icon={<SlidersHorizontal size={17} />} title="Room settings" detail="Admin defaults" />
-        <div className="grid gap-4 p-4 sm:grid-cols-2">
-          <NumberField label="Day start minute" value={form.dayStartMinute} onChange={(v) => setForm({ ...form, dayStartMinute: v })} />
-          <NumberField label="Day end minute" value={form.dayEndMinute} onChange={(v) => setForm({ ...form, dayEndMinute: v })} />
-          <NumberField label="Slot minutes" value={form.slotMinutes} onChange={(v) => setForm({ ...form, slotMinutes: v })} />
-          <NumberField label="Active tables" value={form.activeTables} onChange={(v) => setForm({ ...form, activeTables: v })} />
-          <NumberField label="Reserve tables" value={form.reserveTables} onChange={(v) => setForm({ ...form, reserveTables: v })} />
-          <NumberField label="Attendee request cap" value={form.attendeeRequestCapPerDay} onChange={(v) => setForm({ ...form, attendeeRequestCapPerDay: v })} />
-          <NumberField label="Company accept cap" value={form.companyAcceptCapPerDay} onChange={(v) => setForm({ ...form, companyAcceptCapPerDay: v })} />
-          <Toggle label="Allow counters" checked={form.allowCounters} onChange={(v) => setForm({ ...form, allowCounters: v })} />
-          <Toggle label="Sponsors default" checked={form.sponsorsOnlyDefault} onChange={(v) => setForm({ ...form, sponsorsOnlyDefault: v })} />
-        </div>
-        <div className="flex flex-wrap gap-2 border-t border-white/10 p-4">
-          <button className="button-primary" disabled={actionPending} type="submit"><Settings2 size={15} /> Save settings</button>
-          <button
-            type="button"
-            className="button-quiet"
-            disabled={actionPending}
-            onClick={() =>
-              void runAction(
-                () =>
-                  resetDemoData({ sessionToken }).then((result) => {
-                    setSessionToken(result.token);
-                  }),
-                "Demo data reset.",
-              )
-            }
-          >
-            <RotateCcw size={15} /> Reset demo data
-          </button>
-        </div>
-      </form>
-      <section className="border border-white/10 bg-[#101010]">
-        <SectionHeader icon={<Database size={17} />} title="Data ops" detail="CSV-ready" />
-        <div className="grid gap-3 p-4">
-          <div className="grid grid-cols-2 gap-2">
-            <button className="button-quiet" onClick={() => csvDownload("aiewf-companies.csv", [["name", "tier", "contactEmail", "hostNames", "topics", "wantsToMeet", "sponsor", "optedIn", "description"], ...companies.map((company) => [company.name, company.tier, company.contactEmail, company.hostNames.join(";"), company.topics.join(";"), company.wantsToMeet.join(";"), String(company.sponsor), String(company.optedIn), company.description])])}><Download size={15} /> Companies</button>
-            <button className="button-quiet" onClick={() => csvDownload("aiewf-meetings.csv", [["date", "time", "table", "company", "attendee", "status"], ...meetings.map((meeting) => [meeting.date, minuteLabel(meeting.startMinute), String(meeting.tableNumber), meeting.company?.name ?? "", meeting.attendee?.displayName ?? "", meeting.status])])}><Download size={15} /> Meetings</button>
-          </div>
-          <textarea value={csv} onChange={(event) => setCsv(event.target.value)} className="input min-h-52 resize-y font-mono text-xs" />
-          <button className="button-primary" disabled={actionPending} onClick={() => {
-            const parsed = parseCompanyCsv(csv);
-            void runAction(
-              () =>
-                parsed.error
-                  ? Promise.reject(new Error(parsed.error))
-                  : upsertCompanies({ sessionToken, rows: parsed.rows }),
-              parsed.error ? "" : `${parsed.rows.length} CSV rows processed.`,
-            );
-          }}><Upload size={15} /> Import company CSV</button>
-          <div className="border-t border-white/10 pt-3">
-            <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">Recent imports</div>
-            <div className="mt-2 grid gap-2">
-              {importBatches.length === 0 && <p className="text-xs leading-5 text-white/45">No import batches yet.</p>}
-              {importBatches.map((batch) => <div key={batch._id} className="border border-white/10 bg-black/30 p-2 text-xs text-white/60">{batch.summary} · {batch.rowCount} rows</div>)}
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-
-function DetailPanel({
-  actionPending,
-  actor,
-  request,
-  runAction,
-  sessionToken,
-  settings,
-  slotLabels,
-}: {
-  actionPending: boolean;
-  actor: Account | null;
-  request: RequestDoc | null;
-  runAction: RunAction;
-  sessionToken: string;
-  settings: Settings;
-  slotLabels: Array<{ minute: number; label: string }>;
-}) {
-  const respond = useMutation(api.networking.respondToRequest);
-  const confirmCounter = useMutation(api.networking.confirmCounter);
-  const counterStartMinute = request
-    ? nextCounterStartMinute(slotLabels, request.preferredStartMinute)
-    : undefined;
-  return (
-    <aside className="border border-white/10 bg-[#101010] p-4 lg:sticky lg:top-4 lg:h-[calc(100vh-92px)] lg:overflow-y-auto">
-      <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]"><LayoutDashboard size={17} /> Request detail</div>
-      {!request || !actor ? (
-        <p className="mt-6 text-sm leading-6 text-white/55">Select a request to inspect status and table assignment.</p>
-      ) : (
-        <div className="mt-4 grid gap-4">
-          <div><div className="flex items-center justify-between gap-3"><h2 className="text-xl font-semibold">{request.company?.name}</h2><StatusBadge status={request.status} /></div><p className="mt-2 text-sm leading-6 text-white/60">{request.reason}</p></div>
-          <InfoLine icon={<Users size={15} />} label="Attendee" value={`${request.attendee?.displayName} · ${request.attendee?.title}`} />
-          <InfoLine icon={<MapPin size={15} />} label="Room" value={settings.roomName} />
-          <InfoLine icon={<Clock3 size={15} />} label="Preferred" value={`${dateLabels[request.date]} · ${minuteLabel(request.preferredStartMinute)}`} />
-          {request.counterStartMinute && <InfoLine icon={<Clock3 size={15} />} label="Counter" value={minuteLabel(request.counterStartMinute)} />}
-          {request.meeting && <InfoLine icon={<Table2 size={15} />} label="Assigned" value={`Table ${request.meeting.tableNumber} · ${minuteLabel(request.meeting.startMinute)}`} />}
-          <div className="border border-white/10 bg-black/30 p-3"><div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">Context</div><p className="mt-2 text-sm leading-6 text-white/65">{request.context || "No context added."}</p></div>
-          <div className="grid gap-2">
-            {actor.role !== "attendee" && canHostRespond(request.status) && (
-              <>
-                <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "accept", note: "Accepted from detail panel." }), "Request accepted.")}><Check size={15} /> Accept</button>
-                <div className="grid grid-cols-2 gap-2">
-                  <button
-                    className="button-quiet"
-                    disabled={actionPending || counterStartMinute === undefined}
-                    onClick={() => {
-                      if (counterStartMinute === undefined) return;
-                      void runAction(
-                        () =>
-                          respond({
-                            sessionToken,
-                            requestId: request._id,
-                            action: "counter",
-                            counterStartMinute,
-                            note: "Counter-proposed from detail panel.",
-                          }),
-                        "Counter sent.",
-                      );
-                    }}
-                  ><Clock3 size={15} /> Counter</button>
-                  <button className="button-quiet" disabled={actionPending} onClick={() => void runAction(() => respond({ sessionToken, requestId: request._id, action: "decline", note: "Declined from detail panel." }), "Request declined.")}><X size={15} /> Decline</button>
-                </div>
-              </>
-            )}
-            {actor.role === "attendee" && request.status === "countered" && request.attendeeAccountId === actor._id && (
-              <button className="button-primary" disabled={actionPending} onClick={() => void runAction(() => confirmCounter({ sessionToken, requestId: request._id }), "Counter confirmed.")}><Check size={15} /> Confirm counter</button>
-            )}
-          </div>
-        </div>
-      )}
-    </aside>
-  );
-}
-
 function SectionHeader({ icon, title, detail, action }: { icon: ReactNode; title: string; detail?: string; action?: ReactNode }) {
-  return <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-4 py-3"><div className="flex items-center gap-2"><span className="text-[#f8e18e]">{icon}</span><h2 className="font-semibold">{title}</h2>{detail && <span className="text-xs text-white/45">{detail}</span>}</div>{action}</div>;
+  return (
+    <div className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-4 py-3">
+      <div className="flex items-center gap-2">
+        <span className="text-[#f8e18e]">{icon}</span>
+        <h2 className="font-semibold">{title}</h2>
+        {detail && <span className="text-xs text-white/45">{detail}</span>}
+      </div>
+      {action}
+    </div>
+  );
 }
 
 function EmptyState({ title, detail }: { title: string; detail: string }) {
@@ -2402,30 +1929,53 @@ function EmptyState({ title, detail }: { title: string; detail: string }) {
 }
 
 function Field({ label, children }: { label: string; children: ReactNode }) {
-  return <label className="grid gap-1 text-xs font-medium uppercase tracking-[0.12em] text-white/45">{label}{children}</label>;
+  return (
+    <label className="grid gap-1 text-xs font-medium uppercase tracking-[0.12em] text-white/45">
+      {label}
+      {children}
+    </label>
+  );
 }
 
 function NumberField({ label, value, onChange }: { label: string; value: number; onChange: (value: number) => void }) {
-  return <Field label={label}><input className="input" type="number" value={value} onChange={(event) => onChange(Number(event.target.value))} /></Field>;
+  return (
+    <Field label={label}>
+      <input className="input" type="number" value={value} onChange={(event) => onChange(Number(event.target.value))} />
+    </Field>
+  );
 }
 
 function Toggle({ label, checked, onChange }: { label: string; checked: boolean; onChange: (value: boolean) => void }) {
-  return <label className="flex items-center justify-between border border-white/10 bg-black/30 px-3 py-3 text-sm text-white/70">{label}<input type="checkbox" checked={checked} onChange={(event) => onChange(event.target.checked)} /></label>;
+  return (
+    <label className="flex items-center justify-between border border-white/10 bg-black/30 px-3 py-3 text-sm text-white/70">
+      {label}
+      <input type="checkbox" checked={checked} onChange={(event) => onChange(event.target.checked)} />
+    </label>
+  );
 }
 
 function StatusBadge({ status }: { status: string }) {
-  return <span className={cn("inline-flex border px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.12em]", statusStyles[status] ?? "border-white/10 bg-white/5 text-white/55")}>{status.replace("_", " ")}</span>;
+  return (
+    <span className={cn("inline-flex border px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.12em]", statusStyles[status] ?? "border-white/10 bg-white/5 text-white/55")}>
+      {status.replace("_", " ")}
+    </span>
+  );
 }
 
-function Badge({ children, accent }: { children: ReactNode; accent?: boolean }) {
-  return <span className={cn("border px-2 py-1 text-[11px] uppercase tracking-[0.12em]", accent ? "border-[#f8e18e]/30 bg-[#f8e18e]/10 text-[#f8e18e]" : "border-white/10 text-white/50")}>{children}</span>;
+function Badge({ children }: { children: ReactNode }) {
+  return <span className="border border-white/10 bg-black/30 px-2 py-1 text-[11px] uppercase tracking-[0.12em] text-white/50">{children}</span>;
 }
 
 function TagRow({ items }: { items: string[] }) {
-  if (!items.length) return null;
-  return <div className="mt-3 flex flex-wrap gap-2">{items.slice(0, 7).map((item) => <span key={item} className="border border-white/10 bg-black/30 px-2 py-1 text-xs text-white/55">{item}</span>)}</div>;
-}
-
-function InfoLine({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
-  return <div className="flex gap-3 border border-white/10 bg-black/30 p-3"><span className="mt-0.5 text-[#f8e18e]">{icon}</span><div><div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">{label}</div><div className="mt-1 text-sm leading-5 text-white/75">{value}</div></div></div>;
+  const visible = items.filter(Boolean).slice(0, 6);
+  if (!visible.length) return null;
+  return (
+    <div className="mt-3 flex flex-wrap gap-2">
+      {visible.map((item) => (
+        <span key={item} className="border border-white/10 bg-black/30 px-2 py-1 text-xs text-white/55">
+          {item}
+        </span>
+      ))}
+    </div>
+  );
 }

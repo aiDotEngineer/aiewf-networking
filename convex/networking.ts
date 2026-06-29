@@ -1,16 +1,32 @@
 import { v } from "convex/values";
+import { internal } from "./_generated/api";
 import {
+  action,
+  env,
+  internalMutation,
   mutation,
   query,
+  type ActionCtx,
   type MutationCtx,
   type QueryCtx,
 } from "./_generated/server";
 import type { Doc, Id } from "./_generated/dataModel";
+import {
+  buildMagicLinkUrl,
+  hashLoginToken,
+  normalizeLoginEmail,
+  safeRedirectPath,
+} from "./authHelpers";
 
 const SETTINGS_KEY = "default";
 const EVENT_DATES = ["2026-06-30", "2026-07-01"];
+const DEMO_SCHEMA_VERSION = 2;
 const SESSION_TTL_MS = 1000 * 60 * 60 * 24 * 14;
-const MAX_IMPORT_ROWS = 100;
+const MAGIC_LINK_TTL_MS = 1000 * 60 * 15;
+const MAGIC_LINK_HASH_SALT = "aiewf-networking-magic-link-v1";
+const MAX_IMPORT_ROWS = 2000;
+const ACTIVE_REQUEST_STATUSES = new Set(["pending", "countered", "accepted"]);
+const MISSING_VALUES = new Set(["", "n/a", "na", "none", "null"]);
 
 const meetingStatusValidator = v.union(
   v.literal("confirmed"),
@@ -19,32 +35,33 @@ const meetingStatusValidator = v.union(
   v.literal("cancelled"),
 );
 
-const deskMatchStatusValidator = v.union(
-  v.literal("closed"),
-  v.literal("cancelled"),
-);
-
 type Actor = Doc<"accounts">;
 type Settings = Doc<"eventSettings">;
+type SheetRow = Record<string, string>;
 
 function now() {
   return Date.now();
 }
 
-function normalizeEmail(email: string) {
-  return email.trim().toLowerCase();
+function normalizeEmail(email: string | undefined) {
+  return cleanSheetValue(email).toLowerCase();
 }
 
-function slugify(value: string) {
-  return value
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+function cleanSheetValue(value: string | undefined) {
+  const trimmed = value?.trim() ?? "";
+  return MISSING_VALUES.has(trimmed.toLowerCase()) ? "" : trimmed;
+}
+
+function coalesceSheetValue(...values: Array<string | undefined>) {
+  for (const value of values) {
+    const cleaned = cleanSheetValue(value);
+    if (cleaned) return cleaned;
+  }
+  return "";
 }
 
 function splitList(value: string | undefined) {
-  return value?.split(";").map((item) => item.trim()).filter(Boolean) ?? [];
+  return value?.split(/[;,]/).map((item) => item.trim()).filter(Boolean) ?? [];
 }
 
 function tokenValue() {
@@ -53,12 +70,32 @@ function tokenValue() {
     .slice(2)}`;
 }
 
+function secureTokenValue(bytes = 32) {
+  const randomBytes = new Uint8Array(bytes);
+  crypto.getRandomValues(randomBytes);
+  let binary = "";
+  for (const byte of randomBytes) binary += String.fromCharCode(byte);
+  return btoa(binary).replaceAll("+", "-").replaceAll("/", "_").replace(/=+$/, "");
+}
+
+function demoLoginEnabled() {
+  return env.ENABLE_DEMO_LOGIN === "1" || env.ENABLE_DEMO_LOGIN === "true";
+}
+
 function minuteLabel(minute: number) {
   const hour = Math.floor(minute / 60);
   const mins = minute % 60;
   const suffix = hour >= 12 ? "PM" : "AM";
   const hour12 = hour % 12 === 0 ? 12 : hour % 12;
   return `${hour12}:${mins.toString().padStart(2, "0")} ${suffix}`;
+}
+
+function escapeHtml(value: string) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
 }
 
 function validatePositiveInteger(name: string, value: number) {
@@ -71,6 +108,78 @@ function validateMinuteOfDay(name: string, value: number) {
   if (!Number.isInteger(value) || value < 0 || value > 24 * 60) {
     throw new Error(`${name} must be an integer minute between 0 and 1440.`);
   }
+}
+
+function ticketCategory(ticketType: string) {
+  const normalized = ticketType.toLowerCase();
+  if (normalized.includes("speaker")) return "speaker" as const;
+  if (normalized.includes("sponsor")) return "sponsor" as const;
+  if (normalized.includes("leadership")) return "leadership" as const;
+  return "other" as const;
+}
+
+function normalizeParticipantRow(row: SheetRow) {
+  const firstName = coalesceSheetValue(
+    row["First Name"],
+    row["Holder First Name"],
+    row["Buyer First Name"],
+  );
+  const lastName = coalesceSheetValue(
+    row["Last Name"],
+    row["Holder Last Name"],
+    row["Buyer Last Name"],
+  );
+  const displayName = [firstName, lastName].filter(Boolean).join(" ").trim();
+  const company = coalesceSheetValue(row.Company, row["Holder Company Name"]);
+  const title = coalesceSheetValue(row.Title, row["Holder Job Title"]);
+  const ticketType = cleanSheetValue(row["Ticket Type"]);
+
+  return {
+    email:
+      normalizeEmail(row["Holder Email"]) ||
+      normalizeEmail(row.Email) ||
+      normalizeEmail(row["Buyer Email"]),
+    displayName,
+    firstName,
+    lastName,
+    company,
+    title,
+    ticketType,
+    ticketCategory: ticketCategory(ticketType),
+    registrationStatus: cleanSheetValue(row["Registration Status"]),
+    profileImageUrl: cleanSheetValue(row["Profile Picture"]),
+    city: cleanSheetValue(row["Holder City"]),
+    country: cleanSheetValue(row["Holder Country"]),
+    companySize: cleanSheetValue(row["Holder Company Size"]),
+    profileComplete: Boolean(displayName && company && title),
+  };
+}
+
+function accountSummary(account: Doc<"accounts"> | null) {
+  if (!account) return null;
+  return {
+    _id: account._id,
+    email: account.email,
+    displayName: account.displayName,
+    firstName: account.firstName,
+    lastName: account.lastName,
+    role: account.role,
+    title: account.title,
+    company: account.company,
+    ticketType: account.ticketType,
+    ticketCategory: account.ticketCategory,
+    registrationStatus: account.registrationStatus,
+    profileImageUrl: account.profileImageUrl,
+    city: account.city,
+    country: account.country,
+    companySize: account.companySize,
+    networkingIntent: account.networkingIntent,
+    topics: account.topics,
+    signedUp: account.signedUp,
+    directoryOptIn: account.directoryOptIn,
+    profileComplete: account.profileComplete,
+    active: account.active,
+  };
 }
 
 async function getSettings(ctx: QueryCtx | MutationCtx) {
@@ -86,18 +195,20 @@ async function requireSettings(ctx: QueryCtx | MutationCtx) {
   return settings;
 }
 
-async function requireActor(ctx: QueryCtx | MutationCtx, sessionToken: string) {
+async function getActorForSession(ctx: QueryCtx | MutationCtx, sessionToken: string) {
   const session = await ctx.db
     .query("demoSessions")
     .withIndex("by_token", (q) => q.eq("token", sessionToken))
     .unique();
-  if (!session || session.expiresAt < now()) {
-    throw new Error("Demo session expired. Select an account again.");
-  }
+  if (!session || session.expiresAt < now()) return null;
   const actor = await ctx.db.get(session.accountId);
-  if (!actor || !actor.active) {
-    throw new Error("Demo session account is inactive.");
-  }
+  if (!actor || !actor.active) return null;
+  return actor;
+}
+
+async function requireActor(ctx: QueryCtx | MutationCtx, sessionToken: string) {
+  const actor = await getActorForSession(ctx, sessionToken);
+  if (!actor) throw new Error("Session expired. Sign in again.");
   return actor;
 }
 
@@ -105,11 +216,11 @@ function requireAdmin(actor: Actor) {
   if (actor.role !== "admin") throw new Error("Admin access required.");
 }
 
-function isCompanyOperator(actor: Actor, companyId: Id<"companies">) {
-  return (
-    actor.role === "admin" ||
-    (actor.role === "company" && actor.companyId === companyId)
-  );
+function requireParticipant(actor: Actor) {
+  if (actor.role !== "participant") throw new Error("Participant account required.");
+  if (!actor.signedUp || !actor.profileComplete) {
+    throw new Error("Confirm your profile before booking meetings.");
+  }
 }
 
 function assertValidEventDate(date: string) {
@@ -127,312 +238,196 @@ function assertSlotInDay(settings: Settings, startMinute: number) {
   }
 }
 
-async function hasAvailability(
-  ctx: QueryCtx | MutationCtx,
-  companyId: Id<"companies">,
-  date: string,
-  startMinute: number,
-  slotMinutes: number,
-) {
-  const blocks = await ctx.db
-    .query("availabilityBlocks")
-    .withIndex("by_companyId_and_date", (q) =>
-      q.eq("companyId", companyId).eq("date", date),
-    )
-    .take(200);
-  return !blocks.some(
-    (block) => startMinute < block.endMinute && startMinute + slotMinutes > block.startMinute,
-  );
-}
-
-async function availabilityBlocksForEvent(
-  ctx: QueryCtx | MutationCtx,
-  visibleCompanyIds?: Set<Id<"companies">>,
-) {
-  const blocksByDate = await Promise.all(
-    EVENT_DATES.map((date) =>
-      ctx.db
-        .query("availabilityBlocks")
-        .withIndex("by_date", (q) => q.eq("date", date))
-        .collect(),
-    ),
-  );
-  const blocks = blocksByDate.flat();
-  return visibleCompanyIds
-    ? blocks.filter((block) => visibleCompanyIds.has(block.companyId))
-    : blocks;
-}
-
-async function companySlotOccupancyForEvent(
-  ctx: QueryCtx | MutationCtx,
-  visibleCompanyIds: Set<Id<"companies">>,
-) {
-  const meetingsByDate = await Promise.all(
-    EVENT_DATES.map((date) =>
-      ctx.db
-        .query("meetings")
-        .withIndex("by_date", (q) => q.eq("date", date))
-        .collect(),
-    ),
-  );
-  return meetingsByDate
-    .flat()
-    .filter(
-      (meeting) =>
-        meeting.status !== "cancelled" && visibleCompanyIds.has(meeting.companyId),
-    )
-    .map((meeting) => ({
-      companyId: meeting.companyId,
-      date: meeting.date,
-      startMinute: meeting.startMinute,
-      endMinute: meeting.endMinute,
-    }));
-}
-
-async function companyMeetingsForDay(
-  ctx: QueryCtx | MutationCtx,
-  companyId: Id<"companies">,
-  date: string,
-) {
-  return await ctx.db
-    .query("meetings")
-    .withIndex("by_companyId_and_date", (q) =>
-      q.eq("companyId", companyId).eq("date", date),
-    )
-    .take(500);
-}
-
-async function attendeeMeetingsForDay(
-  ctx: QueryCtx | MutationCtx,
-  attendeeAccountId: Id<"accounts">,
-  date: string,
-) {
-  return await ctx.db
-    .query("meetings")
-    .withIndex("by_attendeeAccountId_and_date", (q) =>
-      q.eq("attendeeAccountId", attendeeAccountId).eq("date", date),
-    )
-    .take(500);
-}
-
 function overlaps(
-  meeting: Pick<Doc<"meetings">, "_id" | "startMinute" | "endMinute" | "status">,
+  item: Pick<Doc<"meetingParticipants">, "_id" | "startMinute" | "endMinute" | "status">,
   startMinute: number,
   slotMinutes: number,
-  exceptMeetingId?: Id<"meetings">,
+  exceptParticipantId?: Id<"meetingParticipants">,
 ) {
-  if (meeting.status === "cancelled") return false;
-  if (exceptMeetingId && meeting._id === exceptMeetingId) return false;
-  return startMinute < meeting.endMinute && startMinute + slotMinutes > meeting.startMinute;
+  if (item.status === "cancelled") return false;
+  if (exceptParticipantId && item._id === exceptParticipantId) return false;
+  return startMinute < item.endMinute && startMinute + slotMinutes > item.startMinute;
 }
 
-async function hasCompanyMeetingConflict(
+async function participantAvailable(
   ctx: QueryCtx | MutationCtx,
-  companyId: Id<"companies">,
+  accountId: Id<"accounts">,
+  date: string,
+  startMinute: number,
+) {
+  const row = await ctx.db
+    .query("participantAvailability")
+    .withIndex("by_accountId_and_date_and_startMinute", (q) =>
+      q.eq("accountId", accountId).eq("date", date).eq("startMinute", startMinute),
+    )
+    .unique();
+  return Boolean(row?.available);
+}
+
+async function participantMeetingConflict(
+  ctx: QueryCtx | MutationCtx,
+  accountId: Id<"accounts">,
   date: string,
   startMinute: number,
   slotMinutes: number,
   exceptMeetingId?: Id<"meetings">,
 ) {
-  const meetings = await companyMeetingsForDay(ctx, companyId, date);
-  return meetings.some((meeting) => overlaps(meeting, startMinute, slotMinutes, exceptMeetingId));
+  const rows = await ctx.db
+    .query("meetingParticipants")
+    .withIndex("by_accountId_and_date", (q) =>
+      q.eq("accountId", accountId).eq("date", date),
+    )
+    .take(100);
+  return rows.some(
+    (row) =>
+      row.meetingId !== exceptMeetingId &&
+      overlaps(row, startMinute, slotMinutes),
+  );
 }
 
-async function hasAttendeeMeetingConflict(
+async function hostMeetingAtSlot(
   ctx: QueryCtx | MutationCtx,
-  attendeeAccountId: Id<"accounts">,
+  hostAccountId: Id<"accounts">,
   date: string,
   startMinute: number,
-  slotMinutes: number,
-  exceptMeetingId?: Id<"meetings">,
-) {
-  const meetings = await attendeeMeetingsForDay(ctx, attendeeAccountId, date);
-  return meetings.some((meeting) => overlaps(meeting, startMinute, slotMinutes, exceptMeetingId));
-}
-
-async function hasTableConflict(
-  ctx: QueryCtx | MutationCtx,
-  date: string,
-  tableNumber: number,
-  startMinute: number,
-  slotMinutes: number,
-  exceptMeetingId?: Id<"meetings">,
 ) {
   const meetings = await ctx.db
     .query("meetings")
-    .withIndex("by_date_and_tableNumber", (q) =>
-      q.eq("date", date).eq("tableNumber", tableNumber),
-    )
-    .take(500);
-  return meetings.some((meeting) => overlaps(meeting, startMinute, slotMinutes, exceptMeetingId));
-}
-
-async function companyAcceptedCount(
-  ctx: QueryCtx | MutationCtx,
-  companyId: Id<"companies">,
-  date: string,
-) {
-  const meetings = await companyMeetingsForDay(ctx, companyId, date);
-  return meetings.filter((meeting) => meeting.status !== "cancelled").length;
-}
-
-async function attendeeRequestsForDay(
-  ctx: QueryCtx | MutationCtx,
-  attendeeAccountId: Id<"accounts">,
-  date: string,
-) {
-  return await ctx.db
-    .query("meetingRequests")
-    .withIndex("by_attendeeAccountId_and_date", (q) =>
-      q.eq("attendeeAccountId", attendeeAccountId).eq("date", date),
+    .withIndex("by_hostAccountId_and_date", (q) =>
+      q.eq("hostAccountId", hostAccountId).eq("date", date),
     )
     .take(100);
+  return (
+    meetings.find(
+      (meeting) =>
+        meeting.startMinute === startMinute && meeting.status !== "cancelled",
+    ) ?? null
+  );
 }
 
-async function activeAttendeeCompanyRequestsForDay(
+async function tableConflict(
   ctx: QueryCtx | MutationCtx,
-  attendeeAccountId: Id<"accounts">,
-  companyId: Id<"companies">,
+  date: string,
+  startMinute: number,
+  tableNumber: number,
+  exceptMeetingId?: Id<"meetings">,
+) {
+  const rows = await ctx.db
+    .query("meetings")
+    .withIndex("by_date_and_startMinute_and_tableNumber", (q) =>
+      q.eq("date", date).eq("startMinute", startMinute).eq("tableNumber", tableNumber),
+    )
+    .take(5);
+  return rows.some(
+    (meeting) => meeting.status !== "cancelled" && meeting._id !== exceptMeetingId,
+  );
+}
+
+async function findOpenTable(
+  ctx: QueryCtx | MutationCtx,
+  settings: Settings,
+  date: string,
+  startMinute: number,
+) {
+  const meetings = await ctx.db
+    .query("meetings")
+    .withIndex("by_date_and_startMinute", (q) =>
+      q.eq("date", date).eq("startMinute", startMinute),
+    )
+    .take(100);
+  const occupied = new Set(
+    meetings
+      .filter((meeting) => meeting.status !== "cancelled")
+      .map((meeting) => meeting.tableNumber),
+  );
+  const maxTable = settings.activeTables + settings.reserveTables;
+  for (let table = 1; table <= maxTable; table += 1) {
+    if (!occupied.has(table)) return table;
+  }
+  throw new Error("All tables are booked for this slot.");
+}
+
+async function activeOutgoingRequestsForDay(
+  ctx: QueryCtx | MutationCtx,
+  accountId: Id<"accounts">,
   date: string,
 ) {
   const requests = await ctx.db
     .query("meetingRequests")
-    .withIndex("by_attendeeAccountId_and_companyId_and_date", (q) =>
-      q.eq("attendeeAccountId", attendeeAccountId).eq("companyId", companyId).eq("date", date),
+    .withIndex("by_requesterAccountId_and_date", (q) =>
+      q.eq("requesterAccountId", accountId).eq("date", date),
     )
-    .take(20);
-
-  return requests.filter(
-    (request) => request.status !== "cancelled" && request.status !== "declined",
-  );
-}
-
-async function assertBookableSlot(
-  ctx: QueryCtx | MutationCtx,
-  settings: Settings,
-  request: Doc<"meetingRequests">,
-  startMinute: number,
-  exceptMeetingId?: Id<"meetings">,
-) {
-  assertValidEventDate(request.date);
-  assertSlotInDay(settings, startMinute);
-
-  const company = await ctx.db.get(request.companyId);
-  if (!company || !company.optedIn) {
-    throw new Error("Company is not available for meeting assignment.");
-  }
-
-  const available = await hasAvailability(
-    ctx,
-    request.companyId,
-    request.date,
-    startMinute,
-    settings.slotMinutes,
-  );
-  if (!available) throw new Error("Selected time is blocked by company availability.");
-
-  if (
-    await hasCompanyMeetingConflict(
-      ctx,
-      request.companyId,
-      request.date,
-      startMinute,
-      settings.slotMinutes,
-      exceptMeetingId,
-    )
-  ) {
-    throw new Error("Company already has a meeting at that time.");
-  }
-
-  if (
-    await hasAttendeeMeetingConflict(
-      ctx,
-      request.attendeeAccountId,
-      request.date,
-      startMinute,
-      settings.slotMinutes,
-      exceptMeetingId,
-    )
-  ) {
-    throw new Error("Attendee already has a meeting at that time.");
-  }
-}
-
-async function findActiveTable(
-  ctx: QueryCtx | MutationCtx,
-  settings: Settings,
-  date: string,
-  startMinute: number,
-) {
-  for (let tableNumber = 1; tableNumber <= settings.activeTables; tableNumber += 1) {
-    const conflict = await hasTableConflict(
-      ctx,
-      date,
-      tableNumber,
-      startMinute,
-      settings.slotMinutes,
-    );
-    if (!conflict) return tableNumber;
-  }
-  return null;
-}
-
-async function createConfirmedMeeting(
-  ctx: MutationCtx,
-  settings: Settings,
-  request: Doc<"meetingRequests">,
-  startMinute: number,
-  context: string,
-) {
-  await assertBookableSlot(ctx, settings, request, startMinute);
-
-  const acceptedCount = await companyAcceptedCount(ctx, request.companyId, request.date);
-  if (acceptedCount >= settings.companyAcceptCapPerDay) {
-    throw new Error("Company daily accepted meeting cap reached.");
-  }
-
-  const tableNumber = await findActiveTable(ctx, settings, request.date, startMinute);
-  if (tableNumber === null) throw new Error("No active table is available for that slot.");
-
-  return await ctx.db.insert("meetings", {
-    requestId: request._id,
-    attendeeAccountId: request.attendeeAccountId,
-    companyId: request.companyId,
-    date: request.date,
-    startMinute,
-    endMinute: startMinute + settings.slotMinutes,
-    tableNumber,
-    status: "confirmed",
-    context,
-    updatedAt: now(),
-  });
+    .take(100);
+  return requests.filter((request) => ACTIVE_REQUEST_STATUSES.has(request.status));
 }
 
 async function clearDemoData(ctx: MutationCtx) {
   for (const table of [
+    "meetingParticipants",
     "meetings",
     "meetingRequests",
-    "deskMatchRequests",
-    "availabilityBlocks",
-    "availability",
+    "participantAvailability",
+    "magicLoginTokens",
     "demoSessions",
-    "accounts",
-    "companies",
-    "eventSettings",
     "importBatches",
+    "accounts",
+    "eventSettings",
   ] as const) {
-    let rows = await ctx.db.query(table).take(500);
-    while (rows.length > 0) {
-      for (const row of rows) await ctx.db.delete(row._id);
-      rows = await ctx.db.query(table).take(500);
+    let batch = await ctx.db.query(table).take(200);
+    while (batch.length > 0) {
+      for (const row of batch) await ctx.db.delete(row._id);
+      batch = await ctx.db.query(table).take(200);
+    }
+  }
+}
+
+async function shouldResetDemoData(ctx: MutationCtx, settings: Doc<"eventSettings"> | null) {
+  if (!settings) return true;
+  const maybeSettings = settings as Partial<Doc<"eventSettings">>;
+  if (
+    maybeSettings.schemaVersion !== DEMO_SCHEMA_VERSION ||
+    maybeSettings.outgoingRequestCapPerDay == null ||
+    maybeSettings.maxMeetingGroupSize == null
+  ) {
+    return true;
+  }
+  const accounts = await ctx.db.query("accounts").take(100);
+  return accounts.some((account) => {
+    const role = (account as { role?: string }).role;
+    return role !== "admin" && role !== "participant";
+  });
+}
+
+async function insertAvailabilityForAllSlots(
+  ctx: MutationCtx,
+  accountId: Id<"accounts">,
+  settings: Pick<Settings, "dayStartMinute" | "dayEndMinute" | "slotMinutes">,
+  unavailableStarts: Set<string> = new Set(),
+) {
+  for (const date of EVENT_DATES) {
+    for (
+      let startMinute = settings.dayStartMinute;
+      startMinute + settings.slotMinutes <= settings.dayEndMinute;
+      startMinute += settings.slotMinutes
+    ) {
+      const key = `${date}:${startMinute}`;
+      await ctx.db.insert("participantAvailability", {
+        accountId,
+        date,
+        startMinute,
+        endMinute: startMinute + settings.slotMinutes,
+        available: !unavailableStarts.has(key),
+        updatedAt: now(),
+      });
     }
   }
 }
 
 async function insertDemoData(ctx: MutationCtx) {
   const timestamp = now();
-  await ctx.db.insert("eventSettings", {
+  const settingsId = await ctx.db.insert("eventSettings", {
     key: SETTINGS_KEY,
+    schemaVersion: DEMO_SCHEMA_VERSION,
     eventName: "AIE World Fair Networking",
     roomName: "Moscone West, Level 3, Room 3001",
     timezone: "America/Los_Angeles",
@@ -443,176 +438,580 @@ async function insertDemoData(ctx: MutationCtx) {
     slotMinutes: 20,
     activeTables: 25,
     reserveTables: 0,
-    attendeeRequestCapPerDay: 3,
-    companyAcceptCapPerDay: 3,
+    outgoingRequestCapPerDay: 3,
+    maxMeetingGroupSize: 4,
     allowCounters: true,
-    sponsorsOnlyDefault: true,
     updatedAt: timestamp,
   });
-
-  const companySeeds = [
-    ["Microsoft", "Presenting", "enterprise AI;copilots;platform engineering"],
-    ["OpenAI", "Lab", "agents;model evals;developer platforms"],
-    ["Google DeepMind", "Lab", "research;AI infrastructure;safety"],
-    ["Braintrust", "Platinum", "evals;observability;data quality"],
-    ["Browserbase", "Platinum", "web agents;automation;browser infrastructure"],
-    ["LangChain", "Gold", "agents;orchestration;LLM apps"],
-    ["Datadog", "Gold", "observability;infra;production AI"],
-    ["Figma", "Curated company", "design tools;collaboration;AI product"],
-  ];
-
-  const companyIds: Record<string, Id<"companies">> = {};
-  for (let index = 0; index < companySeeds.length; index += 1) {
-    const [name, tier, topics] = companySeeds[index];
-    companyIds[name] = await ctx.db.insert("companies", {
-      name,
-      slug: slugify(name),
-      tier,
-      description:
-        tier === "Curated company"
-          ? "Curated non-sponsor candidate for high-value product and technical conversations."
-          : `${name} hosts targeted 1:1 meetings for AI engineering teams and buyers.`,
-      contactEmail: `${slugify(name)}@aiewf.test`,
-      hostNames: [`${name} host`],
-      topics: topics.split(";"),
-      wantsToMeet: ["technical buyers", "enterprise leaders", "AI engineers"],
-      sponsor: tier !== "Curated company",
-      optedIn: tier !== "Curated company",
-      priority: index + 1,
-      notes: tier === "Curated company" ? "Admin approval required." : "",
-      updatedAt: timestamp,
-    });
-  }
+  const settings = (await ctx.db.get(settingsId)) as Settings;
 
   await ctx.db.insert("accounts", {
     email: "admin@aiewf.test",
     displayName: "AIE Room Admin",
+    firstName: "AIE",
+    lastName: "Admin",
     role: "admin",
     title: "Networking room operator",
+    company: "AI Engineer",
+    ticketType: "Staff",
+    ticketCategory: "other",
+    registrationStatus: "REGISTERED",
+    profileImageUrl: "",
+    city: "San Francisco",
+    country: "US",
+    companySize: "",
+    networkingIntent: "Operate room scheduling and table assignments.",
+    topics: ["operations"],
+    signedUp: true,
+    directoryOptIn: false,
+    profileComplete: true,
     active: true,
     updatedAt: timestamp,
   });
 
-  for (const companyName of ["Microsoft", "OpenAI", "Braintrust", "Browserbase"]) {
-    await ctx.db.insert("accounts", {
-      email: `${slugify(companyName)}@aiewf.test`,
-      displayName: `${companyName} host`,
-      role: "company",
-      title: "Company meeting host",
-      companyId: companyIds[companyName],
-      active: true,
-      updatedAt: timestamp,
-    });
-  }
-
-  const attendeeSeeds = [
-    ["Priya Raman", "priya@leadership.test", "VP AI Platform, Northstar Bank", "Leadership Track"],
-    ["Mateo Alvarez", "mateo@quality.test", "Head of Data Quality, RetailGrid", "Data Quality"],
-    ["Lena Ortiz", "lena@leadership.test", "Founder, EvalForge", "Leadership Track"],
-    ["Kai Tan", "kai@quality.test", "Staff AI Engineer, Portside", "Data Quality"],
+  const participantSeeds = [
+    {
+      email: "priya@leadership.test",
+      displayName: "Priya Raman",
+      firstName: "Priya",
+      lastName: "Raman",
+      title: "VP AI Platform",
+      company: "Northstar Bank",
+      ticketType: "AI Leadership (All Access)",
+      ticketCategory: "leadership" as const,
+      city: "San Francisco",
+      country: "US",
+      networkingIntent: "Meet teams building enterprise agent platforms and eval workflows.",
+      topics: ["agents", "enterprise AI", "evals"],
+    },
+    {
+      email: "sherry@peak.test",
+      displayName: "Sherry Jiang",
+      firstName: "Sherry",
+      lastName: "Jiang",
+      title: "Founder",
+      company: "Peak",
+      ticketType: "AI Leadership (All Access)",
+      ticketCategory: "leadership" as const,
+      city: "San Francisco",
+      country: "US",
+      networkingIntent: "Looking for consumer AI builders and distribution partners.",
+      topics: ["consumer AI", "growth", "founders"],
+    },
+    {
+      email: "kai@speaker.test",
+      displayName: "Kai Tan",
+      firstName: "Kai",
+      lastName: "Tan",
+      title: "Staff AI Engineer",
+      company: "Portside",
+      ticketType: "SPEAKER PASS",
+      ticketCategory: "speaker" as const,
+      city: "Singapore",
+      country: "SG",
+      networkingIntent: "Compare production observability and agent reliability patterns.",
+      topics: ["observability", "agents", "reliability"],
+    },
+    {
+      email: "lena@evalforge.test",
+      displayName: "Lena Ortiz",
+      firstName: "Lena",
+      lastName: "Ortiz",
+      title: "Founder",
+      company: "EvalForge",
+      ticketType: "Late Bird - AI Leadership (All Access)",
+      ticketCategory: "leadership" as const,
+      city: "New York",
+      country: "US",
+      networkingIntent: "Find teams evaluating production agent launches.",
+      topics: ["evals", "data quality", "agents"],
+    },
+    {
+      email: "mateo@retailgrid.test",
+      displayName: "Mateo Alvarez",
+      firstName: "Mateo",
+      lastName: "Alvarez",
+      title: "Head of Data Quality",
+      company: "RetailGrid",
+      ticketType: "AI Leadership (All Access)",
+      ticketCategory: "leadership" as const,
+      city: "Austin",
+      country: "US",
+      networkingIntent: "Discuss data governance for customer-facing copilots.",
+      topics: ["data quality", "governance", "copilots"],
+    },
+    {
+      email: "zoe@missing.test",
+      displayName: "Zoe Pennington",
+      firstName: "Zoe",
+      lastName: "Pennington",
+      title: "",
+      company: "",
+      ticketType: "Sponsor Leadership Ticket",
+      ticketCategory: "sponsor" as const,
+      city: "",
+      country: "",
+      networkingIntent: "",
+      topics: [],
+    },
   ];
-  const attendeeIds: Record<string, Id<"accounts">> = {};
-  for (const [displayName, email, title, track] of attendeeSeeds) {
-    attendeeIds[displayName] = await ctx.db.insert("accounts", {
-      email,
-      displayName,
-      role: "attendee",
-      title,
-      track,
+
+  const participantIds: Record<string, Id<"accounts">> = {};
+  for (const seed of participantSeeds) {
+    const profileComplete = Boolean(seed.displayName && seed.company && seed.title);
+    const id = await ctx.db.insert("accounts", {
+      ...seed,
+      role: "participant",
+      registrationStatus: "REGISTERED",
+      profileImageUrl: "",
+      companySize: "",
+      signedUp: profileComplete,
+      directoryOptIn: profileComplete,
+      profileComplete,
       active: true,
       updatedAt: timestamp,
     });
+    participantIds[seed.email] = id;
+    await insertAvailabilityForAllSlots(ctx, id, settings);
   }
 
-  const acceptedRequestId = await ctx.db.insert("meetingRequests", {
-    attendeeAccountId: attendeeIds["Lena Ortiz"],
-    companyId: companyIds.Braintrust,
+  const groupRequestId = await ctx.db.insert("meetingRequests", {
+    requesterAccountId: participantIds["lena@evalforge.test"],
+    targetAccountId: participantIds["sherry@peak.test"],
     date: "2026-06-30",
-    preferredStartMinute: 10 * 60 + 40,
-    alternateStartMinute: 14 * 60,
-    reason: "Compare eval workflows for a production agent launch.",
-    context:
-      "EvalForge is looking for data-quality partners and wants a practical eval stack discussion.",
+    preferredStartMinute: 11 * 60,
+    reason: "Compare founder notes on consumer AI distribution.",
+    context: "Accepted seed request.",
     status: "accepted",
-    origin: "attendee_request",
-    createdByAccountId: attendeeIds["Lena Ortiz"],
     createdAt: timestamp,
     updatedAt: timestamp,
   });
   const meetingId = await ctx.db.insert("meetings", {
-    requestId: acceptedRequestId,
-    attendeeAccountId: attendeeIds["Lena Ortiz"],
-    companyId: companyIds.Braintrust,
+    hostAccountId: participantIds["sherry@peak.test"],
     date: "2026-06-30",
-    startMinute: 10 * 60 + 40,
-    endMinute: 11 * 60,
+    startMinute: 11 * 60,
+    endMinute: 11 * 60 + settings.slotMinutes,
     tableNumber: 1,
+    participantCount: 2,
     status: "confirmed",
-    context: "Accepted seed meeting",
+    context: "Founder distribution chat.",
+    createdFromRequestId: groupRequestId,
     updatedAt: timestamp,
   });
-  await ctx.db.patch(acceptedRequestId, { meetingId });
+  await ctx.db.insert("meetingParticipants", {
+    meetingId,
+    accountId: participantIds["sherry@peak.test"],
+    date: "2026-06-30",
+    startMinute: 11 * 60,
+    endMinute: 11 * 60 + settings.slotMinutes,
+    role: "host",
+    status: "confirmed",
+    createdAt: timestamp,
+    updatedAt: timestamp,
+  });
+  await ctx.db.insert("meetingParticipants", {
+    meetingId,
+    accountId: participantIds["lena@evalforge.test"],
+    date: "2026-06-30",
+    startMinute: 11 * 60,
+    endMinute: 11 * 60 + settings.slotMinutes,
+    role: "requester",
+    requestId: groupRequestId,
+    status: "confirmed",
+    createdAt: timestamp,
+    updatedAt: timestamp,
+  });
+  await ctx.db.patch(groupRequestId, { meetingId });
 
   await ctx.db.insert("meetingRequests", {
-    attendeeAccountId: attendeeIds["Priya Raman"],
-    companyId: companyIds.OpenAI,
+    requesterAccountId: participantIds["priya@leadership.test"],
+    targetAccountId: participantIds["kai@speaker.test"],
     date: "2026-06-30",
     preferredStartMinute: 11 * 60 + 20,
-    alternateStartMinute: 14 * 60 + 20,
-    reason: "Discuss enterprise agent deployment patterns.",
-    context:
-      "Northstar Bank is evaluating agent platforms for internal engineering workflows.",
+    alternateStartMinute: 14 * 60,
+    reason: "Discuss enterprise-grade agent observability.",
+    context: "Northstar Bank is evaluating agent reliability tooling.",
     status: "pending",
-    origin: "attendee_request",
-    createdByAccountId: attendeeIds["Priya Raman"],
     createdAt: timestamp,
     updatedAt: timestamp,
   });
 
   await ctx.db.insert("meetingRequests", {
-    attendeeAccountId: attendeeIds["Mateo Alvarez"],
-    companyId: companyIds.Microsoft,
-    date: "2026-07-01",
-    preferredStartMinute: 11 * 60,
-    alternateStartMinute: 14 * 60,
-    reason: "Data governance and quality review for customer-facing copilots.",
-    context:
-      "RetailGrid wants to compare enterprise quality gates for AI deployments.",
-    status: "countered",
-    counterStartMinute: 14 * 60 + 20,
-    responseNote: "Morning is full. Afternoon host is available at 2:20 PM.",
-    origin: "attendee_request",
-    createdByAccountId: attendeeIds["Mateo Alvarez"],
-    createdAt: timestamp,
-    updatedAt: timestamp,
-  });
-
-  await ctx.db.insert("deskMatchRequests", {
-    attendeeAccountId: attendeeIds["Kai Tan"],
+    requesterAccountId: participantIds["mateo@retailgrid.test"],
+    targetAccountId: participantIds["sherry@peak.test"],
     date: "2026-06-30",
     preferredStartMinute: 11 * 60,
-    intent: "Find someone working on production observability for agent systems.",
-    topics: ["observability", "agents", "production AI"],
-    status: "requested",
-    note: "Seed concierge request for the desk queue.",
+    reason: "Join the consumer AI distribution conversation from a retail perspective.",
+    context: "Seed one-to-many request for an existing group.",
+    status: "pending",
     createdAt: timestamp,
     updatedAt: timestamp,
   });
 }
 
+async function meetingWithParticipants(
+  ctx: QueryCtx | MutationCtx,
+  meeting: Doc<"meetings">,
+) {
+  const participantRows = await ctx.db
+    .query("meetingParticipants")
+    .withIndex("by_meetingId", (q) => q.eq("meetingId", meeting._id))
+    .take(10);
+  const accounts = await Promise.all(participantRows.map((row) => ctx.db.get(row.accountId)));
+  return {
+    ...meeting,
+    participants: participantRows.map((row, index) => ({
+      ...row,
+      account: accountSummary(accounts[index]),
+    })),
+    host: accountSummary(await ctx.db.get(meeting.hostAccountId)),
+  };
+}
+
+async function requestWithPeople(
+  ctx: QueryCtx | MutationCtx,
+  request: Doc<"meetingRequests">,
+) {
+  const [requester, target, meeting] = await Promise.all([
+    ctx.db.get(request.requesterAccountId),
+    ctx.db.get(request.targetAccountId),
+    request.meetingId ? ctx.db.get(request.meetingId) : Promise.resolve(null),
+  ]);
+  return {
+    ...request,
+    requester: accountSummary(requester),
+    target: accountSummary(target),
+    meeting: meeting ? await meetingWithParticipants(ctx, meeting) : null,
+  };
+}
+
+async function createOrJoinMeetingForRequest(
+  ctx: MutationCtx,
+  settings: Settings,
+  request: Doc<"meetingRequests">,
+  startMinute: number,
+  responseNote: string,
+) {
+  assertSlotInDay(settings, startMinute);
+
+  const [requester, target] = await Promise.all([
+    ctx.db.get(request.requesterAccountId),
+    ctx.db.get(request.targetAccountId),
+  ]);
+  if (!requester || !requester.active || requester.role !== "participant") {
+    throw new Error("Requester is no longer available.");
+  }
+  if (
+    !target ||
+    !target.active ||
+    target.role !== "participant" ||
+    !target.signedUp ||
+    !target.directoryOptIn
+  ) {
+    throw new Error("Target participant is no longer bookable.");
+  }
+  if (!(await participantAvailable(ctx, target._id, request.date, startMinute))) {
+    throw new Error("Target participant is not available for that slot.");
+  }
+  if (
+    await participantMeetingConflict(
+      ctx,
+      requester._id,
+      request.date,
+      startMinute,
+      settings.slotMinutes,
+    )
+  ) {
+    throw new Error("Requester already has a meeting at that time.");
+  }
+
+  const existingMeeting = await hostMeetingAtSlot(
+    ctx,
+    target._id,
+    request.date,
+    startMinute,
+  );
+  let meetingId: Id<"meetings">;
+  let participantCount = 0;
+
+  if (existingMeeting) {
+    if (existingMeeting.participantCount >= settings.maxMeetingGroupSize) {
+      throw new Error("Meeting group is full.");
+    }
+    meetingId = existingMeeting._id;
+    participantCount = existingMeeting.participantCount;
+  } else {
+    if (
+      await participantMeetingConflict(
+        ctx,
+        target._id,
+        request.date,
+        startMinute,
+        settings.slotMinutes,
+      )
+    ) {
+      throw new Error("Target participant already has a meeting at that time.");
+    }
+    const tableNumber = await findOpenTable(ctx, settings, request.date, startMinute);
+    meetingId = await ctx.db.insert("meetings", {
+      hostAccountId: target._id,
+      date: request.date,
+      startMinute,
+      endMinute: startMinute + settings.slotMinutes,
+      tableNumber,
+      participantCount: 1,
+      status: "confirmed",
+      context: request.reason,
+      createdFromRequestId: request._id,
+      updatedAt: now(),
+    });
+    await ctx.db.insert("meetingParticipants", {
+      meetingId,
+      accountId: target._id,
+      date: request.date,
+      startMinute,
+      endMinute: startMinute + settings.slotMinutes,
+      role: "host",
+      status: "confirmed",
+      createdAt: now(),
+      updatedAt: now(),
+    });
+    participantCount = 1;
+  }
+
+  const existingParticipants = await ctx.db
+    .query("meetingParticipants")
+    .withIndex("by_meetingId", (q) => q.eq("meetingId", meetingId))
+    .take(10);
+  if (existingParticipants.some((participant) => participant.accountId === requester._id)) {
+    throw new Error("Requester is already in this meeting.");
+  }
+  if (participantCount + 1 > settings.maxMeetingGroupSize) {
+    throw new Error("Meeting group is full.");
+  }
+
+  await ctx.db.insert("meetingParticipants", {
+    meetingId,
+    accountId: requester._id,
+    date: request.date,
+    startMinute,
+    endMinute: startMinute + settings.slotMinutes,
+    role: "requester",
+    requestId: request._id,
+    status: "confirmed",
+    createdAt: now(),
+    updatedAt: now(),
+  });
+  await ctx.db.patch(meetingId, {
+    participantCount: participantCount + 1,
+    updatedAt: now(),
+  });
+  await ctx.db.patch(request._id, {
+    status: "accepted",
+    meetingId,
+    responseNote,
+    respondedByAccountId: target._id,
+    updatedAt: now(),
+  });
+  return meetingId;
+}
+
+async function sendMagicLinkEmail({
+  displayName,
+  email,
+  link,
+}: {
+  displayName: string;
+  email: string;
+  link: string;
+}) {
+  const safeDisplayName = escapeHtml(displayName);
+  const safeLink = escapeHtml(link);
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${env.RESEND_API_KEY}`,
+      "Content-Type": "application/json",
+      "User-Agent": "aiewf-networking/1.0",
+    },
+    body: JSON.stringify({
+      from: env.RESEND_FROM_EMAIL,
+      to: [email],
+      subject: "Your AIE World Fair networking login",
+      text: [
+        `Hi ${displayName},`,
+        "",
+        "Use this secure link to open the AIE World Fair networking room:",
+        link,
+        "",
+        "This link expires in 15 minutes and can be used once.",
+      ].join("\n"),
+      html: [
+        `<p>Hi ${safeDisplayName},</p>`,
+        `<p>Use this secure link to open the AIE World Fair networking room:</p>`,
+        `<p><a href="${safeLink}">Open networking room</a></p>`,
+        `<p>This link expires in 15 minutes and can be used once.</p>`,
+      ].join(""),
+    }),
+  });
+
+  if (!response.ok) {
+    const detail = await response.text();
+    throw new Error(`Could not send login email. Resend returned ${response.status}: ${detail.slice(0, 180)}`);
+  }
+}
+
+export const getPublicConfig = query({
+  args: {},
+  handler: async (ctx) => ({
+    settings: await getSettings(ctx),
+    demoLoginEnabled: demoLoginEnabled(),
+  }),
+});
+
+export const createMagicLoginToken = internalMutation({
+  args: {
+    email: v.string(),
+    tokenHash: v.string(),
+    redirectPath: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const email = normalizeLoginEmail(args.email);
+    if (!email) return { shouldSend: false as const };
+
+    const account = await ctx.db
+      .query("accounts")
+      .withIndex("by_email", (q) => q.eq("email", email))
+      .unique();
+    if (!account || !account.active) return { shouldSend: false as const };
+
+    await ctx.db.insert("magicLoginTokens", {
+      tokenHash: args.tokenHash,
+      accountId: account._id,
+      email,
+      redirectPath: safeRedirectPath(args.redirectPath),
+      createdAt: now(),
+      expiresAt: now() + MAGIC_LINK_TTL_MS,
+    });
+
+    return {
+      shouldSend: true as const,
+      email,
+      displayName: account.displayName,
+      redirectPath: safeRedirectPath(args.redirectPath),
+    };
+  },
+});
+
+export const consumeMagicLoginToken = internalMutation({
+  args: {
+    tokenHash: v.string(),
+    sessionToken: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const loginToken = await ctx.db
+      .query("magicLoginTokens")
+      .withIndex("by_tokenHash", (q) => q.eq("tokenHash", args.tokenHash))
+      .unique();
+    if (!loginToken || loginToken.usedAt !== undefined || loginToken.expiresAt < now()) {
+      throw new Error("Magic link is invalid or expired.");
+    }
+
+    const account = await ctx.db.get(loginToken.accountId);
+    if (!account || !account.active) throw new Error("Account is no longer active.");
+
+    await ctx.db.patch(loginToken._id, { usedAt: now() });
+    await ctx.db.insert("demoSessions", {
+      token: args.sessionToken,
+      accountId: account._id,
+      source: "magic_link",
+      createdAt: now(),
+      expiresAt: now() + SESSION_TTL_MS,
+    });
+
+    return { token: args.sessionToken, account: accountSummary(account) };
+  },
+});
+
+export const requestMagicLink = action({
+  args: {
+    email: v.string(),
+    redirectPath: v.optional(v.string()),
+  },
+  handler: async (ctx: ActionCtx, args) => {
+    const email = normalizeLoginEmail(args.email);
+    if (!email) return { sent: true };
+
+    const token = secureTokenValue();
+    const tokenHash = await hashLoginToken(token, MAGIC_LINK_HASH_SALT);
+    const redirectPath = safeRedirectPath(args.redirectPath);
+    const login: {
+      shouldSend: boolean;
+      email?: string;
+      displayName?: string;
+      redirectPath?: string;
+    } = await ctx.runMutation(internal.networking.createMagicLoginToken, {
+      email,
+      tokenHash,
+      redirectPath,
+    });
+
+    if (!login.shouldSend || !login.email || !login.displayName) return { sent: true };
+
+    const link = buildMagicLinkUrl({
+      baseUrl: env.APP_BASE_URL,
+      token,
+      redirectPath: login.redirectPath,
+    });
+    await sendMagicLinkEmail({ displayName: login.displayName, email: login.email, link });
+    return { sent: true };
+  },
+});
+
+export const verifyMagicLink = action({
+  args: { token: v.string() },
+  handler: async (ctx: ActionCtx, args) => {
+    const token = args.token.trim();
+    if (!token) throw new Error("Magic link is invalid or expired.");
+    const tokenHash = await hashLoginToken(token, MAGIC_LINK_HASH_SALT);
+    const sessionToken = secureTokenValue();
+    const result: { token: string; account: ReturnType<typeof accountSummary> } = await ctx.runMutation(
+      internal.networking.consumeMagicLoginToken,
+      { tokenHash, sessionToken },
+    );
+    return result;
+  },
+});
+
+export const logout = mutation({
+  args: { sessionToken: v.string() },
+  handler: async (ctx, args) => {
+    const session = await ctx.db
+      .query("demoSessions")
+      .withIndex("by_token", (q) => q.eq("token", args.sessionToken))
+      .unique();
+    if (session) await ctx.db.delete(session._id);
+    return { loggedOut: true };
+  },
+});
+
 export const ensureDemoData = mutation({
   args: {},
   handler: async (ctx) => {
+    if (!demoLoginEnabled()) return { seeded: false, reason: "demo_disabled" };
     const existing = await getSettings(ctx);
-    if (existing) return { seeded: false, reason: "already_seeded" };
+    const needsReset = await shouldResetDemoData(ctx, existing);
+    if (!needsReset) return { seeded: false, reason: "already_seeded" };
+    if (existing) await clearDemoData(ctx);
     await insertDemoData(ctx);
-    return { seeded: true, reason: "created_demo_data" };
+    return { seeded: true, reason: existing ? "reset_stale_demo_data" : "created_demo_data" };
   },
 });
 
 export const resetDemoData = mutation({
   args: { sessionToken: v.string() },
   handler: async (ctx, args) => {
+    if (!demoLoginEnabled()) throw new Error("Demo reset is disabled.");
     const actor = await requireActor(ctx, args.sessionToken);
     requireAdmin(actor);
     await clearDemoData(ctx);
@@ -626,17 +1025,19 @@ export const resetDemoData = mutation({
     await ctx.db.insert("demoSessions", {
       token,
       accountId: admin._id,
+      source: "demo",
       createdAt: now(),
       expiresAt: now() + SESSION_TTL_MS,
     });
-    return { reset: true, token };
+    return { token };
   },
 });
 
 export const listDemoAccounts = query({
   args: {},
   handler: async (ctx) => {
-    const accounts = await ctx.db.query("accounts").take(100);
+    if (!demoLoginEnabled()) return [];
+    const accounts = await ctx.db.query("accounts").take(200);
     return accounts
       .filter((account) => account.active)
       .map((account) => ({
@@ -645,8 +1046,9 @@ export const listDemoAccounts = query({
         displayName: account.displayName,
         role: account.role,
         title: account.title,
-        track: account.track ?? null,
-        companyId: account.companyId ?? null,
+        company: account.company,
+        signedUp: account.signedUp,
+        directoryOptIn: account.directoryOptIn,
       }));
   },
 });
@@ -654,6 +1056,7 @@ export const listDemoAccounts = query({
 export const startDemoSession = mutation({
   args: { email: v.string() },
   handler: async (ctx, args) => {
+    if (!demoLoginEnabled()) throw new Error("Demo login is disabled.");
     const account = await ctx.db
       .query("accounts")
       .withIndex("by_email", (q) => q.eq("email", normalizeEmail(args.email)))
@@ -663,6 +1066,7 @@ export const startDemoSession = mutation({
     await ctx.db.insert("demoSessions", {
       token,
       accountId: account._id,
+      source: "demo",
       createdAt: now(),
       expiresAt: now() + SESSION_TTL_MS,
     });
@@ -673,127 +1077,172 @@ export const startDemoSession = mutation({
 export const getBootstrap = query({
   args: { sessionToken: v.string() },
   handler: async (ctx, args) => {
-    const actor = await requireActor(ctx, args.sessionToken);
+    const actor = await getActorForSession(ctx, args.sessionToken);
+    if (!actor) return null;
     const settings = await getSettings(ctx);
-    const allAccounts = await ctx.db.query("accounts").take(100);
-    const allCompanies = await ctx.db.query("companies").take(200);
+    if (!settings) return null;
 
-    const companies =
+    const visibleParticipants =
       actor.role === "admin"
-        ? allCompanies
-        : allCompanies.filter(
-            (company) => company.optedIn || company._id === actor.companyId,
-          );
-    const visibleCompanyIds = new Set(companies.map((company) => company._id));
+        ? await ctx.db.query("accounts").take(1800)
+        : await ctx.db
+            .query("accounts")
+            .withIndex("by_signedUp_and_directoryOptIn", (q) =>
+              q.eq("signedUp", true).eq("directoryOptIn", true),
+            )
+            .take(1800);
 
-    const availability =
+    const myAvailability =
+      actor.role === "participant"
+        ? (
+            await Promise.all(
+              EVENT_DATES.map((date) =>
+                ctx.db
+                  .query("participantAvailability")
+                  .withIndex("by_accountId_and_date", (q) =>
+                    q.eq("accountId", actor._id).eq("date", date),
+                  )
+                  .take(100),
+              ),
+            )
+          ).flat()
+        : [];
+
+    const allAvailability =
       actor.role === "admin"
-        ? await ctx.db.query("availability").take(500)
-        : (await ctx.db.query("availability").take(500)).filter((window) =>
-            visibleCompanyIds.has(window.companyId),
-          );
-    const availabilityBlocks = await availabilityBlocksForEvent(ctx, visibleCompanyIds);
-    const companySlotOccupancy = await companySlotOccupancyForEvent(ctx, visibleCompanyIds);
+        ? await ctx.db.query("participantAvailability").take(3000)
+        : [];
 
     let requests: Array<Doc<"meetingRequests">> = [];
     let meetings: Array<Doc<"meetings">> = [];
-    let deskRequests: Array<Doc<"deskMatchRequests">> = [];
 
     if (actor.role === "admin") {
-      requests = await ctx.db.query("meetingRequests").take(300);
-      meetings = await ctx.db.query("meetings").take(300);
-      deskRequests = await ctx.db.query("deskMatchRequests").take(200);
-    } else if (actor.role === "company" && actor.companyId) {
+      requests = await ctx.db.query("meetingRequests").take(1000);
+      meetings = await ctx.db.query("meetings").take(1000);
+    } else {
       for (const date of EVENT_DATES) {
         requests.push(
           ...(await ctx.db
             .query("meetingRequests")
-            .withIndex("by_companyId_and_date", (q) =>
-              q.eq("companyId", actor.companyId as Id<"companies">).eq("date", date),
+            .withIndex("by_requesterAccountId_and_date", (q) =>
+              q.eq("requesterAccountId", actor._id).eq("date", date),
             )
             .take(100)),
         );
-        meetings.push(...(await companyMeetingsForDay(ctx, actor.companyId, date)));
+        requests.push(
+          ...(await ctx.db
+            .query("meetingRequests")
+            .withIndex("by_targetAccountId_and_date", (q) =>
+              q.eq("targetAccountId", actor._id).eq("date", date),
+            )
+            .take(100)),
+        );
+        const participantRows = await ctx.db
+          .query("meetingParticipants")
+          .withIndex("by_accountId_and_date", (q) =>
+            q.eq("accountId", actor._id).eq("date", date),
+          )
+          .take(100);
+        for (const row of participantRows) {
+          const meeting = await ctx.db.get(row.meetingId);
+          if (meeting) meetings.push(meeting);
+        }
       }
-    } else {
-      for (const date of EVENT_DATES) {
-        requests.push(...(await attendeeRequestsForDay(ctx, actor._id, date)));
-        meetings.push(...(await attendeeMeetingsForDay(ctx, actor._id, date)));
-      }
-      deskRequests = await ctx.db
-        .query("deskMatchRequests")
-        .withIndex("by_attendeeAccountId", (q) => q.eq("attendeeAccountId", actor._id))
-        .take(50);
     }
+
+    const requestIds = new Set<Id<"meetingRequests">>();
+    const uniqueRequests = requests.filter((request) => {
+      if (requestIds.has(request._id)) return false;
+      requestIds.add(request._id);
+      return true;
+    });
+    const meetingIds = new Set<Id<"meetings">>();
+    const uniqueMeetings = meetings.filter((meeting) => {
+      if (meetingIds.has(meeting._id)) return false;
+      meetingIds.add(meeting._id);
+      return true;
+    });
 
     const importBatches =
       actor.role === "admin"
         ? await ctx.db
             .query("importBatches")
-            .withIndex("by_kind", (q) => q.eq("kind", "companies_csv"))
+            .withIndex("by_kind", (q) => q.eq("kind", "participants_csv"))
             .order("desc")
             .take(5)
         : [];
-    const companiesById = new Map(allCompanies.map((company) => [company._id, company]));
-    const accountsById = new Map(allAccounts.map((account) => [account._id, account]));
-    const meetingsById = new Map(meetings.map((meeting) => [meeting._id, meeting]));
 
     return {
       settings,
-      actor,
-      accounts: allAccounts
+      actor: accountSummary(actor),
+      accounts: (await ctx.db.query("accounts").take(200))
         .filter((account) => account.active)
-        .map((account) => ({
-          _id: account._id,
-          email: account.email,
-          displayName: account.displayName,
-          role: account.role,
-          title: account.title,
-          track: account.track ?? null,
-          companyId: account.companyId ?? null,
-      })),
-      companies,
-      availability,
-      availabilityBlocks,
-      companySlotOccupancy,
-      requests: requests.map((request) => ({
-        ...request,
-        company: companiesById.get(request.companyId) ?? null,
-        attendee: accountsById.get(request.attendeeAccountId) ?? null,
-        meeting: request.meetingId ? meetingsById.get(request.meetingId) ?? null : null,
-      })),
-      meetings: meetings.map((meeting) => ({
-        ...meeting,
-        company: companiesById.get(meeting.companyId) ?? null,
-        attendee: accountsById.get(meeting.attendeeAccountId) ?? null,
-        request: requests.find((request) => request._id === meeting.requestId) ?? null,
-      })),
-      deskRequests: deskRequests.map((deskRequest) => ({
-        ...deskRequest,
-        attendee: accountsById.get(deskRequest.attendeeAccountId) ?? null,
-        suggestedCompany: deskRequest.suggestedCompanyId
-          ? companiesById.get(deskRequest.suggestedCompanyId) ?? null
-          : null,
-        meetingRequest: deskRequest.meetingRequestId
-          ? requests.find((request) => request._id === deskRequest.meetingRequestId) ?? null
-          : null,
-      })),
+        .map(accountSummary),
+      participants: visibleParticipants
+        .filter((account) => account.role === "participant" && account.active)
+        .map(accountSummary),
+      myAvailability,
+      allAvailability,
+      requests: await Promise.all(uniqueRequests.map((request) => requestWithPeople(ctx, request))),
+      meetings: await Promise.all(uniqueMeetings.map((meeting) => meetingWithParticipants(ctx, meeting))),
       importBatches,
-      slotLabels: settings
-        ? Array.from(
-            {
-              length: Math.floor(
-                (settings.dayEndMinute - settings.dayStartMinute) /
-                  settings.slotMinutes,
-              ),
-            },
-            (_, index) => {
-              const minute = settings.dayStartMinute + index * settings.slotMinutes;
-              return { minute, label: minuteLabel(minute) };
-            },
-          )
-        : [],
+      slotLabels: Array.from(
+        {
+          length: Math.floor(
+            (settings.dayEndMinute - settings.dayStartMinute) / settings.slotMinutes,
+          ),
+        },
+        (_, index) => {
+          const minute = settings.dayStartMinute + index * settings.slotMinutes;
+          return { minute, label: minuteLabel(minute) };
+        },
+      ),
     };
+  },
+});
+
+export const getParticipantAvailability = query({
+  args: { accountId: v.id("accounts"), date: v.string() },
+  handler: async (ctx, args) => {
+    assertValidEventDate(args.date);
+    const account = await ctx.db.get(args.accountId);
+    if (
+      !account ||
+      !account.active ||
+      account.role !== "participant" ||
+      !account.signedUp ||
+      !account.directoryOptIn
+    ) {
+      return [];
+    }
+    const settings = await requireSettings(ctx);
+    const availability = await ctx.db
+      .query("participantAvailability")
+      .withIndex("by_accountId_and_date", (q) =>
+        q.eq("accountId", args.accountId).eq("date", args.date),
+      )
+      .take(100);
+    const meeting = await hostMeetingAtSlot(ctx, args.accountId, args.date, settings.dayStartMinute);
+    void meeting;
+    const hostMeetings = await ctx.db
+      .query("meetings")
+      .withIndex("by_hostAccountId_and_date", (q) =>
+        q.eq("hostAccountId", args.accountId).eq("date", args.date),
+      )
+      .take(100);
+    return availability
+      .filter((slot) => slot.available)
+      .map((slot) => {
+        const group = hostMeetings.find(
+          (item) => item.startMinute === slot.startMinute && item.status !== "cancelled",
+        );
+        return {
+          ...slot,
+          participantCount: group?.participantCount ?? 1,
+          groupOpen: !group || group.participantCount < settings.maxMeetingGroupSize,
+        };
+      })
+      .filter((slot) => slot.groupOpen);
   },
 });
 
@@ -806,130 +1255,44 @@ export const getRoomDisplay = query({
     assertValidEventDate(args.date);
     const settings = await getSettings(ctx);
     if (!settings) return null;
-
     const displayNowMinute = Math.min(
       settings.dayEndMinute,
       Math.max(settings.dayStartMinute, args.nowMinute ?? settings.dayStartMinute),
     );
-    const [companies, availabilityBlocks, meetings, pendingRequests] = await Promise.all([
-      ctx.db
-        .query("companies")
-        .withIndex("by_optedIn", (q) => q.eq("optedIn", true))
-        .take(200),
-      ctx.db
-        .query("availabilityBlocks")
-        .withIndex("by_date", (q) => q.eq("date", args.date))
-        .collect(),
-      ctx.db
-        .query("meetings")
-        .withIndex("by_date_and_startMinute", (q) => q.eq("date", args.date))
-        .collect(),
-      ctx.db
-        .query("meetingRequests")
-        .withIndex("by_date_and_status", (q) =>
-          q.eq("date", args.date).eq("status", "pending"),
-        )
-        .collect(),
-    ]);
-
+    const meetings = await ctx.db
+      .query("meetings")
+      .withIndex("by_date_and_startMinute", (q) => q.eq("date", args.date))
+      .take(300);
     const activeMeetings = meetings.filter((meeting) => meeting.status !== "cancelled");
-    const accounts = await Promise.all(
-      Array.from(new Set(activeMeetings.map((meeting) => meeting.attendeeAccountId))).map((id) =>
-        ctx.db.get(id),
-      ),
+    const nextMeetings = await Promise.all(
+      activeMeetings
+        .filter((meeting) => meeting.endMinute > displayNowMinute)
+        .sort(
+          (a, b) =>
+            a.startMinute - b.startMinute ||
+            a.tableNumber - b.tableNumber ||
+            a.hostAccountId.localeCompare(b.hostAccountId),
+        )
+        .slice(0, 12)
+        .map((meeting) => meetingWithParticipants(ctx, meeting)),
     );
-    const companiesById = new Map(companies.map((company) => [company._id, company]));
-    const accountsById = new Map(
-      accounts.filter((account): account is Doc<"accounts"> => Boolean(account)).map((account) => [
-        account._id,
-        account,
-      ]),
-    );
-    const requestCountByCompany = new Map<Id<"companies">, number>();
-    for (const request of pendingRequests) {
-      requestCountByCompany.set(
-        request.companyId,
-        (requestCountByCompany.get(request.companyId) ?? 0) + 1,
-      );
-    }
-
-    const slotMinutes = settings.slotMinutes;
-    const slotStarts = Array.from(
-      { length: Math.floor((settings.dayEndMinute - settings.dayStartMinute) / slotMinutes) },
-      (_, index) => settings.dayStartMinute + index * slotMinutes,
-    );
-
-    const opportunities = companies
-      .slice()
-      .sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name))
-      .flatMap((company) => {
-        const companyBlocks = availabilityBlocks.filter((block) => block.companyId === company._id);
-        const companyMeetings = activeMeetings.filter(
-          (meeting) => meeting.companyId === company._id,
-        );
-        const openSlot = slotStarts.find((slotStart) => {
-          if (slotStart < displayNowMinute) return false;
-          const blocked = companyBlocks.some(
-            (block) => slotStart < block.endMinute && slotStart + slotMinutes > block.startMinute,
-          );
-          if (blocked) return false;
-          return !companyMeetings.some((meeting) =>
-            overlaps(meeting, slotStart, slotMinutes),
-          );
-        });
-
-        if (openSlot === undefined) return [];
-        return [
-          {
-            companyId: company._id,
-            companyName: company.name,
-            tier: company.tier,
-            hostNames: company.hostNames.slice(0, 2),
-            topics: company.topics.slice(0, 3),
-            startMinute: openSlot,
-            label: minuteLabel(openSlot),
-            pendingRequests: requestCountByCompany.get(company._id) ?? 0,
-          },
-        ];
-      })
-      .slice(0, 8);
-
-    const nextMeetings = activeMeetings
-      .filter((meeting) => meeting.endMinute > displayNowMinute)
-      .sort(
-        (a, b) =>
-          a.startMinute - b.startMinute ||
-          a.tableNumber - b.tableNumber ||
-          a.companyId.localeCompare(b.companyId),
+    const pendingRequests = await ctx.db
+      .query("meetingRequests")
+      .withIndex("by_date_and_status", (q) =>
+        q.eq("date", args.date).eq("status", "pending"),
       )
-      .slice(0, 10)
-      .map((meeting) => {
-        const company = companiesById.get(meeting.companyId);
-        const attendee = accountsById.get(meeting.attendeeAccountId);
-        return {
-          meetingId: meeting._id,
-          tableNumber: meeting.tableNumber,
-          startMinute: meeting.startMinute,
-          endMinute: meeting.endMinute,
-          label: minuteLabel(meeting.startMinute),
-          status: meeting.status,
-          companyName: company?.name ?? "Company",
-          attendeeName: attendee?.displayName ?? "Attendee",
-          attendeeTitle: attendee?.title ?? "",
-        };
-      });
-
+      .take(500);
     const liveMeetings = activeMeetings.filter(
       (meeting) =>
         meeting.startMinute <= displayNowMinute && displayNowMinute < meeting.endMinute,
     );
-
     return {
       settings: {
         eventName: settings.eventName,
         roomName: settings.roomName,
         activeTables: settings.activeTables,
         slotMinutes: settings.slotMinutes,
+        maxMeetingGroupSize: settings.maxMeetingGroupSize,
       },
       date: args.date,
       nowMinute: displayNowMinute,
@@ -937,257 +1300,184 @@ export const getRoomDisplay = query({
       counts: {
         live: liveMeetings.length,
         upcoming: nextMeetings.length,
-        openCompanies: companies.length,
         pendingRequests: pendingRequests.length,
+        openTables: settings.activeTables - liveMeetings.length,
       },
-      nextMeetings,
-      opportunities,
+      nextMeetings: nextMeetings.map((meeting) => ({
+        meetingId: meeting._id,
+        tableNumber: meeting.tableNumber,
+        startMinute: meeting.startMinute,
+        endMinute: meeting.endMinute,
+        label: minuteLabel(meeting.startMinute),
+        status: meeting.status,
+        participantCount: meeting.participantCount,
+        participants: meeting.participants.map((participant) => participant.account),
+      })),
     };
   },
 });
 
-export const createDeskMatchRequest = mutation({
+export const updateMyProfile = mutation({
   args: {
     sessionToken: v.string(),
-    date: v.string(),
-    preferredStartMinute: v.number(),
-    intent: v.string(),
-    topics: v.optional(v.string()),
+    displayName: v.string(),
+    title: v.string(),
+    company: v.string(),
+    city: v.optional(v.string()),
+    country: v.optional(v.string()),
+    networkingIntent: v.string(),
+    topics: v.string(),
+    directoryOptIn: v.boolean(),
   },
   handler: async (ctx, args) => {
-    const settings = await requireSettings(ctx);
     const actor = await requireActor(ctx, args.sessionToken);
-    if (actor.role !== "attendee") throw new Error("Only attendees can ask the desk for a match.");
-    if (args.intent.trim().length < 8) throw new Error("Tell the desk what you want to meet about.");
-    assertValidEventDate(args.date);
-    assertSlotInDay(settings, args.preferredStartMinute);
-
-    const existing = await ctx.db
-      .query("deskMatchRequests")
-      .withIndex("by_attendeeAccountId", (q) => q.eq("attendeeAccountId", actor._id))
-      .take(50);
-    if (
-      existing.some(
-        (request) =>
-          request.date === args.date &&
-          (request.status === "requested" || request.status === "matched"),
-      )
-    ) {
-      throw new Error("You already have an open desk match request for this date.");
+    if (actor.role !== "participant") throw new Error("Participant account required.");
+    const displayName = args.displayName.trim();
+    const title = args.title.trim();
+    const company = args.company.trim();
+    if (!displayName || !title || !company) {
+      throw new Error("Name, title, and company are required.");
     }
-
-    return await ctx.db.insert("deskMatchRequests", {
-      attendeeAccountId: actor._id,
-      date: args.date,
-      preferredStartMinute: args.preferredStartMinute,
-      intent: args.intent.trim(),
+    await ctx.db.patch(actor._id, {
+      displayName,
+      title,
+      company,
+      city: args.city?.trim() ?? actor.city,
+      country: args.country?.trim() ?? actor.country,
+      networkingIntent: args.networkingIntent.trim(),
       topics: splitList(args.topics),
-      status: "requested",
-      createdAt: now(),
+      signedUp: true,
+      directoryOptIn: args.directoryOptIn,
+      profileComplete: true,
       updatedAt: now(),
     });
-  },
-});
-
-export const assignDeskMatch = mutation({
-  args: {
-    sessionToken: v.string(),
-    deskMatchRequestId: v.id("deskMatchRequests"),
-    companyId: v.id("companies"),
-    preferredStartMinute: v.number(),
-    note: v.optional(v.string()),
-  },
-  handler: async (ctx, args) => {
-    const settings = await requireSettings(ctx);
-    const actor = await requireActor(ctx, args.sessionToken);
-    requireAdmin(actor);
-    const deskRequest = await ctx.db.get(args.deskMatchRequestId);
-    if (!deskRequest) throw new Error("Desk match request not found.");
-    if (deskRequest.status !== "requested") {
-      throw new Error("Desk match request is no longer open.");
-    }
-    assertValidEventDate(deskRequest.date);
-    assertSlotInDay(settings, args.preferredStartMinute);
-
-    const attendee = await ctx.db.get(deskRequest.attendeeAccountId);
-    if (!attendee || !attendee.active || attendee.role !== "attendee") {
-      throw new Error("Attendee account is no longer active.");
-    }
-    const company = await ctx.db.get(args.companyId);
-    if (!company || !company.optedIn) throw new Error("Company is not available for matching.");
-    if (
-      !(await hasAvailability(
-        ctx,
-        args.companyId,
-        deskRequest.date,
-        args.preferredStartMinute,
-        settings.slotMinutes,
-      ))
-    ) {
-      throw new Error("Selected time is blocked by company availability.");
-    }
-    if (
-      await hasCompanyMeetingConflict(
-        ctx,
-        args.companyId,
-        deskRequest.date,
-        args.preferredStartMinute,
-        settings.slotMinutes,
-      )
-    ) {
-      throw new Error("Company already has a meeting at that time.");
-    }
-    if (
-      await hasAttendeeMeetingConflict(
-        ctx,
-        deskRequest.attendeeAccountId,
-        deskRequest.date,
-        args.preferredStartMinute,
-        settings.slotMinutes,
-      )
-    ) {
-      throw new Error("Attendee already has a meeting at that time.");
-    }
-    const existingRequests = await activeAttendeeCompanyRequestsForDay(
-      ctx,
-      deskRequest.attendeeAccountId,
-      args.companyId,
-      deskRequest.date,
-    );
-    if (existingRequests.length > 0) {
-      throw new Error("Attendee already has an open request with that company.");
-    }
-
-    const meetingRequestId = await ctx.db.insert("meetingRequests", {
-      attendeeAccountId: deskRequest.attendeeAccountId,
-      companyId: args.companyId,
-      date: deskRequest.date,
-      preferredStartMinute: args.preferredStartMinute,
-      reason: deskRequest.intent,
-      context:
-        args.note?.trim() ||
-        `Desk suggested ${company.name} for ${attendee.displayName}.`,
-      status: "pending",
-      origin: "desk_queue",
-      createdByAccountId: actor._id,
-      ...(args.note?.trim() ? { adminNote: args.note.trim() } : {}),
-      createdAt: now(),
-      updatedAt: now(),
-    });
-
-    await ctx.db.patch(deskRequest._id, {
-      status: "matched",
-      suggestedCompanyId: args.companyId,
-      meetingRequestId,
-      note: args.note?.trim() || `Suggested ${company.name}.`,
-      updatedAt: now(),
-    });
-    return { matched: true, meetingRequestId };
-  },
-});
-
-export const updateDeskMatchStatus = mutation({
-  args: {
-    sessionToken: v.string(),
-    deskMatchRequestId: v.id("deskMatchRequests"),
-    status: deskMatchStatusValidator,
-  },
-  handler: async (ctx, args) => {
-    const actor = await requireActor(ctx, args.sessionToken);
-    const deskRequest = await ctx.db.get(args.deskMatchRequestId);
-    if (!deskRequest) throw new Error("Desk match request not found.");
-    if (actor.role !== "admin" && deskRequest.attendeeAccountId !== actor._id) {
-      throw new Error("Only the requesting attendee or admin can update this request.");
-    }
-    await ctx.db.patch(deskRequest._id, { status: args.status, updatedAt: now() });
     return { updated: true };
   },
 });
 
-export const createRequest = mutation({
+export const setMyAvailability = mutation({
   args: {
     sessionToken: v.string(),
-    companyId: v.id("companies"),
     date: v.string(),
-    preferredStartMinute: v.number(),
-    alternateStartMinute: v.optional(v.number()),
-    reason: v.string(),
-    context: v.string(),
+    startMinute: v.number(),
+    available: v.boolean(),
   },
   handler: async (ctx, args) => {
     const settings = await requireSettings(ctx);
     const actor = await requireActor(ctx, args.sessionToken);
-    if (actor.role !== "attendee") throw new Error("Only attendee accounts can request meetings.");
+    requireParticipant(actor);
+    assertValidEventDate(args.date);
+    assertSlotInDay(settings, args.startMinute);
+    if (
+      !args.available &&
+      (await participantMeetingConflict(
+        ctx,
+        actor._id,
+        args.date,
+        args.startMinute,
+        settings.slotMinutes,
+      ))
+    ) {
+      throw new Error("Cancel or move the confirmed meeting before removing availability.");
+    }
+    const existing = await ctx.db
+      .query("participantAvailability")
+      .withIndex("by_accountId_and_date_and_startMinute", (q) =>
+        q.eq("accountId", actor._id).eq("date", args.date).eq("startMinute", args.startMinute),
+      )
+      .unique();
+    if (existing) {
+      await ctx.db.patch(existing._id, { available: args.available, updatedAt: now() });
+      return { updated: true };
+    }
+    await ctx.db.insert("participantAvailability", {
+      accountId: actor._id,
+      date: args.date,
+      startMinute: args.startMinute,
+      endMinute: args.startMinute + settings.slotMinutes,
+      available: args.available,
+      updatedAt: now(),
+    });
+    return { updated: true };
+  },
+});
+
+export const createPeerRequest = mutation({
+  args: {
+    sessionToken: v.string(),
+    targetAccountId: v.id("accounts"),
+    date: v.string(),
+    preferredStartMinute: v.number(),
+    alternateStartMinute: v.optional(v.number()),
+    reason: v.string(),
+    context: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const settings = await requireSettings(ctx);
+    const actor = await requireActor(ctx, args.sessionToken);
+    requireParticipant(actor);
+    if (actor._id === args.targetAccountId) throw new Error("You cannot request yourself.");
     if (args.reason.trim().length < 8) throw new Error("Add a specific meeting reason.");
     assertValidEventDate(args.date);
     assertSlotInDay(settings, args.preferredStartMinute);
     if (args.alternateStartMinute !== undefined) assertSlotInDay(settings, args.alternateStartMinute);
-
-    const company = await ctx.db.get(args.companyId);
-    if (!company || !company.optedIn) throw new Error("Company is not available for requests.");
-
-    const requests = await attendeeRequestsForDay(ctx, actor._id, args.date);
+    const target = await ctx.db.get(args.targetAccountId);
     if (
-      requests.filter(
-        (request) => request.status !== "cancelled" && request.status !== "declined",
-      ).length >=
-      settings.attendeeRequestCapPerDay
+      !target ||
+      !target.active ||
+      target.role !== "participant" ||
+      !target.signedUp ||
+      !target.directoryOptIn
     ) {
-      throw new Error("Daily attendee request cap reached.");
+      throw new Error("Participant is not available for requests.");
     }
-    const existingRequests = await activeAttendeeCompanyRequestsForDay(
-      ctx,
-      actor._id,
-      args.companyId,
-      args.date,
-    );
-    if (existingRequests.length > 0) {
-      throw new Error("You already have an open request with this company for this date.");
-    }
-    if (
-      !(await hasAvailability(
-        ctx,
-        args.companyId,
-        args.date,
-        args.preferredStartMinute,
-        settings.slotMinutes,
-      ))
-    ) {
-      throw new Error("Preferred time is blocked by company availability.");
+    if (!(await participantAvailable(ctx, target._id, args.date, args.preferredStartMinute))) {
+      throw new Error("Preferred time is not available for that participant.");
     }
     if (
       args.alternateStartMinute !== undefined &&
-      !(await hasAvailability(
-        ctx,
-        args.companyId,
-        args.date,
-        args.alternateStartMinute,
-        settings.slotMinutes,
-      ))
+      !(await participantAvailable(ctx, target._id, args.date, args.alternateStartMinute))
     ) {
-      throw new Error("Alternate time is blocked by company availability.");
+      throw new Error("Alternate time is not available for that participant.");
     }
-
+    const activeRequests = await activeOutgoingRequestsForDay(ctx, actor._id, args.date);
+    if (activeRequests.length >= settings.outgoingRequestCapPerDay) {
+      throw new Error("Daily outgoing request cap reached.");
+    }
+    if (
+      activeRequests.some((request) => request.targetAccountId === target._id)
+    ) {
+      throw new Error("You already have an active request with this participant for this date.");
+    }
+    if (
+      await participantMeetingConflict(
+        ctx,
+        actor._id,
+        args.date,
+        args.preferredStartMinute,
+        settings.slotMinutes,
+      )
+    ) {
+      throw new Error("You already have a meeting at that time.");
+    }
     return await ctx.db.insert("meetingRequests", {
-      attendeeAccountId: actor._id,
-      companyId: args.companyId,
+      requesterAccountId: actor._id,
+      targetAccountId: target._id,
       date: args.date,
       preferredStartMinute: args.preferredStartMinute,
       ...(args.alternateStartMinute !== undefined
         ? { alternateStartMinute: args.alternateStartMinute }
         : {}),
       reason: args.reason.trim(),
-      context: args.context.trim(),
+      context: args.context?.trim() ?? `${actor.title}, ${actor.company}`,
       status: "pending",
-      origin: "attendee_request",
-      createdByAccountId: actor._id,
       createdAt: now(),
       updatedAt: now(),
     });
   },
 });
 
-export const respondToRequest = mutation({
+export const respondToPeerRequest = mutation({
   args: {
     sessionToken: v.string(),
     requestId: v.id("meetingRequests"),
@@ -1200,29 +1490,28 @@ export const respondToRequest = mutation({
     const actor = await requireActor(ctx, args.sessionToken);
     const request = await ctx.db.get(args.requestId);
     if (!request) throw new Error("Request not found.");
-    if (!isCompanyOperator(actor, request.companyId)) throw new Error("Company or admin access required.");
-    if (
-      request.status === "accepted" ||
-      request.status === "cancelled" ||
-      request.status === "declined"
-    ) {
+    if (actor.role !== "admin" && request.targetAccountId !== actor._id) {
+      throw new Error("Only the requested participant can respond.");
+    }
+    if (request.status === "accepted" || request.status === "cancelled" || request.status === "declined") {
       throw new Error("Request can no longer be changed.");
     }
-
     if (args.action === "decline") {
       await ctx.db.patch(request._id, {
         status: "declined",
-        responseNote: args.note?.trim() || "Declined by host.",
+        responseNote: args.note?.trim() || "Declined.",
         respondedByAccountId: actor._id,
         updatedAt: now(),
       });
       return { status: "declined" };
     }
-
     if (args.action === "counter") {
       if (!settings.allowCounters) throw new Error("Counter-proposals are disabled.");
       if (args.counterStartMinute === undefined) throw new Error("Counter time required.");
-      await assertBookableSlot(ctx, settings, request, args.counterStartMinute);
+      assertSlotInDay(settings, args.counterStartMinute);
+      if (!(await participantAvailable(ctx, request.targetAccountId, request.date, args.counterStartMinute))) {
+        throw new Error("Counter time is not available.");
+      }
       await ctx.db.patch(request._id, {
         status: "countered",
         counterStartMinute: args.counterStartMinute,
@@ -1232,29 +1521,13 @@ export const respondToRequest = mutation({
       });
       return { status: "countered" };
     }
-
-    let acceptedStartMinute = request.preferredStartMinute;
-    if (request.status === "countered") {
-      if (request.counterStartMinute === undefined) {
-        throw new Error("Request does not have a counter-proposal.");
-      }
-      acceptedStartMinute = request.counterStartMinute;
-    }
-    const responseNote = args.note?.trim() || "Accepted by host.";
-    const meetingId = await createConfirmedMeeting(
+    const meetingId = await createOrJoinMeetingForRequest(
       ctx,
       settings,
       request,
-      acceptedStartMinute,
-      responseNote,
+      request.preferredStartMinute,
+      args.note?.trim() || "Accepted.",
     );
-    await ctx.db.patch(request._id, {
-      status: "accepted",
-      meetingId,
-      responseNote,
-      respondedByAccountId: actor._id,
-      updatedAt: now(),
-    });
     return { status: "accepted", meetingId };
   },
 });
@@ -1266,21 +1539,55 @@ export const confirmCounter = mutation({
     const actor = await requireActor(ctx, args.sessionToken);
     const request = await ctx.db.get(args.requestId);
     if (!request) throw new Error("Request not found.");
-    if (actor.role !== "attendee" || request.attendeeAccountId !== actor._id) {
-      throw new Error("Only the requesting attendee can confirm a counter.");
+    if (request.requesterAccountId !== actor._id) {
+      throw new Error("Only the requester can confirm a counter.");
     }
     if (request.status !== "countered" || request.counterStartMinute === undefined) {
       throw new Error("Request does not have a counter-proposal.");
     }
-    const meetingId = await createConfirmedMeeting(
+    const meetingId = await createOrJoinMeetingForRequest(
       ctx,
       settings,
       request,
       request.counterStartMinute,
-      "Counter accepted by attendee.",
+      "Counter accepted.",
     );
-    await ctx.db.patch(request._id, { status: "accepted", meetingId, updatedAt: now() });
     return { status: "accepted", meetingId };
+  },
+});
+
+export const cancelRequest = mutation({
+  args: { sessionToken: v.string(), requestId: v.id("meetingRequests") },
+  handler: async (ctx, args) => {
+    const actor = await requireActor(ctx, args.sessionToken);
+    const request = await ctx.db.get(args.requestId);
+    if (!request) throw new Error("Request not found.");
+    if (actor.role !== "admin" && request.requesterAccountId !== actor._id) {
+      throw new Error("Only the requester can cancel this request.");
+    }
+    if (request.meetingId) {
+      const participants = await ctx.db
+        .query("meetingParticipants")
+        .withIndex("by_meetingId", (q) => q.eq("meetingId", request.meetingId as Id<"meetings">))
+        .take(10);
+      const requesterParticipant = participants.find(
+        (participant) => participant.requestId === request._id,
+      );
+      if (requesterParticipant) {
+        await ctx.db.patch(requesterParticipant._id, { status: "cancelled", updatedAt: now() });
+        const meeting = await ctx.db.get(request.meetingId);
+        if (meeting) {
+          const nextCount = Math.max(1, meeting.participantCount - 1);
+          await ctx.db.patch(meeting._id, {
+            participantCount: nextCount,
+            status: nextCount <= 1 ? "cancelled" : meeting.status,
+            updatedAt: now(),
+          });
+        }
+      }
+    }
+    await ctx.db.patch(request._id, { status: "cancelled", updatedAt: now() });
+    return { cancelled: true };
   },
 });
 
@@ -1292,10 +1599,9 @@ export const updateSettings = mutation({
     slotMinutes: v.number(),
     activeTables: v.number(),
     reserveTables: v.number(),
-    attendeeRequestCapPerDay: v.number(),
-    companyAcceptCapPerDay: v.number(),
+    outgoingRequestCapPerDay: v.number(),
+    maxMeetingGroupSize: v.number(),
     allowCounters: v.boolean(),
-    sponsorsOnlyDefault: v.boolean(),
   },
   handler: async (ctx, args) => {
     const actor = await requireActor(ctx, args.sessionToken);
@@ -1305,140 +1611,50 @@ export const updateSettings = mutation({
     validateMinuteOfDay("dayEndMinute", args.dayEndMinute);
     validatePositiveInteger("slotMinutes", args.slotMinutes);
     validatePositiveInteger("activeTables", args.activeTables);
-    validatePositiveInteger("reserveTables", args.reserveTables);
-    validatePositiveInteger("attendeeRequestCapPerDay", args.attendeeRequestCapPerDay);
-    validatePositiveInteger("companyAcceptCapPerDay", args.companyAcceptCapPerDay);
+    validatePositiveInteger("outgoingRequestCapPerDay", args.outgoingRequestCapPerDay);
+    validatePositiveInteger("maxMeetingGroupSize", args.maxMeetingGroupSize);
+    if (!Number.isInteger(args.reserveTables) || args.reserveTables < 0) {
+      throw new Error("reserveTables must be zero or a positive integer.");
+    }
+    if (args.maxMeetingGroupSize > 4) throw new Error("Group size cannot exceed 4.");
     if (args.dayEndMinute <= args.dayStartMinute) throw new Error("End time must be after start time.");
     if ((args.dayEndMinute - args.dayStartMinute) % args.slotMinutes !== 0) {
       throw new Error("Meeting window must divide evenly into slot length.");
     }
     await ctx.db.patch(settings._id, {
+      schemaVersion: DEMO_SCHEMA_VERSION,
       dayStartMinute: args.dayStartMinute,
       dayEndMinute: args.dayEndMinute,
       slotMinutes: args.slotMinutes,
       activeTables: args.activeTables,
       reserveTables: args.reserveTables,
-      attendeeRequestCapPerDay: args.attendeeRequestCapPerDay,
-      companyAcceptCapPerDay: args.companyAcceptCapPerDay,
+      outgoingRequestCapPerDay: args.outgoingRequestCapPerDay,
+      maxMeetingGroupSize: args.maxMeetingGroupSize,
       allowCounters: args.allowCounters,
-      sponsorsOnlyDefault: args.sponsorsOnlyDefault,
       updatedAt: now(),
     });
     return { updated: true };
   },
 });
 
-export const setCompanyOptIn = mutation({
+export const setParticipantOptIn = mutation({
   args: {
     sessionToken: v.string(),
-    companyId: v.id("companies"),
-    optedIn: v.boolean(),
+    accountId: v.id("accounts"),
+    directoryOptIn: v.boolean(),
   },
   handler: async (ctx, args) => {
     const actor = await requireActor(ctx, args.sessionToken);
     requireAdmin(actor);
-    await ctx.db.patch(args.companyId, { optedIn: args.optedIn, updatedAt: now() });
+    await ctx.db.patch(args.accountId, { directoryOptIn: args.directoryOptIn, updatedAt: now() });
     return { updated: true };
   },
 });
 
-export const setCompanySlotBlock = mutation({
+export const upsertParticipantsFromRows = mutation({
   args: {
     sessionToken: v.string(),
-    companyId: v.id("companies"),
-    date: v.string(),
-    startMinute: v.number(),
-    blocked: v.boolean(),
-    reason: v.optional(v.string()),
-  },
-  handler: async (ctx, args) => {
-    const settings = await requireSettings(ctx);
-    const actor = await requireActor(ctx, args.sessionToken);
-    if (!isCompanyOperator(actor, args.companyId)) {
-      throw new Error("Company or admin access required.");
-    }
-    assertValidEventDate(args.date);
-    assertSlotInDay(settings, args.startMinute);
-
-    const company = await ctx.db.get(args.companyId);
-    if (!company) throw new Error("Company not found.");
-    if (!company.optedIn && args.blocked) {
-      throw new Error("Hidden companies do not need slot blocks.");
-    }
-
-    const endMinute = args.startMinute + settings.slotMinutes;
-    const existingBlocks = await ctx.db
-      .query("availabilityBlocks")
-      .withIndex("by_companyId_and_date", (q) =>
-        q.eq("companyId", args.companyId).eq("date", args.date),
-      )
-      .take(200);
-    const exactBlocks = existingBlocks.filter(
-      (block) => block.startMinute === args.startMinute && block.endMinute === endMinute,
-    );
-    const overlappingBlocks = existingBlocks.filter(
-      (block) => args.startMinute < block.endMinute && endMinute > block.startMinute,
-    );
-
-    if (!args.blocked) {
-      for (const block of overlappingBlocks) await ctx.db.delete(block._id);
-      return { blocked: false };
-    }
-
-    if (
-      await hasCompanyMeetingConflict(
-        ctx,
-        args.companyId,
-        args.date,
-        args.startMinute,
-        settings.slotMinutes,
-      )
-    ) {
-      throw new Error("Move or cancel the confirmed meeting before blocking this slot.");
-    }
-
-    const reason = args.reason?.trim() || "Company opted out of this slot.";
-    if (exactBlocks.length > 0) {
-      await ctx.db.patch(exactBlocks[0]._id, {
-        reason,
-        updatedByAccountId: actor._id,
-        updatedAt: now(),
-      });
-      for (const block of exactBlocks.slice(1)) await ctx.db.delete(block._id);
-      return { blocked: true };
-    }
-
-    for (const block of overlappingBlocks) await ctx.db.delete(block._id);
-    await ctx.db.insert("availabilityBlocks", {
-      companyId: args.companyId,
-      date: args.date,
-      startMinute: args.startMinute,
-      endMinute,
-      reason,
-      updatedByAccountId: actor._id,
-      createdAt: now(),
-      updatedAt: now(),
-    });
-    return { blocked: true };
-  },
-});
-
-export const upsertCompaniesFromRows = mutation({
-  args: {
-    sessionToken: v.string(),
-    rows: v.array(
-      v.object({
-        name: v.string(),
-        tier: v.optional(v.string()),
-        contactEmail: v.optional(v.string()),
-        hostNames: v.optional(v.string()),
-        topics: v.optional(v.string()),
-        wantsToMeet: v.optional(v.string()),
-        sponsor: v.optional(v.boolean()),
-        optedIn: v.optional(v.boolean()),
-        description: v.optional(v.string()),
-      }),
-    ),
+    rows: v.array(v.record(v.string(), v.string())),
   },
   handler: async (ctx, args) => {
     const actor = await requireActor(ctx, args.sessionToken);
@@ -1446,50 +1662,109 @@ export const upsertCompaniesFromRows = mutation({
     if (args.rows.length > MAX_IMPORT_ROWS) {
       throw new Error(`Import is limited to ${MAX_IMPORT_ROWS} rows per batch.`);
     }
+    const seenEmails = new Set<string>();
     let inserted = 0;
     let updated = 0;
+    let duplicateRows = 0;
+    let missingEmailRows = 0;
+    let missingCompanyRows = 0;
+    let missingTitleRows = 0;
 
     for (const row of args.rows) {
-      const name = row.name.trim();
-      if (!name) continue;
-      const slug = slugify(name);
-      if (!slug) throw new Error(`Company name "${name}" must include letters or numbers.`);
+      const normalized = normalizeParticipantRow(row);
+      if (!normalized.email) {
+        missingEmailRows += 1;
+        continue;
+      }
+      if (seenEmails.has(normalized.email)) {
+        duplicateRows += 1;
+        continue;
+      }
+      seenEmails.add(normalized.email);
+      if (!normalized.company) missingCompanyRows += 1;
+      if (!normalized.title) missingTitleRows += 1;
       const existing = await ctx.db
-        .query("companies")
-        .withIndex("by_slug", (q) => q.eq("slug", slug))
+        .query("accounts")
+        .withIndex("by_email", (q) => q.eq("email", normalized.email))
         .unique();
+      const preserved = existing?.signedUp
+        ? {
+            displayName: existing.displayName,
+            title: existing.title,
+            company: existing.company,
+            networkingIntent: existing.networkingIntent,
+            topics: existing.topics,
+            signedUp: existing.signedUp,
+            directoryOptIn: existing.directoryOptIn,
+            profileComplete: existing.profileComplete,
+          }
+        : {
+            displayName: normalized.displayName,
+            title: normalized.title,
+            company: normalized.company,
+            networkingIntent: "",
+            topics: [],
+            signedUp: false,
+            directoryOptIn: false,
+            profileComplete: normalized.profileComplete,
+          };
       const fields = {
-        name,
-        slug,
-        tier: row.tier?.trim() || "Imported",
-        description: row.description?.trim() || "Imported company awaiting admin enrichment.",
-        contactEmail: normalizeEmail(row.contactEmail || `${slug}@aiewf.test`),
-        hostNames: splitList(row.hostNames),
-        topics: splitList(row.topics),
-        wantsToMeet: splitList(row.wantsToMeet),
-        sponsor: row.sponsor ?? true,
-        optedIn: row.optedIn ?? false,
-        priority: existing?.priority ?? 50,
-        notes: existing?.notes ?? "Imported from admin CSV paste.",
+        email: normalized.email,
+        displayName: preserved.displayName || normalized.email,
+        firstName: normalized.firstName,
+        lastName: normalized.lastName,
+        role: "participant" as const,
+        title: preserved.title,
+        company: preserved.company,
+        ticketType: normalized.ticketType,
+        ticketCategory: normalized.ticketCategory,
+        registrationStatus: normalized.registrationStatus,
+        profileImageUrl: normalized.profileImageUrl,
+        city: normalized.city,
+        country: normalized.country,
+        companySize: normalized.companySize,
+        networkingIntent: preserved.networkingIntent,
+        topics: preserved.topics,
+        signedUp: preserved.signedUp,
+        directoryOptIn: preserved.directoryOptIn,
+        profileComplete: preserved.profileComplete,
+        active: true,
+        rawImportJson: JSON.stringify(row),
         updatedAt: now(),
       };
       if (existing) {
         await ctx.db.patch(existing._id, fields);
         updated += 1;
       } else {
-        await ctx.db.insert("companies", fields);
+        const accountId = await ctx.db.insert("accounts", fields);
+        const settings = await requireSettings(ctx);
+        await insertAvailabilityForAllSlots(ctx, accountId, settings);
         inserted += 1;
       }
     }
 
+    const summary = `${inserted} inserted, ${updated} updated, ${duplicateRows} duplicate rows skipped`;
     await ctx.db.insert("importBatches", {
       importedByAccountId: actor._id,
-      kind: "companies_csv",
+      kind: "participants_csv",
       rowCount: args.rows.length,
-      summary: `${inserted} inserted, ${updated} updated`,
+      inserted,
+      updated,
+      duplicateRows,
+      missingEmailRows,
+      missingCompanyRows,
+      missingTitleRows,
+      summary,
       createdAt: now(),
     });
-    return { inserted, updated };
+    return {
+      inserted,
+      updated,
+      duplicateRows,
+      missingEmailRows,
+      missingCompanyRows,
+      missingTitleRows,
+    };
   },
 });
 
@@ -1501,37 +1776,30 @@ export const updateMeetingStatus = mutation({
   },
   handler: async (ctx, args) => {
     const actor = await requireActor(ctx, args.sessionToken);
-    const settings = await requireSettings(ctx);
     const meeting = await ctx.db.get(args.meetingId);
     if (!meeting) throw new Error("Meeting not found.");
-    if (!isCompanyOperator(actor, meeting.companyId)) throw new Error("Company or admin access required.");
-
-    if (meeting.status === "cancelled" && args.status !== "cancelled") {
-      requireAdmin(actor);
-      if (args.status !== "confirmed") {
-        throw new Error("Cancelled meetings can only be restored to confirmed.");
-      }
-      const request = await ctx.db.get(meeting.requestId);
-      if (!request) throw new Error("Linked request not found.");
-      await assertBookableSlot(ctx, settings, request, meeting.startMinute, meeting._id);
-      if (
-        await hasTableConflict(
-          ctx,
-          meeting.date,
-          meeting.tableNumber,
-          meeting.startMinute,
-          settings.slotMinutes,
-          meeting._id,
-        )
-      ) {
-        throw new Error("Table is already occupied at that time.");
-      }
-      await ctx.db.patch(request._id, { status: "accepted", meetingId: meeting._id, updatedAt: now() });
+    const participants = await ctx.db
+      .query("meetingParticipants")
+      .withIndex("by_meetingId", (q) => q.eq("meetingId", args.meetingId))
+      .take(10);
+    if (
+      actor.role !== "admin" &&
+      !participants.some((participant) => participant.accountId === actor._id)
+    ) {
+      throw new Error("Only meeting participants can update this meeting.");
     }
-
     await ctx.db.patch(args.meetingId, { status: args.status, updatedAt: now() });
+    for (const participant of participants) {
+      await ctx.db.patch(participant._id, { status: args.status, updatedAt: now() });
+    }
     if (args.status === "cancelled") {
-      await ctx.db.patch(meeting.requestId, { status: "cancelled", updatedAt: now() });
+      const requests = await ctx.db
+        .query("meetingRequests")
+        .withIndex("by_meetingId", (q) => q.eq("meetingId", args.meetingId))
+        .take(10);
+      for (const request of requests) {
+        await ctx.db.patch(request._id, { status: "cancelled", updatedAt: now() });
+      }
     }
     return { updated: true };
   },
@@ -1550,8 +1818,6 @@ export const moveMeeting = mutation({
     const settings = await requireSettings(ctx);
     const meeting = await ctx.db.get(args.meetingId);
     if (!meeting) throw new Error("Meeting not found.");
-    const request = await ctx.db.get(meeting.requestId);
-    if (!request) throw new Error("Linked request not found.");
     const maxTable = settings.activeTables + settings.reserveTables;
     if (
       !Number.isInteger(args.tableNumber) ||
@@ -1561,18 +1827,34 @@ export const moveMeeting = mutation({
       throw new Error("Table is outside configured inventory.");
     }
     assertSlotInDay(settings, args.startMinute);
-    await assertBookableSlot(ctx, settings, request, args.startMinute, meeting._id);
     if (
-      await hasTableConflict(
+      await tableConflict(
         ctx,
         meeting.date,
-        args.tableNumber,
         args.startMinute,
-        settings.slotMinutes,
+        args.tableNumber,
         meeting._id,
       )
     ) {
       throw new Error("Table is already occupied at that time.");
+    }
+    const participants = await ctx.db
+      .query("meetingParticipants")
+      .withIndex("by_meetingId", (q) => q.eq("meetingId", meeting._id))
+      .take(10);
+    for (const participant of participants) {
+      if (
+        await participantMeetingConflict(
+          ctx,
+          participant.accountId,
+          meeting.date,
+          args.startMinute,
+          settings.slotMinutes,
+          meeting._id,
+        )
+      ) {
+        throw new Error("A participant already has a meeting at that time.");
+      }
     }
     await ctx.db.patch(args.meetingId, {
       startMinute: args.startMinute,
@@ -1580,6 +1862,13 @@ export const moveMeeting = mutation({
       tableNumber: args.tableNumber,
       updatedAt: now(),
     });
+    for (const participant of participants) {
+      await ctx.db.patch(participant._id, {
+        startMinute: args.startMinute,
+        endMinute: args.startMinute + settings.slotMinutes,
+        updatedAt: now(),
+      });
+    }
     return { updated: true };
   },
 });

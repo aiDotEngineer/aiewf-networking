@@ -1,10 +1,13 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
-const accountRole = v.union(
-  v.literal("admin"),
-  v.literal("company"),
-  v.literal("attendee"),
+const accountRole = v.union(v.literal("admin"), v.literal("participant"));
+
+const ticketCategory = v.union(
+  v.literal("leadership"),
+  v.literal("speaker"),
+  v.literal("sponsor"),
+  v.literal("other"),
 );
 
 const requestStatus = v.union(
@@ -15,12 +18,6 @@ const requestStatus = v.union(
   v.literal("cancelled"),
 );
 
-const requestOrigin = v.union(
-  v.literal("attendee_request"),
-  v.literal("desk_queue"),
-  v.literal("admin_match"),
-);
-
 const meetingStatus = v.union(
   v.literal("confirmed"),
   v.literal("completed"),
@@ -28,16 +25,15 @@ const meetingStatus = v.union(
   v.literal("cancelled"),
 );
 
-const deskMatchStatus = v.union(
-  v.literal("requested"),
-  v.literal("matched"),
-  v.literal("closed"),
-  v.literal("cancelled"),
+const meetingParticipantRole = v.union(
+  v.literal("host"),
+  v.literal("requester"),
 );
 
 export default defineSchema({
   eventSettings: defineTable({
     key: v.string(),
+    schemaVersion: v.number(),
     eventName: v.string(),
     roomName: v.string(),
     timezone: v.string(),
@@ -48,159 +44,155 @@ export default defineSchema({
     slotMinutes: v.number(),
     activeTables: v.number(),
     reserveTables: v.number(),
-    attendeeRequestCapPerDay: v.number(),
-    companyAcceptCapPerDay: v.number(),
+    outgoingRequestCapPerDay: v.number(),
+    maxMeetingGroupSize: v.number(),
     allowCounters: v.boolean(),
-    sponsorsOnlyDefault: v.boolean(),
     updatedAt: v.number(),
   }).index("by_key", ["key"]),
-
-  companies: defineTable({
-    name: v.string(),
-    slug: v.string(),
-    tier: v.string(),
-    description: v.string(),
-    contactEmail: v.string(),
-    hostNames: v.array(v.string()),
-    topics: v.array(v.string()),
-    wantsToMeet: v.array(v.string()),
-    sponsor: v.boolean(),
-    optedIn: v.boolean(),
-    priority: v.number(),
-    notes: v.string(),
-    updatedAt: v.number(),
-  })
-    .index("by_slug", ["slug"])
-    .index("by_optedIn", ["optedIn"])
-    .index("by_sponsor_and_optedIn", ["sponsor", "optedIn"]),
 
   accounts: defineTable({
     email: v.string(),
     displayName: v.string(),
+    firstName: v.string(),
+    lastName: v.string(),
     role: accountRole,
     title: v.string(),
-    companyId: v.optional(v.id("companies")),
-    track: v.optional(v.string()),
+    company: v.string(),
+    ticketType: v.string(),
+    ticketCategory,
+    registrationStatus: v.string(),
+    profileImageUrl: v.string(),
+    city: v.string(),
+    country: v.string(),
+    companySize: v.string(),
+    networkingIntent: v.string(),
+    topics: v.array(v.string()),
+    signedUp: v.boolean(),
+    directoryOptIn: v.boolean(),
+    profileComplete: v.boolean(),
     active: v.boolean(),
+    rawImportJson: v.optional(v.string()),
     updatedAt: v.number(),
   })
     .index("by_email", ["email"])
     .index("by_role", ["role"])
-    .index("by_companyId", ["companyId"]),
+    .index("by_signedUp_and_directoryOptIn", ["signedUp", "directoryOptIn"])
+    .index("by_ticketCategory", ["ticketCategory"]),
 
   demoSessions: defineTable({
     token: v.string(),
     accountId: v.id("accounts"),
+    source: v.optional(v.union(v.literal("magic_link"), v.literal("demo"))),
     createdAt: v.number(),
     expiresAt: v.number(),
   })
     .index("by_token", ["token"])
     .index("by_accountId", ["accountId"]),
 
-  availability: defineTable({
-    companyId: v.id("companies"),
-    date: v.string(),
-    startMinute: v.number(),
-    endMinute: v.number(),
-    note: v.string(),
-    updatedAt: v.number(),
-  })
-    .index("by_companyId_and_date", ["companyId", "date"])
-    .index("by_date", ["date"]),
-
-  availabilityBlocks: defineTable({
-    companyId: v.id("companies"),
-    date: v.string(),
-    startMinute: v.number(),
-    endMinute: v.number(),
-    reason: v.string(),
-    updatedByAccountId: v.optional(v.id("accounts")),
+  magicLoginTokens: defineTable({
+    tokenHash: v.string(),
+    accountId: v.id("accounts"),
+    email: v.string(),
+    redirectPath: v.string(),
     createdAt: v.number(),
+    expiresAt: v.number(),
+    usedAt: v.optional(v.number()),
+  })
+    .index("by_tokenHash", ["tokenHash"])
+    .index("by_accountId", ["accountId"])
+    .index("by_email_and_createdAt", ["email", "createdAt"]),
+
+  participantAvailability: defineTable({
+    accountId: v.id("accounts"),
+    date: v.string(),
+    startMinute: v.number(),
+    endMinute: v.number(),
+    available: v.boolean(),
     updatedAt: v.number(),
   })
-    .index("by_companyId_and_date", ["companyId", "date"])
-    .index("by_date", ["date"]),
+    .index("by_accountId_and_date", ["accountId", "date"])
+    .index("by_accountId_and_date_and_startMinute", [
+      "accountId",
+      "date",
+      "startMinute",
+    ])
+    .index("by_date_and_startMinute", ["date", "startMinute"]),
 
   meetingRequests: defineTable({
-    attendeeAccountId: v.id("accounts"),
-    companyId: v.id("companies"),
+    requesterAccountId: v.id("accounts"),
+    targetAccountId: v.id("accounts"),
     date: v.string(),
     preferredStartMinute: v.number(),
     alternateStartMinute: v.optional(v.number()),
+    counterStartMinute: v.optional(v.number()),
     reason: v.string(),
     context: v.string(),
     status: requestStatus,
-    counterStartMinute: v.optional(v.number()),
     responseNote: v.optional(v.string()),
     respondedByAccountId: v.optional(v.id("accounts")),
     meetingId: v.optional(v.id("meetings")),
-    origin: v.optional(requestOrigin),
-    createdByAccountId: v.optional(v.id("accounts")),
-    adminNote: v.optional(v.string()),
     createdAt: v.number(),
     updatedAt: v.number(),
   })
-    .index("by_attendeeAccountId_and_date", ["attendeeAccountId", "date"])
-    .index("by_attendeeAccountId_and_companyId_and_date", [
-      "attendeeAccountId",
-      "companyId",
-      "date",
-    ])
-    .index("by_companyId_and_status", ["companyId", "status"])
-    .index("by_companyId_and_date", ["companyId", "date"])
-    .index("by_status", ["status"])
-    .index("by_date_and_status", ["date", "status"]),
+    .index("by_requesterAccountId_and_date", ["requesterAccountId", "date"])
+    .index("by_targetAccountId_and_date", ["targetAccountId", "date"])
+    .index("by_targetAccountId_and_status", ["targetAccountId", "status"])
+    .index("by_date_and_status", ["date", "status"])
+    .index("by_meetingId", ["meetingId"]),
 
   meetings: defineTable({
-    requestId: v.id("meetingRequests"),
-    attendeeAccountId: v.id("accounts"),
-    companyId: v.id("companies"),
+    hostAccountId: v.id("accounts"),
     date: v.string(),
     startMinute: v.number(),
     endMinute: v.number(),
     tableNumber: v.number(),
+    participantCount: v.number(),
     status: meetingStatus,
     context: v.string(),
+    createdFromRequestId: v.optional(v.id("meetingRequests")),
     updatedAt: v.number(),
   })
     .index("by_date", ["date"])
     .index("by_date_and_startMinute", ["date", "startMinute"])
-    .index("by_date_and_tableNumber", ["date", "tableNumber"])
-    .index("by_companyId_and_date", ["companyId", "date"])
-    .index("by_companyId_and_date_and_startMinute", [
-      "companyId",
+    .index("by_date_and_startMinute_and_tableNumber", [
       "date",
       "startMinute",
+      "tableNumber",
     ])
-    .index("by_attendeeAccountId_and_date", ["attendeeAccountId", "date"])
-    .index("by_attendeeAccountId_and_date_and_startMinute", [
-      "attendeeAccountId",
-      "date",
-      "startMinute",
-    ])
+    .index("by_hostAccountId_and_date", ["hostAccountId", "date"])
     .index("by_status", ["status"]),
 
-  deskMatchRequests: defineTable({
-    attendeeAccountId: v.id("accounts"),
+  meetingParticipants: defineTable({
+    meetingId: v.id("meetings"),
+    accountId: v.id("accounts"),
     date: v.string(),
-    preferredStartMinute: v.number(),
-    intent: v.string(),
-    topics: v.array(v.string()),
-    status: deskMatchStatus,
-    suggestedCompanyId: v.optional(v.id("companies")),
-    meetingRequestId: v.optional(v.id("meetingRequests")),
-    note: v.optional(v.string()),
+    startMinute: v.number(),
+    endMinute: v.number(),
+    role: meetingParticipantRole,
+    requestId: v.optional(v.id("meetingRequests")),
+    status: meetingStatus,
     createdAt: v.number(),
     updatedAt: v.number(),
   })
-    .index("by_status", ["status"])
-    .index("by_attendeeAccountId", ["attendeeAccountId"])
-    .index("by_date_and_status", ["date", "status"]),
+    .index("by_meetingId", ["meetingId"])
+    .index("by_accountId_and_date", ["accountId", "date"])
+    .index("by_accountId_and_date_and_startMinute", [
+      "accountId",
+      "date",
+      "startMinute",
+    ])
+    .index("by_date_and_startMinute", ["date", "startMinute"]),
 
   importBatches: defineTable({
     importedByAccountId: v.id("accounts"),
     kind: v.string(),
     rowCount: v.number(),
+    inserted: v.number(),
+    updated: v.number(),
+    duplicateRows: v.number(),
+    missingEmailRows: v.number(),
+    missingCompanyRows: v.number(),
+    missingTitleRows: v.number(),
     summary: v.string(),
     createdAt: v.number(),
   }).index("by_kind", ["kind"]),

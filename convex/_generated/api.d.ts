@@ -8,6 +8,7 @@
  * @module
  */
 
+import type * as authHelpers from "../authHelpers.js";
 import type * as networking from "../networking.js";
 
 import type {
@@ -17,6 +18,7 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  authHelpers: typeof authHelpers;
   networking: typeof networking;
 }>;
 
