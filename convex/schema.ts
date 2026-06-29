@@ -79,6 +79,16 @@ export default defineSchema({
     .index("by_signedUp_and_directoryOptIn", ["signedUp", "directoryOptIn"])
     .index("by_ticketCategory", ["ticketCategory"]),
 
+  participantProfileOverrides: defineTable({
+    accountId: v.id("accounts"),
+    headline: v.string(),
+    bioMarkdown: v.string(),
+    tags: v.array(v.string()),
+    participantApproved: v.boolean(),
+    approvedAt: v.optional(v.number()),
+    updatedAt: v.number(),
+  }).index("by_accountId", ["accountId"]),
+
   demoSessions: defineTable({
     token: v.string(),
     accountId: v.id("accounts"),

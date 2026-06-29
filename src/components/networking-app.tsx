@@ -2,6 +2,15 @@
 
 import { api } from "../../convex/_generated/api";
 import type { Doc, Id } from "../../convex/_generated/dataModel";
+import { participantProfilesByLookupKey } from "@/lib/participant-profile-data";
+import {
+  mergeParticipantProfile,
+  profileLookupKey,
+  profileSearchText,
+  sourceCount,
+  type DisplayParticipantProfile,
+  type ParticipantProfileOverride,
+} from "@/lib/participant-profiles";
 import { useAction, useMutation, useQuery } from "convex/react";
 import {
   CalendarDays,
@@ -10,6 +19,7 @@ import {
   Clock3,
   Database,
   Download,
+  ExternalLink,
   Gauge,
   Import,
   ListChecks,
@@ -53,6 +63,7 @@ type Account = {
   directoryOptIn: boolean;
   profileComplete: boolean;
   active: boolean;
+  profileOverride: ParticipantProfileOverride | null;
 };
 type DemoAccount = Pick<Account, "_id" | "email" | "displayName" | "role" | "title" | "company" | "signedUp" | "directoryOptIn">;
 type Settings = Doc<"eventSettings">;
@@ -280,6 +291,17 @@ function visibleAccounts(accounts: Array<Account | null> | undefined) {
   return (accounts ?? []).filter((account): account is Account => Boolean(account));
 }
 
+function participantProfileFor(account: Account): DisplayParticipantProfile | null {
+  const profile = participantProfilesByLookupKey.get(profileLookupKey(account.email));
+  return profile ? mergeParticipantProfile(profile, account.profileOverride) : null;
+}
+
+function profileBadgeLabel(profile: DisplayParticipantProfile | null) {
+  if (!profile) return null;
+  if (profile.displayParticipantApproved) return "participant approved";
+  return profile.override ? "participant edited" : "AI researched";
+}
+
 export function NetworkingApp() {
   const publicConfig = useQuery(api.networking.getPublicConfig, {}) as PublicConfig | undefined;
   const demoLoginEnabled = publicConfig?.demoLoginEnabled ?? false;
@@ -312,6 +334,7 @@ export function NetworkingApp() {
       ? "display"
       : "directory";
   });
+  const [adminParticipantPreview, setAdminParticipantPreview] = useState(false);
   const [notice, setNotice] = useState<string | null>(() => initialAuthToken ? "Verifying login link..." : null);
   const [actionPending, setActionPending] = useState(false);
   const [sessionPending, setSessionPending] = useState(Boolean(initialAuthToken));
@@ -394,6 +417,13 @@ export function NetworkingApp() {
     if (token) void logoutSession({ sessionToken: token }).catch(() => null);
   }, [logoutSession, sessionToken, setSessionToken]);
 
+  const setAdminViewMode = useCallback((enabled: boolean) => {
+    setAdminParticipantPreview(enabled);
+    if (enabled) {
+      setActiveView((view) => (view === "admin" ? "directory" : view));
+    }
+  }, []);
+
   const settings = data?.settings ?? publicConfig?.settings ?? null;
   const displayDate = settings?.startDate ?? "2026-06-30";
   const displayNowMinute = settings
@@ -405,6 +435,11 @@ export function NetworkingApp() {
       ? { date: displayDate, nowMinute: displayNowMinute }
       : "skip",
   ) as RoomDisplayData | null | undefined;
+  const adminViewingAsParticipant = data?.actor.role === "admin" && adminParticipantPreview;
+  const adminPreviewParticipants = useQuery(
+    api.networking.listAdminParticipants,
+    adminViewingAsParticipant && sessionToken ? { sessionToken, search: "" } : "skip",
+  ) as AdminParticipantsResult | undefined;
 
   const runAction: RunAction = async (task, success) => {
     if (actionLockRef.current) return false;
@@ -468,7 +503,13 @@ export function NetworkingApp() {
   }
 
   const actor = data.actor;
-  const stats = dashboardStats(data);
+  const displayActor: Account = adminViewingAsParticipant
+    ? { ...actor, role: "participant" as const }
+    : actor;
+  const participants = adminViewingAsParticipant
+    ? visibleAccounts(adminPreviewParticipants?.participants)
+    : visibleAccounts(data.participants);
+  const stats = dashboardStats(data, participants);
 
   return (
     <main className="min-h-screen bg-[#050505] text-white">
@@ -477,10 +518,12 @@ export function NetworkingApp() {
         <Header
           actor={actor}
           actorEmail={actorEmail}
+          adminViewingAsParticipant={adminViewingAsParticipant}
           demoAccounts={accounts ?? []}
           demoLoginEnabled={demoLoginEnabled}
           isPending={sessionPending}
           onActorChange={startSession}
+          onAdminViewModeChange={setAdminViewMode}
           onLogout={signOut}
         />
         {notice && (
@@ -492,14 +535,21 @@ export function NetworkingApp() {
           </div>
         )}
         <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[220px_minmax(0,1fr)]">
-          <Navigation actor={actor} activeView={activeView} onChange={setActiveView} />
+          <Navigation
+            actor={actor}
+            activeView={activeView}
+            adminViewingAsParticipant={adminViewingAsParticipant}
+            onAdminViewModeChange={setAdminViewMode}
+            onChange={setActiveView}
+          />
           <section className="min-w-0">
             <MetricStrip settings={data.settings} stats={stats} />
             {activeView === "directory" && (
               <DirectoryView
                 actionPending={actionPending}
-                actor={actor}
-                participants={visibleAccounts(data.participants)}
+                actor={displayActor}
+                participants={participants}
+                previewMode={adminViewingAsParticipant}
                 requests={data.requests}
                 runAction={runAction}
                 sessionToken={sessionToken}
@@ -508,9 +558,11 @@ export function NetworkingApp() {
             )}
             {activeView === "profile" && (
               <ProfileView
+                key={`${displayActor._id}:${displayActor.role}`}
                 actionPending={actionPending}
-                actor={actor}
+                actor={displayActor}
                 availability={data.myAvailability}
+                previewMode={adminViewingAsParticipant}
                 runAction={runAction}
                 sessionToken={sessionToken}
                 settings={data.settings}
@@ -520,7 +572,8 @@ export function NetworkingApp() {
             {activeView === "requests" && (
               <RequestsView
                 actionPending={actionPending}
-                actor={actor}
+                actor={displayActor}
+                previewMode={adminViewingAsParticipant}
                 requests={data.requests}
                 runAction={runAction}
                 sessionToken={sessionToken}
@@ -531,8 +584,9 @@ export function NetworkingApp() {
             {activeView === "schedule" && (
               <ScheduleView
                 actionPending={actionPending}
-                actor={actor}
+                actor={displayActor}
                 meetings={data.meetings}
+                previewMode={adminViewingAsParticipant}
                 runAction={runAction}
                 sessionToken={sessionToken}
                 settings={data.settings}
@@ -560,11 +614,10 @@ export function NetworkingApp() {
   );
 }
 
-function dashboardStats(data: Bootstrap) {
+function dashboardStats(data: Bootstrap, participants = visibleAccounts(data.participants)) {
   const slotsPerDay = Math.floor(
     (data.settings.dayEndMinute - data.settings.dayStartMinute) / data.settings.slotMinutes,
   );
-  const participants = visibleAccounts(data.participants);
   return {
     visibleParticipants: participants.filter((participant) => participant.directoryOptIn).length,
     pending: data.requests.filter((request) => request.status === "pending").length,
@@ -690,18 +743,22 @@ function LoginView({
 function Header({
   actor,
   actorEmail,
+  adminViewingAsParticipant,
   demoAccounts,
   demoLoginEnabled,
   isPending,
   onActorChange,
+  onAdminViewModeChange,
   onLogout,
 }: {
   actor: Account;
   actorEmail: string;
+  adminViewingAsParticipant: boolean;
   demoAccounts: DemoAccount[];
   demoLoginEnabled: boolean;
   isPending: boolean;
   onActorChange: (email: string) => void;
+  onAdminViewModeChange: (enabled: boolean) => void;
   onLogout: () => void;
 }) {
   return (
@@ -716,7 +773,7 @@ function Header({
           <h1 className="text-2xl font-semibold tracking-tight sm:text-4xl">
             Networking Room
           </h1>
-          <RolePill actor={actor} />
+          <RolePill actor={actor} adminViewingAsParticipant={adminViewingAsParticipant} />
         </div>
       </div>
       <div className="grid min-w-0 gap-2 sm:min-w-[340px]">
@@ -729,6 +786,19 @@ function Header({
             Sign out
           </button>
         </div>
+        {actor.role === "admin" && (
+          <button
+            className={cn(
+              "button-quiet h-10 w-full justify-center text-xs",
+              adminViewingAsParticipant && "border-[#f8e18e]/45 bg-[#f8e18e]/10 text-[#f8e18e]",
+            )}
+            onClick={() => onAdminViewModeChange(!adminViewingAsParticipant)}
+            type="button"
+          >
+            {adminViewingAsParticipant ? <Settings2 size={15} /> : <UserCheck size={15} />}
+            {adminViewingAsParticipant ? "Return to admin view" : "View as participant"}
+          </button>
+        )}
         {demoLoginEnabled && (
           <label className="grid min-w-0 gap-1 text-xs text-white/55">
             Demo account
@@ -751,11 +821,18 @@ function Header({
   );
 }
 
-function RolePill({ actor }: { actor: Account }) {
+function RolePill({
+  actor,
+  adminViewingAsParticipant = false,
+}: {
+  actor: Account;
+  adminViewingAsParticipant?: boolean;
+}) {
   return (
     <span className="inline-flex items-center gap-1 border border-white/10 bg-white/[0.06] px-2 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white/70">
       <LockKeyhole size={12} />
       {actor.role}
+      {adminViewingAsParticipant ? " · viewing participant" : ""}
       {actor.role === "participant" ? ` · ${actor.directoryOptIn ? "opted in" : "hidden"}` : ""}
     </span>
   );
@@ -763,11 +840,15 @@ function RolePill({ actor }: { actor: Account }) {
 
 function Navigation({
   activeView,
+  adminViewingAsParticipant,
   actor,
+  onAdminViewModeChange,
   onChange,
 }: {
   activeView: View;
+  adminViewingAsParticipant: boolean;
   actor: Account;
+  onAdminViewModeChange: (enabled: boolean) => void;
   onChange: (view: View) => void;
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -779,7 +860,7 @@ function Navigation({
     { id: "display", label: "Room display", icon: <Monitor size={16} /> },
     { id: "admin", label: "Admin", icon: <Settings2 size={16} /> },
   ];
-  const items = allItems.filter((item) => item.id !== "admin" || actor.role === "admin");
+  const items = allItems.filter((item) => item.id !== "admin" || (actor.role === "admin" && !adminViewingAsParticipant));
   const activeItem = items.find((item) => item.id === activeView) ?? items[0];
 
   return (
@@ -830,6 +911,21 @@ function Navigation({
           </button>
         ))}
       </nav>
+      {actor.role === "admin" && (
+        <button
+          className={cn(
+            "mt-2 hidden h-10 w-full items-center justify-center gap-2 border px-3 text-xs font-semibold uppercase tracking-[0.12em] transition lg:flex",
+            adminViewingAsParticipant
+              ? "border-[#f8e18e]/60 bg-[#f8e18e]/12 text-[#f8e18e]"
+              : "border-white/10 bg-black/25 text-white/55 hover:border-[#f8e18e]/45 hover:text-white",
+          )}
+          onClick={() => onAdminViewModeChange(!adminViewingAsParticipant)}
+          type="button"
+        >
+          {adminViewingAsParticipant ? <Settings2 size={14} /> : <UserCheck size={14} />}
+          {adminViewingAsParticipant ? "Admin view" : "Participant view"}
+        </button>
+      )}
       <div className="mt-4 hidden border-t border-white/10 pt-4 text-xs leading-5 text-white/45 lg:block">
         Opt-in participants request time with each other. Accepted groups take one table, up to four people.
       </div>
@@ -870,6 +966,7 @@ function DirectoryView({
   actionPending,
   actor,
   participants,
+  previewMode,
   requests,
   runAction,
   sessionToken,
@@ -878,6 +975,7 @@ function DirectoryView({
   actionPending: boolean;
   actor: Account;
   participants: Account[];
+  previewMode?: boolean;
   requests: MeetingRequest[];
   runAction: RunAction;
   sessionToken: string;
@@ -914,6 +1012,7 @@ function DirectoryView({
     .filter((participant) => ticketFilter === "all" || participant.ticketCategory === ticketFilter)
     .filter((participant) => {
       if (!normalizedQuery) return true;
+      const profile = participantProfileFor(participant);
       const haystack = [
         participant.displayName,
         participant.company,
@@ -922,6 +1021,7 @@ function DirectoryView({
         participant.topics.join(" "),
         participant.city,
         participant.country,
+        profile ? profileSearchText(profile) : "",
       ].join(" ").toLowerCase();
       return haystack.includes(normalizedQuery);
     })
@@ -935,7 +1035,7 @@ function DirectoryView({
 
   function submitRequest(event: FormEvent) {
     event.preventDefault();
-    if (!selected || effectiveSelectedSlot === "" || atCap) return;
+    if (previewMode || !selected || effectiveSelectedSlot === "" || atCap) return;
     void runAction(
       () =>
         createPeerRequest({
@@ -968,6 +1068,11 @@ function DirectoryView({
     <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_380px]">
       <section className="border border-white/10 bg-[#101010]">
         <SectionHeader icon={<Search size={17} />} title="Participant directory" detail={`${filtered.length} visible`} />
+        {previewMode && (
+          <div className="border-b border-[#f8e18e]/25 bg-[#f8e18e]/10 px-4 py-3 text-sm leading-6 text-[#f8e18e]">
+            Viewing the participant directory as an admin. Request actions are disabled in preview mode.
+          </div>
+        )}
         <div className="grid gap-3 border-b border-white/10 p-4 md:grid-cols-[minmax(0,1fr)_180px_160px]">
           <Field label="Search">
             <input
@@ -1001,38 +1106,16 @@ function DirectoryView({
             </div>
           )}
           {filtered.map((participant) => (
-            <button
+            <ParticipantCard
               key={participant._id}
-              className={cn(
-                "grid min-h-[210px] gap-3 border p-4 text-left transition",
-                selected?._id === participant._id
-                  ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
-                  : "border-white/10 bg-black/25 hover:border-white/25 hover:bg-white/[0.045]",
-              )}
+              activeRequestOpen={openTargetIds.has(participant._id)}
+              isSelected={selected?._id === participant._id}
+              participant={participant}
               onClick={() => {
                 setSelectedId(participant._id);
                 setSelectedSlot("");
               }}
-            >
-              <div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <h3 className="text-lg font-semibold leading-tight">{participant.displayName}</h3>
-                  <StatusBadge status={participant.ticketCategory} />
-                </div>
-                <p className="mt-2 text-sm leading-6 text-white/65">
-                  {participant.title || "Title TBD"} · {participant.company || "Company TBD"}
-                </p>
-                <p className="mt-2 line-clamp-3 text-sm leading-6 text-white/50">
-                  {participant.networkingIntent || "No networking intent added yet."}
-                </p>
-              </div>
-              <div className="self-end">
-                <TagRow items={participant.topics.length ? participant.topics : [participant.city, participant.country].filter(Boolean)} />
-                {openTargetIds.has(participant._id) && (
-                  <div className="mt-3 text-xs text-[#f8e18e]">Active request already open</div>
-                )}
-              </div>
-            </button>
+            />
           ))}
         </div>
       </section>
@@ -1054,6 +1137,7 @@ function DirectoryView({
               <div className="text-lg font-semibold">{selected.displayName}</div>
               <div className="mt-1 text-sm text-white/55">{selected.title} · {selected.company}</div>
             </div>
+            <ParticipantProfilePanel profile={participantProfileFor(selected)} compact />
             <Field label="Available slot">
               <select
                 className="input"
@@ -1088,6 +1172,7 @@ function DirectoryView({
               className="button-primary"
               disabled={
                 actionPending ||
+                previewMode ||
                 atCap ||
                 !availableSlots.length ||
                 reason.trim().length < 8 ||
@@ -1097,6 +1182,7 @@ function DirectoryView({
             >
               <Send size={16} /> Send request
             </button>
+            {previewMode && <p className="text-xs leading-5 text-white/45">Switch to an actual participant session to send requests.</p>}
             {atCap && <p className="text-xs leading-5 text-white/45">Request cap reached for this day.</p>}
           </div>
         ) : (
@@ -1107,10 +1193,147 @@ function DirectoryView({
   );
 }
 
+function ParticipantCard({
+  activeRequestOpen,
+  isSelected,
+  onClick,
+  participant,
+}: {
+  activeRequestOpen: boolean;
+  isSelected: boolean;
+  onClick: () => void;
+  participant: Account;
+}) {
+  const profile = participantProfileFor(participant);
+  const tags = profile?.displayTags.length
+    ? profile.displayTags
+    : participant.topics.length
+      ? participant.topics
+      : [participant.city, participant.country].filter(Boolean);
+  return (
+    <button
+      className={cn(
+        "grid min-h-[240px] gap-3 border p-4 text-left transition",
+        isSelected
+          ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
+          : "border-white/10 bg-black/25 hover:border-white/25 hover:bg-white/[0.045]",
+      )}
+      onClick={onClick}
+      type="button"
+    >
+      <div>
+        <div className="flex flex-wrap items-center gap-2">
+          <h3 className="text-lg font-semibold leading-tight">{participant.displayName}</h3>
+          <StatusBadge status={participant.ticketCategory} />
+        </div>
+        <p className="mt-2 text-sm leading-6 text-white/65">
+          {participant.title || profile?.title || "Title TBD"} · {participant.company || profile?.company || "Company TBD"}
+        </p>
+        {profile && (
+          <div className="mt-2 flex flex-wrap gap-2">
+            <Badge>{profile.confidence} confidence</Badge>
+            <Badge>{sourceCount(profile)} sources</Badge>
+            {profileBadgeLabel(profile) && <Badge>{profileBadgeLabel(profile)}</Badge>}
+          </div>
+        )}
+        <p className="mt-3 line-clamp-4 text-sm leading-6 text-white/58">
+          {profile?.displayBioMarkdown || participant.networkingIntent || "No profile added yet."}
+        </p>
+      </div>
+      <div className="self-end">
+        <TagRow items={tags} />
+        {activeRequestOpen && (
+          <div className="mt-3 text-xs text-[#f8e18e]">Active request already open</div>
+        )}
+      </div>
+    </button>
+  );
+}
+
+function ParticipantProfilePanel({
+  compact = false,
+  profile,
+}: {
+  compact?: boolean;
+  profile: DisplayParticipantProfile | null;
+}) {
+  if (!profile) {
+    return (
+      <div className="border border-white/10 bg-black/25 p-3 text-sm leading-6 text-white/45">
+        No researched profile has been added yet.
+      </div>
+    );
+  }
+  return (
+    <section className="border border-white/10 bg-black/25 p-3">
+      <div className="flex flex-wrap items-center gap-2">
+        <Badge>{profileBadgeLabel(profile)}</Badge>
+        <Badge>{profile.confidence} confidence</Badge>
+        <Badge>{sourceCount(profile)} sources</Badge>
+      </div>
+      <h3 className="mt-3 text-sm font-semibold leading-6 text-white/85">{profile.displayHeadline}</h3>
+      <div className="mt-2 whitespace-pre-line text-sm leading-6 text-white/62">
+        {profile.displayBioMarkdown}
+      </div>
+      <TagRow items={profile.displayTags} />
+      {!compact && (
+        <p className="mt-3 border-t border-white/10 pt-3 text-xs leading-5 text-white/42">
+          {profile.confidenceNote}
+        </p>
+      )}
+      <ProfileSourceList profile={profile} compact={compact} />
+    </section>
+  );
+}
+
+function ProfileSourceList({
+  compact,
+  profile,
+}: {
+  compact?: boolean;
+  profile: DisplayParticipantProfile;
+}) {
+  const groups: Array<[string, typeof profile.sources.primary]> = [
+    ["Primary socials / blogs / company", profile.sources.primary],
+    ["Secondary / related", profile.sources.secondary],
+  ];
+  return (
+    <div className="mt-3 grid gap-3 border-t border-white/10 pt-3">
+      {groups.map(([label, sources]) => {
+        const visibleSources = compact ? sources.slice(0, 4) : sources;
+        if (!visibleSources.length) return null;
+        return (
+          <div key={label}>
+            <div className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/40">{label}</div>
+            <div className="mt-2 grid gap-2">
+              {visibleSources.map((source) => (
+                <a
+                  key={source.url}
+                  className="group grid gap-1 border border-white/10 bg-black/30 p-2 text-xs text-white/62 transition hover:border-[#f8e18e]/45 hover:text-white"
+                  href={source.url}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <span className="flex items-center gap-1 font-semibold text-white/80">
+                    {source.label}
+                    <ExternalLink className="opacity-55 transition group-hover:opacity-100" size={12} />
+                  </span>
+                  {!compact && <span className="leading-5 text-white/45">{source.note}</span>}
+                </a>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function ProfileView({
   actionPending,
   actor,
   availability,
+  previewMode,
   runAction,
   sessionToken,
   settings,
@@ -1119,6 +1342,7 @@ function ProfileView({
   actionPending: boolean;
   actor: Account;
   availability: AvailabilitySlot[];
+  previewMode?: boolean;
   runAction: RunAction;
   sessionToken: string;
   settings: Settings;
@@ -1126,6 +1350,9 @@ function ProfileView({
 }) {
   const updateMyProfile = useMutation(api.networking.updateMyProfile);
   const setMyAvailability = useMutation(api.networking.setMyAvailability);
+  const setMyDayAvailability = useMutation(api.networking.setMyDayAvailability);
+  const researchedProfile = participantProfileFor(actor);
+  const [dragAvailability, setDragAvailability] = useState<boolean | null>(null);
   const [form, setForm] = useState({
     displayName: actor.displayName,
     title: actor.title,
@@ -1135,6 +1362,10 @@ function ProfileView({
     networkingIntent: actor.networkingIntent,
     topics: actor.topics.join("; "),
     directoryOptIn: actor.directoryOptIn,
+    profileHeadline: actor.profileOverride?.headline || researchedProfile?.headline || "",
+    profileBioMarkdown: actor.profileOverride?.bioMarkdown || researchedProfile?.bioMarkdown || "",
+    profileTags: (actor.profileOverride?.tags.length ? actor.profileOverride.tags : researchedProfile?.tags ?? actor.topics).join("; "),
+    participantApproved: actor.profileOverride?.participantApproved || researchedProfile?.participantApproved || false,
   });
 
   if (actor.role !== "participant") {
@@ -1143,6 +1374,19 @@ function ProfileView({
         <UserCheck className="text-[#f8e18e]" />
         <h2 className="mt-4 text-xl font-semibold">Admin profile</h2>
         <p className="mt-2 text-sm text-white/55">Switch to a participant to manage profile and availability.</p>
+      </section>
+    );
+  }
+
+  if (previewMode) {
+    return (
+      <section className="border border-white/10 bg-[#101010] p-6">
+        <UserCheck className="text-[#f8e18e]" />
+        <h2 className="mt-4 text-xl font-semibold">Participant profile preview</h2>
+        <p className="mt-2 max-w-2xl text-sm leading-6 text-white/55">
+          Admin preview shows participant navigation without changing the signed-in account. Switch to an actual
+          participant session to edit profile details or availability.
+        </p>
       </section>
     );
   }
@@ -1159,8 +1403,119 @@ function ProfileView({
     );
   }
 
+  function setSlotAvailability(date: string, startMinute: number, available: boolean) {
+    void setMyAvailability({
+      sessionToken,
+      date,
+      startMinute,
+      available,
+    }).catch((error) => {
+      setDragAvailability(null);
+      void runAction(() => Promise.reject(error), "");
+    });
+  }
+
+  function beginSlotDrag(date: string, startMinute: number, available: boolean) {
+    const nextAvailable = !available;
+    setDragAvailability(nextAvailable);
+    setSlotAvailability(date, startMinute, nextAvailable);
+  }
+
+  function enterSlotDrag(date: string, startMinute: number, available: boolean) {
+    if (dragAvailability === null || available === dragAvailability) return;
+    setSlotAvailability(date, startMinute, dragAvailability);
+  }
+
   return (
-    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_520px]">
+    <div
+      className="grid gap-4"
+      onPointerLeave={() => setDragAvailability(null)}
+      onPointerUp={() => setDragAvailability(null)}
+    >
+      <section className="border border-white/10 bg-[#101010]">
+        <SectionHeader icon={<Clock3 size={17} />} title="Your availability" detail="drag to paint open or hidden slots" />
+        <div className="grid gap-4 p-4">
+          {eventDateEntries(settings).map(([date, label]) => {
+            const dayAvailability = availability.filter((slot) => slot.date === date);
+            const openCount = dayAvailability.filter((slot) => slot.available).length;
+            return (
+              <div key={date} className="grid gap-2">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div className="text-xs">
+                    <span className="font-semibold text-white/70">{label}</span>
+                    <span className="ml-2 text-white/45">{openCount} open</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      className="button-quiet h-8 min-h-8 px-2 text-xs"
+                      disabled={actionPending}
+                      onClick={() =>
+                        void runAction(
+                          () => setMyDayAvailability({ sessionToken, date, available: true }),
+                          `${label} opened.`,
+                        )
+                      }
+                      type="button"
+                    >
+                      Open all
+                    </button>
+                    <button
+                      className="button-quiet h-8 min-h-8 px-2 text-xs"
+                      disabled={actionPending}
+                      onClick={() =>
+                        void runAction(
+                          () => setMyDayAvailability({ sessionToken, date, available: false }),
+                          `${label} hidden.`,
+                        )
+                      }
+                      type="button"
+                    >
+                      Hide all
+                    </button>
+                  </div>
+                </div>
+                <div className="grid select-none grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
+                  {slotLabels.map((slot) => {
+                    const availabilitySlot = dayAvailability.find((item) => item.startMinute === slot.minute);
+                    const available = availabilitySlot?.available ?? false;
+                    return (
+                      <button
+                        key={`${date}:${slot.minute}`}
+                        type="button"
+                        aria-pressed={available}
+                        className={cn(
+                          "flex h-12 min-w-0 touch-none flex-col items-center justify-center border px-2 text-xs font-semibold leading-tight transition",
+                          available
+                            ? "border-emerald-300/25 bg-emerald-300/10 text-emerald-100"
+                            : "border-white/10 bg-white/[0.035] text-white/45",
+                        )}
+                        disabled={actionPending}
+                        onPointerDown={(event) => {
+                          event.preventDefault();
+                          beginSlotDrag(date, slot.minute, available);
+                        }}
+                        onPointerEnter={() => enterSlotDrag(date, slot.minute, available)}
+                        onKeyDown={(event) => {
+                          if (event.key !== "Enter" && event.key !== " ") return;
+                          event.preventDefault();
+                          setSlotAvailability(date, slot.minute, !available);
+                        }}
+                      >
+                        <span>{slot.label}</span>
+                        <span className="mt-0.5 text-[10px] font-medium opacity-70">
+                          {available ? "Open" : "Hidden"}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_520px]">
       <form onSubmit={saveProfile} className="border border-white/10 bg-[#101010]">
         <SectionHeader icon={<UserCheck size={17} />} title="Profile confirmation" detail={actor.profileComplete ? "complete" : "needs fields"} />
         <div className="grid gap-4 p-4 sm:grid-cols-2">
@@ -1203,7 +1558,38 @@ function ProfileView({
               />
             </Field>
           </div>
+          <div className="sm:col-span-2">
+            <Field label="Directory headline">
+              <input
+                className="input"
+                value={form.profileHeadline}
+                onChange={(event) => setForm({ ...form, profileHeadline: event.target.value })}
+                placeholder="What should people know you for?"
+              />
+            </Field>
+          </div>
+          <div className="sm:col-span-2">
+            <Field label="Directory bio">
+              <textarea
+                className="input min-h-32 resize-y"
+                value={form.profileBioMarkdown}
+                onChange={(event) => setForm({ ...form, profileBioMarkdown: event.target.value })}
+                placeholder="A concise, public-facing profile for the directory."
+              />
+            </Field>
+          </div>
+          <div className="sm:col-span-2">
+            <Field label="Directory tags">
+              <input
+                className="input"
+                value={form.profileTags}
+                onChange={(event) => setForm({ ...form, profileTags: event.target.value })}
+                placeholder="AI governance; agents; infrastructure"
+              />
+            </Field>
+          </div>
           <Toggle label="Show me in the booking directory" checked={form.directoryOptIn} onChange={(value) => setForm({ ...form, directoryOptIn: value })} />
+          <Toggle label="Approve researched directory profile" checked={form.participantApproved} onChange={(value) => setForm({ ...form, participantApproved: value })} />
         </div>
         <div className="border-t border-white/10 p-4">
           <button className="button-primary" disabled={actionPending} type="submit">
@@ -1213,58 +1599,12 @@ function ProfileView({
       </form>
 
       <section className="border border-white/10 bg-[#101010]">
-        <SectionHeader icon={<Clock3 size={17} />} title="Your availability" detail="toggle open slots" />
-        <div className="grid gap-4 p-4">
-          {eventDateEntries(settings).map(([date, label]) => {
-            const dayAvailability = availability.filter((slot) => slot.date === date);
-            return (
-              <div key={date} className="grid gap-2">
-                <div className="flex items-center justify-between gap-3 text-xs">
-                  <span className="font-semibold text-white/70">{label}</span>
-                  <span className="text-white/45">{dayAvailability.filter((slot) => slot.available).length} open</span>
-                </div>
-                <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-                  {slotLabels.map((slot) => {
-                    const availabilitySlot = dayAvailability.find((item) => item.startMinute === slot.minute);
-                    const available = availabilitySlot?.available ?? false;
-                    return (
-                      <button
-                        key={`${date}:${slot.minute}`}
-                        type="button"
-                        aria-pressed={available}
-                        className={cn(
-                          "flex h-12 min-w-0 flex-col items-center justify-center border px-2 text-xs font-semibold leading-tight transition",
-                          available
-                            ? "border-emerald-300/25 bg-emerald-300/10 text-emerald-100"
-                            : "border-white/10 bg-white/[0.035] text-white/45",
-                        )}
-                        disabled={actionPending || !actor.profileComplete}
-                        onClick={() =>
-                          void runAction(
-                            () =>
-                              setMyAvailability({
-                                sessionToken,
-                                date,
-                                startMinute: slot.minute,
-                                available: !available,
-                              }),
-                            available ? "Slot hidden." : "Slot opened.",
-                          )
-                        }
-                      >
-                        <span>{slot.label}</span>
-                        <span className="mt-0.5 text-[10px] font-medium opacity-70">
-                          {available ? "Open" : "Hidden"}
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })}
+        <SectionHeader icon={<Search size={17} />} title="Research preview" detail={researchedProfile ? "sources shown in directory" : "not researched"} />
+        <div className="p-4">
+          <ParticipantProfilePanel profile={researchedProfile} />
         </div>
       </section>
+      </div>
     </div>
   );
 }
@@ -1272,6 +1612,7 @@ function ProfileView({
 function RequestsView({
   actionPending,
   actor,
+  previewMode,
   requests,
   runAction,
   sessionToken,
@@ -1280,6 +1621,7 @@ function RequestsView({
 }: {
   actionPending: boolean;
   actor: Account;
+  previewMode?: boolean;
   requests: MeetingRequest[];
   runAction: RunAction;
   sessionToken: string;
@@ -1299,6 +1641,11 @@ function RequestsView({
   return (
     <section className="border border-white/10 bg-[#101010]">
       <SectionHeader icon={<ListChecks size={17} />} title="Request queue" detail={`${visible.length} visible`} />
+      {previewMode && (
+        <div className="border-b border-[#f8e18e]/25 bg-[#f8e18e]/10 px-4 py-3 text-sm leading-6 text-[#f8e18e]">
+          Admin preview uses participant-scoped filtering. Request actions are disabled.
+        </div>
+      )}
       <div className="divide-y divide-white/10">
         {visible.length === 0 && <EmptyState title="No requests yet" detail="Incoming and outgoing booking requests will appear here." />}
         {visible.map((request) => {
@@ -1332,7 +1679,7 @@ function RequestsView({
                   <>
                     <button
                       className="button-quiet"
-                      disabled={actionPending}
+                      disabled={actionPending || previewMode}
                       onClick={() =>
                         void runAction(
                           () => respond({ sessionToken, requestId: request._id, action: "decline", note: "Declined from queue." }),
@@ -1344,7 +1691,7 @@ function RequestsView({
                     </button>
                     <button
                       className="button-quiet"
-                      disabled={actionPending || counterStartMinute === undefined}
+                      disabled={actionPending || previewMode || counterStartMinute === undefined}
                       onClick={() => {
                         if (counterStartMinute === undefined) return;
                         void runAction(
@@ -1364,7 +1711,7 @@ function RequestsView({
                     </button>
                     <button
                       className="button-primary"
-                      disabled={actionPending}
+                      disabled={actionPending || previewMode}
                       onClick={() =>
                         void runAction(
                           () => respond({ sessionToken, requestId: request._id, action: "accept", note: "Accepted from queue." }),
@@ -1379,7 +1726,7 @@ function RequestsView({
                 {request.requesterAccountId === actor._id && request.status === "countered" && (
                   <button
                     className="button-primary"
-                    disabled={actionPending}
+                    disabled={actionPending || previewMode}
                     onClick={() => void runAction(() => confirmCounter({ sessionToken, requestId: request._id }), "Counter confirmed.")}
                   >
                     <Check size={15} /> Confirm counter
@@ -1388,7 +1735,7 @@ function RequestsView({
                 {request.requesterAccountId === actor._id && (request.status === "pending" || request.status === "countered") && (
                   <button
                     className="button-quiet"
-                    disabled={actionPending}
+                    disabled={actionPending || previewMode}
                     onClick={() => void runAction(() => cancelRequest({ sessionToken, requestId: request._id }), "Request cancelled.")}
                   >
                     <X size={15} /> Cancel
@@ -1407,6 +1754,7 @@ function ScheduleView({
   actionPending,
   actor,
   meetings,
+  previewMode,
   runAction,
   sessionToken,
   settings,
@@ -1415,6 +1763,7 @@ function ScheduleView({
   actionPending: boolean;
   actor: Account;
   meetings: Meeting[];
+  previewMode?: boolean;
   runAction: RunAction;
   sessionToken: string;
   settings: Settings;
@@ -1455,6 +1804,11 @@ function ScheduleView({
           </button>
         }
       />
+      {previewMode && (
+        <div className="border-b border-[#f8e18e]/25 bg-[#f8e18e]/10 px-4 py-3 text-sm leading-6 text-[#f8e18e]">
+          Admin preview shows the participant-scoped schedule. Switch back to admin view for room-wide controls.
+        </div>
+      )}
       <div className="grid gap-3 p-3 lg:grid-cols-2">
         {visible.length === 0 && (
           <div className="lg:col-span-2">
@@ -1536,7 +1890,7 @@ function ScheduleView({
               ) : (
                 <button
                   className="button-quiet"
-                  disabled={actionPending}
+                  disabled={actionPending || previewMode}
                   onClick={() =>
                     void runAction(
                       () =>

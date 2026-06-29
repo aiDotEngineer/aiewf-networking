@@ -45,6 +45,7 @@ const meetingStatusValidator = v.union(
 type Actor = Doc<"accounts">;
 type Settings = Doc<"eventSettings">;
 type SheetRow = Record<string, string>;
+type ParticipantProfileOverride = Doc<"participantProfileOverrides">;
 
 function now() {
   return Date.now();
@@ -154,7 +155,22 @@ function normalizeParticipantRow(row: SheetRow) {
   };
 }
 
-function accountSummary(account: Doc<"accounts"> | null) {
+function profileOverrideSummary(override: ParticipantProfileOverride | null | undefined) {
+  if (!override) return null;
+  return {
+    headline: override.headline,
+    bioMarkdown: override.bioMarkdown,
+    tags: override.tags,
+    participantApproved: override.participantApproved,
+    approvedAt: override.approvedAt,
+    updatedAt: override.updatedAt,
+  };
+}
+
+function accountSummary(
+  account: Doc<"accounts"> | null,
+  override?: ParticipantProfileOverride | null,
+) {
   if (!account) return null;
   return {
     _id: account._id,
@@ -178,7 +194,59 @@ function accountSummary(account: Doc<"accounts"> | null) {
     directoryOptIn: account.directoryOptIn,
     profileComplete: account.profileComplete,
     active: account.active,
+    profileOverride: profileOverrideSummary(override),
   };
+}
+
+async function getProfileOverride(ctx: QueryCtx | MutationCtx, accountId: Id<"accounts">) {
+  return await ctx.db
+    .query("participantProfileOverrides")
+    .withIndex("by_accountId", (q) => q.eq("accountId", accountId))
+    .unique();
+}
+
+async function getProfileOverrideMap(
+  ctx: QueryCtx | MutationCtx,
+  accountIds: Array<Id<"accounts">>,
+) {
+  if (accountIds.length === 0) return new Map<Id<"accounts">, ParticipantProfileOverride>();
+  const wanted = new Set(accountIds);
+  const rows = await ctx.db.query("participantProfileOverrides").take(1800);
+  return new Map(
+    rows
+      .filter((row) => wanted.has(row.accountId))
+      .map((row) => [row.accountId, row] as const),
+  );
+}
+
+async function upsertProfileOverride(
+  ctx: MutationCtx,
+  accountId: Id<"accounts">,
+  fields: {
+    headline: string;
+    bioMarkdown: string;
+    tags: string[];
+    participantApproved: boolean;
+  },
+) {
+  const timestamp = now();
+  const existing = await getProfileOverride(ctx, accountId);
+  const patch = {
+    accountId,
+    headline: fields.headline,
+    bioMarkdown: fields.bioMarkdown,
+    tags: fields.tags,
+    participantApproved: fields.participantApproved,
+    updatedAt: timestamp,
+  };
+  const nextFields = fields.participantApproved
+    ? { ...patch, approvedAt: existing?.approvedAt ?? timestamp }
+    : patch;
+  if (existing) {
+    await ctx.db.patch(existing._id, nextFields);
+  } else {
+    await ctx.db.insert("participantProfileOverrides", nextFields);
+  }
 }
 
 async function getSettings(ctx: QueryCtx | MutationCtx) {
@@ -657,13 +725,19 @@ async function meetingWithParticipants(
     .withIndex("by_meetingId", (q) => q.eq("meetingId", meeting._id))
     .take(10);
   const accounts = await Promise.all(participantRows.map((row) => ctx.db.get(row.accountId)));
+  const overrides = await getProfileOverrideMap(
+    ctx,
+    accounts.filter((account): account is Doc<"accounts"> => Boolean(account)).map((account) => account._id),
+  );
+  const host = await ctx.db.get(meeting.hostAccountId);
+  const hostOverride = host ? await getProfileOverride(ctx, host._id) : null;
   return {
     ...meeting,
     participants: participantRows.map((row, index) => ({
       ...row,
-      account: accountSummary(accounts[index]),
+      account: accountSummary(accounts[index], overrides.get(row.accountId)),
     })),
-    host: accountSummary(await ctx.db.get(meeting.hostAccountId)),
+    host: accountSummary(host, hostOverride),
   };
 }
 
@@ -676,10 +750,14 @@ async function requestWithPeople(
     ctx.db.get(request.targetAccountId),
     request.meetingId ? ctx.db.get(request.meetingId) : Promise.resolve(null),
   ]);
+  const overrides = await getProfileOverrideMap(ctx, [
+    request.requesterAccountId,
+    request.targetAccountId,
+  ]);
   return {
     ...request,
-    requester: accountSummary(requester),
-    target: accountSummary(target),
+    requester: accountSummary(requester, overrides.get(request.requesterAccountId)),
+    target: accountSummary(target, overrides.get(request.targetAccountId)),
     meeting: meeting ? await meetingWithParticipants(ctx, meeting) : null,
   };
 }
@@ -1162,13 +1240,20 @@ export const getBootstrap = query({
             .order("desc")
             .take(5)
         : [];
+    const participantRows = visibleParticipants.filter(
+      (account) => account.role === "participant" && account.active,
+    );
+    const bootstrapOverrides = await getProfileOverrideMap(ctx, [
+      actor._id,
+      ...participantRows.map((account) => account._id),
+    ]);
 
     return {
       settings,
-      actor: accountSummary(actor),
-      participants: visibleParticipants
-        .filter((account) => account.role === "participant" && account.active)
-        .map(accountSummary),
+      actor: accountSummary(actor, bootstrapOverrides.get(actor._id)),
+      participants: participantRows.map((account) =>
+        accountSummary(account, bootstrapOverrides.get(account._id)),
+      ),
       myAvailability,
       requests: await Promise.all(uniqueRequests.map((request) => requestWithPeople(ctx, request))),
       meetings: await Promise.all(uniqueMeetings.map((meeting) => meetingWithParticipants(ctx, meeting))),
@@ -1218,7 +1303,9 @@ export const listAdminParticipants = query({
           .includes(search);
       })
       .sort((a, b) => a.displayName.localeCompare(b.displayName));
-    const participants = matches.slice(0, ADMIN_PARTICIPANT_LIMIT).map(accountSummary);
+    const participants = matches
+      .slice(0, ADMIN_PARTICIPANT_LIMIT)
+      .map((account) => accountSummary(account));
     return {
       participants,
       limit: ADMIN_PARTICIPANT_LIMIT,
@@ -1355,6 +1442,10 @@ export const updateMyProfile = mutation({
     networkingIntent: v.string(),
     topics: v.string(),
     directoryOptIn: v.boolean(),
+    profileHeadline: v.optional(v.string()),
+    profileBioMarkdown: v.optional(v.string()),
+    profileTags: v.optional(v.string()),
+    participantApproved: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
     const actor = await requireActor(ctx, args.sessionToken);
@@ -1365,6 +1456,7 @@ export const updateMyProfile = mutation({
     if (!displayName || !title || !company) {
       throw new Error("Name, title, and company are required.");
     }
+    const accountTopics = splitList(args.topics);
     await ctx.db.patch(actor._id, {
       displayName,
       title,
@@ -1372,12 +1464,26 @@ export const updateMyProfile = mutation({
       city: args.city?.trim() ?? actor.city,
       country: args.country?.trim() ?? actor.country,
       networkingIntent: args.networkingIntent.trim(),
-      topics: splitList(args.topics),
+      topics: accountTopics,
       signedUp: true,
       directoryOptIn: args.directoryOptIn,
       profileComplete: true,
       updatedAt: now(),
     });
+    if (
+      args.profileHeadline !== undefined ||
+      args.profileBioMarkdown !== undefined ||
+      args.profileTags !== undefined ||
+      args.participantApproved !== undefined
+    ) {
+      const profileTags = args.profileTags === undefined ? accountTopics : splitList(args.profileTags);
+      await upsertProfileOverride(ctx, actor._id, {
+        headline: args.profileHeadline?.trim() ?? "",
+        bioMarkdown: args.profileBioMarkdown?.trim() ?? "",
+        tags: profileTags.length ? profileTags : accountTopics,
+        participantApproved: args.participantApproved ?? false,
+      });
+    }
     return { updated: true };
   },
 });
@@ -1392,7 +1498,7 @@ export const setMyAvailability = mutation({
   handler: async (ctx, args) => {
     const settings = await requireSettings(ctx);
     const actor = await requireActor(ctx, args.sessionToken);
-    requireParticipant(actor);
+    if (actor.role !== "participant") throw new Error("Participant account required.");
     assertValidEventDate(args.date);
     assertSlotInDay(settings, args.startMinute);
     if (
@@ -1425,6 +1531,56 @@ export const setMyAvailability = mutation({
       available: args.available,
       updatedAt: now(),
     });
+    return { updated: true };
+  },
+});
+
+export const setMyDayAvailability = mutation({
+  args: {
+    sessionToken: v.string(),
+    date: v.string(),
+    available: v.boolean(),
+  },
+  handler: async (ctx, args) => {
+    const settings = await requireSettings(ctx);
+    const actor = await requireActor(ctx, args.sessionToken);
+    if (actor.role !== "participant") throw new Error("Participant account required.");
+    assertValidEventDate(args.date);
+
+    if (!args.available) {
+      const conflicts = await ctx.db
+        .query("meetingParticipants")
+        .withIndex("by_accountId_and_date", (q) =>
+          q.eq("accountId", actor._id).eq("date", args.date),
+        )
+        .take(100);
+      if (conflicts.some((item) => item.status !== "cancelled")) {
+        throw new Error("Cancel or move confirmed meetings before hiding the whole day.");
+      }
+    }
+
+    for (
+      let startMinute = settings.dayStartMinute;
+      startMinute + settings.slotMinutes <= settings.dayEndMinute;
+      startMinute += settings.slotMinutes
+    ) {
+      const existing = await ctx.db
+        .query("participantAvailability")
+        .withIndex("by_accountId_and_date_and_startMinute", (q) =>
+          q.eq("accountId", actor._id).eq("date", args.date).eq("startMinute", startMinute),
+        )
+        .unique();
+      const fields = {
+        accountId: actor._id,
+        date: args.date,
+        startMinute,
+        endMinute: startMinute + settings.slotMinutes,
+        available: args.available,
+        updatedAt: now(),
+      };
+      if (existing) await ctx.db.patch(existing._id, fields);
+      else await ctx.db.insert("participantAvailability", fields);
+    }
     return { updated: true };
   },
 });
