@@ -352,6 +352,26 @@ async function participantMeetingConflict(
   );
 }
 
+async function slotHasOpenTable(
+  ctx: QueryCtx | MutationCtx,
+  settings: Settings,
+  date: string,
+  startMinute: number,
+) {
+  const meetings = await ctx.db
+    .query("meetings")
+    .withIndex("by_date_and_startMinute", (q) =>
+      q.eq("date", date).eq("startMinute", startMinute),
+    )
+    .take(100);
+  const occupied = new Set(
+    meetings
+      .filter((meeting) => meeting.status !== "cancelled")
+      .map((meeting) => meeting.tableNumber),
+  );
+  return occupied.size < settings.activeTables + settings.reserveTables;
+}
+
 async function hostMeetingAtSlot(
   ctx: QueryCtx | MutationCtx,
   hostAccountId: Id<"accounts">,
@@ -428,10 +448,77 @@ async function activeOutgoingRequestsForDay(
   return requests.filter((request) => ACTIVE_REQUEST_STATUSES.has(request.status));
 }
 
+async function activeOutgoingInterests(
+  ctx: QueryCtx | MutationCtx,
+  accountId: Id<"accounts">,
+) {
+  const interests = await ctx.db
+    .query("meetingInterests")
+    .withIndex("by_requesterAccountId", (q) => q.eq("requesterAccountId", accountId))
+    .take(100);
+  return interests.filter((interest) => ACTIVE_REQUEST_STATUSES.has(interest.status));
+}
+
+async function findEarliestMutualSlot(
+  ctx: QueryCtx | MutationCtx,
+  settings: Settings,
+  requesterAccountId: Id<"accounts">,
+  targetAccountId: Id<"accounts">,
+) {
+  for (const date of EVENT_DATES) {
+    for (
+      let startMinute = settings.dayStartMinute;
+      startMinute + settings.slotMinutes <= settings.dayEndMinute;
+      startMinute += settings.slotMinutes
+    ) {
+      const [requesterAvailable, targetAvailable] = await Promise.all([
+        participantAvailable(ctx, requesterAccountId, date, startMinute),
+        participantAvailable(ctx, targetAccountId, date, startMinute),
+      ]);
+      if (!requesterAvailable || !targetAvailable) continue;
+      if (
+        await participantMeetingConflict(
+          ctx,
+          requesterAccountId,
+          date,
+          startMinute,
+          settings.slotMinutes,
+        )
+      ) {
+        continue;
+      }
+
+      const existingMeeting = await hostMeetingAtSlot(ctx, targetAccountId, date, startMinute);
+      if (existingMeeting) {
+        if (existingMeeting.participantCount < settings.maxMeetingGroupSize) {
+          return { date, startMinute };
+        }
+        continue;
+      }
+      if (
+        await participantMeetingConflict(
+          ctx,
+          targetAccountId,
+          date,
+          startMinute,
+          settings.slotMinutes,
+        )
+      ) {
+        continue;
+      }
+      if (await slotHasOpenTable(ctx, settings, date, startMinute)) {
+        return { date, startMinute };
+      }
+    }
+  }
+  return null;
+}
+
 async function clearDemoData(ctx: MutationCtx) {
   for (const table of [
     "meetingParticipants",
     "meetings",
+    "meetingInterests",
     "meetingRequests",
     "participantAvailability",
     "magicLoginTokens",
@@ -762,18 +849,44 @@ async function requestWithPeople(
   };
 }
 
-async function createOrJoinMeetingForRequest(
+async function interestWithPeople(
+  ctx: QueryCtx | MutationCtx,
+  interest: Doc<"meetingInterests">,
+) {
+  const [requester, target, meeting] = await Promise.all([
+    ctx.db.get(interest.requesterAccountId),
+    ctx.db.get(interest.targetAccountId),
+    interest.meetingId ? ctx.db.get(interest.meetingId) : Promise.resolve(null),
+  ]);
+  const overrides = await getProfileOverrideMap(ctx, [
+    interest.requesterAccountId,
+    interest.targetAccountId,
+  ]);
+  return {
+    ...interest,
+    requester: accountSummary(requester, overrides.get(interest.requesterAccountId)),
+    target: accountSummary(target, overrides.get(interest.targetAccountId)),
+    meeting: meeting ? await meetingWithParticipants(ctx, meeting) : null,
+  };
+}
+
+async function createOrJoinMeeting(
   ctx: MutationCtx,
   settings: Settings,
-  request: Doc<"meetingRequests">,
-  startMinute: number,
-  responseNote: string,
+  fields: {
+    requesterAccountId: Id<"accounts">;
+    targetAccountId: Id<"accounts">;
+    date: string;
+    startMinute: number;
+    context: string;
+    requestId?: Id<"meetingRequests">;
+  },
 ) {
-  assertSlotInDay(settings, startMinute);
+  assertSlotInDay(settings, fields.startMinute);
 
   const [requester, target] = await Promise.all([
-    ctx.db.get(request.requesterAccountId),
-    ctx.db.get(request.targetAccountId),
+    ctx.db.get(fields.requesterAccountId),
+    ctx.db.get(fields.targetAccountId),
   ]);
   if (!requester || !requester.active || requester.role !== "participant") {
     throw new Error("Requester is no longer available.");
@@ -787,15 +900,15 @@ async function createOrJoinMeetingForRequest(
   ) {
     throw new Error("Target participant is no longer bookable.");
   }
-  if (!(await participantAvailable(ctx, target._id, request.date, startMinute))) {
+  if (!(await participantAvailable(ctx, target._id, fields.date, fields.startMinute))) {
     throw new Error("Target participant is not available for that slot.");
   }
   if (
     await participantMeetingConflict(
       ctx,
       requester._id,
-      request.date,
-      startMinute,
+      fields.date,
+      fields.startMinute,
       settings.slotMinutes,
     )
   ) {
@@ -805,8 +918,8 @@ async function createOrJoinMeetingForRequest(
   const existingMeeting = await hostMeetingAtSlot(
     ctx,
     target._id,
-    request.date,
-    startMinute,
+    fields.date,
+    fields.startMinute,
   );
   let meetingId: Id<"meetings">;
   let participantCount = 0;
@@ -822,32 +935,32 @@ async function createOrJoinMeetingForRequest(
       await participantMeetingConflict(
         ctx,
         target._id,
-        request.date,
-        startMinute,
+        fields.date,
+        fields.startMinute,
         settings.slotMinutes,
       )
     ) {
       throw new Error("Target participant already has a meeting at that time.");
     }
-    const tableNumber = await findOpenTable(ctx, settings, request.date, startMinute);
+    const tableNumber = await findOpenTable(ctx, settings, fields.date, fields.startMinute);
     meetingId = await ctx.db.insert("meetings", {
       hostAccountId: target._id,
-      date: request.date,
-      startMinute,
-      endMinute: startMinute + settings.slotMinutes,
+      date: fields.date,
+      startMinute: fields.startMinute,
+      endMinute: fields.startMinute + settings.slotMinutes,
       tableNumber,
       participantCount: 1,
       status: "confirmed",
-      context: request.reason,
-      createdFromRequestId: request._id,
+      context: fields.context,
+      ...(fields.requestId ? { createdFromRequestId: fields.requestId } : {}),
       updatedAt: now(),
     });
     await ctx.db.insert("meetingParticipants", {
       meetingId,
       accountId: target._id,
-      date: request.date,
-      startMinute,
-      endMinute: startMinute + settings.slotMinutes,
+      date: fields.date,
+      startMinute: fields.startMinute,
+      endMinute: fields.startMinute + settings.slotMinutes,
       role: "host",
       status: "confirmed",
       createdAt: now(),
@@ -870,11 +983,11 @@ async function createOrJoinMeetingForRequest(
   await ctx.db.insert("meetingParticipants", {
     meetingId,
     accountId: requester._id,
-    date: request.date,
-    startMinute,
-    endMinute: startMinute + settings.slotMinutes,
+    date: fields.date,
+    startMinute: fields.startMinute,
+    endMinute: fields.startMinute + settings.slotMinutes,
     role: "requester",
-    requestId: request._id,
+    ...(fields.requestId ? { requestId: fields.requestId } : {}),
     status: "confirmed",
     createdAt: now(),
     updatedAt: now(),
@@ -883,11 +996,58 @@ async function createOrJoinMeetingForRequest(
     participantCount: participantCount + 1,
     updatedAt: now(),
   });
+  return meetingId;
+}
+
+async function createOrJoinMeetingForRequest(
+  ctx: MutationCtx,
+  settings: Settings,
+  request: Doc<"meetingRequests">,
+  startMinute: number,
+  responseNote: string,
+) {
+  const meetingId = await createOrJoinMeeting(ctx, settings, {
+    requesterAccountId: request.requesterAccountId,
+    targetAccountId: request.targetAccountId,
+    date: request.date,
+    startMinute,
+    context: request.reason,
+    requestId: request._id,
+  });
   await ctx.db.patch(request._id, {
     status: "accepted",
     meetingId,
     responseNote,
-    respondedByAccountId: target._id,
+    respondedByAccountId: request.targetAccountId,
+    updatedAt: now(),
+  });
+  return meetingId;
+}
+
+async function createOrJoinMeetingForInterest(
+  ctx: MutationCtx,
+  settings: Settings,
+  interest: Doc<"meetingInterests">,
+) {
+  const match = await findEarliestMutualSlot(
+    ctx,
+    settings,
+    interest.requesterAccountId,
+    interest.targetAccountId,
+  );
+  if (!match) throw new Error("No mutual open slot is available yet.");
+  const meetingId = await createOrJoinMeeting(ctx, settings, {
+    requesterAccountId: interest.requesterAccountId,
+    targetAccountId: interest.targetAccountId,
+    date: match.date,
+    startMinute: match.startMinute,
+    context: interest.reason,
+  });
+  await ctx.db.patch(interest._id, {
+    status: "accepted",
+    meetingId,
+    responseNote: `Accepted and scheduled for ${match.date} at ${minuteLabel(match.startMinute)}.`,
+    respondedByAccountId: interest.targetAccountId,
     updatedAt: now(),
   });
   return meetingId;
@@ -1183,12 +1343,30 @@ export const getBootstrap = query({
         : [];
 
     let requests: Array<Doc<"meetingRequests">> = [];
+    let interests: Array<Doc<"meetingInterests">> = [];
     let meetings: Array<Doc<"meetings">> = [];
 
     if (actor.role === "admin") {
       requests = await ctx.db.query("meetingRequests").take(1000);
+      interests = await ctx.db.query("meetingInterests").take(1000);
       meetings = await ctx.db.query("meetings").take(1000);
     } else {
+      interests.push(
+        ...(await ctx.db
+          .query("meetingInterests")
+          .withIndex("by_requesterAccountId", (q) =>
+            q.eq("requesterAccountId", actor._id),
+          )
+          .take(100)),
+      );
+      interests.push(
+        ...(await ctx.db
+          .query("meetingInterests")
+          .withIndex("by_targetAccountId", (q) =>
+            q.eq("targetAccountId", actor._id),
+          )
+          .take(100)),
+      );
       for (const date of EVENT_DATES) {
         requests.push(
           ...(await ctx.db
@@ -1225,6 +1403,12 @@ export const getBootstrap = query({
       requestIds.add(request._id);
       return true;
     });
+    const interestIds = new Set<Id<"meetingInterests">>();
+    const uniqueInterests = interests.filter((interest) => {
+      if (interestIds.has(interest._id)) return false;
+      interestIds.add(interest._id);
+      return true;
+    });
     const meetingIds = new Set<Id<"meetings">>();
     const uniqueMeetings = meetings.filter((meeting) => {
       if (meetingIds.has(meeting._id)) return false;
@@ -1256,6 +1440,7 @@ export const getBootstrap = query({
       ),
       myAvailability,
       requests: await Promise.all(uniqueRequests.map((request) => requestWithPeople(ctx, request))),
+      interests: await Promise.all(uniqueInterests.map((interest) => interestWithPeople(ctx, interest))),
       meetings: await Promise.all(uniqueMeetings.map((meeting) => meetingWithParticipants(ctx, meeting))),
       importBatches,
       slotLabels: Array.from(
@@ -1660,6 +1845,44 @@ export const createPeerRequest = mutation({
   },
 });
 
+export const createMeetingInterest = mutation({
+  args: {
+    sessionToken: v.string(),
+    targetAccountId: v.id("accounts"),
+    reason: v.string(),
+    context: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const actor = await requireActor(ctx, args.sessionToken);
+    requireParticipant(actor);
+    if (actor._id === args.targetAccountId) throw new Error("You cannot request yourself.");
+    if (args.reason.trim().length < 8) throw new Error("Add a specific meeting reason.");
+    const target = await ctx.db.get(args.targetAccountId);
+    if (
+      !target ||
+      !target.active ||
+      target.role !== "participant" ||
+      !target.signedUp ||
+      !target.directoryOptIn
+    ) {
+      throw new Error("Participant is not available for requests.");
+    }
+    const activeInterests = await activeOutgoingInterests(ctx, actor._id);
+    if (activeInterests.some((interest) => interest.targetAccountId === target._id)) {
+      throw new Error("You already have active interest with this participant.");
+    }
+    return await ctx.db.insert("meetingInterests", {
+      requesterAccountId: actor._id,
+      targetAccountId: target._id,
+      reason: args.reason.trim(),
+      context: args.context?.trim() ?? `${actor.title}, ${actor.company}`,
+      status: "pending",
+      createdAt: now(),
+      updatedAt: now(),
+    });
+  },
+});
+
 export const respondToPeerRequest = mutation({
   args: {
     sessionToken: v.string(),
@@ -1711,6 +1934,41 @@ export const respondToPeerRequest = mutation({
       request.preferredStartMinute,
       args.note?.trim() || "Accepted.",
     );
+    return { status: "accepted", meetingId };
+  },
+});
+
+export const respondToMeetingInterest = mutation({
+  args: {
+    sessionToken: v.string(),
+    interestId: v.id("meetingInterests"),
+    action: v.union(v.literal("accept"), v.literal("decline")),
+    note: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    const settings = await requireSettings(ctx);
+    const actor = await requireActor(ctx, args.sessionToken);
+    const interest = await ctx.db.get(args.interestId);
+    if (!interest) throw new Error("Interest not found.");
+    if (actor.role !== "admin" && interest.targetAccountId !== actor._id) {
+      throw new Error("Only the requested participant can respond.");
+    }
+    if (interest.status === "accepted" || interest.status === "cancelled" || interest.status === "declined") {
+      throw new Error("Interest can no longer be changed.");
+    }
+    if (args.action === "decline") {
+      await ctx.db.patch(interest._id, {
+        status: "declined",
+        responseNote: args.note?.trim() || "Declined.",
+        respondedByAccountId: actor._id,
+        updatedAt: now(),
+      });
+      return { status: "declined" };
+    }
+    const meetingId = await createOrJoinMeetingForInterest(ctx, settings, interest);
+    if (args.note?.trim()) {
+      await ctx.db.patch(interest._id, { responseNote: args.note.trim(), updatedAt: now() });
+    }
     return { status: "accepted", meetingId };
   },
 });
@@ -1770,6 +2028,41 @@ export const cancelRequest = mutation({
       }
     }
     await ctx.db.patch(request._id, { status: "cancelled", updatedAt: now() });
+    return { cancelled: true };
+  },
+});
+
+export const cancelMeetingInterest = mutation({
+  args: { sessionToken: v.string(), interestId: v.id("meetingInterests") },
+  handler: async (ctx, args) => {
+    const actor = await requireActor(ctx, args.sessionToken);
+    const interest = await ctx.db.get(args.interestId);
+    if (!interest) throw new Error("Interest not found.");
+    if (actor.role !== "admin" && interest.requesterAccountId !== actor._id) {
+      throw new Error("Only the requester can cancel this interest.");
+    }
+    if (interest.meetingId) {
+      const participants = await ctx.db
+        .query("meetingParticipants")
+        .withIndex("by_meetingId", (q) => q.eq("meetingId", interest.meetingId as Id<"meetings">))
+        .take(10);
+      const requesterParticipant = participants.find(
+        (participant) => participant.accountId === interest.requesterAccountId,
+      );
+      if (requesterParticipant) {
+        await ctx.db.patch(requesterParticipant._id, { status: "cancelled", updatedAt: now() });
+        const meeting = await ctx.db.get(interest.meetingId);
+        if (meeting) {
+          const nextCount = Math.max(1, meeting.participantCount - 1);
+          await ctx.db.patch(meeting._id, {
+            participantCount: nextCount,
+            status: nextCount <= 1 ? "cancelled" : meeting.status,
+            updatedAt: now(),
+          });
+        }
+      }
+    }
+    await ctx.db.patch(interest._id, { status: "cancelled", updatedAt: now() });
     return { cancelled: true };
   },
 });
@@ -1834,6 +2127,36 @@ export const setParticipantOptIn = mutation({
   },
 });
 
+export const backfillParticipantDirectoryOptIn = mutation({
+  args: { sessionToken: v.string() },
+  handler: async (ctx, args) => {
+    const actor = await requireActor(ctx, args.sessionToken);
+    requireAdmin(actor);
+    const participants = await ctx.db
+      .query("accounts")
+      .withIndex("by_role", (q) => q.eq("role", "participant"))
+      .take(1800);
+    let updated = 0;
+    const timestamp = now();
+    for (const participant of participants) {
+      if (!participant.active) continue;
+      const profileComplete = Boolean(
+        participant.displayName.trim() && participant.title.trim() && participant.company.trim(),
+      );
+      if (!profileComplete) continue;
+      if (participant.signedUp && participant.directoryOptIn && participant.profileComplete) continue;
+      await ctx.db.patch(participant._id, {
+        signedUp: true,
+        directoryOptIn: true,
+        profileComplete: true,
+        updatedAt: timestamp,
+      });
+      updated += 1;
+    }
+    return { updated };
+  },
+});
+
 export const upsertParticipantsFromRows = mutation({
   args: {
     sessionToken: v.string(),
@@ -1870,6 +2193,9 @@ export const upsertParticipantsFromRows = mutation({
         .query("accounts")
         .withIndex("by_email", (q) => q.eq("email", normalized.email))
         .unique();
+      const isAdminAccount = ADMIN_EMAILS.has(normalized.email) || existing?.role === "admin";
+      const importedProfileComplete = normalized.profileComplete;
+      const importedParticipantVisible = !isAdminAccount && importedProfileComplete;
       const preserved = existing?.signedUp
         ? {
             displayName: existing.displayName,
@@ -1887,14 +2213,11 @@ export const upsertParticipantsFromRows = mutation({
             company: normalized.company,
             networkingIntent: "",
             topics: [],
-            signedUp: false,
-            directoryOptIn: false,
-            profileComplete: normalized.profileComplete,
+            signedUp: importedParticipantVisible,
+            directoryOptIn: importedParticipantVisible,
+            profileComplete: importedProfileComplete,
           };
-      const role =
-        ADMIN_EMAILS.has(normalized.email) || existing?.role === "admin"
-          ? ("admin" as const)
-          : ("participant" as const);
+      const role = isAdminAccount ? ("admin" as const) : ("participant" as const);
       const fields = {
         email: normalized.email,
         displayName: preserved.displayName || normalized.email,
@@ -1986,6 +2309,13 @@ export const updateMeetingStatus = mutation({
         .take(10);
       for (const request of requests) {
         await ctx.db.patch(request._id, { status: "cancelled", updatedAt: now() });
+      }
+      const interests = await ctx.db
+        .query("meetingInterests")
+        .withIndex("by_meetingId", (q) => q.eq("meetingId", args.meetingId))
+        .take(10);
+      for (const interest of interests) {
+        await ctx.db.patch(interest._id, { status: "cancelled", updatedAt: now() });
       }
     }
     return { updated: true };

@@ -150,6 +150,23 @@ export default defineSchema({
     .index("by_date_and_status", ["date", "status"])
     .index("by_meetingId", ["meetingId"]),
 
+  meetingInterests: defineTable({
+    requesterAccountId: v.id("accounts"),
+    targetAccountId: v.id("accounts"),
+    reason: v.string(),
+    context: v.string(),
+    status: requestStatus,
+    responseNote: v.optional(v.string()),
+    respondedByAccountId: v.optional(v.id("accounts")),
+    meetingId: v.optional(v.id("meetings")),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  })
+    .index("by_requesterAccountId", ["requesterAccountId"])
+    .index("by_targetAccountId", ["targetAccountId"])
+    .index("by_targetAccountId_and_status", ["targetAccountId", "status"])
+    .index("by_meetingId", ["meetingId"]),
+
   meetings: defineTable({
     hostAccountId: v.id("accounts"),
     date: v.string(),

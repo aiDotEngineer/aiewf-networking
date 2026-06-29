@@ -81,6 +81,11 @@ type MeetingRequest = Doc<"meetingRequests"> & {
   target: Account | null;
   meeting: Meeting | null;
 };
+type MeetingInterest = Doc<"meetingInterests"> & {
+  requester: Account | null;
+  target: Account | null;
+  meeting: Meeting | null;
+};
 type ImportBatch = Doc<"importBatches">;
 type Bootstrap = {
   settings: Settings;
@@ -88,6 +93,7 @@ type Bootstrap = {
   participants: Array<Account | null>;
   myAvailability: AvailabilitySlot[];
   requests: MeetingRequest[];
+  interests: MeetingInterest[];
   meetings: Meeting[];
   importBatches: ImportBatch[];
   slotLabels: Array<{ minute: number; label: string }>;
@@ -132,6 +138,13 @@ type RoomDisplayData = {
 };
 type View = "directory" | "profile" | "requests" | "schedule" | "admin" | "display";
 type RunAction = (task: () => Promise<unknown>, success: string) => Promise<boolean>;
+type RequestMode = "slot" | "interest";
+type DirectorySort = "recommended" | "company" | "name" | "sources";
+type ProfileFilter = "all" | "researched" | "sourced" | "pending";
+type MatchSignal = {
+  reasons: string[];
+  score: number;
+};
 
 const sessionStorageKey = "aiewf-networking-session";
 
@@ -300,6 +313,82 @@ function profileBadgeLabel(profile: DisplayParticipantProfile | null) {
   if (!profile) return null;
   if (profile.displayParticipantApproved) return "participant approved";
   return profile.override ? "participant edited" : "AI researched";
+}
+
+const genericMatchWords = new Set([
+  "ai",
+  "and",
+  "the",
+  "for",
+  "with",
+  "engineer",
+  "engineering",
+  "founder",
+  "head",
+  "lead",
+  "senior",
+  "director",
+  "manager",
+  "platform",
+  "product",
+  "software",
+]);
+
+function matchTokens(...values: Array<string | string[] | undefined>) {
+  return new Set(
+    values
+      .flatMap((value) => (Array.isArray(value) ? value : [value]))
+      .join(" ")
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .map((token) => token.trim())
+      .filter((token) => token.length > 2 && !genericMatchWords.has(token)),
+  );
+}
+
+function participantMatch(
+  actor: Account,
+  participant: Account,
+  actorProfile: DisplayParticipantProfile | null,
+  participantProfile: DisplayParticipantProfile | null,
+): MatchSignal {
+  const actorTokens = matchTokens(
+    actor.title,
+    actor.company,
+    actor.networkingIntent,
+    actor.topics,
+    actorProfile?.displayHeadline,
+    actorProfile?.displayTags,
+  );
+  const participantTokens = matchTokens(
+    participant.title,
+    participant.company,
+    participant.networkingIntent,
+    participant.topics,
+    participantProfile?.displayHeadline,
+    participantProfile?.displayBioMarkdown,
+    participantProfile?.displayTags,
+  );
+  const overlaps = [...actorTokens].filter((token) => participantTokens.has(token)).slice(0, 4);
+  const reasons: string[] = [];
+  let score = 0;
+  if (overlaps.length) {
+    score += overlaps.length * 8;
+    reasons.push(`shared: ${overlaps.join(", ")}`);
+  }
+  if (participantProfile) {
+    const sources = sourceCount(participantProfile);
+    score += Math.min(sources, 8);
+    if (sources) reasons.push(`${sources} sources`);
+    if (participantProfile.confidence === "high") score += 4;
+  }
+  if (participant.ticketCategory === "speaker") {
+    score += 3;
+    reasons.push("speaker");
+  } else if (participant.ticketCategory === "leadership") {
+    score += 1;
+  }
+  return { score, reasons: reasons.slice(0, 3) };
 }
 
 export function NetworkingApp() {
@@ -550,6 +639,7 @@ export function NetworkingApp() {
                 actor={displayActor}
                 participants={participants}
                 previewMode={adminViewingAsParticipant}
+                interests={data.interests}
                 requests={data.requests}
                 runAction={runAction}
                 sessionToken={sessionToken}
@@ -574,6 +664,7 @@ export function NetworkingApp() {
                 actionPending={actionPending}
                 actor={displayActor}
                 previewMode={adminViewingAsParticipant}
+                interests={data.interests}
                 requests={data.requests}
                 runAction={runAction}
                 sessionToken={sessionToken}
@@ -598,6 +689,7 @@ export function NetworkingApp() {
                 actionPending={actionPending}
                 actor={actor}
                 importBatches={data.importBatches}
+                interests={data.interests}
                 meetings={data.meetings}
                 requests={data.requests}
                 runAction={runAction}
@@ -927,7 +1019,7 @@ function Navigation({
         </button>
       )}
       <div className="mt-4 hidden border-t border-white/10 pt-4 text-xs leading-5 text-white/45 lg:block">
-        Opt-in participants request time with each other. Accepted groups take one table, up to four people.
+        Opt-in participants request time or register interest with each other. Accepted groups take one table, up to four people.
       </div>
     </aside>
   );
@@ -965,6 +1057,7 @@ function MetricStrip({
 function DirectoryView({
   actionPending,
   actor,
+  interests,
   participants,
   previewMode,
   requests,
@@ -974,6 +1067,7 @@ function DirectoryView({
 }: {
   actionPending: boolean;
   actor: Account;
+  interests: MeetingInterest[];
   participants: Account[];
   previewMode?: boolean;
   requests: MeetingRequest[];
@@ -981,30 +1075,31 @@ function DirectoryView({
   sessionToken: string;
   settings: Settings;
 }) {
+  const createMeetingInterest = useMutation(api.networking.createMeetingInterest);
   const createPeerRequest = useMutation(api.networking.createPeerRequest);
   const [query, setQuery] = useState("");
   const [ticketFilter, setTicketFilter] = useState("all");
   const [date, setDate] = useState(settings.startDate);
+  const [requestMode, setRequestMode] = useState<RequestMode>("slot");
   const [selectedId, setSelectedId] = useState<Id<"accounts"> | null>(null);
   const [selectedSlot, setSelectedSlot] = useState<number | "">("");
   const [reason, setReason] = useState("");
-  const selected =
-    participants.find((participant) => participant._id === selectedId) ??
-    participants.find((participant) => participant._id !== actor._id) ??
-    null;
-  const availability = useQuery(
-    api.networking.getParticipantAvailability,
-    selected ? { accountId: selected._id, date } : "skip",
-  ) as AvailabilitySlot[] | undefined;
-
   const activeOutgoingForDay = requests.filter(
     (request) =>
       request.requesterAccountId === actor._id &&
       request.date === date &&
       activeOutgoingStatus(request.status),
   );
+  const activeOutgoingInterests = interests.filter(
+    (interest) =>
+      interest.requesterAccountId === actor._id &&
+      activeOutgoingStatus(interest.status),
+  );
   const atCap = activeOutgoingForDay.length >= settings.outgoingRequestCapPerDay;
-  const openTargetIds = new Set(activeOutgoingForDay.map((request) => request.targetAccountId));
+  const openTargetIds = new Set([
+    ...activeOutgoingForDay.map((request) => request.targetAccountId),
+    ...activeOutgoingInterests.map((interest) => interest.targetAccountId),
+  ]);
   const normalizedQuery = query.trim().toLowerCase();
   const filtered = participants
     .filter((participant) => participant.role === "participant" && participant._id !== actor._id)
@@ -1026,6 +1121,14 @@ function DirectoryView({
       return haystack.includes(normalizedQuery);
     })
     .sort((a, b) => a.company.localeCompare(b.company) || a.displayName.localeCompare(b.displayName));
+  const selected =
+    filtered.find((participant) => participant._id === selectedId) ??
+    filtered.find((participant) => participant._id !== actor._id) ??
+    null;
+  const availability = useQuery(
+    api.networking.getParticipantAvailability,
+    selected ? { accountId: selected._id, date } : "skip",
+  ) as AvailabilitySlot[] | undefined;
   const availableSlots = (availability ?? []).filter((slot) => slot.available && slot.groupOpen !== false);
   const fallbackSlot: number | "" = availableSlots.length > 0 ? availableSlots[0].startMinute : "";
   const effectiveSelectedSlot: number | "" =
@@ -1035,18 +1138,33 @@ function DirectoryView({
 
   function submitRequest(event: FormEvent) {
     event.preventDefault();
-    if (previewMode || !selected || effectiveSelectedSlot === "" || atCap) return;
+    if (previewMode || !selected || openTargetIds.has(selected._id)) return;
+    if (requestMode === "slot" && (effectiveSelectedSlot === "" || atCap)) return;
     void runAction(
-      () =>
-        createPeerRequest({
+      () => {
+        if (requestMode === "interest") {
+          return createMeetingInterest({
+            sessionToken,
+            targetAccountId: selected._id,
+            reason,
+            context: `${actor.title}, ${actor.company}`,
+          });
+        }
+        if (effectiveSelectedSlot === "") {
+          throw new Error("Choose an available slot.");
+        }
+        return createPeerRequest({
           sessionToken,
           targetAccountId: selected._id,
           date,
           preferredStartMinute: effectiveSelectedSlot,
           reason,
           context: `${actor.title}, ${actor.company}`,
-        }),
-      `Request sent to ${selected.displayName}.`,
+        });
+      },
+      requestMode === "interest"
+        ? `Interest registered with ${selected.displayName}.`
+        : `Request sent to ${selected.displayName}.`,
     ).then((completed) => {
       if (completed) setReason("");
     });
@@ -1065,12 +1183,12 @@ function DirectoryView({
   }
 
   return (
-    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_380px]">
+    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_420px]">
       <section className="border border-white/10 bg-[#101010]">
         <SectionHeader icon={<Search size={17} />} title="Participant directory" detail={`${filtered.length} visible`} />
         {previewMode && (
           <div className="border-b border-[#f8e18e]/25 bg-[#f8e18e]/10 px-4 py-3 text-sm leading-6 text-[#f8e18e]">
-            Viewing the participant directory as an admin. Request actions are disabled in preview mode.
+            Viewing the participant directory as an admin. Meeting actions are disabled in preview mode.
           </div>
         )}
         <div className="grid gap-3 border-b border-white/10 p-4 md:grid-cols-[minmax(0,1fr)_180px_160px]">
@@ -1099,9 +1217,9 @@ function DirectoryView({
             </select>
           </Field>
         </div>
-        <div className="grid gap-3 p-3 md:grid-cols-2 2xl:grid-cols-3">
+        <div className="grid gap-1.5 p-2">
           {filtered.length === 0 && (
-            <div className="md:col-span-2 2xl:col-span-3">
+            <div>
               <EmptyState title="No matching participants" detail="Try a broader company, name, or topic search." />
             </div>
           )}
@@ -1121,44 +1239,65 @@ function DirectoryView({
       </section>
 
       <form onSubmit={submitRequest} className="border border-white/10 bg-[#101010] p-4 xl:sticky xl:top-4 xl:self-start">
-        <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
-          <Send size={16} /> Request time
-        </div>
-        <div className="mt-1 text-xs text-white/45">
-          {activeOutgoingForDay.length}/{settings.outgoingRequestCapPerDay} active outgoing requests for {dateLabels[date]}.
-        </div>
         {!actor.profileComplete || !actor.directoryOptIn ? (
-          <div className="mt-4 border border-yellow-300/20 bg-yellow-300/10 p-3 text-sm leading-6 text-yellow-100">
+          <div className="border border-yellow-300/20 bg-yellow-300/10 p-3 text-sm leading-6 text-yellow-100">
             Confirm your profile and opt into the directory before sending requests.
           </div>
         ) : selected ? (
-          <div className="mt-4 grid gap-3">
-            <div className="border border-white/10 bg-black/30 p-3">
-              <div className="text-lg font-semibold">{selected.displayName}</div>
-              <div className="mt-1 text-sm text-white/55">{selected.title} · {selected.company}</div>
+          <div className="grid gap-3">
+            <ParticipantDetailPanel participant={selected} />
+            <div className="border-t border-white/10 pt-3">
+              <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
+                <Send size={16} /> Request meeting
+              </div>
+              <div className="mt-1 text-xs text-white/45">
+                {activeOutgoingForDay.length}/{settings.outgoingRequestCapPerDay} timed requests for {dateLabels[date]}
+                {activeOutgoingInterests.length ? ` · ${activeOutgoingInterests.length} open interests` : ""}.
+              </div>
             </div>
-            <ParticipantProfilePanel profile={participantProfileFor(selected)} compact />
-            <Field label="Available slot">
-              <select
-                className="input"
-                disabled={!availableSlots.length}
-                value={effectiveSelectedSlot}
-                onChange={(event) => setSelectedSlot(Number(event.target.value))}
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                className={cn("button-quiet justify-center", requestMode === "slot" && "border-[#f8e18e]/45 bg-[#f8e18e]/10 text-[#f8e18e]")}
+                onClick={() => setRequestMode("slot")}
+                type="button"
               >
-                {availableSlots.length ? (
-                  availableSlots.map((slot) => (
-                    <option key={slot._id} value={slot.startMinute}>
-                      {minuteLabel(slot.startMinute)}
-                      {slot.participantCount && slot.participantCount > 1
-                        ? ` · group ${slot.participantCount}/${settings.maxMeetingGroupSize}`
-                        : ""}
-                    </option>
-                  ))
-                ) : (
-                  <option value="">No open slots</option>
-                )}
-              </select>
-            </Field>
+                <Clock3 size={15} /> Choose time
+              </button>
+              <button
+                className={cn("button-quiet justify-center", requestMode === "interest" && "border-[#f8e18e]/45 bg-[#f8e18e]/10 text-[#f8e18e]")}
+                onClick={() => setRequestMode("interest")}
+                type="button"
+              >
+                <UserCheck size={15} /> Register interest
+              </button>
+            </div>
+            {requestMode === "slot" ? (
+              <Field label="Available slot">
+                <select
+                  className="input"
+                  disabled={!availableSlots.length}
+                  value={effectiveSelectedSlot}
+                  onChange={(event) => setSelectedSlot(Number(event.target.value))}
+                >
+                  {availableSlots.length ? (
+                    availableSlots.map((slot) => (
+                      <option key={slot._id} value={slot.startMinute}>
+                        {minuteLabel(slot.startMinute)}
+                        {slot.participantCount && slot.participantCount > 1
+                          ? ` · group ${slot.participantCount}/${settings.maxMeetingGroupSize}`
+                          : ""}
+                      </option>
+                    ))
+                  ) : (
+                    <option value="">No open slots</option>
+                  )}
+                </select>
+              </Field>
+            ) : (
+              <div className="border border-white/10 bg-black/25 p-3 text-sm leading-6 text-white/55">
+                Register interest without choosing a time. If they accept, the app schedules the earliest event slot where both of you are available.
+              </div>
+            )}
             <Field label="Why meet?">
               <textarea
                 className="input min-h-28 resize-none"
@@ -1173,17 +1312,16 @@ function DirectoryView({
               disabled={
                 actionPending ||
                 previewMode ||
-                atCap ||
-                !availableSlots.length ||
+                (requestMode === "slot" && (atCap || !availableSlots.length)) ||
                 reason.trim().length < 8 ||
                 openTargetIds.has(selected._id)
               }
               type="submit"
             >
-              <Send size={16} /> Send request
+              <Send size={16} /> {requestMode === "interest" ? "Register interest" : "Send request"}
             </button>
-            {previewMode && <p className="text-xs leading-5 text-white/45">Switch to an actual participant session to send requests.</p>}
-            {atCap && <p className="text-xs leading-5 text-white/45">Request cap reached for this day.</p>}
+            {previewMode && <p className="text-xs leading-5 text-white/45">Switch to an actual participant session to request meetings.</p>}
+            {requestMode === "slot" && atCap && <p className="text-xs leading-5 text-white/45">Request cap reached for this day.</p>}
           </div>
         ) : (
           <EmptyState title="Select a participant" detail="Choose someone from the directory to see open times." />
@@ -1210,10 +1348,11 @@ function ParticipantCard({
     : participant.topics.length
       ? participant.topics
       : [participant.city, participant.country].filter(Boolean);
+  const sourceTotal = profile ? sourceCount(profile) : 0;
   return (
     <button
       className={cn(
-        "grid min-h-[240px] gap-3 border p-4 text-left transition",
+        "grid gap-2 border px-3 py-2.5 text-left transition md:grid-cols-[minmax(0,1fr)_auto]",
         isSelected
           ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
           : "border-white/10 bg-black/25 hover:border-white/25 hover:bg-white/[0.045]",
@@ -1221,32 +1360,56 @@ function ParticipantCard({
       onClick={onClick}
       type="button"
     >
-      <div>
-        <div className="flex flex-wrap items-center gap-2">
-          <h3 className="text-lg font-semibold leading-tight">{participant.displayName}</h3>
+      <div className="min-w-0">
+        <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
+          <h3 className="truncate text-sm font-semibold leading-5 text-white md:text-[15px]">{participant.displayName}</h3>
           <StatusBadge status={participant.ticketCategory} />
+          {profile && <Badge>{sourceTotal} sources</Badge>}
+          {activeRequestOpen && <Badge>request open</Badge>}
         </div>
-        <p className="mt-2 text-sm leading-6 text-white/65">
+        <p className="mt-1 truncate text-sm leading-5 text-white/62">
           {participant.title || profile?.title || "Title TBD"} · {participant.company || profile?.company || "Company TBD"}
         </p>
-        {profile && (
-          <div className="mt-2 flex flex-wrap gap-2">
-            <Badge>{profile.confidence} confidence</Badge>
-            <Badge>{sourceCount(profile)} sources</Badge>
-            {profileBadgeLabel(profile) && <Badge>{profileBadgeLabel(profile)}</Badge>}
-          </div>
-        )}
-        <p className="mt-3 line-clamp-4 text-sm leading-6 text-white/58">
-          {profile?.displayBioMarkdown || participant.networkingIntent || "No profile added yet."}
+        <p className="mt-1 truncate text-xs leading-5 text-white/45">
+          {profile?.displayHeadline || participant.networkingIntent || [participant.city, participant.country].filter(Boolean).join(", ") || "Profile research pending"}
         </p>
       </div>
-      <div className="self-end">
-        <TagRow items={tags} />
-        {activeRequestOpen && (
-          <div className="mt-3 text-xs text-[#f8e18e]">Active request already open</div>
-        )}
+      <div className="hidden max-w-[280px] justify-self-end md:block">
+        <CompactTagRow items={tags.slice(0, 3)} />
       </div>
     </button>
+  );
+}
+
+function ParticipantDetailPanel({ participant }: { participant: Account }) {
+  const profile = participantProfileFor(participant);
+  const location = [participant.city, participant.country].filter(Boolean).join(", ");
+  return (
+    <section className="grid gap-3">
+      <div className="border border-white/10 bg-black/30 p-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <h2 className="text-lg font-semibold leading-6">{participant.displayName}</h2>
+          <StatusBadge status={participant.ticketCategory} />
+          <Badge>{participant.directoryOptIn ? "directory visible" : "hidden"}</Badge>
+        </div>
+        <div className="mt-2 text-sm leading-6 text-white/62">
+          {participant.title || "Title TBD"} · {participant.company || "Company TBD"}
+        </div>
+        {location && <div className="mt-1 text-xs leading-5 text-white/42">{location}</div>}
+      </div>
+      {profile ? (
+        <ParticipantProfilePanel profile={profile} />
+      ) : (
+        <div className="border border-white/10 bg-black/25 p-3">
+          <div className="text-sm font-semibold text-white/75">Research pending</div>
+          <p className="mt-2 text-sm leading-6 text-white/50">
+            No researched profile or sources have been added for this participant yet. Current row data is limited to ticket,
+            company, title, and location.
+          </p>
+          <TagRow items={[participant.networkingIntent, ...participant.topics].filter(Boolean)} />
+        </div>
+      )}
+    </section>
   );
 }
 
@@ -1612,6 +1775,7 @@ function ProfileView({
 function RequestsView({
   actionPending,
   actor,
+  interests,
   previewMode,
   requests,
   runAction,
@@ -1621,6 +1785,7 @@ function RequestsView({
 }: {
   actionPending: boolean;
   actor: Account;
+  interests: MeetingInterest[];
   previewMode?: boolean;
   requests: MeetingRequest[];
   runAction: RunAction;
@@ -1629,13 +1794,26 @@ function RequestsView({
   slotLabels: Array<{ minute: number; label: string }>;
 }) {
   const respond = useMutation(api.networking.respondToPeerRequest);
+  const respondInterest = useMutation(api.networking.respondToMeetingInterest);
   const confirmCounter = useMutation(api.networking.confirmCounter);
   const cancelRequest = useMutation(api.networking.cancelRequest);
-  const visible = requests
-    .filter((request) => {
-      if (actor.role === "admin") return true;
-      return request.requesterAccountId === actor._id || request.targetAccountId === actor._id;
-    })
+  const cancelInterest = useMutation(api.networking.cancelMeetingInterest);
+  const visible: Array<
+    ({ kind: "request" } & MeetingRequest) | ({ kind: "interest" } & MeetingInterest)
+  > = [
+    ...requests
+      .filter((request) => {
+        if (actor.role === "admin") return true;
+        return request.requesterAccountId === actor._id || request.targetAccountId === actor._id;
+      })
+      .map((request) => ({ ...request, kind: "request" as const })),
+    ...interests
+      .filter((interest) => {
+        if (actor.role === "admin") return true;
+        return interest.requesterAccountId === actor._id || interest.targetAccountId === actor._id;
+      })
+      .map((interest) => ({ ...interest, kind: "interest" as const })),
+  ]
     .sort((a, b) => b.updatedAt - a.updatedAt);
 
   return (
@@ -1643,100 +1821,127 @@ function RequestsView({
       <SectionHeader icon={<ListChecks size={17} />} title="Request queue" detail={`${visible.length} visible`} />
       {previewMode && (
         <div className="border-b border-[#f8e18e]/25 bg-[#f8e18e]/10 px-4 py-3 text-sm leading-6 text-[#f8e18e]">
-          Admin preview uses participant-scoped filtering. Request actions are disabled.
+          Admin preview uses participant-scoped filtering. Meeting actions are disabled.
         </div>
       )}
       <div className="divide-y divide-white/10">
-        {visible.length === 0 && <EmptyState title="No requests yet" detail="Incoming and outgoing booking requests will appear here." />}
-        {visible.map((request) => {
-          const incoming = request.targetAccountId === actor._id;
+        {visible.length === 0 && <EmptyState title="No requests yet" detail="Incoming and outgoing meeting requests will appear here." />}
+        {visible.map((item) => {
+          const incoming = item.targetAccountId === actor._id;
+          const isInterest = item.kind === "interest";
           const counterStartMinute =
-            slotLabels.find((slot) => slot.minute > request.preferredStartMinute)?.minute ??
-            slotLabels[0]?.minute;
+            !isInterest
+              ? slotLabels.find((slot) => slot.minute > item.preferredStartMinute)?.minute ??
+                slotLabels[0]?.minute
+              : undefined;
           return (
-            <article key={request._id} className="grid gap-4 p-4 xl:grid-cols-[minmax(0,1fr)_330px]">
+            <article key={`${item.kind}:${item._id}`} className="grid gap-4 p-4 xl:grid-cols-[minmax(0,1fr)_330px]">
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
                   <h3 className="font-semibold">
-                    {request.requester?.displayName ?? "Requester"} → {request.target?.displayName ?? "Participant"}
+                    {item.requester?.displayName ?? "Requester"} → {item.target?.displayName ?? "Participant"}
                   </h3>
-                  <StatusBadge status={request.status} />
-                  <span className="text-xs text-white/45">{dateLabels[request.date]} · {minuteLabel(request.preferredStartMinute)}</span>
+                  <Badge>{isInterest ? "interest" : "timed request"}</Badge>
+                  <StatusBadge status={item.status} />
+                  <span className="text-xs text-white/45">
+                    {isInterest ? "Next mutual slot" : `${dateLabels[item.date]} · ${minuteLabel(item.preferredStartMinute)}`}
+                  </span>
                 </div>
-                <p className="mt-2 text-sm leading-6 text-white/60">{request.reason}</p>
+                <p className="mt-2 text-sm leading-6 text-white/60">{item.reason}</p>
                 <p className="mt-2 text-xs text-white/45">
-                  {request.context || `${request.requester?.title ?? ""} ${request.requester?.company ?? ""}`.trim()}
+                  {item.context || `${item.requester?.title ?? ""} ${item.requester?.company ?? ""}`.trim()}
                 </p>
-                {request.meeting && (
+                {isInterest && item.status === "pending" && (
+                  <p className="mt-2 text-xs leading-5 text-white/45">
+                    Accepting this will book the earliest slot where both participants are available.
+                  </p>
+                )}
+                {item.meeting && (
                   <div className="mt-3 border border-emerald-300/20 bg-emerald-300/10 p-3 text-sm text-emerald-100">
-                    Table {request.meeting.tableNumber} · group {request.meeting.participantCount}/{settings.maxMeetingGroupSize}
+                    {dateLabels[item.meeting.date]} · {minuteLabel(item.meeting.startMinute)} · Table {item.meeting.tableNumber} · group {item.meeting.participantCount}/{settings.maxMeetingGroupSize}
                   </div>
                 )}
-                {request.responseNote && <p className="mt-2 text-xs text-white/45">{request.responseNote}</p>}
+                {item.responseNote && <p className="mt-2 text-xs text-white/45">{item.responseNote}</p>}
               </div>
               <div className="flex flex-wrap items-center gap-2 xl:justify-end">
-                {(incoming || actor.role === "admin") && (request.status === "pending" || request.status === "countered") && (
+                {(incoming || actor.role === "admin") && (item.status === "pending" || item.status === "countered") && (
                   <>
                     <button
                       className="button-quiet"
                       disabled={actionPending || previewMode}
                       onClick={() =>
                         void runAction(
-                          () => respond({ sessionToken, requestId: request._id, action: "decline", note: "Declined from queue." }),
-                          "Request declined.",
+                          () =>
+                            isInterest
+                              ? respondInterest({ sessionToken, interestId: item._id, action: "decline", note: "Declined from queue." })
+                              : respond({ sessionToken, requestId: item._id, action: "decline", note: "Declined from queue." }),
+                          isInterest ? "Interest declined." : "Request declined.",
                         )
                       }
                     >
                       <X size={15} /> Decline
                     </button>
-                    <button
-                      className="button-quiet"
-                      disabled={actionPending || previewMode || counterStartMinute === undefined}
-                      onClick={() => {
-                        if (counterStartMinute === undefined) return;
-                        void runAction(
-                          () =>
-                            respond({
-                              sessionToken,
-                              requestId: request._id,
-                              action: "counter",
-                              counterStartMinute,
-                              note: `Countered to ${minuteLabel(counterStartMinute)}.`,
-                            }),
-                          "Counter sent.",
-                        );
-                      }}
-                    >
-                      <Clock3 size={15} /> Counter
-                    </button>
+                    {!isInterest && (
+                      <button
+                        className="button-quiet"
+                        disabled={actionPending || previewMode || counterStartMinute === undefined}
+                        onClick={() => {
+                          if (counterStartMinute === undefined) return;
+                          void runAction(
+                            () =>
+                              respond({
+                                sessionToken,
+                                requestId: item._id,
+                                action: "counter",
+                                counterStartMinute,
+                                note: `Countered to ${minuteLabel(counterStartMinute)}.`,
+                              }),
+                            "Counter sent.",
+                          );
+                        }}
+                      >
+                        <Clock3 size={15} /> Counter
+                      </button>
+                    )}
                     <button
                       className="button-primary"
                       disabled={actionPending || previewMode}
                       onClick={() =>
                         void runAction(
-                          () => respond({ sessionToken, requestId: request._id, action: "accept", note: "Accepted from queue." }),
-                          "Request accepted.",
+                          () =>
+                            isInterest
+                              ? respondInterest({ sessionToken, interestId: item._id, action: "accept", note: "Accepted from queue." })
+                              : respond({ sessionToken, requestId: item._id, action: "accept", note: "Accepted from queue." }),
+                          isInterest ? "Interest accepted and scheduled." : "Request accepted.",
                         )
                       }
                     >
-                      <Check size={15} /> Accept
+                      <Check size={15} /> {isInterest ? "Accept interest" : "Accept"}
                     </button>
                   </>
                 )}
-                {request.requesterAccountId === actor._id && request.status === "countered" && (
+                {!isInterest && item.requesterAccountId === actor._id && item.status === "countered" && (
                   <button
                     className="button-primary"
                     disabled={actionPending || previewMode}
-                    onClick={() => void runAction(() => confirmCounter({ sessionToken, requestId: request._id }), "Counter confirmed.")}
+                    onClick={() => void runAction(() => confirmCounter({ sessionToken, requestId: item._id }), "Counter confirmed.")}
                   >
                     <Check size={15} /> Confirm counter
                   </button>
                 )}
-                {request.requesterAccountId === actor._id && (request.status === "pending" || request.status === "countered") && (
+                {item.requesterAccountId === actor._id && (item.status === "pending" || item.status === "countered") && (
                   <button
                     className="button-quiet"
                     disabled={actionPending || previewMode}
-                    onClick={() => void runAction(() => cancelRequest({ sessionToken, requestId: request._id }), "Request cancelled.")}
+                    onClick={() =>
+                      void runAction(
+                        () =>
+                          isInterest
+                            ? cancelInterest({ sessionToken, interestId: item._id })
+                            : cancelRequest({ sessionToken, requestId: item._id }),
+                        isInterest ? "Interest cancelled." : "Request cancelled.",
+                      )
+                    }
                   >
                     <X size={15} /> Cancel
                   </button>
@@ -1919,6 +2124,7 @@ function AdminView({
   actor,
   demoLoginEnabled,
   importBatches,
+  interests,
   meetings,
   requests,
   runAction,
@@ -1930,6 +2136,7 @@ function AdminView({
   actor: Account;
   demoLoginEnabled: boolean;
   importBatches: ImportBatch[];
+  interests: MeetingInterest[];
   meetings: Meeting[];
   requests: MeetingRequest[];
   runAction: RunAction;
@@ -2156,7 +2363,7 @@ function AdminView({
           ))}
         </div>
         <div className="mt-4 border-t border-white/10 pt-4 text-xs leading-5 text-white/45">
-          {requests.length} requests · {meetings.length} meetings currently in Convex.
+          {requests.length} timed requests · {interests.length} interests · {meetings.length} meetings currently in Convex.
         </div>
       </section>
     </div>
@@ -2366,6 +2573,20 @@ function TagRow({ items }: { items: string[] }) {
     <div className="mt-3 flex flex-wrap gap-2">
       {visible.map((item) => (
         <span key={item} className="border border-white/10 bg-black/30 px-2 py-1 text-xs text-white/55">
+          {item}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function CompactTagRow({ items }: { items: string[] }) {
+  const visible = items.filter(Boolean).slice(0, 3);
+  if (!visible.length) return null;
+  return (
+    <div className="flex flex-wrap justify-end gap-1.5">
+      {visible.map((item) => (
+        <span key={item} className="max-w-32 truncate border border-white/10 bg-black/30 px-1.5 py-1 text-[11px] text-white/45">
           {item}
         </span>
       ))}

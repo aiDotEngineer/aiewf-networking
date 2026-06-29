@@ -1,5 +1,20 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Meeting Requests
+
+Participants can ask to meet in two ways:
+
+- **Choose time** creates a normal timed request for a selected event slot.
+- **Register interest** creates a slotless interest in meeting another participant.
+
+Slotless interests are stored separately from timed requests in Convex so the
+existing booking invariant stays intact: `meetingRequests` always means a
+specific slot. When the target participant accepts an interest, Convex searches
+event days in order for the first slot where both participants are available,
+neither participant has a meeting conflict, and a table or open group is
+available. If no mutual slot exists yet, acceptance fails with a clear message
+and the interest remains pending.
+
 ## Getting Started
 
 First, run the development server:
