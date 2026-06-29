@@ -10,7 +10,11 @@
     "cf-typegen": "wrangler types",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --experimental-strip-types --test src/lib/*.test.mjs"
+    "test": "node --experimental-strip-types --test src/lib/*.test.mjs",
+    "profiles:queue": "node scripts/export-profile-research-queue.mjs",
+    "profiles:validate": "node scripts/validate-participant-profiles.mjs",
+    "profiles:prompts": "node scripts/print-profile-shard-prompts.mjs",
+    "speakers:schedule": "node scripts/generate-worldsfair-speaker-schedule.mjs"
   },
   "dependencies": {
     "convex": "^1.41.0",

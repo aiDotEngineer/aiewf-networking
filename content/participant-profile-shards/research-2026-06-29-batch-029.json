@@ -1,0 +1,125 @@
+[
+  {
+    "lookupKey": "0rru8il",
+    "displayName": "Austin Bellinger",
+    "headline": "Management consultant focused on enterprise AI and agentic forecasting",
+    "company": "ZS Associates",
+    "title": "Consultant",
+    "location": "San Francisco, US",
+    "tags": ["enterprise AI", "agentic forecasting", "management consulting", "analytics", "healthcare commercial strategy"],
+    "confidence": "medium",
+    "confidenceNote": "Participant-provided company/title match public LinkedIn snippets and personal site positioning. Public LinkedIn snippets list Washington DC-Baltimore rather than San Francisco, so location is kept from participant data with medium confidence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Management consultant at ZS Associates working around enterprise AI and agentic forecasting. Useful match for attendees exploring applied AI strategy, forecasting workflows, and how consulting teams operationalize AI in enterprise settings.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://austinbellinger.com/", "note": "Personal site describes Austin as a management consultant who builds and writes about learning."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/austinbellinger", "note": "Public snippet lists Consultant at ZS Associates with enterprise AI and agentic forecasting positioning."}
+      ],
+      "secondary": [
+        {"label": "ZS Associates", "url": "https://www.zs.com/", "note": "Company context for ZS as a consulting and technology firm."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ulu1he",
+    "displayName": "Aysajan Eziz",
+    "headline": "Founder of Northset building proof-gated settlement for AI-written code",
+    "company": "Northset",
+    "title": "Founder, CEO",
+    "location": "London, Ontario, Canada",
+    "tags": ["agent payments", "blockchain", "proof of pass", "optimization", "management science", "AI agents"],
+    "confidence": "high",
+    "confidenceNote": "Northset and personal sites clearly identify Aysajan Eziz as founder and Assistant Professor of Management Science at Ivey Business School, Western University.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Northset, a proof-gated settlement rail for objective digital work and AI-written code. Also an Assistant Professor of Management Science at Ivey Business School, with research interests spanning optimization, machine learning, applied economics, and Ethereum systems.",
+    "sources": {
+      "primary": [
+        {"label": "Northset About", "url": "https://northset.ai/about", "note": "Identifies Aysajan Eziz as founder and describes Northset's proof-gated settlement focus."},
+        {"label": "Personal site", "url": "https://www.aysajaneziz.com/", "note": "Identifies Aysajan as Assistant Professor of Management Science at Ivey Business School, Western University."},
+        {"label": "GitHub", "url": "https://github.com/AysajanE", "note": "Linked from Northset as the founder's code profile."}
+      ],
+      "secondary": [
+        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?user=c2QO_kEAAAAJ&hl=en", "note": "Academic research profile linked from Northset."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jsp1yt",
+    "displayName": "Ayush Bhardwaj",
+    "headline": "Tech Lead at Allos working across full-stack engineering, AI agents, and research tooling",
+    "company": "Allos AI",
+    "title": "Tech Lead",
+    "location": "India",
+    "tags": ["full-stack", "AI agents", "DevOps", "MLOps", "data visualization", "open source"],
+    "confidence": "high",
+    "confidenceNote": "Personal site directly states Tech Lead at Allos.ai and provides education, engineering, and research background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Tech Lead at Allos.ai with full-stack and DevOps experience. Strong fit for conversations around AI agents, MLOps, data visualization, task queues, and building research-to-product software.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://ay-bh.github.io/about", "note": "About page lists Tech Lead at Allos.ai and summarizes full-stack, DevOps, research, and prior experience."},
+        {"label": "GitHub", "url": "https://github.com/ay-bh", "note": "Linked from Ayush's personal site as his code profile."},
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/aybh", "note": "Linked from Ayush's personal site."}
+      ],
+      "secondary": [
+        {"label": "Google Summer of Code profile context", "url": "https://summerofcode.withgoogle.com/", "note": "Personal site mentions prior Google Summer of Code contribution at INCF."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "074xwiz",
+    "displayName": "Azhi Vendhan",
+    "headline": "AI, cloud, and data analytics leader at Plante Moran",
+    "company": "Plante Moran",
+    "title": "Principal",
+    "location": "Denver, US",
+    "tags": ["AI consulting", "cloud analytics", "data analytics", "Snowflake", "business intelligence", "technology consulting"],
+    "confidence": "medium",
+    "confidenceNote": "Public LinkedIn snippets match the name, Plante Moran, Denver area, and AI/cloud/data analytics leadership. Secondary snippets also mention Principal and Snowflake/cloud analytics, but no first-party Plante Moran people page was found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal at Plante Moran focused on AI, cloud, and data analytics. Useful match for attendees working on enterprise analytics modernization, Snowflake/cloud data platforms, AI consulting, and practical data governance.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/azhi", "note": "Public snippets identify Azhi Vendhan as a Plante Moran AI, cloud, and data analytics leader in the Denver Metropolitan Area."}
+      ],
+      "secondary": [
+        {"label": "Plante Moran AI Consulting", "url": "https://www.plantemoran.com/services/consulting/ai-consulting", "note": "Company service context for AI strategy, governance, and scalable AI solutions."},
+        {"label": "Plante Moran Data and Analytics", "url": "https://www.plantemoran.com/services/consulting/data-analytics", "note": "Company service context for BI, data management, governance, and analytics partnerships including Snowflake."},
+        {"label": "LinkedIn directory snippet", "url": "https://www.linkedin.com/pub/dir/Azhi/Vendhan", "note": "Directory snippet reinforces Plante Moran, Denver area, and AI/cloud/data analytics positioning."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pnxqhr",
+    "displayName": "Bailey Jones",
+    "headline": "AIOps software engineer focused on DevOps, cloud architecture, and platform reliability",
+    "company": "JPMorganChase",
+    "title": "Vice President - AIOps Software Engineer",
+    "location": "",
+    "tags": ["AIOps", "DevOps", "cloud architecture", "platform reliability", "AWS", "financial services technology"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn snippet confirms software engineering focus in AI Operations at JPMorganChase. TheOrg provides supporting cloud/platform reliability context but lists a solutions architect phrasing and 10 AWS certifications, while LinkedIn snippet says 11X AWS.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AIOps software engineer at JPMorganChase focused on DevOps, cloud architecture, and platform reliability. Strong match for conversations about operating large-scale cloud platforms, reliability engineering, AWS, and AI-enabled IT operations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/baileymjones-com", "note": "Public snippet identifies Bailey as focused on DevOps, cloud architecture, platform reliability, AI Operations, and JPMorganChase."}
+      ],
+      "secondary": [
+        {"label": "TheOrg profile", "url": "https://theorg.com/org/jpmorgan-chase/org-chart/bailey-jones", "note": "Secondary profile summarizes Bailey's JPMorgan Chase role and cloud/platform reliability background."},
+        {"label": "JPMorganChase Technology", "url": "https://www.jpmorganchase.com/technology", "note": "Company context for JPMorganChase technology organization."}
+      ]
+    }
+  }
+]

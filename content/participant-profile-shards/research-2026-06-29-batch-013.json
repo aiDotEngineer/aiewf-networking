@@ -1,0 +1,242 @@
+[
+  {
+    "lookupKey": "0ro8dw1",
+    "displayName": "Alex Bauer",
+    "headline": "Co-Founder, Product at Upside, building revenue intelligence for B2B go-to-market teams",
+    "company": "Upside",
+    "title": "Co-Founder, Product",
+    "location": "San Francisco, US",
+    "tags": ["B2B SaaS", "revenue intelligence", "product strategy", "go-to-market", "attribution", "marketing technology"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name primary profiles and event listings match Alex Bauer as Co-Founder, Product at Upside in San Francisco, with prior product and marketing roles at Branch.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alex is Co-Founder, Product at Upside, a revenue-intelligence company helping B2B teams understand which marketing, sales, partnerships, and customer-success actions influence deals. He is a strong match for conversations on enterprise GTM, attribution beyond last-touch metrics, product positioning, and practical AI use in revenue operations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://alexbauer.net/",
+          "note": "Lists Alex Bauer as Co-Founder, Upside, with Co-Founder, Product role, San Francisco location, and prior Branch product and marketing experience."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/alexdbauer",
+          "note": "Professional profile snippet matches Alex Bauer to Co-Founder, Product at Upside."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Fouad+Matin",
+          "note": "Event schedule includes Alex Bauer of Upside as Co-Founder, Product and speaker."
+        },
+        {
+          "label": "Traction Podcast",
+          "url": "https://podcasters.spotify.com/pod/show/tractionfm/episodes/The-Fine-Line-Between-Founder-and-Fraudster-e3bgu8g",
+          "note": "Episode description names Alex Bauer as Co-Founder, Product at Upside and discusses marketing attribution in the AI era."
+        },
+        {
+          "label": "Upside website",
+          "url": "https://upside.tech/",
+          "note": "Company context for Upside's B2B revenue and attribution product."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "14aj6pq",
+    "displayName": "Alex Gervais",
+    "headline": "Co-Founder at Polar Sky with cloud-native, systems architecture, and AI engineering depth",
+    "company": "Polar Sky",
+    "title": "Co-Founder",
+    "location": "Montreal, Canada",
+    "tags": ["AI engineering", "systems architecture", "cloud native", "Kubernetes", "developer infrastructure", "security"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name LinkedIn and Polar Sky company pages connect Alexandre/Alex Gervais to Polar Sky, with additional long-running public evidence around cloud-native engineering and Kubernetes.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alex is Co-Founder at Polar Sky and has a background in systems architecture, cloud-native infrastructure, Kubernetes, and developer tooling. He is a useful match for attendees working on AI infrastructure, secure enterprise AI adoption, evals, context engineering, and production-grade agent systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://ca.linkedin.com/in/alexandregervais",
+          "note": "Professional profile snippet lists Alexandre Gervais with Polar Sky and describes focus areas including AI, entrepreneurship, systems architecture, and software development."
+        },
+        {
+          "label": "Polar Sky LinkedIn",
+          "url": "https://www.linkedin.com/company/polarsky",
+          "note": "Company page lists Alexandre Gervais among Polar Sky employees and includes posts about hiring and AI/security work."
+        },
+        {
+          "label": "Medium",
+          "url": "https://alex-gervais.medium.com/",
+          "note": "Personal writing profile describes Alex Gervais as a distributed systems architect and tech lead with prior Ambassador Labs and AppDirect experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/alex-gervais/",
+          "note": "Speaker profile describes Alex as a Kubernetes early adopter and contributor to cloud-native projects."
+        },
+        {
+          "label": "The New Stack author page",
+          "url": "https://thenewstack.io/author/alex-gervais/",
+          "note": "Author bio connects Alex Gervais to Ambassador Labs and cloud-native/Kubernetes expertise."
+        },
+        {
+          "label": "Polar Sky job listing",
+          "url": "https://www.linkedin.com/jobs/view/founding-ai-engineer-at-polar-sky-at-polar-sky-4358332944",
+          "note": "LinkedIn job page names Alexandre Gervais as the Polar Sky contact for a founding AI engineer role."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1w7t1fo",
+    "displayName": "Alex Hancock",
+    "headline": "Block engineer building open-source AI agent infrastructure around Goose and MCP",
+    "company": "Block",
+    "title": "AI Agent / Senior Software Engineer",
+    "location": "Connecticut, US",
+    "tags": ["AI agents", "Goose", "Model Context Protocol", "open source", "Rust", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "Public GitHub, X, podcast, and conference sources consistently identify Alex Hancock as a Block engineer, Goose maintainer, and MCP contributor/steering-committee member.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alex works on AI agent infrastructure at Block, including Goose, MCP, and open-source developer tooling. He is a strong match for conversations on agent runtimes, MCP design, model-to-tool interfaces, open governance, Rust SDKs, and making agent systems reliable enough for real users.",
+    "sources": {
+      "primary": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/alexhancock",
+          "note": "GitHub profile lists Alex Hancock with Block affiliation, Connecticut location, and pinned work including Goose and the MCP Rust SDK."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/alexjhancock",
+          "note": "Social profile is associated with Alex Hancock's Goose and MCP work."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/alexjhancock/",
+          "note": "Professional profile URL is listed by podcast materials for Alex Hancock of Block."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Turing Post interview",
+          "url": "https://www.turingpost.com/p/hancock",
+          "note": "Interview identifies Alex Hancock as Senior Software Engineer at Block, core contributor to Goose, and member of the MCP Steering Committee."
+        },
+        {
+          "label": "Agentic AI Foundation blog",
+          "url": "https://aaif.io/blog/where-new-mcp-ideas-go-to-become-real-goose-as-a-proving-ground/",
+          "note": "Article describes Hancock as a Block software engineer, Goose core maintainer, and MCP Rust SDK maintainer."
+        },
+        {
+          "label": "Apple Podcasts",
+          "url": "https://podcasts.apple.com/tr/podcast/how-to-make-ai-actually-do-things-alex-hancock-block/id1811089330?i=1000723211578&l=tr",
+          "note": "Episode page identifies Alex Hancock as Senior Software Engineer at Block, Goose maintainer, and MCP Steering Committee member."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1lqqu1c",
+    "displayName": "Alex Lan",
+    "headline": "Co-founder and CEO of Agora, building enterprise AI-transformation infrastructure",
+    "company": "Agora",
+    "title": "Co-founder, CEO",
+    "location": "San Francisco, US",
+    "tags": ["enterprise AI", "AI transformation", "B2B SaaS", "startup founder", "workflow prioritization", "AI agents"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name LinkedIn and investor/company profile sources match Alex Lan as Co-founder and CEO of Agora in the San Francisco Bay Area.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alex is Co-founder and CEO of Agora, which helps enterprises identify AI opportunities, decide what to build or buy, measure outcomes, and scale what works. He is a strong match for conversations on enterprise AI adoption, agent evaluation, startup GTM, and operationalizing AI transformation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/alexanderlan",
+          "note": "Professional profile snippet lists Alex Lan as Co-founder, CEO at Agora, with Yale education and San Francisco Bay Area location."
+        },
+        {
+          "label": "Agora website",
+          "url": "https://agoraintel.com/",
+          "note": "Company website for Agora, the enterprise AI-transformation company associated with Alex Lan."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "F4 Fund company profile",
+          "url": "https://f4.fund/startups/agoraintel",
+          "note": "Investor-style company profile lists Agora, Alex Lan as co-founder and CEO, Neil Song as co-founder and CTO, and describes the enterprise AI-transformation product."
+        },
+        {
+          "label": "StealthCoSpy X post",
+          "url": "https://x.com/StealthCoSpy/status/2069284316304290164",
+          "note": "Startup-tracking post says Alex Lan debuted Agora to help enterprises discover, evaluate, and deploy AI agents."
+        },
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/Alex/Lan",
+          "note": "Directory snippet includes Alex Lan as Co-founder, CEO at Agora in the San Francisco Bay Area."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "08q110w",
+    "displayName": "Alex Neyman",
+    "headline": "Lead engineer incubating Kinetic in Brooklyn, with software and startup-building background",
+    "company": "Kinetic",
+    "title": "Lead Engineer",
+    "location": "Brooklyn, US",
+    "tags": ["software engineering", "startup incubation", "apps", "entrepreneurship", "Brooklyn", "product engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Exact-name public sources match Alex Neyman in Brooklyn and connect him to Kinetic/Kinetic Apps, but public evidence says incubating or engineering lead rather than clearly confirming the participant-provided Lead Engineer title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alex is listed as Lead Engineer at Kinetic and public profiles describe him as incubating Kinetic in Brooklyn. He is a useful match for conversations on early-stage product engineering, app development, startup formation, and turning technical prototypes into working products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/alexneyman",
+          "note": "Professional profile snippet lists Alex Neyman as incubating at kinetic, associated with Kinetic Apps, and located in Brooklyn, New York."
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/AlexNeyman",
+          "note": "Developer profile under AlexNeyman/Alexey Neyman shows public repositories and coding activity history."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/Alex/Neyman/us-0-United-States",
+          "note": "Directory snippet distinguishes the Brooklyn Alex Neyman profile from other same-name candidates and connects it to Kinetic Apps."
+        },
+        {
+          "label": "LinkedIn article",
+          "url": "https://www.linkedin.com/pulse/role-anchor-institutions-entrepreneurial-ecosystems-alex-neyman",
+          "note": "Older article by the same LinkedIn identity shows interest in entrepreneurship and innovation ecosystems."
+        },
+        {
+          "label": "LinkedIn article",
+          "url": "https://www.linkedin.com/pulse/access-capital-south-african-entrepreneurial-ecosystem-alex-neyman",
+          "note": "Older article by Alex Neyman adds evidence of startup and entrepreneurship interest, though it predates the Kinetic role."
+        }
+      ]
+    }
+  }
+]

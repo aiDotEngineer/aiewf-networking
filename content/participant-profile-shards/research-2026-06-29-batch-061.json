@@ -1,0 +1,516 @@
+[
+  {
+    "lookupKey": "0r56wa7",
+    "displayName": "Midam Kim",
+    "headline": "ML engineer and linguist focused on multilingual voice agents at ServiceNow",
+    "company": "ServiceNow",
+    "title": "Senior Linguist and ML Engineer",
+    "location": "",
+    "tags": ["voice AI", "linguistics", "speech AI", "ML engineering", "ServiceNow"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific sources match the name, ServiceNow affiliation, and voice-agent/speech-linguistics focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Midam Kim is an ML engineer working on multilingual voice AI and voice-agent systems at ServiceNow. Public profiles and event listings connect her current work with a linguistics research background, including speech, phonetics, and conversational AI.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/midamkim", "note": "Lists ServiceNow affiliation and ML engineer / multilingual voice-agent positioning." },
+        { "label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=JTGIHUoAAAAJ", "note": "Shows Midam Kim, ServiceNow, and linguistics-related publications." },
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?q=Midam%20Kim", "note": "Lists Midam Kim of ServiceNow presenting on a linguistic map for debugging voice agents." }
+      ],
+      "secondary": [
+        { "label": "YouTube talk listing", "url": "https://www.youtube.com/watch?v=3NUf6W_FMWs", "note": "Talk listing identifies Midam Kim as ML Engineer for Multilingual Voice AI at ServiceNow." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1tad3as",
+    "displayName": "Miguel Alvarado",
+    "headline": "VP of Engineering at SonderMind building AI-enabled mental health technology",
+    "company": "SonderMind",
+    "title": "VP of Engineering",
+    "location": "San Francisco, CA",
+    "tags": ["healthcare AI", "mental health", "engineering leadership", "AI engineering", "SonderMind"],
+    "confidence": "high",
+    "confidenceNote": "SonderMind, LinkedIn, Sessionize, and Google Cloud sources consistently match the same person and career history.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Miguel Alvarado leads software and AI engineering at SonderMind, with public sources tying his work to AI-enhanced mental health care. Earlier sources identify him as CTO at Lumiata, where he discussed applying AI and cloud systems to healthcare analytics.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/miguelalvarado", "note": "Lists SonderMind VP of Engineering and prior Lumiata CTO experience." },
+        { "label": "SonderMind announcement", "url": "https://www.sondermind.com/resources/announcement/mental-health-providers-gain-90-minutes-a-day-with-sonder-mind-ai-tool/", "note": "Quotes Miguel Alvarado as SonderMind Vice President of Engineering on AI tooling." },
+        { "label": "Google Cloud blog", "url": "https://cloud.google.com/blog/products/ai-machine-learning/deployed-ai-how-lumiata-is-using-ai-to-make-healthcare-smarter", "note": "Features Miguel Alvarado as CTO at Lumiata discussing AI in healthcare." }
+      ],
+      "secondary": [
+        { "label": "Sessionize speaker profile", "url": "https://sessionize.com/miguel-alvarado/", "note": "Speaker profile summarizes SonderMind, Mindstrong, Lumiata, and healthcare AI background." },
+        { "label": "The Org profile", "url": "https://theorg.com/org/sondermind/org-chart/miguel-alvarado", "note": "Secondary org-chart profile for VP Engineering role and prior leadership positions." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "119awyd",
+    "displayName": "Miguel Monares",
+    "headline": "Jigsaw co-founder working on simulated worlds, agents, and AI evaluations",
+    "company": "Jigsaw",
+    "title": "Co-founder",
+    "location": "San Francisco, CA",
+    "tags": ["AI agents", "evals", "simulated worlds", "founder", "Jigsaw"],
+    "confidence": "high",
+    "confidenceNote": "a16z, LinkedIn, GitHub, X, and ACL sources align on Jigsaw, agents/evals, and the same public identity.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Miguel Monares is listed by a16z speedrun as CEO at Jigsaw, with prior Stanford AI Lab work on agents and evaluations. He is also a co-author of the ACL 2024 paper \"I am a Strange Dataset,\" a benchmark for metalinguistic tests of language models.",
+    "sources": {
+      "primary": [
+        { "label": "a16z speedrun profile", "url": "https://speedrun.a16z.com/companies/jigsaw/miguel-monares", "note": "Identifies Miguel Monares as CEO at Jigsaw and describes prior Stanford AI Lab agents/evals work." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/miguelmonares", "note": "Lists co-founder at Jigsaw and a16z speedrun." },
+        { "label": "GitHub profile", "url": "https://github.com/miguelmonares", "note": "Personal GitHub profile links to LinkedIn and describes work as simulating the world." },
+        { "label": "X profile", "url": "https://x.com/migueljmonares", "note": "Public bio lists co-founder at Jigsaw and previous Stanford AI Lab evals." }
+      ],
+      "secondary": [
+        { "label": "ACL Anthology author page", "url": "https://aclanthology.org/people/miguel-monares/unverified/", "note": "Lists Miguel Monares as co-author on ACL 2024 language-model evaluation paper." },
+        { "label": "arXiv paper", "url": "https://arxiv.org/abs/2401.05300", "note": "Paper metadata includes Miguel Monares as co-author of \"I am a Strange Dataset.\"" }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1c37n1h",
+    "displayName": "Miguel Vias",
+    "headline": "Founder and CEO of Genuine Labs building private personal AI agents",
+    "company": "Genuine Labs",
+    "title": "Founder",
+    "location": "Miami, FL",
+    "tags": ["personal AI", "privacy", "founder", "fintech", "Genuine Labs"],
+    "confidence": "high",
+    "confidenceNote": "Genuine Labs first-party pages, X, LinkedIn search result, and prior-company sources consistently identify the same Miguel Vias.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Miguel Vias is founder and CEO of Genuine Labs, which describes its work as personal AI agents and a private intelligence layer for users. His public background includes prior leadership roles at Ripple, Linqto, Forte, and financial markets firms.",
+    "sources": {
+      "primary": [
+        { "label": "Genuine Labs team page", "url": "https://www.genuinelabs.ai/", "note": "Lists Miguel Vias as Founder & CEO and summarizes prior roles." },
+        { "label": "Genuine Labs manifesto", "url": "https://www.genuinelabs.ai/why", "note": "Signed by Miguel Vias as Founder & CEO; describes private personal AI direction." },
+        { "label": "X profile", "url": "https://x.com/miguelvias", "note": "Public bio says building Genuine Labs and previously at Ripple." }
+      ],
+      "secondary": [
+        { "label": "Linqto appointment release", "url": "https://www.linqto.com/press/miguel-vias-coo-linqto/", "note": "Announces Miguel Vias as Linqto COO and describes prior Ripple role." },
+        { "label": "Miami Sport Industry Conference bio", "url": "https://sites.education.miami.edu/miamisportconference/miguel-vias/", "note": "Conference bio summarizes Forte, Linqto, Ripple, and finance background." },
+        { "label": "FinTech Futures profile", "url": "https://www.fintechfutures.com/fintech/people-on-the-move-miguel-vias-ripple", "note": "Reports Ripple naming Miguel Vias head of XRP markets." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ydd5gg",
+    "displayName": "Mihir Sanghavi",
+    "headline": "AI and fintech engineering leader associated with YourAI and LTX/BondGPT",
+    "company": "YourAI",
+    "title": "Chief AI Officer",
+    "location": "Jersey City, NJ",
+    "tags": ["AI strategy", "fintech", "engineering leadership", "quant finance", "YourAI"],
+    "confidence": "medium",
+    "confidenceNote": "Two person-specific public profiles match YourAI, but independent first-party company evidence for YourAI is limited; LTX/BondGPT context is supported mostly by LinkedIn/GitHub and secondary profile data.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mihir Sanghavi's public LinkedIn and GitHub profiles identify him with YourAI and AI strategy / engineering leadership. His posts and related public profiles also connect him to LTX, fixed-income trading systems, BondGPT, and quantitative-finance work.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mihir-sanghavi-finance", "note": "Lists Chief AI Officer at YourAI, AI strategy, engineering leadership, speaker, and Columbia University." },
+        { "label": "GitHub profile", "url": "https://github.com/mihir478", "note": "Personal GitHub profile lists YourAI, LTX/Broadridge, and links to LinkedIn." },
+        { "label": "LinkedIn CxO Institute post", "url": "https://www.linkedin.com/posts/mihir-sanghavi-finance_cxoinstitute-cionewyork-ltx-activity-7323489450112499712-k6Wz", "note": "Person-authored post discusses LTX, BondGPT, AI agents, and AI-powered finance tools." }
+      ],
+      "secondary": [
+        { "label": "Prospeo LTX profile", "url": "https://prospeo.io/c/ltx-a-broadridge-company-revenue", "note": "Lists Mihir Sanghavi as Senior Director Dev Lead / Engineering Manager at LTX." },
+        { "label": "LinkedIn LTX BondGPT post", "url": "https://www.linkedin.com/posts/jimk1_bondgpt-intelligence-is-now-live-on-the-ltx-activity-7338210515535515648-O4Rh", "note": "Mentions Mihir Sanghavi in context of LTX BondGPT Intelligence." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "125a1x4",
+    "displayName": "Mihnea Munteanu",
+    "headline": "Senior Product Lead for Ask YouTube and AI Search at YouTube",
+    "company": "YouTube",
+    "title": "Software Engineer",
+    "location": "",
+    "tags": ["YouTube", "AI search", "product", "video search", "generative AI"],
+    "confidence": "high",
+    "confidenceNote": "Exact name plus YouTube/Ask YouTube role match across LinkedIn profile, self-authored posts, and AI Engineer schedule. Public sources identify him as a product lead while the row says Software Engineer.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mihnea Munteanu leads product work around Ask YouTube and AI Search at YouTube, according to his public LinkedIn profile and self-authored launch posts. His recent public writing focuses on conversational, video-grounded search and AI-native search experiences on YouTube.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mihneamunteanu", "note": "Lists Sr Lead PM, Ask YouTube / AI Search at Google/YouTube." },
+        { "label": "LinkedIn post on Ask YouTube", "url": "https://www.linkedin.com/posts/mihneamunteanu_youtube-is-testing-an-ai-search-mode-that-activity-7454929392352337921-qA38", "note": "Self-authored post describing Ask YouTube and his team's launch work." },
+        { "label": "YouTube Help: Ask YouTube", "url": "https://support.google.com/youtube/answer/16943763?hl=en", "note": "First-party YouTube documentation for the Ask YouTube feature." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?q=Fouad+Matin", "note": "Speaker listing names Mihnea Munteanu from YouTube as Product Lead, Ask YouTube." },
+        { "label": "Social Media Today", "url": "https://www.socialmediatoday.com/news/google-expands-ai-search-mode-to-youtube/818764/", "note": "Coverage of Google's Ask YouTube conversational search rollout." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0lae5k0",
+    "displayName": "Mike Chambers",
+    "headline": "Senior Developer Advocate for Generative AI at AWS",
+    "company": "AWS",
+    "title": "Senior Developer Advocate",
+    "location": "",
+    "tags": ["AWS", "developer advocacy", "agents", "Bedrock", "LLMs", "Strands"],
+    "confidence": "high",
+    "confidenceNote": "Exact role and employer confirmed across personal site, AWS/Coursera course pages, GitHub, and podcast/event pages.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mike Chambers is a Senior Developer Advocate for Generative AI at AWS, with public work around Amazon Bedrock, Strands Agents, agentic workflows, and production AI systems. He co-created the DeepLearning.AI/AWS Generative AI with Large Language Models course and publishes technical AI engineering material on his personal site and GitHub.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site about page", "url": "https://blog.mikegchambers.com/about/", "note": "Bio states Senior Developer Advocate for Generative AI at AWS and lists course work." },
+        { "label": "GitHub profile", "url": "https://github.com/mikegc-aws", "note": "Public GitHub profile for Mike Chambers associated with Amazon Web Services." },
+        { "label": "AWS video: Amazon Bedrock Agents Tutorial", "url": "https://aws.amazon.com/video/watch/0453c416302/", "note": "AWS page identifies Mike Chambers as a senior developer advocate demonstrating Bedrock agents." }
+      ],
+      "secondary": [
+        { "label": "DeepLearning.AI course page", "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms", "note": "Lists Mike Chambers as an instructor for Generative AI with Large Language Models." },
+        { "label": "AWS Developers Podcast episode 195", "url": "https://developers.podcast.go-aws.com/web/episodes/195/index.html", "note": "Episode page identifies him as Senior Developer Advocate at AWS discussing agentic AI." },
+        { "label": "Web Directions AI Engineer Melbourne speaker page", "url": "https://webdirections.org/ai-engineer/speakers/mike-chambers.php", "note": "Speaker bio repeats AWS GenAI developer advocate role and course background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "18zmvvq",
+    "displayName": "Mike Phipps",
+    "headline": "Lead AI Engineer at the Gates Foundation",
+    "company": "Gates Foundation",
+    "title": "Lead AI Engineer",
+    "location": "",
+    "tags": ["AI engineering", "Gates Foundation", "global health", "graphs", "enterprise AI"],
+    "confidence": "medium",
+    "confidenceNote": "Exact name, title, and employer match the participant row and are corroborated by LinkedIn and AI Engineer schedule; broader biography is sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mike Phipps is publicly listed as a Lead AI Engineer at the Gates Foundation and appears on the AI Engineer World's Fair schedule with a Gates Foundation AI talk. Secondary directory sources also associate Michael Phipps with the Gates Foundation AI Strategy team.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mike-phipps-79339a38", "note": "Lists Mike Phipps as Lead AI Engineer at the Gates Foundation." },
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Graphs", "note": "Lists Mike Phipps, Gates Foundation, Lead AI Engineer, with a session titled From Systems of Record to Systems of Context." }
+      ],
+      "secondary": [
+        { "label": "The Org: Gates Foundation AI Strategy team", "url": "https://theorg.com/org/bill-melinda-gates-foundation/teams/artificial-intelligence-strategy", "note": "Lists Michael Phipps as Senior AI Engineer on the AI Strategy team." },
+        { "label": "SignalHire Gates Foundation directory snippet", "url": "https://www.signalhire.com/profiles/cassy-wass%27s-email/172865129", "note": "Directory listing includes Mike Phipps as Lead AI Engineer at Gates Foundation." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0w50a1c",
+    "displayName": "Mike Swift",
+    "headline": "CEO and Co-Founder of Major League Hacking",
+    "company": "Major League Hacking (MLH)",
+    "title": "CEO & Co-Founder",
+    "location": "New York, NY",
+    "tags": ["developer community", "hackathons", "MLH", "open source", "devrel", "education"],
+    "confidence": "high",
+    "confidenceNote": "Exact name, company, and role are confirmed by personal site, LinkedIn, MLH event pages, and multiple interviews/speaker bios.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mike Swift is CEO and Co-Founder of Major League Hacking, where he works on developer communities, hackathons, and early-career software talent programs. His public bio says he previously founded Hacker League, served as SendGrid's first developer evangelist, and was named to Forbes 30 Under 30 Education.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site about page", "url": "https://theycallmeswift.dev/about", "note": "Self-published bio with CEO and Co-Founder role, links, and career background." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/theycallmeswift", "note": "Lists CEO and Co-Founder at Major League Hacking and related roles." },
+        { "label": "MLH event page", "url": "https://events.mlh.io/events/4375-r-cscareerquestions-ama-with-swift", "note": "MLH-hosted page identifies Swift as MLH CEO and Co-Founder." }
+      ],
+      "secondary": [
+        { "label": "Stack Overflow Blog interview", "url": "https://stackoverflow.blog/2026/04/21/we-still-need-developer-communities/", "note": "Interview with Mike Swift about MLH, developer communities, and DEV." },
+        { "label": "SustainOSS episode 113", "url": "https://podcast.sustainoss.org/113", "note": "Podcast episode with Jon Gottfried and Mike Swift about MLH Fellowship." },
+        { "label": "Linux Foundation speaker bio", "url": "https://events.linuxfoundation.org/open-source-summit-latin-america/", "note": "Speaker bio lists MLH CEO role, Hacker League, SendGrid, and Forbes 30 Under 30 background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "10jz90p",
+    "displayName": "Mitchell Williams",
+    "headline": "Program Manager and communications lead at Google; applied-AI builder",
+    "company": "Google",
+    "title": "Program Manager and Communications Lead",
+    "location": "Seattle, WA",
+    "tags": ["AI systems", "communications", "program management", "Google", "workflow automation"],
+    "confidence": "high",
+    "confidenceNote": "Personal site and LinkedIn profile match the name, employer, role theme, and location/identity signals.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mitchell Williams presents himself as an AI builder and communications lead at Google xGE, with public materials focused on AI systems, communications infrastructure, and workflow-oriented AI adoption. His LinkedIn and personal site align with the row facts for Google, Seattle, and program/communications work.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://thestorytellermitch.com/", "note": "Self-published profile identifies Mitchell Williams as AI Builder and Communications Lead at Google xGE." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mitwilli", "note": "Public profile title lists Program Manager and Comms Lead at Google." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn public post index", "url": "https://www.linkedin.com/posts/mitwilli_the-fastest-way-to-lose-your-managers-trust-activity-7422322611906342912-xZ25", "note": "Recent public LinkedIn activity carries the same name, title, and Google affiliation." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0sieuck",
+    "displayName": "Mohammad Bawany",
+    "headline": "VP of AI and digital transformation at Cision; Data and AI role at Platinum Equity",
+    "company": "Platinum equity",
+    "title": "Vp Operations",
+    "location": "Chicago, IL",
+    "tags": ["AI transformation", "operations", "private equity", "analytics", "Cision"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and The Org independently match name, Platinum Equity/Cision affiliation, Chicago-area identity, and AI/operations transformation focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mohammad Bawany is publicly listed as VP of AI & Digital Transformation at Cision with Platinum Equity affiliation. Public profile and directory sources describe a background in operations transformation, AI, analytics consulting, and an MBA from Carnegie Mellon Tepper.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mabawany", "note": "Public profile title lists VP of AI & Digital Transformation at Cision and Platinum Equity." },
+        { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/mabawany_i-just-finished-reading-how-change-really-activity-7475007217570639873-FZvo", "note": "First-person post discusses AI transformation and shows the same current title." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/platinum-equity/org-chart/mohammad-bawany", "note": "Directory profile lists Operations Transformation - Data & AI at Platinum Equity and VP of Transformation | AI at Cision." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1yj97jf",
+    "displayName": "Moritz Johner",
+    "headline": "Staff Engineer at Form3; Kubernetes and External Secrets maintainer",
+    "company": "Form3",
+    "title": "Platform Architect / Senior Software Engineer",
+    "location": "",
+    "tags": ["Kubernetes", "platform engineering", "open source", "security", "External Secrets"],
+    "confidence": "high",
+    "confidenceNote": "GitHub, LinkedIn, Sessionize, Form3, and conference sources consistently identify the same Form3 engineer and Kubernetes/open-source focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Moritz Johner is a Form3 platform infrastructure engineer and open-source maintainer in the Kubernetes ecosystem. Public speaker profiles and project references connect him to External Secrets Operator, secrets management, and multi-cloud platform work.",
+    "sources": {
+      "primary": [
+        { "label": "GitHub profile", "url": "https://github.com/moolen", "note": "Personal GitHub profile for Moritz Johner, with External Secrets repositories and open-source activity." },
+        { "label": "LinkedIn profile", "url": "https://de.linkedin.com/in/moritz-johner", "note": "Public LinkedIn profile lists Form3 experience and links to GitHub moolen." },
+        { "label": "Form3 podcast", "url": "https://www.form3.tech/blog/engineering/podcast-ext-secrets", "note": "Company post names Moritz Johner as a maintainer of External Secrets Operator." }
+      ],
+      "secondary": [
+        { "label": "Sessionize speaker profile", "url": "https://sessionize.com/moolen/", "note": "Speaker profile lists Staff Engineer at Form3 and open-source maintainer background." },
+        { "label": "PlatformCon 2022 speaker page", "url": "https://2022.platformcon.com/speaker/moritz-johner", "note": "Conference page lists him as Senior Software Engineer at Form3 and platform architect." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fzcmgo",
+    "displayName": "Murali Mallina",
+    "headline": "Chief Technology Officer at Tria Federal; leader of Tria Labs and technical practices",
+    "company": "Tria Federal",
+    "title": "CTO",
+    "location": "Arlington, VA",
+    "tags": ["federal tech", "CTO", "AI", "cloud", "serverless", "Tria Labs"],
+    "confidence": "high",
+    "confidenceNote": "Tria Federal leadership and promotion pages directly identify him as CTO, with multiple secondary govtech sources confirming the same role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Murali Mallina is Tria Federal's CTO, leading Tria Labs and technical practice areas including AI, cloud, data, security, and Salesforce. Tria describes his background as more than 25 years in software solutions, cloud, serverless architectures, and enterprise AI/ML for mission-critical systems.",
+    "sources": {
+      "primary": [
+        { "label": "Tria Federal leadership page", "url": "https://www.triafed.com/who-we-are/leadership", "note": "Company leadership page lists Murali Mallina as Chief Technology Officer." },
+        { "label": "Tria Federal promotion announcement", "url": "https://www.triafed.com/news/tria-federal-promotes-murali-mallina-to-chief-technology-officer", "note": "Company announcement says Mallina was promoted to CTO." },
+        { "label": "Washington Technology op-ed bio", "url": "https://www.washingtontechnology.com/opinion/2026/01/ai-agents-are-ready-government-work-if-agencies-are-ready-them/410621/", "note": "Byline bio identifies Mallina as Tria Federal CTO leading innovation through Tria Labs." }
+      ],
+      "secondary": [
+        { "label": "GovCon Wire executive move", "url": "https://www.govconwire.com/articles/murali-mallina-tria-federal-chief-technology-officer", "note": "Industry coverage confirms promotion to Tria Federal CTO and prior Softrams CTO role." },
+        { "label": "NVTC AI50 LinkedIn announcement", "url": "https://www.linkedin.com/posts/northern-virginia-technology-council_congratulations-to-murali-mallina-a-2026ai50-activity-7455647241727561728-ET-r", "note": "NVTC public post names Mallina from Tria Federal as a 2026 AI50 executive honoree." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0nhago7",
+    "displayName": "Murthy Sistla",
+    "headline": "Director of Engineering at WaferWire Cloud Technologies; cloud and AI platform practitioner",
+    "company": "WaferWire Cloud Technologies",
+    "title": "Engineering Director",
+    "location": "Redmond, WA",
+    "tags": ["engineering leadership", "cloud", "AI infrastructure", "platform engineering", "MLOps", "WaferWire"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and company/directory sources match the name and WaferWire affiliation; public role detail is thinner than for speaker/executive profiles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Murthy Sistla is publicly associated with WaferWire Cloud Technologies in the Greater Seattle/Redmond area. Public sources tie him to engineering leadership and interests in enterprise AI, platform engineering, MLOps, AI infrastructure, and production-grade AI systems.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sistla-murthy", "note": "Public profile for Murthy Sistla in the Greater Seattle Area." },
+        { "label": "LinkedIn AI Engineer World's Fair post", "url": "https://www.linkedin.com/posts/sistla-murthy_aiengineering-aileadership-platformengineering-activity-7472430651112153088-nuKh", "note": "First-person post discusses attending AI Engineer World's Fair and AI infrastructure interests." },
+        { "label": "WaferWire LinkedIn company page", "url": "https://www.linkedin.com/company/waferwire", "note": "Company page lists Murthy Sistla among employees." }
+      ],
+      "secondary": [
+        { "label": "The Org WaferWire page", "url": "https://theorg.com/org/waferwire-cloud-technologies", "note": "Directory org chart lists Murthy Sistla as Director Of Engineering." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1l6gigd",
+    "displayName": "Nachiket Paranjape",
+    "headline": "DoorDash software engineer working on ML platform, observability, and AI evals",
+    "company": "DoorDash",
+    "title": "Software Engineer",
+    "location": "",
+    "tags": ["ML platform", "MLOps", "observability", "AI evals", "DoorDash"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific sources tie the same name to DoorDash ML platform work and the event schedule matches the row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Nachiket Paranjape is publicly listed by DoorDash as a Software Engineer on its Machine Learning Platform team and an author of a DoorDash article about its internal ML Workbench. He has also appeared as a DoorDash ML platform speaker on ML observability and is listed on the AI Engineer World's Fair schedule for an AI evals platform session.",
+    "sources": {
+      "primary": [
+        { "label": "DoorDash Careers Blog", "url": "https://careersatdoordash.com/blog/transforming-mlops-at-doordash-with-machine-learning-workbench/", "note": "Author bio says Nachiket is a Software Engineer on DoorDash's Machine Learning Platform team." },
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises", "note": "Lists Nachiket Paranjape of DoorDash as Software Engineer on an AI evals platform session." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nachiket-paranjape-98b59575", "note": "Public profile preview lists Nachiket Paranjape as a DoorDash software engineer." }
+      ],
+      "secondary": [
+        { "label": "Arize AI session page", "url": "https://arize.com/resource/doordashs-ml-observability-journey/", "note": "Lists Nachiket Paranjape as a DoorDash Machine Learning Platform Engineer speaking on ML observability." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1dxee8z",
+    "displayName": "Nagendra Rishi Raj Chanda",
+    "headline": "AI engineer at Vision Benefits of America focused on agentic AI, RAG, EDI automation, and backend systems",
+    "company": "VBA",
+    "title": "Ai Enginner",
+    "location": "Milwaukee, WI",
+    "tags": ["agentic AI", "RAG", "EDI", "LLMOps", "full-stack", "healthcare"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub, and LinkedIn preview align on identity, aliases, role, company, and technical focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Nagendra Rishi Raj Chanda appears publicly as Rishi Chanda/CNRR, an AI Engineer at Vision Benefits of America in Milwaukee. His personal site describes agentic AI, RAG, LlamaIndex/LangGraph workflows, EDI mapping, and production backend/cloud systems.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://cnrishiraj.vercel.app/", "note": "Self-published profile lists AI Engineer at Vision Benefits of America in Milwaukee." },
+        { "label": "GitHub profile", "url": "https://github.com/cnrishiraj", "note": "GitHub profile links to nagch95 LinkedIn and shows software engineering projects around MCP and agents." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nagch95", "note": "Public preview lists Nagendra Rishi Raj C. as AI FDE at VBA." }
+      ],
+      "secondary": [
+        { "label": "UNC Charlotte commencement program", "url": "https://commencement.charlotte.edu/wp-content/uploads/sites/795/2023/12/December-2023-Commencement-Program.pdf", "note": "Lists Nagendra Rishi Raj Chanda among December 2023 graduates." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "04puy5a",
+    "displayName": "Naida Vikalo",
+    "headline": "Chief Operating Officer at WeAreDevelopers, leading global expansion and event growth",
+    "company": "WeAreDevelopers",
+    "title": "Chief Operating Officer",
+    "location": "Vienna, Austria",
+    "tags": ["developer community", "operations", "global expansion", "events", "WeAreDevelopers"],
+    "confidence": "high",
+    "confidenceNote": "First-party WeAreDevelopers leadership and press sources directly verify identity, role, company, and professional focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Naida Vikalo is listed by WeAreDevelopers as Chief Operating Officer and appears on the company's leadership page. A WeAreDevelopers press release says she joined the company in 2017, moved through business development, marketing, and Chief of Staff work, and now leads scaling and global expansion.",
+    "sources": {
+      "primary": [
+        { "label": "WeAreDevelopers press release", "url": "https://www.wearedevelopers.com/press/wearedevelopers-appoints-naida-vikalo-coo-to-drive-global-expansion", "note": "Announces Naida Vikalo as COO and describes her WeAreDevelopers history and expansion remit." },
+        { "label": "WeAreDevelopers leadership page", "url": "https://www.wearedevelopers.com/about", "note": "Lists Naida Vikalo on the leadership team as Chief Operating Officer." },
+        { "label": "GlobeNewswire San Jose announcement", "url": "https://www.globenewswire.com/news-release/2026/04/07/3269589/0/en/city-of-san-jos%C3%A9-and-wearedevelopers-bring-the-world-s-largest-developer-event-to-silicon-valley.html", "note": "Quotes Naida Vikalo as COO regarding WeAreDevelopers' North America expansion." }
+      ],
+      "secondary": [
+        { "label": "brutkasten coverage", "url": "https://brutkasten.com/artikel/wearedevelopers-naida-vikalo-wird-coo", "note": "Secondary coverage of her COO appointment and WeAreDevelopers expansion context." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/naidavikalo", "note": "Public profile preview identifies Naida Vikalo with a professional profile and broad network." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1amagj4",
+    "displayName": "Nakisa Shafiee",
+    "headline": "Director of Engineering at Jane App, leading billing and clinical engineering groups",
+    "company": "Jane",
+    "title": "Director of Engineering",
+    "location": "Vancouver, Canada",
+    "tags": ["engineering leadership", "healthtech", "billing", "clinical software", "team building"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn preview and Jane job postings consistently verify name, Jane role, Vancouver location, and leadership scope.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Nakisa Shafiee is publicly listed as Director of Engineering at Jane App in LinkedIn previews and Jane job postings. Jane/Ashby job text attributed to Nakisa says she leads Billing and Clinical Engineering and previously led engineering teams at Brex, Atlassian, and CA Technologies.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/nakisa-shafiee", "note": "Public preview lists Nakisa Shafiee at Jane App with University of British Columbia background." },
+        { "label": "Jane Ashby job posting", "url": "https://jobs.ashbyhq.com/jane/5acf1c23-009e-420d-82ac-4084239c03bf", "note": "Jane posting text identifies Nakisa as Director of Engineering leading Billing and Clinical Engineering." },
+        { "label": "Jane App LinkedIn job posting", "url": "https://ca.linkedin.com/jobs/view/software-development-manager-billing-at-jane-app-4403135373", "note": "Jane App job posting repeats Nakisa's director role and prior leadership." }
+      ],
+      "secondary": [
+        { "label": "Built In job mirror", "url": "https://builtin.com/job/senior-development-manager-clinical/8694185", "note": "Mirrors Jane's clinical development manager posting naming Nakisa." },
+        { "label": "Diversity in Action event page", "url": "https://empowering-diversity.com/diversity-in-action/", "note": "Lists Nakisa Shafiee as a senior engineering leader at Jane.app." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "09ng183",
+    "displayName": "NARASIMHA PONDURU",
+    "headline": "Senior AI/ML architect in healthcare, associated with Tufts Health Plan and Point32Health",
+    "company": "POINT32HEALTH",
+    "title": "AI/ML Architect",
+    "location": "",
+    "tags": ["AI ML architecture", "healthcare", "GenAI", "RAG", "AWS ML", "data science"],
+    "confidence": "medium",
+    "confidenceNote": "Two person-specific public profiles match the name and healthcare AI/ML role; company naming differs between Tufts Health Plan and row-listed Point32Health, but Point32Health is Tufts' parent organization.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Narasimha Ponduru is publicly listed on LinkedIn previews as a Senior AI/ML Architect and on another professional profile as Application Architect, Data Science at Tufts Health Plan. Point32Health is the parent organization of Tufts Health Plan, which supports the row's company association.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/narasimha-ponduru-pmp-6b851421", "note": "Public preview lists Narasimha Ponduru, PMP with Tufts Health Plan experience and AWS Machine Learning specialty." }
+      ],
+      "secondary": [
+        { "label": "ContactOut professional profile", "url": "https://contactout.com/narasimha-ponduru-78670", "note": "Professional profile lists Narasimha Ponduru as Application Architect, Data Science at Tufts Health Plan." },
+        { "label": "Point32Health provider page", "url": "https://www.point32health.org/provider/network-plans/our-plans/tufts-health-plan-products", "note": "Verifies Point32Health is the parent organization of Tufts Health Plan." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "04t26ot",
+    "displayName": "Narayana Aaditya Ganeshkumar",
+    "headline": "Co-founder and CEO of Skillsync, a YC W26 company building AI-powered engineering hiring",
+    "company": "Skillsync",
+    "title": "CEO",
+    "location": "San Francisco, CA",
+    "tags": ["founder", "recruiting", "open source", "GitHub", "AI hiring", "YC"],
+    "confidence": "high",
+    "confidenceNote": "Y Combinator, Skillsync, LinkedIn preview, and public posts consistently verify identity, role, company, and product focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Narayana Aaditya Ganeshkumar is listed by Y Combinator as a founder and co-founder/CEO of Skillsync. Skillsync positions itself as a hiring platform that finds engineers based on what they have shipped in open source, and Narayana's public LinkedIn activity describes Skillsync Profiles as converting GitHub work into a live resume.",
+    "sources": {
+      "primary": [
+        { "label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/skillsync", "note": "Lists Narayana Aaditya Ganeshkumar as founder and co-founder/CEO of Skillsync, YC W26." },
+        { "label": "Skillsync website", "url": "https://skillsync.wiki/", "note": "First-party site describes Skillsync as a tool to find engineers and scientists from real open-source work." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/narayanaaaditya", "note": "Public preview lists Narayana Aaditya as Co-founder and CEO of Skillsync." },
+        { "label": "Narayana Aaditya LinkedIn post", "url": "https://www.linkedin.com/posts/narayanaaaditya_today-were-launching-skillsync-profiles-activity-7429193344376836096-oG90", "note": "Public post describes launching Skillsync Profiles to turn GitHub activity into a live resume." }
+      ],
+      "secondary": [
+        { "label": "F6S Skillsync profile", "url": "https://www.f6s.com/company/skillsync.wiki", "note": "Lists Skillsync in San Francisco and Narayana Aaditya as co-founder and CEO." },
+        { "label": "OpenSphere Nexus profile", "url": "https://nexus.opensphere.ai/skillsync/narayana-aaditya", "note": "Secondary profile summarizes Narayana as Skillsync co-founder and CEO." }
+      ]
+    }
+  }
+]

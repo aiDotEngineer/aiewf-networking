@@ -1,0 +1,402 @@
+[
+  {
+    "lookupKey": "1qsjl5v",
+    "displayName": "Tobin Winters",
+    "headline": "Insurance engineering leader modernizing core systems at Vermont Mutual Insurance Group",
+    "company": "Vermont Mutual Insurance Group",
+    "title": "Director of Engineering",
+    "location": "Montpelier, US",
+    "tags": ["insurance technology", "engineering leadership", "enterprise systems", "software delivery", "financial services"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public business-directory sources match Tobin Winters to Vermont Mutual engineering leadership in Vermont, but detailed public biography is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Engineering at Vermont Mutual Insurance Group, focused on software delivery and technology leadership inside a regional insurance carrier. Useful match for conversations on insurance systems, enterprise modernization, and pragmatic AI adoption in regulated environments.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tobin-winters-74341a6",
+          "note": "Public profile identifies Tobin Winters as Director of Engineering at Vermont Mutual Insurance Group in Montpelier, Vermont."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "RocketReach profile",
+          "url": "https://rocketreach.co/tobin-winters-profile_b5c887b8f42e3845",
+          "note": "Business profile associates Tobin Winters with Vermont Mutual Insurance Group engineering leadership."
+        },
+        {
+          "label": "Apollo profile",
+          "url": "https://www.apollo.io/people/Tobin/Winters/57d3a466a6da985408686f9d",
+          "note": "Professional directory profile links Tobin Winters to Vermont Mutual Insurance Group as an engineering leader."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12eoe5j",
+    "displayName": "Todd Fisher",
+    "headline": "Software engineering leader building AI and venture-backed product teams",
+    "company": "Philo Ventures",
+    "title": "Head of Software Engineering",
+    "location": "",
+    "tags": ["software engineering leadership", "venture studio", "AI products", "edtech", "product engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn public evidence and Philo Ventures pages connect Todd Fisher to software engineering leadership; public sources are sparse on current title specifics.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Software Engineering at Philo Ventures, with public signals around venture-backed AI product work and prior education-technology leadership. Good match for conversations on startup engineering, product delivery, and AI-native software teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/toddfisher",
+          "note": "Person-specific profile for Todd Fisher with senior software-engineering leadership context."
+        },
+        {
+          "label": "LinkedIn Philo Ventures post",
+          "url": "https://www.linkedin.com/posts/toddfisher_ai-venturestudio-startups-activity-7308150430624686080-qwQq",
+          "note": "Public post from the profile connects Todd Fisher with Philo Ventures, AI, venture-studio, and startup work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Philo Ventures",
+          "url": "https://philoventures.com/",
+          "note": "Company site describes Philo Ventures as a venture studio building AI and technology companies."
+        },
+        {
+          "label": "Philo Ventures LinkedIn company page",
+          "url": "https://www.linkedin.com/company/philo-ventures",
+          "note": "Company profile corroborates Philo Ventures as an AI-focused venture studio context for the participant."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hg27bp",
+    "displayName": "Todd Stewart",
+    "headline": "AI infrastructure manager working on enterprise data and AI platforms at Progressive",
+    "company": "Progressive",
+    "title": "AI Manager",
+    "location": "Cleveland, US",
+    "tags": ["AI infrastructure", "insurance technology", "data engineering", "enterprise AI", "platform leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org evidence match Todd Stewart to Progressive data-engineering and AI-infrastructure management; public evidence outside professional directories is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI manager at Progressive with public evidence around data engineering and AI infrastructure leadership. Useful match for attendees working on insurance AI, platform modernization, governed AI systems, and enterprise deployment constraints.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/toddrstewart",
+          "note": "Public profile identifies Todd Stewart with Progressive and data-engineering and AI-infrastructure management."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/progressive/org-chart/todd-stewart",
+          "note": "Org profile lists Todd Stewart as Manager, Data Engineering and AI Infrastructure at Progressive."
+        },
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Todd/Stewart",
+          "note": "Public directory result associates the Todd Stewart profile with Progressive AI and data-engineering infrastructure."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0n8u335",
+    "displayName": "Tofi Buzali",
+    "headline": "New-products operator bringing AI and digital-commerce experience into Proscai",
+    "company": "Proscai",
+    "title": "New Products Lead",
+    "location": "",
+    "tags": ["new products", "AI products", "commerce technology", "retail operations", "startup leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and Proscai sources match Tofi Buzali to Proscai and new-product work, with additional background evidence from accelerator and education sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "New Products Lead at Proscai, working on AI-enabled products for retail and commerce operations. Useful match for conversations about product discovery, applied AI in vertical software, and translating operational workflows into new software products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tofibuzali",
+          "note": "Public profile connects Tofi Buzali with Proscai and product leadership."
+        },
+        {
+          "label": "Proscai website",
+          "url": "https://www.proscai.com/",
+          "note": "Company site describes Proscai's retail, fashion, and commerce software context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Tofi Buzali website",
+          "url": "https://www.tofibuzali.com/",
+          "note": "Personal site and portfolio identity for Tofi Buzali."
+        },
+        {
+          "label": "Carnegie Mellon University listing",
+          "url": "https://www.cmu.edu/swartz-center-for-entrepreneurship/education-and-resources/project-olympus/probes/probe-companies.html",
+          "note": "CMU Project Olympus listing includes Tofi Buzali in a startup and product-building context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1dmuwcl",
+    "displayName": "Tom Watson",
+    "headline": "Healthtech CTO building AI-assisted navigation for care and wellness decisions",
+    "company": "Healiom",
+    "title": "CTO",
+    "location": "San Mateo, US",
+    "tags": ["healthtech", "AI assistants", "care navigation", "software architecture", "startup CTO"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and Healiom sources match Tom Watson to Healiom technical leadership, but public source depth is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Healiom, a healthtech startup working on AI-assisted care and wellness navigation. Good match for conversations about healthcare UX, guarded AI assistants, startup architecture, and translating clinical workflows into usable products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tom-watson-27a149",
+          "note": "Public profile associates Tom Watson with Healiom technical leadership."
+        },
+        {
+          "label": "Healiom website",
+          "url": "https://www.healiom.com/",
+          "note": "Company site describes Healiom's AI-assisted health and wellness navigation product."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Healiom LinkedIn company page",
+          "url": "https://www.linkedin.com/company/healiom",
+          "note": "Company profile corroborates the Healiom healthtech context."
+        },
+        {
+          "label": "LinkedIn people result",
+          "url": "https://www.linkedin.com/search/results/people/?keywords=Tom%20Watson%20Healiom",
+          "note": "People search result ties Tom Watson to Healiom in public LinkedIn indexing."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wgwpaf",
+    "displayName": "Tomás Hernando Kofman",
+    "headline": "Not Diamond co-founder building model routing and evaluation infrastructure for AI applications",
+    "company": "Not Diamond",
+    "title": "CEO & Co-Founder",
+    "location": "",
+    "tags": ["model routing", "AI evaluation", "LLM infrastructure", "developer tools", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Not Diamond, LinkedIn, X, GitHub, and YC sources consistently identify Tomás Hernando Kofman as Not Diamond co-founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and co-founder of Not Diamond, building infrastructure for routing AI prompts to the right model and evaluating model performance. Strong match for conversations on LLM selection, evals, cost and latency tradeoffs, and developer tooling.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Not Diamond about page",
+          "url": "https://www.notdiamond.ai/about",
+          "note": "Company page identifies Tomás Hernando Kofman as co-founder of Not Diamond."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tomashernandokofman",
+          "note": "Public profile lists Tomás Hernando Kofman as CEO and co-founder of Not Diamond."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/tomashk",
+          "note": "Public social profile identifies him with Not Diamond and AI-model routing work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/not-diamond",
+          "note": "YC profile describes Not Diamond and lists Tomás Hernando Kofman as a founder."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/tomashk",
+          "note": "Person-specific GitHub profile using the same public handle as his X profile."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wftu0r",
+    "displayName": "Tomasz Burzynski",
+    "headline": "Chief data officer leading Data and AI strategy for InPost Group",
+    "company": "InPost Group",
+    "title": "Chief Data Officer, Data&AI",
+    "location": "Paris, FR",
+    "tags": ["data strategy", "AI leadership", "logistics technology", "machine learning", "enterprise analytics"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, InPost investor materials, and AI-event sources consistently identify Tomasz Burzynski as InPost Group's Chief Data Officer for Data and AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief Data Officer for Data and AI at InPost Group, working on data strategy, AI, and analytics for large-scale parcel and logistics operations. Relevant match for logistics AI, operational analytics, and enterprise data-platform conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://pl.linkedin.com/in/tomasz-burzynski-6b802",
+          "note": "Public profile identifies Tomasz Burzynski as Chief Data Officer, Data and AI at InPost Group."
+        },
+        {
+          "label": "InPost investor presentation",
+          "url": "https://inpost.eu/sites/default/files/2025-03/Capital%20Markets%20Day%202025%20presentation.pdf",
+          "note": "Official InPost Capital Markets Day material references Data and AI leadership and InPost's data strategy context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Tomasz+Burzynski",
+          "note": "Conference schedule lists Tomasz Burzynski from InPost Group with Chief Data Officer, Data and AI title."
+        },
+        {
+          "label": "RocketReach profile",
+          "url": "https://rocketreach.co/tomasz-burzynski-profile_b5c7f4e0f42e0c18",
+          "note": "Professional directory profile associates Tomasz Burzynski with InPost Group and data leadership."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fkauvt",
+    "displayName": "Tommaso Galeazzo",
+    "headline": "AI engineer applying LLMs, data science, and biomedical technology in pharma",
+    "company": "AbbVie",
+    "title": "Senior AI Engineer",
+    "location": "Los Angeles, US",
+    "tags": ["pharma AI", "LLMs", "data science", "biomedical engineering", "machine learning"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, GitHub, and academic-publication evidence match Tommaso Galeazzo to AI engineering and biomedical-data work; current AbbVie title is strongest in LinkedIn evidence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior AI Engineer at AbbVie with public signals across biomedical engineering, data science, and LLM-oriented software work. Useful match for conversations on pharma AI, applied machine learning, scientific data, and AI systems in regulated life-sciences contexts.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tommaso-galeazzo",
+          "note": "Public profile identifies Tommaso Galeazzo as a Senior AI Engineer at AbbVie."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/tmsglz",
+          "note": "Person-specific GitHub profile for Tommaso Galeazzo with software and AI-related project activity."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?user=66e-8AAAAAAJ",
+          "note": "Scholar profile lists publications by Tommaso Galeazzo in biomedical and computational topics."
+        },
+        {
+          "label": "ORCID record",
+          "url": "https://orcid.org/0000-0002-9236-2259",
+          "note": "Researcher identifier record for Tommaso Galeazzo supports the same technical and biomedical identity."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0xfs9a7",
+    "displayName": "Tommathew Thomas",
+    "headline": "Enterprise architecture leader shaping digital foundations at McCain Foods",
+    "company": "McCain Foods",
+    "title": "Head of Enterprise Architecture",
+    "location": "Chicago, US",
+    "tags": ["enterprise architecture", "food manufacturing", "digital transformation", "data platforms", "technology strategy"],
+    "confidence": "medium",
+    "confidenceNote": "Public evidence uses the name Tommy Thomas and matches McCain Foods enterprise-architecture leadership; participant-provided Tommathew appears to be a formal-name variant.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Enterprise Architecture at McCain Foods, with public evidence under the name Tommy Thomas. Relevant match for enterprise AI readiness, architecture governance, manufacturing technology, and large-company digital transformation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tommythomas",
+          "note": "Public profile identifies Tommy Thomas with McCain Foods and enterprise architecture leadership."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Consumer Goods Technology article",
+          "url": "https://consumergoods.com/mccain-foods-names-tommy-thomas-head-enterprise-architecture",
+          "note": "Industry article says McCain Foods hired Tommy Thomas to lead enterprise architecture and cloud and AI technology architecture."
+        },
+        {
+          "label": "Consumer Goods Technology McCain Foods page",
+          "url": "https://consumergoods.com/company/mccain-foods",
+          "note": "Company topic page links the McCain Foods article about Tommy Thomas leading enterprise architecture."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1io61pu",
+    "displayName": "Tony Fabrikant",
+    "headline": "CoupleWork AI co-founder building AI-guided relationship and coaching support",
+    "company": "CoupleWork AI",
+    "title": "Cofounder - CEO, CTO",
+    "location": "US",
+    "tags": ["AI coaching", "relationship technology", "consumer AI", "mental wellness", "startup founder"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and CoupleWork AI sources match Tony Fabrikant to the company and founder/technical leadership, but broader independent coverage is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder, CEO, and CTO of CoupleWork AI, building AI-guided relationship and coaching support. Useful match for conversations on consumer AI, emotionally sensitive product design, startup engineering, and guardrails for coaching-style assistants.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tony-fabrikant",
+          "note": "Public profile identifies Tony Fabrikant as co-founder, CEO, and CTO of CoupleWork AI."
+        },
+        {
+          "label": "CoupleWork AI website",
+          "url": "https://couplework.ai/",
+          "note": "Company site describes CoupleWork AI as an AI-guided relationship and couple-support product."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CoupleWork AI LinkedIn company page",
+          "url": "https://www.linkedin.com/company/couplework-ai",
+          "note": "Company profile corroborates CoupleWork AI as the organization tied to the participant."
+        },
+        {
+          "label": "Product Hunt listing",
+          "url": "https://www.producthunt.com/products/couplework-ai",
+          "note": "Product listing describes CoupleWork AI as an AI relationship-coaching product."
+        }
+      ]
+    }
+  }
+]

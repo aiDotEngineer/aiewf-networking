@@ -1,0 +1,125 @@
+[
+  {
+    "lookupKey": "1s4mxvy",
+    "displayName": "Anthony Dougherty",
+    "headline": "Senior R&D leader for emissions-monitoring data-controller products",
+    "company": "Alliance Technical Group",
+    "title": "Sr. Mgr. R&D",
+    "location": "",
+    "tags": ["environmental compliance", "CEMS", "data acquisition systems", "industrial monitoring", "product development"],
+    "confidence": "high",
+    "confidenceNote": "Public ESC Spectrum pages identify Anthony Dougherty as Senior R&D Manager and describe his responsibility for 8864 development; Alliance acquisition pages connect ESC Spectrum to Alliance Technical Group.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior R&D manager focused on continuous emissions monitoring and data acquisition systems. Anthony has led development work around ESC Spectrum's 8864 data-controller platform, with experience spanning project engineering, product engineering, customer success, business analysis, and software development.",
+    "sources": {
+      "primary": [
+        {"label": "ESC Spectrum user group bio", "url": "https://escspectrum.com/user-group-sessions-and-bios-2024/", "note": "Lists Anthony Dougherty as Senior R&D Manager and describes his ESC Spectrum tenure, 8864 responsibilities, and electrical engineering background."},
+        {"label": "Alliance Technical Group acquisition announcement", "url": "https://www.alliancetg.com/post/alliance-technical-group-acquires-esc-spectrum-cementing-global-leadership-in-continuous-emissions", "note": "Shows ESC Spectrum became part of Alliance Technical Group, tying his ESC Spectrum role to the current company context."}
+      ],
+      "secondary": [
+        {"label": "ESC Spectrum 8864 Gen 2 release", "url": "https://escspectrum.com/new-release-8864-data-controller-generation-2/", "note": "Quotes Anthony Dougherty as Senior R&D Manager on the 8864 Data Controller Generation 2 product."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0pu1m2t",
+    "displayName": "Anton Forsman",
+    "headline": "Co-founder building agent-oriented cloud infrastructure tooling",
+    "company": "Spawned.ai",
+    "title": "Co-Founder",
+    "location": "Stockholm, Sweden",
+    "tags": ["cloud infrastructure", "agentic software", "developer tools", "platform engineering", "startups"],
+    "confidence": "high",
+    "confidenceNote": "Spawned's own site lists Anton Forsman as a co-founder; LinkedIn search snippets align on Spawned and Sweden.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of Spawned.ai, a platform aimed at making cloud infrastructure easier for agents and engineering teams to deploy, version, and operate across AWS, GCP, and Azure.",
+    "sources": {
+      "primary": [
+        {"label": "Spawned about page", "url": "https://spawned.ai/about", "note": "Lists Anton Forsman as a Spawned co-founder and describes the company's mission around intent-based infrastructure."},
+        {"label": "Spawned landing page", "url": "https://spawned.ai/", "note": "Describes Spawned as a cloud platform for agents to handle infrastructure securely."}
+      ],
+      "secondary": [
+        {"label": "Anton Forsman LinkedIn profile", "url": "https://www.linkedin.com/in/antonforsman", "note": "Search result identifies Anton Forsman as Co-Founder at Spawned in Sweden."},
+        {"label": "Spawned LinkedIn company page", "url": "https://www.linkedin.com/company/spawnedai", "note": "Company page snippet describes Spawned as an AI-powered platform-as-a-service and lists Anton Forsman among employees."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1blpmks",
+    "displayName": "Anton Kaspirovich",
+    "headline": "Technology leader associated with BrokerSnapshot's freight-risk intelligence platform",
+    "company": "Brokersnapshot LLC",
+    "title": "CTO",
+    "location": "Algonquin, US",
+    "tags": ["logistics technology", "freight brokerage", "carrier vetting", "compliance data", "risk intelligence"],
+    "confidence": "low",
+    "confidenceNote": "BrokerSnapshot's public site verifies the company and product domain, but public evidence directly verifying Anton Kaspirovich's CTO role at BrokerSnapshot is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology executive connected to BrokerSnapshot, a carrier and broker intelligence platform for logistics teams. Useful contact for conversations about freight-risk data, carrier vetting workflows, compliance records, and applied data products in transportation.",
+    "sources": {
+      "primary": [
+        {"label": "BrokerSnapshot website", "url": "https://brokersnapshot.com/", "note": "Describes the platform's carrier and broker search, compliance, safety, insurance, and FMCSA-data use cases."}
+      ],
+      "secondary": [
+        {"label": "Anton Kaspirovich LinkedIn profile", "url": "https://www.linkedin.com/in/anton-kaspirovich", "note": "Exact-name profile found, but snippet does not verify the BrokerSnapshot CTO role."},
+        {"label": "BrokerSnapshot LinkedIn post", "url": "https://www.linkedin.com/posts/broker-snapshot_brokersnapshot-vetting-compliance-activity-7269761209476780033-c9_P", "note": "Company post snippet describes BrokerSnapshot as a carrier vetting and monitoring platform."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1cvbkoe",
+    "displayName": "Aoran Yang",
+    "headline": "Technology executive at a New York growth-capital investment fund",
+    "company": "3i Fund Management",
+    "title": "CTO",
+    "location": "New York, US",
+    "tags": ["investment technology", "financial services", "structured finance", "data systems", "growth capital"],
+    "confidence": "low",
+    "confidenceNote": "Public sources verify 3i Fund's New York investment-fund footprint, but public evidence directly confirming Aoran Yang's CTO role is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO associated with 3i Fund Management, a New York-based private investment fund. Likely relevant for conversations at the intersection of investment operations, data systems, structured finance, and AI tooling for financial workflows.",
+    "sources": {
+      "primary": [
+        {"label": "3i Fund website", "url": "https://3ifund.com/", "note": "Official site describes 3i Fund as a New York City-based private investment fund established in 2019."},
+        {"label": "3i Fund LinkedIn company page", "url": "https://www.linkedin.com/company/3i-management-llc", "note": "Company page snippet identifies 3i Fund Management as a New York-based financial services fund."}
+      ],
+      "secondary": [
+        {"label": "PitchBook profile for 3i Fund", "url": "https://pitchbook.com/profiles/investor/490746-16", "note": "Secondary investor profile describes 3i Fund as a hedge fund manager based in New York."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qbjj3q",
+    "displayName": "Aparna Dhinakaran",
+    "headline": "Co-founder and CPO of Arize AI, focused on AI observability and evaluation",
+    "company": "Arize AI",
+    "title": "Co-Founder",
+    "location": "Berkeley, CA",
+    "tags": ["AI observability", "LLM evaluation", "ML infrastructure", "agent evaluation", "production AI"],
+    "confidence": "high",
+    "confidenceNote": "Arize and Aparna's public profiles consistently identify her as Co-Founder and Chief Product Officer, with prior ML infrastructure experience at Uber, Apple, and TubeMogul.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and Chief Product Officer at Arize AI, working on observability and evaluation for production AI systems and agents. Previously worked in ML engineering and infrastructure at Uber, Apple, and TubeMogul, and is a frequent speaker and writer on ML/LLM reliability.",
+    "sources": {
+      "primary": [
+        {"label": "Arize author profile", "url": "https://arize.com/author/aparna-dhinakaran/", "note": "Arize bio identifies Aparna as Co-Founder and Chief Product Officer and summarizes her AI observability and prior ML infrastructure background."},
+        {"label": "Aparna Dhinakaran personal website", "url": "https://www.aparnadhinakaran.com/", "note": "Personal site provides background on her computer vision and engineering experience."},
+        {"label": "Aparna Dhinakaran X profile", "url": "https://x.com/aparnadhinak?lang=en", "note": "Profile snippet identifies her as founder at Arize AI and notes posts about agents and evals."}
+      ],
+      "secondary": [
+        {"label": "Aparna Dhinakaran LinkedIn profile", "url": "https://www.linkedin.com/in/aparnadhinakaran", "note": "LinkedIn snippet identifies her as Co-Founder at Arize AI and locates her in Berkeley."},
+        {"label": "AI & Big Data Expo speaker profile", "url": "https://www.ai-expo.net/northamerica/speaker/aparna-dhinakaran/", "note": "Speaker profile summarizes her Arize role, prior Uber and Apple ML work, Berkeley EECS background, and ML infrastructure experience."}
+      ]
+    }
+  }
+]

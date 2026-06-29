@@ -1,0 +1,211 @@
+[
+  {
+    "lookupKey": "14l747n",
+    "displayName": "Adam Townsend",
+    "headline": "Co-founder at Pebbly Beach AI working on practical AI adoption for SMBs",
+    "company": "Pebbly Beach AI",
+    "title": "Co-founder",
+    "location": "Sunshine Beach, Queensland, Australia",
+    "tags": ["AI adoption", "SMB workflows", "AI governance", "automation", "analytics"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn profile and Pebbly Beach AI company pages align on name, role, company, and Sunshine Coast location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Adam is co-founder of Pebbly Beach AI, an Australia-based AI services and platform company focused on helping small and mid-sized businesses adopt AI in practical workflows. He is a useful match for founders and operators thinking about AI strategy, governance, workflow automation, analytics, and team adoption.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://au.linkedin.com/in/adam-townsenddance",
+          "note": "Lists Adam Townsend as Co-founder at Pebbly Beach AI in Sunshine Coast, Queensland."
+        },
+        {
+          "label": "Pebbly Beach AI LinkedIn",
+          "url": "https://www.linkedin.com/company/pebblybeach",
+          "note": "Company page lists Adam Townsend among employees and describes AI strategy, governance, workflow automation, analytics, and training specialties."
+        },
+        {
+          "label": "Pebbly Beach AI Hugging Face",
+          "url": "https://huggingface.co/PebblyAbrazo",
+          "note": "Organization profile links to pebblybeach.ai and lists Adam Townsend among team members."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Adam Townsend Medium archive",
+          "url": "https://startupsventurecapital.com/selling-professional-services-before-good-to-great-9c1d48fb9c09",
+          "note": "Older article by Adam Townsend; useful background on professional-services thinking."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "09zp8ym",
+    "displayName": "Adam Wayland",
+    "headline": "Partner and Managing Director at Accso South Africa",
+    "company": "Accso South Africa",
+    "title": "Partner and Managing Director",
+    "location": "Cape Town, South Africa",
+    "tags": ["software engineering", "AI innovation", "business development", "nearshore delivery", "South Africa tech"],
+    "confidence": "high",
+    "confidenceNote": "Accso's own Cape Town page names Adam Wayland as Partner and Managing Director; LinkedIn and video references corroborate the South Africa leadership role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Adam is Partner and Managing Director for Accso South Africa, with a focus on HR and business development for Accso's Cape Town presence. He is a good match for conversations on international software delivery, South African engineering teams, and AI-native software services.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Accso Cape Town",
+          "url": "https://accso.com/about-us/locations/cape-town",
+          "note": "Accso lists Adam Wayland as Partner and Managing Director for the Cape Town office."
+        },
+        {
+          "label": "LinkedIn post",
+          "url": "https://www.linkedin.com/posts/adam-wayland_i-am-proud-to-head-up-accsos-first-international-activity-7033809568379883520-lnSC",
+          "note": "Public post describes Adam Wayland as managing director of Accso South Africa."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI-Native Software Engineering interview",
+          "url": "https://www.youtube.com/watch?v=12vlikG08WQ",
+          "note": "Interview featuring Adam Wayland on Accso South Africa and AI/software engineering."
+        },
+        {
+          "label": "Accso LinkedIn announcement",
+          "url": "https://www.linkedin.com/posts/adam-wayland_accso-wegrow-itservices-activity-6934565521438691328-AOew",
+          "note": "Announcement describes him as the new managing director for Accso South Africa."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "153lwud",
+    "displayName": "Aderlei Coraini de Souza",
+    "headline": "Engineering leader; attendee-provided role is Engineering Manager at Google",
+    "company": "Google",
+    "title": "Engineering Manager",
+    "location": "Sao Paulo, Brazil",
+    "tags": ["engineering leadership", "banking technology", "APIs", "digital transformation", "Brazil tech"],
+    "confidence": "low",
+    "confidenceNote": "Public evidence supports Aderlei Coraini as an engineering leader in Santander/F1RST contexts, but does not independently verify the current Google Engineering Manager role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aderlei is an engineering leader in Sao Paulo. Public sources show prior visibility in Santander/F1RST technology, banking-as-a-service, APIs, and digital transformation contexts; attendee-provided data says he is now an Engineering Manager at Google. Best matched with engineering leadership, platform/API, and financial-technology conversations.",
+    "sources": {
+      "primary": [],
+      "secondary": [
+        {
+          "label": "Semana Tech / LinkedIn event post",
+          "url": "https://pt.linkedin.com/posts/lanafirma_entrevista-ao-vivo-com-o-banco-santander-activity-7098213239892656128-Ep6S",
+          "note": "Lists Aderlei Coraini as Head of Engineering at Santander for a technology impact discussion."
+        },
+        {
+          "label": "YouTube talk listing",
+          "url": "https://www.youtube.com/watch?v=6XP-LCLJBsE",
+          "note": "Video metadata lists Aderlei Coraini as Head of Engineering at Santander."
+        },
+        {
+          "label": "F1RST Digital Services LinkedIn repost",
+          "url": "https://www.linkedin.com/posts/luis-bittencourt-889273_visita-ao-be-tech-na-espanha-activity-7066942692466790400-qC7R",
+          "note": "Mentions Aderlei Coraini as a F1RST SanExpert discussing Be Tech With Santander."
+        },
+        {
+          "label": "CNPq public record",
+          "url": "https://memoria.cnpq.br/pt/chamadas-publicas%3Bjsessionid%3D3C6AB8100A399846A9B4283A8D367097?detalha=chamadaDetalhada&exibe=exibe&filtro=resultados&id=411-27-1808&idDivulgacao=1381&idResultado=411-27-1808&p_p_id=resultadosportlet_WAR_resultadoscnpqportlet_INSTANCE_0ZaM",
+          "note": "Older public record matching the full name Aderlei Coraini de Souza."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0psub7m",
+    "displayName": "Adi Singh",
+    "headline": "Co-founder of AgentMail, building email infrastructure for AI agents",
+    "company": "AgentMail",
+    "title": "Co-founder",
+    "location": "San Francisco Bay Area",
+    "tags": ["AI agents", "email infrastructure", "developer tools", "YC", "agent identity"],
+    "confidence": "high",
+    "confidenceNote": "YC, LinkedIn, X, and AgentMail sources consistently identify Adi Singh as a co-founder/founder of AgentMail.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Adi is co-founder of AgentMail, a YC S25 company building email inbox APIs for AI agents. He is relevant for conversations about agent infrastructure, autonomous workflows, developer tools, email identity, and how agents communicate with existing business systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AgentMail",
+          "url": "https://www.agentmail.to/",
+          "note": "Describes AgentMail as an email inbox API for AI agents."
+        },
+        {
+          "label": "Y Combinator",
+          "url": "https://www.ycombinator.com/companies/agentmail",
+          "note": "Lists Adi Singh as a founder and describes AgentMail's product and YC S25 status."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adivirsingh13",
+          "note": "Lists Adi Singh as Co-Founder of AgentMail."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/adisingh",
+          "note": "Profile bio says co-founder at AgentMail."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "WorkOS MCP Night recap",
+          "url": "https://workos.com/blog/agentmail-mcp-night-4-email-identity-layer-agents",
+          "note": "Recap of Adi Singh presenting AgentMail and email as an identity layer for agents."
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/03/10/agentmail-raises-6m-to-build-an-email-service-for-ai-agents/",
+          "note": "Reports on AgentMail's product and financing."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16xeta8",
+    "displayName": "Aditya Chauhan",
+    "headline": "VP Engineering at Get My Parking, focused on AI, IoT, and architecture",
+    "company": "Get My Parking",
+    "title": "Vice President, Engineering",
+    "location": "Bengaluru, India",
+    "tags": ["engineering leadership", "parking technology", "IoT", "AI", "cloud platforms"],
+    "confidence": "high",
+    "confidenceNote": "Get My Parking's own site and LinkedIn profile snippets both confirm the VP Engineering role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aditya is VP Engineering at Get My Parking, a smart-parking technology company. He is useful for conversations about engineering leadership, IoT-enabled mobility infrastructure, cloud platforms, architecture, and applying AI in operational systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Get My Parking about page",
+          "url": "https://www.getmyparking.com/about.php",
+          "note": "Company team page lists Aditya Chauhan as Vice President, Engineering."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://in.linkedin.com/in/aditya-chauhan12",
+          "note": "Lists Aditya Chauhan as Vice President, Engineering at Get My Parking with AI, IoT, and architecture focus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Get My Parking careers page",
+          "url": "https://www.getmyparking.com/career.php",
+          "note": "Repeats team listing for Aditya Chauhan as Vice President, Engineering."
+        }
+      ]
+    }
+  }
+]

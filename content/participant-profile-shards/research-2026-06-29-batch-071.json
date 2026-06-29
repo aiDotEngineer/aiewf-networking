@@ -1,0 +1,361 @@
+[
+  {
+    "lookupKey": "0j621am",
+    "displayName": "Prathmesh Patel",
+    "headline": "CEO of MCPJam building developer tooling around the Model Context Protocol.",
+    "company": "MCPJam",
+    "title": "CEO",
+    "location": "San Francisco, US",
+    "tags": ["MCP", "developer tools", "AI agents", "debugging", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "MCPJam, GitHub, LinkedIn, and X consistently identify Prathmesh Patel with MCPJam and MCP developer tooling; San Francisco is supported by public social/profile signals.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO of MCPJam, building tools for discovering, testing, and debugging MCP servers and agent integrations. Useful match for conversations on MCP adoption, agent developer experience, and startup infrastructure for AI tooling.",
+    "sources": {
+      "primary": [
+        {
+          "label": "MCPJam team page",
+          "url": "https://www.mcpjam.com/team",
+          "note": "Company team page identifies Prathmesh Patel as founder/CEO of MCPJam."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/prathmesh-p",
+          "note": "Developer profile links Prathmesh Patel to MCPJam and MCP-related repositories."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/prathmesh_fyi",
+          "note": "Public social profile describes MCPJam work and San Francisco founder context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/prathmesh-patel-b18894201",
+          "note": "Professional profile corroborates MCPJam founder identity and prior software engineering background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1g3g3bx",
+    "displayName": "Presciliano Neto",
+    "headline": "Engineering manager at EBANX focused on platform engineering and fintech systems.",
+    "company": "EBANX",
+    "title": "Senior Manager",
+    "location": "Curitiba, BR",
+    "tags": ["fintech", "platform engineering", "engineering management", "payments", "Brazil"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, The Org, and EBANX event/media sources connect Presciliano Neto to EBANX engineering leadership in Curitiba; public titles vary between engineering manager and senior platform engineering manager.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at EBANX with platform and payments experience in Latin American fintech. Good match for conversations about fintech infrastructure, engineering org design, and building reliable payment platforms.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/presciliano",
+          "note": "Professional profile identifies Presciliano Neto at EBANX in engineering leadership."
+        },
+        {
+          "label": "EBANX LinkedIn post",
+          "url": "https://www.linkedin.com/posts/ebanx_workatabanx-ebanxlife-devops-activity-7183462437024591872-JLZD",
+          "note": "EBANX post names Presciliano Neto in engineering and DevOps culture context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/ebanx/org-chart/presciliano-neto",
+          "note": "Org profile lists Presciliano Neto as Senior Platform Engineering Manager at EBANX."
+        },
+        {
+          "label": "YouTube EBANX Engineering",
+          "url": "https://www.youtube.com/watch?v=wcUDNs89UHo",
+          "note": "EBANX engineering video features Presciliano Neto in company technical content."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pg35mg",
+    "displayName": "Priyanka Phatak",
+    "headline": "Engineering leader at Anthropic working on Claude and developer-facing AI product infrastructure.",
+    "company": "Anthropic",
+    "title": "Engineering Leader",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["Anthropic", "Claude", "engineering leadership", "product infrastructure", "AI agents"],
+    "confidence": "high",
+    "confidenceNote": "Anthropic, LinkedIn, and public launch/event materials identify Priyanka Phatak as an Anthropic engineering leader with prior Lyft and Yammer engineering leadership experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at Anthropic with public work around Claude product infrastructure and managed-agent workflows. Useful match for conversations about AI product engineering, developer platforms, and scaling engineering teams around LLM products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/priyanka-phatak-60b2471",
+          "note": "Professional profile identifies Priyanka Phatak as an engineering leader at Anthropic."
+        },
+        {
+          "label": "Anthropic Console changelog",
+          "url": "https://console.anthropic.com/changelog/claude-managed-agents",
+          "note": "Anthropic product material credits Priyanka Phatak on Claude managed-agent work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule",
+          "note": "Conference schedule lists Priyanka Phatak of Anthropic in Claude managed-agent programming."
+        },
+        {
+          "label": "ThoughtSpot Beyond 2025 speaker profile",
+          "url": "https://www.thoughtspot.com/beyond/speakers/priyanka-phatak",
+          "note": "Speaker profile summarizes Anthropic engineering leadership and prior Lyft/Yammer experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1gn2biy",
+    "displayName": "Prukalpa Sankar",
+    "headline": "Co-founder and co-CEO of Atlan, building metadata and governance infrastructure for AI-ready data teams.",
+    "company": "Atlan",
+    "title": "Founder & Co-CEO",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["data catalog", "metadata", "data governance", "startup founder", "AI data infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Atlan, LinkedIn, Forbes, and investor profiles consistently identify Prukalpa Sankar as Atlan co-founder/co-CEO and a data infrastructure founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and co-CEO of Atlan, focused on active metadata, data governance, and data-collaboration infrastructure for modern AI and analytics teams. Strong match for conversations about enterprise data platforms, governance, and scaling data-product companies.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Atlan leadership page",
+          "url": "https://atlan.com/team/",
+          "note": "Atlan identifies Prukalpa Sankar as co-founder and co-CEO."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/prukalpasankar",
+          "note": "Professional profile corroborates Atlan founder/co-CEO role and Bay Area context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes profile",
+          "url": "https://www.forbes.com/profile/prukalpa-sankar/",
+          "note": "Forbes profile summarizes her Atlan founder role and data company background."
+        },
+        {
+          "label": "Sequoia profile",
+          "url": "https://www.sequoiacap.com/people/prukalpa-sankar/",
+          "note": "Investor profile describes Prukalpa Sankar as Atlan co-founder and CEO."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01rvc5k",
+    "displayName": "Qianru Lao",
+    "headline": "Member of Technical Staff at OpenAI working on inference and LLM systems.",
+    "company": "OpenAI",
+    "title": "Member of Technical Staff, Inference",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["OpenAI", "inference", "LLM systems", "machine learning", "AI infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, conference/research materials, and prior Databricks/Harvard signals match Qianru Lao to OpenAI inference and ML systems work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Member of Technical Staff on OpenAI inference, with prior public work across ML systems, LLM inference routing, and AI infrastructure. Useful match for conversations about model serving, inference efficiency, and production ML systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/qianru-lao",
+          "note": "Professional profile identifies Qianru Lao as Member of Technical Staff at OpenAI."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/qianru-lao",
+          "note": "Developer profile under the qianru-lao handle links to ML systems and research work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule",
+          "note": "Conference schedule lists Qianru Lao of OpenAI on inference-related programming."
+        },
+        {
+          "label": "Harvard data systems talk",
+          "url": "https://daslab.seas.harvard.edu/events/qianru-lao-databricks",
+          "note": "Academic talk page identifies Qianru Lao and prior Databricks systems work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0vj9maa",
+    "displayName": "Qingyi Wu",
+    "headline": "Product leader at One Health Link working on AI-enabled healthcare operations.",
+    "company": "One Health Link, Inc.",
+    "title": "Chief Product Officer",
+    "location": "United States",
+    "tags": ["healthcare", "product leadership", "AI healthcare", "clinical operations", "startup product"],
+    "confidence": "low",
+    "confidenceNote": "Public evidence connects Qingyi Wu to One Health Link, but the exact Chief Product Officer title is primarily attendee-provided and not strongly corroborated in the sources found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product leader at One Health Link, an AI healthcare startup focused on improving clinical and operational workflows. Relevant match for healthcare AI product conversations, especially around translating clinical needs into deployable workflow tools.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/qingyiwu",
+          "note": "Professional profile result ties Qingyi Wu to One Health Link product leadership."
+        },
+        {
+          "label": "One Health Link founder LinkedIn post",
+          "url": "https://www.linkedin.com/posts/yizhengmdphd_we-are-thrilled-to-share-that-one-health-link-activity-7259305473367126017-07Jt",
+          "note": "Company founder post mentions Qingyi Wu in One Health Link team context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "One Health Link website",
+          "url": "https://www.onehealthlink.com/",
+          "note": "Company site describes the healthcare AI product context for One Health Link."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "04g1dju",
+    "displayName": "Rachel Adam",
+    "headline": "Marketing leader at SonarSource focused on developer tools, code quality, and AI-era software delivery.",
+    "company": "SonarSource",
+    "title": "CMO",
+    "location": "Austin, Texas, US",
+    "tags": ["developer tools", "marketing leadership", "code quality", "software delivery", "brand strategy"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently identify Rachel Adam as a Sonar marketing executive; several current public pages list VP Brand and Digital, while the CMO title is attendee-provided.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Marketing executive at SonarSource working in the developer-tools and code-quality ecosystem. Good match for conversations on positioning AI-era software quality tools, developer audiences, and technical go-to-market strategy.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/racheladam",
+          "note": "Professional profile identifies Rachel Adam in SonarSource marketing leadership."
+        },
+        {
+          "label": "SonarSource leadership page",
+          "url": "https://www.sonarsource.com/company/leadership/",
+          "note": "Company page lists Rachel Adam among SonarSource marketing leaders."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Austin Women in Tech Summit speaker profile",
+          "url": "https://www.austinwomenintech.com/speakers/rachel-adam",
+          "note": "Speaker profile describes Rachel Adam's SonarSource marketing and brand leadership background."
+        },
+        {
+          "label": "Sonar blog author page",
+          "url": "https://www.sonarsource.com/blog/author/rachel-adam/",
+          "note": "Sonar author page links Rachel Adam to company thought leadership."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rxhzt2",
+    "displayName": "Rafael Brens",
+    "headline": "Software architect and AI engineer with public work in machine learning and distributed systems.",
+    "company": "Brens",
+    "title": "Software Architect",
+    "location": "Miami, US",
+    "tags": ["software architecture", "machine learning", "distributed systems", "AI engineering", "technical writing"],
+    "confidence": "medium",
+    "confidenceNote": "Medium, arXiv, and professional profile sources match Rafael Brens to software architecture and ML/AI work; the submitted Brens company and Miami location were not strongly corroborated in public sources found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software architect and AI engineer with public technical writing and research around machine learning, embeddings, and distributed systems. Useful match for conversations on architecture, applied ML systems, and translating research ideas into production software.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Medium profile",
+          "url": "https://medium.com/@rafaelbrens",
+          "note": "Personal writing profile for Rafael Brens with technical AI and software posts."
+        },
+        {
+          "label": "Torre profile",
+          "url": "https://torre.ai/rafaelbrens",
+          "note": "Professional profile lists Rafael Brens with senior software engineering and architecture background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "arXiv author search",
+          "url": "https://arxiv.org/search/?query=Rafael+Brens&searchtype=author",
+          "note": "Research index returns publications associated with Rafael Brens in ML-related areas."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0od4fqy",
+    "displayName": "Ragav Sridharan",
+    "headline": "Head of Engineering at Cyber Sierra building cybersecurity and compliance automation products.",
+    "company": "Cyber Sierra",
+    "title": "Head of Engineering",
+    "location": "Singapore / Bengaluru",
+    "tags": ["cybersecurity", "compliance automation", "engineering leadership", "SaaS", "AI security"],
+    "confidence": "high",
+    "confidenceNote": "Cyber Sierra, LinkedIn, GitHub, and event/content sources consistently identify Ragav Sridharan as engineering lead/head of engineering at Cyber Sierra.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Engineering at Cyber Sierra, working on cybersecurity, governance, risk, and compliance automation for modern companies. Strong match for conversations about secure AI adoption, engineering leadership, and productizing security workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Cyber Sierra team page",
+          "url": "https://www.cybersierra.co/team",
+          "note": "Company team page identifies Ragav Sridharan in Cyber Sierra engineering leadership."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ragavsridharan",
+          "note": "Professional profile ties Ragav Sridharan to Head of Engineering at Cyber Sierra."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/ragavsridharan",
+          "note": "Developer profile corroborates Ragav Sridharan's engineering identity and public technical work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Cyber Sierra blog",
+          "url": "https://www.cybersierra.co/blog",
+          "note": "Company content provides context for Cyber Sierra's cybersecurity and compliance automation product area."
+        }
+      ]
+    }
+  }
+]

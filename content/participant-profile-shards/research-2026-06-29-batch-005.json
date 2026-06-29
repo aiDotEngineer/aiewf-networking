@@ -1,0 +1,242 @@
+[
+  {
+    "lookupKey": "1wvn6pz",
+    "displayName": "AJ Asver",
+    "headline": "Founder and CEO building enterprise AI agents for compliance and due-diligence workflows",
+    "company": "Parcha",
+    "title": "CEO",
+    "location": "New York, US",
+    "tags": ["AI agents", "compliance automation", "KYB", "KYC", "fintech", "enterprise AI", "product leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Strong public match for AJ Asver as Parcha founder/CEO and AI-agent operator, though recent public profiles emphasize GREP and San Francisco Bay Area rather than the submitted New York location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AJ builds AI agents for serious enterprise workflows, with a focus on automating compliance, KYB/KYC, due diligence, and risk operations. He brings product and founder experience from Parcha/GREP plus prior fintech and platform roles at Brex, Coinbase, Google, and Compound.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ajasver",
+          "note": "Professional profile connecting AJ Asver to GREP/Parcha, Oxford, and prior product leadership."
+        },
+        {
+          "label": "Parcha",
+          "url": "https://www.parcha.ai/",
+          "note": "Company product surface for AI agents in compliance and due diligence."
+        },
+        {
+          "label": "Parcha blog author page",
+          "url": "https://blog.parcha.ai/author/aj/",
+          "note": "AJ-authored posts on Parcha, GREP, KYB, AML, due diligence, and agentic AI."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/_aj",
+          "note": "Public social profile describing Parcha/GREP work and prior company background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Kindred Ventures",
+          "url": "https://medium.com/kindred-ventures/our-investment-in-parcha-ai-agents-for-the-enterprise-f74d092e3339",
+          "note": "Investor profile of Parcha, its founders, and enterprise AI-agent thesis."
+        },
+        {
+          "label": "High Bit interview",
+          "url": "https://www.youtube.com/watch?v=zCGWDWCTYkE",
+          "note": "Interview with AJ Asver on scaling AI agents for real-world tasks."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0y32w51",
+    "displayName": "Akash Bhatia",
+    "headline": "BCG technology-sector leader advising enterprise software companies on AI strategy, growth, and GTM shifts",
+    "company": "Boston Consulting Group",
+    "title": "Managing Director & Senior Partner, Global Sector Leader, Technology",
+    "location": "Silicon Valley / Bay Area, US",
+    "tags": ["GenAI strategy", "enterprise software", "technology strategy", "go-to-market", "AI pricing", "growth tech", "consulting"],
+    "confidence": "medium",
+    "confidenceNote": "Strong public match for Akash Bhatia at BCG, but public sources list him as Managing Director & Senior Partner in the Silicon Valley/Bay Area rather than the submitted IT Director title and Los Angeles location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akash leads BCG's global technology sector work, advising software and technology companies on growth, GTM strategy, AI adoption, and business-model shifts. Recent work and writing focus on AI-first SaaS, agentic pricing, and how enterprise tech companies capture value from GenAI.",
+    "sources": {
+      "primary": [
+        {
+          "label": "BCG expert profile",
+          "url": "https://www.bcg.com/about/people/experts/akash-bhatia",
+          "note": "Official BCG profile with title, sector leadership, and focus areas."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akash-bhatia-bcg",
+          "note": "Professional profile preview for BCG role and technology-sector leadership."
+        },
+        {
+          "label": "BCG technology experts",
+          "url": "https://www.bcg.com/industries/technology-media-telecommunications/experts",
+          "note": "BCG leadership listing for technology, media, and telecommunications."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "BCG: AI software pricing",
+          "url": "https://www.bcg.com/publications/2025/rethinking-b2b-software-pricing-in-the-era-of-ai",
+          "note": "Co-authored BCG article on AI agents and software pricing."
+        },
+        {
+          "label": "BCG: AI disruptors",
+          "url": "https://www.bcg.com/publications/2026/meet-the-new-generation-of-ai-disruptors",
+          "note": "Recent BCG AI article listing Akash as an author."
+        },
+        {
+          "label": "The Org",
+          "url": "https://theorg.com/org/bcg/org-chart/akash-bhatia",
+          "note": "Secondary executive profile for BCG role and enterprise software focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03ehgtr",
+    "displayName": "Akbar Khan",
+    "headline": "AI leader at T-Mobile working around telecom AI and customer/network intelligence",
+    "company": "T-Mobile",
+    "title": "Director AI",
+    "location": "Seattle, US",
+    "tags": ["telecom AI", "enterprise AI", "customer experience", "network intelligence", "AI strategy", "5G"],
+    "confidence": "low",
+    "confidenceNote": "The attendee row ties Akbar Khan to Director AI at T-Mobile in Seattle, but public exact-name sources did not strongly verify the person, title, or location. Sources mainly validate T-Mobile's AI context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akbar is listed for this event as a Director of AI at T-Mobile. Treat this as a provisional match for conversations about telecom AI, AI-enabled customer experience, network intelligence, and practical deployment of AI in large-scale wireless operations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "T-Mobile and OpenAI announcement",
+          "url": "https://www.t-mobile.com/news/business/t-mobile-launches-intentcx-with-openai",
+          "note": "Company AI strategy context for intent-driven customer experience."
+        },
+        {
+          "label": "T-Mobile AI-RAN newsroom",
+          "url": "https://www.t-mobile.com/news/network/why-physical-ai-begins-with-intelligent-networks",
+          "note": "Company context for AI-RAN and network AI work in Bellevue."
+        },
+        {
+          "label": "T-Mobile real-time network AI",
+          "url": "https://www.t-mobile.com/news/network/live-translation-beta-registration",
+          "note": "Company context for real-time AI services built into the network."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Justia patents: T-Mobile Innovations",
+          "url": "https://patents.justia.com/assignee/t-mobile-innovations-llc?page=13",
+          "note": "Technical context for T-Mobile innovation activity, not a verified personal profile for this attendee."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "06him9m",
+    "displayName": "Akhil Bhambri",
+    "headline": "Engineering manager at Meta; likely relevant for large-scale software and AI product engineering",
+    "company": "Meta",
+    "title": "Engineering Manager",
+    "location": "",
+    "tags": ["engineering management", "Meta", "software engineering", "AI platforms", "large-scale systems", "product engineering"],
+    "confidence": "low",
+    "confidenceNote": "The attendee row ties Akhil Bhambri to Meta as an Engineering Manager, but public exact-name results point to multiple unrelated candidates and did not strongly verify the Meta role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akhil is listed for this event as an Engineering Manager at Meta. Treat this as a provisional profile for matchmaking around engineering leadership, large-scale product systems, AI platform adoption, and production software teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Engineering at Meta",
+          "url": "https://engineering.fb.com/",
+          "note": "Official engineering surface for Meta's large-scale technical work."
+        },
+        {
+          "label": "Meta Careers: AI",
+          "url": "https://www.metacareers.com/teams/technology/ai",
+          "note": "Official company context for Meta AI engineering roles and teams."
+        },
+        {
+          "label": "Meta Careers: Engineering Manager",
+          "url": "https://www.metacareers.com/blog/life-at-facebook-as-an-engineering-manager/",
+          "note": "Official company context for the engineering manager role, not a personal profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/Akhil/Bhambri",
+          "note": "Exact-name directory result showing multiple people with this name; insufficient to verify the Meta attendee match."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0e05ycc",
+    "displayName": "Akram Baharlouei",
+    "headline": "AI4Science machine-learning engineer with Meta AI background and wireless-systems research roots",
+    "company": "Altos Labs",
+    "title": "Machine Learning Engineer / Tech Lead",
+    "location": "San Francisco, US",
+    "tags": ["AI4Science", "machine learning", "Meta AI", "single-cell data", "wireless systems", "optimization", "research engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Strong exact-name evidence for Akram Baharlouei as an AI4Science professional with Altos Labs and former Meta AI context, but public sources do not clearly verify the submitted ML Engineer Tech Lead title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akram works in AI4Science and machine learning, with public evidence linking her to Altos Labs, former Meta AI work, and research spanning single-cell modeling, wireless communications, optimization, and cognitive-radio resource allocation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akram-baharlouei-61784421",
+          "note": "Professional profile preview linking Akram to AI4Science, Altos Labs, Meta AI background, and San Francisco Bay Area."
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?hl=en&user=huppfRgAAAAJ",
+          "note": "Research profile for machine learning, wireless communications, WiFi, and 5G."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/yalda2009",
+          "note": "Public social profile for Akram Baharlouei."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "OpenReview author context",
+          "url": "https://openreview.net/profile?id=~Morgan_Levine1",
+          "note": "Lists Akram Baharlouei as a co-author on AI4Science-related single-cell dataset work."
+        },
+        {
+          "label": "DBLP",
+          "url": "https://dblp.uni-trier.de/pid/115/6453.html",
+          "note": "Publication index for earlier wireless communications and resource-allocation research."
+        },
+        {
+          "label": "George Mason CNL alumni",
+          "url": "https://cnl.gmu.edu/people/alumni.html",
+          "note": "Academic alumni listing for Dr. Akram Baharlouei."
+        },
+        {
+          "label": "ResearchGate",
+          "url": "https://www.researchgate.net/scientific-contributions/Akram-Baharlouei-2026561817",
+          "note": "Secondary publication aggregation for George Mason research work."
+        }
+      ]
+    }
+  }
+]

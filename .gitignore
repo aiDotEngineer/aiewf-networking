@@ -25,6 +25,7 @@
 .DS_Store
 *.pem
 networkingdata.csv
+/tmp/
 
 # debug
 npm-debug.log*

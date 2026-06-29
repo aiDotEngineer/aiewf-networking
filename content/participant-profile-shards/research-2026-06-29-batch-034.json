@@ -1,0 +1,130 @@
+[
+  {
+    "lookupKey": "1npl64w",
+    "displayName": "Brian Ripp-Field",
+    "headline": "Senior staff engineer building AI-powered preconstruction software for general contractors",
+    "company": "Buildr",
+    "title": "Staff Software Engineer",
+    "location": "Santa Barbara, California, United States",
+    "tags": ["construction tech", "preconstruction", "CRM", "workforce planning", "software engineering", "AI tools"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and GitHub corroborate identity, Buildr affiliation, senior/staff engineering level, and Santa Barbara location; exact event-provided title is slightly lower than LinkedIn's senior staff wording.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior/staff software engineer at Buildr, an AI-powered preconstruction platform for general contractors. Useful match for conversations on construction CRM, estimating workflows, workforce planning, and product engineering for vertical SaaS.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/briandfield", "note": "Shows Brian Ripp-Field as Senior Staff Software Engineer at Buildr, located in Santa Barbara."},
+        {"label": "GitHub profile", "url": "https://github.com/bobcats", "note": "Public developer profile for Brian Ripp-Field with Santa Barbara location."},
+        {"label": "Buildr official site", "url": "https://buildr.com/", "note": "Describes Buildr as an AI-powered preconstruction platform for general contractors."}
+      ],
+      "secondary": [
+        {"label": "PromptLoop company directory: Veles", "url": "https://www.promptloop.com/directory/what-does-getveles-com-do", "note": "Mentions Brian Ripp-Field among Veles founders and connects Veles customers/market context including Buildr."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "131m6pg",
+    "displayName": "Brian Simpson",
+    "headline": "R&D leader for HOA management software and AI-first product engineering",
+    "company": "PayHOA",
+    "title": "Director of Research and Development",
+    "location": "Lexington, Kentucky, United States",
+    "tags": ["R&D", "product engineering", "HOA software", "property technology", "SaaS", "automation"],
+    "confidence": "high",
+    "confidenceNote": "PayHOA's official staff page confirms Brian Simpson as Director of R&D; LinkedIn search snippet aligns with PayHOA and AI-first product engineering. Location is from attendee record, with public LinkedIn snippet showing Louisville Metropolitan Area.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of R&D at PayHOA, an all-in-one cloud platform for homeowner association management. Strong match for SaaS product engineering, automation, payments/accounting workflows, and AI-assisted internal tooling.",
+    "sources": {
+      "primary": [
+        {"label": "PayHOA staff page", "url": "https://www.payhoa.com/staff-member/brian-simpson/", "note": "Official PayHOA page lists Brian Simpson as Director of R&D."},
+        {"label": "PayHOA about page", "url": "https://www.payhoa.com/about/", "note": "Official team page also lists Brian Simpson as Director of R&D and describes the company mission."},
+        {"label": "PayHOA official site", "url": "https://www.payhoa.com/", "note": "Describes PayHOA as all-in-one HOA management software trusted by thousands of communities."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/thebriancsimpson", "note": "Search result describes Brian Simpson as Director of R&D at PayHOA and AI-first product engineering."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0poaw86",
+    "displayName": "Brian Sowards",
+    "headline": "AI strategist and solutions architect focused on scalable AI-native business systems",
+    "company": "sowards.ai",
+    "title": "Founder/CEO",
+    "location": "San Francisco, California, United States",
+    "tags": ["AI strategy", "AI-native systems", "solutions architecture", "go-to-market", "sales automation", "education technology"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly identify Brian Sowards as an AI strategist/solutions architect with personal site sowards.ai and prior founder experience; current Founder/CEO at sowards.ai is primarily from attendee-provided data rather than directly confirmed in indexed public pages.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI strategist and solutions architect working on scalable AI-native workflows. Brings founder experience across edtech, go-to-market automation, and applied AI consulting; useful match for AI systems, sales/product automation, and practical enterprise adoption.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/briansowards", "note": "Public profile describes Brian Sowards as an AI Strategist and Solutions Architect and lists sowards.ai as a personal website."},
+        {"label": "Coda profile", "url": "https://coda.io/@brian-sowards", "note": "Public Coda profile under Brian Sowards with AI education and related resources."},
+        {"label": "General Assembly instructor page", "url": "https://generalassemb.ly/instructors/brian-sowards/25301", "note": "Lists Brian Sowards as an instructor connected to AI-first product and workplace fundamentals."}
+      ],
+      "secondary": [
+        {"label": "Copy.ai interview", "url": "https://www.copy.ai/blog/interview-with-brian-sowards-founder-of-drivetrain-revenue", "note": "Interview identifies Brian Sowards as founder of Drivetrain Revenue and describes AI-driven go-to-market work."},
+        {"label": "about.me profile", "url": "https://about.me/briansowards", "note": "Older profile describes Brian Sowards as Founder and CEO of USEED and speaker in education/startup contexts."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "06fayso",
+    "displayName": "Brittney Liggett",
+    "headline": "Operations and AI business systems leader at Double A Solutions",
+    "company": "Double A Solutions",
+    "title": "VP of AI Business Systems",
+    "location": "Toledo, Ohio, United States",
+    "tags": ["business systems", "customer success", "operations", "software implementation", "Toledo tech", "AI business operations"],
+    "confidence": "medium",
+    "confidenceNote": "Public snippets corroborate Double A Solutions affiliation and VP/operations leadership; Double A's own leadership page appears older and lists a manager-level customer service/onboarding title, so the exact VP of AI Business Systems title is treated as attendee-provided.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Business systems and operations leader at Double A Solutions, a Toledo software company. Useful match for AI-enabled operations, customer success systems, onboarding workflows, and pragmatic software adoption inside SMB-focused products.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/brittney-liggett-94917555", "note": "Search result identifies Brittney Liggett with Double A Solutions and VP/operations-related leadership."},
+        {"label": "Double A Solutions leadership page", "url": "https://www.doubleasolutions.net/leadership/", "note": "Official company leadership page lists Brittney Liggett in customer service and onboarding leadership."},
+        {"label": "Double A Solutions Facebook page", "url": "https://www.facebook.com/DbleASolutions/", "note": "Company social profile describes Double A Solutions as a Toledo-based software development company."}
+      ],
+      "secondary": [
+        {"label": "Growjo company profile", "url": "https://growjo.com/company/Double_A_Solutions", "note": "Lists Brittney Liggett among Double A Solutions people with VP Operations title."},
+        {"label": "Blitz Sales Software release notes", "url": "https://www.nowblitz.com/blog/release-notes-categories/crmcontact-database/", "note": "Shows Brittney Liggett as an author for Double A/Blitz product release notes."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "15y7vxb",
+    "displayName": "Brooke Cowan",
+    "headline": "Applied AI executive leading healthcare AI strategy and production AI systems",
+    "company": "Cambia Health Solutions",
+    "title": "VP Applied AI",
+    "location": "Portland, Oregon, United States",
+    "tags": ["healthcare AI", "applied AI", "data science", "enterprise AI", "care navigation", "responsible AI"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources confirm Brooke Cowan as VP Applied AI at Cambia Health Solutions, based in Portland, with enterprise healthcare AI responsibilities.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of Applied AI at Cambia Health Solutions, leading enterprise AI strategy and AI solution development for healthcare insurance workflows. Strong match for healthcare AI, production GenAI, care navigation, and responsible enterprise deployment.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/brooke-cowan", "note": "Public profile identifies Brooke Cowan as an applied AI executive at Cambia Health Solutions in Portland."},
+        {"label": "Healthcare AI Forum speaker page", "url": "https://healthcareforumai.org/ned/", "note": "Speaker bio states Dr. Brooke Cowan is VP of Applied AI at Cambia Health Solutions and leads enterprise-wide AI strategy."},
+        {"label": "Pager Health webinar page", "url": "https://www.pagerhealth.com/blog/ai-agents-in-action-revolutionizing-navigation-by-driving-personalized-care-and-trust", "note": "Webinar page lists Dr. Brooke Cowan, VP Applied AI at Cambia Health Solutions, on AI agents in care navigation."}
+      ],
+      "secondary": [
+        {"label": "Becker's webinar listing", "url": "https://go.beckershospitalreview.com/payer/ai-agents-in-action-revolutionizing-navigation-by-driving-personalized-care-and-trust", "note": "Lists Brooke Cowan, PhD as VP Applied AI at Cambia Health Solutions for a payer AI webinar."},
+        {"label": "Cambia LinkedIn post", "url": "https://www.linkedin.com/posts/cambia-health-solutions_yesterday-director-of-applied-aibrooke-activity-7265158918979362816-UhRo", "note": "Cambia post references Brooke Cowan representing Cambia on an AI, data science, and emerging technologies panel."}
+      ]
+    }
+  }
+]

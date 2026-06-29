@@ -1,0 +1,914 @@
+[
+  {
+    "lookupKey": "0tx60fy",
+    "displayName": "Harshad Sheth",
+    "headline": "Engineering leader for consumer financial services products at Remitly",
+    "company": "Remitly",
+    "title": "Director of Engineering",
+    "location": "Redmond, WA, US",
+    "tags": [
+      "engineering leadership",
+      "consumer fintech",
+      "financial services",
+      "credit products",
+      "wallets",
+      "membership products",
+      "immigrant financial services"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Direct LinkedIn and professional profile evidence match the name, Remitly role, Redmond location, and focus on Remitly One, lending, credit, wallet, and membership products.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering director at Remitly focused on consumer financial services products for immigrants, including Remitly One, lending, credit, wallet, and membership experiences. Previously worked at Uber and Microsoft, making him a strong match for conversations about fintech product engineering, platform scaling, and engineering team growth.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/harshadsheth",
+          "note": "Lists Harshad S. as Director of Engineering at Remitly focused on consumer financial services, credit, wallet, membership, and Remitly One."
+        },
+        {
+          "label": "Office Hours profile",
+          "url": "https://officehours.com/harshad-s",
+          "note": "Professional profile describes him as Director of Engineering for Remitly One and Lending, ex-Uber and ex-Microsoft, based in Redmond."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/remitly/org-chart/harshad-s",
+          "note": "Secondary profile confirms Director of Engineering at Remitly since October 2021 and describes leadership of new immigrant-focused products."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "02m0vlx",
+    "displayName": "Harshul Jain",
+    "headline": "Senior software engineer building distributed systems and GenAI platforms at Audible",
+    "company": "Audible Inc.",
+    "title": "Senior Software Engineer",
+    "location": "",
+    "tags": [
+      "distributed systems",
+      "GenAI platforms",
+      "feature stores",
+      "real-time streaming",
+      "AI search",
+      "MLOps",
+      "agent frameworks",
+      "engineering mentorship"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Sessionize, GitHub, and Codementor profiles consistently identify Harshul Jain as a Senior Software Engineer at Audible with distributed systems, GenAI, mentoring, and open-source AI-agent work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Software Engineer at Audible working on distributed systems and GenAI platforms, including low-latency services, feature stores, real-time streaming pipelines, and AI search. Also mentors engineers and builds open-source AI-agent tooling, making him a useful connection for production AI systems and backend platform conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/hjain1393",
+          "note": "Identifies him as a Senior Software Engineer at Audible with experience in large-scale distributed systems, low-latency APIs, caching, and AI/ML platform work."
+        },
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/harshul-jain/",
+          "note": "Speaker bio states he builds distributed systems and GenAI platforms at Audible, including feature stores, streaming pipelines, AI Search, and AgentShip."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/harshuljain13",
+          "note": "Personal GitHub describes interests in real-time data systems, ML platforms, distributed systems, agentic AI, RAG, and tool calling."
+        },
+        {
+          "label": "Codementor profile",
+          "url": "https://www.codementor.io/%40harshul1610",
+          "note": "Mentor profile identifies him as a Senior Software Engineer at Audible with 9+ years of tech experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/audible/org-chart/harshul-jain",
+          "note": "Secondary profile describes his Audible work on low-latency GenAI semantic search and MLOps deployment for embedding models."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "15gom9p",
+    "displayName": "Hassan El Mghari",
+    "headline": "Director of Developer Experience at Together AI building open-source AI apps and developer education",
+    "company": "Together AI",
+    "title": "Director of Developer Experience",
+    "location": "New York City, NY, US",
+    "tags": [
+      "developer experience",
+      "developer relations",
+      "open-source AI apps",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "AI demos",
+      "developer education",
+      "Together AI"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Personal website, GitHub, X, Together AI blog author pages, and event speaker page all align on his name, Together AI role, open-source AI-app focus, and developer experience leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Developer Experience at Together AI, where he leads a team and works on demos, docs, content, and open-source AI apps. Known online as Nutlope, he builds full-stack AI applications with TypeScript, React, and Next.js, and is a strong match for attendees interested in developer experience, AI app UX, and practical model-powered demos.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://www.nutlope.com/",
+          "note": "States he leads Developer Experience at Together AI and builds open-source AI apps while teaching developers about AI."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/nutlope",
+          "note": "Personal GitHub profile under Nutlope lists Hassan El Mghari, New York City, personal website, and open-source work."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/nutlope?lang=en",
+          "note": "Lists him as Director of Developer Experience at Together AI and highlights open-source AI apps including roomgpt.io and llamacoder.io."
+        },
+        {
+          "label": "Together AI event page",
+          "url": "https://www.together.ai/ai-engineer-worlds-fair",
+          "note": "Together AI page lists Hassan El Mghari as Director of Dev Rel for an AI Engineer World's Fair session."
+        },
+        {
+          "label": "Together AI blog author page",
+          "url": "https://www.together.ai/blog/how-to-build-a-real-time-image-generator-with-together-ai",
+          "note": "Together AI blog post credits Hassan El Mghari as author of a developer tutorial for a real-time image generator."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Stack by Convex author profile",
+          "url": "https://stack.convex.dev/author/nutlope",
+          "note": "Author bio describes him as a full-stack AI app engineer working in developer relations at Together.ai."
+        },
+        {
+          "label": "Cloudflare TV episode page",
+          "url": "https://cloudflare.tv/friends-in-code-spaces/episode-3-weekend-projects-to-millions-served/Mg6WOwvl",
+          "note": "Episode page identifies him as Together AI developer relations and discusses viral demos and AI app engineering."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ud8hzu",
+    "displayName": "Hassan Mirza",
+    "headline": "Developer community and marketing leader behind HeyHass",
+    "company": "HeyHass",
+    "title": "Developer Marketing and Community Consulting",
+    "location": "Long Beach, CA, US",
+    "tags": [
+      "developer marketing",
+      "community strategy",
+      "developer community",
+      "brand strategy",
+      "event production",
+      "social marketing",
+      "inclusive communities",
+      "B2B marketing"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Personal website, LinkedIn, X, and General Assembly profile consistently connect Hassan Mirza, HeyHass, marketing/community leadership, developer/community work, and public client history.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Marketing and community leader with 10+ years across developer, social, and brand communities. Through HeyHass, he focuses on data-informed campaigns, scalable community programs, event experiences, and inclusive community building for technology and consumer brands.",
+    "sources": {
+      "primary": [
+        {
+          "label": "HeyHass about page",
+          "url": "https://heyhass.com/about",
+          "note": "Personal site describes him as a marketing and community leader with 10+ years of experience across tech, social platforms, enterprise software, and consumer brands."
+        },
+        {
+          "label": "HeyHass work page",
+          "url": "https://heyhass.com/work",
+          "note": "Portfolio page lists work across Turing, HOUSE, Google, Instagram, Grindr, Sonos, UNICEF, TOMS, General Assembly, and AngelHack."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/heyhass",
+          "note": "Profile describes him as a senior community and marketing leader with 10+ years leading data-informed campaigns and scalable community programs."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/Hassanmirza",
+          "note": "Public profile links to heyhass.com, gives Long Beach location, and describes dev tool marketing and community focus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "General Assembly instructor profile",
+          "url": "https://generalassemb.ly/instructors/hassan-mirza/11088",
+          "note": "Instructor bio describes him as a social marketing strategist and community builder with clients including Instagram, Grindr, Sonos, TOMS, and UNICEF."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12qqz34",
+    "displayName": "Henrique Boz",
+    "headline": "Head of Engineering at Kamino",
+    "company": "Kamino",
+    "title": "Head of Engineering",
+    "location": "Curitiba, PR, Brazil",
+    "tags": [
+      "engineering leadership",
+      "fintech",
+      "product engineering",
+      "software engineering management",
+      "real estate technology",
+      "IoT",
+      "startup CTO",
+      "Brazil tech"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn search result strongly matches the provided name, company, title, and Curitiba location. The Org adds career history but lists Sao Paulo, so location confidence is based mainly on LinkedIn and the provided row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Engineering at Kamino with prior engineering leadership experience at Docket Brasil and QuintoAndar, plus earlier CTO and systems engineering roles. Relevant for conversations about engineering leadership, fintech/product engineering, Brazilian startup teams, and scaling software organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/henriqueboz",
+          "note": "Lists Henrique Boz as Head of Engineering at Kamino in Curitiba, Parana, Brazil."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/kamino/org-chart/henrique-boz",
+          "note": "Secondary profile describes him as Head of Engineering at Kamino since August 2024, with prior leadership roles at Docket Brasil, QuintoAndar, LAR.app, ARRIS, and GVT."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1c7s936",
+    "displayName": "Hiral Shah",
+    "headline": "AI product leader focused on agreement intelligence at Docusign",
+    "company": "Docusign",
+    "title": "Senior Director, Product Management",
+    "location": "",
+    "tags": [
+      "AI product management",
+      "agreement intelligence",
+      "enterprise software",
+      "product strategy",
+      "Docusign"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Docusign author profile and conference/speaker pages consistently identify Hiral Shah as a Senior Director of Product Management at Docusign working on agreement intelligence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Director of Product Management at Docusign, leading product strategy for agreement intelligence. Useful connection for AI product, enterprise workflow automation, contract understanding, and product leadership conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Docusign author profile",
+          "url": "https://www.docusign.com/blog/author/hiral-shah",
+          "note": "Identifies Hiral Shah as Senior Director of Product at Docusign leading product strategy and development for agreement intelligence."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/shahhiral",
+          "note": "Search result identifies Hiral Shah as an AI/ML product leader and Senior Director of Product Management at Docusign."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Product Summit speaker profile",
+          "url": "https://world.productledalliance.com/location/ai/speaker/hiralshah",
+          "note": "Conference profile lists her as Senior Director of Product Management at DocuSign."
+        },
+        {
+          "label": "Amplitude author profile",
+          "url": "https://amplitude.com/blog/author/hiral-shah",
+          "note": "Former role profile adds background in data-scale product strategy, CMU, Stanford GSB, Apple products, and VC experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01q7h8n",
+    "displayName": "Hitesh Jain",
+    "headline": "Founder building AI agent memory and inference infrastructure at Coral Bricks AI",
+    "company": "Coral Bricks AI",
+    "title": "Founder and CEO",
+    "location": "Redmond, Washington, United States",
+    "tags": [
+      "AI agents",
+      "memory infrastructure",
+      "inference",
+      "distributed systems",
+      "ex-Meta",
+      "founder"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and high-signal profiles identify Hitesh Jain as founder/CEO of Coral Bricks AI, with prior Meta engineering experience and current work on agent memory and inference infrastructure.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Coral Bricks AI, building infrastructure for stateful AI agents, memory, retrieval, and domain-specific inference. Previously spent many years at Meta across distributed systems, privacy, personalization, and generative AI.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Coral Bricks blog",
+          "url": "https://www.coralbricks.ai/blog",
+          "note": "Company blog includes recent technical posts authored by Hitesh Jain."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jain-hitesh",
+          "note": "Profile identifies him with Coral Bricks AI and ex-Meta AI inference work."
+        },
+        {
+          "label": "Coral Bricks AI LinkedIn company page",
+          "url": "https://www.linkedin.com/company/coral-bricks-ai",
+          "note": "Lists Coral Bricks AI as a software company headquartered in Redmond and shows Hitesh Jain among employees."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/hitesh-jain/",
+          "note": "Speaker bio identifies him as founder and CEO of Coral Bricks AI and describes Meta Principal Engineer background."
+        },
+        {
+          "label": "AI Tinkerers post-training profile",
+          "url": "https://post-training.aitinkerers.org/p/how-to-write-a-winning-agent-harness-for-your-domain",
+          "note": "Identifies Hitesh Jain as Founder and CEO at Coral Bricks AI, focused on AI inference and distributed systems."
+        },
+        {
+          "label": "Hugging Face organization",
+          "url": "https://huggingface.co/coral-bricks-ai",
+          "note": "Coral Bricks AI organization page links the company to Hitesh Jain as a team member."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1jip9zi",
+    "displayName": "Hsin Po William Hung",
+    "headline": "IT manager associated with Wheaton Precious Metals",
+    "company": "Wheaton Precious Metals Corp.",
+    "title": "Manager, IT",
+    "location": "Greater Vancouver Metropolitan Area",
+    "tags": [
+      "IT management",
+      "mining",
+      "precious metals",
+      "enterprise technology"
+    ],
+    "confidence": "low",
+    "confidenceNote": "Public evidence is sparse. LinkedIn directory results show a William H. in Greater Vancouver associated with Wheaton Precious Metals and Boston University, but the exact full name and Manager, IT title were not independently confirmed in public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "IT professional associated with Wheaton Precious Metals. Potentially relevant for conversations around enterprise IT, systems operations, and technology inside a public precious-metals streaming company; profile confidence is low due to limited public evidence.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://ca.linkedin.com/pub/dir/William/Hung/ca-4880-Vancouver%2C-Canada-Area",
+          "note": "Directory result lists William H. in Greater Vancouver associated with Wheaton Precious Metals and Boston University."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Wheaton Precious Metals contact page",
+          "url": "https://www.wheatonpm.com/about/contact/default.aspx",
+          "note": "Confirms Wheaton Precious Metals corporate presence in Vancouver."
+        },
+        {
+          "label": "Wheaton Precious Metals LinkedIn company page",
+          "url": "https://ca.linkedin.com/company/wheatonpm",
+          "note": "Company page describes Wheaton Precious Metals as a Vancouver-headquartered public mining/precious metals streaming company."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0dfiq4k",
+    "displayName": "Hunter Vainik",
+    "headline": "Associate analyst at T. Rowe Price with equity research background",
+    "company": "T. Rowe Price",
+    "title": "Associate Analyst",
+    "location": "Baltimore, Maryland, United States",
+    "tags": [
+      "investment research",
+      "equity analysis",
+      "public markets",
+      "technology research",
+      "T. Rowe Price"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn identifies Hunter Vainik as an Associate Analyst at T. Rowe Price in Baltimore, and Morningstar shareholder meeting transcript independently shows him asking analyst questions on behalf of T. Rowe Price.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Associate Analyst at T. Rowe Price with prior equity research exposure. Good match for conversations about public markets, AI impact on financial data businesses, product velocity, and technology/media investment themes.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/hunter-vainik-672546220",
+          "note": "Identifies Hunter Vainik as an Associate Analyst at T. Rowe Price in Baltimore."
+        },
+        {
+          "label": "Morningstar 2026 shareholder meeting transcript",
+          "url": "https://s205.q4cdn.com/437373358/files/doc_events/2026/May/Transcript-2026-Morningstar-Annual-Meeting-of-Shareholders-FINAL.pdf",
+          "note": "Transcript records Hunter Vainik asking multiple questions as a representative of T. Rowe Price."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Cleveland Research Company LinkedIn intern spotlight",
+          "url": "https://www.linkedin.com/posts/cleveland-research-company_clevelandresearch-summerinternship-clevelandinterns-activity-7083097330727473152-IvXP",
+          "note": "Earlier profile describes him as a Michigan State finance student interning with Cleveland Research Company's tech team."
+        },
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Vainik",
+          "note": "Directory result also lists Hunter Vainik at T. Rowe Price in Baltimore."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0d8f30w",
+    "displayName": "Ian Falcon",
+    "headline": "Software engineering and IoT product innovation leader at ServiceNow",
+    "company": "ServiceNow",
+    "title": "Senior Software Engineering Manager, IoT Product Innovation",
+    "location": "Greater San Diego Area",
+    "tags": [
+      "software engineering leadership",
+      "IoT",
+      "ServiceNow",
+      "product innovation",
+      "technical program management"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently tie Ian Falcon to ServiceNow, but the strongest detailed profile lists Senior Software Engineering Manager rather than the provided Director title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at ServiceNow working around IoT product innovation, software engineering, and technical program execution. Useful connection for ServiceNow platform, enterprise product innovation, and applied engineering leadership topics.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ianfalcon",
+          "note": "Public LinkedIn result identifies Ian Falcon in the United States with a professional profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Mesh public profile",
+          "url": "https://me.sh/profile/ian-falcon",
+          "note": "Profile describes Ian Falcon as Senior Software Engineering Manager for IoT Product Innovation at ServiceNow and summarizes prior engineering/program management background."
+        },
+        {
+          "label": "ServiceNow Knowledge 2026 LinkedIn post",
+          "url": "https://www.linkedin.com/posts/meganmagee_its-almost-time-for-servicenow-knowledge-activity-7452431755963367425-autx",
+          "note": "ServiceNow Data & Analytics track post includes Ian Falcon among tagged ServiceNow Knowledge contributors/speakers."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0sf1syt",
+    "displayName": "Ian Hovde",
+    "headline": "Engineering Manager at SharpenCX",
+    "company": "Sharpen Technologies",
+    "title": "Engineering Manager",
+    "location": "Boston, MA",
+    "tags": [
+      "engineering leadership",
+      "contact center software",
+      "SaaS",
+      "customer experience"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Exact-name LinkedIn evidence matches Engineering Manager at SharpenCX and Boston location; little additional public person-specific evidence found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering manager at SharpenCX, working in customer experience and contact-center SaaS. Likely a useful match for conversations on engineering team leadership, product delivery, and AI in support operations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ianhovde",
+          "note": "Lists Ian Hovde as Engineering Manager at SharpenCX, based in Boston."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Hovde",
+          "note": "Directory snippet corroborates Ian Hovde at SharpenCX with Wentworth Institute of Technology background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0flvcfj",
+    "displayName": "Ido Bronstein",
+    "headline": "Co-Founder and CEO of Upriver, building AI-native data engineering automation",
+    "company": "Upriver",
+    "title": "Co-Founder and CEO",
+    "location": "Israel",
+    "tags": [
+      "AI data engineering",
+      "data quality",
+      "data observability",
+      "startup founder",
+      "autonomous agents"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Official Upriver founder page, LinkedIn, investor profile, podcast, and recent funding coverage all identify him as Upriver co-founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Upriver, an AI data engineering platform focused on automating data quality, pipeline maintenance, and data accountability. Previously led large-scale data infrastructure work in intelligence settings, which informs Upriver's agentic data operations approach.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Upriver About",
+          "url": "https://upriverdata.com/about",
+          "note": "Official company page lists Ido Bronstein as Co-Founder and CEO."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ido-bronstein",
+          "note": "Lists him as CEO of Upriver and describes prior data infrastructure leadership."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Hetz Ventures portfolio",
+          "url": "https://www.hetz.vc/portfolio/upriver",
+          "note": "Investor profile says Upriver was founded by Ido Bronstein and Omri Lifshitz after a decade building intelligence systems."
+        },
+        {
+          "label": "Dash0 podcast",
+          "url": "https://www.dash0.com/podcast/32-data-observability-at-the-source-ido-bronstein",
+          "note": "Podcast guest page identifies Ido as Upriver co-founder and CEO and discusses data observability."
+        },
+        {
+          "label": "Business Insider funding coverage",
+          "url": "https://www.businessinsider.com/israel-startup-upriver-raises-14-million-ai-data-engineering-2026-6",
+          "note": "Reports Upriver's seed round and describes the company's autonomous-agent approach to data engineering."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0c4g229",
+    "displayName": "Ignacio Astrada",
+    "headline": "VP of AI Product Innovation at The Hackett Group",
+    "company": "The Hackett Group",
+    "title": "VP of AI Product Innovation",
+    "location": "Miami, FL",
+    "tags": [
+      "AI product innovation",
+      "enterprise AI",
+      "intelligent automation",
+      "data modernization",
+      "cloud managed services",
+      "consulting"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and multiple business-profile sources match the name, company, Miami location, and senior AI/product role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Enterprise AI and digital-services leader at The Hackett Group. His background spans CPM, intelligent automation, data modernization, cloud managed services, and AI product innovation for consulting and transformation contexts.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ignacio-astrada/en",
+          "note": "Lists Ignacio Astrada as VP of AI Product Innovation at The Hackett Group in Miami."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org team page",
+          "url": "https://theorg.com/org/the-hackett-group/teams/ai-innovation",
+          "note": "Lists Ignacio Astrada on The Hackett Group's AI Innovation team as VP of AI Product Innovation."
+        },
+        {
+          "label": "Comparably executive profile",
+          "url": "https://www.comparably.com/companies/the-hackett-group/ignacio-astrada",
+          "note": "Lists him as VP Digital Managed Services Solutions and notes he started at The Hackett Group in 2017."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "05x00xd",
+    "displayName": "Igor Arouca",
+    "headline": "CTO and AI startup advisor with deep Liferay, cloud, and enterprise architecture experience",
+    "company": "Liferay",
+    "title": "CTO",
+    "location": "Raleigh-Durham-Chapel Hill Area",
+    "tags": [
+      "CTO",
+      "enterprise architecture",
+      "cloud infrastructure",
+      "AI governance",
+      "cybersecurity",
+      "startup advisory"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Liferay pages identify him as CTO, and his personal advisory site describes 20+ years of software leadership, AI, cloud, and startup advisory work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology executive associated with Liferay's CTO role and enterprise platform strategy, with focus areas across cloud, cybersecurity, AI, composable architecture, and AI startup advisory. Useful match for enterprise AI adoption, architecture, governance, and scaling technical teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AI-Dvisory personal site",
+          "url": "https://ai-dvisory.com/",
+          "note": "Personal advisory site for Igor Arouca describes him as CTO, AI startup advisor, board member, and software leader."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/iarouca",
+          "note": "Profile snippet describes Igor Arouca as a software leadership and AI startup advisory executive."
+        },
+        {
+          "label": "Liferay DEVCON 2024 recap",
+          "url": "https://www.liferay.com/web/events/devcon-24/recap",
+          "note": "Official Liferay event page lists Igor Arouca as CTO of Liferay."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Liferay AI article",
+          "url": "https://www.liferay.com/b/demystifying-ai-an-introduction-for-enterprises",
+          "note": "Liferay article references Igor Arouca as CTO of Liferay in enterprise AI context."
+        },
+        {
+          "label": "CIO TechWorld article",
+          "url": "https://ciotechworld.com/how-to-implement-composable-architecture-free-from-integration-and-vendor-lock-in/",
+          "note": "Describes him as Liferay CTO overseeing strategic technology investments in cybersecurity, cloud, and AI."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "019ge7t",
+    "displayName": "Igor Grebenarovic",
+    "headline": "Engineering Manager at Florence Healthcare",
+    "company": "Florence Healthcare",
+    "title": "Engineering Manager",
+    "location": "Atlanta, US",
+    "tags": [
+      "engineering management",
+      "clinical research software",
+      "healthcare SaaS",
+      "technical leadership",
+      "remote clinical workflows"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn matches the exact name and Engineering Manager at Florence Healthcare; public snippets also show Florence technical-lead history. Location evidence is mixed: participant row says Atlanta, while LinkedIn snippets indicate Belgrade.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering manager at Florence Healthcare, a clinical-trial software company. Public evidence points to technical leadership within Florence's engineering organization, making him relevant for healthcare SaaS, clinical research workflows, and engineering management discussions.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://rs.linkedin.com/in/igor-grebenarovic",
+          "note": "Lists Igor Grebenarovic as Engineering Manager at Florence Healthcare."
+        },
+        {
+          "label": "Florence Healthcare website",
+          "url": "https://www.florencehc.com/",
+          "note": "Company site describes Florence as powering shared workflows and AI-augmented automation for clinical trials."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Florence Healthcare LinkedIn promotion post",
+          "url": "https://www.linkedin.com/posts/florence-healthcare_companyculture-lifeatflorence-activity-7021234946086244352-35Us",
+          "note": "Company post names Igor Grebenarovic among promoted employees, with a Group Technical Lead title at the time."
+        },
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Grebenarovic",
+          "note": "Directory snippet corroborates Igor Grebenarovic at Florence Healthcare and University of Belgrade background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0q0o1z8",
+    "displayName": "Igor Queiroz",
+    "headline": "Partner at Visagio focused on AI, advanced analytics, and business transformation",
+    "company": "Visagio",
+    "title": "Partner",
+    "location": "Sao Paulo, Brazil",
+    "tags": [
+      "AI strategy",
+      "advanced analytics",
+      "consulting",
+      "digital transformation",
+      "AI centers of excellence"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and Visagio-owned content both match the submitted name, company, partner role, Sao Paulo location, and AI/analytics focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Partner at Visagio and leader in AI and advanced analytics work, including AI centers of excellence and enterprise analytics programs. Useful connection for conversations on turning AI strategy into operating-model and consulting delivery.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/igorsilveira",
+          "note": "Lists Igor Queiroz as Partner at Visagio in Sao Paulo and describes leadership in VLabs, advanced analytics, AI, and AI CoEs."
+        },
+        {
+          "label": "Visagio webinar page",
+          "url": "https://www.visagio.com/noticias/webinar-inteligencia-artificial-oportunidades-e-implicacoes-para-os-negocios",
+          "note": "Visagio describes Igor Queiroz as a partner specializing in artificial intelligence and analytics projects."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Brazil corporate registry mirror",
+          "url": "https://advdinamico.com.br/socios/visagio-consultoria-assessoria-e-desenvolvimento-ltda-22265335",
+          "note": "Lists Igor Silveira Queiroz among partners of Visagio Consultoria Assessoria e Desenvolvimento Ltda."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0v3oivg",
+    "displayName": "Ilona Bodnar",
+    "headline": "Machine learning and software development specialist working at the intersection of AI, cybersecurity, and public-interest technology",
+    "company": "The SEMQ Group",
+    "title": "Head of Research",
+    "location": "San Francisco, United States",
+    "tags": [
+      "machine learning",
+      "AI policy",
+      "cybersecurity",
+      "critical infrastructure",
+      "software engineering",
+      "research"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Person-specific evidence is strong for Ilona Bodnar's ML/software and policy background, but the submitted SEMQ Group Head of Research affiliation was not independently confirmed in public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Data scientist and ML/software practitioner with experience at Google, NerdWallet, and a medical AI startup. Public TechCongress materials place her work around cybersecurity, critical infrastructure, and accountability for high-impact technical systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ilonabodnar",
+          "note": "Public profile result identifies Ilona Bodnar in the United States."
+        },
+        {
+          "label": "TechCongress 2025 Fellows announcement",
+          "url": "https://techcongress.io/blog/2025-fellows",
+          "note": "Profiles Ilona Bodnar as a data scientist specializing in machine learning and software development with Google, NerdWallet, and medical AI startup experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "TechCongress 2025 placements",
+          "url": "https://techcongress.io/blog/2025-placements",
+          "note": "Says Ilona Bodnar served with Senate Homeland Security and Government Affairs Committee minority staff on cybersecurity and critical infrastructure issues."
+        },
+        {
+          "label": "VulnGuard team page",
+          "url": "https://vulnguard.pages.dev/team",
+          "note": "Lists Ilona Bodnar as a technical policy advisor on homeland security and notes prior software engineering experience at Dataway, NerdWallet, and Google."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "05x1e9z",
+    "displayName": "Ilya Shkirenko",
+    "headline": "Applied AI engineering leader and startup advisor with biotech and fractional CTO experience",
+    "company": "Optic",
+    "title": "CTO",
+    "location": "San Francisco, United States",
+    "tags": [
+      "applied AI",
+      "biotech",
+      "engineering leadership",
+      "startup advising",
+      "fractional CTO",
+      "AI systems"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently identify the same Ilya Shkirenko in San Francisco with applied AI, OPTIC/BIOPTIC, and CTO/advisory experience, but current public evidence more clearly says VP Engineering at BIOPTIC or CTO at IZM Solutions than CTO at Optic.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Applied AI engineering leader working around biotech, startup advising, and fractional CTO services. Good match for conversations on AI product architecture, engineering leadership, and moving applied AI systems from prototype to production.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ilyashkirenko",
+          "note": "Identifies Ilya Shkirenko with applied AI for biotech, startup advisory and mentoring, OPTIC, and San Francisco location."
+        },
+        {
+          "label": "Office Hours profile",
+          "url": "https://officehours.com/izumskee",
+          "note": "Lists Ilya Shkirenko in San Francisco as CTO / Applied AI and CTO at IZM Solutions."
+        },
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?hl=en&user=njuxBBIAAAAJ",
+          "note": "Verified profile under Ilya Shkirenko / Illia Shkirenka with interests in artificial intelligence and systems engineering."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "VibeCon 2026 speaker listing",
+          "url": "https://vibecon.io/",
+          "note": "Lists Ilya Shkirenko as VP, Engineering at BIOPTIC."
+        },
+        {
+          "label": "Founder Institute mentor listing",
+          "url": "https://fi.co/mentors/11363",
+          "note": "Lists Ilya Shkirenko as Fractional CTO, Applied AI, Startup Advisor and Mentor at IZM Solutions."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "08ngfry",
+    "displayName": "Imad Touil",
+    "headline": "AI engineering transformation leader at QuantumBlack, focused on agentic AI and AI-native enterprise engineering",
+    "company": "QuantumBlack, AI by McKinsey",
+    "title": "Distinguished Engineer",
+    "location": "",
+    "tags": [
+      "agentic AI",
+      "AI-native enterprises",
+      "engineering transformation",
+      "code review",
+      "enterprise AI",
+      "McKinsey"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and AI Engineer schedule sources match the submitted name, QuantumBlack/McKinsey affiliation, and AI engineering transformation focus; public schedule confirms Distinguished Engineer title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Distinguished Engineer at QuantumBlack, AI by McKinsey, working on AI engineering transformation and AI-native enterprise operating models. Useful connection for agentic software engineering, enterprise adoption, and the changing role of code review.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/imad-touil",
+          "note": "Identifies Imad Touil as an AI Engineering Transformation Lead at QuantumBlack, AI by McKinsey, focused on agentic AI transformation."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises",
+          "note": "Lists Imad Touil as Distinguished Engineer at QuantumBlack, AI by McKinsey, with a talk on AI-native organisations and skills."
+        },
+        {
+          "label": "AI Engineer schedule",
+          "url": "https://www.ai.engineer/schedule",
+          "note": "Confirms Imad Touil on the AI Engineer schedule as Distinguished Engineer at QuantumBlack, AI by McKinsey."
+        }
+      ]
+    }
+  }
+]

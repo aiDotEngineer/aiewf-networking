@@ -1,0 +1,830 @@
+[
+  {
+    "lookupKey": "0ylpnhi",
+    "displayName": "Jose Victor Feijo de Araujo",
+    "headline": "Head of Engineering and founding team member at Superfiliate",
+    "company": "Superfiliate",
+    "title": "Head of Engineering",
+    "location": "Texas, US / Florianopolis, Brazil",
+    "tags": ["engineering leadership", "software engineering", "creator commerce", "affiliate marketing", "startup engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources connect Victor Feijo to Head of Engineering/founding team at Superfiliate and full-name records in Brazil; location is partly inferred from public social/profile snippets and should be treated as lower confidence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader on Superfiliate's founding team, with a software engineering background and public academic/company records under the full name Jose Victor Feijo de Araujo. Useful match for conversations on early-stage engineering, creator-commerce infrastructure, and scaling product teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/victor-feij%C3%B3-28874bb6",
+          "note": "Lists Victor Feijo as Head of Engineering and founding team at Superfiliate, with 8+ years of coding experience."
+        },
+        {
+          "label": "UFSC repository thesis record",
+          "url": "https://repositorio.ufsc.br/xmlui/handle/123456789/182212",
+          "note": "Person-specific academic record under Jose Victor Feijo de Araujo."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Econodata company record",
+          "url": "https://www.econodata.com.br/consulta-empresa/31183722000152-jose-victor-feijo-de-araujo",
+          "note": "Brazilian company registry record for Jose Victor Feijo de Araujo / Treze Software Development Agency."
+        },
+        {
+          "label": "LinkedIn company-post comment",
+          "url": "https://www.linkedin.com/posts/andycloyd_today-marks-4-years-that-ive-been-doing-activity-7297267032029360128-y-JM",
+          "note": "Shows Victor Feijo engaging with a Superfiliate four-year milestone post."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "105b1ka",
+    "displayName": "Joseph Crabtree",
+    "headline": "Founder and CEO working at the intersection of additive manufacturing, automation, and AI",
+    "company": "Vectorfield AI",
+    "title": "Co-Founder and CEO",
+    "location": "Austin, US",
+    "tags": ["additive manufacturing", "industrial AI", "advanced materials", "aerospace and defense", "manufacturing automation"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly identify Joseph Crabtree as CEO/founder of AMT PostPro and an AI/additive manufacturing speaker; I did not find strong public sources tying him specifically to Vectorfield AI, so the current company/title is participant-supplied and medium confidence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder/operator focused on industrializing 3D printing through automation, post-processing, and AI. Strong match for attendees working on manufacturing AI, hardtech commercialization, advanced materials, or aerospace and defense applications.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/josephcrabtree",
+          "note": "Profiles Joseph Crabtree as a founder, CEO, board member, and investor focused on hardtech and AI in additive manufacturing."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/TheJoeCrabtree",
+          "note": "Public bio describes him as Founder and CEO at AMT PostPro, making 3D printing industrial with AI and automation."
+        },
+        {
+          "label": "AMT PostPro team page",
+          "url": "https://amtechnologies.com/about-us/",
+          "note": "Company team page lists Joseph Crabtree as CEO."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AMFG expert interview",
+          "url": "https://www.amfg.ai/post/expert-interview-additive-manufacturing-technologies-ceo-joseph-crabtree-on-why-post-processing-is-crucial-for-3d-printing",
+          "note": "Interview with Joseph Crabtree as CEO of Additive Manufacturing Technologies on post-processing and industrial 3D printing."
+        },
+        {
+          "label": "AMUG 2026 agenda",
+          "url": "https://www.amug.com/wp-content/uploads/2026/03/2026_AMUG_Final_Agenda.pdf",
+          "note": "Lists Joseph Crabtree of AMT PostPro speaking on hardware commoditization and the rise of artificial intelligence."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0wpgldj",
+    "displayName": "Joseph Erario",
+    "headline": "AI product leader and generative AI strategist at Allegion/Zentra",
+    "company": "Allegion",
+    "title": "AI Product Architect",
+    "location": "Boulder, Colorado, US",
+    "tags": ["AI product", "generative AI", "product management", "access control", "proptech"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources identify Joe Erario as an Allegion-linked AI product leader and Zentra Group Product Manager; the exact title AI Product Architect appears participant-supplied rather than directly verified in public snippets.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product leader applying AI to access-control and multifamily property technology. Useful match for conversations on AI-enabled product workflows, customer-facing automation, smart access, and practical adoption of generative AI inside product teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/joeerario",
+          "note": "Lists Joe Erario as an AI Product Leader and Generative AI/LLM Strategist with Allegion."
+        },
+        {
+          "label": "Zentra employee spotlight",
+          "url": "https://zentra.co/2025/06/23/joe-erario-embodies-the-innovation-and-dedication-that-define-zentra/",
+          "note": "Profiles Joe Erario as a Group Product Manager and key driver of Zentra AI initiatives with Allegion data science and AI teams."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn people search result",
+          "url": "https://www.linkedin.com/pub/dir/Joseph/Erario?trk=public_profile_samename-see-all",
+          "note": "Corroborates Joe Erario's Allegion affiliation and Boulder location."
+        },
+        {
+          "label": "Zentra blog index",
+          "url": "https://zentra.co/blog/",
+          "note": "Company blog indexes the Joe Erario employee spotlight among Zentra team and product posts."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1m65478",
+    "displayName": "Joseph Quig",
+    "headline": "Founder of FanU Holdings and Delaware-based financial advisor",
+    "company": "FanU Holdings LLC",
+    "title": "Founder",
+    "location": "Wilmington, US",
+    "tags": ["sports apps", "fan engagement", "consumer social", "financial services", "founder"],
+    "confidence": "medium",
+    "confidenceNote": "FINRA records tie Joseph P. Quig to FanU Holdings as an authorized person building a sports social media application; founder title is participant-supplied but consistent with the available company/trademark context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder/operator behind FanU Holdings, a sports fan engagement application effort, alongside an established financial advisory practice. Relevant for attendees interested in sports social products, fan communities, fintech-adjacent incentives, and early consumer app formation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "FINRA BrokerCheck report",
+          "url": "https://files.brokercheck.finra.org/individual/individual_2643863.pdf",
+          "note": "Person-specific regulatory report lists Joseph P. Quig with FanU Holdings, LLC, described as a sports application, and notes work on a sports social media application."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/josephquig",
+          "note": "Public profile for Joseph Quig, CFP, ChFC in Delaware with financial services background."
+        },
+        {
+          "label": "Edward Jones practice page",
+          "url": "https://www.edwardjones.com/us-en/financial-practice/quig-wealth-management",
+          "note": "Names Joe Quig as a financial advisor on the Quig Wealth Management team."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Trademarkia FanU Holdings trademark record",
+          "url": "https://www.trademarkia.com/owners/fanu-holdings-llc",
+          "note": "Shows FanU Holdings, LLC as owner of a pending FANU mark covering sports fan engagement, social networking, streaming, fantasy sports, and digital collectibles."
+        },
+        {
+          "label": "Forbes profile",
+          "url": "https://www.forbes.com/profile/joe-quig/",
+          "note": "Profiles Joe Quig as a ranked Delaware wealth advisor, corroborating the financial-services identity."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12twe61",
+    "displayName": "Joseph Sirosh",
+    "headline": "Founder of CreatorsAGI and former AI/technology executive at Microsoft, Amazon, and Compass",
+    "company": "CreatorsAGI Inc.",
+    "title": "CEO and Founder",
+    "location": "Bellevue, Washington, US",
+    "tags": ["generative AI", "AI agents", "enterprise AI", "cloud platforms", "machine learning leadership"],
+    "confidence": "high",
+    "confidenceNote": "Multiple high-signal sources identify Joseph Sirosh as CEO/President or founder of CreatorsAGI and document prior executive AI roles at Microsoft, Amazon, and Compass.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI executive and entrepreneur building CreatorsAGI, with prior leadership roles spanning Microsoft Azure AI, Amazon machine learning and Alexa Shopping, and Compass technology. Strong match for conversations on AI agents, enterprise AI platforms, creator-facing AI products, and scaling machine-learning organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Absci board bio",
+          "url": "https://investors.absci.com/board-member/joseph-sirosh-phd",
+          "note": "Lists Dr. Sirosh as CEO and President of CreatorsAGI Inc. and summarizes prior Amazon, Microsoft, Compass, and education credentials."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/josephsirosh?lang=en",
+          "note": "Public bio states Founder, CreatorsAGI.com, and describes focus on Authentic Generative Interaction and GenAI."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/joseph-sirosh",
+          "note": "Public professional profile for Joseph Sirosh in Bellevue, Washington."
+        },
+        {
+          "label": "CreatorsAGI LinkedIn company page",
+          "url": "https://www.linkedin.com/company/creatorsagi",
+          "note": "Company page lists Joseph Sirosh among CreatorsAGI employees and shows Bellevue, Washington as the company location."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "GeekWire CreatorsAGI launch coverage",
+          "url": "https://www.geekwire.com/2024/former-amazon-and-microsoft-exec-joseph-sirosh-launches-stealthy-new-generative-ai-startup/",
+          "note": "Reports Sirosh launching CreatorsAGI after senior roles at Amazon, Microsoft, and Compass."
+        },
+        {
+          "label": "Newsfile CreatorsAGI platform announcement",
+          "url": "https://www.newsfilecorp.com/release/209066/CreatorsAGI-Inc-Launches-Platform-Empowering-Creators-with-Authentic-Generative-Interactions",
+          "note": "Company announcement describes CreatorsAGI as founded by AI thought leader Joseph Sirosh and focused on Authentic Generative Interaction."
+        },
+        {
+          "label": "KDD 2018 speaker bio",
+          "url": "https://www.kdd.org/kdd2018/applied-data-science-invited-talks/view/joseph-sirosh",
+          "note": "Historical speaker bio describes Sirosh's Microsoft AI role and prior Amazon machine-learning leadership."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1mzmd0c",
+    "displayName": "Josh Birdwell",
+    "headline": "AI architect and developer at YouVersion with a long-running public engineering footprint",
+    "company": "YouVersion",
+    "title": "AI Architect",
+    "location": "United States",
+    "tags": ["AI architecture", "software engineering", "developer tools", "faith technology", "frontend engineering"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub, LinkedIn, and social profiles consistently identify Josh Birdwell and tie him to YouVersion engineering/AI work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI architect and software engineer at YouVersion with public work across personal tooling, open-source projects, and applied AI. Relevant for conversations on AI inside large consumer apps, developer workflows, and building faith-oriented technology at scale.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://birdwell.ai/",
+          "note": "First-party profile for Josh Birdwell with current work and project links."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/birdwell",
+          "note": "Public engineering footprint and repositories."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/joshdbirdwell",
+          "note": "Public social profile connected to Josh Birdwell."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/birdwell",
+          "note": "Professional profile for Josh Birdwell."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Cursor community profile",
+          "url": "https://forum.cursor.com/u/birdwell/summary",
+          "note": "Developer community profile tied to the same public handle."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1x7nbfd",
+    "displayName": "Josh Grosbard",
+    "headline": "Data and healthcare operator at Parachute Health",
+    "company": "Parachute",
+    "title": "VP Data",
+    "location": "Austin, US",
+    "tags": ["healthcare data", "DME", "operations", "healthtech", "data leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly connect Josh Grosbard to Parachute Health leadership, but several sources use CEO/President rather than the participant-provided VP Data title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Healthcare data and operations leader connected to Parachute Health, a digital ordering network for durable medical equipment and supplies. Useful match for conversations on healthcare workflow automation, data operations, payer/provider coordination, and scaling regulated healthtech products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Terumo news release",
+          "url": "https://www.terumo.com/newsrelease/detail/20250512/6561",
+          "note": "Quotes Josh Grosbard as CEO of Parachute Health in a 2025 partnership announcement."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/parachute-health/org-chart/josh-grosbard",
+          "note": "Org profile for Josh Grosbard at Parachute Health."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Texas TDLR registration",
+          "url": "https://www.tdlr.texas.gov/LicenseSearch/LicenseDetails?licnum=106162&type=DME",
+          "note": "Regulatory record connected to Parachute Health presence in Texas."
+        },
+        {
+          "label": "Intelligence360 company coverage",
+          "url": "https://www.intelligence360.news/new-york-new-york-based-parachute-health-is-raising-30-000-000-00-in-new-equity-investment/",
+          "note": "Funding coverage naming Parachute Health and Josh Grosbard."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1kmnnwq",
+    "displayName": "Josh Leavitt",
+    "headline": "Senior product leader at Coinbase working across data, crypto infrastructure, and AI",
+    "company": "Coinbase",
+    "title": "Senior Director of Product Management",
+    "location": "United States",
+    "tags": ["crypto", "product management", "data platforms", "AI strategy", "blockchain infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Coinbase, conference, LinkedIn, and social sources consistently identify Josh Leavitt as a Coinbase product leader.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior product leader at Coinbase with public work around crypto infrastructure, data, and AI strategy. Relevant for attendees thinking about trustworthy data layers, AI for financial products, blockchain infrastructure, and product leadership in regulated markets.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/josh-leavitt",
+          "note": "Professional profile for Josh Leavitt at Coinbase."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/Josh_Leavitt",
+          "note": "Public social profile for Josh Leavitt."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Josh+Leavitt",
+          "note": "Speaker/session listing for Josh Leavitt at AI Engineer World's Fair."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Coinbase and Chainlink announcement",
+          "url": "https://www.prnewswire.com/news-releases/coinbase-and-chainlink-launch-institutional-grade-oracle-solution-302323689.html",
+          "note": "Announcement quotes Josh Leavitt in a Coinbase product leadership context."
+        },
+        {
+          "label": "CoinDesk coverage",
+          "url": "https://www.coindesk.com/business/2024/12/10/coinbase-chainlink-announce-new-institutional-grade-oracle-service",
+          "note": "Media coverage of Coinbase/Chainlink oracle work connected to Josh Leavitt."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0gegt79",
+    "displayName": "Josh Woodruff",
+    "headline": "Founder and CEO of MassiveScale.AI focused on agentic AI trust and security",
+    "company": "MassiveScale.AI",
+    "title": "CEO",
+    "location": "United States",
+    "tags": ["agentic AI", "AI security", "trust frameworks", "cybersecurity", "governance"],
+    "confidence": "high",
+    "confidenceNote": "Company, CSA, and author profiles consistently identify Josh Woodruff as MassiveScale.AI founder/CEO and connect him to agentic AI trust work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of MassiveScale.AI, working on trust, security, and governance for agentic AI systems. Strong match for conversations on AI security architecture, agent risk, responsible deployment, and enterprise AI governance.",
+    "sources": {
+      "primary": [
+        {
+          "label": "MassiveScale.AI about page",
+          "url": "https://massivescale.ai/about",
+          "note": "Company page identifying Josh Woodruff and the MassiveScale.AI mission."
+        },
+        {
+          "label": "Cloud Security Alliance profile",
+          "url": "https://cloudsecurityalliance.org/profiles/josh-woodruff",
+          "note": "Profile tying Josh Woodruff to AI security and agentic trust work."
+        },
+        {
+          "label": "DataBreachToday author profile",
+          "url": "https://www.databreachtoday.com/authors/josh-woodruff-i-5657",
+          "note": "Author profile for Josh Woodruff."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CSA blog article",
+          "url": "https://cloudsecurityalliance.org/blog/2025/04/10/agentic-ai-and-the-future-of-trust",
+          "note": "Article by Josh Woodruff on agentic AI and trust."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03a099u",
+    "displayName": "Joshua Amrani",
+    "headline": "CRO and go-to-market operator at Zencastr",
+    "company": "Zencastr",
+    "title": "CRO",
+    "location": "San Francisco, US",
+    "tags": ["go-to-market", "revenue leadership", "creator economy", "podcasting", "media production"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, company, and professional community sources consistently identify Joshua Amrani as a revenue and GTM operator.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Revenue and go-to-market operator at Zencastr, with public work around creator, media, and production businesses. Useful match for conversations on GTM systems, creator tooling, podcast/video workflows, and selling AI-enabled media products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/joshuajamrani",
+          "note": "Professional profile for Joshua Amrani."
+        },
+        {
+          "label": "The Amrani Group team page",
+          "url": "https://www.theamranigroup.com/team",
+          "note": "Team page with Joshua Amrani background."
+        },
+        {
+          "label": "Equal Parts Productions about page",
+          "url": "https://www.equalpartsproductions.com/about",
+          "note": "Media production context connected to Joshua Amrani."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Pavilion ambassador profile",
+          "url": "https://www.joinpavilion.com/ambassadors",
+          "note": "Professional community page listing Joshua Amrani."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "17sr5tq",
+    "displayName": "Jourdi Waller",
+    "headline": "Senior UX Engineer at Gravitee focused on developer-facing product interfaces",
+    "company": "Gravitee",
+    "title": "UX Engineer",
+    "location": "United States",
+    "tags": ["UX engineering", "frontend engineering", "API management", "design systems", "developer experience"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, Gravitee, and contributor profiles consistently identify Jourdi Waller and her engineering focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "UX engineer at Gravitee working where product design, frontend engineering, and developer experience meet. Good match for conversations on API platform UX, design systems, frontend architecture, and making technical products easier to use.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jourdiwaller",
+          "note": "Professional profile for Jourdi Waller."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/jourdiw",
+          "note": "Public engineering profile and repositories."
+        },
+        {
+          "label": "Gravitee careers/team context",
+          "url": "https://www.gravitee.io/careers",
+          "note": "Company context for Gravitee's API management product and team."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/gravitee/org-chart/jourdi-waller",
+          "note": "Org-directory profile for Jourdi Waller at Gravitee."
+        },
+        {
+          "label": "Exceeds contributor profile",
+          "url": "https://github.com/exceedsystem/exceeds/commits?author=jourdiw",
+          "note": "Public commit history tied to the same GitHub identity."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qgfwkm",
+    "displayName": "Juan Canal",
+    "headline": "Co-founder at Numbi with prior Rappi and analytics/startup context",
+    "company": "Numbi",
+    "title": "Co founder",
+    "location": "Latin America",
+    "tags": ["startup founder", "data analytics", "Latin America", "marketplaces", "growth"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources connect Juan Canal to Numbi and prior Latin American startup context, but source depth is lighter than for high-confidence profiles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder at Numbi, with public context around Latin American startup and analytics work. Relevant for conversations on data-driven operations, marketplace growth, and building AI tools for emerging-market businesses.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn directory profile",
+          "url": "https://www.linkedin.com/pub/dir/Juan/Canal",
+          "note": "Public LinkedIn directory result for Juan Canal."
+        },
+        {
+          "label": "La Republica Numbi coverage",
+          "url": "https://www.larepublica.co/empresas/numbi-la-startup-colombiana-que-busca-transformar-la-relacion-entre-empresas-y-datos-3352798",
+          "note": "Coverage of Numbi and its company context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "La Nota Economica coverage",
+          "url": "https://lanotaeconomica.com.co/movidas-empresarial/numbi-la-startup-colombiana-que-transforma-los-datos-en-decisiones/",
+          "note": "Secondary coverage of Numbi's data and decision-making positioning."
+        },
+        {
+          "label": "BuildBetter Rappi quote",
+          "url": "https://buildbetter.ai/customers/rappi",
+          "note": "Customer-story context linking Juan Canal to Rappi product/research workflows."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0goru0k",
+    "displayName": "Juan Pane Arregui",
+    "headline": "Director at Klinikare Digital Health",
+    "company": "Klinikare Digital Health",
+    "title": "Director",
+    "location": "Madrid, Spain",
+    "tags": ["digital health", "healthcare operations", "Spain", "company building", "healthtech"],
+    "confidence": "medium",
+    "confidenceNote": "Public company and registry sources support the Klinikare Digital Health connection, but detailed role context is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director connected to Klinikare Digital Health in Madrid. Best suited for conversations on digital health operations, healthcare product formation, and the practical constraints of building healthtech products in European markets.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://es.linkedin.com/in/juanpane",
+          "note": "Professional profile for Juan Pane."
+        },
+        {
+          "label": "Klinikare website",
+          "url": "https://klinikare.com/",
+          "note": "Company website for Klinikare Digital Health."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "DatosCif company record",
+          "url": "https://www.datoscif.es/empresa/klinikare-digital-health-sl",
+          "note": "Spanish company registry context for Klinikare Digital Health."
+        },
+        {
+          "label": "Empresia company record",
+          "url": "https://www.empresia.es/empresa/klinikare-digital-health/",
+          "note": "Company registry and corporate context."
+        },
+        {
+          "label": "UK Companies House record",
+          "url": "https://find-and-update.company-information.service.gov.uk/officers/MEb8BfIgvL9PoycyDSbv6Tj-1XI/appointments",
+          "note": "Director/officer record for Juan Pane Arregui."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qi4jns",
+    "displayName": "Julian Wergieluk",
+    "headline": "CEO of LOLML GmbH and machine-learning engineer",
+    "company": "LOLML GmbH",
+    "title": "CEO",
+    "location": "Germany",
+    "tags": ["machine learning", "LLMs", "AI engineering", "startup founder", "research"],
+    "confidence": "high",
+    "confidenceNote": "Company, personal, scholarly, and developer profiles consistently identify Julian Wergieluk and his machine-learning work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO of LOLML GmbH and machine-learning engineer with public work across research, developer platforms, and applied LLM tooling. Strong match for conversations on model engineering, AI product development, and translating research into deployable systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LOLML website",
+          "url": "https://lolml.com/",
+          "note": "Company website for LOLML."
+        },
+        {
+          "label": "Personal site",
+          "url": "https://wergieluk.com/",
+          "note": "First-party site for Julian Wergieluk."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/julian-wergieluk",
+          "note": "Professional profile for Julian Wergieluk."
+        },
+        {
+          "label": "Hugging Face profile",
+          "url": "https://huggingface.co/wergieluk",
+          "note": "Machine-learning community profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?user=vj5gE3MAAAAJ",
+          "note": "Research publication profile."
+        },
+        {
+          "label": "Medium profile",
+          "url": "https://medium.com/@wergieluk",
+          "note": "Writing profile for AI and engineering topics."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hwt6kt",
+    "displayName": "Junaid Qureshi",
+    "headline": "CTO at Ruya AI building AI-agent platforms for government and enterprise use cases",
+    "company": "Ruya AI",
+    "title": "CTO",
+    "location": "Dubai, United Arab Emirates",
+    "tags": ["AI agents", "enterprise AI", "government technology", "startup leadership", "marketplaces"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources identify Junaid Ali Qureshi as CTO or a founder/employee at Ruya AI; background details are strongest on LinkedIn-adjacent and startup-directory sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Ruya AI, focused on AI-agent platforms and applied AI products for organizations. Public profiles describe him as a repeat founder, angel investor, and former marketplace/health-tech operator, useful for conversations around AI product strategy, public-sector AI, and startup scaling.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ae.linkedin.com/in/junaidaliqureshi",
+          "note": "Public LinkedIn result identifies Junaid Ali Qureshi with Ruya AI and a CTO/AI profile in Dubai."
+        },
+        {
+          "label": "F6S Ruya AI company profile",
+          "url": "https://www.f6s.com/company/ruya-ai-dubai-uae",
+          "note": "Lists Junaid Ali Qureshi among Ruya AI founders/employees and describes his founder, investor, and C-level background."
+        },
+        {
+          "label": "Ruya AI LinkedIn company page",
+          "url": "https://www.linkedin.com/company/ruyaai",
+          "note": "Company page lists Junaid Ali Qureshi as an employee with 'CTO | AI' and shows Ruya AI activity."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/ruya-ai/org-chart/junaid-ali-qureshi",
+          "note": "Unverified org-chart profile lists him as Chief Technology Officer at Ruya AI since May 2024."
+        },
+        {
+          "label": "Devpost Ruya AI Hackathon 2026",
+          "url": "https://ruyaai-hackathon-2026.devpost.com/",
+          "note": "Lists Junaid Qureshi as a Ruya AI judge for a self-improving agents hackathon."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1xhndhr",
+    "displayName": "Justin Ip",
+    "headline": "Founder and CEO of Kick Health, with prior product and engineering leadership at AllTrails",
+    "company": "Kick Health",
+    "title": "Founder + CEO",
+    "location": "San Francisco, United States",
+    "tags": ["digital health", "consumer health", "telemedicine", "product leadership", "marketplaces"],
+    "confidence": "high",
+    "confidenceNote": "Strong match across LinkedIn, Wellfound, interview, and company-related sources; current company and founder role are consistent.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Kick Health, a consumer health company focused on performance anxiety, sleep, and confidence-related care. Previously helped lead product and engineering at AllTrails, making him a strong match for conversations on consumer health, telemedicine UX, and scaling product-led startups.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/justinip",
+          "note": "Public profile shows Justin Ip associated with Kick Health and San Francisco."
+        },
+        {
+          "label": "Wellfound profile",
+          "url": "https://wellfound.com/p/ipster",
+          "note": "Lists Justin Ip as Founder + CEO of Kick Health and describes his AllTrails product/engineering background."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/ipster",
+          "note": "Public social profile describes him as prescription-strength confidence at Kick Health and previously Head of Product at AllTrails."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "SuperbCrew interview",
+          "url": "https://www.superbcrew.com/an-interview-with-justin-ip-the-founder-ceo-at-kick-health/",
+          "note": "Interview identifies him as Founder & CEO at Kick Health and explains the company's focus."
+        },
+        {
+          "label": "Fuzzco Kick case study",
+          "url": "https://fuzzco.com/work/kick/",
+          "note": "Branding case study says Kick founder Justin Ip worked with Fuzzco on the pre-launch consumer telehealth company."
+        },
+        {
+          "label": "CB Insights Kick Health people page",
+          "url": "https://www.cbinsights.com/company/kick-health/people",
+          "note": "Lists Justin Ip as Kick Health's Founder & CEO."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "06mzgat",
+    "displayName": "Justin Reock",
+    "headline": "Deputy CTO at DX and author/speaker on AI-assisted engineering and developer productivity",
+    "company": "DX",
+    "title": "Deputy CTO",
+    "location": "United States",
+    "tags": ["developer productivity", "AI-assisted engineering", "platform engineering", "engineering leadership", "DevEx"],
+    "confidence": "high",
+    "confidenceNote": "Current role and expertise are consistently described across DX, conference, and platform-engineering sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Deputy CTO at DX, where he writes and speaks on developer productivity, AI-assisted engineering, and engineering-system measurement. Useful for discussions on AI adoption programs, platform engineering, DevEx metrics, and how engineering leaders measure impact beyond raw code generation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "DX Engineering Enablement about page",
+          "url": "https://newsletter.getdx.com/about",
+          "note": "Justin Reock describes himself as Deputy CTO at DX and focused on AI's impact on developer experience."
+        },
+        {
+          "label": "DX prompting guide author page",
+          "url": "https://getdx.com/guide/prompting-guide-for-ai-assisted-engineering/",
+          "note": "DX guide lists Justin Reock as Deputy CTO and author with 20+ years in software roles."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/justinreock/",
+          "note": "Public professional profile for Justin Reock at DX."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "QCon AI New York speaker profile",
+          "url": "https://ai.qconferences.com/speakers/justinreock",
+          "note": "Conference profile lists him as Deputy CTO at DX and author of DX's Guide to AI Assisted Engineering."
+        },
+        {
+          "label": "Platform Engineering author page",
+          "url": "https://platformengineering.org/authors/justin-reock",
+          "note": "Author profile identifies him as Deputy CTO at DX and a developer-productivity speaker/writer."
+        },
+        {
+          "label": "Rootly Humans of Reliability interview",
+          "url": "https://rootly.com/humans-of-reliability/justin-reock",
+          "note": "Interview source frames him as Deputy CTO at DX and a voice on developer productivity and AI engineering."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1dlx9k0",
+    "displayName": "Justin Smith",
+    "headline": "Founding Product Engineer at Resolve AI, building AI workflows for production engineering and on-call work",
+    "company": "Resolve AI",
+    "title": "Founding Product Engineer",
+    "location": "United States",
+    "tags": ["AI agents", "developer tools", "observability", "product engineering", "incident response"],
+    "confidence": "high",
+    "confidenceNote": "Resolve AI event pages, LinkedIn activity, and org-directory sources consistently identify him as Founding Product Engineer at Resolve AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founding Product Engineer at Resolve AI, working on AI agents and product experiences for production engineering workflows. Public event bios note 15+ years building developer tools and observability platforms, including prior work at Splunk and VMware.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Resolve AI event profile",
+          "url": "https://resolve.ai/events/behind-the-build/agents-for-engineering-workflows",
+          "note": "Resolve page lists Justin Smith as Founding Product Engineer and describes his developer-tools and observability background."
+        },
+        {
+          "label": "LinkedIn post",
+          "url": "https://www.linkedin.com/posts/justin-smith-7b1534a8_as-a-founding-engineer-at-resolve-ive-been-activity-7424878353389793280-ODjw",
+          "note": "Justin Smith describes his work as a founding engineer at Resolve around product and early company building."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/justin-smith-7b1534a8/",
+          "note": "Public LinkedIn profile associated with Justin Smith and Founding Member of Technical Staff at Resolve.ai."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Resolve AI Behind the Build series page",
+          "url": "https://resolve.ai/events/behind-the-build?ref=tact.ghost.io&ref=tact.ghost.io&utm_campaign=behind-the-build-launch&utm_medium=cta-inline&utm_source=blog",
+          "note": "Series page profiles Justin Smith as Founding Product Engineer hosting a session on always-on background agents."
+        },
+        {
+          "label": "The Org Resolve AI Product and Solutions team",
+          "url": "https://theorg.com/org/resolve-ai/teams/product-and-solutions",
+          "note": "Unverified org-directory page lists Justin Smith as Founding Product Engineer."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Erina+Karati",
+          "note": "Public schedule result lists Justin Smith of Resolve AI as Founding Product Engineer for a talk on always-on agents."
+        }
+      ]
+    }
+  }
+]

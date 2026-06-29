@@ -1,0 +1,137 @@
+[
+  {
+    "lookupKey": "0fzummt",
+    "displayName": "Asaf Gardin",
+    "headline": "Inference engineer at AI21 working on production LLM serving, vLLM, and Jamba/Mamba reliability",
+    "company": "AI21",
+    "title": "Senior Software Engineer / Inference Engineer",
+    "location": "Tel Aviv, Israel",
+    "tags": ["LLM inference", "vLLM", "Jamba", "Mamba", "GPU systems", "AI infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and high-signal sources confirm AI21 inference role, vLLM work, and recent AI Engineer World's Fair speaking context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior software engineer on AI21's inference team, focused on high-performance LLM serving and reliability for systems such as vLLM, Jamba, and Mamba. Good match for conversations about production inference, GPU efficiency, model-serving bugs, and infrastructure for hybrid architectures.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://il.linkedin.com/in/joseph-asaf-gardin", "note": "Lists Asaf Gardin as Senior Software Engineer, Inference Team at AI21 Labs, focused on high-performance LLM inference and infrastructure."},
+        {"label": "GitHub profile", "url": "https://github.com/Josephasafg", "note": "Shows AI21 Labs affiliation and public work around AI21 repositories and vLLM."},
+        {"label": "AI21 blog", "url": "https://www.ai21.com/blog/vllm-debugging-mamba-bug/", "note": "AI21 engineering post about debugging vLLM scheduler and Mamba state corruption."},
+        {"label": "AI21 event page", "url": "https://www.ai21.com/events/ai-engineer-worlds-fair-2026/", "note": "Lists Asaf as an AI21 senior software engineer speaking on vLLM debugging at AI Engineer World's Fair 2026."}
+      ],
+      "secondary": [
+        {"label": "AI Tinkerers Tel Aviv event", "url": "https://tel-aviv.aitinkerers.org/p/ai-tinkerers-tel-aviv-inference-night-in-the-white-city", "note": "Lists Asaf Gardin as Senior Software Engineer, Inference Team at AI21 Labs, presenting on efficient LLM serving with vLLM."},
+        {"label": "Nebius Academy profile", "url": "https://academy.nebius.com/ai-engineering-il", "note": "Describes his specialization in large-scale LLM inference, performance optimization, production deployment, Jamba, and Mamba."},
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Inference", "note": "Public schedule lists Asaf Gardin at AI21 as Senior Software Engineer / Inference Engineer."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1of3eyq",
+    "displayName": "Ashish Mahure",
+    "headline": "Founder and CEO of GoCloud iQ, focused on cloud modernization, cyber resilience, and AI-ready infrastructure",
+    "company": "GoCloud iQ",
+    "title": "Founder / CEO",
+    "location": "Houston, TX, US",
+    "tags": ["cloud modernization", "cyber resilience", "AWS", "Azure", "Google Cloud", "AI infrastructure", "VMware migration"],
+    "confidence": "high",
+    "confidenceNote": "Company, hiring, and startup-profile sources consistently connect Ashish Mahure with GoCloud iQ leadership in Houston.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of GoCloud iQ, a Houston-based cloud and cyber resilience consultancy. Useful connection for enterprise cloud modernization, VMware exits, hybrid and multi-cloud strategy, security, compliance, and AI infrastructure adoption.",
+    "sources": {
+      "primary": [
+        {"label": "GoCloud iQ website", "url": "https://gocloudiq.com/", "note": "Company site describes GoCloudIQ's cloud strategy, managed cloud, security, compliance, migration, and enablement services."},
+        {"label": "GoCloud iQ LinkedIn company page", "url": "https://www.linkedin.com/company/gocloudiq", "note": "Describes GoCloudIQ as helping organizations modernize infrastructure, strengthen cybersecurity, and build intelligent cloud environments for the AI era."},
+        {"label": "Wellfound GoCloud iQ team page", "url": "https://wellfound.com/company/gocloud-iq/people", "note": "Lists Ashish Mahure as founder and places GoCloud iQ in Houston."}
+      ],
+      "secondary": [
+        {"label": "Wellfound job listing", "url": "https://wellfound.com/jobs/4258543-senior-solutions-architect-engagement-lead", "note": "Lists Ashish Mahure as hiring contact and founder for a GoCloudIQ cloud, infrastructure modernization, and cyber resilience role."},
+        {"label": "Buzzfile company profile", "url": "https://www.buzzfile.com/business/Gocloudiq-LLC-832-390-2374", "note": "Business directory lists Ashish Mahure as CEO of Gocloudiq LLC in Houston."},
+        {"label": "GoCloud iQ services page", "url": "https://gocloudiq.com/services", "note": "Details services around cloud migration, security, enablement, infrastructure optimization, and disaster recovery."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "156gfdz",
+    "displayName": "Ashish Pal",
+    "headline": "Enterprise technology and solution architecture leader in Selective Insurance's Enterprise COE",
+    "company": "Selective Insurance Company of America",
+    "title": "AVP, Enterprise COE Services",
+    "location": "Hartford, CT, US",
+    "tags": ["enterprise architecture", "insurance technology", "enterprise COE", "solution architecture", "AI COE", "financial services"],
+    "confidence": "medium",
+    "confidenceNote": "Role and location are supported by LinkedIn snippets and participant-provided data, but there is limited public corroboration beyond LinkedIn and company context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AVP for Enterprise COE Services at Selective Insurance, with public profile evidence pointing to nearly two decades in enterprise technology and solution architecture. Likely strong match for enterprise AI adoption, insurance technology modernization, architecture governance, and center-of-excellence operating models.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/palashish", "note": "Lists Ashish P. as AVP, Enterprise COE Services at Selective Insurance, with experience in enterprise technology and solution architecture."},
+        {"label": "Selective Insurance website", "url": "https://www.selectiveinsurance.com/", "note": "Official company site for Selective Insurance."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn people search", "url": "https://www.linkedin.com/pub/dir/Ashish/Pal/us-0-United-States", "note": "Search result lists Ashish P. as AVP Enterprise COE Services in Hartford, CT at Selective Insurance."},
+        {"label": "Selective Insurance AI COE job page", "url": "https://jobs.selective.com/jobs/5485?lang=en-us", "note": "Shows Selective has an AVP-level AI COE leadership function, useful company context for enterprise AI and COE work."},
+        {"label": "AM Best company profile", "url": "https://ratings.ambest.com/CompanyProfile.aspx?AltNum=694826&amb=826", "note": "Provides third-party context on Selective Insurance Company of America and its insurance business."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1c8qtdv",
+    "displayName": "Ashish Telukunta",
+    "headline": "Cofounder of Morphiq Labs, building agent-experience and answer-engine optimization tooling",
+    "company": "Morphiq Labs",
+    "title": "Cofounder",
+    "location": "San Francisco, CA, US",
+    "tags": ["agent experience", "answer engine optimization", "AI search", "developer tools", "benchmarks", "AI visibility", "agent analytics"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn profile/post evidence, company page, and Morphiq web/docs context align with the participant-provided name, company, and role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder at Morphiq Labs, working on how AI agents and answer engines discover, evaluate, and rank products. Relevant for conversations about agent-facing growth, AI visibility, developer-tool distribution, AEO, and benchmarks for coding-agent behavior.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile search result", "url": "https://www.linkedin.com/pub/dir/Ashish/Telukunta", "note": "Lists Ashish T. as Co-Founder at Morphiq Labs in the San Francisco Bay Area."},
+        {"label": "LinkedIn launch post", "url": "https://www.linkedin.com/posts/teluashish_were-launching-morphiq-bench-today-i-also-activity-7462993220965130240-CUqf", "note": "Ashish T. announces Morphiq Bench and describes why agent adoption of developer tools needs a better benchmark."},
+        {"label": "Morphiq Labs LinkedIn company page", "url": "https://www.linkedin.com/company/trymorphiq", "note": "Company page describes Morphiq Labs as a frontier AI research lab shaping agent experience and lists Ashish T. among employees."},
+        {"label": "Morphiq Labs documentation", "url": "https://docs.trymudra.com/", "note": "Describes Morphiq Labs as automating answer engine optimization and measuring AI visibility across frontier models."}
+      ],
+      "secondary": [
+        {"label": "Aryan Daga LinkedIn launch post", "url": "https://www.linkedin.com/posts/aryandaga_your-next-user-might-not-choose-your-dev-activity-7462987517705801728-iNEu", "note": "Co-launch context for Morphiq Bench, focused on how coding agents discover, compare, and use developer tools."},
+        {"label": "LinkedIn company search result", "url": "https://www.linkedin.com/company/trymorphiq", "note": "Shows Morphiq Labs founded in 2026 with a small team in technology and internet."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "11a3bzi",
+    "displayName": "Ashok Balaraman",
+    "headline": "Data, AI, cloud, and ML platform architect at Intuitive Surgical",
+    "company": "Intuitive Surgical, Inc.",
+    "title": "Managing Principal - AI & Cloud",
+    "location": "Sunnyvale, CA, US",
+    "tags": ["data engineering", "data science", "machine learning", "MLOps", "cloud platforms", "medical robotics", "surgical AI"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly connect Ashok Balaraman to Intuitive Surgical and DS/ML platform architecture, but the exact attendee title 'AI & Cloud' is only partially reflected in public profiles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Managing-principal-level data, ML, and platform architecture leader at Intuitive Surgical. Likely useful match for data platforms, MLOps, cloud infrastructure, surgical AI, analytics, and applying AI safely in medical-technology environments.",
+    "sources": {
+      "primary": [
+        {"label": "GitHub profile", "url": "https://github.com/ashokbalaraman", "note": "Public profile lists Ashok Balaraman with Intuitive Surgical, Inc., San Francisco, and a data engineer to data scientist focus."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/ashokbalaraman", "note": "Public snippet describes more than 20 years of experience in data and analytics."},
+        {"label": "Intuitive My Intuitive+ page", "url": "https://www.intuitive.com/en-us/digital-solutions/my-intuitive/my-intuitive-plus", "note": "Official Intuitive page describing AI-powered video analysis, performance dashboards, and cloud-based digital surgical tools."}
+      ],
+      "secondary": [
+        {"label": "The Org Intuitive analytics and engineering page", "url": "https://theorg.com/org/intuitive-surgical/teams/analytics-and-engineering", "note": "Lists Ashok Balaraman as Managing Principal - Platform Architect - DS & ML in Intuitive Surgical analytics and engineering."},
+        {"label": "Wiza profile", "url": "https://wiza.co/d/intuitive-surgical/ece4/ashok-balaraman", "note": "People-data profile lists Ashok Balaraman as Managing Principal - Platform Architect - DS & ML at Intuitive Surgical and based in the Bay Area."},
+        {"label": "Intuitive robotics newsroom article", "url": "https://www.intuitive.com/en-us/about-us/newsroom/exploring-new-advancements-in-robotics", "note": "Official Intuitive article gives company context on AI/ML work in robotic-assisted surgery."}
+      ]
+    }
+  }
+]

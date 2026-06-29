@@ -1,0 +1,230 @@
+[
+  {
+    "lookupKey": "1jivha8",
+    "displayName": "Shrirang Moghe",
+    "headline": "Engineering leader applying GenAI, developer productivity, and distributed-systems discipline to SDLC workflows",
+    "company": "Siemens Inc",
+    "title": "GenAI4SDLC Lead",
+    "location": "Portland, US",
+    "tags": ["GenAI for SDLC", "developer productivity", "distributed systems", "engineering leadership", "AI evals", "industrial software"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn public profile and directory/search results align on Shrirang Moghe, Siemens Digital Industries Software, Portland, and the GenAI4SDLC/developer-productivity role; supporting evidence is mostly LinkedIn-sourced.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "GenAI4SDLC lead in Siemens developer productivity, focused on bringing AI into software-delivery workflows with engineering rigor, distributed-systems thinking, operational excellence, and practical evaluation habits.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/shrirangmoghe", "note": "Public profile identifies him as GenAI4SDLC Lead for Siemens Developer Productivity at Siemens Digital Industries Software."},
+        {"label": "LinkedIn people directory", "url": "https://www.linkedin.com/pub/dir/Shrirang/Moghe", "note": "Directory result places Shrirang Moghe in Portland, Oregon, with Siemens Digital Industries Software."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn AI evals post", "url": "https://www.linkedin.com/posts/shrirangmoghe_ai-evals-for-engineers-pms-by-hamel-husain-activity-7364094109298384896-sqV3", "note": "Public post shows his AI-evaluation interests and current engineering-leader positioning."},
+        {"label": "LinkedIn developer productivity comment", "url": "https://www.linkedin.com/posts/brleach_seeing-how-siemens-enables-our-customers-activity-7314917028920758272-Fet6", "note": "Public comment connects him to Siemens developer enablement, secure-by-default tooling, and industrial software concerns."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0khxh2u",
+    "displayName": "Shruti Arora",
+    "headline": "Amazon AGI Labs technologist working on AI agents, customer engagement, and applied LLM systems",
+    "company": "Amazon AGI Lab",
+    "title": "Member of Technical Staff",
+    "location": "",
+    "tags": ["AI agents", "LLMs", "customer engagement", "Amazon AGI", "applied AI", "search and retrieval"],
+    "confidence": "high",
+    "confidenceNote": "Amazon Science, LinkedIn, and AI Engineer World's Fair schedule evidence consistently match Shruti Arora as Member of Technical Staff at Amazon AGI/AGI Labs.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Member of Technical Staff at Amazon AGI Lab, working where applied AI agents, LLM systems, and customer-facing technical engagement meet. Useful match for agent-building, retrieval, and production AI conversations.",
+    "sources": {
+      "primary": [
+        {"label": "Amazon Science author profile", "url": "https://www.amazon.science/author/shruti-arora", "note": "Official Amazon Science profile lists Shruti Arora as Member of Technical Staff, AGI Labs."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/shruti-arora-0730", "note": "Public profile identifies her as Member of Technical Staff and Customer Engagement at Amazon AGI with LLM and AI-agent focus."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?day=4&session=428", "note": "Event schedule lists Shruti Arora from Amazon AGI Lab on the Build with Perception Agents session."},
+        {"label": "LinkedIn people directory", "url": "https://www.linkedin.com/pub/dir/Shruti/Arora/us-0-United-States", "note": "Directory result matches Shruti Arora at Amazon AGI with LLM and AI-agent positioning."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qb2tkb",
+    "displayName": "Shruti Kamath",
+    "headline": "Mozilla AI engineering director bringing user-choice, privacy, and local-model thinking into Firefox experiences",
+    "company": "Mozilla",
+    "title": "Sr Director AI",
+    "location": "Seattle, US",
+    "tags": ["browser AI", "Firefox", "local AI", "privacy", "user agency", "machine learning", "open web"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, public interview material, and Mozilla-adjacent project coverage consistently identify Shruti Kamath as a senior AI leader at Mozilla/Firefox; location is verified as Seattle rather than San Francisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior AI leader at Mozilla working on Firefox AI experiences with an emphasis on choice, transparency, privacy, and local-model use. Strong match for browser AI, open-web, and user-agency conversations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/shrutikamath", "note": "Public profile lists Shruti Kamath as Sr Director, AI at Mozilla in Seattle."},
+        {"label": "Firefox AI interview post", "url": "https://www.linkedin.com/posts/craylor_last-week-i-got-to-interview-shruti-kamath-activity-7405324739847553024-snN4", "note": "Interview post names her as Senior Director of AI at Mozilla and discusses Firefox AI user-choice principles."}
+      ],
+      "secondary": [
+        {"label": "CSUMB Mozilla capstone recap", "url": "https://mattcool.tech/posts/csumb-student-capstones-2025/", "note": "Mozilla collaborator recap names Shruti Kamath as supporting Firefox AI platform student work."},
+        {"label": "LinkedIn people directory", "url": "https://www.linkedin.com/pub/dir/Shruti/Kamath/us-0-United-States", "note": "Directory result confirms Sr Director, AI at Mozilla in Seattle."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "12ocsnw",
+    "displayName": "Shubhankar Srivastava",
+    "headline": "Browserbase sales engineer helping teams design web automation and browser-agent workflows",
+    "company": "Browserbase",
+    "title": "Sales Engineer",
+    "location": "San Francisco, US",
+    "tags": ["browser agents", "web automation", "sales engineering", "developer tools", "agent infrastructure", "Browserbase"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, Browserbase blog authorship, and AI Engineer schedule align on Shubhankar Srivastava at Browserbase; title appears as Sales Engineer or Founding Sales Engineer depending on source.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sales engineer at Browserbase helping customers design browser-agent and web-automation systems. Writes about Browserbase APIs and speaks on improving agents with skills.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://shubhankar.xyz/", "note": "Personal site identifies Shubhankar Srivastava as building at Browserbase in San Francisco."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/shubhankarsrivastava", "note": "Public profile describes him as a Sales Engineer working with enterprise customers and scaling Browserbase."},
+        {"label": "Browserbase blog author page/article", "url": "https://www.browserbase.com/blog/search-vs-fetch-vs-browsers", "note": "Browserbase blog lists Shubhankar Srivastava as coauthor of a tutorial on choosing Browserbase APIs."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Workshops+Day+1", "note": "Schedule lists him as Founding Sales Engineer at Browserbase for Hill-climbing Skills: How to Improve Agents Without Touching the Model."},
+        {"label": "The Org Browserbase team", "url": "https://theorg.com/org/browserbase/teams/sales-engineering", "note": "Unverified org chart lists Shubhankar Srivastava on Browserbase's sales engineering team."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "13bsxd9",
+    "displayName": "Shunsaku Endo",
+    "headline": "APTO co-founder and CDO building AI data and development workflows for enterprise AI projects",
+    "company": "APTO Inc.",
+    "title": "Co-founder / CDO",
+    "location": "Tokyo, Japan",
+    "tags": ["AI data", "AI development", "startup founder", "product development", "Japan startups", "data operations"],
+    "confidence": "high",
+    "confidenceNote": "APTO's official careers page, LinkedIn, and Wantedly member page consistently identify Shunsaku Endo with APTO; official title is Co-founder / CDO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CDO at APTO, where he manages development and business work around AI data and corporate AI problem-solving. Relevant for AI data pipelines, startup building, and Japan-US AI ecosystem conversations.",
+    "sources": {
+      "primary": [
+        {"label": "APTO careers page", "url": "https://apto.co.jp/en/careers/", "note": "Official APTO page lists Shunsaku Endo as Co-founder / CDO and describes his AI-development background."},
+        {"label": "LinkedIn profile", "url": "https://jp.linkedin.com/in/shunsaku-end0", "note": "Public profile lists him as Chief Development Officer at APTO in Shibuya-ku, Tokyo."}
+      ],
+      "secondary": [
+        {"label": "Wantedly APTO members", "url": "https://sg.wantedly.com/companies/company_815466/members", "note": "Company member page lists Shunsaku Endo among APTO members."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1g4unsy",
+    "displayName": "Sidney Hori Hawthorne",
+    "headline": "AI adoption advisor and former Accenture technology leader helping executives operationalize practical AI",
+    "company": "Aeonix Tech",
+    "title": "Founder",
+    "location": "",
+    "tags": ["AI strategy", "enterprise AI", "AI adoption", "consulting", "business transformation", "executive advisory"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Aeonix Tech site, LinkedIn, and F6S evidence consistently identify Sidney Hori Hawthorne as founder of Aeonix/Aeonix Tech with long Accenture and enterprise AI background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Aeonix Tech and longtime enterprise technology consultant, advising leaders on practical AI adoption, decision support, and business transformation. Strong match for executive AI strategy and applied enterprise AI conversations.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://sidneyhori.com/", "note": "Personal site says he founded Aeonix Tech after 26 years at Accenture, focusing on practical AI applications for businesses."},
+        {"label": "Aeonix Tech site", "url": "https://aeonixtech.com/", "note": "Company site names Sidney Hori Hawthorne as Founder and Chief AI Officer at Aeonix Tech."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sidney-hori", "note": "Public profile describes him as Founder of Aeonix Tech advising executives and boards on AI adoption."}
+      ],
+      "secondary": [
+        {"label": "F6S profile", "url": "https://www.f6s.com/member/sidney-hori-hawthorne", "note": "Startup profile summarizes his Aeonix Technopreneurs leadership and 25-plus years in technology innovation and transformation."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "13gi4ft",
+    "displayName": "Sina Sohangir",
+    "headline": "FICO AI engineering leader building GenAI systems for financial-services decisioning, fraud, and automation",
+    "company": "FICO",
+    "title": "VP of AI Engineering",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["AI engineering", "GenAI", "financial services", "fraud detection", "decisioning", "agents", "FICO"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Neuron profile, X profile, and event/video references align on Sina Sohangir as VP of AI Engineering at FICO in the San Francisco Bay Area.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of AI Engineering at FICO, leading GenAI engineering work for financial-services workflows such as fraud detection, decision authoring, customer communications, and agentic automation.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sohangir", "note": "Public profile lists Sina Sohangir as Vice President of AI Engineering at FICO."},
+        {"label": "X profile", "url": "https://x.com/sohangir", "note": "Public profile headline says VP of AI at FICO and focuses on effective AI and agents."}
+      ],
+      "secondary": [
+        {"label": "Neuron profile", "url": "https://neuron.com/profile/4919115655/sina-sohangir", "note": "Profile lists Sina Sohangir as FICO Vice President of AI Engineering based in the San Francisco Bay Area."},
+        {"label": "FICO hiring post", "url": "https://www.linkedin.com/posts/sohangir_ping-me-if-you-are-interested-activity-7463060560688062466-0-L9", "note": "Public post describes FICO GenAI work across LLMs, fraud detection, decision authoring, customer communications, and performance optimization."},
+        {"label": "Global Fintech Fest video", "url": "https://www.youtube.com/watch?v=RIevWXrE00E", "note": "Conference video description lists Sina Sohangir as VP of AI Engineering at FICO."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pivv2i",
+    "displayName": "Sinem Ergunay",
+    "headline": "UX researcher and strategic designer connecting user research, product design, and AI-enabled internal tools",
+    "company": "Google",
+    "title": "Senior UX Researcher",
+    "location": "Mountain View, US",
+    "tags": ["UX research", "user research", "strategic design", "product design", "Google", "AI tools", "workshops"],
+    "confidence": "low",
+    "confidenceNote": "Public evidence confirms Sinem Ergunay/Ergünay as a UX Researcher at Google and as a designer/researcher, but the Senior UX Researcher title and current Mountain View location are not directly verified from a primary profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "UX researcher at Google with public design and user-research traces. Likely useful for conversations about user research, product discovery, strategic design, and making AI tools fit real human workflows.",
+    "sources": {
+      "primary": [
+        {"label": "Behance profile", "url": "https://www.behance.net/sinemergunay?locale=en_US", "note": "Portfolio profile for Sinem Sissi Ergunay shows product and design work."},
+        {"label": "Creativepool profile", "url": "https://creativepool.com/sissiergunay/about", "note": "Profile identifies Sinem Sissi Ergünay as a product designer with market research and user research experience."}
+      ],
+      "secondary": [
+        {"label": "Debra Schifrin testimonial page", "url": "https://www.debraschifrin.com/testimonials", "note": "Public testimonial attributes a quote to Sinem Ergunay, UX Researcher at Google, about a workshop for Google UX researchers."},
+        {"label": "Debra Schifrin homepage", "url": "https://www.debraschifrin.com/", "note": "Homepage repeats the attribution to Sinem Ergunay, UX Researcher, Google."},
+        {"label": "Slideshare profile", "url": "https://www.slideshare.net/SinemErgnay", "note": "Public profile shows design research presentations under Sinem Ergünay."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "02w3005",
+    "displayName": "Sitanshu Gupta",
+    "headline": "Inference engineering leader building high-performance AI serving systems at CoreWeave",
+    "company": "Coreweave",
+    "title": "Director Inference",
+    "location": "Sunnyvale, US",
+    "tags": ["inference", "AI infrastructure", "GPU systems", "model serving", "CoreWeave", "distributed systems", "AI accelerators"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, CoreWeave blog authorship, W&B event page, and AI Engineer schedule consistently connect Sitanshu Gupta with CoreWeave inference leadership; exact location comes from participant-provided data rather than strong public source.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Inference at CoreWeave, focused on high-performance model serving, GPU/cloud inference systems, and model optimization. Prior public traces connect him to AWS Annapurna, SambaNova, and AI accelerator software.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sitanshugupta", "note": "Public profile headline places him on CoreWeave Inference with prior AWS Annapurna and SambaNova experience."},
+        {"label": "CoreWeave blog", "url": "https://www.coreweave.com/blog/glm-5-2-now-available-on-coreweave-inference", "note": "CoreWeave article is authored by Sitanshu Gupta and discusses CoreWeave Serverless Inference performance."}
+      ],
+      "secondary": [
+        {"label": "Weights & Biases event page", "url": "https://wandb.ai/site/resources/events/ai-engineer-worlds-fair/", "note": "Event page lists Sitanshu Gupta as Director of Inference at CoreWeave for an AI Engineer World's Fair session."},
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Inference", "note": "Schedule lists Sitanshu Gupta from CoreWeave on an inference-track session."},
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=u4ej6LUAAAAJ", "note": "Scholar profile for Sitanshu Gupta shows prior SambaNova Systems affiliation and machine-learning hardware/software research interests."}
+      ]
+    }
+  }
+]

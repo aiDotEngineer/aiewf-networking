@@ -1,0 +1,458 @@
+[
+  {
+    "lookupKey": "0w57s2z",
+    "displayName": "Glen Lee",
+    "headline": "Founder/CTO and CEO-profiled startup technology advisor at Moderna Technology Group",
+    "company": "Moderna Technology Group Inc",
+    "title": "CEO",
+    "location": "Vancouver, Canada",
+    "tags": ["startup advisory", "CTO advisory", "product strategy", "technical leadership", "market validation"],
+    "confidence": "medium",
+    "confidenceNote": "Moderna's site identifies Glen Lee as Founder/CTO; Startup Grind social posts identify him as CEO of Moderna Technology Group. Location is based on supplied participant data and related Vancouver-area Startup Grind context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Startup technology leader focused on CTO advisory, product roadmaps, MVP validation, and scaling technical teams for early-stage companies. Useful match for founders and operators looking to pressure-test technical strategy or build practical product delivery plans.",
+    "sources": {
+      "primary": [
+        { "label": "Moderna Technology Group - CTO Advisory", "url": "https://www.moderna.tech/ctoadvisory/", "note": "Company page names Glen Lee as Founder/CTO and describes Moderna's CTO advisory, product management, and startup support services." }
+      ],
+      "secondary": [
+        { "label": "Startup Grind Richmond Instagram post", "url": "https://www.instagram.com/p/B-jPUWbhI_4/", "note": "Startup Grind post identifies Glen Lee as CEO of Moderna Technology Group in sponsor/event context." },
+        { "label": "Moderna Tech YouTube event listing", "url": "https://www.youtube.com/watch?v=Jigw0zucBek", "note": "Video listing references Glen Lee, CEO of Moderna Technology Group." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rfle76",
+    "displayName": "Glenn Moore",
+    "headline": "Acting Group Chief Technology and Transformation Officer at nib",
+    "company": "nib",
+    "title": "Acting Group Chief Technology and Transformation Officer",
+    "location": "Newcastle, Australia",
+    "tags": ["health insurance", "technology transformation", "enterprise technology", "digital leadership", "executive leadership"],
+    "confidence": "high",
+    "confidenceNote": "Official nib management page lists Glenn Moore as Acting Group Chief Technology and Transformation Officer; LinkedIn corroborates nib affiliation and Greater Newcastle location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology and transformation executive at nib, an Australian health insurer. Relevant for enterprise technology leadership, digital transformation, regulated consumer services, and scaling technology functions in insurance.",
+    "sources": {
+      "primary": [
+        { "label": "nib Management", "url": "https://www.nib.com.au/shareholders/company-profile/management", "note": "Official nib management page lists Glenn Moore as Acting Group Chief Technology and Transformation Officer." },
+        { "label": "LinkedIn profile", "url": "https://au.linkedin.com/in/mooreglenn", "note": "Professional profile shows nib Group affiliation and Greater Newcastle Area location." }
+      ],
+      "secondary": [
+        { "label": "Yahoo Finance nib profile", "url": "https://au.finance.yahoo.com/quote/NHF.AX/profile/", "note": "Company profile lists Glenn Moore as Acting Group Chief Technology and Transformation Officer." },
+        { "label": "MarketScreener nib company profile", "url": "https://www.marketscreener.com/quote/stock/NIB-HOLDINGS-LIMITED-6500015/company/", "note": "Executive listing includes Glenn Moore in a CTO technology leadership role at nib." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ugp4iu",
+    "displayName": "Gong Zhang",
+    "headline": "Senior Director, Software Engineering at UiPath",
+    "company": "UiPath",
+    "title": "Senior Director, Software Engineering",
+    "location": "Bellevue, United States",
+    "tags": ["agentic automation", "cloud platforms", "software engineering leadership", "API gateways", "enterprise SaaS"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and recent posts identify Gong Zhang as Senior Director, Software Engineering at UiPath; UiPath engineering blog confirms technical authorship on Automation Cloud infrastructure.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at UiPath working on enterprise automation cloud and agentic systems. Relevant match for large-scale SaaS infrastructure, API gateway architecture, observability, and product-minded engineering teams.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gong-zhang-612bb064", "note": "Professional profile identifies Gong Zhang as Senior Director, Software Engineering at UiPath." },
+        { "label": "Engineering@UiPath API Gateway article", "url": "https://engineering.uipath.com/scaling-an-enterprise-grade-multi-region-api-gateway-using-apim-to-its-limits-f7505e9757c9", "note": "UiPath engineering blog article lists Gong Zhang as co-author." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn hiring post", "url": "https://www.linkedin.com/posts/gong-zhang-612bb064_senior-software-engineer-maestro-activity-7458649654742691841-K6Ae", "note": "Recent post says his team is hiring engineers for agentic systems." },
+        { "label": "The Org UiPath engineering leadership", "url": "https://theorg.com/org/uipath/teams/engineering-leadership", "note": "Third-party org chart lists Gong Zhang among UiPath engineering leadership." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0646v2h",
+    "displayName": "Gordon Gibson",
+    "headline": "Director, Applied Machine Learning at Ada",
+    "company": "Ada",
+    "title": "Director, Applied Machine Learning",
+    "location": "Toronto, Canada",
+    "tags": ["applied machine learning", "AI agents", "customer experience", "LLM grounding", "MLOps"],
+    "confidence": "high",
+    "confidenceNote": "Ada's own blog identifies Gordon Gibson as Director, Applied Machine Learning; LinkedIn and GitHub corroborate Ada affiliation and Toronto location. Supplied title says Director, AI Engineering, but public sources consistently use Applied Machine Learning.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Applied ML leader at Ada working on AI agents for customer experience. Good match for LLM grounding, hallucination mitigation, applied AI research, customer support automation, and production ML systems.",
+    "sources": {
+      "primary": [
+        { "label": "Ada blog - Ada Labs", "url": "https://www.ada.cx/blog/ada-labs-applied-AI-research-customer-experience/", "note": "Ada-authored article by Gordon Gibson lists him as Director, Applied Machine Learning." },
+        { "label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/gordon-gibson-874b3130", "note": "Professional profile identifies him as Director, Applied Machine Learning at Ada." },
+        { "label": "GitHub profile", "url": "https://github.com/gordania", "note": "Personal GitHub profile lists Ada and Toronto." }
+      ],
+      "secondary": [
+        { "label": "General Assembly instructor profile", "url": "https://generalassemb.ly/instructors/gordon-gibson/24471", "note": "Instructor profile lists Gordon Gibson as Machine Learning Manager at Ada." },
+        { "label": "The Org profile", "url": "https://theorg.com/org/ada-cx/org-chart/gordon-gibson", "note": "Third-party profile summarizes Ada applied machine learning leadership." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fnec3k",
+    "displayName": "Goutam Balla",
+    "headline": "Academic Advisor and Project Specialist at Carnegie Mellon University's Heinz College",
+    "company": "Carnegie Mellon University",
+    "title": "Academic Advisor and Project Specialist",
+    "location": "Pittsburgh, United States",
+    "tags": ["academic advising", "graduate programs", "student success", "information systems education", "higher education operations"],
+    "confidence": "high",
+    "confidenceNote": "Official CMU Heinz advising page and CMU directory both identify Goutam Balla as Academic Advisor and Project Specialist.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Academic advisor and project specialist at CMU Heinz College, supporting graduate students in analytics and information systems programs. Relevant for AI education, student success, career pathways, and university-industry talent pipelines.",
+    "sources": {
+      "primary": [
+        { "label": "CMU Heinz Academic Advisors", "url": "https://www.heinz.cmu.edu/current-students/academic-advising/academic-advising", "note": "Official Heinz College advising page lists Goutam Balla as Academic Advisor and Project Specialist." }
+      ],
+      "secondary": [
+        { "label": "CMU Directory", "url": "https://directory.andrew.cmu.edu/index.cgi?action=search&search=gballa&searchtype=basic", "note": "Official CMU directory confirms staff status, job title, department, and office." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1urloby",
+    "displayName": "Grace Gong",
+    "headline": "Founder and CEO of Smart Venture Media; VC podcast host and AI-focused angel investor",
+    "company": "Smart Venture Media",
+    "title": "Founder / CEO",
+    "location": "San Francisco, US",
+    "tags": ["venture capital", "AI investing", "podcasting", "founder communities", "executive interviews", "startup ecosystem"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and speaker sources consistently identify Grace Gong as founder of Smart Venture Media, based in San Francisco, with work across venture, AI, podcasts, and founder events.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Smart Venture Media and host of Smart Venture Podcast and Venture with Grace. Useful match for founders, investors, AI startup operators, and people looking for media, community, or VC ecosystem connections.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://svppro.com/about-me-2/", "note": "Personal about page lists Smart Venture Media, VC podcasts, and San Francisco location." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gracegong", "note": "Founder of Smart Venture Media, Smart Venture Podcast host, AI angel investor, and LinkedIn Top Voice." }
+      ],
+      "secondary": [
+        { "label": "HumanX speaker profile", "url": "https://www.humanx.co/us/speakers/grace-gong", "note": "Speaker bio confirms Smart Venture Media role, AI/VC focus, and executive/founder interview work." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rldla9",
+    "displayName": "Graham McBain",
+    "headline": "Technical marketing leader at Sourcegraph focused on large-codebase engineering workflows",
+    "company": "Sourcegraph",
+    "title": "Technical Marketing Manager",
+    "location": "San Francisco, US",
+    "tags": ["developer tools", "technical marketing", "code intelligence", "large codebases", "AI coding", "enterprise engineering"],
+    "confidence": "high",
+    "confidenceNote": "Sourcegraph event pages and LinkedIn search results consistently identify Graham McBain as Technical Marketing / Technical Marketing Manager at Sourcegraph.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technical Marketing Manager at Sourcegraph, with public Sourcegraph appearances around engineering initiatives in large codebases. Good match for developer-tooling teams, enterprise engineering leaders, code search, and AI-assisted migration discussions.",
+    "sources": {
+      "primary": [
+        { "label": "Sourcegraph webinar speaker page", "url": "https://sourcegraph.com/webinars/driving-eng-initiatives", "note": "Lists Graham McBain as Technical Marketing at Sourcegraph." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/grahammcbain", "note": "LinkedIn result identifies him at Sourcegraph and in San Francisco." }
+      ],
+      "secondary": [
+        { "label": "Sourcegraph AI Engineer World's Fair event page", "url": "https://sourcegraph.com/events/ai-engineer-worlds-fair", "note": "Sourcegraph event context around large-codebase modernization." },
+        { "label": "The Org Sourcegraph profile", "url": "https://theorg.com/org/sourcegraph/teams/engineering-management", "note": "Third-party org listing includes Graham McBain as Technical Marketing Manager." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1q03oso",
+    "displayName": "Grayson Cooper",
+    "headline": "Cofounder at Ito working on AI-assisted QA for code changes",
+    "company": "Ito",
+    "title": "Cofounder",
+    "location": "San Francisco, US",
+    "tags": ["AI QA", "code review", "developer tools", "GTM AI", "sales technology", "startup operations"],
+    "confidence": "medium",
+    "confidenceNote": "Public profiles strongly support the Ito cofounder and AI QA positioning, but public location evidence is mixed or sparse relative to the provided San Francisco attendee data.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder at Ito, a developer-tooling startup focused on QA for pull requests and validating AI-generated code. Previously worked on GTM AI and sales-technology problems at People.ai, with earlier GTM experience at Qualia and Rev.",
+    "sources": {
+      "primary": [
+        { "label": "X profile", "url": "https://x.com/GraysonPCooper", "note": "Profile describes him as fixing manual testing at Ito." },
+        { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/grayson-cooper_after-2-years-at-peopleai-ive-moved-on-activity-7426708264945405952-Wndg", "note": "Post discusses leaving People.ai after AI transformation work." }
+      ],
+      "secondary": [
+        { "label": "Barron Caster LinkedIn profile", "url": "https://www.linkedin.com/in/barroncaster", "note": "Ito cofounder profile describes Ito as AI that runs and QAs code." },
+        { "label": "Qualia LinkedIn post", "url": "https://www.linkedin.com/posts/grayson-cooper_qualia-becomes-latest-tech-unicorn-with-65m-activity-6867107062279667712-EVQy", "note": "Older post documents prior GTM role at Qualia." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qc3jjx",
+    "displayName": "Guangfei Zhang",
+    "headline": "Data and AI transformation lead at IMC Trading",
+    "company": "IMC Trading",
+    "title": "Data & AI Transformation Lead",
+    "location": "Chicago, US",
+    "tags": ["data transformation", "enterprise AI", "analytics", "financial markets", "trading technology", "AI adoption"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn search results identify the role, company, and Chicago location; additional public first-party detail about his individual responsibilities is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Data and AI Transformation Lead at IMC Trading in Chicago. Likely useful connection for enterprise AI adoption, analytics operating models, and applying data and ML capabilities inside high-performance trading environments.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/guang-fei-zhang", "note": "LinkedIn result lists Data & AI Transformation Lead at IMC Trading." },
+        { "label": "IMC Technology page", "url": "https://www.imc.com/us/what-we-do/technology", "note": "IMC describes technology investments in AI and machine learning." }
+      ],
+      "secondary": [
+        { "label": "Built In Chicago IMC profile", "url": "https://builtin.com/company/imc-trading", "note": "Third-party company profile." },
+        { "label": "IMC Machine Learning role page", "url": "https://www.imc.com/us/careers/jobs/4699252101", "note": "Company job page illustrating IMC's ML-heavy trading environment." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wctlvn",
+    "displayName": "Guilherme Duarte",
+    "headline": "CTO at Bounce",
+    "company": "Bounce",
+    "title": "CTO",
+    "location": "San Francisco, US",
+    "tags": ["engineering leadership", "travel tech", "marketplaces", "mobile", "data infrastructure", "product engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Strong evidence that this is Bounce CTO Guilherme Duarte; public profiles frequently list Lisbon, while the attendee record lists San Francisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology leader and hands-on engineer at Bounce, the luggage storage and package pickup marketplace. Useful match for marketplace engineering, mobile delivery, data tooling, and scaling product teams across travel/logistics operations.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://pt.linkedin.com/in/gjsduarte", "note": "Lists Guilherme Duarte as Technology at Bounce." },
+        { "label": "GitHub profile", "url": "https://github.com/gjsduarte", "note": "Identifies him as CTO at Bounce." },
+        { "label": "about.me profile", "url": "https://about.me/gjsduarte", "note": "Self-description as a CTO and tech leader at Bounce." },
+        { "label": "Expo customer story", "url": "https://expo.dev/customers/bounce", "note": "Quotes him as CTO at Bounce." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/bounce-com/org-chart/guilherme-duarte", "note": "Unverified org profile listing CTO at Bounce." },
+        { "label": "F6S Bounce profile", "url": "https://www.f6s.com/company/bounce-inc", "note": "Lists Guilherme Duarte among Bounce founders/employees." },
+        { "label": "Steep customer story", "url": "https://steep.app/customers/data-made-accessible-with-intuitive-BI", "note": "Identifies him as Bounce CTO discussing BI adoption." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "17f04kg",
+    "displayName": "Gurumeher Sawhney",
+    "headline": "AI Engineer at Tiger Global",
+    "company": "Tiger Global",
+    "title": "AI Engineer",
+    "location": "New York, US",
+    "tags": ["AI engineering", "investment management", "analytics", "software engineering", "consulting", "Python"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and org-directory evidence support the Tiger Global AI Engineer role, but there are fewer rich primary sources than for other participants.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI engineer at Tiger Global with prior AI/software engineering experience at Bain, Vital Software, and Amazon. Good match for AI systems inside investment firms, analytics workflows, and practical engineering for business users.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gurumeher-sawhney-836384b5", "note": "Lists Gurumeher Sawhney as AI at Tiger Global in New York." },
+        { "label": "GitHub profile", "url": "https://github.com/gurusawhney", "note": "Developer profile noting AI work at Bain and previous roles." }
+      ],
+      "secondary": [
+        { "label": "The Org Tiger Global engineering team", "url": "https://theorg.com/org/tiger-global-management/teams/engineering-department", "note": "Unverified directory listing as AI Engineer." },
+        { "label": "The Org Tiger Global HQ", "url": "https://theorg.com/org/tiger-global-management/offices/hq", "note": "Unverified office listing." },
+        { "label": "NYU CS graduate outcomes", "url": "https://cs.nyu.edu/home/undergrad/2018-2019%20graduates.html", "note": "Lists Gurumeher Sawhney as an NYU CS graduate." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "13i5w5j",
+    "displayName": "Gus Iwanaga",
+    "headline": "Founder and GM of mosAIc at commercetools",
+    "company": "commercetools",
+    "title": "Founder and GM of mosAIc",
+    "location": "Munich, Germany",
+    "tags": ["AI product", "agentic commerce", "product leadership", "commerce platforms", "UX", "engineering leadership", "search"],
+    "confidence": "high",
+    "confidenceNote": "commercetools pages repeatedly identify Gus Iwanaga as Founder and GM of mosAIc, based in Munich, with prior Google and Zalando experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI product leader building mosAIc at commercetools, focused on agentic and autonomous commerce. Strong match for retailers, commerce platform teams, product/UX leaders, and builders exploring production AI agents over real commerce data.",
+    "sources": {
+      "primary": [
+        { "label": "commercetools video page", "url": "https://commercetools.com/resources/video-on-demand/sell-smarter-for-the-next-generation-of-commerce", "note": "Speaker bio lists him as Founder and GM of mosAIc." },
+        { "label": "commercetools blog", "url": "https://commercetools.com/blog/the-next-chapter-after-composable-agent-orchestration", "note": "Author bio identifies him as Founder and GM of mosAIc." },
+        { "label": "LinkedIn profile", "url": "https://de.linkedin.com/in/gus-iwanaga", "note": "AI product leader, ex-Google and Zalando." }
+      ],
+      "secondary": [
+        { "label": "commercetools unified commerce fireside chat", "url": "https://commercetools.com/resources/video-on-demand/beyond-pos-is-true-unified-commerce", "note": "commercetools page referencing Gus Iwanaga." },
+        { "label": "Medium interview", "url": "https://medium.com/the-product-people/gustavo-iwanaga-the-5-what-5d21c5506cd", "note": "Older product-leadership profile." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ow053r",
+    "displayName": "Guy Fighel",
+    "headline": "Partner and Head of AI at Hetz Ventures",
+    "company": "Hetz Ventures",
+    "title": "Partner",
+    "location": "Tel Aviv, Israel",
+    "tags": ["venture capital", "AI infrastructure", "data engineering", "enterprise software", "DevOps", "machine learning", "founder support"],
+    "confidence": "high",
+    "confidenceNote": "Hetz Ventures and LinkedIn evidence consistently identify him as a partner focused on AI/data, with prior New Relic and SignifAI leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Partner and AI/data lead at Hetz Ventures, bringing operator experience from New Relic and SignifAI. Useful match for AI infrastructure founders, data engineering leaders, DevOps/SRE builders, and Israeli deep-tech startups seeking investor/operator feedback.",
+    "sources": {
+      "primary": [
+        { "label": "Hetz Ventures team page", "url": "https://www.hetz.vc/our-team", "note": "Official team bio lists him as Partner and Head of Data Program." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/guyfig", "note": "Partner, Head of AI at Hetz Ventures." },
+        { "label": "Hetz Data & Engineering Network", "url": "https://data.hetz.vc/hetz-executive-network-data", "note": "Background across enterprise software, DevOps, data engineering, AI/ML, New Relic, and SignifAI." }
+      ],
+      "secondary": [
+        { "label": "Calcalist on Hetz data/AI program", "url": "https://www.calcalistech.com/ctechnews/article/h11xsznyn", "note": "Reports on Hetz program and Fighel's background." },
+        { "label": "Startup Nation Finder Hetz profile", "url": "https://finder.startupnationcentral.org/investor_page/hetz-ventures", "note": "Firm focus context." },
+        { "label": "Globes fund coverage", "url": "https://en.globes.co.il/en/article-hetz-ventures-raises-140m-1001531185", "note": "Mentions Hetz Ventures leadership including Guy Fighel." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "11bskzf",
+    "displayName": "Guy Podjarny",
+    "headline": "Founder and CEO of Tessl AI",
+    "company": "Tessl AI",
+    "title": "CEO & Founder",
+    "location": "London, UK",
+    "tags": ["AI-native development", "developer tools", "software security", "startup founder", "spec-driven development", "angel investing", "DevSecOps"],
+    "confidence": "high",
+    "confidenceNote": "Primary personal, company, LinkedIn, and Snyk sources all support his current Tessl role and prior Snyk/Akamai/Blaze background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Tessl AI, focused on AI-native software development. Previously founded Snyk and Blaze, served as CTO at Akamai after Blaze's acquisition, and remains active as an investor and AI Native Dev podcast co-host.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://www.guypo.com/about/", "note": "Self-authored bio identifying him as founder and CEO of Tessl." },
+        { "label": "Tessl speaker profile", "url": "https://tessl.io/speaker/guypodjarny/", "note": "Company speaker page summarizing Tessl, Snyk, Akamai, Blaze, and investing background." },
+        { "label": "LinkedIn profile", "url": "https://uk.linkedin.com/in/guypo", "note": "Public LinkedIn profile lists him as founder of Tessl." },
+        { "label": "Snyk board profile", "url": "https://snyk.io/about/board/", "note": "Snyk profile lists him as Founder and CEO of Tessl and Chairman/Founder at Snyk." }
+      ],
+      "secondary": [
+        { "label": "Google Cloud founder story", "url": "https://cloud.google.com/events/the-founders-story/tessl-ai", "note": "Profiles him as founder and CEO of Tessl AI." },
+        { "label": "GV interview", "url": "https://www.gv.com/news/guy-podjarny-interview-tessl-ai-software-development", "note": "Investor interview on Tessl's AI-native development focus." },
+        { "label": "X profile", "url": "https://x.com/guypod?lang=en", "note": "Public social profile." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0208zal",
+    "displayName": "Hannes Hapke",
+    "headline": "Open-source AI trust and ML engineering leader at Dataiku's 575 Lab",
+    "company": "Dataiku, Inc.",
+    "title": "Director, 575 Lab",
+    "location": "San Francisco, US",
+    "tags": ["responsible AI", "open source", "ML engineering", "AI explainability", "agent governance", "technical author"],
+    "confidence": "high",
+    "confidenceNote": "Strong match across personal site, LinkedIn, Dataiku, and speaker/company pages for Hannes Hapke leading 575 Lab at Dataiku; location varies publicly, so location follows participant record.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Hannes leads 575 Lab, Dataiku's open source office, focused on responsible AI, LLM/agent tooling, privacy, and explainability. He is a Google Developer Expert for ML/AI and co-author of multiple ML books, making him a strong match for trustworthy enterprise AI and production ML systems.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://www.hanneshapke.com/about/", "note": "States he is Head of 575 Lab at Dataiku." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/hanneshapke", "note": "Lists Director, 575 Lab at Dataiku." },
+        { "label": "Dataiku 575 Lab page", "url": "https://www.dataiku.com/company/dataiku-for-the-future/open-source/", "note": "Company page for 575 Lab." }
+      ],
+      "secondary": [
+        { "label": "QCon AI Boston speaker profile", "url": "https://boston.qcon.ai/speakers/hanneshapke", "note": "Speaker bio confirms 575 Lab leadership and responsible AI work." },
+        { "label": "BusinessWire Dataiku 575 Lab announcement", "url": "https://www.businesswire.com/news/home/20260218383016/en/Dataiku-Launches-575-Lab-Its-New-Open-Source-Initiative-for-Responsible-AI", "note": "Quotes Hannes as Director of 575 Lab." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1lxo5z0",
+    "displayName": "Hao Liang",
+    "headline": "Technical director and engineering leader at Tencent Games",
+    "company": "Tencent Games",
+    "title": "Technical Director",
+    "location": "Palo Alto, US",
+    "tags": ["game engineering", "technical leadership", "Tencent Games", "AI for games", "platform engineering", "engineering management"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn result strongly matches name, Tencent Games, and Palo Alto/San Mateo area, but public snippet does not expose the exact Technical Director title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Hao is a Tencent Games technical leader in the Bay Area with a long-running engineering leadership background. Relevant for game technology, scalable engineering teams, and the intersection of AI and interactive entertainment.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/haoliang1", "note": "Public profile snippet matches Hao Liang at Tencent Games." },
+        { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/haoliang1_hiring-activity-6895241336182726656-wxxI", "note": "Post context connects Hao Liang with Tencent hiring in Palo Alto." }
+      ],
+      "secondary": [
+        { "label": "Tencent Palo Alto office Instagram post", "url": "https://www.instagram.com/p/DWH6t0WgVQX/", "note": "Mentions Hao Liang leading a Tencent Palo Alto office student visit." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0676nob",
+    "displayName": "Hari Lakshmanan",
+    "headline": "Growth technology and product leader at Credit Karma / Intuit",
+    "company": "Intuit Credit Karma",
+    "title": "Director of Product Management",
+    "location": "San Francisco, US",
+    "tags": ["product management", "growth", "fintech", "Credit Karma", "retention", "data strategy", "0 to 1 products"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently match Hari Lakshmanan to Credit Karma/Intuit growth product work; exact seniority varies across sources, with participant record listing Director of Product Management.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Hari is a product and growth technology leader at Credit Karma / Intuit, with public signals around user growth, engagement, retention, and data-driven product strategy. Strong match for fintech product, growth systems, and AI-enabled product strategy conversations.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/harilakshmanan", "note": "Lists Hari as a product leader at Credit Karma / Intuit." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/credit-karma/org-chart/hari-lakshmanan", "note": "Product management profile at Credit Karma." },
+        { "label": "Branch Mobile Growth Awards finalists", "url": "https://www.branch.io/resources/news/branch-announces-finalists-for-2021-mobile-growth-awards/", "note": "Names Hari Lakshmanan as Product Manager at Credit Karma." },
+        { "label": "Evalyze investor profile", "url": "https://www.evalyze.ai/investors/hari-lakshmanan", "note": "Aggregated profile describing growth and AI product strategy." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1h591ni",
+    "displayName": "Harsha Silina",
+    "headline": "AI, enterprise architecture, and application development leader at NETSCOUT",
+    "company": "NETSCOUT",
+    "title": "Sr. Director, AI Engineering & App Dev",
+    "location": "Westford, US",
+    "tags": ["agentic AI", "generative AI", "enterprise cloud architecture", "application development", "data analytics", "digital transformation", "NETSCOUT"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and org-chart sources match Harsha Silina to NETSCOUT and senior application architecture/development leadership; exact current title in participant record is more AI-specific than public org-chart title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Harsha is a senior NETSCOUT technology leader focused on agentic AI, generative AI, enterprise cloud architecture, analytics, and application development. Likely relevant for enterprise AI adoption, internal app platforms, and transforming established technology organizations.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/harsha-silina", "note": "Technology leader profile at NETSCOUT." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/netscout/org-chart/harsha-silina", "note": "Lists Senior Director of Applications Architecture and Development." },
+        { "label": "The Org NETSCOUT Applications Development team", "url": "https://theorg.com/org/netscout/teams/applications-development", "note": "Shows Harsha Silina in NETSCOUT's Applications Development team." }
+      ]
+    }
+  }
+]

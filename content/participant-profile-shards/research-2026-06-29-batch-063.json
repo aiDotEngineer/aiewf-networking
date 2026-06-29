@@ -1,0 +1,208 @@
+[
+  {
+    "lookupKey": "1bsnjsb",
+    "displayName": "Nicholas Allison",
+    "headline": "AI enablement lead and principal cloud platform engineer at Ally Financial",
+    "company": "Ally Financial",
+    "title": "Principal Cloud Platform Engineer",
+    "location": "Rockville, MD, US",
+    "tags": ["AI enablement", "cloud platform", "DevOps", "infrastructure as code", "security"],
+    "confidence": "medium",
+    "confidenceNote": "Matched by exact name, title, Ally affiliation in public LinkedIn results, and recent public posts about AI engineering and Claude Code; no Ally-hosted profile found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal cloud platform engineer focused on DevOps, infrastructure-as-code, security, developer enablement, and practical AI tooling. Useful match for conversations on enterprise cloud platforms, AI-assisted engineering workflows, and secure developer productivity.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nick-allison-tech", "note": "Public profile result lists Principal Cloud Platform Engineer with DevOps, Infrastructure-as-Code, Security, Developer Enablement, and AI focus." },
+        { "label": "LinkedIn AI Engineer Code Summit post", "url": "https://www.linkedin.com/posts/nick-allison-tech_aie-code-2025-ai-leadership-ft-anthropic-activity-7397461101090750464-KdAc", "note": "Public post shows active interest in AI engineering events and practical AI coding workflows." },
+        { "label": "LinkedIn Claude Code post", "url": "https://www.linkedin.com/posts/nick-allison-tech_just-completed-claude-code-essentials-from-activity-7445247024360411136-tWpV", "note": "Public post describes using Claude Code across engineering work, hackathons, and rapid prototyping." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Nicholas/Allison", "note": "Directory snippet corroborates Rockville, MD, Ally, Principal Cloud Platform Engineer, and AI/developer enablement keywords." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "05ldzxy",
+    "displayName": "Nicholas Arcolano",
+    "headline": "Head of AI & Research at Jellyfish",
+    "company": "Jellyfish",
+    "title": "Head of AI & Research",
+    "location": "Boston, MA, US",
+    "tags": ["AI agents", "software engineering analytics", "engineering productivity", "research", "data science"],
+    "confidence": "high",
+    "confidenceNote": "Exact match across personal site, Jellyfish author page, and LinkedIn with consistent Jellyfish AI/research role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads AI and research at Jellyfish, studying AI's real-world impact on software engineering. Strong match for engineering productivity, AI agent adoption, software analytics, and data-informed leadership conversations.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://arcolano.com/", "note": "Personal site describes him as Head of Research at Jellyfish focused on AI's impact on software engineering." },
+        { "label": "Jellyfish author page", "url": "https://jellyfish.co/blog/author_posttype/nicholas-arcolano/", "note": "Company author page says he leads Jellyfish Research across new product concepts, advanced ML/AI algorithms, analytics, and data science support." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/arcolano", "note": "Public profile result lists Jellyfish experience and leadership of AI agents and data platforms." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn State of Engineering Management post", "url": "https://www.linkedin.com/posts/arcolano_reactions-i-dont-think-theyre-that-activity-7458526388422193154-Fg1B", "note": "Recent public post identifies him as Head of AI & Research at Jellyfish and discusses AI adoption and developer velocity." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0nzi3zo",
+    "displayName": "Nicholas Pataki",
+    "headline": "Engineering manager for ML and Data & AI Platform at Intuit Credit Karma",
+    "company": "Intuit Credit Karma",
+    "title": "Engineering Manager, ML / AI",
+    "location": "Mountain View / Menlo Park, CA, US",
+    "tags": ["machine learning platform", "data platform", "Apache Airflow", "ML infrastructure", "financial technology"],
+    "confidence": "high",
+    "confidenceNote": "Exact match across LinkedIn, Airflow Summit speaker/session pages, and Credit Karma engineering directory-style sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "ML engineering manager at Credit Karma working on data and AI platform infrastructure. Co-presented Credit Karma's Vega ML platform, making him a strong match for ML workflow orchestration, feature pipelines, and production financial-technology AI systems.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/njpataki", "note": "Public profile result lists ML Eng Manager, Data & AI Platform at Credit Karma, with Stanford education and Menlo Park location." },
+        { "label": "Airflow Summit speaker page", "url": "https://airflowsummit.org/speakers/nicholas-pataki/", "note": "Speaker page lists Nicholas Pataki as Engineering Manager - Machine Learning at Credit Karma." },
+        { "label": "Airflow Summit Vega session", "url": "https://airflowsummit.org/sessions/2022/vega-unifying-ml-workflows-credit-karma/", "note": "Session page names him as a presenter for Credit Karma's Vega ML workflow platform." }
+      ],
+      "secondary": [
+        { "label": "YouTube session recording", "url": "https://www.youtube.com/watch?v=SyXpGtIW3-Q", "note": "Recording listing corroborates the Airflow Summit Vega session and Nicholas Pataki as a Credit Karma presenter." },
+        { "label": "The Org Credit Karma engineering directory", "url": "https://theorg.com/org/credit-karma/teams/engineering", "note": "Directory lists Nicholas Pataki among Credit Karma engineering managers." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1srrptz",
+    "displayName": "Nick Blumenthal",
+    "headline": "COO at RealScout",
+    "company": "RealScout",
+    "title": "Chief Operating Officer",
+    "location": "Yakima, WA, US",
+    "tags": ["proptech", "operations", "engineering leadership", "real estate software", "platform scaling"],
+    "confidence": "high",
+    "confidenceNote": "Exact match across LinkedIn, RealScout announcement, and multiple real-estate industry reports.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "COO at RealScout, promoted after a decade shaping the company's platform and previously serving as VP of Engineering. Useful match for proptech, operational scaling, real estate software, and engineering-to-operations leadership.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nickblumenthal", "note": "Public profile result lists Nick Blumenthal as COO at RealScout." },
+        { "label": "RealScout leadership announcement", "url": "https://learn.realscout.com/academy/realscout-record-company-growth/", "note": "Company announcement says he was promoted from VP of Engineering to Chief Operating Officer after helping shape the platform." },
+        { "label": "RealScout news archive", "url": "https://learn.realscout.com/academy/category/realscout-news/", "note": "Company news archive references the CEO transition and Nick Blumenthal's promotion to COO." }
+      ],
+      "secondary": [
+        { "label": "Inman coverage", "url": "https://www.inman.com/2025/01/16/realscout-co-founder-andrew-flachner-returns-to-helm-as-ceo/", "note": "Industry article corroborates his promotion to COO after engineering leadership at RealScout." },
+        { "label": "HousingWire interview", "url": "https://www.housingwire.com/articles/andrew-flachner-realscout-ceo/", "note": "Interview quotes RealScout leadership describing Blumenthal's platform-building role and COO mandate." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0rq5v17",
+    "displayName": "Nick Enthoven",
+    "headline": "Account Executive for U.S. West at StackGen",
+    "company": "StackGen",
+    "title": "Account Executive",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["AI SaaS", "infrastructure automation", "go-to-market", "sales", "SRE tooling"],
+    "confidence": "medium",
+    "confidenceNote": "Matched by exact name, StackGen public post, LinkedIn profile, and secondary coverage; role appears newly announced, so profile depth is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Account executive for StackGen's U.S. West region, with prior AI and SaaS sales experience. Relevant for conversations on AI infrastructure automation, enterprise go-to-market, SRE tooling, and buyer needs around operational AI.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/enthovennick", "note": "Public profile result lists StackGen experience, San Francisco Bay Area location, and business education." },
+        { "label": "StackGen LinkedIn welcome post", "url": "https://www.linkedin.com/posts/stackgenai_stackgen-welcometotheteam-newhire-activity-7473286441553383425-ZMrA", "note": "Company post announces Nick Enthoven as Account Executive for the U.S. West region and notes prior Gentrace AI/SaaS experience." }
+      ],
+      "secondary": [
+        { "label": "TipRanks private-company coverage", "url": "https://www.tipranks.com/news/private-companies/stackgen-expands-u-s-west-sales-coverage-with-new-account-executive", "note": "Secondary coverage summarizes StackGen's announcement and his focus on infrastructure automation growth." },
+        { "label": "Gentrace people listing", "url": "https://growjo.com/company/Gentrace", "note": "Company data page lists Nick Enthoven as Account Executive at Gentrace, consistent with the StackGen announcement." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1o0nd9f",
+    "displayName": "Nick Giometti",
+    "headline": "Senior Principal at B Capital focused on AI, ML, data, and infrastructure",
+    "company": "B Capital",
+    "title": "Senior Principal",
+    "location": "San Francisco, CA, US",
+    "tags": ["venture capital", "AI investing", "machine learning", "data infrastructure", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "Exact match across B Capital official team page, LinkedIn, and investor/profile sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Principal at B Capital investing across machine learning, data, infrastructure, and developer tools. Useful match for AI startup fundraising, enterprise infrastructure markets, VC perspectives, and go-to-market strategy.",
+    "sources": {
+      "primary": [
+        { "label": "B Capital team page", "url": "https://b.capital/team/nick-giometti/", "note": "Official profile lists him as Senior Principal in San Francisco focused on machine learning, data, and infrastructure businesses." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nicolas-giometti", "note": "Public profile result lists Senior Principal at B Capital with focus on data, AI/ML, infrastructure, and developer tools." },
+        { "label": "X profile", "url": "https://x.com/nickgiometti", "note": "Public profile describes him as an AI engineer and investor at B Capital building and betting on ML, developer, and data companies." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/b-capital-group/org-chart/nick-giometti", "note": "Directory profile corroborates Senior Principal role and prior venture investing experience." },
+        { "label": "The Information event profile", "url": "https://www.theinformation.com/events/lvs-behind-the-talent-tracker-vc-rising-leaders", "note": "Event page describes him as a B Capital Senior Principal partnering with data, AI/ML, DevOps, and infrastructure businesses." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "02l1xxj",
+    "displayName": "Nick Heitzman",
+    "headline": "Senior Director of Artificial Intelligence at Allegion",
+    "company": "Allegion",
+    "title": "Senior Director, Artificial Intelligence",
+    "location": "Indianapolis, IN, US",
+    "tags": ["enterprise AI", "data science leadership", "analytics", "security technology", "machine learning"],
+    "confidence": "high",
+    "confidenceNote": "Exact match across LinkedIn, industry article byline, X profile, and Allegion org-directory sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior AI leader at Allegion with a background leading data science and analytics teams. Relevant for enterprise AI, AI assistant strategy, security-industry technology, analytics leadership, and practical ML adoption.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nick-heitzman", "note": "Public profile result lists Allegion experience and leadership of data science and analytics teams." },
+        { "label": "Security Industry Association article", "url": "https://www.securityindustry.org/2024/07/16/understanding-the-evolution-from-classic-chatbots-to-rag-chatbots-to-ai-powered-assistants/", "note": "Bylined industry article identifies him as director of artificial intelligence for Allegion and SIA AI Advisory Board member." },
+        { "label": "X profile", "url": "https://x.com/NickDoesData", "note": "Public profile describes him as a leader of data scientists and analytics at Allegion with interests in R, Python, visualization, and machine learning." }
+      ],
+      "secondary": [
+        { "label": "The Org Allegion infrastructure and operations directory", "url": "https://theorg.com/org/allegion/teams/infrastructure-and-operations", "note": "Directory lists Nick Heitzman as Senior Director, Artificial Intelligence." },
+        { "label": "CDO Magazine event recap", "url": "https://www.cdomagazine.tech/community/top-8-takeaways-for-data-leaders-from-cdo-magazine-boston-executive-boardroom-dinner", "note": "Event recap lists Nick Heitzman, Allegion Director of Artificial Intelligence, among data leaders." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1reaq3y",
+    "displayName": "Nick Meyer",
+    "headline": "CEO of Provocative, building carbon-negative AI data centers",
+    "company": "Provocative",
+    "title": "CEO",
+    "location": "Boston, MA, US",
+    "tags": ["climate tech", "AI data centers", "carbon removal", "startup leadership", "MIT entrepreneurship"],
+    "confidence": "high",
+    "confidenceNote": "Exact match across LinkedIn, Greentown Labs member page, X, YC founder profile, and startup directories.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO of Provocative, a climate-tech company combining AI data centers with direct air capture. Strong match for conversations on sustainable AI infrastructure, carbon removal, climate entrepreneurship, and founder/operator experience.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nicholasmeyer", "note": "Public profile result lists CEO of Provocative in Boston and founder of Provocative Science Ventures." },
+        { "label": "X profile", "url": "https://x.com/nickmeyer", "note": "Public profile describes him as decarbonizing the atmosphere with AI data centers at Provocative and as a Senior Lecturer at MIT." },
+        { "label": "YC founder profile", "url": "https://www.ycombinator.com/companies/reble", "note": "YC profile states he is now CEO of Provocative, building AI data centers that remove carbon from the atmosphere." }
+      ],
+      "secondary": [
+        { "label": "Greentown Labs member page", "url": "https://greentownlabs.com/members/provocative/", "note": "Member page lists Provocative as a Boston climate member, Nick Meyer as CEO, and the company's carbon-negative AI data center mission." },
+        { "label": "The Org profile", "url": "https://theorg.com/org/provocative/org-chart/nick-meyer", "note": "Profile corroborates CEO role, Provocative's carbon-removing data center focus, and MIT entrepreneurship background." },
+        { "label": "MIT Sloan Tech Summit speakers", "url": "https://www.mitsloantechsummit.com/speakers", "note": "Speaker bio describes him as a serial founder, former MIT Senior Lecturer, and CEO of Provocative." }
+      ]
+    }
+  }
+]

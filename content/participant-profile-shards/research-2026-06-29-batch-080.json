@@ -1,0 +1,462 @@
+[
+  {
+    "lookupKey": "0wwfhd2",
+    "displayName": "Scott Gerlach",
+    "headline": "Co-founder and CSO at StackHawk focused on developer-first application and API security.",
+    "company": "StackHawk",
+    "title": "CSO, Co-Founder",
+    "location": "Denver, Colorado, United States",
+    "tags": ["application security", "API security", "DevSecOps", "developer tools", "security leadership"],
+    "confidence": "high",
+    "confidenceNote": "StackHawk, LinkedIn, and security-industry author/speaker pages consistently identify Scott Gerlach as StackHawk co-founder and CSO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Scott Gerlach is StackHawk's co-founder and Chief Security Officer, working on developer-first AppSec and API security. He brings long-running security leadership experience from StackHawk, SendGrid/Twilio, and GoDaddy, making him a strong match for secure-by-default AI engineering, DevSecOps, and product security conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "StackHawk about page",
+          "url": "https://www.stackhawk.com/about/",
+          "note": "Company leadership page lists Scott Gerlach as CSO and co-founder."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/scott-gerlach-kaakaww",
+          "note": "Public profile identifies him as StackHawk co-founder and Chief Security Officer."
+        },
+        {
+          "label": "StackHawk webinar page",
+          "url": "https://lp.stackhawk.com/the-api-security-problem-october-24",
+          "note": "StackHawk event page names him as the company's CISO/CSO in an API-security discussion."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Dark Reading author profile",
+          "url": "https://www.darkreading.com/author/scott-gerlach",
+          "note": "Security publication author bio summarizes his StackHawk role and prior security leadership."
+        },
+        {
+          "label": "Software Engineering Daily interview",
+          "url": "https://softwareengineeringdaily.com/2025/03/06/stackhawk-and-shift-left-api-security-with-scott-gerlach/",
+          "note": "Podcast episode page identifies him as StackHawk co-founder and CSO discussing shift-left API security."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1xvo5lx",
+    "displayName": "Scott Ogden",
+    "headline": "Head of AI at Genmab bringing applied AI into biotech, clinical, and enterprise workflows.",
+    "company": "Genmab",
+    "title": "Head of AI",
+    "location": "Princeton, New Jersey, United States",
+    "tags": ["biotech AI", "life sciences", "AI labs", "clinical AI", "enterprise AI", "data science"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public event and award pages identify Scott Ogden as Head of AI or Head of AI Labs at Genmab; participant location aligns with Genmab's Princeton footprint.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Scott Ogden leads AI work at Genmab, applying AI across biotech, clinical, and enterprise workflows. Useful match for conversations about responsible AI adoption in life sciences, AI labs inside large organizations, and practical agent/tool deployment in regulated environments.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/scott-ogden-65270842",
+          "note": "Public profile connects Scott Ogden to Genmab and AI-related professional activity."
+        },
+        {
+          "label": "BioNJ AI & Digital Health webinar",
+          "url": "https://bionj.org/event/ai-digital-health-webinar/",
+          "note": "Speaker bio says he heads the AI Innovation Lab at Genmab."
+        },
+        {
+          "label": "Anthropic life-sciences webinar",
+          "url": "https://www.anthropic.com/webinars/claude-for-life-sciences",
+          "note": "Webinar speaker listing identifies Scott Ogden as Head of AI Labs at Genmab."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "MachineCon AI100 awards",
+          "url": "https://machinecon.aimmediahouse.com/ai100/",
+          "note": "Award page lists Scott Ogden as Head of AI at Genmab."
+        },
+        {
+          "label": "MedCity INVEST speaker roundup",
+          "url": "https://medcitynews.com/2024/08/who-is-speaking-at-medcity-invest-digital-health-in-dallas/",
+          "note": "Conference coverage names him as Head of AI at Genmab."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "02uqpph",
+    "displayName": "Sean Voss",
+    "headline": "Director of AI and Business Optimization at Laketown Electric bringing automation into electrical contracting operations.",
+    "company": "Laketown Electric",
+    "title": "Director of AI and Business Optimization",
+    "location": "Waconia, Minnesota, United States",
+    "tags": ["AI operations", "automation", "construction tech", "electrical contracting", "business optimization"],
+    "confidence": "high",
+    "confidenceNote": "Laketown Electric's team page and company LinkedIn announcement consistently identify Sean Voss in the listed role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sean Voss leads AI and business optimization at Laketown Electric, applying automation and enterprise-technology experience to field-service and electrical-contractor operations. Strong match for practical conversations about AI adoption outside software-native companies, workflow design, and operational change management.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Laketown Electric team profile",
+          "url": "https://laketownelectric.com/teams/sean-voss/",
+          "note": "Company profile lists him as Director of AI and Business Optimization and describes his enterprise technology and operations background."
+        },
+        {
+          "label": "Laketown Electric team page",
+          "url": "https://laketownelectric.com/about/our-team/",
+          "note": "Company team page lists Sean Voss in the same AI and business optimization role."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/seanvoss",
+          "note": "Public profile connects Sean Voss to Laketown Electric and intelligent automation / AI strategy."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Laketown Electric LinkedIn announcement",
+          "url": "https://www.linkedin.com/posts/mattbergmann_im-thrilled-to-announce-that-laketown-electric-activity-7457179186600759297-LdG3",
+          "note": "Leadership announcement welcomes him as Director of AI and Business Optimization."
+        },
+        {
+          "label": "Laketown Electric company LinkedIn",
+          "url": "https://www.linkedin.com/company/laketown-electric-corporation",
+          "note": "Company feed reposts the welcome announcement and mentions the new AI/business optimization role."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0fu529t",
+    "displayName": "Sebastian Fox",
+    "headline": "CEO and co-founder of Composo building evaluation tooling for production AI apps and agents.",
+    "company": "Composo",
+    "title": "CEO, Co-Founder",
+    "location": "London, United Kingdom",
+    "tags": ["AI evals", "LLM evaluation", "agent evaluation", "AI reliability", "healthcare AI", "founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Composo startup pages, and media coverage consistently identify Dr. Sebastian Fox as Composo's CEO/co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Dr. Sebastian Fox is CEO and co-founder of Composo, building evaluation and monitoring tools for LLM features and AI agents. He is useful for conversations about production AI quality, eval adoption, healthcare AI reliability, and turning domain-expert review into scalable product feedback loops.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/seb--fox",
+          "note": "Public profile identifies him as CEO and co-founder of Composo.ai."
+        },
+        {
+          "label": "Composo on EWOR",
+          "url": "https://www.ewor.com/startups/composo",
+          "note": "Startup profile lists Composo and Sebastian Fox, describing the product as evals for AI agents."
+        },
+        {
+          "label": "Maven AI evals lesson",
+          "url": "https://maven.com/p/602b4f/how-to-drive-ai-evals-adoption",
+          "note": "Speaker page describes Dr. Sebastian Fox as CEO and co-founder at Composo.ai."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "TechCrunch coverage",
+          "url": "https://techcrunch.com/2025/02/07/composo-helps-enterprises-monitor-how-well-ai-apps-work/",
+          "note": "Funding/product coverage identifies Sebastian Fox as Composo's co-founder and CEO."
+        },
+        {
+          "label": "Welcome to the Jungle company profile",
+          "url": "https://app.welcometothejungle.com/companies/Composo",
+          "note": "Company profile lists Sebastian Fox as co-founder and CEO and summarizes Composo's LLM evaluation focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0y2db6h",
+    "displayName": "Seiya Tokuhara",
+    "headline": "CEO of pineal inc. working on AI transformation, customer-experience design, and marketing innovation.",
+    "company": "pineal inc.",
+    "title": "CEO, Founder",
+    "location": "Tokyo, Japan",
+    "tags": ["AI transformation", "marketing", "customer experience", "DX consulting", "Japan startups"],
+    "confidence": "high",
+    "confidenceNote": "Pineal's company member page and Seiya Tokuhara's LinkedIn profile consistently identify him as the company's CEO/president.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Seiya Tokuhara leads pineal inc. in Tokyo, focused on AI transformation, customer-experience design, system development, and marketing innovation. Good match for conversations on AI adoption in Japanese enterprises, marketing workflows, and practical DX consulting.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Pineal member page",
+          "url": "https://pineal.co.jp/member",
+          "note": "Company page lists 徳原 靖也 / Seiya Tokuhara as representative president."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://jp.linkedin.com/in/seiya-tokuhara-14a59ba4/en",
+          "note": "Public profile identifies him as pineal inc. CEO in Tokyo."
+        },
+        {
+          "label": "Seiya Tokuhara LinkedIn post",
+          "url": "https://www.linkedin.com/posts/seiya-tokuhara-14a59ba4_%E6%98%A8%E9%80%B1%E3%82%88%E3%82%8A%E6%9F%90%E5%A4%A7%E6%89%8B%E8%BB%8A%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E3%81%8B%E3%82%89%E6%AC%A1%E4%B8%96%E4%BB%A3%E3%82%92%E6%8B%85%E3%81%86%E3%82%A4%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E5%80%99%E8%A3%9C%E3%81%8C%E5%BC%8A%E7%A4%BE%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%B3-activity-7152057206467612675-RTd4",
+          "note": "Public post from his profile describes Pineal DX consulting work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Pineal LinkedIn/self-introduction post",
+          "url": "https://jp.linkedin.com/posts/seiya-tokuhara-14a59ba4_%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%93%E3%83%A5%E3%83%BC-vol7%E5%BE%B3%E5%8E%9F%E3%83%94%E3%83%8D%E3%82%A2%E3%83%AB%E3%81%AF%E3%83%AF%E3%82%AF%E3%83%AF%E3%82%AF%E3%81%AE%E7%9B%B8%E4%B9%97%E5%8A%B9%E6%9E%9C%E3%82%92%E7%94%9F%E3%81%BF%E5%87%BA%E3%81%99%E3%83%81%E3%83%BC%E3%83%A0-activity-7153201093030625280--zQ1",
+          "note": "LinkedIn post links to a Pineal member interview and uses the CEO / Tokuhara identity."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0lydwub",
+    "displayName": "Serafim Korablev",
+    "headline": "CEO and co-founder of 21st.dev building UI and infrastructure layers for AI agents.",
+    "company": "21st",
+    "title": "Co-Founder",
+    "location": "San Francisco, California, United States",
+    "tags": ["AI agents", "developer tools", "UI infrastructure", "React", "YC W26", "founder"],
+    "confidence": "high",
+    "confidenceNote": "YC, LinkedIn, and founder profiles consistently identify Serafim Korablev as 21st.dev co-founder/CEO in the 21st YC W26 company context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Serafim Korablev is a co-founder of 21st.dev, building UI components and infrastructure for agent-powered apps. Strong match for conversations on agent UX, design systems for AI products, developer-tool distribution, and fast founder-led product iteration.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/21st",
+          "note": "YC profile lists Serafim Korablev as CEO/co-founder of 21st and describes the company's agentic-internet infrastructure."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/serafimkorablev",
+          "note": "Public profile identifies him as founder of 21st.dev (YC W26) in San Francisco."
+        },
+        {
+          "label": "LinkedIn YC announcement",
+          "url": "https://www.linkedin.com/posts/serafimkorablev_rejected-10-times-accepted-once-w26-never-activity-7408608898246705152-ZKHC",
+          "note": "Public post from his profile references 21st.dev's YC W26 acceptance."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Contra profile",
+          "url": "https://contra.com/serafim_korablev",
+          "note": "Creator profile lists him as founder at 21st in San Francisco."
+        },
+        {
+          "label": "Beamstart profile",
+          "url": "https://beamstart.com/%40serafim-korablev-17777554637049",
+          "note": "Public profile summarizes his 21st.dev co-founder role and product background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1faoft6",
+    "displayName": "Serena Ge",
+    "headline": "Co-founder and CEO of Datacurve building frontier coding data for LLM training and evaluation.",
+    "company": "Datacurve",
+    "title": "Co-Founder & CEO",
+    "location": "San Francisco, California, United States",
+    "tags": ["LLM training data", "coding data", "AI evaluation", "foundation models", "YC W24", "founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, YC, Waterloo, and media sources consistently identify Serena Ge as Datacurve's co-founder/CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Serena Ge is co-founder and CEO of Datacurve, which provides expert coding data for training and evaluating LLMs. She is a strong match for conversations about foundation-model data quality, coding benchmarks, AI evals, contributor marketplaces, and early-stage AI company building.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/serena-ge-4583731b4",
+          "note": "Public profile identifies Serena Ge as co-founder and CEO of Datacurve."
+        },
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/datacurve",
+          "note": "YC profile introduces Serena Ge and Charley Lee from Datacurve and describes the company's coding-data platform."
+        },
+        {
+          "label": "Datacurve launch post",
+          "url": "https://www.linkedin.com/posts/serena-ge-4583731b4_launch-yc-datacurve-high-quality-code-activity-7171972735726678016-8a6G",
+          "note": "Public post describes Datacurve's YC launch and co-founder background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "University of Waterloo news",
+          "url": "https://uwaterloo.ca/computer-science/news/cs-led-startup-secures-177m-transform-ai-training-data",
+          "note": "Waterloo article identifies Serena Ge as a former CS student and Datacurve co-founder."
+        },
+        {
+          "label": "TechCrunch funding coverage",
+          "url": "https://techcrunch.com/2025/10/09/datacurve-raises-15-million-to-take-on-scaleai/",
+          "note": "Coverage identifies Datacurve's founders and Series A context."
+        },
+        {
+          "label": "Forbes profile",
+          "url": "https://www.forbes.com/profile/datacurve-ai/",
+          "note": "Forbes company profile lists Datacurve AI cofounders Serena Ge and Charley Lee."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0kdzb4r",
+    "displayName": "Sergey Bunas",
+    "headline": "Co-founder at 21st.dev building agent infrastructure, UI tooling, and developer products.",
+    "company": "21st",
+    "title": "Co-Founder",
+    "location": "San Francisco, California, United States",
+    "tags": ["AI agents", "developer tools", "UI tooling", "agent infrastructure", "YC W26", "open source"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, GitHub, and YC sources consistently identify Sergey Bunas as a 21st.dev co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sergey Bunas is a co-founder of 21st.dev, working on agent infrastructure, UI tooling, and open-source developer products such as Magic MCP. Good match for conversations on shipping AI-agent infrastructure, code-generation UX, open-source growth, and design taste as an engineering problem.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://sergeybunas.com/",
+          "note": "Personal profile lists Sergey Bunas as co-founder of 21st.dev in San Francisco."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/s-bunas",
+          "note": "Public profile identifies him as co-founder at 21st.dev (YC W26)."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/bunasq",
+          "note": "GitHub profile identifies him as a software engineer and co-founder at 21st-dev with public 21st repositories."
+        },
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/21st",
+          "note": "YC profile lists 21st as founded by Sergey Bunas and Serafim Korablev."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Launch YC: 21st",
+          "url": "https://www.ycombinator.com/launches/PiD-21st-infrastructure-for-ai-agents",
+          "note": "Launch page by Sergey Bunas describes 21st's agent infrastructure product."
+        },
+        {
+          "label": "The Silicon Valley Post",
+          "url": "https://svpost.com/articles/21st-agents-sdk-launch/",
+          "note": "Article identifies 21st as a YC W26 startup founded by Serafim Korablev and Sergey Bunas."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0czk4su",
+    "displayName": "Sergii Rudenko",
+    "headline": "Systems architect at Yodel working on AI-powered event-curation infrastructure.",
+    "company": "Yodel",
+    "title": "Systems Architect",
+    "location": "",
+    "tags": ["event technology", "systems architecture", "AI event curation", "local events", "platform engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Yodel's own team page and a company directory match Sergii Rudenko at Yodel, but public sources list him as Systems Architect rather than the participant-row CTO title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sergii Rudenko is listed publicly as a systems architect at Yodel, an AI event-curation platform for chambers, tourism bureaus, news organizations, and local communities. Best match for conversations about event-data ingestion, AI curation, and platform architecture for community-information products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Yodel team page",
+          "url": "https://yodelevents.com/our-team/",
+          "note": "Company team page lists Sergii Rudenko as Systems Architect."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Datanyze company directory",
+          "url": "https://www.datanyze.com/companies/yodel/470938596",
+          "note": "Company directory entry lists Sergii Rudenko as Systems Architect at Yodel."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0vzl2v1",
+    "displayName": "Sérgio Viana",
+    "headline": "Managing Partner at Xpand IT focused on customer experience, agentic AI, and digital transformation.",
+    "company": "Xpand IT",
+    "title": "Managing Partner",
+    "location": "Lisbon, Portugal",
+    "tags": ["agentic AI", "customer experience", "digital transformation", "Microsoft Azure", "consulting", "Portugal tech"],
+    "confidence": "high",
+    "confidenceNote": "Xpand IT leadership pages, LinkedIn, webinars, and media references consistently identify Sérgio Viana as a Managing Partner at Xpand IT.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sérgio Viana is Managing Partner at Xpand IT, where he works across customer experience, digital transformation, and AI/agentic systems. Strong match for conversations on enterprise AI adoption, omnichannel customer apps, Microsoft/Azure ecosystems, and consulting-led transformation in European organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Xpand IT about page",
+          "url": "https://xpand-it.com/en/about-us/",
+          "note": "Company leadership page lists Sérgio Viana as Managing Partner."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://pt.linkedin.com/in/sergiomviana",
+          "note": "Public profile identifies him as a Managing Partner based in Lisbon."
+        },
+        {
+          "label": "Xpand IT Agentic AI webinar",
+          "url": "https://xpand-it.com/en/resources/knowledge-hub/webinar-on-demand-agentic-ai/",
+          "note": "Webinar speaker listing names Sérgio Viana as Managing Partner at Xpand IT."
+        },
+        {
+          "label": "Xpand IT author page",
+          "url": "https://xpand-it.com/en/author/sergio-vianaxpand-it-com/",
+          "note": "Company author page collects his AI and digital-transformation writing."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Briefing opinion article",
+          "url": "https://www.briefing.pt/noticias/a-opiniao-de-sergio-viana-da-xpand-it/",
+          "note": "Portuguese business publication identifies him as Xpand IT Managing Partner discussing generative AI and transformation."
+        },
+        {
+          "label": "Iberian Lawyer project coverage",
+          "url": "https://iberianlawyer.com/morais-leitao-partners-with-xpand-it-on-ai-for-law/",
+          "note": "Article quotes Sérgio Viana as Xpand IT's managing partner responsible for Customer Experience."
+        },
+        {
+          "label": "NOVA IMS Agentic AI seminar",
+          "url": "https://novaims.unl.pt/en/here-now/events/agentic-ai-seminar/",
+          "note": "Seminar agenda lists Sérgio Viana from Xpand IT in an agentic-AI program."
+        }
+      ]
+    }
+  }
+]

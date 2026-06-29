@@ -1,0 +1,165 @@
+[
+  {
+    "lookupKey": "0nqesx3",
+    "displayName": "Ahnaf Prio",
+    "headline": "Engineering leader working on agentic commerce at Best Buy",
+    "company": "Best Buy",
+    "title": "Senior Engineering Manager",
+    "location": "Minneapolis, US",
+    "tags": ["agentic commerce", "engineering leadership", "retail technology", "startups", "algorithms"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources match the name, Best Buy affiliation, Minneapolis/St. Paul area, and engineering leadership role; title appears more senior than the provided Automation Specialist label.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ahnaf is a senior engineering manager at Best Buy leading agentic commerce work. He brings a startup CTO background and experience across biotech, restaurant technology, algorithms, and Minnesota community tech.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ahnafy",
+          "note": "Professional profile."
+        },
+        {
+          "label": "Medium",
+          "url": "https://ahnafy.medium.com/",
+          "note": "Public writing profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Minnestar Sessions",
+          "url": "https://sessions.minnestar.org/participants/2908",
+          "note": "Community/event participant profile."
+        },
+        {
+          "label": "University of Minnesota Morris",
+          "url": "https://mglobal.umn.edu/umn-morris-creates-life-long-community-career-international-student",
+          "note": "Background profile."
+        },
+        {
+          "label": "St. Paul Neighborhood STAR Board",
+          "url": "https://www.stpaul.gov/departments/planning-and-economic-development/economic-development/neighborhood-star-board",
+          "note": "Civic/community listing."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "08stbs3",
+    "displayName": "Aidan Ridgley",
+    "headline": "Product leader at Speaker Labs",
+    "company": "Speaker Labs",
+    "title": "CPO",
+    "location": "",
+    "tags": ["product leadership", "public speaking", "communication training", "professional coaching", "education"],
+    "confidence": "low",
+    "confidenceNote": "Public sources confirm Speaker Labs as a communication training company, but no reliable public source was found linking Aidan Ridgley to the company or CPO role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aidan is listed for this event as CPO at Speaker Labs, a communication and public-speaking training company. This is a provisional profile for conversations around product, education, coaching, and speaker enablement.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Speaker Labs LinkedIn",
+          "url": "https://ca.linkedin.com/company/speaker-labs",
+          "note": "Company profile."
+        },
+        {
+          "label": "Speaker Labs",
+          "url": "http://www.speakerlabs.ca",
+          "note": "Company site."
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "0qqp2kc",
+    "displayName": "Aik Beng Ng",
+    "headline": "AI research and ecosystem leader in Singapore",
+    "company": "NVIDIA AI Technology Center",
+    "title": "Senior Regional Manager",
+    "location": "Singapore",
+    "tags": ["AI research", "generative AI", "strategic partnerships", "AI ecosystem", "Singapore"],
+    "confidence": "medium",
+    "confidenceNote": "Strong public sources match Aik Beng Ng as a Singapore-based NVIDIA AI Technology Center leader, adjunct SIT professor, and National AI Technical Committee member; this conflicts with the submitted DSO National Laboratories/Senior AI Engineer details, so current role freshness should be verified.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aik Beng is a Singapore-based AI leader at NVIDIA AI Technology Center, working across AI research, ecosystem development, and strategic collaborations with academia, industry, and government.",
+    "sources": {
+      "primary": [
+        {
+          "label": "NVIDIA author profile",
+          "url": "https://developer.nvidia.com/blog/author/aikbengn/",
+          "note": "NVIDIA author profile."
+        },
+        {
+          "label": "Singapore National AI Certification team",
+          "url": "https://www.snaic.net/our-team",
+          "note": "Public team/profile context."
+        },
+        {
+          "label": "Singapore Institute of Technology",
+          "url": "https://www.singaporetech.edu.sg/directory/faculty/aik-beng-ng-0",
+          "note": "Adjunct faculty profile."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://sg.linkedin.com/in/aikbengng",
+          "note": "Professional profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Singapore Technology Week",
+          "url": "https://www.singaporetechnologyweek.com/speakers/dr-aik-beng-ng",
+          "note": "Speaker profile."
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?hl=en&user=FkOwHcAAAAAJ",
+          "note": "Research/publication profile."
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/html/2410.16070v1",
+          "note": "Research context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0tuqcon",
+    "displayName": "Aiman Haque",
+    "headline": "GenAI partner sales professional at Amazon",
+    "company": "Amazon",
+    "title": "GenAI Partner Sales",
+    "location": "",
+    "tags": ["GenAI", "partner sales", "AWS", "go-to-market", "sales enablement"],
+    "confidence": "low",
+    "confidenceNote": "Could not find reliable person-specific public sources tying Aiman Haque to Amazon or GenAI Partner Sales; profile is based on the participant row and AWS partner-program context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aiman is listed for this event as a GenAI partner sales professional at Amazon. This provisional profile is most useful for AI founders, AWS partners, and go-to-market teams exploring generative AI adoption.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AWS Generative AI Partners",
+          "url": "https://aws.amazon.com/ai/generative-ai/partners/",
+          "note": "AWS GenAI partner-program context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AWS Partner Network blog",
+          "url": "https://aws.amazon.com/blogs/apn/equip-your-sellers-for-success-introducing-the-generative-ai-sales-course-for-aws-partners/",
+          "note": "AWS GenAI partner sales enablement context."
+        }
+      ]
+    }
+  }
+]

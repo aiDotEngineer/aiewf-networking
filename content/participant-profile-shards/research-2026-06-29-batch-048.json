@@ -1,0 +1,713 @@
+[
+  {
+    "lookupKey": "11z3hew",
+    "displayName": "Isaque Lima",
+    "headline": "Senior engineering leader at VTEX working in commerce platform engineering",
+    "company": "VTEX",
+    "title": "Senior Engineering Manager",
+    "location": "Rio de Janeiro, Brazil",
+    "tags": ["engineering leadership", "commerce platforms", "SaaS", "team leadership", "VTEX"],
+    "confidence": "medium",
+    "confidenceNote": "Multiple public profiles tie Isaque Lima to VTEX as a Senior Engineering Manager, but public evidence does not confirm the row's New York location or exact Head of Engineering title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Engineering Manager at VTEX, a global commerce platform. Useful match for conversations on engineering leadership, SaaS commerce systems, platform teams, and scaling technical organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/isaquelima",
+          "note": "Public LinkedIn result identifies Isaque Lima with VTEX and Federal University of Rio de Janeiro."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org - VTEX Engineering Management",
+          "url": "https://theorg.com/org/vtex/teams/engineering-management",
+          "note": "Lists Isaque Lima among VTEX engineering management as Senior Engineering Manager."
+        },
+        {
+          "label": "Intch profile",
+          "url": "https://intch.org/16717712",
+          "note": "Professional networking profile lists Isaque Lima as Senior Engineering Manager at VTEX."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "18htiy8",
+    "displayName": "Ishaan Sehgal",
+    "headline": "Co-founder of Omnara, building a command center for AI coding agents",
+    "company": "Omnara",
+    "title": "Co-Founder",
+    "location": "San Francisco, CA, USA",
+    "tags": ["AI agents", "developer tools", "AI infrastructure", "YC S25", "mobile development workflows"],
+    "confidence": "high",
+    "confidenceNote": "Y Combinator, LinkedIn, X, and Omnara-authored content consistently tie Ishaan Sehgal to Omnara in San Francisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of Omnara (YC S25), a web and mobile interface for Claude Code, Codex, and other AI agents. Strong match for attendees interested in AI agent control planes, developer tooling, mobile coding workflows, and agent observability.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Y Combinator - Omnara",
+          "url": "https://www.ycombinator.com/companies/omnara",
+          "note": "Lists Omnara as a San Francisco AI developer tools company founded by Ishaan Sehgal and Kartik Sarangmath."
+        },
+        {
+          "label": "Omnara blog",
+          "url": "https://www.omnara.com/blog/mobile-coding-landscape",
+          "note": "Company blog article authored by Ishaan Sehgal on mobile coding agents."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ishaan-sehgal",
+          "note": "Public LinkedIn result lists Ishaan Sehgal as Co-Founder at Omnara, YC S25, ex-Microsoft and Roblox."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/ishaansehgal",
+          "note": "Public X profile describes him as building the control plane for managed agents at Omnara."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator Launch - Omnara",
+          "url": "https://www.ycombinator.com/launches/OCT-omnara-the-first-command-center-for-ai-agents-terminal-web-and-mobile",
+          "note": "Launch page describes Omnara as a command center for AI agents built by Ishaan and Kartik."
+        },
+        {
+          "label": "Microsoft Open Source Blog author page",
+          "url": "https://opensource.microsoft.com/blog/author/ishaan-sehgal/",
+          "note": "Earlier author bio identifies Ishaan as a Microsoft AKS engineer and KAITO contributor focused on systems and AI."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1s6q89z",
+    "displayName": "Ishan Anand",
+    "headline": "Chief AI Officer at InsightSciences.ai; AI educator, speaker, and product leader",
+    "company": "InsightSciences.ai",
+    "title": "Chief AI Officer",
+    "location": "Greater Seattle Area, USA",
+    "tags": ["AI education", "LLMs", "product leadership", "synthetic research", "developer education"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, InsightSciences.ai, and speaker pages consistently identify Ishan Anand as an AI consultant, educator, speaker, and Chief AI Officer at InsightSciences.ai.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief AI Officer at InsightSciences.ai and creator of Spreadsheets-are-all-you-need.ai, an educational implementation of GPT-2 in Excel. Useful match for AI education, LLM fundamentals, synthetic research, product strategy, and translating AI concepts for technical leaders.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://ishananand.com/",
+          "note": "Personal site describes him as an AI consultant and educator focused on AI, product management, and web performance."
+        },
+        {
+          "label": "Speaking page",
+          "url": "https://ishananand.com/speaking/",
+          "note": "Lists AI Engineer World's Fair and other talks on LLMs and AI engineering."
+        },
+        {
+          "label": "InsightSciences.ai",
+          "url": "https://insightsciences.ai/",
+          "note": "Company site includes Ishan Anand and describes InsightSciences as an AI-native research studio."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ishananand",
+          "note": "Public LinkedIn result identifies him as Chief AI Officer at InsightSciences.ai, AI product leader, speaker, and educator."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Wisconsin School of Business profile",
+          "url": "https://business.wisc.edu/news/ai-entrepreneur-ishan-anand-demystifies-large-language-models-through-hands-on-learning/",
+          "note": "Profiles Ishan Anand's GPT-2-in-Excel educational work and AI teaching approach."
+        },
+        {
+          "label": "CFE.dev speaker profile",
+          "url": "https://cfe.dev/speakers/ishan-anand/",
+          "note": "Speaker profile notes his AI, Jamstack, and web performance talks, CTO/co-founder background at Layer0, and MIT degrees."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0s1ln72",
+    "displayName": "Itamar Friedman",
+    "headline": "Co-founder and CEO of Qodo, focused on AI-powered code review, testing, and code integrity",
+    "company": "Qodo",
+    "title": "Co-Founder and CEO",
+    "location": "New York, NY, USA",
+    "tags": ["AI developer tools", "code review", "code quality", "machine learning", "startup leadership"],
+    "confidence": "high",
+    "confidenceNote": "Qodo, LinkedIn, X, conference, and Forbes profiles consistently identify Itamar Friedman as Qodo's co-founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Qodo, an AI code integrity platform for review, testing, and quality. Brings 20+ years of machine learning experience and prior startup-to-acquisition background; relevant for AI developer tools, code verification, and engineering productivity discussions.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Qodo author profile",
+          "url": "https://www.qodo.ai/authors/itamar/",
+          "note": "Qodo profile lists Itamar Friedman as CEO and Co-founder."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/itamarf",
+          "note": "Public LinkedIn result identifies him as Co-Founder and CEO at Qodo with 20+ years of machine learning experience."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/itamar_mar?lang=en",
+          "note": "Public X profile describes him as CEO and co-founder at QodoAI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "QCon AI New York speaker profile",
+          "url": "https://ai.qconferences.com/speakers/itamarfriedman",
+          "note": "Speaker page describes him as Founder and CEO at Qodo building AI-powered code governance solutions."
+        },
+        {
+          "label": "Forbes Councils profile",
+          "url": "https://councils.forbes.com/profile/Itamar-Friedman-Co-Founder-CEO-Qodo-ai/6f13b025-6819-4d7d-8775-a091fdf7fd81",
+          "note": "Lists Itamar Friedman as Co-Founder and CEO of Qodo.ai."
+        },
+        {
+          "label": "Not Another CEO interview",
+          "url": "https://notanotherceo.substack.com/p/itamar-friedman-codo-episode-37",
+          "note": "Interview discusses his work as Qodo co-founder and CEO and the company's AI-driven software development focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1gywtc0",
+    "displayName": "Ivan Brezak Brkan",
+    "headline": "Developer Experience Director at Infobip, leading developer content, community, and Shift-related programs",
+    "company": "Infobip",
+    "title": "Developer Experience Director",
+    "location": "Zagreb, Croatia",
+    "tags": ["developer experience", "developer relations", "developer content", "tech media", "community building", "Infobip Shift"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Infobip newsroom, LinkedIn, and Shift pages consistently tie Ivan Brezak Brkan to Infobip developer experience and Zagreb/Croatia-based tech community work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer Experience Director at Infobip and founder/editor of Netokracija. Leads developer experience, content, startup, and community work around Infobip's developer brand and Shift conference ecosystem. Strong match for developer relations, tech media, community strategy, and conference programming.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://ibb.wtf/",
+          "note": "Personal site identifies Ivan Brezak Brkan as Director of Developer Experience."
+        },
+        {
+          "label": "Personal site - About",
+          "url": "https://ibb.wtf/about/",
+          "note": "About page says he leads Developer Experience, Content, and Startup work at Infobip."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://hr.linkedin.com/in/ivanbrezakbrkan",
+          "note": "Public LinkedIn result lists Ivan as Director of Developer Experience at Infobip and founder/editor of Netokracija."
+        },
+        {
+          "label": "Infobip newsroom - Croatia",
+          "url": "https://www.infobip.com/newsroom_location/croatia",
+          "note": "Infobip newsroom quotes Ivan Brezak Brkan as Director of Developer Experience and Content at Infobip."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Shift 2025 speaker page",
+          "url": "https://shift.infobip.com/europe/zadar-2025/speakers/",
+          "note": "Lists Ivan Brezak Brkan as Developer Experience Director at Infobip and describes his work helping engineers write better content."
+        },
+        {
+          "label": "Infobip acquisition announcement",
+          "url": "https://www.infobip.com/news/infobip-acquires-netokracija-one-of-europes-leading-business-and-tech-magazines",
+          "note": "Infobip announcement notes Netokracija founder Ivan Brezak Brkan taking on developer content leadership at Infobip."
+        },
+        {
+          "label": "TNGlobal interview",
+          "url": "https://technode.global/2025/11/24/infobip-aims-to-build-sustainable-long-term-presence-in-southeast-asia-after-infobip-shift-kl-qa/",
+          "note": "Interview identifies him as Developer Experience Director at Infobip discussing Shift and developer/startup communities."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "19iflrz",
+    "displayName": "Jack Determan",
+    "headline": "Co-founder and Head of Simulations at Jigsaw",
+    "company": "Jigsaw",
+    "title": "Co-founder, Head of Simulations",
+    "location": "San Francisco, US",
+    "tags": ["AI simulations", "RL environments", "frontier model evaluation", "applied research", "startup founder"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn profile and Jigsaw company page tie Jack Determan to Jigsaw as co-founder/head of simulations; public profile location differs from the row, so location confidence is lower.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and Head of Simulations at Jigsaw, an applied research lab building infrastructure for long-horizon simulated environments used to train and evaluate frontier AI models.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jackdeterman",
+          "note": "Lists Jack Determan as Co-founder, Head of Simulations at Jigsaw."
+        },
+        {
+          "label": "Jigsaw LinkedIn",
+          "url": "https://www.linkedin.com/company/jigsawlabs",
+          "note": "Company page lists Jack Determan among Jigsaw employees and describes Jigsaw as an applied research lab for simulated environments."
+        },
+        {
+          "label": "Jigsaw website",
+          "url": "https://jigsaw.build/",
+          "note": "Describes Jigsaw's work on verifiable environments, scalable RL environments, and world-generation infrastructure."
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "0nyt0dx",
+    "displayName": "Jack Liao",
+    "headline": "Co-founder and CTO at Maxima",
+    "company": "Maxima",
+    "title": "Co-founder & CTO",
+    "location": "San Mateo, US",
+    "tags": ["agentic accounting", "enterprise AI", "financial close automation", "payments infrastructure", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "Maxima's official about page identifies Jack Liao as CTO & Cofounder; secondary profiles and investor coverage corroborate his background at Netflix, Bolt, and Airbnb.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Maxima, building agentic AI for enterprise accounting workflows such as reconciliations, journal entries, and close automation. Previously worked on engineering infrastructure at Netflix, Bolt, and Airbnb.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Maxima About",
+          "url": "https://www.maxima.ai/about",
+          "note": "Official Maxima team page lists Jack Liao as CTO & Cofounder and notes prior roles at Netflix, Bolt, and Airbnb."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Stackforce profile",
+          "url": "https://www.stackforce.co/talent/jack-liao-cto-69eb1a0feb26830ecb3aed35",
+          "note": "Summarizes Jack Liao's Maxima CTO role and prior engineering experience at Netflix, Bolt, Airbnb, Facebook, and Twitter."
+        },
+        {
+          "label": "Kleiner Perkins perspective",
+          "url": "https://www.kleinerperkins.com/perspectives/maxima-bringing-ai-agents-to-the-heart-of-enterprise-accounting/",
+          "note": "Investor article names Jack Liao among Maxima's founders and describes the company's AI accounting focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "026gspw",
+    "displayName": "Jackson Oh",
+    "headline": "Chief Technology Officer at ANEXT Bank",
+    "company": "ANEXT Bank",
+    "title": "Chief Technology Officer",
+    "location": "Singapore, SG",
+    "tags": ["digital banking", "fintech", "banking technology", "platform architecture", "AI in financial services"],
+    "confidence": "high",
+    "confidenceNote": "Multiple event and executive-profile sources identify Jackson Oh as CTO of ANEXT Bank with a banking, fintech, and enterprise technology background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO of ANEXT Bank, leading technology strategy, architecture, and engineering execution for a digital banking platform serving SMEs and foreign business owners in Singapore.",
+    "sources": {
+      "primary": [
+        {
+          "label": "The Asian Banker Summit 2026 speaker profile",
+          "url": "https://www.theasianbanker.com/summit2026/speakers",
+          "note": "Speaker profile identifies Jackson Oh as CTO of ANEXT Bank and summarizes his responsibilities and prior leadership roles."
+        },
+        {
+          "label": "Money20/20 Asia speaker profile",
+          "url": "https://asia.money2020.com/program/speakers/jackson-oh-s101-105160",
+          "note": "Speaker page identifies Jackson Oh as Chief Technology Officer at ANEXT Bank."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Official Board profile",
+          "url": "https://www.theofficialboard.com/biography/jackson-oh-4g369",
+          "note": "Executive profile lists Jackson Oh as Chief Technology Officer at ANEXT Bank."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03dx195",
+    "displayName": "Jacob Kajko",
+    "headline": "Founder and AI Engineering Lead at Kyver",
+    "company": "KYVER",
+    "title": "Founder & AI Engineering Lead",
+    "location": "Toulouse, FR",
+    "tags": ["AI engineering", "AI training", "context agents", "software consulting", "founder"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn ties Jacob Kajko to Kyver as founder and AI Engineering Lead, and Pappers ties him to KYVER as president; public evidence supports founder/AI engineering more directly than the row's CTO title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and AI Engineering Lead at Kyver, focused on AI training for engineering teams and Nova, a context agent for AI IDE workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://fr.linkedin.com/in/jacob-kajko-803bb620/en",
+          "note": "Lists Jacob Kajko as Founder & AI Engineering Lead at Kyver and describes work on KAM method, AI training, and Nova."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Pappers executive profile",
+          "url": "https://www.pappers.fr/dirigeant/jacob_kajko_1978-02",
+          "note": "French company registry profile links Jacob Kajko to KYVER and lists him as president since April 2025."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1o91ac6",
+    "displayName": "Jacob Sheets",
+    "headline": "Software architect focused on fintech and banking-as-a-service systems",
+    "company": "FinWise Bank",
+    "title": "Software Architect",
+    "location": "Salt Lake City, US",
+    "tags": ["fintech", "banking-as-a-service", "software architecture", "microservices", "financial services"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn search result and The Org entry tie Jacob Sheets to FinWise Bank in the Salt Lake City area, but detailed public person-specific evidence is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software architect at FinWise Bank working in fintech and banking-as-a-service. Useful match for conversations on financial-services architecture, microservices, and regulated banking technology.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jacob-a-sheets",
+          "note": "Lists Jacob Sheets as Software Architect at FinWise Bank in the Salt Lake City metropolitan area."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org - FinWise Bank HQ",
+          "url": "https://theorg.com/org/finwise-bank/offices/hq",
+          "note": "Lists Jacob Sheets among FinWise Bank HQ personnel as Software Developer III."
+        },
+        {
+          "label": "FinWise Bank leadership page",
+          "url": "https://www.finwise.bank/leadership-team/",
+          "note": "Provides context on FinWise Bank's technology organization and software engineering function."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1blqu11",
+    "displayName": "Jacob Thomas",
+    "headline": "Data scientist and AI strategist applying AI systems to recruitment marketing and persona evaluation",
+    "company": "Results Generation",
+    "title": "Data Scientist & A.I. Strategist",
+    "location": "Austin, US",
+    "tags": ["data science", "AI strategy", "recruitment marketing", "persona evaluation", "labor market technology"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Job Boards Connect, and AI Engineer World's Fair references consistently identify Jacob E. Thomas with Results Generation and AI/data strategy work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Data scientist and AI strategist at Results Generation. Works on AI-driven engagement systems and recruitment marketing, with recent public work on persona evaluations and labor-market signal quality.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jacob-e-thomas-atx",
+          "note": "Identifies Jacob Thomas as Data Scientist & A.I. Strategist at Results Generation in Austin."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Job Boards Connect profile",
+          "url": "https://jobboardsconnect.com/teams/jacob-thomas/",
+          "note": "Describes his role developing large-scale digital campaigns and AI systems for precision engagement."
+        },
+        {
+          "label": "AI Engineer World's Fair 2026 schedule",
+          "url": "https://www.ai.engineer/worldsfair",
+          "note": "Lists Jacob E. Thomas of Results Generation presenting on persona evaluations."
+        },
+        {
+          "label": "Job Boards Connect spotlight",
+          "url": "https://jobboardsconnect.com/2026/05/26/djax-spotlight-exceptional-job-seeker-experience/",
+          "note": "References Jacob Thomas from Results Generation in a winner spotlight on job seeker experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ikphie",
+    "displayName": "Jacques Arnoux",
+    "headline": "Co-founder and CTO building AI contract-review technology",
+    "company": "Dioptra, Inc.",
+    "title": "CTO",
+    "location": "Brooklyn, US",
+    "tags": ["legaltech", "contract review", "generative AI", "enterprise software", "startup engineering"],
+    "confidence": "high",
+    "confidenceNote": "Dioptra, YC, LinkedIn, and acquisition coverage consistently identify Jacques Arnoux as Dioptra co-founder/CTO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Dioptra, an AI contract-review company acquired by Icertis. Brings startup and enterprise engineering experience across legal AI, contract automation, and scalable software products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Dioptra about page",
+          "url": "https://www.dioptra.ai/about",
+          "note": "Lists Jacques Arnoux as CTO and summarizes prior experience at Yahoo, Nutanix, and Netsil."
+        },
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/dioptra",
+          "note": "Lists Dioptra as a YC W22 company founded by Jacques Arnoux, Pierre Arnoux, and Farah Gasmi."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jacquesarnoux",
+          "note": "Identifies Jacques Arnoux as co-founder and CTO at Dioptra."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Icertis acquisition announcement",
+          "url": "https://www.icertis.com/company/news/icertis-acquires-dioptra-to-deliver-ai-first-contracting-experience-for-legal/",
+          "note": "Names Jacques Arnoux among Dioptra's founders and notes the team joined Icertis product and engineering."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/dioptra-ai/org-chart/jacques-arnoux",
+          "note": "Summarizes Jacques Arnoux's technology career and Dioptra CTO role."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "19l5d3u",
+    "displayName": "Jaime Romero",
+    "headline": "CTO of Kueski with fintech, lending, and engineering leadership experience",
+    "company": "Kueski",
+    "title": "CTO",
+    "location": "Guadalajara, MX",
+    "tags": ["fintech", "online lending", "buy now pay later", "engineering leadership", "Latin America"],
+    "confidence": "high",
+    "confidenceNote": "Kueski's own announcement, LinkedIn, and multiple fintech sources consistently identify Jaime Romero as CTO of Kueski in Guadalajara/Jalisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Kueski, a major Mexican fintech focused on online lending and payments. Relevant match for conversations on fintech infrastructure, lending platforms, BNPL, and engineering leadership in Latin America.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://mx.linkedin.com/in/jaimesromero",
+          "note": "Identifies Jaime Romero with Kueski and describes him as CTO of the Latin American online lending platform."
+        },
+        {
+          "label": "Kueski blog announcement",
+          "url": "https://www.kueski.com/blog/jaime-romero-ramirez-nuevo-cto-de-kueski",
+          "note": "Kueski announcement naming Jaime Romero Ramirez as Chief Technology Officer."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/kueski/org-chart/jaime-romero",
+          "note": "Summarizes his current CTO role and prior Wepow, Inovaz, and Softtek experience."
+        },
+        {
+          "label": "Big Data Institute case study",
+          "url": "https://www.bigdatainstitute.io/success-stories/kueski-case-study/",
+          "note": "Includes a Q&A with Kueski CTO Jaime Santiago Romero Ramirez."
+        },
+        {
+          "label": "The Fintech Times profile page",
+          "url": "https://thefintechtimes.com/kueski-launches-in-store-mobile-payments-to-support-underserved-banking-customers-in-mexico/jaime-romero-chief-technology-officer-at-kueski/",
+          "note": "Identifies Jaime Romero as chief technology officer at Kueski."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0gyuqcx",
+    "displayName": "Jaimie Weber",
+    "headline": "Physician informatics leader working on clinical analytics and AI strategy",
+    "company": "Tampa General Hospital",
+    "title": "VP- Associate Chief Medical Informatics and AI Strategy Officer",
+    "location": "Tampa, US",
+    "tags": ["healthcare AI", "clinical informatics", "hospital medicine", "clinical analytics", "patient safety"],
+    "confidence": "high",
+    "confidenceNote": "Tampa General, LinkedIn, HIMSS, and other medical/professional sources consistently tie Dr. Jaimie Weber to Tampa General Hospital clinical informatics and AI strategy roles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Physician informatics and AI strategy leader at Tampa General Hospital. Works at the intersection of hospital medicine, clinical analytics, quality improvement, patient safety, and healthcare AI deployment.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Tampa General provider profile",
+          "url": "https://www.getcare.tgh.org/providers/jaimie-weber-1568856524",
+          "note": "Identifies Dr. Jaimie Weber as Medical Director of Clinical Analytics at Tampa General Hospital and a hospitalist."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jaimie-weber-83b6581a1",
+          "note": "Describes her as a physician leader focused on designing and deploying AI tools in healthcare."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "HIMSS event profile",
+          "url": "https://www.himss.org/events-overview/ai-in-healthcare-perspectives-across-the-care-ecosystem/",
+          "note": "Lists Dr. Jaimie Weber as Associate Chief Medical Informatics Officer and Physician Leader at Tampa General Hospital."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/florida-health-sciences-center-inc/org-chart/jaimie-weber",
+          "note": "Summarizes her roles as Associate Chief Medical Informatics Officer, attending physician, and clinical quality analytics leader."
+        },
+        {
+          "label": "Doximity profile",
+          "url": "https://www.doximity.com/pub/jaimie-weber-md",
+          "note": "Identifies Dr. Weber as an internist in Tampa affiliated with Tampa General Hospital and experienced in informatics and quality improvement."
+        },
+        {
+          "label": "Embarc Collective Healthtech Meetup",
+          "url": "https://embarccollective.com/q3-tampa-bay-healthtech-meetup-2025/",
+          "note": "Lists Dr. Jaimie Weber as Associate Chief Medical Informatics Officer at Tampa General Hospital."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1y30unx",
+    "displayName": "Jake Broekhuizen",
+    "headline": "Deployed engineer helping enterprises build production LLM agents",
+    "company": "LangChain",
+    "title": "Deployed Engineer",
+    "location": "",
+    "tags": ["agent engineering", "LangSmith", "enterprise AI", "LLM workflows", "applied ML"],
+    "confidence": "high",
+    "confidenceNote": "LangChain primary blog and event listing identify Jake Broekhuizen as a LangChain deployed engineer, with background building OpenAI API platform work at ServiceNow.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jake is a LangChain deployed engineer focused on helping companies connect enterprise data, workflows, and context to LLM-powered agents. He previously worked on ML and OpenAI API platform efforts at ServiceNow, giving him useful perspective on making agent systems practical inside large organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LangChain Blog",
+          "url": "https://www.langchain.com/blog/interrupt-preview-meet-the-mc",
+          "note": "LangChain profile naming Jake Broekhuizen as one of its first deployed engineers and describing his ServiceNow ML/OpenAI API platform background."
+        },
+        {
+          "label": "LangChain LinkedIn post",
+          "url": "https://www.linkedin.com/posts/langchain_2-questions-for-jake-activity-7454938211404967937-3L8p",
+          "note": "Company social post describing Jake as an early LangChain deployed engineer working with companies on enterprise agents."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Luma event",
+          "url": "https://luma.com/8r33l2o4",
+          "note": "Event listing naming Jake Broekhuizen as Deployed Engineer at LangChain and moderator for a Deep Agents meetup."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01z7jns",
+    "displayName": "James Chilton",
+    "headline": "AI/ML solutions architect at Chick-fil-A",
+    "company": "Chick-fil-A",
+    "title": "Applied AI Solutions Architect",
+    "location": "Atlanta, GA, US",
+    "tags": ["AI architecture", "machine learning", "enterprise solutions", "restaurant technology", "applied AI"],
+    "confidence": "high",
+    "confidenceNote": "Public LinkedIn profile matches name, Atlanta location, Chick-fil-A Corporate Support Center, and AI/ML solutions architecture role; title appears as Principal Solutions Architect - AI/ML rather than the row's exact Applied AI title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "James works on AI/ML solution architecture for Chick-fil-A's corporate technology organization. He is likely a strong match for conversations around enterprise AI adoption, architecture patterns, and practical deployment inside a large operating business.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jachilton",
+          "note": "Public profile showing Chick-fil-A Corporate Support Center experience and Principal Solutions Architect - AI/ML role."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/James/Chilton/us-0-United-States",
+          "note": "Directory snippet corroborates the Atlanta, GA James Chilton profile associated with Chick-fil-A Corporate Support Center."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1husy89",
+    "displayName": "James McCombe",
+    "headline": "Founder building operational intelligence for AI deployment",
+    "company": "Mitori.Ai",
+    "title": "Founder and CEO",
+    "location": "San Clemente, CA, US",
+    "tags": ["AI workflow automation", "operational intelligence", "managed AI operations", "workflow audits", "enterprise AI"],
+    "confidence": "medium",
+    "confidenceNote": "Mitori company page confirms James McCombe as founder and LinkedIn snippets describe him as CEO & Founder; location signals conflict across sources, so location is retained from the participant row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "James founded Mitori, which positions itself around workflow audits, operational intelligence, and deployment-ready AI agents. He is a relevant match for enterprise AI transformation, AI operations, and identifying where automation can create measurable value.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Mitori About",
+          "url": "https://www.mitori.ai/company",
+          "note": "Company page lists James McCombe as Founder and describes Mitori's mission around understanding organizational work and deploying AI agents."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://nz.linkedin.com/in/jmccombe",
+          "note": "Public profile snippet identifies James McCombe as CEO & Founder of Mitori and describes AI workflow automation and managed AI ops focus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Mitori homepage",
+          "url": "https://www.mitori.ai/",
+          "note": "Company site describes Mitori's operational intelligence, workflow audit, and AI deployment positioning."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/mitori-ai/org-chart/james-mccombe",
+          "note": "Secondary org-chart listing identifies James McCombe as CEO & Founder of Mitori.ai, but is marked unverified."
+        }
+      ]
+    }
+  }
+]

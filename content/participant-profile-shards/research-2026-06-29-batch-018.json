@@ -1,0 +1,210 @@
+[
+  {
+    "lookupKey": "01prxlv",
+    "displayName": "Angelo Aletto",
+    "headline": "Manager of Expert (Custom) IT Solutions at Berkeley Research Group",
+    "company": "Berkeley Research Group (BRG)",
+    "title": "Manager of Expert (Custom) IT Solutions",
+    "location": "Pittsburgh, Pennsylvania, US",
+    "tags": [
+      "IT solutions",
+      "cloud solutions",
+      "systems administration",
+      "application analysis",
+      "consulting operations"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn search result matches the attendee-provided name, title, company, and Pittsburgh location; limited corroborating primary public sources found beyond LinkedIn.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "IT solutions manager at BRG with experience spanning cloud solutions, application analysis, systems administration, and customer-facing technical support. Relevant match for attendees working on enterprise IT, expert-services workflows, and operational technology in consulting environments.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/angelo-aletto-bbab8292",
+          "note": "Matches Angelo Aletto as Manager of Expert (Custom) IT Solutions at Berkeley Research Group in Pittsburgh."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Aletto/us-0-United-States",
+          "note": "Directory result also lists Angelo Aletto with the same BRG role and Pittsburgh location."
+        },
+        {
+          "label": "Mesh profile",
+          "url": "https://me.sh/profile/angelo-aletto",
+          "note": "Secondary profile associates Angelo Aletto with Berkeley Research Group and IT work, though title/location details differ from attendee data."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1491pk9",
+    "displayName": "Angie Jones",
+    "headline": "VP of Developer Experience at the Agentic AI Foundation",
+    "company": "Agentic AI Foundation",
+    "title": "VP, Developer Experience",
+    "location": "New Orleans, Louisiana, US",
+    "tags": [
+      "developer experience",
+      "agentic AI",
+      "engineering leadership",
+      "open source",
+      "AI education",
+      "keynote speaker"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and high-signal sources confirm Angie Jones as VP of Developer Experience at the Agentic AI Foundation; location is from attendee-provided data.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer-experience executive focused on helping teams design, implement, and adopt agentic AI systems. International keynote speaker and educator with a strong bridge between engineering practice, open-source ecosystems, and AI adoption.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://angiejones.tech/",
+          "note": "States she is VP of Developer Experience at the Agentic AI Foundation and describes her focus on agentic systems adoption."
+        },
+        {
+          "label": "Agentic AI Foundation staff page",
+          "url": "https://aaif.io/staff/",
+          "note": "Official AAIF staff listing for Angie Jones as VP of Developer Experience."
+        },
+        {
+          "label": "Agentic AI Foundation author page",
+          "url": "https://aaif.io/author/angie-jones/",
+          "note": "Official AAIF author page with her writing on agentic AI foundations."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/angiejones/",
+          "note": "Speaker profile repeats her AAIF VP Developer Experience role and conference background."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/angiejones",
+          "note": "Public LinkedIn result lists her as VP at Agentic AI Foundation."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qaugvx",
+    "displayName": "Anil Nadiminti",
+    "headline": "Senior Solutions Architect at Amazon Web Services",
+    "company": "Amazon Web Services",
+    "title": "Senior Solutions Architect",
+    "location": "Princeton, New Jersey, US",
+    "tags": [
+      "AWS",
+      "solutions architecture",
+      "agentic AI",
+      "Amazon Bedrock",
+      "fintech",
+      "security",
+      "cloud architecture"
+    ],
+    "confidence": "high",
+    "confidenceNote": "AWS documentation and AWS blog author bios confirm Anil Nadiminti as a Senior Solutions Architect at AWS; LinkedIn corroborates the role and location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AWS Senior Solutions Architect working across cloud architecture, generative AI, security, and FinTech use cases. Useful match for conversations about Bedrock, agentic AI systems, policy controls, and scalable enterprise cloud design.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AWS blog author bio - Bedrock AgentCore policy",
+          "url": "https://aws.amazon.com/blogs/machine-learning/secure-ai-agents-with-policy-in-amazon-bedrock-agentcore/",
+          "note": "AWS bio identifies Anil as a Senior Solutions Architect focused on FinTech, enterprise financial institutions, blockchain-native companies, and agentic AI."
+        },
+        {
+          "label": "AWS blog author bio - Verified Permissions and Bedrock Agents",
+          "url": "https://aws.amazon.com/blogs/machine-learning/design-secure-generative-ai-application-workflows-with-amazon-verified-permissions-and-amazon-bedrock-agents/",
+          "note": "AWS bio describes his cloud and AI architecture work for digital transformation."
+        },
+        {
+          "label": "AWS whitepaper contributor page",
+          "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/contributors.html",
+          "note": "AWS documentation lists Anil Nadiminti as a Senior Solutions Architect contributor."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/nadiminti",
+          "note": "Public LinkedIn result lists Anil Nadiminti at AWS in Princeton, New Jersey."
+        },
+        {
+          "label": "Muck Rack author page",
+          "url": "https://muckrack.com/anil-nadiminti",
+          "note": "Aggregates AWS-authored articles by Anil Nadiminti."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0xgsxio",
+    "displayName": "Ankit Jain",
+    "headline": "Co-founder and CEO of Aviator",
+    "company": "Aviator",
+    "title": "Founder & CEO",
+    "location": "San Francisco, California, US",
+    "tags": [
+      "developer experience",
+      "DevEx",
+      "engineering productivity",
+      "AI coding workflows",
+      "code review",
+      "CI/CD",
+      "startup founder"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Aviator, LinkedIn, Sessionize, and author profiles consistently identify Ankit Jain as co-founder/CEO of Aviator and connect him to developer productivity and DevEx.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Aviator, building developer-productivity tooling for engineering teams shipping AI-generated and human-authored code at scale. Strong match for conversations about DevEx, code review, merge automation, CI/CD, and engineering productivity metrics.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Aviator podcast page",
+          "url": "https://www.aviator.co/podcast",
+          "note": "Aviator lists The Hangar DX podcast as hosted by Ankit Jain, CEO at Aviator."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ankitjaindce",
+          "note": "Public LinkedIn result describes Ankit as cofounder and CEO of Aviator and focused on DevEx at scale."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/ankitxg",
+          "note": "Profile identifies him as CEO at Aviator and focused on developer productivity."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/ankitjain/",
+          "note": "Speaker profile describes him as cofounder and CEO of Aviator Technologies and leader of Xoogler.co."
+        },
+        {
+          "label": "The New Stack author profile",
+          "url": "https://thenewstack.io/author/ankitjain/",
+          "note": "Author profile identifies him as cofounder and CEO of Aviator."
+        },
+        {
+          "label": "CIO author profile",
+          "url": "https://www.cio.com/profile/ankit-jain/",
+          "note": "Author bio describes Aviator's work helping engineering teams ship AI-generated code at scale."
+        }
+      ]
+    }
+  }
+]

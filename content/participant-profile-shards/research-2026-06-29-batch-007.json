@@ -1,0 +1,227 @@
+[
+  {
+    "lookupKey": "010hcha",
+    "displayName": "Aditya Jami",
+    "headline": "CTO at Meltwater focused on enterprise AI, data platforms, and engineering scale",
+    "company": "Meltwater",
+    "title": "Chief Technology Officer",
+    "location": "San Francisco, CA, US",
+    "tags": ["AI leadership", "enterprise AI", "data platforms", "cloud infrastructure", "media intelligence", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "Multiple strong sources identify Aditya Jami as Meltwater CTO, with consistent background in AI/data platforms, Netflix cloud infrastructure, Yahoo data systems, and Stanford CS.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aditya is CTO at Meltwater, leading technical strategy with emphasis on AI, data science, and enterprise-scale platforms. He previously worked on Netflix cloud infrastructure including Chaos Monkey/Simian Army and Cassandra/Priam, and on large-scale real-time data systems at Yahoo.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adityajami",
+          "note": "Identifies him as CTO at Meltwater and references prior Netflix, Yahoo, and Predict Effect experience."
+        },
+        {
+          "label": "Stanford Computer Science profile",
+          "url": "https://cs.stanford.edu/people/adityaj/",
+          "note": "Personal Stanford CS page describing Predict Effect, Netflix Cloud Solutions, Simian Army/Chaos Monkey, and Cassandra/Priam work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Council speaker bio",
+          "url": "https://aicouncil.com/speakers/aditya-jami",
+          "note": "Speaker bio summarizing Meltwater CTO role, AI/data science focus, and prior Netflix/Yahoo infrastructure work."
+        },
+        {
+          "label": "Forbes India",
+          "url": "https://www.forbesindia.com/article/leadership/we-will-be-building-ai-from-india-meltwaters-aditya-jami/95371/1",
+          "note": "Leadership article describing Jami as Meltwater global CTO and discussing Meltwater's AI and media intelligence platform."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0bbcbxf",
+    "displayName": "Adrian Swanberg",
+    "headline": "Engineering and product leader building AI developer tooling at W&B / CoreWeave",
+    "company": "CoreWeave",
+    "title": "Principal Software Engineer",
+    "location": "San Diego, CA, US",
+    "tags": ["AI developer tools", "LLM observability", "agents", "SWE-bench", "engineering leadership", "product leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Strong evidence connects Adrian Swanberg to CoreWeave/W&B and Weave leadership, but public sources more often describe him as Head of Weave or engineering/product leader and list San Francisco rather than the provided San Diego location/title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Adrian is an engineering and product leader at CoreWeave/Weights & Biases, associated with Weave and GenAI developer tooling. Public activity points to work on AI coding agents, SWE-bench, and LLM observability.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adrian-swanberg-57412266",
+          "note": "Public profile snippet lists CoreWeave experience and describes him as an engineering and product leader."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/adrnswanberg",
+          "note": "Profile and posts reference building W&B Weave and work on an o1-based AI programming agent for SWE-bench Verified."
+        },
+        {
+          "label": "Weights & Biases about page",
+          "url": "https://wandb.ai/site/company/about-us/",
+          "note": "Company page lists Adrian Swanberg as Head of Weave and notes W&B is part of CoreWeave."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "WeaveHacks judges page",
+          "url": "https://weavehacks2.devpost.com/",
+          "note": "Lists Adrian Swanberg as Head of Weave among hackathon judges."
+        },
+        {
+          "label": "Luma founder dinner",
+          "url": "https://luma.com/leopard-future-founders-fractionalai",
+          "note": "Event page describes him as VP Engineering at Weights & Biases, recently acquired by CoreWeave."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0tzkbmy",
+    "displayName": "Ahnaf Prio",
+    "headline": "Senior Engineering Manager at Best Buy leading agentic commerce work",
+    "company": "Best Buy",
+    "title": "Senior Engineering Manager",
+    "location": "St. Paul, MN, US",
+    "tags": ["agentic commerce", "engineering management", "retail technology", "software architecture", "startups", "digital transformation"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Minnestar, Medium, and UMN Morris sources consistently identify Ahnaf Prio as an engineering leader or senior engineering manager at Best Buy, with startup CTO background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ahnaf is a Senior Engineering Manager at Best Buy, publicly described as leading an agentic commerce team. He was previously CTO of Invive.io and Tavolo, with experience across biotech/life insurance innovation, restaurant technology, software architecture, and digital transformation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ahnafy",
+          "note": "Public profile snippet identifies him as an engineering leader at Best Buy in the Greater Minneapolis-St. Paul area."
+        },
+        {
+          "label": "Medium",
+          "url": "https://ahnafy.medium.com/",
+          "note": "Personal writing profile for Ahnaf Prio."
+        },
+        {
+          "label": "Medium about page",
+          "url": "https://medium.com/%40ahnafy/about",
+          "note": "Bio states he serves as senior engineering manager at Best Buy and references Invive.io and Tavolo CTO roles."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Minnestar participant page",
+          "url": "https://sessions.minnestar.org/participants/2908",
+          "note": "Speaker bio says he is a Senior Engineering Manager at Best Buy leading the agentic commerce team and summarizes prior CTO roles."
+        },
+        {
+          "label": "University of Minnesota Morris",
+          "url": "https://morris.umn.edu/campus-community/international-student-program",
+          "note": "UMN Morris page lists Khondoker Ahnaf Prio as a 2019 alum currently working as Senior Engineering Manager at Best Buy in St. Paul."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "07bqax0",
+    "displayName": "Ajay Arora",
+    "headline": "CEO and Co-Founder of AnyTeam, building an AI-native sales operating system",
+    "company": "AnyTeam",
+    "title": "CEO & Founder",
+    "location": "San Francisco, CA, US",
+    "tags": ["AI sales", "B2B sales", "enterprise software", "cybersecurity", "founder", "go-to-market"],
+    "confidence": "high",
+    "confidenceNote": "AnyTeam's site, LinkedIn, and funding announcements consistently identify Ajay Arora as AnyTeam CEO/co-founder and a serial enterprise software founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ajay is CEO and Co-Founder of AnyTeam, an AI-native sales operating system for B2B sales teams. He is a serial entrepreneur with prior founder/operator roles at BluBracket and Vera, and experience in enterprise software and cybersecurity exits.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AnyTeam about page",
+          "url": "https://anyteam.com/about/",
+          "note": "Company page lists Ajay Arora as CEO & Co-Founder and describes AnyTeam's AI-native sales product thesis."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akaroraka",
+          "note": "Public profile snippet lists him as CEO & Co-Founder at AnyTeam and references BluBracket and Vera experience."
+        },
+        {
+          "label": "AnyTeam launch post",
+          "url": "https://www.linkedin.com/posts/akaroraka_the-worlds-first-ai-native-os-for-sales-activity-7382417807163990016-0czL",
+          "note": "Launch post says AnyTeam was founded by Ajay Arora and Jeff Yoshimura and describes the AI-native sales OS."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Crosslink Capital funding announcement",
+          "url": "https://www.crosslinkcapital.com/news/anyteam-raises-10m-seed-round-to-launch-worlds-first-ai-native-operating-system-for-b2b-sales/",
+          "note": "Funding announcement says AnyTeam raised $10M and describes Arora as a three-time founder with successful exits including BluBracket's acquisition by HashiCorp."
+        },
+        {
+          "label": "Unusual Ventures interview",
+          "url": "https://www.unusual.vc/putting-the-security-in-cybersecurity-prakash-linga-and-ajay-arora-co-founders-blubracket/",
+          "note": "Background source on Ajay Arora's prior BluBracket and Vera cybersecurity founder work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16v131y",
+    "displayName": "Ajay Prakash",
+    "headline": "Senior Staff Software Engineer at LinkedIn building large-scale AI systems and agent context infrastructure",
+    "company": "LinkedIn",
+    "title": "Senior Staff Software Engineer",
+    "location": "San Francisco Bay Area, CA, US",
+    "tags": ["AI agents", "context engineering", "MCP", "enterprise AI", "large-scale systems", "prompt engineering"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, QCon AI, podcast, and AI Engineer schedule sources consistently identify Ajay Prakash as a LinkedIn senior/staff-level engineer working on AI agents, prompt engineering, and context infrastructure.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ajay is a Senior Staff Software Engineer at LinkedIn focused on scalable enterprise AI agents and large-scale systems. Public talks and podcast appearances reference work on prompt engineering playgrounds, MCP-based context layers, and helping AI agents use organizational knowledge.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ajay-prakash-3780b132",
+          "note": "Public profile snippet describes him as an AI engineer at LinkedIn with expertise building scalable enterprise AI agents."
+        },
+        {
+          "label": "QCon AI Boston speaker page",
+          "url": "https://boston.qcon.ai/speakers/ajayprakash",
+          "note": "Speaker bio lists him as Senior Staff Software Engineer at LinkedIn with 14 years of software experience building large-scale systems and AI."
+        },
+        {
+          "label": "QCon AI presentation",
+          "url": "https://boston.qcon.ai/presentation/boston2026/context-engineering-linkedin-how-we-built-organizational-context-layer-ai",
+          "note": "Talk page links him to LinkedIn's organizational context layer for AI agents with MCP."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "What the Dev podcast",
+          "url": "https://whatthedev.buzzsprout.com/673192/episodes/16733483-298-building-a-prompt-engineering-playground-for-faster-company-wide-innovation-with-linkedin-s-lukasz-karolewski-and-ajay-prakash",
+          "note": "Podcast episode discusses Ajay Prakash and Lukasz Karolewski building a prompt engineering playground at LinkedIn."
+        },
+        {
+          "label": "AI Engineer schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Context+Engineering",
+          "note": "Conference schedule lists Ajay Prakash as Senior Staff Software Engineer at LinkedIn speaking on context engineering for agents."
+        }
+      ]
+    }
+  }
+]

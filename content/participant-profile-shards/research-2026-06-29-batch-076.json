@@ -1,0 +1,492 @@
+[
+  {
+    "lookupKey": "0gf3q21",
+    "displayName": "Rohan Ramanath",
+    "headline": "General Manager of AI Core at Nubank and former Hyperplane co-founder.",
+    "company": "Nubank",
+    "title": "General Manager, AI",
+    "location": "San Francisco, California, United States",
+    "tags": ["Nubank", "AI banking", "foundation models", "fintech", "ML product"],
+    "confidence": "high",
+    "confidenceNote": "Nubank, LinkedIn, podcast, and event sources consistently identify Rohan Ramanath as a Hyperplane co-founder now leading AI Core / AI product work at Nubank.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI product and machine-learning leader at Nubank, where he works on AI Core strategy for credit, customer experience, and banking infrastructure. Previously co-founded Hyperplane, the AI-for-banks startup acquired by Nubank.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/rohanramanath",
+          "note": "Public profile lists AI product and machine-learning engineering work at Nubank and founder history at Hyperplane."
+        },
+        {
+          "label": "Nubank AI strategy announcement",
+          "url": "https://international.nubank.com.br/company/nubank-details-ai-transformation-strategy-built-on-data-foundation-models-and-democratized-financial-advice/",
+          "note": "Names Rohan Ramanath as General Manager of AI Core discussing Nubank's AI strategy."
+        },
+        {
+          "label": "Nubank Hyperplane acquisition announcement",
+          "url": "https://international.nubank.com.br/company/nubank-acquires-hyperplane-to-accelerate-ai-first-strategy/",
+          "note": "Lists Rohan Ramanath as a Hyperplane co-founder in Nubank's acquisition announcement."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Nu Videocast episode",
+          "url": "https://open.spotify.com/episode/6lYGrbXfZOgU22WhHm5NJC",
+          "note": "Episode description names CTO Eric Young and General Manager of AI Core Rohan Ramanath discussing AI strategy."
+        },
+        {
+          "label": "Latitud podcast",
+          "url": "https://latitud.com/podcast/banks-artificial-intelligence-rohan-ramanath-hyperplane",
+          "note": "Interview with Hyperplane co-founder Rohan Ramanath on AI in banking."
+        },
+        {
+          "label": "AICamp NuSession",
+          "url": "https://www.aicamp.ai/event/eventdetails/W2026062317",
+          "note": "Speaker listing identifies him as General Manager of the AI division at Nu."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "11r6sob",
+    "displayName": "Rohit Saha",
+    "headline": "Director of AI at Sagard working on AI adoption across investment and portfolio contexts.",
+    "company": "Sagard",
+    "title": "Director of AI",
+    "location": "Toronto, Ontario, Canada",
+    "tags": ["Sagard", "investment AI", "portfolio enablement", "financial services", "machine learning"],
+    "confidence": "high",
+    "confidenceNote": "Sagard team, LinkedIn, Responsible Investment Report, Substack, and profile-directory sources align on Rohit Saha's Director of AI role in Toronto.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of AI at Sagard, focused on applying AI across investment, portfolio, and financial-services workflows. Useful match for conversations on AI adoption in regulated industries, portfolio enablement, and measuring practical AI impact.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/rohit-saha-ai",
+          "note": "Public profile identifies Rohit Saha as Director of AI at Sagard in Toronto."
+        },
+        {
+          "label": "Sagard team page",
+          "url": "https://www.sagard.com/team/",
+          "note": "Sagard's team directory lists Rohit Saha in Canada."
+        },
+        {
+          "label": "Sagard Responsible Investment Report",
+          "url": "https://www.sagard.com/wp-content/uploads/2026/06/Sagard-2025-Responsible-Investment-Report-1.pdf",
+          "note": "Report lists Rohit Saha as Director, AI in Toronto and describes his support for AI-related work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sagard AI Pulse",
+          "url": "https://sagardaipulse.substack.com/",
+          "note": "Newsletter credits include Rohit Saha among Sagard AI contributors."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/sagard/org-chart/rohit-saha",
+          "note": "Profile summarizes his Director of AI role and prior machine-learning research background."
+        },
+        {
+          "label": "Neuron profile",
+          "url": "https://neuron.com/profile/3947340359/rohit-saha",
+          "note": "Verified directory profile lists him as Director, AI at Sagard in Toronto."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ca1kmv",
+    "displayName": "Roi Galipapa",
+    "headline": "Chief of Staff at Willow working on enterprise AI-agent control and governance.",
+    "company": "Willow",
+    "title": "Chief of Staff",
+    "location": "Tel Aviv District, Israel",
+    "tags": ["Willow", "AI agents", "enterprise AI", "agent governance", "operations"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn confirms the Chief of Staff at Willow role, and multiple Willow launch posts list Roi Galipapa as part of the team; public long-form bio detail is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief of Staff at Willow, a startup building enterprise controls for AI agents. Relevant for conversations about agent rollout, governance, operational adoption, and the security gaps around fast-moving AI tooling.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://il.linkedin.com/in/galipapa",
+          "note": "Public profile identifies Roi Galipapa as Chief of Staff at Willow and ex-Tesla."
+        },
+        {
+          "label": "Roi Galipapa LinkedIn post",
+          "url": "https://www.linkedin.com/posts/galipapa_the-moment-that-convinced-me-we-were-building-activity-7465384396120809472-vDXP",
+          "note": "Self-authored post discusses Willow's enterprise AI-agent governance problem space."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Naor Fliker Willow funding post",
+          "url": "https://www.linkedin.com/posts/flikernaor_four-weeks-ago-i-joined-willow-last-activity-7468382849751150592-g1Pp",
+          "note": "Willow team/funding post lists Roi Galipapa among the team around the launch."
+        },
+        {
+          "label": "Willow launch post",
+          "url": "https://www.linkedin.com/posts/flikernaor_we-launched-willow-yesterday-the-activity-7465787431938809856-8lOu",
+          "note": "Launch post names Roi Galipapa among the Willow team and describes the agent-basecamp product."
+        },
+        {
+          "label": "CTech Willow coverage",
+          "url": "https://www.linkedin.com/posts/ctech-by-calcalist_wix-ceo-backs-willow-as-startup-raises-7-activity-7468271811689091072-GJv5",
+          "note": "Coverage describes Willow as an AI-agent control-layer startup and shows Roi Galipapa connected to the launch discussion."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1je5v9x",
+    "displayName": "Roland Gavrilescu",
+    "headline": "Co-founder of Introspection building tools for self-improving agent systems.",
+    "company": "Introspection",
+    "title": "Founder",
+    "location": "United States",
+    "tags": ["Introspection", "AI agents", "agent reliability", "self-improving systems", "xAI"],
+    "confidence": "high",
+    "confidenceNote": "Introspection blog, AI Engineer schedule, LinkedIn, and social/event sources consistently tie Roland Gavrilescu to Introspection and agent-reliability work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of Introspection, focused on diagnosing and improving AI-agent behavior after deployment. Previously worked on AI systems at xAI and Superhuman, making him a strong match for agent reliability, evals, and self-improving software discussions.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Introspection launch blog",
+          "url": "https://pi.recipes/blog/introducing-introspection",
+          "note": "Company blog lists Roland Gavrilescu as co-founder and describes Introspection's agent-diagnostics thesis."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/roland-gavrilescu",
+          "note": "Public profile identifies his Introspection affiliation and prior background."
+        },
+        {
+          "label": "Roland Gavrilescu LinkedIn post",
+          "url": "https://www.linkedin.com/posts/roland-gavrilescu_im-starting-something-new-during-my-time-activity-7399169004382146560-3QlU",
+          "note": "Self-authored post describes starting Introspection after work on agents at xAI and Superhuman."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Fouad+Matin",
+          "note": "Conference schedule lists Roland Gavrilescu of Introspection as Founder for an OSS agent-stack session."
+        },
+        {
+          "label": "AGI House Instagram",
+          "url": "https://www.instagram.com/agihouse_org/?hl=en",
+          "note": "Event listing references Roland Gavrilescu as CEO at Introspection."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03hiq7w",
+    "displayName": "Roman Khudonogov",
+    "headline": "Product leader at Tiugo working on CKEditor, TinyMCE, and AI-assisted content tooling.",
+    "company": "Tiugo Technologies",
+    "title": "Sr. Director of Product Management",
+    "location": "London, United Kingdom",
+    "tags": ["Tiugo", "TinyMCE", "CKEditor", "developer tools", "AI writing tools"],
+    "confidence": "high",
+    "confidenceNote": "CKEditor, TinyMCE, LinkedIn, and product-event sources consistently identify Roman Khudonogov as a Tiugo product leader for rich-text editor products.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product leader at Tiugo Technologies working across CKEditor and TinyMCE, including product strategy for developer tools and AI-assisted content creation. Useful match for SaaS product, editor platforms, and AI writing-workflow conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/khudonogov/",
+          "note": "Public profile associates Roman Khudonogov with Tiugo Technologies in London."
+        },
+        {
+          "label": "CKEditor author page",
+          "url": "https://ckeditor.com/blog/authors/roman-khudonogov/",
+          "note": "Official CKEditor author page lists him as Head of Product at Tiugo Technologies."
+        },
+        {
+          "label": "TinyMCE roadmap article",
+          "url": "https://www.tiny.cloud/blog/public-product-roadmap/",
+          "note": "TinyMCE article identifies Roman Khudonogov as Head of Product at Tiugo, Tiny's parent company."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Business Wire / Morningstar TinyMCE AI release",
+          "url": "https://www.morningstar.com/news/business-wire/20260416433827/tiny-technologies-debuts-tinymce-ai-bringing-built-in-ai-writing-tools-to-tinymce",
+          "note": "Press release quotes Roman Khudonogov as senior director of product management at Tiugo Technologies."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/tiugo-technologies/org-chart/roman-khudonogov",
+          "note": "Profile summarizes his Tiugo role and prior Tiny product background."
+        },
+        {
+          "label": "Zuddl webinar page",
+          "url": "https://app.zuddl.com/p/a/event/33097aab-b8f0-47c3-b99b-931bf2e9aaab",
+          "note": "Speaker page lists Roman Khudonogov as Head of Product, Tiugo."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1aggy2w",
+    "displayName": "Ronald Palmer",
+    "headline": "CTO and co-founder at Yodel, building AI-powered community event-calendar technology.",
+    "company": "Yodel",
+    "title": "CTO",
+    "location": "Newark, Ohio, United States",
+    "tags": ["Yodel", "event technology", "community calendars", "AI curation", "local media"],
+    "confidence": "medium",
+    "confidenceNote": "Yodel's team page and LinkedIn identify Ron/Ronald Palmer as CTO; supporting public sources are mostly local or directory-style.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and co-founder at Yodel, a community event-calendar platform using technology and AI-driven curation to help local organizations publish and discover events. Relevant for local AI, civic/event platforms, and small-team product engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Yodel team page",
+          "url": "https://yodelevents.com/our-team/",
+          "note": "Official team page lists Ron Palmer as CTO and co-founder."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ronald-palmer-23b500217",
+          "note": "Public profile identifies Ronald Palmer as Chief Technology Officer at Yodel Community Calendars."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Yodel Facebook post",
+          "url": "https://www.facebook.com/yodelevents/posts/have-you-ever-wondered-how-yodel-came-to-be-believe-it-or-not-our-cto-and-co-own/533238158462575/",
+          "note": "Company post calls Ron Palmer Yodel's CTO and co-owner."
+        },
+        {
+          "label": "University Heights Mosaic PDF",
+          "url": "https://universityheightsoh.gov/wp-content/uploads/2023/03/UHMosaic_Feb23_lores.pdf",
+          "note": "Local publication quotes Yodel Chief Technology Officer Ron Palmer on Yodel's technology."
+        },
+        {
+          "label": "Prospeo company profile",
+          "url": "https://prospeo.io/c/yodel-event-calendar",
+          "note": "Company directory lists Ronald Palmer as Chief Technology Officer at Yodel Event Calendar."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16ur827",
+    "displayName": "Ross Taylor",
+    "headline": "Co-founder and CEO of General Reasoning, focused on long-horizon reasoning and RL.",
+    "company": "General Reasoning",
+    "title": "Co-founder & CEO",
+    "location": "London, England, United Kingdom",
+    "tags": ["General Reasoning", "reinforcement learning", "long-horizon agents", "Llama", "AI research"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, company pages, LinkedIn, X, and conference sources consistently identify Ross Taylor as General Reasoning's co-founder/CEO and former Meta AI reasoning lead.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of General Reasoning, building research and systems for long-horizon AI reasoning. Previously led reasoning work at Meta AI for Llama 2/3 and co-founded Papers with Code before its Meta acquisition.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://rossjtaylor.com/",
+          "note": "Ross Taylor states he is co-founder and CEO of General Reasoning and previously led Meta AI reasoning work."
+        },
+        {
+          "label": "General Reasoning website",
+          "url": "https://www.gr.inc/",
+          "note": "Company site presents Ross Taylor as CEO of General Reasoning."
+        },
+        {
+          "label": "General Reasoning careers page",
+          "url": "https://www.gr.inc/careers",
+          "note": "Company page lists Ross Taylor among the founders and describes long-horizon reasoning work."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/rosstaylor90",
+          "note": "Public profile identifies him as co-founder and CEO of General Reasoning with prior Meta AI Llama work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "X profile",
+          "url": "https://x.com/rosstaylor90",
+          "note": "Public social profile describes him as co-founder and CEO of General Reasoning and former Meta AI reasoning lead."
+        },
+        {
+          "label": "General Reasoning research page",
+          "url": "https://www.gr.inc/research",
+          "note": "Research page lists Ross Taylor as an author on KellyBench, a long-horizon sequential decision benchmark."
+        },
+        {
+          "label": "Snowflake BUILD London speaker page",
+          "url": "https://www.snowflake.com/en/build/london/",
+          "note": "Speaker bio names Ross Taylor as co-founder and CEO of General Reasoning and summarizes his Meta AI background."
+        },
+        {
+          "label": "Radical Ventures RL article",
+          "url": "https://radical.vc/reinforcement-learnings-renaissance-how-rl-is-reshaping-ais-future/",
+          "note": "Article quotes Ross Taylor as CEO of General Reasoning and former Meta AI reasoning-team leader."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0omauqv",
+    "displayName": "Roy Ng",
+    "headline": "Co-founder and CEO of Fabrion building AI-native systems for industrial manufacturers.",
+    "company": "Fabrion",
+    "title": "Co-founder and CEO",
+    "location": "San Francisco, California, United States",
+    "tags": ["Fabrion", "industrial AI", "manufacturing", "enterprise software", "founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Constellation Research, 8VC, and startup-tracker sources consistently identify Roy Ng as Fabrion's co-founder/CEO and describe Fabrion's industrial AI focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Fabrion, building an AI-native platform for industrial manufacturers and complex value chains. Previously held senior operating roles across enterprise software and fintech, including Bond, FIS, Twilio, and Mapbox.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/royandrewng",
+          "note": "Public profile lists Roy Ng as Co-Founder & CEO at Fabrion in the San Francisco Bay Area."
+        },
+        {
+          "label": "Roy Ng LinkedIn post",
+          "url": "https://www.linkedin.com/posts/royandrewng_careers-activity-7376006428311916544-Hr7c",
+          "note": "Self-authored post describes Fabrion as a full-stack, AI-native platform for industrial manufacturing."
+        },
+        {
+          "label": "Constellation Research profile",
+          "url": "https://www.constellationr.com/user/roy-andrew-ng",
+          "note": "Profile lists Roy Andrew Ng as Co-Founder and CEO of Fabrion and summarizes his enterprise-tech operating background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "8VC LinkedIn launch post",
+          "url": "https://www.linkedin.com/posts/8vc_fabrion-the-latest-company-from-8vcs-build-activity-7378857307947978752-j2VI",
+          "note": "8VC post names Roy Ng as part of Fabrion's founding team and describes the industrial-manufacturing platform."
+        },
+        {
+          "label": "Fabrion LinkedIn company page",
+          "url": "https://www.linkedin.com/company/fabrionai",
+          "note": "Company page lists Roy Ng among Fabrion employees and gives the San Francisco office location."
+        },
+        {
+          "label": "Stealth Startup Spy profile",
+          "url": "https://stealthstartupspy.substack.com/p/stealth-startup-spy-264",
+          "note": "Startup profile lists Roy Ng as Co-Founder & CEO at Fabrion and describes the company as AI-native industrial software."
+        },
+        {
+          "label": "Built By Berkeley roundup",
+          "url": "https://built-by-berkeley.beehiiv.com/p/built-by-berkeley-c63f",
+          "note": "Roundup lists Fabrion as an AI-native industrial platform with Roy Ng as CEO/founder."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16lcdsk",
+    "displayName": "Royce Yap",
+    "headline": "VP of AI investments at Temasek focused on strategy, product, and artificial intelligence.",
+    "company": "Temasek",
+    "title": "VP, Investments (AI)",
+    "location": "San Francisco, California, United States",
+    "tags": ["Temasek", "AI investments", "venture capital", "strategy", "product"],
+    "confidence": "low",
+    "confidenceNote": "Public evidence is sparse but two public directory-style sources align on the Temasek AI investments role and San Francisco location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI investments VP at Temasek, with public listings pointing to work across AI investing, strategy, and product from San Francisco. Best match for investor conversations around AI companies, market structure, and product-led diligence.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn public directory",
+          "url": "https://www.linkedin.com/pub/dir/Royce/Yap",
+          "note": "LinkedIn directory result lists Royce Yap as VP, Temasek with AI investments, strategy, and product focus in San Francisco."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org Temasek investment management page",
+          "url": "https://theorg.com/org/temasek/teams/investment-management",
+          "note": "Temasek investment-management directory lists Royce Yap as VP, Investments (Artificial Intelligence)."
+        },
+        {
+          "label": "LinkedIn Malaysia public directory",
+          "url": "https://my.linkedin.com/pub/dir/Royce/Yap",
+          "note": "Alternate LinkedIn public directory result repeats the Temasek AI investments, strategy, and product listing."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "13ln3fr",
+    "displayName": "Rundong Lyu",
+    "headline": "Founding engineer and Head of AI at Maxima building agentic AI for enterprise accounting.",
+    "company": "Maxima",
+    "title": "Head of AI",
+    "location": "San Mateo, California, United States",
+    "tags": ["Maxima", "agentic AI", "enterprise accounting", "founding engineer", "AI engineering"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Maxima's team page, and Maxima's public social presence consistently tie Rundong Lyu to AI engineering at Maxima, with prior Robinhood/Airbnb background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founding engineer and Head of AI at Maxima, building agentic AI for enterprise accounting workflows. Public sources point to prior systems and engineering experience at Robinhood and Airbnb.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/rundong-lyu",
+          "note": "Public profile lists Rundong Lyu as Founding Engineer, Head of AI at Maxima."
+        },
+        {
+          "label": "Maxima about page",
+          "url": "https://www.maxima.ai/about",
+          "note": "Company team page lists Rundong Lyu in engineering at Maxima and notes prior Robinhood and Airbnb experience."
+        },
+        {
+          "label": "Maxima X profile",
+          "url": "https://x.com/maxima_dot_ai",
+          "note": "Company social profile introduces Rundong Lyu and describes his systems-building background before Maxima."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Maxima company website",
+          "url": "https://www.maxima.ai/",
+          "note": "Company site describes Maxima as an agentic system of work for accounting teams."
+        },
+        {
+          "label": "Maxima newsroom",
+          "url": "https://www.maxima.ai/about",
+          "note": "The about page's company content frames the product as AI-native accounting automation, matching the participant row context."
+        }
+      ]
+    }
+  }
+]

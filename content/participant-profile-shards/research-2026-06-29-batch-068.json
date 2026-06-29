@@ -1,0 +1,200 @@
+[
+  {
+    "lookupKey": "16btjtu",
+    "displayName": "Patricija Žemaitytė",
+    "headline": "Product Manager at Oxylabs working on web intelligence, scraping infrastructure, and data products.",
+    "company": "Oxylabs",
+    "title": "Product Manager",
+    "location": "Vilnius, Lithuania",
+    "tags": ["product management", "web intelligence", "data extraction", "scraping infrastructure", "B2B SaaS"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and Oxylabs/event material match her product role at Oxylabs; public detail is limited but consistent.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product Manager at Oxylabs focused on web intelligence and data extraction products. Useful match for conversations on scraping infrastructure, dataset quality, proxy/data products, and product decisions in B2B developer-facing tooling.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/patricija-zemaityte/", "note": "Public professional profile matching Patricija Zemaityte with Oxylabs product management work." },
+        { "label": "Oxylabs company site", "url": "https://oxylabs.io/", "note": "Company source for Oxylabs' web intelligence, proxy, scraping, and dataset product area." }
+      ],
+      "secondary": [
+        { "label": "DEVWorld speaker listing", "url": "https://www.developer-week.de/en/speaker/patricija-zemaityte", "note": "Conference listing associates Patricija Zemaityte with Oxylabs and product topics." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "043emo4",
+    "displayName": "Patrick Debois",
+    "headline": "Product Developer Relations Lead at Tessl and longtime DevOps practitioner exploring AI-native software development.",
+    "company": "Tessl",
+    "title": "Product Developer Relations Lead",
+    "location": "Ghent, Belgium",
+    "tags": ["DevOps", "developer relations", "AI-native development", "software delivery", "platform engineering"],
+    "confidence": "high",
+    "confidenceNote": "Tessl, personal site, and long-running public DevOps profiles consistently identify Patrick Debois and his current Tessl developer-relations role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product Developer Relations Lead at Tessl and a key figure in the DevOps movement. Strong match for AI-native development, developer relations, software delivery culture, platform engineering, and translating emerging practices into usable developer workflows.",
+    "sources": {
+      "primary": [
+        { "label": "Tessl blog author page", "url": "https://tessl.io/blog/author/patrick-debois", "note": "Lists Patrick Debois as Product Developer Relations Lead at Tessl." },
+        { "label": "Personal website", "url": "https://www.jedi.be/", "note": "Patrick Debois' personal site covering DevOps, software delivery, and current work." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/patrickdebois/", "note": "Professional profile matching Patrick Debois with Tessl and DevOps/developer-relations work." }
+      ],
+      "secondary": [
+        { "label": "DevOpsDays profile", "url": "https://www.devopsdays.org/events/2024-ghent/speakers/patrick-debois/", "note": "DevOpsDays speaker profile for the DevOps movement co-founder and practitioner." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0z4ickj",
+    "displayName": "Paul Bakaus",
+    "headline": "Founder of Impeccable and longtime web platform leader working on AI-assisted product experiences.",
+    "company": "Impeccable",
+    "title": "Founder",
+    "location": "San Francisco, California, United States",
+    "tags": ["founder", "web platform", "AI products", "developer tools", "Google Chrome"],
+    "confidence": "high",
+    "confidenceNote": "Personal, LinkedIn, and GitHub/X sources consistently connect Paul Bakaus to Impeccable and his prior Google/web platform work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Impeccable and former Google Chrome/web platform leader. Relevant for conversations on AI product design, web performance, developer tools, browser capabilities, and bringing polished consumer-grade experiences to technical products.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://paulbakaus.com/", "note": "Personal site for Paul Bakaus, linking his product and web platform background." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/pbakaus/", "note": "Professional profile matching Paul Bakaus with Impeccable founder work and prior Google roles." },
+        { "label": "GitHub profile", "url": "https://github.com/pbakaus", "note": "Public developer profile for Paul Bakaus." }
+      ],
+      "secondary": [
+        { "label": "X profile", "url": "https://x.com/pbakaus", "note": "Public profile for Paul Bakaus with current founder/product context." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0tyvewr",
+    "displayName": "Paul Greenham",
+    "headline": "Co-Founder and CTO at Scale Social AI, building AI systems for social content and creator workflows.",
+    "company": "Scale Social AI",
+    "title": "Co-Founder & CTO",
+    "location": "United Kingdom",
+    "tags": ["AI startups", "social media", "creator tools", "engineering leadership", "product engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and company/social sources consistently associate Paul Greenham with Scale Social AI leadership, though public company detail is still sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-Founder and CTO at Scale Social AI. Good match for attendees interested in AI-assisted social content, creator workflows, early-stage engineering leadership, and turning fast-moving AI capabilities into production product features.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/paulgreenham/", "note": "Professional profile matching Paul Greenham with Scale Social AI co-founder and CTO work." },
+        { "label": "Scale Social AI company site", "url": "https://scalesocial.ai/", "note": "Company source for Scale Social AI's AI/social product focus." }
+      ],
+      "secondary": [
+        { "label": "Scale Social AI LinkedIn page", "url": "https://www.linkedin.com/company/scale-social-ai/", "note": "Company social profile for Scale Social AI." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "15rig4n",
+    "displayName": "Paul Haskell-Dowland",
+    "headline": "Associate Dean at Edith Cowan University and cyber security academic focused on digital risk and resilience.",
+    "company": "Edith Cowan University",
+    "title": "Associate Dean",
+    "location": "Joondalup, Western Australia, Australia",
+    "tags": ["cyber security", "higher education", "digital risk", "research leadership", "Australia"],
+    "confidence": "high",
+    "confidenceNote": "ECU, LinkedIn, Google Scholar, and media/speaker sources consistently identify him as an ECU cyber security academic and Associate Dean.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Associate Dean at Edith Cowan University with a cyber security and digital risk background. Relevant for discussions on security education, applied cyber research, AI and risk, public-sector resilience, and translating technical security issues for broad audiences.",
+    "sources": {
+      "primary": [
+        { "label": "ECU staff profile", "url": "https://www.ecu.edu.au/schools/science/staff/profiles/associate-deans/professor-paul-haskell-dowland", "note": "University profile for Professor Paul Haskell-Dowland at Edith Cowan University." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/paulhaskelldowland/", "note": "Professional profile matching Edith Cowan University and cyber security leadership." },
+        { "label": "Google Scholar profile", "url": "https://scholar.google.com/citations?user=x3SwtVQAAAAJ", "note": "Public research profile for Paul Haskell-Dowland's academic publications." }
+      ],
+      "secondary": [
+        { "label": "The Conversation author page", "url": "https://theconversation.com/profiles/paul-haskell-dowland-106240", "note": "Author profile describing his ECU cyber security expertise." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0gezmd9",
+    "displayName": "Paul Klein IV",
+    "headline": "Founder and CEO of Browserbase, building browser infrastructure for AI agents and web automation.",
+    "company": "Browserbase",
+    "title": "CEO",
+    "location": "San Francisco, California, United States",
+    "tags": ["AI agents", "browser automation", "developer tools", "infrastructure", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Browserbase, LinkedIn, GitHub, and investor/company profiles consistently identify Paul Klein IV as Browserbase founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Browserbase, a developer platform for running browsers that AI agents and automation workflows can use reliably. Strong match for AI agents, browser automation, web infrastructure, developer tooling, and startup building.",
+    "sources": {
+      "primary": [
+        { "label": "Browserbase company site", "url": "https://www.browserbase.com/", "note": "Company source for Browserbase's browser infrastructure product." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/paulkleiniv/", "note": "Professional profile identifying Paul Klein IV as founder and CEO of Browserbase." },
+        { "label": "GitHub profile", "url": "https://github.com/pkiv", "note": "Public developer profile for Paul Klein IV." }
+      ],
+      "secondary": [
+        { "label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/browserbase", "note": "YC profile for Browserbase listing Paul Klein IV among the company founders." },
+        { "label": "CRV company profile", "url": "https://www.crv.com/portfolio/browserbase", "note": "Investor profile for Browserbase and its browser automation infrastructure category." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "10egy03",
+    "displayName": "Paul Zenevičius",
+    "headline": "Oxylabs account executive working with datasets and scraping infrastructure customers.",
+    "company": "Oxylabs",
+    "title": "Datasets & Scraping Infra - AE",
+    "location": "Vilnius, Lithuania",
+    "tags": ["datasets", "web scraping", "account executive", "proxy infrastructure", "web intelligence"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources appear under the Lithuanian form Paulius Zenevičius/Zenevicius and match Oxylabs datasets and scraping-infrastructure work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Oxylabs account executive focused on datasets and scraping infrastructure. Useful match for buyers and builders thinking about web data sourcing, proxy infrastructure, dataset procurement, anti-bot constraints, and enterprise data workflows.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/paulius-zenevicius/", "note": "Professional profile matching Paulius Zenevicius with Oxylabs and web data infrastructure work." },
+        { "label": "Oxylabs company site", "url": "https://oxylabs.io/", "note": "Company source for Oxylabs' proxy, scraping, and dataset infrastructure products." }
+      ],
+      "secondary": [
+        { "label": "Oxylabs datasets page", "url": "https://oxylabs.io/products/datasets", "note": "Context for the datasets product area referenced in the participant's role." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "13cq3ha",
+    "displayName": "Paula Rambles",
+    "headline": "Staff Engineer at Portola/Tolan building AI companion product experiences.",
+    "company": "Portola (Tolan)",
+    "title": "Staff Engineer",
+    "location": "San Francisco, California, United States",
+    "tags": ["AI companions", "iOS engineering", "consumer AI", "product engineering", "mobile"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources connect Paula Rambles/Paula Dozsa to Tolan and mobile/product engineering; title seniority is taken from the participant-provided profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Staff Engineer at Portola/Tolan working on AI companion product experiences. Good match for consumer AI, mobile engineering, emotionally aware interfaces, product craft, and the practical engineering behind agentic companion apps.",
+    "sources": {
+      "primary": [
+        { "label": "X profile", "url": "https://x.com/paularambles", "note": "Public Paula Rambles profile referencing work on Tolan and whimsical AI experiences." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/pauladozsa/", "note": "Professional profile for Paula Dozsa, matching Tolan/Portola iOS engineering work." },
+        { "label": "Tolan product site", "url": "https://www.tolan.com/", "note": "Company/product source for Tolan, the AI companion product built by Portola." }
+      ],
+      "secondary": [
+        { "label": "Tolan App Store listing", "url": "https://apps.apple.com/us/app/tolan/id6475945927", "note": "Public app listing for the Tolan mobile product context." }
+      ]
+    }
+  }
+]

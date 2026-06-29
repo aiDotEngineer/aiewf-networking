@@ -1,0 +1,237 @@
+[
+  {
+    "lookupKey": "1p610m9",
+    "displayName": "Alex Paluzzi",
+    "headline": "Director of AI at Alliance Laundry Systems",
+    "company": "Alliance Laundry Systems",
+    "title": "Director of AI",
+    "location": "Pittsburgh, US",
+    "tags": ["AI strategy", "digital products", "industrial technology", "laundry systems", "customer operations"],
+    "confidence": "medium",
+    "confidenceNote": "Attendee-provided title and location are specific, and public LinkedIn posts connect Alex Paluzzi with Alliance Laundry Systems in digital products and AI contexts; I did not find a direct public profile independently confirming the exact Director of AI title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI leader at Alliance Laundry Systems, likely focused on applying AI and digital product strategy to commercial laundry operations, partner enablement, and service efficiency. Useful match for attendees working on industrial AI, connected equipment, or practical AI adoption in legacy operating environments.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Alliance Laundry Systems official site",
+          "url": "https://alliancelaundry.com/",
+          "note": "Company describes itself as a global laundry solutions leader with innovation and technology as core themes."
+        },
+        {
+          "label": "Alliance Laundry Systems innovation page",
+          "url": "https://alliancelaundry.com/innovation/",
+          "note": "Company page emphasizing technology and innovation in commercial and residential laundry."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Flavio Mello LinkedIn post",
+          "url": "https://www.linkedin.com/posts/flaviomello_als-alh-latam-activity-7425939093437595649-0rJk",
+          "note": "Mentions Alliance Laundry Systems LATAM strategy work around Digital Products and AI and thanks Alex Paluzzi for support."
+        },
+        {
+          "label": "Walter Fontes LinkedIn post",
+          "url": "https://pt.linkedin.com/posts/walter-fontes_omolavanderia-cleanshow2025-inova%C3%A7%C3%A3o-activity-7368720151254388736-NXMp",
+          "note": "Mentions Alex Paluzzi as part of Alliance Laundry Systems representation around technology and digital transformation at The Clean Show 2025."
+        },
+        {
+          "label": "Speed Queen Commercial AI article",
+          "url": "https://speedqueencommercial.com/en-us/news/laundromats/article-looks-at-future-of-ai-in-laundromats/",
+          "note": "Alliance Laundry Systems CTO commentary on AI use cases such as predictive maintenance and customer service in laundromats."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0dm7uqy",
+    "displayName": "Alex Sharma",
+    "headline": "Head Capability Development at DSTA",
+    "company": "DSTA",
+    "title": "Head Capability Development",
+    "location": "Singapore, SG",
+    "tags": ["defence technology", "capability development", "strategic communications", "data analytics", "public sector"],
+    "confidence": "high",
+    "confidenceNote": "Public LinkedIn search result and organizational-directory data align on DSTA and capability/strategic communications responsibilities; older DSTA social posts connect him to data analytics work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "DSTA capability-development leader working at the intersection of defence technology, strategic communications, and data-driven public-sector systems. Strong match for conversations about government AI adoption, defence innovation, analytics, and capability planning.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Alex Sharma LinkedIn profile",
+          "url": "https://sg.linkedin.com/in/alex-sharma",
+          "note": "Lists DSTA role including Head Capability Development and prior data analytics work."
+        },
+        {
+          "label": "DSTA official site",
+          "url": "https://www.dsta.gov.sg/",
+          "note": "Official agency site describing DSTA's role in advancing Singapore defence capabilities through technology."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org - DSTA Defence Communications",
+          "url": "https://theorg.com/org/defence-science-and-technology-agency/teams/defence-communications",
+          "note": "Lists Alex Sharma as head within DSTA defence strategic communications."
+        },
+        {
+          "label": "DSTA Facebook post",
+          "url": "https://www.facebook.com/SingaporeDSTA/photos/some-say-engineers-find-solutions-to-problems-for-our-engineer-alex-sharma-hes-i/2094224987488045/",
+          "note": "Older DSTA post links Alex Sharma to data analytics work identifying potential threats."
+        },
+        {
+          "label": "NUS career fair DSTA profile",
+          "url": "https://careerfair.comp.nus.edu.sg/Company0821/Defence_Science_and_Technology_Agency_%28DSTA%29.html",
+          "note": "Describes DSTA work in AI, data analytics, machine learning, IoT, and digital defence."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0w73g77",
+    "displayName": "Alex Spencer",
+    "headline": "Founder and CEO at Solen Software Group",
+    "company": "Solen Software Group",
+    "title": "CEO and Founder",
+    "location": "Park City, UT, US",
+    "tags": ["software private equity", "vertical SaaS", "M&A", "founder partnerships", "long-term software ownership"],
+    "confidence": "high",
+    "confidenceNote": "Solen's official team page confirms Alexander Spencer as Founder & CEO and provides biography; LinkedIn and X search results align with the same identity and company.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Solen Software Group, a long-term buyer and operator of mission-critical software businesses. Brings founder, M&A, and operating perspective for attendees exploring vertical SaaS, durable software companies, and AI-enabled operational transformation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Solen Software Group team page",
+          "url": "https://solensoftwaregroup.com/team/alexander-spencer",
+          "note": "Official bio lists Alexander Spencer as Founder and CEO and describes his software entrepreneurship background."
+        },
+        {
+          "label": "Solen Software Group about page",
+          "url": "https://solensoftwaregroup.com/about",
+          "note": "Describes Solen's long-term acquisition and growth model for mission-critical software companies."
+        },
+        {
+          "label": "Alex Spencer LinkedIn profile",
+          "url": "https://www.linkedin.com/in/alexhspencer",
+          "note": "Public result identifies him as Founder and CEO at Solen Software Group and gives Park City location."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Alex Hatch Spencer X profile",
+          "url": "https://x.com/alexhatchspence?lang=en",
+          "note": "Public profile identifies him as Solen Software Group CEO."
+        },
+        {
+          "label": "Infinite Games Podcast",
+          "url": "https://infinitegamespod.com/",
+          "note": "Lists Alex Spencer as co-founder of Solen, a software private equity firm."
+        },
+        {
+          "label": "Solen LinkedIn post",
+          "url": "https://www.linkedin.com/posts/solen-software_our-ceo-alexander-spencer-shared-solen-activity-7369865293281566720-zGr3",
+          "note": "Company post references CEO Alexander Spencer sharing Solen's operating principles."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0j61bjw",
+    "displayName": "Alex Starr",
+    "headline": "Corporate Fellow, Applied AI at AMD",
+    "company": "AMD",
+    "title": "Corporate Fellow, Applied AI",
+    "location": "Boston, US",
+    "tags": ["agentic AI", "chip design", "hardware verification", "engineering productivity", "pre-silicon validation"],
+    "confidence": "high",
+    "confidenceNote": "AMD official blog and investor release confirm Alex Starr as Corporate Fellow with deep AMD tenure, Applied AI leadership, and hardware verification/emulation background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AMD Corporate Fellow leading Applied AI work that brings agentic workflows into chip design and engineering productivity. Strong match for attendees interested in AI for complex engineering, verification, silicon design, and high-rigor enterprise AI adoption.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AMD blog - How Agentic AI Is Reshaping Chip Design",
+          "url": "https://www.amd.com/en/blogs/2026/how-agentic-ai-is-reshaping-chip-design.html",
+          "note": "Official AMD article states Alex Starr is a Corporate Fellow leading Applied AI and the Shift Left AI team."
+        },
+        {
+          "label": "AMD investor release - Corporate Fellow promotion",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/961/amd-promotes-methodology-architect-alex-starr-to-corporate-fellow",
+          "note": "AMD release confirms Corporate Fellow appointment and contributions in emulation and validation methodologies."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Mark Papermaster LinkedIn post",
+          "url": "https://www.linkedin.com/posts/mark-papermaster-66914925_ai-in-chip-design-s3e1-activity-7440066516106215424-yVuC",
+          "note": "AMD CTO post references Alex Starr discussing AI in chip design and verification."
+        },
+        {
+          "label": "GarysGuide event listing",
+          "url": "https://www.garysguide.com/events/2c3wkyq/Scaling-Enterprise-AI-Agents-Security-Privacy-Real-World-Deployment",
+          "note": "Event listing identifies Alex Starr as Corporate Fellow at AMD and describes Shift Left AI leadership."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1whduwt",
+    "displayName": "Alex Volkov",
+    "headline": "AI Evangelist and host of ThursdAI at W&B from CoreWeave",
+    "company": "W&B from CoreWeave",
+    "title": "AI Evangelist & Host of ThursdAI",
+    "location": "US",
+    "tags": ["AI news", "LLMs", "MLOps", "developer advocacy", "AI community", "model evaluation"],
+    "confidence": "high",
+    "confidenceNote": "ThursdAI's official guest page and multiple event/podcast profiles confirm Alex Volkov as host/curator and AI Evangelist at Weights & Biases; CoreWeave's acquisition of W&B is confirmed by official CoreWeave/W&B sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Host and curator of ThursdAI and AI Evangelist at Weights & Biases, now part of CoreWeave. Useful match for builders tracking frontier model releases, open-source AI, evals, MLOps, and high-signal AI community conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "ThursdAI guest page",
+          "url": "https://thursdai.news/guests/altryne",
+          "note": "Official ThursdAI page lists Alex Volkov as Host and Curator of ThursdAI and AI Evangelist at Weights & Biases."
+        },
+        {
+          "label": "Alex Volkov LinkedIn profile",
+          "url": "https://www.linkedin.com/in/alex-volkov-",
+          "note": "Public profile result identifies him as AI Evangelist and Host of ThursdAI."
+        },
+        {
+          "label": "CoreWeave completes acquisition of Weights & Biases",
+          "url": "https://www.coreweave.com/blog/coreweave-completes-acquisition-of-weights-biases",
+          "note": "Official CoreWeave announcement that Weights & Biases has been acquired by CoreWeave."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Imagine AI Live - Weights & Biases sponsor page",
+          "url": "https://www.imagineai.live/sponsors/weights-and-biases",
+          "note": "Event profile describes Alex Volkov as AI Evangelist at W&B, host of ThursdAI, and founder of targum.video."
+        },
+        {
+          "label": "Spotify - ThursdAI podcast",
+          "url": "https://open.spotify.com/show/2J3lqMPD0BUI0bF9KJYKc1",
+          "note": "Podcast page describes Alex Volkov hosting weekly AI news discussions."
+        },
+        {
+          "label": "Substack - Alex Volkov",
+          "url": "https://substack.com/%40thursdai",
+          "note": "Public Substack profile lists him as host of ThursdAI and AI Evangelist at Weights & Biases."
+        }
+      ]
+    }
+  }
+]

@@ -28,6 +28,7 @@ export type ParticipantProfileOverride = {
   headline: string;
   bioMarkdown: string;
   tags: string[];
+  sources?: Record<ProfileSourceKind, ProfileSource[]>;
   participantApproved: boolean;
   approvedAt?: number;
   updatedAt: number;
@@ -61,6 +62,7 @@ export function mergeParticipantProfile(
   return {
     ...profile,
     override,
+    sources: override?.sources ?? profile.sources,
     displayHeadline: override?.headline.trim() || profile.headline,
     displayBioMarkdown: override?.bioMarkdown.trim() || profile.bioMarkdown,
     displayTags: override?.tags.length ? override.tags : profile.tags,

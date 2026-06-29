@@ -1,0 +1,137 @@
+[
+  {
+    "lookupKey": "1itfi1t",
+    "displayName": "Andrew Orobator",
+    "headline": "Senior Android engineer at Reddit and author of the Vibe Engineering series",
+    "company": "Reddit",
+    "title": "Senior Android Engineer",
+    "location": "New York, NY",
+    "tags": ["Android", "Kotlin", "mobile engineering", "AI-assisted development", "developer education", "public speaking"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and speaker profiles match the name, Reddit role, Android specialization, NYC location, and current AI-assisted engineering writing.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Android engineer at Reddit with a long-running public profile in Android development, Kotlin, and developer education. Recently writes and speaks about AI-assisted software workflows through the Vibe Engineering series, making him a strong match for mobile engineers, AI coding-tool builders, and developer-product teams.",
+    "sources": {
+      "primary": [
+        {"label": "GitHub profile", "url": "https://github.com/AOrobator", "note": "Lists Andrew Orobator as Senior Android Engineer at Reddit, based in NYC, with links to Medium, LinkedIn, Stack Overflow, and X."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/andrew-orobator", "note": "Public profile headline says Senior Android Engineer at Reddit, musician, public speaker, and writer."},
+        {"label": "Medium profile/article", "url": "https://medium.com/@andreworobator/vibe-engineering-from-random-code-to-deterministic-systems-06e2bf87c144", "note": "Author page and article establish his current writing on AI-assisted development workflows."}
+      ],
+      "secondary": [
+        {"label": "droidcon USA speaker page", "url": "https://usa.droidcon.com/droidcon-speakers-1/andrew-orobator", "note": "Speaker listing identifies him as Senior Android Engineer at Reddit and author of the Vibe Engineering Series."},
+        {"label": "Sessionize speaker profile", "url": "https://sessionize.com/andrew-orobator/", "note": "Older speaker profile confirms Android teaching, writing, podcast appearances, and conference speaking background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fwnbf0",
+    "displayName": "Andrew Qu",
+    "headline": "Chief of Software in Vercel's Office of the CTO, focused on agents and developer infrastructure",
+    "company": "Vercel",
+    "title": "Chief of Software, Office of CTO",
+    "location": "San Francisco Bay Area",
+    "tags": ["developer infrastructure", "AI agents", "Vercel", "Next.js", "ChatGPT apps", "internal tools", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, GitHub, and Vercel-owned pages consistently identify Andrew Qu at Vercel's Office of the CTO; title wording varies between Chief of Software and Software Engineer on event pages.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief of Software in Vercel's Office of the CTO, working at the intersection of developer platforms, AI agents, and web infrastructure. He has written and spoken about simplifying agent tooling, running Next.js inside ChatGPT apps, and building practical AI-native developer experiences.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://andrewqu.com/", "note": "Lists Vercel experience as Chief of Software, Office of CTO, plus prior startups, Meta, and Nooks."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/andrew-qu", "note": "Public profile identifies him with Vercel and San Francisco Bay Area, including Chief of Software wording in search snippets."},
+        {"label": "GitHub profile", "url": "https://github.com/quuu", "note": "Shows active public engineering footprint with Vercel-related repositories pinned."},
+        {"label": "Vercel blog", "url": "https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools", "note": "Vercel article by Andrew Qu about simplifying an internal agent by reducing tool surface area."}
+      ],
+      "secondary": [
+        {"label": "The New Stack interview", "url": "https://thenewstack.io/next-js-in-chatgpt-vercel-brings-the-dynamic-web-to-ai-chat/", "note": "Interview with Vercel chief of software Andrew Qu about bringing Next.js apps into ChatGPT."},
+        {"label": "Vercel Ship AI speakers", "url": "https://vercel.com/ship/ai/speakers", "note": "Vercel event page lists Andrew Qu in the Office of CTO."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "05ddazl",
+    "displayName": "Andrius Palionis",
+    "headline": "VP Enterprise at Oxylabs, focused on web data infrastructure and enterprise data use cases",
+    "company": "Oxylabs",
+    "title": "VP Enterprise",
+    "location": "San Francisco, CA",
+    "tags": ["web data", "enterprise sales", "data infrastructure", "web scraping", "threat intelligence", "alternative data", "go-to-market"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Oxylabs pages, and industry bylines consistently connect Andrius Palionis to Oxylabs enterprise leadership and web data infrastructure.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP Enterprise at Oxylabs, where he works with companies using large-scale public web data infrastructure. His public writing and quotes focus on web scraping, threat intelligence, alternative data, retail intelligence, and responsible enterprise data collection.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/andriuspalionis", "note": "Public profile headline lists VP Enterprise at Oxylabs.io and web data gathering infrastructure."},
+        {"label": "Oxylabs about page", "url": "https://oxylabs.io/about-us", "note": "Oxylabs company page references Andrius Palionis among company people and describes focus on web intelligence."},
+        {"label": "Oxylabs blog quote", "url": "https://oxylabs.io/blog/how-to-avoid-phishing", "note": "Oxylabs article quotes Andrius Palionis as VP Enterprise on cybersecurity and data gathering."}
+      ],
+      "secondary": [
+        {"label": "SourceSecurity profile", "url": "https://www.sourcesecurity.com/people/andrius-palionis.html", "note": "Industry profile identifies him as Vice President Enterprise Solutions at Oxylabs and formerly Sales Director."},
+        {"label": "Built In byline", "url": "https://builtin.com/articles/data-driven-sales", "note": "Contributed article by Andrius Palionis on using data to improve sales performance."},
+        {"label": "AI-Tech Park author page", "url": "https://ai-techpark.com/author/andrius-palionis/", "note": "Author profile says he has supported major companies in data-driven decision making since 2015."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ldgfo5",
+    "displayName": "Andy Mowat",
+    "headline": "CEO and co-founder of Whispered, building executive GTM hiring and collaboration tools",
+    "company": "Whispered",
+    "title": "CEO",
+    "location": "San Francisco, CA",
+    "tags": ["GTM", "RevOps", "executive search", "hiring", "B2B SaaS", "sales operations", "founder"],
+    "confidence": "high",
+    "confidenceNote": "Whispered-owned pages, LinkedIn, and multiple podcast profiles align on Andy Mowat's Whispered role and prior GTM/RevOps leadership at major SaaS companies.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and co-founder of Whispered, focused on helping senior executives discover and diligence high-quality GTM roles. Previously built revenue, marketing, and GTM operations engines at companies including Upwork, Box, Culture Amp, Carta, and Gated.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/amowat", "note": "Public profile lists experience at Whispered and a career building GTM engines."},
+        {"label": "Whispered career story", "url": "https://www.whispered.com/post/journey-andy", "note": "Company blog post by Andy Mowat describes his career path and role as Whispered co-founder."},
+        {"label": "Whispered podcast page", "url": "https://www.whispered.com/podcast", "note": "Andy describes starting the podcast after building GTM engines at four unicorns."}
+      ],
+      "secondary": [
+        {"label": "GTMnow podcast profile", "url": "https://gtmnow.com/gtm-150-80-of-exec-roles-arent-posted-heres-how-to-land-them-anyway-with-andy-mowat/", "note": "Profile identifies him as Whispered co-founder and RevOps/GTM leader at Upwork, Box, and Culture Amp."},
+        {"label": "Coffee AI podcast profile", "url": "https://www.coffee.ai/podcast/whispering-success-revops-and-the-future-of-ai-in-go-to-market-strategies", "note": "Identifies Andy Mowat as CEO and co-founder of Whispered and frames the company around executive GTM roles."},
+        {"label": "Pocus AMA profile", "url": "https://www.pocus.com/ama/building-the-ideal-gtm-tech-stack-andy-mowat-carta", "note": "Older profile documents GTM operations leadership at Carta, Box, Upwork, and Gated."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "028zoyu",
+    "displayName": "Ang Li",
+    "headline": "CEO and co-founder of Simular, building autonomous computer-use agents",
+    "company": "Simular",
+    "title": "CEO and Co-Founder",
+    "location": "Silicon Valley / Singapore",
+    "tags": ["AI agents", "computer use", "autonomous computers", "DeepMind", "computer vision", "robotics", "agentic workflows", "research"],
+    "confidence": "high",
+    "confidenceNote": "Simular team pages, personal website, LinkedIn, and recent company announcements consistently identify Ang Li as Simular CEO and co-founder with prior Google DeepMind research experience; location is inferred from Simular office/event references rather than a personal profile location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and co-founder of Simular, an AI company building autonomous computer-use agents that operate software like humans. Former Google DeepMind research scientist with a Ph.D. in computer science and research background across lifelong autonomous agents, computer vision, autonomous driving, maps, and robotics.",
+    "sources": {
+      "primary": [
+        {"label": "Simular team page", "url": "https://www.simular.ai/angli", "note": "Company profile identifies Ang Li as CEO and co-founder and describes Simular's computer-use agent mission."},
+        {"label": "Personal website", "url": "https://angli.ai/", "note": "Ang Li describes his AI startup work and prior roles at Google DeepMind, Baidu Apollo, Facebook AI Research, CMU Robotics, Apple, Google Street View, and Comcast Labs."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/angli-ai", "note": "Public headline lists CEO and co-founder at Simular and ex-Google DeepMind Research Scientist."},
+        {"label": "Simular funding announcement", "url": "https://www.simular.ai/articles/simular-raises-21-5m-to-build-autonomous-computer-agents", "note": "Company announcement quotes Ang Li as CEO and co-founder on reliable real-environment computer-use agents."}
+      ],
+      "secondary": [
+        {"label": "IBM Think interview", "url": "https://www.ibm.com/think/news/meet-simular-startup-autonomous-computers", "note": "IBM Think discusses autonomous computers with Simular CEO and co-founder Ang Li."},
+        {"label": "SGInnovate event page", "url": "https://www.sginnovate.com/event/xoogler-meetup-simulars-ang-li", "note": "Event page identifies him as ex-Google DeepMind, CEO/co-founder of Simular, and notes Simular offices in Silicon Valley and Singapore."},
+        {"label": "theCUBE NYSE interview", "url": "https://www.youtube.com/watch?v=LvQ6VQ33fLM", "note": "Recent interview with Ang Li about Simular and autonomous computer-use agents."}
+      ]
+    }
+  }
+]

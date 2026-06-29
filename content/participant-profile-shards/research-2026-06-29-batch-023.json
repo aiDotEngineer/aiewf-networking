@@ -1,0 +1,135 @@
+[
+  {
+    "lookupKey": "09osnkv",
+    "displayName": "Aqeel Haider",
+    "headline": "Microsoft 365 and AI technology leader helping enterprises turn collaboration platforms into governed business systems",
+    "company": "Cambay Solutions LLC",
+    "title": "Vice President of Technology Solutions",
+    "location": "Seattle, US",
+    "tags": ["enterprise AI", "Microsoft 365", "Azure", "SharePoint", "digital transformation", "consulting leadership"],
+    "confidence": "high",
+    "confidenceNote": "Strong match across Cambay announcement, LinkedIn, Sessionize, and Cambay event promotion; title variants include VP Technology Solutions and VP M365 & AI Business Solutions.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads technology solutions at Cambay Solutions, with a focus on Microsoft 365, Azure, AI, and enterprise delivery governance. Useful match for attendees working on practical enterprise AI adoption, M365 modernization, SharePoint/Office 365 programs, and consulting-led transformation.",
+    "sources": {
+      "primary": [
+        {"label": "Cambay Solutions press release", "url": "https://cambaysolutions.com/press-release/cambay-appoints-aqeel-haider-as-vice-president-of-technology-solutions/", "note": "Company announcement appointing Aqeel Haider as Vice President of Technology Solutions."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/aqeelhaider", "note": "Professional profile showing Cambay Solutions role, Seattle area, and Azure/M365 technology leadership."},
+        {"label": "Sessionize speaker profile", "url": "https://sessionize.com/aqeel-haider/", "note": "Speaker bio describing consulting experience and SharePoint/Office 365 team leadership."}
+      ],
+      "secondary": [
+        {"label": "Cambay Solutions LinkedIn event post", "url": "https://www.linkedin.com/posts/cambay-solutions_aiengineerworldsfair-microsoftai-m365-activity-7475554857798508544-HHtU", "note": "Cambay promotion for AI Engineer World's Fair listing him as VP of Technology M365 and AI Business Solutions."},
+        {"label": "The Org profile", "url": "https://theorg.com/org/cambay-consulting/org-chart/aqeel-haider", "note": "Org-chart listing for Aqeel Haider as VP Technology Solutions at Cambay Consulting."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0a30l4c",
+    "displayName": "Ara Khan",
+    "headline": "Cline engineer and writer focused on coding-agent evaluation, hill climbing, and practical agent improvement loops",
+    "company": "Cline",
+    "title": "Founding Engineer",
+    "location": "San Francisco, US",
+    "tags": ["coding agents", "AI evals", "developer tools", "Terminal-Bench", "agent reliability", "open source"],
+    "confidence": "medium",
+    "confidenceNote": "Strong identity match for Ara Khan at Cline, but public sources support Founding Engineer or Cline author rather than founder; Cline founder/CEO appears to be a different person.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Works on Cline and writes about improving coding agents through evals, hill climbing, and disciplined iteration. Good match for builders comparing AI coding agents, designing eval pipelines, or trying to make agent performance improvements measurable.",
+    "sources": {
+      "primary": [
+        {"label": "Cline author page", "url": "https://cline.bot/blog/author/ara", "note": "Cline blog author page for Ara Khan with writing on agent building."},
+        {"label": "Ara Khan personal site", "url": "https://arafatkatze.github.io/", "note": "Personal site referencing Cline and agentic AI writing."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/arafatkatze", "note": "Professional profile listing Cline experience and San Francisco location."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer Europe schedule", "url": "https://www.ai.engineer/europe/schedule", "note": "Conference schedule listing Ara Khan from Cline as Founding Engineer for an evals talk."},
+        {"label": "Cline hill climbing article", "url": "https://cline.bot/blog/a-practical-guide-to-hill-climbing", "note": "Ara Khan article on benchmarking and improving coding-agent performance."},
+        {"label": "AI Engineer YouTube talk", "url": "https://www.youtube.com/watch?v=QuuIywMG4s8", "note": "Talk listing Ara Khan of Cline on why evals are broken but still useful."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0k9cl3j",
+    "displayName": "Archana Kamath",
+    "headline": "Cloud infrastructure engineering leader scaling compute, networking, backup, snapshot, and GPU platform capabilities",
+    "company": "DigitalOcean",
+    "title": "Vice President, Engineering",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["cloud infrastructure", "IaaS", "compute", "networking", "GPU infrastructure", "engineering leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Strong match for Archana Kamath as a DigitalOcean infrastructure engineering leader; public sources found list Senior Director of IaaS/Compute and Network rather than VP Engineering.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Infrastructure engineering leader at DigitalOcean, associated with compute, networking, backups, snapshots, and GPU platform expansion. Strong match for attendees building cloud platforms, AI infrastructure, developer cloud products, or engineering organizations around high-scale infrastructure.",
+    "sources": {
+      "primary": [
+        {"label": "DigitalOcean profile article", "url": "https://www.digitalocean.com/blog/shark-tales-archana-kamath-senior-director-iaas", "note": "Company blog profile describing her leadership of compute and networking teams and infrastructure milestones."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/archana-kamath-63b54166", "note": "Professional profile for Archana Kamath in the San Francisco Bay Area."}
+      ],
+      "secondary": [
+        {"label": "DigitalOcean careers blog index", "url": "https://www.digitalocean.com/careers", "note": "DigitalOcean careers page linking to the Archana Kamath IaaS leadership profile."},
+        {"label": "Girl Geek X speaker profile", "url": "https://girlgeek.io/speaker/archana-kamath/", "note": "Older speaker profile describing systems engineering background, Cisco experience, and Women in Technology work."},
+        {"label": "DigitalOcean Instagram reel", "url": "https://www.instagram.com/reel/DPCbJUkid5t/", "note": "DigitalOcean social post featuring Archana Kamath as Senior Director of IaaS."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "13sxsmm",
+    "displayName": "Arek Borucki",
+    "headline": "Hugging Face platform and database engineer with deep MongoDB, Kubernetes, and production ML infrastructure experience",
+    "company": "Hugging Face",
+    "title": "Machine Learning Platform & Database Engineer",
+    "location": "Munich, Germany",
+    "tags": ["ML platform", "databases", "MongoDB", "Kubernetes", "vector search", "Hugging Face Hub", "cloud infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Strong match across Hugging Face, LinkedIn, MongoDB, Manning, and event sources; title appears as Machine Learning Platform & Data/Database Engineer in public listings.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Works on ML platform and database engineering at Hugging Face and is a MongoDB Champion with experience across MongoDB, Kubernetes, distributed systems, and cloud-native operations. Strong match for attendees building ML infrastructure, vector search applications, database-backed AI products, or production platform teams.",
+    "sources": {
+      "primary": [
+        {"label": "Hugging Face profile", "url": "https://huggingface.co/arekborucki", "note": "Hugging Face user profile for Arkadiusz Borucki with articles and organization links."},
+        {"label": "LinkedIn profile", "url": "https://de.linkedin.com/in/arekborucki", "note": "Professional profile listing Machine Learning Platform & Database Engineer at Hugging Face."},
+        {"label": "Hugging Face article", "url": "https://huggingface.co/blog/mongodb-community/hugging-face-mongodb-voyage-4-nano", "note": "Technical article associated with Hugging Face, MongoDB Atlas Vector Search, and Voyage embeddings."}
+      ],
+      "secondary": [
+        {"label": "MongoDB Champion profile", "url": "https://www.mongodb.com/community/champions/arkadiusz-borucki/", "note": "MongoDB profile describing him as a senior SRE, DevOps, cloud, platform, and database engineer and MongoDB Champion."},
+        {"label": "Manning author page", "url": "https://www.manning.com/books/mongodb-in-action-third-edition", "note": "Author bio for MongoDB in Action, Third Edition, citing MongoDB, distributed systems, NoSQL, and Kubernetes expertise."},
+        {"label": "MongoDB.local London agenda", "url": "https://web.cvent.com/event/e2f806d5-42b5-4858-b993-76502f7fae5f/websitePage%3Add8ce793-265b-4455-b826-1857079f87c7", "note": "Event agenda listing Arek Borucki as Machine Learning Platform & Database Engineer at Hugging Face."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0a40yiv",
+    "displayName": "Ari Heljakka",
+    "headline": "Founder and CEO building Scorable, an AI evaluation platform for measuring and improving production LLM applications",
+    "company": "Scorable AI",
+    "title": "Founder and CEO",
+    "location": "San Francisco, US",
+    "tags": ["AI evaluation", "LLM judges", "agent reliability", "AI governance", "production AI", "GenAI quality"],
+    "confidence": "high",
+    "confidenceNote": "Strong match across LinkedIn, Scorable company pages, X, and investor/press materials; Scorable was formerly Root Signals.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Scorable, formerly Root Signals, which builds calibrated AI judges and evaluation tooling for production AI applications. Strong match for attendees working on LLM reliability, AI-agent quality measurement, eval operations, and high-stakes enterprise AI deployment.",
+    "sources": {
+      "primary": [
+        {"label": "Scorable website", "url": "https://scorable.ai/", "note": "Company site describing Scorable as a platform for measuring and improving AI-powered applications."},
+        {"label": "Scorable funding announcement", "url": "https://scorable.ai/post/root-signals-raises-2-8m-to-accelerate-genai-business-adoption-by-having-ai-watch-ai", "note": "Company post identifying Ari Heljakka as founder and CEO and explaining the AI evaluation thesis."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/ari-heljakka", "note": "Professional profile listing Ari Heljakka at Scorable in San Francisco."}
+      ],
+      "secondary": [
+        {"label": "X profile", "url": "https://x.com/AriHeljakka", "note": "Public social profile referencing Scorable, Root Signals, and ML scientist background."},
+        {"label": "Scorable LinkedIn company page", "url": "https://www.linkedin.com/company/scorable-ai", "note": "Company page describing Scorable's ranking, comparison, and AI judge tooling."},
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=hvR2Z-8AAAAJ", "note": "Research profile for Ari Heljakka showing machine-learning publications."}
+      ]
+    }
+  }
+]

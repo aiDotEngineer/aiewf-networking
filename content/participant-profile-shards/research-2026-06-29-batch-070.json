@@ -1,0 +1,315 @@
+[
+  {
+    "lookupKey": "1jlpe9s",
+    "displayName": "Philipp Schmid",
+    "headline": "Staff Engineer at Google DeepMind focused on open-source AI, model deployment, and practical LLM workflows.",
+    "company": "Google DeepMind",
+    "title": "Staff Engineer",
+    "location": "Germany / Europe",
+    "tags": ["Google DeepMind", "LLMs", "open source AI", "model deployment", "Hugging Face"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Hugging Face, GitHub, and social profiles consistently identify Philipp Schmid as an AI engineer with Google DeepMind and prior Hugging Face developer advocacy work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Staff Engineer at Google DeepMind who writes practical guides on LLM fine-tuning, deployment, and open-source AI tooling. Useful match for conversations on production LLM workflows, Hugging Face ecosystems, model serving, and developer education.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://www.philschmid.de/",
+          "note": "Personal blog and profile for Philipp Schmid focused on generative AI, LLMs, and hands-on model engineering."
+        },
+        {
+          "label": "Hugging Face profile",
+          "url": "https://huggingface.co/philschmid",
+          "note": "Official Hugging Face profile with model, dataset, and article activity under the philschmid handle."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/philschmid",
+          "note": "Developer profile and repositories for Philipp Schmid's AI engineering examples and open-source work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "X profile",
+          "url": "https://x.com/_philschmid",
+          "note": "Public social profile links his AI engineering work and current Google DeepMind affiliation."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0eg0h71",
+    "displayName": "Philippe Meunier",
+    "headline": "Applied AI and machine-learning engineering leader at TD Insurance.",
+    "company": "TD Insurance",
+    "title": "Director - Applied AI and ML Engineering",
+    "location": "Canada",
+    "tags": ["insurance", "applied AI", "machine learning", "engineering leadership", "TD Insurance"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and org-chart sources match Philippe Meunier to TD Insurance applied AI and ML engineering; public sources found show title variation between senior manager and director.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Applied AI and ML engineering leader at TD Insurance. Good match for conversations on AI adoption in insurance, model delivery inside regulated financial services, and building applied ML teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/philippe-meunier-a293501a",
+          "note": "Public profile ties Philippe Meunier to TD Insurance and applied AI / machine-learning engineering leadership."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/td-insurance/org-chart/philippe-meunier",
+          "note": "Org-chart listing identifies Philippe Meunier in an applied AI and ML engineering leadership role at TD Insurance."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1aiho5d",
+    "displayName": "Pradeep Sindhu",
+    "headline": "Microsoft Technical Fellow and Corporate Vice President of Silicon, and founder of Juniper Networks.",
+    "company": "Microsoft",
+    "title": "Technical Fellow & CVP, Silicon Engineering",
+    "location": "Santa Clara, California, United States",
+    "tags": ["Microsoft", "silicon engineering", "networking", "DPU", "AI infrastructure", "Juniper Networks"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources identify Pradeep Sindhu as a Microsoft Technical Fellow / Corporate Vice President of Silicon and widely corroborate his Juniper and Fungible infrastructure background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technical Fellow and Corporate Vice President of Silicon at Microsoft, with a long track record as founder of Juniper Networks and Fungible. Strong match for discussions on AI infrastructure, networking silicon, DPUs, datacenter systems, and scaling deep-tech companies.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/pradeep-sindhu-16329b1/",
+          "note": "Public profile for Pradeep Sindhu with Microsoft and prior Juniper / Fungible leadership background."
+        },
+        {
+          "label": "Optica video page",
+          "url": "https://www.optica.org/history/multimedia/video_audio/watch/?id=6370962316112",
+          "note": "Speaker context describes Pradeep Sindhu as a Microsoft Technical Fellow and Corporate Vice President of Silicon."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Blocks & Files article",
+          "url": "https://www.blocksandfiles.com/ai-ml/2024/11/20/microsoft-bolsters-azure-infra-with-fungible-derived-dpu/1601472",
+          "note": "Reports Microsoft's Fungible-derived DPU work and says Sindhu became Corporate VP Silicon after Microsoft acquired Fungible."
+        },
+        {
+          "label": "Mayfield announcement",
+          "url": "https://www.mayfield.com/pradeep-sindhu-joins-mayfield-as-venture-advisor/",
+          "note": "Profiles Sindhu as Juniper founder and deep-tech infrastructure advisor with more than 200 patents."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0lvhxfu",
+    "displayName": "Prajakta Kalmegh",
+    "headline": "Head of AI at Unravel Data Systems working on AI for data operations and platform intelligence.",
+    "company": "Unravel Data Systems",
+    "title": "Head of AI",
+    "location": "Mountain View, California, United States",
+    "tags": ["AI leadership", "data operations", "observability", "machine learning", "Unravel Data"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, and Unravel event sources consistently identify Prajakta Kalmegh as Head of AI at Unravel Data Systems.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of AI at Unravel Data Systems, working at the intersection of AI, data operations, and platform intelligence. Useful match for conversations on data observability, autonomous operations, applied ML leadership, and enterprise AI systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://www.prajaktakalmegh.com/",
+          "note": "Personal homepage for Prajakta Kalmegh describing AI, data, and product leadership work."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/prajakta-kalmegh/",
+          "note": "Public profile identifies her AI leadership role at Unravel Data Systems."
+        },
+        {
+          "label": "Unravel Data webinar",
+          "url": "https://www.unraveldata.com/resources/webinar/a-new-era-for-dataops-ai-powered-transformation/",
+          "note": "Unravel event page features Prajakta Kalmegh in AI-powered DataOps context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Oxford Generative AI Summit profile",
+          "url": "https://oxfordgenerative.ai/speakers/prajakta-kalmegh/",
+          "note": "Speaker profile corroborates her Head of AI role and generative AI focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rf592s",
+    "displayName": "Prakhar Gupta",
+    "headline": "AI engineer at Millennium working on production ML and applied AI systems.",
+    "company": "Millennium",
+    "title": "AI Engineer",
+    "location": "Miami, Florida, United States",
+    "tags": ["AI engineering", "machine learning", "finance", "Python", "applied AI"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn public profile/search evidence ties Prakhar Gupta to Millennium as an AI engineer in Miami; personal GitHub and portfolio evidence supports the same AI-engineering identity, but independent employer-specific corroboration is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI engineer at Millennium with public project work around machine learning, Python, and applied AI. Relevant for attendees interested in production ML, AI engineering in finance, and practical model-driven product workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/iamprakhargupta",
+          "note": "Public profile identifies Prakhar Gupta as an AI engineer at Millennium in the Miami area."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/iamprakhargupta",
+          "note": "Developer profile under the same handle with AI and software-engineering project activity."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Portfolio site",
+          "url": "https://iamprakhargupta.github.io/",
+          "note": "Personal portfolio presents Prakhar Gupta's machine-learning and software-engineering background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0lsa2y7",
+    "displayName": "Pramodh Rai",
+    "headline": "CEO and co-founder of Cyber Sierra, building AI-enabled cyber risk and compliance operations.",
+    "company": "Cyber Sierra",
+    "title": "CEO",
+    "location": "Singapore",
+    "tags": ["cybersecurity", "compliance", "risk management", "AI governance", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Cyber Sierra, LinkedIn, university, and investor sources consistently identify Pramodh Rai as CEO / co-founder of Cyber Sierra.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and co-founder of Cyber Sierra, a cyber risk, compliance, and security operations platform. Good match for conversations on AI-enabled security, governance, compliance automation, startup GTM, and enterprise risk workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Cyber Sierra leadership page",
+          "url": "https://cybersierra.co/about-us/",
+          "note": "Company page identifies Pramodh Rai as Cyber Sierra co-founder and CEO."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/pramodhrai/",
+          "note": "Public profile ties Pramodh Rai to Cyber Sierra leadership."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "NTU entrepreneurship article",
+          "url": "https://www.ntu.edu.sg/ntupreneur/news-events/news/detail/from-ideas-to-ventures-pramodh-rai-s-entrepreneurial-path",
+          "note": "Profiles Rai's entrepreneurial path and Cyber Sierra founder role."
+        },
+        {
+          "label": "Illuminate Financial profile",
+          "url": "https://illuminatefinancial.com/portfolio/cyber-sierra/",
+          "note": "Investor portfolio page describes Cyber Sierra and its risk/compliance platform."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01qumyt",
+    "displayName": "Prashanth H N",
+    "headline": "CTO and co-founder of AntStack, leading serverless and cloud-native engineering.",
+    "company": "AntStack Inc.",
+    "title": "CTO & Co-Founder",
+    "location": "Bengaluru, India",
+    "tags": ["serverless", "AWS", "cloud architecture", "startup CTO", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "AntStack, LinkedIn, GOTO, and social profiles consistently identify Prashanth H N as AntStack CTO / co-founder and a serverless-cloud speaker.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and co-founder of AntStack, a serverless and cloud-native engineering company. Useful match for conversations on AWS serverless, product engineering, startup technical leadership, cloud architecture, and building developer-facing teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AntStack company page",
+          "url": "https://www.antstack.com/about-us",
+          "note": "Company page identifies Prashanth H N as co-founder and CTO of AntStack."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/prashanth-h-n/",
+          "note": "Public profile lists Prashanth H N's AntStack CTO and co-founder role."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "GOTO speaker profile",
+          "url": "https://gotopia.tech/experts/3059/prashanth-hn",
+          "note": "Speaker profile identifies him as AntStack CTO and serverless specialist."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/prashanthhn",
+          "note": "Public profile links Prashanth H N to AntStack and serverless / AWS work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rsizvz",
+    "displayName": "Prateek Sachan",
+    "headline": "Founder of Bolna, building conversational voice AI infrastructure for developers and businesses.",
+    "company": "Bolna",
+    "title": "Founder",
+    "location": "San Francisco, California, United States",
+    "tags": ["voice AI", "conversational AI", "YC", "developer tools", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Bolna, Y Combinator, LinkedIn, and GitHub sources consistently identify Prateek Sachan as Bolna founder and a voice-AI builder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Bolna, a YC-backed voice AI platform for building conversational agents. Strong match for attendees interested in voice agents, real-time AI infrastructure, startup building, and developer tooling for conversational workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Bolna website",
+          "url": "https://www.bolna.ai/",
+          "note": "Company site for Bolna's voice AI agent platform."
+        },
+        {
+          "label": "Y Combinator profile",
+          "url": "https://www.ycombinator.com/companies/bolna",
+          "note": "YC company profile lists Prateek Sachan as founder of Bolna and describes the voice AI product."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/prateeksachan/",
+          "note": "Public profile identifies Prateek Sachan as founder at Bolna."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/prateeksachan",
+          "note": "Developer profile for Prateek Sachan with public engineering activity."
+        }
+      ]
+    }
+  }
+]

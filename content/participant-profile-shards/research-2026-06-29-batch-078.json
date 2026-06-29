@@ -1,0 +1,365 @@
+[
+  {
+    "lookupKey": "0vmeym9",
+    "displayName": "Ryan Randall",
+    "headline": "Founder of AgentMark building LLM observability, prompt management, and reliable agent tooling.",
+    "company": "AgentMark.co",
+    "title": "Founder",
+    "location": "Dover, New Hampshire, United States",
+    "tags": ["AI agents", "LLM observability", "prompt management", "developer tools", "LLMOps"],
+    "confidence": "high",
+    "confidenceNote": "Cal.com, GitHub, Meetup, Clutch, and New Hampshire startup sources consistently identify Ryan Randall as the Dover-based founder of AgentMark.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of AgentMark, a git-based platform for building reliable AI agents with prompt management, evals, observability, and analytics. Useful match for conversations about agent engineering workflows, LLMOps, developer tooling, and startup community building.",
+    "sources": {
+      "primary": [
+        {
+          "label": "GitHub: kocobee",
+          "url": "https://github.com/kocobee",
+          "note": "Public profile identifies Ryan Randall as founder of AgentMark and maintainer of AgentMark projects."
+        },
+        {
+          "label": "Cal.com: Ryan Randall",
+          "url": "https://cal.com/ryan-randall?redirect=false",
+          "note": "Public booking page describes him as founder of AgentMark.co and focused on giving LLMs superpowers."
+        },
+        {
+          "label": "NH Startups profile",
+          "url": "https://nhstartups.substack.com/p/launchnh-founder-fridays-maine-tech",
+          "note": "First-person founder profile for AgentMark, including background in engineering, DevRel, software architecture, CMS, and LLMOps."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Dover Developers Meetup",
+          "url": "https://www.meetup.com/dover-developers/events/314846765/",
+          "note": "Event listing names Ryan Randall as AgentMark CEO and NH Entrepreneurs founder speaking on reliable JavaScript agents."
+        },
+        {
+          "label": "Clutch: AgentMark review",
+          "url": "https://clutch.co/profile/carbonteq",
+          "note": "Verified review identifies Ryan Randall as founder of AgentMark in Dover, New Hampshire."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ecba78",
+    "displayName": "Sachin Dharashivkar",
+    "headline": "Founder and CEO of Savante training specialist open models with reinforcement learning.",
+    "company": "Savante.ai",
+    "title": "Founder & CEO",
+    "location": "Bengaluru, India",
+    "tags": ["reinforcement learning", "LLM post-training", "reasoning models", "AI education", "agentic AI"],
+    "confidence": "high",
+    "confidenceNote": "Savante, LinkedIn, LinkedIn company data, and Aryabhata research sources consistently connect Sachin Dharashivkar to Savante and specialist-model post-training work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Savante, focused on RL post-training open models into domain specialists. He collaborated on Aryabhata 1.0 for JEE mathematics and brings prior reinforcement-learning experience across trading, games, and agentic systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Savante",
+          "url": "https://savante.ai/",
+          "note": "Company site lists Sachin Dharashivkar as CEO and describes Savante's custom specialist model training work."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/sachin-dharashivkar",
+          "note": "Public profile identifies him as founder and CEO at Savante focused on RL post-training open models."
+        },
+        {
+          "label": "Savante LinkedIn company page",
+          "url": "https://www.linkedin.com/company/savantedotai",
+          "note": "Company profile lists Savante's AI, reinforcement-learning, post-training, and agent specialties and includes him as founder and CEO."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Aryabhata paper",
+          "url": "https://arxiv.org/html/2508.08665v1",
+          "note": "Research paper lists Sachin Dharashivkar as a co-author on Aryabhata, an exam-focused math reasoning model."
+        },
+        {
+          "label": "Luma Aryabhata event",
+          "url": "https://luma.com/okl31x07",
+          "note": "Speaker page describes him as CEO of AthenaAgent and collaborator with PhysicsWallah on Aryabhata 1.0."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1dosuey",
+    "displayName": "Sachin Malhotra",
+    "headline": "Platform engineer at Anthropic building CI/CD infrastructure for Claude and human developers.",
+    "company": "Anthropic",
+    "title": "Platform Engineer",
+    "location": "Seattle, Washington, United States",
+    "tags": ["platform engineering", "developer infrastructure", "CI/CD", "ML infrastructure", "Anthropic"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, his Anthropic joining post, GitHub, and long-running developer profiles consistently identify the same Sachin Malhotra / edorado93 public footprint.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Platform engineer at Anthropic working on CI/CD infrastructure for Claude and engineering teams. He has a public developer footprint around algorithms, ML infrastructure, and software engineering, with prior experience at Etsy and Microsoft.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/edorado93",
+          "note": "Public profile identifies Sachin Malhotra as engineering at Anthropic in Seattle."
+        },
+        {
+          "label": "LinkedIn Anthropic joining post",
+          "url": "https://www.linkedin.com/posts/edorado93_ive-joined-anthropic-and-am-going-to-help-activity-7389330208790765568-kLhP",
+          "note": "First-person post says he joined Anthropic to build CI/CD infrastructure for Claude and humans."
+        },
+        {
+          "label": "GitHub: edorado93",
+          "url": "https://github.com/edorado93",
+          "note": "Public code profile for Sachin Malhotra with matching edorado93 handle and software-engineering portfolio links."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "DEV Community profile",
+          "url": "https://dev.to/edorado93",
+          "note": "Developer-writing profile for Sachin Malhotra using the same public handle."
+        },
+        {
+          "label": "LeetCode profile",
+          "url": "https://leetcode.com/u/sachinmalhotra1993/",
+          "note": "Public competitive-programming profile connects Sachin Malhotra to the edorado93 identity and prior ML infrastructure work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1hvyu56",
+    "displayName": "Sagar Batchu",
+    "headline": "Co-founder and CEO of Speakeasy building API and MCP infrastructure for agent-ready integrations.",
+    "company": "Speakeasy",
+    "title": "Co-founder & CEO",
+    "location": "San Francisco, California, United States",
+    "tags": ["API infrastructure", "MCP", "developer experience", "agent tools", "DevTools"],
+    "confidence": "high",
+    "confidenceNote": "Speakeasy, LinkedIn, GitHub, YC, and multiple interviews consistently identify Sagar Batchu as Speakeasy co-founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Speakeasy, focused on API tooling, MCP servers, SDK generation, and the shift from developer experience to agent experience. Strong match for conversations about enterprise API governance, secure agent integrations, and developer-tool go-to-market.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Speakeasy company page",
+          "url": "https://www.speakeasy.com/company",
+          "note": "Company team page lists Sagar Batchu as co-founder and CEO."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/sagarbatchu",
+          "note": "Public profile identifies him as CEO at Speakeasy."
+        },
+        {
+          "label": "GitHub: simplesagar",
+          "url": "https://github.com/simplesagar",
+          "note": "Public profile links to Speakeasy repositories and describes agent, MCP, and skills control-plane work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Techstrong.ai interview",
+          "url": "https://techstrong.ai/features/mcp-and-the-evolution-of-api-integration-a-conversation-with-speakeasys-sagar-batchu/",
+          "note": "Interview with Speakeasy's CEO on MCP, API integration, and AI-era developer workflows."
+        },
+        {
+          "label": "Center for Data Innovation interview",
+          "url": "https://datainnovation.org/2025/01/5-qs-for-sagar-batchu-co-founder-and-ceo-of-speakeasy/",
+          "note": "Interview identifies him as co-founder and CEO of Speakeasy and summarizes the company's API platform."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1apvxbs",
+    "displayName": "Sagar Wagh",
+    "headline": "SVP and global architecture leader at SOLVE building scalable fixed-income data platforms.",
+    "company": "SOLVE",
+    "title": "SVP, Global Head of Architecture, India Regional Head",
+    "location": "Stamford, Connecticut, United States",
+    "tags": ["enterprise architecture", "fixed income", "market data", "cloud architecture", "financial technology"],
+    "confidence": "high",
+    "confidenceNote": "SOLVE's team pages and executive directories consistently identify Sagar Wagh as SVP, Global Head of Architecture and India Regional Head.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "SVP, Global Head of Architecture and India Regional Head at SOLVE, where he works on scalable architectures for fixed-income market data, analytics, and client-facing financial technology. Relevant for conversations on enterprise architecture, data platforms, and fintech engineering leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "SOLVE profile",
+          "url": "https://solvefixedincome.com/team-members/sagar-wagh/",
+          "note": "Official profile lists his SVP, Global Head of Architecture, and India Regional Head role with architecture background."
+        },
+        {
+          "label": "SOLVE team page",
+          "url": "https://solvefixedincome.com/team-members/",
+          "note": "Official team listing includes Sagar Wagh and describes SOLVE's fixed-income market data platform."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Official Board profile",
+          "url": "https://www.theofficialboard.com/biography/sagar-wagh-89g39",
+          "note": "Executive directory lists him as SVP, Global Head of Architecture and India Regional Head at Solve."
+        },
+        {
+          "label": "ContactOut profile",
+          "url": "https://contactout.com/sagar-wagh-57478",
+          "note": "Public profile summarizes his SOLVE architecture leadership and prior engineering roles; contact details not used."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pipkaf",
+    "displayName": "Sai Krishna Rallabandi",
+    "headline": "Director of Data Science at Fidelity Investments focused on financial AI, NLP, and intelligent systems.",
+    "company": "Fidelity Investments",
+    "title": "Director, Data Science",
+    "location": "Boston, Massachusetts, United States",
+    "tags": ["data science", "financial AI", "NLP", "machine learning", "speech technology"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, CMU, and publication records consistently identify Sai Krishna Rallabandi and connect him to Fidelity, data science, NLP, and financial-language research.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Data Science at Fidelity Investments working on AI strategy, financial-language systems, NLP, and data-driven product work. He has a CMU Language Technologies background and a research footprint across speech, conversational finance, ESG, and sentiment analysis.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://saikrishnarallabandi.github.io/",
+          "note": "Personal profile lists his Director, Data Science role at Fidelity and AI/NLP projects."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/sai-krishna-rallabandi-8595418b",
+          "note": "Public profile identifies him as Director, Data Science at Fidelity Investments."
+        },
+        {
+          "label": "CMU LTI alumni profile",
+          "url": "https://www.lti.cs.cmu.edu/people/alumni/alumni-2022/rallabandi-sai-krishna.html",
+          "note": "Carnegie Mellon profile lists his Ph.D., master's background, and Fidelity as employer upon graduation."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "ACL Anthology paper",
+          "url": "https://aclanthology.org/2025.finnlp-1.12/",
+          "note": "FinNLP paper co-authored by Sai Krishna Rallabandi on financial question-answering systems."
+        },
+        {
+          "label": "ACL Anthology author page",
+          "url": "https://aclanthology.org/people/sai-krishna-rallabandi/unverified/",
+          "note": "Publication index covering financial NLP, ESG impact modeling, and related NLP research."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0wmgj2g",
+    "displayName": "Sam Bhagwat",
+    "headline": "Founder and CEO of Mastra; Gatsby co-founder building TypeScript infrastructure for AI agents.",
+    "company": "Mastra",
+    "title": "Founder/CEO",
+    "location": "San Francisco, California, United States",
+    "tags": ["AI agents", "TypeScript", "developer tools", "open source", "agent frameworks"],
+    "confidence": "high",
+    "confidenceNote": "Mastra, LinkedIn, Gatsby, YC, and interview sources consistently identify Sam Bhagwat as Mastra founder/CEO and Gatsby co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Mastra, a TypeScript framework for building AI agents, and former Gatsby co-founder. He writes and speaks about practical agent architecture, production patterns, context engineering, and developer tooling for AI applications.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Mastra author profile",
+          "url": "https://mastra.ai/authors/sam-bhagwat",
+          "note": "Mastra profile identifies Sam Bhagwat as founder and CEO, Gatsby co-founder, and author of agent-building books."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/sambhagwat",
+          "note": "Public profile identifies him as founder/CEO of Mastra and author of AI-agent books."
+        },
+        {
+          "label": "Gatsby contributor profile",
+          "url": "https://www.gatsbyjs.com/contributors/sam-bhagwat",
+          "note": "Gatsby profile identifies him as Gatsby cofounder and chief strategy officer."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator: Mastra",
+          "url": "https://www.ycombinator.com/companies/mastra",
+          "note": "YC profile lists Mastra as a JavaScript framework for AI agents founded by Sam Bhagwat and co-founders."
+        },
+        {
+          "label": "Scaling DevTools interview",
+          "url": "https://scalingdevtools.com/podcast/episodes/sam-from-mastra-the-gatsby-founder-building-an-agents-framework",
+          "note": "Interview describes him as Mastra CEO and Gatsby co-founder building an agents framework."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ccr449",
+    "displayName": "Sam Crockett",
+    "headline": "CTO at Second Mile helping organizations simplify operations with AI, HubSpot, RevOps, and web systems.",
+    "company": "Second Mile",
+    "title": "CTO, aspiring CAIO",
+    "location": "Portland, Oregon, United States",
+    "tags": ["AI operations", "HubSpot", "RevOps", "web development", "technology leadership"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Second Mile company pages, 4dayweek.io, and Second Mile careers data consistently identify Sam Crockett as CTO at Second Mile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Second Mile, a HubSpot and RevOps partner helping organizations simplify their tech stacks and use AI pragmatically. Strong match for conversations about AI implementation, HubSpot integrations, web operations, and technology leadership in smaller teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/sampcrockett",
+          "note": "Public profile identifies Sam Crockett as CTO, aspiring CAIO, and focused on AI, HubSpot, and Second Mile."
+        },
+        {
+          "label": "Second Mile LinkedIn company page",
+          "url": "https://www.linkedin.com/company/second-mile",
+          "note": "Company page lists Second Mile's technology-consulting focus and includes Sam Crockett among employees."
+        },
+        {
+          "label": "Second Mile careers page",
+          "url": "https://www.thesecondmile.com/careers",
+          "note": "Company page names Sam Crockett as Chief Technology Officer."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "4dayweek.io: Second Mile",
+          "url": "https://4dayweek.io/company/second-mile",
+          "note": "Company profile quotes Sam Crockett as CTO and summarizes Second Mile's working model."
+        },
+        {
+          "label": "LinkedIn AI Partner Advisory Council post",
+          "url": "https://www.linkedin.com/posts/sampcrockett_hubspotpac-hubspotpartner-voiceofthepartner-activity-7313175903507808258-O_k5",
+          "note": "First-person post describes his HubSpot AI Partner Advisory Council role and AI implementation focus at Second Mile."
+        }
+      ]
+    }
+  }
+]

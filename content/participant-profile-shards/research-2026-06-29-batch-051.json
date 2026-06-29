@@ -1,0 +1,865 @@
+[
+  {
+    "lookupKey": "0idyu9d",
+    "displayName": "Jessie Yu",
+    "headline": "President of EcoInteractive and former CEO who led the company through growth, modernization, and exit",
+    "company": "EcoInteractive",
+    "title": "President",
+    "location": "San Francisco, US",
+    "tags": ["govtech", "SaaS", "private equity", "capital program management", "leadership"],
+    "confidence": "high",
+    "confidenceNote": "Multiple company and transaction-related sources identify Jessie Yu as EcoInteractive president/former CEO and describe her leadership of the business.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jessie Yu is President of EcoInteractive, a SaaS business serving government capital program management. She previously led EcoInteractive as CEO, built out its management team, modernized the product stack, and helped guide the company through its 2024 exit to mdf commerce.",
+    "sources": {
+      "primary": [
+        {
+          "label": "SOVRA management team",
+          "url": "https://www.sovra.com/management-team/",
+          "note": "Company leadership page lists Jessie Yu as President, EcoInteractive."
+        },
+        {
+          "label": "SEG client story on EcoInteractive",
+          "url": "https://softwareequity.com/resources/client-stories/ecointeractive",
+          "note": "First-person client story identifies Jessie Yu as former CEO and current president of EcoInteractive."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Alpine SG profile",
+          "url": "https://www.alpinesg.com/team/jessie-yu",
+          "note": "Profile describes Jessie Yu's CEO role at EcoInteractive, team-building, technology refresh, and 2024 exit."
+        },
+        {
+          "label": "Alpine SG acquisition announcement",
+          "url": "https://www.alpinesg.com/press-releases/alpine-investors-partners-with-ecointeractive-appoints-jessie-yu-ceo",
+          "note": "Announcement names Jessie Yu as CEO when Alpine partnered with EcoInteractive."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "085qmhk",
+    "displayName": "Jesús Barrasa",
+    "headline": "Neo4j AI Field CTO and knowledge graph expert focused on GenAI, semantic technologies, and graph data systems",
+    "company": "Neo4j",
+    "title": "RVP Solutions Architecture EMEA",
+    "location": "EMEA",
+    "tags": ["knowledge graphs", "Neo4j", "GenAI", "semantic technologies", "graph databases"],
+    "confidence": "high",
+    "confidenceNote": "Official Neo4j, personal, LinkedIn, and publisher sources consistently identify Jesús Barrasa as a Neo4j AI Field CTO/solutions architecture leader and knowledge graph author.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jesús Barrasa is a Neo4j graph and AI leader specializing in knowledge graphs, semantic technologies, and LLM-grounded data architectures. He co-authored O'Reilly's _Building Knowledge Graphs_ and frequently presents on using graphs to move GenAI systems into production.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Jesús Barrasa personal site",
+          "url": "https://jbarrasa.com/about/",
+          "note": "Personal bio identifies him as AI Field CTO at Neo4j, O'Reilly co-author, and Going Meta co-host."
+        },
+        {
+          "label": "Neo4j webinar bio",
+          "url": "https://go.neo4j.com/WBR-250116-GenAI-and-KG_Registration.html",
+          "note": "Neo4j event bio describes his AI Field CTO role, Ph.D. background, and enterprise graph experience."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/jbarrasa",
+          "note": "Profile headline lists Neo4j AI Field CTO, O'Reilly author, and graph data expertise."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "O'Reilly book page",
+          "url": "https://www.oreilly.com/library/view/building-knowledge-graphs/9781098127091/",
+          "note": "Publisher page names Jesús Barrasa as co-author of _Building Knowledge Graphs_."
+        },
+        {
+          "label": "Knowledge Graph Insights interview",
+          "url": "https://knowledgegraphinsights.com/jesus-barrasa/",
+          "note": "Interview bio summarizes his Neo4j role, knowledge graph work, and data management experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0dslx6q",
+    "displayName": "Jim Hamilton",
+    "headline": "AI enterprise sales leader at AI Drive, focused on document AI and legal workflow adoption",
+    "company": "AI Drive",
+    "title": "AI Enterprise Sales",
+    "location": "Sunnyvale, US",
+    "tags": ["enterprise sales", "document AI", "legaltech", "AI workflows", "go-to-market"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn clearly ties Jim Hamilton to AI Drive and AI enterprise sales; the company page corroborates AI Drive's market and public activity but provides limited person-specific detail.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jim Hamilton works in AI enterprise sales at AI Drive, a Sunnyvale document-AI startup serving legal and business users. His attendee fit is strongest around enterprise AI adoption, legaltech workflows, and selling AI productivity products into document-heavy teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jimhamilton1",
+          "note": "Profile identifies Jim Hamilton as AI Enterprise Sales at AI DRIVE and places him in the San Francisco Bay Area."
+        },
+        {
+          "label": "AI Drive LinkedIn company page",
+          "url": "https://www.linkedin.com/company/ai-drive-official",
+          "note": "Company page describes AI Drive's Sunnyvale document-AI platform and public posts that tag Jim Hamilton in recent customer/event activity."
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "1q8oz2g",
+    "displayName": "Jimmy Garg",
+    "headline": "Engineering director at Guidewire Software with experience across insurance software and product engineering leadership",
+    "company": "Guidewire Software",
+    "title": "Director of Engineering",
+    "location": "San Mateo, US",
+    "tags": ["engineering leadership", "insurance software", "Guidewire", "cloud applications", "enterprise software"],
+    "confidence": "medium",
+    "confidenceNote": "Sources identify the likely participant as Upinder (Jimmy) Garg, Director of Engineering at Guidewire; public evidence is credible but not rich beyond directory and LinkedIn signals.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jimmy Garg appears to be Upinder (Jimmy) Garg, a Director of Engineering at Guidewire Software. His background is relevant for enterprise engineering, insurance software platforms, and product-feature delivery in large software organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/upinder-garg-bb08a81",
+          "note": "LinkedIn profile for Upinder Garg in the Bay Area, matching the Guidewire engineering leader identity."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/guidewire-software/org-chart/upinder-garg",
+          "note": "Directory profile lists Upinder (Jimmy) Garg as Director of Engineering at Guidewire Software and summarizes prior roles."
+        },
+        {
+          "label": "Wiza profile",
+          "url": "https://wiza.co/d/guidewire-software/660e/upinder-garg",
+          "note": "Business directory lists Upinder Garg as Director of Engineering at Guidewire Software and gives Bay Area location context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0re7ta7",
+    "displayName": "Jin Stedge",
+    "headline": "Founder and CEO of TrueNorth, building AI-enabled software for freight carriers and owner-operators",
+    "company": "TrueNorth",
+    "title": "Founder and Chief Executive Officer",
+    "location": "San Francisco, US",
+    "tags": ["logistics", "freight tech", "AI load board", "startup founder", "marketplaces"],
+    "confidence": "high",
+    "confidenceNote": "TrueNorth, LinkedIn, YC, Forbes, and podcast sources consistently identify Jin Stedge as TrueNorth founder/CEO in San Francisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jin Stedge is Founder and CEO of TrueNorth, a freight-tech company building tools for carriers, brokers, and owner-operators. Her work sits at the intersection of logistics operations, AI load matching, and software that augments human freight relationships rather than replacing them.",
+    "sources": {
+      "primary": [
+        {
+          "label": "TrueNorth about page",
+          "url": "https://www.truenorth.com/about-us",
+          "note": "Company page lists Jin Stedge as Founder and Chief Executive Officer and explains TrueNorth's freight-tech origin story."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jinstedge",
+          "note": "Profile identifies Jin Stedge with TrueNorth, MIT education, and San Francisco location."
+        },
+        {
+          "label": "YC company profile",
+          "url": "https://www.ycombinator.com/companies/truenorth",
+          "note": "YC profile lists TrueNorth as a San Francisco company and names Jin Stedge as a founder."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes profile",
+          "url": "https://www.forbes.com/profile/jin-stedge/",
+          "note": "Forbes profile identifies Jin Stedge as cofounder of TrueNorth in San Francisco."
+        },
+        {
+          "label": "The Freight Pod episode",
+          "url": "https://www.buzzsprout.com/2250931/episodes/16880796-ep-60-jin-stedge-ceo-cofounder-of-truenorth",
+          "note": "Podcast episode describes Jin Stedge as CEO and cofounder and discusses TrueNorth's evolution into an AI load board."
+        },
+        {
+          "label": "Mozart Data conference profile",
+          "url": "https://mozartdata.com/data-conference/creating-a-modern-company-with-accessible-data-by-jin-stedge/",
+          "note": "Speaker page describes Jin Stedge as Co-Founder and CEO of TrueNorth and summarizes the company's trucking software focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1dnur8q",
+    "displayName": "Jo Kristian Bergum",
+    "headline": "CEO of Hornet.dev and veteran search/retrieval engineer",
+    "company": "Hornet.dev",
+    "title": "CEO",
+    "location": "Trondheim, Norway",
+    "tags": ["agentic retrieval", "search infrastructure", "information retrieval", "Vespa", "AI infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Hornet.dev, LinkedIn, conference speaker bio, and Vespa author pages consistently identify him and his search/retrieval background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jo Kristian Bergum is CEO at Hornet.dev, building retrieval infrastructure for AI agents. He was previously Chief Scientist at Vespa.ai and a Distinguished Engineer at Yahoo, with deep experience in search, ranking, vector/hybrid retrieval, and large-scale serving systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Hornet.dev team page",
+          "url": "https://hornet.dev/",
+          "note": "Lists Jo Kristian Bergum as CEO and frames Hornet as retrieval infrastructure for agents."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://no.linkedin.com/in/jo-bergum",
+          "note": "Identifies him as CEO at Hornet.dev, based in Trondheim."
+        },
+        {
+          "label": "Hornet.dev blog",
+          "url": "https://hornet.dev/blog",
+          "note": "Shows his recent writing on agentic retrieval and search behavior."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Berlin Buzzwords 2026 speaker bio",
+          "url": "https://2026.berlinbuzzwords.de/speaker/jo-kristian-bergum/",
+          "note": "Describes him as CEO of Hornet.dev, 25-year search veteran, former Vespa.ai Chief Scientist and Yahoo Distinguished Engineer."
+        },
+        {
+          "label": "Vespa blog author entry",
+          "url": "https://blog.vespa.ai/pretrained-transformer-language-models-for-search-part-3/",
+          "note": "Shows prior Vespa role and authorship on search and transformer retrieval topics."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1yldrkp",
+    "displayName": "Joaee Chew",
+    "headline": "AI lead at Trafigura focused on document AI and commodities trading applications",
+    "company": "Trafigura",
+    "title": "AI Lead",
+    "location": "London, United Kingdom",
+    "tags": ["document AI", "NLP", "commodities trading", "AI applications", "data science"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public recruiting posts strongly support AI at Trafigura and London-based AI hiring; exact title varies between AI Lead, Head of AI, and Document AI Lead across sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joaee Chew is an AI practitioner at Trafigura working on NLP/document AI and AI applications for commodities trading. Prior experience includes product and data science leadership roles at Mercari and PwC.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/joaee-chew-29898940",
+          "note": "Identifies Joaee Chew as AI at Trafigura, located in the United Kingdom, with prior roles at Mercari and PwC."
+        },
+        {
+          "label": "LinkedIn hiring post",
+          "url": "https://www.linkedin.com/posts/joaee-chew-29898940_hiring-for-a-senior-data-scientist-to-work-activity-7213815261139730432-5Rtf",
+          "note": "Person-specific post about hiring for NLP work at Trafigura, clarified as London based."
+        },
+        {
+          "label": "LinkedIn AI engineering hiring post",
+          "url": "https://www.linkedin.com/posts/joaee-chew-29898940_senior-software-engineer-backend-activity-7284860021878702080-ugJS",
+          "note": "Person-specific post about building AI applications for commodities trading at Trafigura."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org Trafigura AI team",
+          "url": "https://theorg.com/org/trafigura-group/teams/artificial-intelligence",
+          "note": "Lists Joaee Chew on Trafigura's AI team as Document AI Lead; marked unverified by the site."
+        },
+        {
+          "label": "ContactOut profile",
+          "url": "https://contactout.com/Joaee-Chew-23897228",
+          "note": "Aggregated profile lists Head of Document AI at Trafigura and prior Mercari/PwC roles; used only for corroboration."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1bwybq6",
+    "displayName": "Joanne Chen",
+    "headline": "Data and AI leader in healthcare technology",
+    "company": "SimplePractice",
+    "title": "Vice President, Data",
+    "location": "United States",
+    "tags": ["data leadership", "AI integration", "healthtech", "analytics", "clinical data"],
+    "confidence": "medium",
+    "confidenceNote": "Public LinkedIn directory and two profile aggregators connect this Joanne Chen to SimplePractice data leadership; exact VP of Data and AI title is not directly confirmed by a company bio.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joanne Chen is a data and AI leader at SimplePractice, with public records pointing to VP-level data leadership in healthtech. Earlier public bio coverage describes work across enterprise analytics, AI integration, clinical analytics, and data science leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/zhunan-chen",
+          "note": "Person-specific LinkedIn profile for Joanne Chen."
+        },
+        {
+          "label": "LinkedIn public directory result",
+          "url": "https://www.linkedin.com/pub/dir/.joanne/%2B/us-0-UnitedStates",
+          "note": "Directory snippet identifies Joanne Chen as Data and AI Leadership with SimplePractice listed among affiliations."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Neuron profile",
+          "url": "https://neuron.com/profile/9581654380/joanne-chen",
+          "note": "Verified profile lists Joanne Chen as Vice President of Data at SimplePractice."
+        },
+        {
+          "label": "Datanyze people profile",
+          "url": "https://www.datanyze.com/people/Joanne-Chen/3413709301",
+          "note": "Aggregated company profile lists Joanne Chen as Vice President, Data at SimplePractice."
+        },
+        {
+          "label": "Alldus AI in Action podcast profile",
+          "url": "https://alldus.com/podcast/ai-in-action-e230-joanne-chen-vp-of-data-at-thirty-madison/",
+          "note": "Earlier person-specific profile describes VP Data experience in healthcare, analytics, AI integration, and clinical analytics."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0t724rt",
+    "displayName": "Joao Bosco",
+    "headline": "Co-founder and COO of LogRock; former CTO at Loadsmart",
+    "company": "LogRock",
+    "title": "Co-Founder & COO",
+    "location": "Concord, North Carolina, United States",
+    "tags": ["logistics technology", "trucking compliance", "insurance technology", "engineering leadership", "startup operations"],
+    "confidence": "high",
+    "confidenceNote": "Sources consistently support LogRock co-founder/COO and former Loadsmart CTO; the provided CTO-at-LogRock title was not supported by public sources found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joao Bosco is Co-founder and COO at LogRock, a trucking compliance and insurance technology company. He was previously CTO at Loadsmart and co-founder/CTO of Chaordic, bringing engineering and logistics-tech operating experience.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/joaoboscoapf",
+          "note": "Identifies Joao Bosco as Co-Founder & COO at LogRock."
+        },
+        {
+          "label": "LogRock LinkedIn company page",
+          "url": "https://br.linkedin.com/company/logrockinc",
+          "note": "Lists Joao Bosco among LogRock employees and places LogRock headquarters in Concord, North Carolina."
+        },
+        {
+          "label": "LogRock launch press release",
+          "url": "https://www.prnewswire.com/news-releases/logrock-launches-out-of-stealth-with-3-5-million-to-manage-compliance-and-reduce-insurance-spending-for-trucking-companies-301555692.html",
+          "note": "Names João Bosco as co-founder and COO, and describes prior CTO roles at Loadsmart and Chaordic."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/logrock-inc/org-chart/joao-bosco",
+          "note": "Aggregated profile lists him as Chief Operating Officer at LogRock and summarizes prior Loadsmart, Linx, and Chaordic experience."
+        },
+        {
+          "label": "PR Newswire LogRock funding release",
+          "url": "https://www.prnewswire.com/news-releases/logrock-raises-2m-from-btv-and-dynamo-ventures-301661158.html",
+          "note": "Further corroborates João Bosco as co-founder and COO of LogRock."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "19hckzp",
+    "displayName": "João Doria Neto",
+    "headline": "Global CEO of LIDE, the Brazilian business-leadership network",
+    "company": "LIDE - Grupo de Líderes Empresariais",
+    "title": "CEO Global",
+    "location": "São Paulo, Brazil",
+    "tags": ["business leadership", "executive networking", "media", "corporate relations", "Brazil"],
+    "confidence": "high",
+    "confidenceNote": "Official LIDE pages and LinkedIn consistently identify João Doria Neto as CEO Global or president of LIDE since 2017.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "João Doria Neto is CEO Global of LIDE, a business-leadership and corporate-relations network based in Brazil. His background spans media, communications, executive networking, and business leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LIDE official profile",
+          "url": "https://lide.com.br/joao-doria-neto",
+          "note": "Official LIDE page identifies João Doria Neto as CEO Global of LIDE since 2017."
+        },
+        {
+          "label": "LIDE About page",
+          "url": "https://www.lide.com.br/en-us/sobre",
+          "note": "Official LIDE about page lists João Doria Neto as President of LIDE, with background in media and communications."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/joaodorianeto",
+          "note": "Identifies him as CEO Global of LIDE - Grupo de Líderes Empresariais."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Grupo Doria LinkedIn company page",
+          "url": "https://www.linkedin.com/company/grupo-doria",
+          "note": "Company page references João Doria Neto as CEO Global of LIDE."
+        },
+        {
+          "label": "LinkedIn public directory result",
+          "url": "https://www.linkedin.com/pub/dir/Jo%C3%A3o/Doria%2BNeto",
+          "note": "Directory result corroborates São Paulo location, LIDE affiliation, and FAAP education."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0end7go",
+    "displayName": "João Del Valle",
+    "headline": "Co-founder and CEO of EBANX; fintech operator focused on cross-border payments and emerging markets",
+    "company": "EBANX",
+    "title": "Co-founder and CEO",
+    "location": "Curitiba, Brazil",
+    "tags": ["fintech", "payments", "cross-border commerce", "Latin America", "executive leadership"],
+    "confidence": "high",
+    "confidenceNote": "Official EBANX announcement, public LinkedIn profile, and conference speaker pages consistently identify João Del Valle as EBANX co-founder and CEO in Curitiba/Brazil.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "João Del Valle is Co-founder and CEO of EBANX, the Curitiba-born payments company helping global merchants reach Latin American and other emerging-market customers. He previously led EBANX operations and technology, giving him a useful founder/operator lens on payment infrastructure, regional expansion, and fintech execution.",
+    "sources": {
+      "primary": [
+        {
+          "label": "EBANX press release",
+          "url": "https://business.ebanx.com/en/press-room/press-releases/joao-del-valle-is-the-new-ceo-of-ebanx",
+          "note": "Official company announcement naming João Del Valle as EBANX co-founder and CEO, with prior COO and CTO context."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/joaodelvalle",
+          "note": "Public profile lists João Del Valle at EBANX and located in Curitiba, Paraná, Brazil."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Web Summit Rio speaker profile",
+          "url": "https://rio.websummit.com/attendees/rio25/6470d4fe-8750-4b45-b98a-036c0a5a7002/jo%C3%A3o-del-valle/",
+          "note": "Conference profile lists him as Co-founder & CEO of EBANX and describes his technical founding role."
+        },
+        {
+          "label": "Paris Fintech Forum speaker profile",
+          "url": "https://members.parisfintechforum.com/speaker/b33f27b4-dbb9-ed11-994c-000d3a469307/joao-del-valle",
+          "note": "Speaker bio summarizes his move from CTO and COO into CEO at EBANX."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1uhnj1u",
+    "displayName": "João Gabriel de Souza Pereira",
+    "headline": "Fintech operator working across core banking, ledgers, BaaS, payments, and regulatory payment infrastructure",
+    "company": "Lerian",
+    "title": "Chief of Staff",
+    "location": "São Paulo, Brazil",
+    "tags": ["fintech", "core banking", "ledger infrastructure", "payments", "banking as a service"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Lerian-authored content, and Lerian company posts consistently connect João Gabriel de Souza Pereira to Lerian, Chief of Staff work, and payments/core-banking expertise.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "João Gabriel de Souza Pereira is Chief of Staff at Lerian with a fintech infrastructure background spanning core banking, ledgers, BaaS, and payments. He is a useful connection for conversations about open-source banking infrastructure, Pix/payment-system design, and operating fintech product teams in Brazil.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/joao-gabriel-de-souza-pereira/pt",
+          "note": "Public profile headline references core banking, ledger, BaaS, payments, and fintech; experience lists Lerian Chief of Staff."
+        },
+        {
+          "label": "Lerian blog author page",
+          "url": "https://blog.lerian.studio/autores/",
+          "note": "Lerian's own blog lists João Gabriel de Souza Pereira as an author."
+        },
+        {
+          "label": "Lerian blog article",
+          "url": "https://blog.lerian.studio/resolucao-bcb-524-e-o-problema-da-finalidade-em-sistemas-de-pagamento-instantaneo/",
+          "note": "Article co-authored by João Gabriel de Souza Pereira on instant payments, fraud detection, and financial-system finality."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Lerian LinkedIn post",
+          "url": "https://pt.linkedin.com/posts/lerianstudio_hoje-%C3%A0s-17h-acontece-o-talk-mb-para-activity-7378841087810985984-0ct7",
+          "note": "Company post names João Gabriel de Souza Pereira as Lerian's Chief of Staff for a technical/regulatory fintech discussion."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "08e6zfa",
+    "displayName": "João Moura",
+    "headline": "Founder and CEO of CrewAI, building open-source and enterprise infrastructure for multi-agent AI systems",
+    "company": "CrewAI",
+    "title": "Founder and CEO",
+    "location": "San Francisco, United States",
+    "tags": ["AI agents", "multi-agent systems", "open source", "developer tools", "enterprise AI"],
+    "confidence": "high",
+    "confidenceNote": "GitHub, X, and multiple conference profiles consistently identify João Moura as CrewAI founder/CEO. Location signals vary between Brazil and San Francisco/event presence, so San Francisco is retained from the participant row rather than independently confirmed as residence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "João Moura is Founder and CEO of CrewAI, an AI-agent company known for its open-source multi-agent framework and enterprise agent platform. He previously worked on AI engineering at Clearbit and is a strong match for conversations on agent orchestration, production AI workflows, and developer-facing AI infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/joaomdmoura",
+          "note": "Personal GitHub profile says he is founder of CrewAI, previously at Clearbit, and links to CrewAI."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/joaomdmoura?lang=en",
+          "note": "Public social profile identifies him as founder of CrewAI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Databricks Data + AI Summit speaker profile",
+          "url": "https://www.databricks.com/dataaisummit/speaker/joao-moura",
+          "note": "Speaker profile lists Joao Moura as CEO of CrewAI, Inc. for Data + AI Summit 2026."
+        },
+        {
+          "label": "The AI Conference speaker profile",
+          "url": "https://aiconference.com/speakers/joao-joe-moura/",
+          "note": "Conference profile identifies João Moura as founder of CrewAI."
+        },
+        {
+          "label": "On The Frontier interview",
+          "url": "https://shomik.substack.com/p/the-future-of-ai-agents-joao-moura",
+          "note": "Interview intro describes João Moura as Founder & CEO of CrewAI and notes prior AI engineering leadership at Clearbit."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1vjmwuj",
+    "displayName": "Joao Neto",
+    "headline": "Arcadea technology leader helping portfolio companies scale AI, R&D, software engineering, and product execution",
+    "company": "Arcadea Group",
+    "title": "Director of AI / Senior Director of R&D",
+    "location": "Lisbon, Portugal",
+    "tags": ["AI", "R&D leadership", "SaaS", "portfolio operations", "software engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Person match is strong, but current public title differs from the participant row: Arcadea pages list Director of AI, while LinkedIn and org-chart sources list Senior Director of R&D rather than Senior Director of Value Creation.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joao Neto is a technology and AI leader at Arcadea Group working with portfolio companies on software development, R&D, and AI execution. He brings a long international engineering leadership background and is likely useful for SaaS scale-up, CTO coaching, and applied AI adoption discussions.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Arcadea profile",
+          "url": "https://www.arcadeagroup.com/joao-neto/",
+          "note": "Official Arcadea profile lists Joao Neto as Director of AI and says he works with portfolio companies on software development and R&D."
+        },
+        {
+          "label": "Arcadea team page",
+          "url": "https://www.arcadeagroup.com/team/",
+          "note": "Official team page lists Joao Neto as Director of AI."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://pt.linkedin.com/in/joaopneto",
+          "note": "Public profile lists Joao Neto in the Lisbon region with Arcadea Group experience as Senior Director of R&D."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile listing",
+          "url": "https://theorg.com/org/arcadea-group",
+          "note": "Org chart lists Joao Neto at Arcadea Group as Senior Director of R&D."
+        },
+        {
+          "label": "Arcadea LinkedIn company page",
+          "url": "https://ca.linkedin.com/company/arcadea",
+          "note": "Company LinkedIn page shows Joao Neto among Arcadea employees and associates him with scaling SaaS companies and technology leadership."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03a6ate",
+    "displayName": "João Paulo Alqueres",
+    "headline": "Conversational AI and voice-experience builder; AI Product Director at TELUS Digital and founder of Iara Digital",
+    "company": "TELUS Digital",
+    "title": "AI Product Director; Founder, Iara Digital",
+    "location": "Massachusetts, United States",
+    "tags": ["conversational AI", "voice interfaces", "AI product", "Alexa", "digital experiences"],
+    "confidence": "medium",
+    "confidenceNote": "Evidence strongly supports João Paulo Alqueres as founder of Iara Digital and TELUS Digital AI product leader, but the participant-provided title 'Founder, TELUS DIGITAL' appears imprecise.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "João Paulo Alqueres is a conversational AI and voice-experience specialist now working on AI product at TELUS Digital. He founded Iara Digital, a Brazilian voice/AI studio known for Alexa experiences and branded conversational projects, making him a strong match for product conversations around AI interfaces, voice UX, and applied generative AI.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/joao-alqueres/en",
+          "note": "Public profile headline describes João Paulo Alqueres as bridging technology, creativity, and business at TELUS Digital, with location shown as Massachusetts."
+        },
+        {
+          "label": "Amazon Developer profile",
+          "url": "https://developer.amazon.com/en-US/blogs/alexa/alexa-skills-kit/2023/06/iara-digital-alexa-june-2023",
+          "note": "Amazon feature describes him as CEO/founder of Iara Digital and highlights the company's Alexa voice experiences."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Summit Brasil 2026 speaker profile",
+          "url": "https://aisummit.ia.br/palestrantes/",
+          "note": "Speaker listing names João Paulo Alqueres as TELUS Digital AI Product Director and founder of Iara Digital."
+        },
+        {
+          "label": "Exame article",
+          "url": "https://exame.com/inteligencia-artificial/robos-que-entendem-o-brasileiro-sao-uma-necessidade-defende-joao-alqueres-da-iara-digital/",
+          "note": "Brazilian business publication profiles him as CEO of Iara Digital and discusses his work in AI-powered voice assistants."
+        },
+        {
+          "label": "BIG Festival speaker profile",
+          "url": "https://b2b.latam.gamescom.global/talks/11/speakers/22318",
+          "note": "Event profile describes him as a conversational AI expert and founder of Iara Digital."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ifqmum",
+    "displayName": "Joao Vitor Martins",
+    "headline": "Data architecture and engineering leader building enterprise analytics, BI, and AI-enabled data platforms",
+    "company": "DadosNow",
+    "title": "Director of Engineering",
+    "location": "Sao Paulo, Brazil",
+    "tags": ["data engineering", "data architecture", "business intelligence", "Snowflake", "Power BI", "Microsoft Fabric", "AI products"],
+    "confidence": "medium",
+    "confidenceNote": "High-confidence identity match via personal portfolio and LinkedIn. Public sources support DadosNow founder/director and data architecture leadership, while the exact attendee title 'Director of Engineering' is participant-provided.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joao Vitor Martins is founder/director of DadosNow and a data architecture leader with 10+ years across healthcare, pharma, automotive, manufacturing, and retail. He is a strong match for conversations about enterprise data platforms, BI modernization, Snowflake, Microsoft Fabric, and practical AI products connected to data workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "JV Martins personal site",
+          "url": "https://mrtinsjoao.com/en",
+          "note": "Personal portfolio identifies Joao Vitor Martins as a data architect and data engineer who runs DadosNow and lists enterprise data-platform experience."
+        },
+        {
+          "label": "JV Martins AI Interview page",
+          "url": "https://mrtinsjoao.com/en/interview",
+          "note": "Personal site page lists current role as Lead Data Engineer and consulting role as CEO at DadosNow."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/mrtinsjoao/pt",
+          "note": "Public profile identifies Joao Vitor Martins and lists DadosNow in Sao Paulo."
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "1smjp3s",
+    "displayName": "Joe Paravisini",
+    "headline": "Applied AI and infrastructure engineering leader focused on automation, reliability, and AI adoption inside engineering teams",
+    "company": "Snowplow",
+    "title": "Director of Applied AI",
+    "location": "Providence, United States",
+    "tags": ["applied AI", "engineering leadership", "SRE", "automation", "cloud infrastructure", "developer productivity", "AI adoption"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub, LinkedIn, and The Org consistently identify Joe Paravisini with Snowplow and applied AI or senior engineering leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joe Paravisini is Director of Applied AI at Snowplow after years leading SRE and infrastructure work. He is a useful match for conversations about applied AI adoption in engineering orgs, infrastructure automation, cloud reliability, and turning AI experimentation into practical team workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Joe Paravisini personal site",
+          "url": "https://joeparavisini.com/about/",
+          "note": "Personal about page describes decades of software, infrastructure, SRE, automation, and Snowplow leadership experience."
+        },
+        {
+          "label": "Joe Paravisini now page",
+          "url": "https://joeparavisini.com/now/",
+          "note": "Personal now page says he moved from SRE at Snowplow to Director of Applied AI."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/jparavisini",
+          "note": "GitHub profile links to Snowplow and his LinkedIn handle."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jparavisini",
+          "note": "Public profile identifies him as a Snowplow engineering leader focused on applied AI, automation, and large-scale systems."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/snowplow-analytics/org-chart/joe-paravisini",
+          "note": "Profile lists Joe Paravisini as Director of Applied AI at Snowplow and summarizes prior SRE leadership."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0tmqofz",
+    "displayName": "Joe Pautler",
+    "headline": "Financial-technology software architect leading trading-platform architecture and low-latency order-execution systems",
+    "company": "TradeStation",
+    "title": "Chief Software Architect",
+    "location": "Dallas, United States",
+    "tags": ["software architecture", "fintech", "trading systems", "order execution", "low latency", "engineering leadership", "brokerage platforms"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, The Org, and TradeStation-related technical coverage consistently identify Joe Pautler as a TradeStation architecture leader; Dallas is participant-provided while public profiles more specifically show Richardson, Texas.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joe Pautler is Chief Software Architect at TradeStation with long-running experience across brokerage platform architecture, order execution, product development, and systems engineering. He is a strong match for discussions on fintech infrastructure, low-latency trading systems, architecture governance, and scaling regulated engineering teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/joe-pautler-7238b35",
+          "note": "Public profile identifies Joe Pautler as Chief Software Architect at TradeStation in the Richardson, Texas area."
+        },
+        {
+          "label": "McObject press release",
+          "url": "https://www.mcobject.com/press/may20-2015/",
+          "note": "TradeStation order-execution coverage quotes Joe Pautler as TradeStation Development Manager on database latency and trading-system performance."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/tradestation/org-chart/joe-pautler",
+          "note": "Profile lists Joe Pautler as Chief Software Architect at TradeStation and summarizes architecture and engineering roles."
+        },
+        {
+          "label": "OneStopBrokers coverage",
+          "url": "https://www.onestopbrokers.com/2015/05/21/extremedb-financial-edition-dbms-powers-innovation-tradestations-next-gen-order-execution-system/",
+          "note": "Industry article quotes Joe Pautler of TradeStation on order-execution performance improvements."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1asqtxt",
+    "displayName": "Joe Utz",
+    "headline": "Engineering and technology team leader supporting software and product delivery at Chick-fil-A",
+    "company": "Chick-fil-A",
+    "title": "Principal Team Leader",
+    "location": "Cumming, Georgia, United States",
+    "tags": ["engineering leadership", "software development", "system architecture", "product delivery", "restaurant technology", "team leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org match Joe Utz to Chick-fil-A technology leadership, but public detail is sparse and the attendee title appears to use 'Principle' where public sources use 'Principal Team Leader'.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joe Utz is a Principal Team Leader at Chick-fil-A Corporate Support Center with public signals around engineering, software development, and system architecture. He is a relevant match for conversations about restaurant technology, engineering team leadership, internal platforms, and product delivery at scale.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/joe-utz-35882b3",
+          "note": "Public profile identifies Joe Utz as Principal Team Leader at Chick-fil-A Corporate Support Center."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org Chick-fil-A Engineering and Technology team",
+          "url": "https://theorg.com/org/chick-fil-a/teams/engineering-and-technology",
+          "note": "Team page lists Joe Utz as Principal Team Leader in Chick-fil-A Engineering and Technology."
+        },
+        {
+          "label": "Mesh profile",
+          "url": "https://me.sh/profile/joe-utz",
+          "note": "Public profile aggregation describes Joe Utz as a Chick-fil-A Principal Team Leader with software engineering and architecture experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01sx4x1",
+    "displayName": "Joe Vega",
+    "headline": "Florist-commerce founder building software and marketing tools for local floral retailers",
+    "company": "Lovingly",
+    "title": "CEO",
+    "location": "New York, United States",
+    "tags": ["ecommerce", "floral technology", "marketplaces", "local commerce", "marketing technology", "SEO", "founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Lovingly company pages, The Org, and floral-industry sources consistently identify Joe Vega as Lovingly founder/co-founder and CEO or co-CEO; location varies between Fishkill/Hopewell Junction and broader New York.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joe Vega is Founder and CEO of Lovingly, a New York-based software company helping local florists grow online through ecommerce, gifting experiences, marketing, and operational tools. He is a good match for conversations about local commerce, vertical SaaS, marketplace dynamics, and AI-enabled customer experience for small businesses.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/joe-vega",
+          "note": "Public profile identifies Joe Vega as Founder and CEO of Lovingly in Fishkill, New York."
+        },
+        {
+          "label": "Lovingly LinkedIn company page",
+          "url": "https://www.linkedin.com/company/lovingly",
+          "note": "Company page lists Lovingly in Hopewell Junction, New York and includes Joe Vega among employees as Founder and CEO."
+        },
+        {
+          "label": "Lovingly story archive",
+          "url": "https://thepatbrienreader.com/Images/Lstory.html",
+          "note": "Lovingly story page describes Joe Vega's role in founding the company and building online tools for florists."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/lovingly/org-chart/joe-vega",
+          "note": "Profile lists Joe Vega as Lovingly co-founder and summarizes prior FTD and client-services experience."
+        },
+        {
+          "label": "Society of American Florists Reinvention Summit",
+          "url": "https://safnow.org/reinvention-summit/",
+          "note": "Speaker listing describes Joe Vega as Lovingly co-founder focused on technology, creativity, and helping florists grow."
+        },
+        {
+          "label": "EIN Presswire Lovingly founders coverage",
+          "url": "https://www.einpresswire.com/article/456685908/lovingly-founders-miami-road-trip-opens-eyes-and-minds",
+          "note": "Lovingly announcement names Joe Vega as co-founder and managing partner in the company's floral-industry work."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,299 @@
+[
+  {
+    "lookupKey": "1ep9vd0",
+    "displayName": "Rania Khalaf",
+    "headline": "Chief AI Officer at WSO2 focused on enterprise AI, agentic systems, cloud platforms, and responsible product delivery.",
+    "company": "WSO2",
+    "title": "Chief AI Officer",
+    "location": "United States",
+    "tags": ["enterprise AI", "agentic AI", "cloud platforms", "AI strategy", "WSO2"],
+    "confidence": "high",
+    "confidenceNote": "WSO2 team and conference pages consistently identify Rania Khalaf as Chief AI Officer, with prior AI, cloud, IBM Research, and Inari leadership background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief AI Officer at WSO2 leading enterprise AI and agentic platform strategy. Useful match for conversations on AI-native products, cloud platforms, responsible AI adoption, and moving research into enterprise software.",
+    "sources": {
+      "primary": [
+        {
+          "label": "WSO2 team profile",
+          "url": "https://wso2.com/about/team/rania-khalaf",
+          "note": "Official WSO2 profile lists Khalaf as Chief AI Officer and summarizes her AI, cloud, IBM Research, and Inari background."
+        },
+        {
+          "label": "WSO2 conference speaker page",
+          "url": "https://wso2.com/library/conference/2025/03/ai-for-code-code-for-ai/",
+          "note": "WSO2 event page identifies her as Chief AI Officer and frames her work around generative AI, agent-based development, and responsible AI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?hl=en&user=9hl0qvIAAAAJ",
+          "note": "Public scholar profile identifies Rania Khalaf with WSO2 and research interests in AI, distributed computing, and business automation."
+        },
+        {
+          "label": "Enterprise Times interview",
+          "url": "https://www.enterprisetimes.co.uk/2025/04/02/talking-ai-strategy-with-rania-khalaf-at-wso2/",
+          "note": "Interview coverage corroborates her WSO2 Chief AI Officer role and AI strategy focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jfuqi1",
+    "displayName": "Rashi Agrawal",
+    "headline": "Head of Agentic AI at Hinge Health building compliant AI systems for digital healthcare.",
+    "company": "Hinge Health",
+    "title": "Head of Agentic AI",
+    "location": "San Francisco Bay Area, United States",
+    "tags": ["agentic AI", "healthcare AI", "AI engineering", "compliance", "Hinge Health"],
+    "confidence": "high",
+    "confidenceNote": "Conference, WomenTech, and Luma speaker pages consistently identify Rashi Agrawal as a Hinge Health AI leader working on agentic AI and production healthcare AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Agentic AI at Hinge Health, focused on production AI systems in regulated healthcare settings. Relevant for attendees interested in clinical safety, HIPAA-aware AI workflows, evaluation, guardrails, and scaling agentic systems beyond pilots.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Innovate QA speaker profile",
+          "url": "https://innovateqaevents.com/speakers/rashi/",
+          "note": "Speaker profile lists Agrawal as Head of Agentic AI at Hinge Health and describes her work on compliant, high-stakes AI systems."
+        },
+        {
+          "label": "WomenTech speaker profile",
+          "url": "https://www.womentech.net/speaker/all/all/159224",
+          "note": "Conference profile identifies her as Head of AI at Hinge Health and describes agentic AI initiatives for healthcare delivery."
+        },
+        {
+          "label": "Luma speaker profile",
+          "url": "https://luma.com/zn1cml2j",
+          "note": "Event page lists her as Head of Agentic AI at Hinge Health and summarizes her AI leadership background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI",
+          "note": "Public schedule corroborates her Hinge Health Head of Agentic AI affiliation."
+        },
+        {
+          "label": "Sessionize speakers directory",
+          "url": "https://sessionize.com/speakers-directory/health-medical/",
+          "note": "Directory listing repeats her Head of Agentic AI role and topics around AI strategy, agents, and ML architecture."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qgmgm2",
+    "displayName": "Raul Chedrese",
+    "headline": "Principal Engineer at 7shifts working on scalable product architecture, developer experience, and restaurant workforce software.",
+    "company": "7shifts",
+    "title": "Principal Engineer",
+    "location": "Saskatchewan, Canada",
+    "tags": ["software architecture", "engineering leadership", "developer experience", "SaaS", "7shifts"],
+    "confidence": "high",
+    "confidenceNote": "LeadDev, 7shifts engineering Medium, Stream customer story, and LinkedIn search evidence consistently tie Raul Chedrese to Principal Engineer work at 7shifts.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal Engineer at 7shifts with public work on technical vision, codebase evolution, and modernizing product infrastructure. Good match for conversations on pragmatic architecture, engineering leadership, SaaS developer experience, and real-time workplace communication.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LeadDev talk profile",
+          "url": "https://leaddev.com/technical-direction/keeping-your-codebase-fun-scale",
+          "note": "LeadDev identifies Chedrese as Principal Engineer at 7shifts and features his talk on technical vision and codebase evolution."
+        },
+        {
+          "label": "7shifts engineering Medium profile",
+          "url": "https://medium.com/7shifts-rd/about",
+          "note": "7shifts R&D publication lists Raul Chedrese as an editor and Principal Engineer at 7shifts."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Stream customer story",
+          "url": "https://getstream.io/blog/7shifts/",
+          "note": "Customer story quotes Raul Chedrese as Principal Engineer leading technical evaluation for 7shifts messaging modernization."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/raul-chedrese-55874227",
+          "note": "Public search result identifies him as Principal Engineer at 7shifts in Saskatchewan, Canada."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jkk7k9",
+    "displayName": "Ravi Ramanujam",
+    "headline": "FINRA architecture and engineering leader working on large-scale market data analytics and interactive data applications.",
+    "company": "FINRA",
+    "title": "Principal Architect",
+    "location": "Washington, DC, United States",
+    "tags": ["FINRA", "data analytics", "AWS", "Apache Spark", "financial markets"],
+    "confidence": "medium",
+    "confidenceNote": "AWS re:Invent materials and independent event recaps identify Ravi Ramanujam as a FINRA principal engineering speaker on Athena for Apache Spark; participant-provided title says Principal Architect, while public event material uses Principal Engineer.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal Architect at FINRA, with public speaking work around interactive analytics applications and Apache Spark on AWS. Useful match for conversations on large-scale market data, regulated analytics platforms, cloud data tooling, and enabling business users with self-service analysis.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AWS re:Invent ANT209 slides",
+          "url": "https://d1.awsstatic.com/events/Summits/reinvent2022/ANT209_Build-interactive-analytics-applications.pdf",
+          "note": "AWS session deck names Ravi Ramanujam from FINRA and describes FINRA's large-scale Athena for Apache Spark analytics use case."
+        },
+        {
+          "label": "LinkedIn post about AWS session",
+          "url": "https://www.linkedin.com/posts/narmatha-gunasekaran_so-exited-to-listen-to-this-presentation-activity-7003867841582034945-mKKa",
+          "note": "Public post promotes Ravi Ramanujam's FINRA presentation on Amazon Athena for Apache Spark at re:Invent."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Classmethod re:Invent recap",
+          "url": "https://dev.classmethod.jp/articles/reinvent2022-report-ant209/",
+          "note": "Independent recap lists Ravi Ramanujam as FINRA speaker for the interactive analytics applications session."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0se174d",
+    "displayName": "Rémi Louf",
+    "headline": "Co-founder and CEO of .txt building structured generation and reliability infrastructure for production AI agents.",
+    "company": ".txt",
+    "title": "Co-founder & CEO",
+    "location": "France",
+    "tags": ["structured generation", "agentic AI", "AI infrastructure", "open source", ".txt"],
+    "confidence": "high",
+    "confidenceNote": ".txt company page, GitHub profile, GOSIM speaker page, and The Org consistently identify Rémi Louf as CEO or co-founder CEO of .txt.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of .txt, building reliability and structured-output infrastructure for AI systems. Strong match for discussions on production agents, constrained generation, composable AI software, open-source AI infrastructure, and developer-facing AI tools.",
+    "sources": {
+      "primary": [
+        {
+          "label": ".txt about page",
+          "url": "https://dottxt.ai/about-us",
+          "note": "Official company page lists Rémi Louf as CEO and frames .txt around making AI behave like software."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/rlouf",
+          "note": "Personal developer profile identifies him as CEO at .txt and links his structured-output and Bayesian software work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "GOSIM Paris speaker profile",
+          "url": "https://paris2026.gosim.org/speakers/remi-louf/",
+          "note": "Speaker page lists Louf as CEO of .txt and describes work on production-ready agentic AI infrastructure."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/txt/org-chart/remi-louf",
+          "note": "Org profile identifies him as co-founder and CEO of .txt, with prior research and machine-learning background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0440lxd",
+    "displayName": "Renato Moulin",
+    "headline": "Visagio co-founder and managing partner working at the intersection of consulting, analytics, RAG evaluation, and AI-enabled business systems.",
+    "company": "Visagio",
+    "title": "Managing Partner",
+    "location": "Rio de Janeiro, Brazil",
+    "tags": ["management consulting", "RAG evaluation", "business intelligence", "AI strategy", "Visagio"],
+    "confidence": "medium",
+    "confidenceNote": "Consultancy Europe and CB Insights identify Renato Moulin as Visagio founder/managing partner, while recent academic and conference sources tie him to Visagio Group AI and RAG evaluation work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Managing Partner and co-founder at Visagio, with recent public work on RAG QA evaluation and AI-enabled business intelligence. Relevant for attendees interested in enterprise AI adoption, consulting delivery, knowledge management, and practical evaluation of LLM systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/renato-moulin",
+          "note": "Public profile search result identifies Renato Moulin in Rio de Janeiro with Visagio background."
+        },
+        {
+          "label": "STIL 2025 paper page",
+          "url": "https://sol.sbc.org.br/index.php/stil/article/view/37829",
+          "note": "Academic page lists Renato Moulin with Visagio Group on a RAG-based QA systems evaluation paper."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Consultancy Europe company profile",
+          "url": "https://www.consultancy.eu/firms/visagio/company-information",
+          "note": "Consultancy profile lists Renato Moulin as a Visagio founder and describes the firm as a management consulting company."
+        },
+        {
+          "label": "CB Insights Visagio people page",
+          "url": "https://www.cbinsights.com/company/visagio/people",
+          "note": "Search-result evidence identifies Renato Moulin as Visagio's founder and managing partner."
+        },
+        {
+          "label": "IEEE CAI 2026 schedule",
+          "url": "https://www.ieeesmc.org/cai-2026/detailed-schedule/",
+          "note": "Conference schedule lists Renato Moulin with Visagio Group on generative AI and legal workflow research."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fczgka",
+    "displayName": "Renato Piques",
+    "headline": "IT executive and cloud, infrastructure, cybersecurity, and enterprise AI leader associated with Etho and Paretho IT Solutions.",
+    "company": "Paretho IT Solutions",
+    "title": "Managing Partner",
+    "location": "Miami, Florida, United States / São Paulo, Brazil",
+    "tags": ["IT consulting", "cloud infrastructure", "cybersecurity", "enterprise AI", "digital transformation"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly match Renato Piques to Etho IT Solutions leadership and enterprise IT transformation; Paretho IT Solutions is publicly registered in Florida, but the exact managing-partner title at Paretho is less directly corroborated.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Managing Partner at Paretho IT Solutions and senior IT executive with deep experience in cloud, infrastructure, cybersecurity, and enterprise transformation. Useful match for conversations on moving AI from pilots into enterprise IT operations, project recovery, and global delivery.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/renatopiques/en",
+          "note": "Public profile search result ties Renato Piques to Etho Soluções / Etho IT Solutions and senior technology leadership."
+        },
+        {
+          "label": "Etho IT Solutions leadership page",
+          "url": "https://ethosolucoes.com/quem-somos/",
+          "note": "Company page lists Renato Piques with 30+ years transforming corporate IT operations, cloud, cybersecurity, and AI programs."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Etho IT Solutions English team page",
+          "url": "https://ethoitsolutions.com/clients/",
+          "note": "English page lists Renato Piques as a senior executive focused on infrastructure, cloud solutions, cybersecurity, and major industry projects."
+        },
+        {
+          "label": "Florida Division of Corporations",
+          "url": "https://search.sunbiz.org/Inquiry/corporationsearch/SearchResults?InquiryType=EntityName&SearchTerm=PARET+EXPLORATION+%22LLC%22&entityId=L20000392096&inquiryDirectionType=PreviousList&listNameOrder=PARETOHQ+L200003920960&searchNameOrder=PARETOHQ+L200003920960",
+          "note": "State registry search result shows Paretho IT Solutions LLC as an active Florida entity."
+        },
+        {
+          "label": "Renato Piques LinkedIn post",
+          "url": "https://www.linkedin.com/posts/renatopiques_transforma%C3%A7%C3%A3odigital-resolu%C3%A7%C3%A3odeproblemas-activity-7254099239079735298-ZDKk",
+          "note": "Public LinkedIn post describes his Etho IT Solutions work with Google Cloud, GenAI, and cybersecurity delivery."
+        }
+      ]
+    }
+  }
+]

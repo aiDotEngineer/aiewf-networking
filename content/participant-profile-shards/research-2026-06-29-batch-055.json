@@ -1,0 +1,693 @@
+[
+  {
+    "lookupKey": "0ti68ck",
+    "displayName": "Keiji Kanazawa",
+    "headline": "Principal Product Manager at Microsoft working on Azure AI Foundry and frontier-model integration",
+    "company": "Microsoft",
+    "title": "Principal Product Manager",
+    "location": "Seattle, WA",
+    "tags": ["AI product", "Azure AI Foundry", "frontier models", "AI red teaming", "reinforcement learning"],
+    "confidence": "high",
+    "confidenceNote": "Microsoft speaker and news pages, AI Engineer schedule, and his public X profile consistently tie him to Microsoft AI product work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Microsoft AI product leader focused on Azure AI Foundry, frontier model integration, and trustworthy AI tooling. Public talks and Microsoft coverage connect him to AI red-teaming, reinforcement-learning, and cloud AI platform work.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Microsoft Build speaker profile",
+          "url": "https://build.microsoft.com/en-US/speakers/1768245294609build26-1766175567403001jGYO",
+          "note": "Lists Keiji Kanazawa as Principal Product Manager at Microsoft and describes frontier AI model integration work."
+        },
+        {
+          "label": "Keiji Kanazawa X profile",
+          "url": "https://x.com/gojira",
+          "note": "Public profile identifies him as AI Product at Microsoft, helping builders with Claude and other models in Microsoft Foundry."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Microsoft Source feature on reinforcement learning",
+          "url": "https://news.microsoft.com/source/features/ai/reinforcement-learning/",
+          "note": "Quotes Keiji Kanazawa as a Microsoft principal program manager discussing Azure Machine Learning reinforcement-learning tooling."
+        },
+        {
+          "label": "AI Engineer World's Fair 2026 schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI",
+          "note": "Lists Keiji Kanazawa, Microsoft Principal Product Manager, on a Foundry Agent Service session."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0n2cte6",
+    "displayName": "Keith Halterman",
+    "headline": "VP of Engineering at Angel Studios",
+    "company": "Angel Studios",
+    "title": "VP of Engineering",
+    "location": "Lehi, UT",
+    "tags": ["engineering leadership", "streaming platform", "media technology", "startup engineering", "Angel Studios"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, podcast appearances, and public org-directory pages align on Angel Studios VP Engineering role and prior startup/software background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at Angel Studios, the streaming and creator-backed media company. Public podcast profiles describe his path through competitive programming, startups, Qualtrics, Nuvi, and engineering leadership for Angel's platform.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/keithhalterman",
+          "note": "Identifies Keith Halterman as VP of Engineering at Angel Studios in Lehi, Utah."
+        },
+        {
+          "label": "Tech Collector Podcast episode",
+          "url": "https://thetechcollectors.com/",
+          "note": "Episode profile covers his journey to VP of Engineering at Angel Studios and prior work at Dallo, Canopy, Qualtrics, Jump, and Nuvi."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CougarTales podcast episode",
+          "url": "https://www.iheart.com/podcast/263-cougartales-the-podcast-148815812/episode/keith-halterman-155058103/",
+          "note": "BYU EMBA podcast identifies him as VP of Engineering for Angel Studios' streaming platform."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/angel-studios/org-chart/keith-halterman",
+          "note": "Public org profile lists him as VP of Engineering and summarizes prior engineering roles."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "17q220n",
+    "displayName": "Keith Sartain",
+    "headline": "CEO at SARIET and AI/technology leadership commentator",
+    "company": "Sariet",
+    "title": "CEO",
+    "location": "Saint Petersburg, FL",
+    "tags": ["AI strategy", "agentic coding", "technology leadership", "CIO", "vibecoding"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and event coverage support the SARIET CEO identity; bio is kept narrow because company details are limited outside personal and event sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology executive and SARIET CEO writing about agentic coding, AI infrastructure, and AI strategy. Public event coverage positions him as a speaker on vibecoding and technology leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/keith-sartain-630b441",
+          "note": "Identifies Keith Sartain as Chief Executive Officer at Sariet.com with technology leadership experience."
+        },
+        {
+          "label": "LinkedIn article: Agentic Coding Optimization Methods",
+          "url": "https://www.linkedin.com/pulse/agentic-coding-optimization-methods-keith-sartain-lgm3e",
+          "note": "Person-authored article showing current AI and agentic-coding focus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "NextPath CTO Insights recap",
+          "url": "https://nextpathcp.com/news-events/cto-insights-recap-keith-sartain-on-vibecoding/",
+          "note": "Event recap names Keith Sartain, CEO at SARIET, as featured speaker on vibecoding."
+        },
+        {
+          "label": "LinkedIn post profile page",
+          "url": "https://www.linkedin.com/posts/keith-sartain-630b441_is-the-hottest-trend-in-ai-of-2026-harness-activity-7457183988273684480-nxYn",
+          "note": "Public post page shows SARIET CEO title and AI systems commentary."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1cmj9et",
+    "displayName": "Ken Garland",
+    "headline": "Lovingly co-founder and technology leader focused on online floral commerce",
+    "company": "Lovingly",
+    "title": "CTO",
+    "location": "New York, US",
+    "tags": ["founder", "ecommerce", "floral technology", "marketplace", "local business"],
+    "confidence": "medium",
+    "confidenceNote": "Multiple sources corroborate Garland as a Lovingly co-founder and technical/product builder; public sources conflict on current exact title, with some listing CEO/managing partner rather than CTO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of Lovingly, a New York-based floral commerce platform serving local florists. Garland is described in Lovingly-originated materials as Joe Vega's developer co-founder, helping build a florist-specific software platform from scratch after early SEO work revealed demand from local flower shops.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Lovingly story archive",
+          "url": "https://thepatbrienreader.com/Images/Lstory.html",
+          "note": "Lovingly-originated company story names Ken Garland with Joe Vega and describes Garland as the developer co-founder behind the florist software platform."
+        },
+        {
+          "label": "Ken Garland X profile",
+          "url": "https://x.com/kengarland",
+          "note": "Public social profile describes Garland as founder, entrepreneur, developer, and AI enthusiast, and references Lovingly founder content."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Hudson Valley Magazine profile",
+          "url": "https://hvmag.com/partner/faces-of-hudson-valley-2020/the-face-of-the-guided-gifted-experience/",
+          "note": "Partner profile says Joe Vega and Ken Garland founded Lovingly to bring a guided floral gifting experience online."
+        },
+        {
+          "label": "PRNewswire Lovingly release",
+          "url": "https://www.prnewswire.com/news-releases/free-flowers-for-fishkill-as-lovingly-prepares-to-petal-it-forward-300527902.html",
+          "note": "Lovingly release identifies Ken Garland as co-founder and managing partner."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0lnqry0",
+    "displayName": "Kenneth Miller",
+    "headline": "Founder and CEO of Erdos Miller, an engineering firm for downhole, MWD, embedded, and industrial systems",
+    "company": "Erdos Miller",
+    "title": "CEO",
+    "location": "Houston, US",
+    "tags": ["founder", "oil and gas", "embedded systems", "MWD", "engineering services", "product development"],
+    "confidence": "high",
+    "confidenceNote": "Company team page and company-authored content directly identify Kenneth Miller as CEO and founder; secondary podcast/profile sources reinforce the same career narrative.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and founder of Houston-based Erdos Miller. Miller's public company bio describes a move from automotive microcontroller work into oilfield downhole tool design, where he built an engineering and product development firm focused on practical technical and business solutions for drilling and industrial customers.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Erdos Miller team page",
+          "url": "https://www.erdosmiller.com/team-v2",
+          "note": "Official team page lists Kenneth Miller as CEO and founder and summarizes his automotive microcontroller and downhole tool design background."
+        },
+        {
+          "label": "Erdos Miller company beginnings blog",
+          "url": "https://info.erdosmiller.com/blog/company-beginnings",
+          "note": "Company blog interview frames Miller as CEO and founder and discusses how Erdos Miller began."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Capital Petroleum Consultants podcast profile",
+          "url": "https://capitalpetroleumconsultants.com/ken-miller-ceo-founder-erdos-miller/",
+          "note": "Podcast episode profile covers Miller's path from Texas Instruments internship to oilfield work and founding Erdos Miller."
+        },
+        {
+          "label": "Erdos Miller LinkedIn company page",
+          "url": "https://www.linkedin.com/company/erdos-miller",
+          "note": "Company profile places Erdos Miller in Houston and lists specialties including embedded systems, rugged design, MWD, automation, and industrial IoT."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "04fkmmu",
+    "displayName": "Kenton Varda",
+    "headline": "Principal Engineer at Cloudflare Workers; creator of Cap'n Proto and architect of Cloudflare Workers",
+    "company": "Cloudflare",
+    "title": "Principal Engineer",
+    "location": "US",
+    "tags": ["Cloudflare Workers", "serverless", "distributed systems", "Cap'n Proto", "sandboxing", "AI infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Cloudflare, conference, and public social sources consistently identify Varda's Cloudflare Workers role and long-running systems work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal engineer on Cloudflare Workers and a long-time distributed systems builder. Varda is publicly described as the architect or inventor of Cloudflare Workers, the creator of Cap'n Proto, founder of Sandstorm, and formerly a Google engineer associated with open-sourcing Protocol Buffers v2. Recent public material connects his work to sandboxing and AI-agent infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Cloudflare Blog author page",
+          "url": "https://blog.cloudflare.com/author/kenton-varda/",
+          "note": "Official Cloudflare author page lists recent Workers and Durable Objects writing by Kenton Varda."
+        },
+        {
+          "label": "Kenton Varda Bluesky profile",
+          "url": "https://bsky.app/profile/kentonvarda.com",
+          "note": "Public profile says he is tech lead for Cloudflare Workers and also made Cap'n Proto, Sandstorm, and related projects."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Cloudflare TV episode",
+          "url": "https://cloudflare.tv/this-week-in-net/ai-writes-code-kenton-varda-on-trust-review-and-why-workers-is-the-best-ai-platform/PZ5rmMg2",
+          "note": "Cloudflare TV identifies Varda as Principal Engineer at Cloudflare in a 2025 AI and Workers discussion."
+        },
+        {
+          "label": "QCon London speaker profile",
+          "url": "https://archive.qconlondon.com/speakers/kenton-varda",
+          "note": "Speaker profile describes Varda as the architect of Cloudflare Workers, creator of Sandstorm and Cap'n Proto, and former Google Protocol Buffers engineer."
+        },
+        {
+          "label": "Cloudflare Connect session",
+          "url": "https://events.cloudflare.com/connect/2025/sessions/3383171",
+          "note": "Session page describes Varda as inventor and architect of Cloudflare Workers and frames his AI-sandboxing thesis."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01umudk",
+    "displayName": "Kevin Denman",
+    "headline": "Founder of AgentGraph, building a network and platform for custom agentic systems",
+    "company": "AgentGraph",
+    "title": "Founder",
+    "location": "",
+    "tags": ["founder", "agentic systems", "AI engineering", "generative UI", "enterprise AI", "MCP"],
+    "confidence": "high",
+    "confidenceNote": "Personal portfolio, AgentGraph blog, LinkedIn, and AI Tinkerers speaker page consistently identify Denman as AgentGraph founder and describe his agentic-systems focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of AgentGraph, where he focuses on custom agentic systems and a network of AI-native builders. Denman's public writing emphasizes enterprise agent implementation, context ownership, privacy-preserving inference, MCP-ready products, and generative UI patterns for agent workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Kevin Denman portfolio",
+          "url": "https://www.kevindenman.xyz/portfolio.html",
+          "note": "Personal portfolio lists him as founder of AgentGraph and describes the company as helping individuals, startups, and businesses own agents."
+        },
+        {
+          "label": "AgentGraph blog author page",
+          "url": "https://www.agentgraph.xyz/blog/",
+          "note": "AgentGraph blog lists posts by Kevin Denman, Founder @ AgentGraph, including the AgentGraph launch and agentic development themes."
+        },
+        {
+          "label": "AgentGraph Grogu blog post",
+          "url": "https://www.theagentgraph.ai/blog/every-company-deserves-their-own-grogu/",
+          "note": "Company blog post by Kevin Denman explains AgentGraph's internal multi-agent operating system and enterprise agentic-system thesis."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Tinkerers San Diego presenter page",
+          "url": "https://san-diego.aitinkerers.org/connect/mu__Omt5j8lico/presenters",
+          "note": "Presenter profile lists Kevin Denman as Founder & CEO at AgentGraph Inc. and describes his generative UI talk for agentic workflows."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/agentgraph",
+          "note": "Public LinkedIn snippet says Denman works on AgentGraph's context platform and network for agentic system design and implementation."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12f6zje",
+    "displayName": "Kevin Hou",
+    "headline": "Product engineering leader for Antigravity at Google DeepMind",
+    "company": "Google DeepMind",
+    "title": "Head of Product Engineering @ Antigravity",
+    "location": "San Francisco Bay Area",
+    "tags": ["AI coding", "developer tools", "product engineering", "Google DeepMind", "Windsurf"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name sources connect Kevin Hou to Windsurf/Codeium leadership and public Antigravity launch content; row company/title is consistent with recent Google DeepMind Antigravity context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product engineering leader for Antigravity at Google DeepMind. He previously worked on Windsurf/Codeium, shipping AI coding and agentic developer tooling used by engineering teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Kevin Hou personal site",
+          "url": "https://khou22.com/",
+          "note": "Personal site for Kevin Hou with background and project links."
+        },
+        {
+          "label": "Kevin Hou GitHub",
+          "url": "https://github.com/khou22",
+          "note": "Public developer profile matching Kevin Hou's khou22 handle."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google DeepMind Antigravity launch",
+          "url": "https://deepmind.google/discover/blog/introducing-google-antigravity/",
+          "note": "Company launch page for the Antigravity developer platform context."
+        },
+        {
+          "label": "Windsurf blog archive",
+          "url": "https://windsurf.com/blog",
+          "note": "Company blog context for the AI coding product lineage tied to Hou's prior work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hw4juu",
+    "displayName": "Kevin Lyman",
+    "headline": "Venture investor and AI entrepreneur at USIT Fund",
+    "company": "USIT Fund",
+    "title": "Principal",
+    "location": "San Francisco, CA",
+    "tags": ["venture capital", "AI startups", "defense technology", "medical AI", "San Francisco"],
+    "confidence": "medium",
+    "confidenceNote": "Exact-name sources tie Kevin Lyman to USIT/US Innovative Technology investment work and prior Enlitic leadership; title wording varies across sources, so the row title is retained with medium confidence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Investor associated with USIT Fund and US Innovative Technology. His earlier work includes founding and leading Enlitic, an AI medical-imaging company.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/kevin-lyman/",
+          "note": "Person-specific professional profile linking Lyman to USIT Fund and prior startup roles."
+        },
+        {
+          "label": "USIT Fund team/profile",
+          "url": "https://www.usit.fund/",
+          "note": "Fund/company source for USIT Fund context and investment positioning."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes 30 Under 30 profile",
+          "url": "https://www.forbes.com/profile/kevin-lyman/",
+          "note": "Person-specific profile for Lyman's Enlitic founder background."
+        },
+        {
+          "label": "Enlitic company history",
+          "url": "https://www.enlitic.com/",
+          "note": "Company context for the AI medical-imaging venture connected to Lyman's background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "18h3jtj",
+    "displayName": "Kevin Orellana",
+    "headline": "Software engineer building AWS AI agent tooling",
+    "company": "Amazon Web Services",
+    "title": "Software Engineer",
+    "location": "Seattle, WA",
+    "tags": ["AWS", "agentic AI", "Amazon Bedrock", "software engineering", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "AWS author pages and posts identify Kevin Orellana as an AWS software engineer working on Bedrock AgentCore and related agent tooling.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineer at AWS. His public AWS work focuses on agentic AI infrastructure, including Amazon Bedrock AgentCore capabilities for browser and code-interpreter workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AWS Machine Learning Blog author page",
+          "url": "https://aws.amazon.com/blogs/machine-learning/author/orellank/",
+          "note": "AWS-hosted author profile for Kevin Orellana."
+        },
+        {
+          "label": "AWS AgentCore launch post",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-agentcore-browser-and-code-interpreter/",
+          "note": "AWS post coauthored by Kevin Orellana on Bedrock AgentCore Browser and Code Interpreter."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/kevin-orellana/",
+          "note": "Person-specific professional profile matching the AWS software engineer identity."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "19mifj5",
+    "displayName": "Kevin Scott",
+    "headline": "Technology executive modernizing PGA of America systems",
+    "company": "PGA of America",
+    "title": "CTO",
+    "location": "Frisco, TX",
+    "tags": ["sports technology", "golf", "enterprise technology", "AI leadership", "PGA of America"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific sources identify Kevin J. Scott as PGA of America's first CTO and connect him to sports technology leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO of the PGA of America, where he leads technology strategy for the organization. His work spans sports technology, enterprise platforms, and modernization for golf industry operations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "PGA Buying Summit speaker profile",
+          "url": "https://www.pgashow.com/en-us/speakers/kevin-scott.html",
+          "note": "PGA event speaker profile identifying Kevin Scott as CTO of PGA of America."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/kevinjscott/",
+          "note": "Person-specific professional profile for Kevin J. Scott."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Okta customer story",
+          "url": "https://www.okta.com/customers/pga-of-america/",
+          "note": "Customer story quoting Kevin Scott in his PGA technology leadership role."
+        },
+        {
+          "label": "Golf Business News appointment coverage",
+          "url": "https://golfbusinessnews.com/news/people/pga-of-america-appoints-first-chief-technology-officer/",
+          "note": "News coverage of Scott's appointment as PGA of America's first CTO."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1sjbfpi",
+    "displayName": "Khaled Alashmouny",
+    "headline": "Founder and CEO of AIDAChip",
+    "company": "AIDAChip",
+    "title": "Founder & CEO",
+    "location": "Santa Clara, CA",
+    "tags": ["AI hardware", "semiconductors", "edge AI", "mixed-signal design", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name company, social, and technical-publication sources connect Khaled Alashmouny to AIDAChip and semiconductor/AI hardware work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of AIDAChip, an AI hardware startup. His background includes semiconductor and mixed-signal design work, with public technical records and patents in advanced chip systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AIDAChip company site",
+          "url": "https://aidachip.com/",
+          "note": "Company site for AIDAChip, matching the participant company."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/khaled-alashmouny/",
+          "note": "Person-specific professional profile identifying Alashmouny and AIDAChip role."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?user=1Wphw4sAAAAJ",
+          "note": "Publication record for Khaled Alashmouny in chip and circuit research."
+        },
+        {
+          "label": "Google Patents inventor search",
+          "url": "https://patents.google.com/?inventor=Khaled+Alashmouny",
+          "note": "Patent records matching Khaled Alashmouny's semiconductor engineering background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1kwiyh5",
+    "displayName": "Kiarie Ndegwa",
+    "headline": "Geospatial machine learning engineer focused on large-scale environmental data",
+    "company": "Kaskazi ai",
+    "title": "Founder",
+    "location": "Wellington, New Zealand",
+    "tags": ["machine learning", "computer vision", "geospatial AI", "climate", "data for good"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly support the person, Wellington/NZ ML background, and Vibrant Planet geospatial ML work; Kaskazi AI founder link is supported by company-register style listings but not by a rich primary bio.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Machine learning practitioner with experience taking complex data systems from concept to product. His public work centers on geospatial and environmental AI, including forest canopy modeling and applied computer vision.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://nz.linkedin.com/in/kndegwa",
+          "note": "Public profile identifies Kiarie Ndegwa as working on planet-scale multimodal computer vision at Vibrant Planet."
+        },
+        {
+          "label": "Vibrant Planet team profile",
+          "url": "https://www.vibrantplanet.net/team/kiarie-ndegwa",
+          "note": "Team bio describes his machine learning experience and data-for-good focus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Dragonfly Data Science",
+          "url": "https://www.dragonfly.co.nz/news/2021-06-17-machine-learning",
+          "note": "Former employer post places him in Wellington data science and machine learning work."
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2601.09866",
+          "note": "Lists Kiarie Ndegwa as lead author on a 2026 canopy-height modeling paper."
+        },
+        {
+          "label": "InfoProff company listing",
+          "url": "https://www.infoproff.com/bg/companies/search/NZL27002220284/8289608/KASKAZI%2BAI%2BLIMITED",
+          "note": "Lists Kaskazi AI Limited and David Kiarie Ndegwa in company records; used only to corroborate the Kaskazi connection."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1b0zx0g",
+    "displayName": "Kieran Klaassen",
+    "headline": "GM of Cora at Every and creator of Compound Engineering",
+    "company": "Every/Cora",
+    "title": "GM of Cora / Compound Engineering",
+    "location": "San Diego, CA",
+    "tags": ["AI agents", "compound engineering", "developer tools", "AI email", "engineering systems"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and high-signal sources consistently identify him with Cora, Every, and Compound Engineering.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads Cora, Every's AI email product, and writes extensively about agent-native engineering. He is known for Compound Engineering: codifying planning, review, and feedback loops so AI-assisted work improves future work.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Every author profile",
+          "url": "https://every.to/%40kieran_1355",
+          "note": "Identifies him as GM of Cora and author on Every."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/kieranklaassen",
+          "note": "Identifies him as Compound Engineer and GM of Cora, Every, with Cora and compound-engineering repos."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/kieranklaassen?lang=en",
+          "note": "Bio states he is building Cora, EIR at Every, and focused on compound engineering."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Every guide: Compound Engineering",
+          "url": "https://every.to/guides/compound-engineering",
+          "note": "Explains the methodology as emerging from building Cora."
+        },
+        {
+          "label": "Future Product Days speaker profile",
+          "url": "https://www.futureproductdays.com/speakers/kieran-klaassen",
+          "note": "Speaker bio describes him as an Every engineer building Cora and creator of Compound Engineering."
+        },
+        {
+          "label": "Apple Podcasts: This New Way",
+          "url": "https://podcasts.apple.com/us/podcast/compound-engineering-manage-teams-of-ai-agents/id1509072609?i=1000730933805",
+          "note": "Episode summary covers Kieran's Compound Engineering approach and Cora work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1hqf91f",
+    "displayName": "Kim Maida",
+    "headline": "Developer relations and identity/security leader building agent authorization at Keycard",
+    "company": "Keycard Labs",
+    "title": "Head of Developer Relations & Founding GTM Engineer",
+    "location": "Michigan, US",
+    "tags": ["developer relations", "identity", "agent security", "MCP", "OAuth", "developer experience"],
+    "confidence": "high",
+    "confidenceNote": "Primary personal, GitHub, DEV, Keycard, and event sources align on current Keycard role and identity/security focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer Experience and Developer Relations leader focused on identity, access management, and agent security. At Keycard, she writes and demos practical authorization patterns for MCP and AI agents.",
+    "sources": {
+      "primary": [
+        {
+          "label": "DEV profile",
+          "url": "https://dev.to/kimmaida",
+          "note": "Current profile lists Founding GTM Engineer / Head of DevRel at keycard.ai and security/identity focus."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/kmaida",
+          "note": "Lists Keycard role, identity expertise, DevRel leadership, and prior FusionAuth/Okta/Auth0 roles."
+        },
+        {
+          "label": "Keycard blog author page/article",
+          "url": "https://keycard.ai/blog/i-built-a-secure-planning-agent-with-mcp-and-keycard/",
+          "note": "Keycard post by Kim Maida on building and authorizing an MCP planning agent."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Personal bio",
+          "url": "https://maida.kim/bio/",
+          "note": "Long-form bio covers developer experience leadership, identity/security background, and public speaking."
+        },
+        {
+          "label": "Bluesky profile",
+          "url": "https://bsky.app/profile/did%3Aplc%3Aab5lim4it47t34icevug7lx2",
+          "note": "Public profile states Keycard, agentic AI security, identity/access management, and prior DevRel roles."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?day=4&session=428",
+          "note": "Conference listing confirms her speaker role and Keycard affiliation."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1b6aw8v",
+    "displayName": "Kirill Prokhorov",
+    "headline": "McKinsey partner focused on AI agents, enterprise transformation, and agentic engineering",
+    "company": "McKinsey & Co.",
+    "title": "Partner",
+    "location": "Copenhagen, Denmark",
+    "tags": ["enterprise AI", "AI agents", "digital transformation", "agentic engineering", "consulting"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn profile and posts strongly support current title and AI-agent focus; additional public sources are thinner and mostly McKinsey acknowledgements or reposts.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "McKinsey partner in Copenhagen working on digital and AI transformation. His recent public posts focus on enterprise agentic engineering, AI delivery systems, and the organizational changes needed to get production value from AI tools.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://dk.linkedin.com/in/kprokhorov",
+          "note": "Identifies him as Partner at McKinsey & Company in Copenhagen with an AI-agents transformation focus."
+        },
+        {
+          "label": "LinkedIn partner announcement",
+          "url": "https://www.linkedin.com/posts/kprokhorov_im-delighted-to-share-that-ive-been-elected-activity-7396889997854883841-wkxT",
+          "note": "Public post says he was elected Partner at McKinsey & Co."
+        },
+        {
+          "label": "LinkedIn AI engineering post",
+          "url": "https://www.linkedin.com/posts/kprokhorov_your-ai-tools-are-likely-making-your-software-activity-7471129577889873920-CDGD",
+          "note": "Recent post discusses AI-generated code, engineering systems, quality gates, and feedback loops."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "McKinsey article acknowledgement",
+          "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/a-tale-of-two-agile-paths-how-a-pair-of-operators-set-up-their-organizational-transformations",
+          "note": "McKinsey article thanks Kirill Prokhorov for contributions."
+        },
+        {
+          "label": "LinkedIn Money20/20 post",
+          "url": "https://www.linkedin.com/posts/kprokhorov_money2020-payments-fintech-activity-7465485281270386688-kIhT",
+          "note": "Public post describes McKinsey demos on AI-enabled tech and software delivery."
+        }
+      ]
+    }
+  }
+]

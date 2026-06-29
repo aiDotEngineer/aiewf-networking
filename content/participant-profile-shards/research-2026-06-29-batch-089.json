@@ -1,0 +1,128 @@
+[
+  {
+    "lookupKey": "0kpvfp6",
+    "displayName": "Tony Morris",
+    "headline": "Platform engineer bringing cloud, DevOps, and GenAI systems into enterprise insurance",
+    "company": "Progressive",
+    "title": "Lead GenAI Platform Engineer",
+    "location": "Mayfield Village, US",
+    "tags": ["GenAI platform engineering", "cloud architecture", "DevOps", "enterprise insurance", "platform engineering", "software architecture"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn profile and authored LinkedIn transition post match Tony Morris to Progressive Insurance, cloud/DevOps architecture, and GenAI platform engineering; exact lead seniority comes from the attendee row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Platform engineer at Progressive working at the intersection of GenAI, cloud architecture, DevOps, and enterprise insurance systems. Good match for conversations on hands-on AI platform work inside large regulated organizations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/afmorris", "note": "Public profile identifies Tony Morris as an enterprise architect, cloud and DevOps leader, and principal engineer at Progressive Insurance."},
+        {"label": "LinkedIn transition post", "url": "https://www.linkedin.com/posts/afmorris_this-past-friday-was-my-last-day-at-sherwin-williams-activity-7388284425773645824-rply", "note": "Authored post says he joined Progressive Insurance as a GenAI Platform Engineer after Sherwin-Williams."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Tony/Morris", "note": "Directory result repeats the Progressive Insurance affiliation and cloud/DevOps/principal-engineer positioning."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "16j88hs",
+    "displayName": "Tony Santiago",
+    "headline": "AI and AWS practice leader helping enterprise and retail organizations operationalize AI",
+    "company": "CapNexus",
+    "title": "Managing Director - CapNexus Applied Intelligence",
+    "location": "Miami, US",
+    "tags": ["enterprise AI", "AWS", "retail technology", "AI transformation", "cloud modernization", "consulting leadership"],
+    "confidence": "high",
+    "confidenceNote": "CapNexus leadership page, CapNexus launch release, LinkedIn, and LinkedIn posts consistently identify Tony Santiago as Managing Director and Global Head of AI and AWS Practice at CapNexus in the Miami area.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Managing Director and AI/AWS practice leader at CapNexus, focused on moving enterprise and retail AI programs from pilots into governed, production-ready operations.",
+    "sources": {
+      "primary": [
+        {"label": "CapNexus about page", "url": "https://capnexus.io/about", "note": "Official leadership page lists Tony Santiago as Managing Director, Global Head of AI & AWS Practice."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tonyinthecloud", "note": "Public profile identifies Tony Santiago as Managing Director, AI Practice Leader, ex-AWS, at CapNexus in the Miami-Fort Lauderdale area."},
+        {"label": "CapNexus launch release", "url": "https://capnexus.io/articles/press-release-capnexus-launches-as-a-next-generation-enterprise-and-retail-technology-partner", "note": "Company release says Tony Santiago was appointed Managing Director, Global Head of AI & AWS Practice."}
+      ],
+      "secondary": [
+        {"label": "Pulse 2.0 CapNexus launch coverage", "url": "https://pulse2.com/capnexus-enterprise-and-retail-technology-consulting-firm-launches-with-makira-acquisition/", "note": "Coverage of the CapNexus launch repeats Tony Santiago's Managing Director and Global Head of AI and AWS Practice appointment."},
+        {"label": "CapNexus LinkedIn post", "url": "https://www.linkedin.com/posts/miasaks_plandeliverrun-activity-7453074312753971200-bVV7", "note": "Public post describes Tony Santiago as leading CapNexus's AI and AWS practice and writing about scaling AI beyond pilots."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fx7fk8",
+    "displayName": "Travis Frisinger",
+    "headline": "Agentic AI engineering leader building production-grade AI systems and governance",
+    "company": "8th Light",
+    "title": "Head of Agentic AI",
+    "location": "Erie, US",
+    "tags": ["agentic AI", "production AI systems", "LLMOps", "software architecture", "DevOps", "AI governance"],
+    "confidence": "high",
+    "confidenceNote": "8th Light profile, Sessionize, LinkedIn, and conference pages consistently identify Travis Frisinger as Head of Agentic AI at 8th Light with production AI systems expertise.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Agentic AI at 8th Light, leading engineering and strategy for production AI systems, agentic workflows, context-aware retrieval, LLMOps, and governance practices.",
+    "sources": {
+      "primary": [
+        {"label": "8th Light leadership profile", "url": "https://8thlight.com/leadership/travis-frisinger", "note": "Official profile lists Travis Frisinger as Head of Agentic AI and describes his production AI systems, LLMOps, and architecture work."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/travis-frisinger", "note": "Public profile identifies him as Head of Agentic AI at 8th Light and based in Erie."},
+        {"label": "8th Light agentic AI event page", "url": "https://8thlight.com/chicago-agentic-ai", "note": "Company event page repeats his Head of Agentic AI role and production-grade AI systems focus."}
+      ],
+      "secondary": [
+        {"label": "Sessionize speaker profile", "url": "https://sessionize.com/travis-frisinger/", "note": "Speaker profile lists Travis Frisinger as Head of Agentic AI at 8th Light and describes AI-native engineering systems work."},
+        {"label": "Accelerate Chicago 2026 speaker page", "url": "https://gotochgo.com/accelerate-chicago-2026/speakers/4391/travis-frisinger", "note": "Conference page lists Travis Frisinger as Head of Agentic AI at 8th Light."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0zcczj9",
+    "displayName": "Tristan Wise",
+    "headline": "Principal engineer building product systems for education and collaboration workflows",
+    "company": "Nectir",
+    "title": "Principal Engineer",
+    "location": "Albany, US",
+    "tags": ["software engineering", "product engineering", "education technology", "TypeScript", "collaboration tools", "startup engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn matches Tristan Wise to Nectir, RPI, Albany, and the same GitHub profile; GitHub and RPI pages corroborate the technical identity, though independent current-title sources outside LinkedIn are limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal engineer at Nectir with a software and computer science background. Useful match for conversations on startup engineering, edtech collaboration products, TypeScript, and pragmatic product systems.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tristan-wise", "note": "Public profile identifies Tristan Wise with Nectir, Rensselaer Polytechnic Institute, Albany, and links the twise2 GitHub profile."},
+        {"label": "GitHub profile", "url": "https://github.com/twise2", "note": "GitHub profile for Tristan Wise uses the same 'Happily Hacking' identity and shows public software work."}
+      ],
+      "secondary": [
+        {"label": "RPI athletics profile", "url": "https://rpiathletics.com/sports/mens-tennis/roster/tristan-wise/8667", "note": "Rensselaer Polytechnic Institute profile corroborates the Tristan Wise education connection."},
+        {"label": "Merit Pages RPI profile", "url": "https://meritpages.com/Tristan-N-Wise/2929754", "note": "Verified RPI notices identify Tristan Wise as a computer science student at RPI."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ces1em",
+    "displayName": "Tyler Dorland",
+    "headline": "Data science and AI leader applying advanced analytics to data center operations",
+    "company": "Vantage Data Centers",
+    "title": "Senior Director, Applied Sciences",
+    "location": "Denver, US",
+    "tags": ["data science", "applied AI", "data centers", "analytics leadership", "generative AI", "research engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org consistently match Tyler Dorland to Vantage Data Centers in Denver and senior data science leadership; the public title appears as Senior Director of Data Science rather than the attendee row's Applied Sciences phrasing.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior data science and applied AI leader at Vantage Data Centers, with prior work spanning data science, generative AI logistics, identity modeling, and physics research.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tylerdorland", "note": "Public profile identifies Tyler Dorland as a data science and AI leader at Vantage Data Centers in the Denver area."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/vantage-data-centers/org-chart/tyler-dorland", "note": "Organization profile lists Tyler Dorland as Senior Director, Data Science, NA at Vantage Data Centers in Denver and summarizes AI/data science background."},
+        {"label": "Vantage Data Centers data science team", "url": "https://theorg.com/org/vantage-data-centers/teams/data-science-and-engineering", "note": "Team page lists Tyler Dorland on Vantage Data Centers' Data Science and Engineering team as Senior Director, Data Science, NA."},
+        {"label": "Vantage Data Centers HQ listing", "url": "https://theorg.com/org/vantage-data-centers/offices/hq", "note": "HQ listing places Tyler Dorland at Vantage Data Centers' Denver headquarters."}
+      ]
+    }
+  }
+]

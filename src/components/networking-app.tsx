@@ -10,10 +10,14 @@ import {
   sourceCount,
   type DisplayParticipantProfile,
   type ParticipantProfileOverride,
+  type ProfileSource,
 } from "@/lib/participant-profiles";
+import { speakerScheduleMap, type SpeakerScheduleInfo } from "@/lib/worldsfair-speaker-schedule";
+import { speakerTrackMap } from "@/lib/worldsfair-speaker-tracks";
 import { useAction, useMutation, useQuery } from "convex/react";
 import {
   CalendarDays,
+  Building2,
   Check,
   ChevronRight,
   Clock3,
@@ -22,9 +26,11 @@ import {
   ExternalLink,
   Gauge,
   Import,
+  Lightbulb,
   ListChecks,
   Loader2,
   LockKeyhole,
+  MessageSquareText,
   Menu,
   Monitor,
   QrCode,
@@ -39,7 +45,7 @@ import {
   X,
 } from "lucide-react";
 import QRCode from "qrcode";
-import { FormEvent, ReactNode, useCallback, useEffect, useRef, useState } from "react";
+import { FormEvent, ReactNode, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 
 type Account = {
   _id: Id<"accounts">;
@@ -140,10 +146,35 @@ type View = "directory" | "profile" | "requests" | "schedule" | "admin" | "displ
 type RunAction = (task: () => Promise<unknown>, success: string) => Promise<boolean>;
 type RequestMode = "slot" | "interest";
 type DirectorySort = "recommended" | "company" | "name" | "sources";
+type DirectoryViewMode = "company" | "people";
 type ProfileFilter = "all" | "researched" | "sourced" | "pending";
 type MatchSignal = {
   reasons: string[];
   score: number;
+};
+type DirectoryItem = {
+  match: MatchSignal;
+  participant: Account;
+  profile: DisplayParticipantProfile | null;
+  rank: number;
+  searchText: string;
+  tracks: TrackSignal[];
+};
+type ActionReadiness = {
+  detail: string;
+  ready: boolean;
+  title: string;
+};
+type TrackSignal = {
+  keyword: string;
+  name: string;
+};
+type CompanyGroup = {
+  company: string;
+  description: string;
+  items: DirectoryItem[];
+  sourceTotal: number;
+  tracks: string[];
 };
 
 const sessionStorageKey = "aiewf-networking-session";
@@ -214,6 +245,19 @@ function eventDateEntries(settings: Settings) {
   return [settings.startDate, settings.endDate]
     .filter((date, index, dates) => dates.indexOf(date) === index)
     .map((date) => [date, dateLabels[date] ?? date] as const);
+}
+
+function editedAtLabel(timestamp: number) {
+  return new Intl.DateTimeFormat("en-US", {
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    month: "short",
+  }).format(new Date(timestamp));
+}
+
+function sourceLines(sources: ProfileSource[]) {
+  return sources.map((source) => [source.label, source.url, source.note].join(" | ")).join("\n");
 }
 
 function userFacingError(error: unknown) {
@@ -334,6 +378,111 @@ const genericMatchWords = new Set([
   "software",
 ]);
 
+const lowValueDiscoveryTags = new Set([
+  "astro",
+  "dev",
+  "developer",
+  "developers",
+  "development",
+  "devrel",
+  "developer relations",
+  "developer experience",
+  "web",
+  "web development",
+]);
+
+const trackCatalog: Array<{ keywords: string[]; name: string }> = [
+  { name: "Software Factories", keywords: ["software factory", "software factories", "coding agent", "codegen", "ai coding", "sdlc", "developer platform", "dev tools", "github", "warp", "factory"] },
+  { name: "Claws & Personal Agents", keywords: ["personal agent", "assistant", "agentic assistant", "claws"] },
+  { name: "Vision & OCR", keywords: ["vision", "ocr", "document ai", "image understanding", "multimodal", "computer vision"] },
+  { name: "Search & Retrieval", keywords: ["search", "retrieval", "rag", "vector", "embedding", "semantic search", "rerank"] },
+  { name: "Security", keywords: ["security", "secure", "compliance", "risk", "governance", "privacy", "trust", "safety"] },
+  { name: "Voice & Realtime AI", keywords: ["voice", "realtime", "real-time", "speech", "audio", "conversation ai"] },
+  { name: "LLM Recsys", keywords: ["recommendation", "recsys", "personalization", "ranking"] },
+  { name: "Forward Deployed Engineering", keywords: ["forward deployed", "fde", "field engineering", "solutions engineering", "customer engineering"] },
+  { name: "Data Quality", keywords: ["data quality", "data engineering", "data platform", "etl", "observability", "data governance"] },
+  { name: "AI-Native Enterprises", keywords: ["enterprise ai", "ai transformation", "enterprise", "workflow automation", "business process"] },
+  { name: "AI Architects", keywords: ["architecture", "architect", "workflow", "tokenmaxxing", "ai factory", "ai factories"] },
+  { name: "Sandbox & Platform Engineering", keywords: ["sandbox", "platform engineering", "infrastructure", "cloud", "kubernetes", "runtime"] },
+  { name: "Robotics & World Models", keywords: ["robotics", "robot", "world model", "simulation", "autonomous"] },
+  { name: "Memory & Continual Learning", keywords: ["memory", "continual learning", "long-term memory", "knowledge graph"] },
+  { name: "Evals", keywords: ["eval", "evals", "evaluation", "benchmark", "testing", "quality", "tracing", "trace"] },
+  { name: "Design Engineering", keywords: ["design engineering", "ux", "product design", "design system", "prototype"] },
+  { name: "Computer Use", keywords: ["computer use", "browser automation", "desktop automation", "operator", "ui automation"] },
+  { name: "Context Engineering", keywords: ["context engineering", "prompt", "prompting", "context window", "agent context"] },
+  { name: "Posttraining & Midtraining", keywords: ["posttraining", "post-training", "midtraining", "mid-training", "fine-tuning", "rlhf", "pre-training", "training"] },
+  { name: "Generative Media", keywords: ["generative media", "video", "image generation", "media generation", "creative ai"] },
+  { name: "Agentic Commerce", keywords: ["commerce", "shopping", "payments", "agentic commerce", "marketplace"] },
+  { name: "AI in Finance", keywords: ["finance", "insurance", "bank", "trading", "fintech", "risk model"] },
+  { name: "Local AI", keywords: ["local ai", "edge ai", "on-device", "offline", "ollama", "llama.cpp"] },
+  { name: "Graphs", keywords: ["graph", "graphs", "knowledge graph", "neo4j"] },
+  { name: "AI in GTM", keywords: ["gtm", "sales", "marketing", "growth", "customer success", "revenue"] },
+  { name: "AI in Healthcare", keywords: ["healthcare", "clinical", "medical", "pharma", "biotech", "patient"] },
+  { name: "Agentic Engineering", keywords: ["agentic engineering", "agent", "agents", "multi-agent", "agent orchestration", "workflow agent"] },
+  { name: "Inference", keywords: ["inference", "serving", "gpu", "latency", "throughput", "model serving"] },
+  { name: "Autoresearch", keywords: ["research agent", "autoresearch", "scientific discovery", "research automation"] },
+  { name: "Harness Engineering", keywords: ["harness", "agent harness", "workflow harness", "orchestration"] },
+  { name: "CTO Circle", keywords: ["cto", "vp engineering", "engineering leadership", "technical leadership"] },
+];
+
+const allTrackNames = [
+  ...trackCatalog.map((track) => track.name),
+  ...Object.values(speakerTrackMap).flat(),
+].filter((track, index, tracks) => tracks.indexOf(track) === index).sort((a, b) => a.localeCompare(b));
+
+const strategicCompanies = new Set([
+  "adobe",
+  "amazon",
+  "aws",
+  "apple",
+  "capital one",
+  "coreweave",
+  "google",
+  "google deepmind",
+  "ibm",
+  "jpmorgan chase",
+  "meta",
+  "microsoft",
+  "nvidia",
+  "openai",
+  "oracle",
+  "salesforce",
+  "stripe",
+]);
+
+const aiNativeCompanies = new Set([
+  "anthropic",
+  "anysphere",
+  "arcee ai",
+  "cartesia ai",
+  "cognition",
+  "cursor",
+  "decagon",
+  "exa",
+  "factory",
+  "firecrawl",
+  "harvey",
+  "hugging face",
+  "langchain",
+  "mistral ai",
+  "perplexity",
+  "replit",
+  "runway",
+  "together ai",
+  "vercel",
+  "warp",
+  "weights & biases",
+]);
+
+const vendorCompanyHints = [
+  "agency",
+  "consulting",
+  "consultant",
+  "services",
+  "solutions",
+  "systems integrator",
+];
+
 function matchTokens(...values: Array<string | string[] | undefined>) {
   return new Set(
     values
@@ -342,8 +491,114 @@ function matchTokens(...values: Array<string | string[] | undefined>) {
       .toLowerCase()
       .split(/[^a-z0-9]+/)
       .map((token) => token.trim())
-      .filter((token) => token.length > 2 && !genericMatchWords.has(token)),
+      .filter((token) => token.length > 2 && !genericMatchWords.has(token) && !lowValueDiscoveryTags.has(token)),
   );
+}
+
+function normalizeDiscoveryText(...values: Array<string | string[] | undefined | null>) {
+  return values
+    .flatMap((value) => (Array.isArray(value) ? value : [value ?? ""]))
+    .join(" ")
+    .toLowerCase()
+    .replaceAll("&", " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizedPersonKey(name: string) {
+  return name
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function trackSignals(...values: Array<string | string[] | undefined | null>): TrackSignal[] {
+  const text = ` ${normalizeDiscoveryText(...values)} `;
+  const matches: TrackSignal[] = [];
+  for (const track of trackCatalog) {
+    const keyword = track.keywords.find((candidate) => text.includes(` ${candidate.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `));
+    if (keyword) matches.push({ keyword, name: track.name });
+  }
+  return matches;
+}
+
+function participantTracks(participant: Account, profile: DisplayParticipantProfile | null) {
+  const officialSpeakerTracks = speakerTrackMap[normalizedPersonKey(participant.displayName)] ?? [];
+  const inferredTracks = trackSignals(
+    participant.title,
+    participant.company,
+    participant.networkingIntent,
+    participant.topics,
+    profile?.displayHeadline,
+    profile?.displayBioMarkdown,
+    profile?.displayTags,
+    profile?.sources.primary.map((source) => `${source.label} ${source.note}`),
+    profile?.sources.secondary.map((source) => `${source.label} ${source.note}`),
+  );
+  return [
+    ...officialSpeakerTracks.map((name) => ({ keyword: "speaker schedule", name })),
+    ...inferredTracks.filter((track) => !officialSpeakerTracks.includes(track.name)),
+  ];
+}
+
+function participantSpeakerSchedule(participant: Account) {
+  return speakerScheduleMap[normalizedPersonKey(participant.displayName)] ?? null;
+}
+
+function speakerScheduleLabel(schedule: SpeakerScheduleInfo) {
+  const labels = schedule.dateLabels.filter(Boolean);
+  if (labels.length === 0) return "speaking day TBD";
+  if (labels.length === 1) return `speaks ${labels[0]}`;
+  return `speaks ${labels.join(", ")}`;
+}
+
+function hasLowValueDiscoveryFocus(participant: Account, profile: DisplayParticipantProfile | null) {
+  const text = normalizeDiscoveryText(
+    participant.title,
+    participant.networkingIntent,
+    participant.topics,
+    profile?.displayHeadline,
+    profile?.displayTags,
+  );
+  return [
+    "developer relations",
+    "developer experience",
+    "web development",
+    "devrel",
+    "astro",
+  ].some((term) => text.includes(term));
+}
+
+function companyKey(company: string) {
+  return normalizeDiscoveryText(company);
+}
+
+function privateDirectoryRank(
+  participant: Account,
+  profile: DisplayParticipantProfile | null,
+  match: MatchSignal,
+) {
+  const company = companyKey(participant.company || profile?.company || "");
+  const title = normalizeDiscoveryText(participant.title || profile?.title || "");
+  const companyText = normalizeDiscoveryText(participant.company || profile?.company || "");
+  let rank = match.score;
+
+  if (/\b(ceo|chief executive|founder|cofounder|co founder|founding partner|managing partner)\b/.test(title)) rank += 24;
+  if (/\b(cto|cio|ciso|chief technology|chief product|vp|vice president|head of|general manager)\b/.test(title)) rank += 14;
+  if (/\b(principal|distinguished|staff|architect|director)\b/.test(title)) rank += 7;
+  if (participant.ticketCategory === "speaker") rank += 8;
+  if (participant.ticketCategory === "leadership") rank += 5;
+  if (strategicCompanies.has(company)) rank += 18;
+  if (aiNativeCompanies.has(company)) rank += 16;
+  if (profile && sourceCount(profile) >= 5) rank += 5;
+  if (profile?.confidence === "high") rank += 3;
+  if (vendorCompanyHints.some((hint) => companyText.includes(hint))) rank -= 8;
+  if (hasLowValueDiscoveryFocus(participant, profile)) rank -= 12;
+
+  return rank;
 }
 
 function participantMatch(
@@ -370,10 +625,27 @@ function participantMatch(
     participantProfile?.displayTags,
   );
   const overlaps = [...actorTokens].filter((token) => participantTokens.has(token)).slice(0, 4);
+  const actorTrackNames = new Set(trackSignals(
+    actor.title,
+    actor.company,
+    actor.networkingIntent,
+    actor.topics,
+    actorProfile?.displayHeadline,
+    actorProfile?.displayBioMarkdown,
+    actorProfile?.displayTags,
+  ).map((track) => track.name));
+  const participantTrackNames = participantTracks(participant, participantProfile).map((track) => track.name);
+  const trackOverlaps = actorTrackNames.size
+    ? participantTrackNames.filter((track) => actorTrackNames.has(track)).slice(0, 3)
+    : participantTrackNames.slice(0, 2);
   const reasons: string[] = [];
   let score = 0;
+  if (trackOverlaps.length) {
+    score += trackOverlaps.length * 12;
+    reasons.push(`tracks: ${trackOverlaps.join(", ")}`);
+  }
   if (overlaps.length) {
-    score += overlaps.length * 8;
+    score += overlaps.length * 3;
     reasons.push(`shared: ${overlaps.join(", ")}`);
   }
   if (participantProfile) {
@@ -388,7 +660,97 @@ function participantMatch(
   } else if (participant.ticketCategory === "leadership") {
     score += 1;
   }
+  if (hasLowValueDiscoveryFocus(participant, participantProfile)) {
+    score = Math.max(0, score - 16);
+  }
   return { score, reasons: reasons.slice(0, 3) };
+}
+
+function meetingReasonSuggestions(
+  actor: Account,
+  participant: Account,
+  actorProfile: DisplayParticipantProfile | null,
+  participantProfile: DisplayParticipantProfile | null,
+) {
+  const actorTokens = matchTokens(actor.networkingIntent, actor.topics, actorProfile?.displayTags);
+  const participantTokens = matchTokens(
+    participant.networkingIntent,
+    participant.topics,
+    participantProfile?.displayHeadline,
+    participantProfile?.displayTags,
+  );
+  const shared = [...actorTokens].filter((token) => participantTokens.has(token)).slice(0, 2);
+  const topic = shared[0] ?? participantProfile?.displayTags[0] ?? participant.topics[0] ?? "AI work";
+  return [
+    `Would like to compare notes on ${topic}.`,
+    `Your work at ${participant.company || "your company"} looks relevant to what I am building.`,
+    `Interested in a quick intro around ${participantProfile?.displayHeadline || participant.title || "your current work"}.`,
+  ];
+}
+
+function conversationStarters(
+  actor: Account,
+  participant: Account,
+  actorProfile: DisplayParticipantProfile | null,
+  participantProfile: DisplayParticipantProfile | null,
+) {
+  const suggestions = meetingReasonSuggestions(actor, participant, actorProfile, participantProfile);
+  const sourceLead = participantProfile?.sources.primary[0] ?? participantProfile?.sources.secondary[0] ?? null;
+  return [
+    suggestions[0],
+    sourceLead ? `Ask about ${sourceLead.label}: ${sourceLead.note}` : suggestions[1],
+    participantProfile?.displayTags[0]
+      ? `Compare notes on ${participantProfile.displayTags.slice(0, 2).join(" and ")}.`
+      : suggestions[2],
+  ].filter((item, index, items) => item && items.indexOf(item) === index).slice(0, 3);
+}
+
+function actionReadiness({
+  atCap,
+  availableSlotCount,
+  openTarget,
+  reason,
+  requestMode,
+}: {
+  atCap: boolean;
+  availableSlotCount: number;
+  openTarget: boolean;
+  reason: string;
+  requestMode: RequestMode;
+}): ActionReadiness {
+  if (openTarget) {
+    return {
+      detail: "You already have an open request or interest with this participant.",
+      ready: false,
+      title: "Already queued",
+    };
+  }
+  if (reason.trim().length < 8) {
+    return {
+      detail: "Use a suggested note or write one specific sentence before sending.",
+      ready: false,
+      title: "Needs a reason",
+    };
+  }
+  if (requestMode === "slot" && atCap) {
+    return {
+      detail: "Timed request cap reached for this day. Register interest instead.",
+      ready: false,
+      title: "Use interest",
+    };
+  }
+  if (requestMode === "slot" && availableSlotCount === 0) {
+    return {
+      detail: "They have no open slots on this day. Register interest and the app can schedule later.",
+      ready: false,
+      title: "No open slot",
+    };
+  }
+  return {
+    detail: requestMode === "interest" ? "Interest is ready to register." : "Timed request is ready to send.",
+    ready: true,
+    title: "Ready",
+  };
 }
 
 export function NetworkingApp() {
@@ -640,6 +1002,8 @@ export function NetworkingApp() {
                 participants={participants}
                 previewMode={adminViewingAsParticipant}
                 interests={data.interests}
+                onGoToProfile={() => setActiveView("profile")}
+                onGoToRequests={() => setActiveView("requests")}
                 requests={data.requests}
                 runAction={runAction}
                 sessionToken={sessionToken}
@@ -1058,6 +1422,8 @@ function DirectoryView({
   actionPending,
   actor,
   interests,
+  onGoToProfile,
+  onGoToRequests,
   participants,
   previewMode,
   requests,
@@ -1068,6 +1434,8 @@ function DirectoryView({
   actionPending: boolean;
   actor: Account;
   interests: MeetingInterest[];
+  onGoToProfile: () => void;
+  onGoToRequests: () => void;
   participants: Account[];
   previewMode?: boolean;
   requests: MeetingRequest[];
@@ -1079,11 +1447,18 @@ function DirectoryView({
   const createPeerRequest = useMutation(api.networking.createPeerRequest);
   const [query, setQuery] = useState("");
   const [ticketFilter, setTicketFilter] = useState("all");
+  const [profileFilter, setProfileFilter] = useState<ProfileFilter>("all");
+  const [sortMode, setSortMode] = useState<DirectorySort>("recommended");
+  const [viewMode, setViewMode] = useState<DirectoryViewMode>("people");
+  const [trackFilter, setTrackFilter] = useState("all");
   const [date, setDate] = useState(settings.startDate);
   const [requestMode, setRequestMode] = useState<RequestMode>("slot");
   const [selectedId, setSelectedId] = useState<Id<"accounts"> | null>(null);
+  const [shortlistIds, setShortlistIds] = useState<Array<Id<"accounts">>>([]);
   const [selectedSlot, setSelectedSlot] = useState<number | "">("");
   const [reason, setReason] = useState("");
+  const deferredQuery = useDeferredValue(query);
+  const [lastAction, setLastAction] = useState<{ mode: RequestMode; name: string } | null>(null);
   const activeOutgoingForDay = requests.filter(
     (request) =>
       request.requesterAccountId === actor._id &&
@@ -1100,31 +1475,60 @@ function DirectoryView({
     ...activeOutgoingForDay.map((request) => request.targetAccountId),
     ...activeOutgoingInterests.map((interest) => interest.targetAccountId),
   ]);
-  const normalizedQuery = query.trim().toLowerCase();
-  const filtered = participants
+  const normalizedQuery = deferredQuery.trim().toLowerCase();
+  const actorProfile = useMemo(() => participantProfileFor(actor), [actor]);
+  const directoryItems = useMemo(() => participants
     .filter((participant) => participant.role === "participant" && participant._id !== actor._id)
     .filter((participant) => participant.signedUp && participant.directoryOptIn)
-    .filter((participant) => ticketFilter === "all" || participant.ticketCategory === ticketFilter)
-    .filter((participant) => {
-      if (!normalizedQuery) return true;
+    .map((participant) => {
       const profile = participantProfileFor(participant);
-      const haystack = [
-        participant.displayName,
-        participant.company,
-        participant.title,
-        participant.networkingIntent,
-        participant.topics.join(" "),
-        participant.city,
-        participant.country,
-        profile ? profileSearchText(profile) : "",
-      ].join(" ").toLowerCase();
-      return haystack.includes(normalizedQuery);
+      const tracks = participantTracks(participant, profile);
+      const match = participantMatch(actor, participant, actorProfile, profile);
+      return {
+        match,
+        participant,
+        profile,
+        rank: privateDirectoryRank(participant, profile, match),
+        searchText: [
+          participant.displayName,
+          participant.company,
+          participant.title,
+          participant.networkingIntent,
+          participant.topics.join(" "),
+          tracks.map((track) => track.name).join(" "),
+          participant.city,
+          participant.country,
+          profile ? profileSearchText(profile) : "",
+        ].join(" ").toLowerCase(),
+        tracks,
+      };
+    }), [actor, actorProfile, participants]);
+  const filtered: DirectoryItem[] = directoryItems
+    .filter((item) => ticketFilter === "all" || item.participant.ticketCategory === ticketFilter)
+    .filter((item) => {
+      if (profileFilter === "researched") return Boolean(item.profile);
+      if (profileFilter === "sourced") return Boolean(item.profile && sourceCount(item.profile) >= 2);
+      if (profileFilter === "pending") return !item.profile;
+      return true;
     })
-    .sort((a, b) => a.company.localeCompare(b.company) || a.displayName.localeCompare(b.displayName));
-  const selected =
-    filtered.find((participant) => participant._id === selectedId) ??
-    filtered.find((participant) => participant._id !== actor._id) ??
+    .filter((item) => trackFilter === "all" || item.tracks.some((track) => track.name === trackFilter))
+    .filter((item) => !normalizedQuery || item.searchText.includes(normalizedQuery))
+    .sort((a, b) => {
+      if (sortMode === "recommended") {
+        return b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName);
+      }
+      if (sortMode === "sources") {
+        const sourceDelta = (b.profile ? sourceCount(b.profile) : 0) - (a.profile ? sourceCount(a.profile) : 0);
+        return sourceDelta || b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName);
+      }
+      if (sortMode === "name") return a.participant.displayName.localeCompare(b.participant.displayName);
+      return a.participant.company.localeCompare(b.participant.company) || a.participant.displayName.localeCompare(b.participant.displayName);
+    });
+  const selectedItem =
+    filtered.find((item) => item.participant._id === selectedId) ??
+    filtered.find((item) => item.participant._id !== actor._id) ??
     null;
+  const selected = selectedItem?.participant ?? null;
   const availability = useQuery(
     api.networking.getParticipantAvailability,
     selected ? { accountId: selected._id, date } : "skip",
@@ -1135,6 +1539,103 @@ function DirectoryView({
     selectedSlot !== "" && availableSlots.some((slot) => slot.startMinute === selectedSlot)
       ? selectedSlot
       : fallbackSlot;
+  const quickSlots = availableSlots.slice(0, 6);
+  const selectedProfile = selectedItem?.profile ?? null;
+  const selectedMatch = selectedItem?.match ?? null;
+  const selectedOpenTarget = Boolean(selected && openTargetIds.has(selected._id));
+  const reasonSuggestions = selected
+    ? meetingReasonSuggestions(actor, selected, actorProfile, selectedProfile)
+    : [];
+  const starterSuggestions = selected
+    ? conversationStarters(actor, selected, actorProfile, selectedProfile)
+    : [];
+  const readiness = actionReadiness({
+    atCap,
+    availableSlotCount: availableSlots.length,
+    openTarget: selectedOpenTarget,
+    reason,
+    requestMode,
+  });
+  const starterPicks = filtered
+    .filter((item) => item.profile && !openTargetIds.has(item.participant._id))
+    .filter((item) => normalizedQuery || !hasLowValueDiscoveryFocus(item.participant, item.profile))
+    .sort((a, b) => {
+      const sourceDelta = (b.profile ? sourceCount(b.profile) : 0) - (a.profile ? sourceCount(a.profile) : 0);
+      return b.rank - a.rank || sourceDelta || a.participant.displayName.localeCompare(b.participant.displayName);
+    })
+    .slice(0, 5);
+  const shortlist = shortlistIds
+    .map((id) => filtered.find((item) => item.participant._id === id))
+    .filter((item): item is DirectoryItem => Boolean(item))
+    .slice(0, 4);
+  const companyGroups = companyDirectoryGroups(filtered);
+  const engagementStats = {
+    researched: filtered.filter((item) => item.profile).length,
+    pending: filtered.filter((item) => !item.profile).length,
+    sourceRich: filtered.filter((item) => item.profile && sourceCount(item.profile) >= 2).length,
+    greatLeads: filtered.filter((item) => item.rank >= 18 || (item.profile && sourceCount(item.profile) >= 3)).length,
+    openActions: activeOutgoingForDay.length + activeOutgoingInterests.length,
+  };
+
+  function resetFilters() {
+    setQuery("");
+    setTicketFilter("all");
+    setProfileFilter("all");
+    setSortMode("recommended");
+    setTrackFilter("all");
+  }
+
+  function jumpToCompany(company: string) {
+    const id = companyAnchorId(company);
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function selectParticipant(participant: Account, options?: { primeInterest?: boolean; primeReason?: boolean }) {
+    const profile = participantProfileFor(participant);
+    setSelectedId(participant._id);
+    setSelectedSlot("");
+    if (options?.primeInterest) {
+      setRequestMode("interest");
+    }
+    if (options?.primeInterest || options?.primeReason) {
+      setReason((current) =>
+        current.trim() ? current : meetingReasonSuggestions(actor, participant, actorProfile, profile)[0],
+      );
+    }
+  }
+
+  function quickRegisterInterest(participant: Account) {
+    const profile = participantProfileFor(participant);
+    const suggestions = meetingReasonSuggestions(actor, participant, actorProfile, profile);
+    const quickReason = reason.trim() || suggestions[0] || `Interested in ${participant.displayName}'s work.`;
+    selectParticipant(participant, { primeInterest: true });
+    setReason(quickReason);
+    if (actionPending || previewMode || !actor.profileComplete || !actor.directoryOptIn || openTargetIds.has(participant._id)) return;
+    void runAction(
+      () =>
+        createMeetingInterest({
+          sessionToken,
+          targetAccountId: participant._id,
+          reason: quickReason,
+          context: `${actor.title}, ${actor.company}`,
+        }),
+      `Interest registered with ${participant.displayName}.`,
+    ).then((completed) => {
+      if (completed) {
+        setLastAction({ mode: "interest", name: participant.displayName });
+        setReason("");
+      }
+    });
+  }
+
+  function toggleShortlist(participant: Account) {
+    setShortlistIds((ids) =>
+      ids.includes(participant._id)
+        ? ids.filter((id) => id !== participant._id)
+        : [participant._id, ...ids].slice(0, 4),
+    );
+    selectParticipant(participant, { primeReason: true });
+  }
 
   function submitRequest(event: FormEvent) {
     event.preventDefault();
@@ -1166,7 +1667,10 @@ function DirectoryView({
         ? `Interest registered with ${selected.displayName}.`
         : `Request sent to ${selected.displayName}.`,
     ).then((completed) => {
-      if (completed) setReason("");
+      if (completed) {
+        setLastAction({ mode: requestMode, name: selected.displayName });
+        setReason("");
+      }
     });
   }
 
@@ -1183,22 +1687,80 @@ function DirectoryView({
   }
 
   return (
-    <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_420px]">
-      <section className="border border-white/10 bg-[#101010]">
+    <div className="grid min-w-0 gap-4 xl:grid-cols-[minmax(0,1fr)_420px]">
+      <section className="min-w-0 border border-white/10 bg-[#101010]">
         <SectionHeader icon={<Search size={17} />} title="Participant directory" detail={`${filtered.length} visible`} />
         {previewMode && (
           <div className="border-b border-[#f8e18e]/25 bg-[#f8e18e]/10 px-4 py-3 text-sm leading-6 text-[#f8e18e]">
             Viewing the participant directory as an admin. Meeting actions are disabled in preview mode.
           </div>
         )}
-        <div className="grid gap-3 border-b border-white/10 p-4 md:grid-cols-[minmax(0,1fr)_180px_160px]">
+        {lastAction && (
+          <div className="grid gap-3 border-b border-emerald-300/20 bg-emerald-300/10 p-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
+            <div>
+              <div className="text-sm font-semibold text-emerald-100">
+                {lastAction.mode === "interest" ? "Interest registered" : "Request sent"} with {lastAction.name}
+              </div>
+              <div className="mt-1 text-xs leading-5 text-emerald-100/70">
+                Most people only need one or two strong meetings. Pick one more high-fit person or review your open requests.
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <button className="button-quiet h-8 min-h-8 px-2 text-xs" onClick={() => setLastAction(null)} type="button">
+                Pick one more
+              </button>
+              <button className="button-quiet h-8 min-h-8 px-2 text-xs" onClick={onGoToRequests} type="button">
+                View requests
+              </button>
+            </div>
+          </div>
+        )}
+        {(!actor.profileComplete || !actor.directoryOptIn) && (
+          <ColdStartBanner
+            actor={actor}
+            onGoToProfile={onGoToProfile}
+          />
+        )}
+        <div className="border-b border-white/10 px-4 py-3">
+          <div className="inline-grid grid-cols-2 border border-white/10 bg-black/30 p-1">
+            {([
+              ["company", "Company first", "Browse organizations and what they do"],
+              ["people", "People first", "Browse individual attendees"],
+            ] as const).map(([mode, label, description]) => (
+              <button
+                aria-pressed={viewMode === mode}
+                className={cn(
+                  "min-h-10 px-3 text-left text-xs font-semibold uppercase tracking-[0.12em] transition sm:min-w-44",
+                  viewMode === mode
+                    ? "bg-[#f8e18e] text-black"
+                    : "text-white/55 hover:bg-white/[0.06] hover:text-white",
+                )}
+                key={mode}
+                onClick={() => setViewMode(mode)}
+                title={description}
+                type="button"
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="grid gap-3 border-b border-white/10 p-4 md:grid-cols-[minmax(0,1fr)_150px_150px_150px_150px] xl:grid-cols-[minmax(0,1fr)_170px_150px_150px_150px_150px]">
           <Field label="Search">
             <input
               className="input"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Company, name, title, intent..."
+              placeholder="Company, track, name, product..."
             />
+          </Field>
+          <Field label="Track">
+            <select className="input" value={trackFilter} onChange={(event) => setTrackFilter(event.target.value)}>
+              <option value="all">All tracks</option>
+              {allTrackNames.map((track) => (
+                <option key={track} value={track}>{track}</option>
+              ))}
+            </select>
           </Field>
           <Field label="Ticket">
             <select className="input" value={ticketFilter} onChange={(event) => setTicketFilter(event.target.value)}>
@@ -1209,6 +1771,22 @@ function DirectoryView({
               <option value="other">Other</option>
             </select>
           </Field>
+          <Field label="Profile">
+            <select className="input" value={profileFilter} onChange={(event) => setProfileFilter(event.target.value as ProfileFilter)}>
+              <option value="all">All profiles</option>
+              <option value="sourced">2+ sources</option>
+              <option value="researched">Researched</option>
+              <option value="pending">Needs research</option>
+            </select>
+          </Field>
+          <Field label="Sort">
+            <select className="input" value={sortMode} onChange={(event) => setSortMode(event.target.value as DirectorySort)}>
+              <option value="recommended">Recommended</option>
+              <option value="sources">Most sourced</option>
+              <option value="company">Company</option>
+              <option value="name">Name</option>
+            </select>
+          </Field>
           <Field label="Date">
             <select className="input" value={date} onChange={(event) => setDate(event.target.value)}>
               {eventDateEntries(settings).map(([value, label]) => (
@@ -1217,24 +1795,112 @@ function DirectoryView({
             </select>
           </Field>
         </div>
+        <div className="grid gap-3 border-b border-white/10 px-4 py-3 md:grid-cols-[minmax(0,1fr)_220px_auto] md:items-end">
+          <div className="text-xs leading-5 text-white/42">
+            Tracks come from the World Fair speaker schedule when available, then profile/source inference for non-speakers.
+          </div>
+          {viewMode === "company" ? (
+            <Field label="Jump to company">
+              <select
+                className="input"
+                onChange={(event) => {
+                  if (event.target.value) jumpToCompany(event.target.value);
+                  event.target.value = "";
+                }}
+              >
+                <option value="">Select company...</option>
+                {companyGroups.map((group) => (
+                  <option key={group.company} value={group.company}>{group.company}</option>
+                ))}
+              </select>
+            </Field>
+          ) : <div />}
+          {(query || trackFilter !== "all" || ticketFilter !== "all" || profileFilter !== "all" || sortMode !== "recommended") && (
+            <button className="button-quiet h-8 min-h-8 px-2 text-xs" onClick={resetFilters} type="button">
+              <RotateCcw size={13} /> Reset
+            </button>
+          )}
+        </div>
+        <DiscoverySummary
+          stats={engagementStats}
+          onShowSourced={() => {
+            setProfileFilter("sourced");
+            setSortMode("recommended");
+          }}
+          onShowPending={() => {
+            setProfileFilter("pending");
+            setSortMode("name");
+          }}
+          onShowRecommended={() => {
+            setProfileFilter("all");
+            setSortMode("recommended");
+            setQuery("");
+          }}
+          onReviewActions={onGoToRequests}
+        />
+        {starterPicks.length > 0 && (
+          <StarterPicks
+            picks={starterPicks}
+            selectedId={selected?._id ?? null}
+            onSelect={(participant) => selectParticipant(participant, { primeInterest: true })}
+          />
+        )}
+        {shortlist.length > 0 && (
+          <ShortlistTray
+            items={shortlist}
+            onClear={() => setShortlistIds([])}
+            onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
+            selectedId={selected?._id ?? null}
+          />
+        )}
+        <div className="flex items-center justify-between border-b border-white/10 bg-[#0b0b0b] px-3 py-2">
+          <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/50">
+            Directory results · {viewMode === "company" ? `${companyGroups.length} companies` : `${filtered.length} people`}
+          </div>
+          <div className="text-[11px] text-white/35">
+            Sorted by {sortMode === "recommended" ? "recommended order" : sortMode}
+          </div>
+        </div>
         <div className="grid gap-1.5 p-2">
           {filtered.length === 0 && (
-            <div>
+            <div className="border border-white/10 bg-black/25 p-6">
               <EmptyState title="No matching participants" detail="Try a broader company, name, or topic search." />
+              <div className="mt-4 flex justify-center">
+                <button className="button-quiet" onClick={resetFilters} type="button">
+                  <RotateCcw size={15} /> Show recommended people
+                </button>
+              </div>
             </div>
           )}
-          {filtered.map((participant) => (
-            <ParticipantCard
-              key={participant._id}
-              activeRequestOpen={openTargetIds.has(participant._id)}
-              isSelected={selected?._id === participant._id}
-              participant={participant}
-              onClick={() => {
-                setSelectedId(participant._id);
-                setSelectedSlot("");
-              }}
-            />
-          ))}
+          {viewMode === "company"
+            ? companyGroups.map((group) => (
+                <CompanyGroupCard
+                  key={group.company}
+                  activeTargetIds={openTargetIds}
+                  disabled={actionPending || Boolean(previewMode)}
+                  group={group}
+                  onQuickInterest={quickRegisterInterest}
+                  onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
+                  onShortlist={toggleShortlist}
+                  selectedId={selected?._id ?? null}
+                  shortlistIds={shortlistIds}
+                />
+              ))
+            : filtered.map(({ match, participant, profile }) => (
+                <ParticipantCard
+                  key={participant._id}
+                  activeRequestOpen={openTargetIds.has(participant._id)}
+                  disabled={actionPending || Boolean(previewMode)}
+                  isSelected={selected?._id === participant._id}
+                  match={match}
+                  onShortlist={() => toggleShortlist(participant)}
+                  onQuickInterest={() => quickRegisterInterest(participant)}
+                  participant={participant}
+                  profile={profile}
+                  shortlisted={shortlistIds.includes(participant._id)}
+                  onClick={() => selectParticipant(participant, { primeReason: true })}
+                />
+              ))}
         </div>
       </section>
 
@@ -1246,6 +1912,19 @@ function DirectoryView({
         ) : selected ? (
           <div className="grid gap-3">
             <ParticipantDetailPanel participant={selected} />
+            <MeetingDecisionPanel
+              match={selectedMatch}
+              participant={selected}
+              profile={selectedProfile}
+              readiness={readiness}
+              reasonSuggestions={reasonSuggestions}
+              starterSuggestions={starterSuggestions}
+              onRegisterInterest={() => {
+                setRequestMode("interest");
+                setReason((current) => current.trim() || reasonSuggestions[0] || "");
+              }}
+              onUseReason={(suggestion) => setReason(suggestion)}
+            />
             <div className="border-t border-white/10 pt-3">
               <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
                 <Send size={16} /> Request meeting
@@ -1253,6 +1932,16 @@ function DirectoryView({
               <div className="mt-1 text-xs text-white/45">
                 {activeOutgoingForDay.length}/{settings.outgoingRequestCapPerDay} timed requests for {dateLabels[date]}
                 {activeOutgoingInterests.length ? ` · ${activeOutgoingInterests.length} open interests` : ""}.
+              </div>
+              <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                <div className="border border-white/10 bg-black/25 p-2 text-xs leading-5 text-white/55">
+                  <span className="font-semibold text-white/75">{availableSlots.length}</span> open slots on {dateLabels[date]}.
+                </div>
+                <div className="border border-white/10 bg-black/25 p-2 text-xs leading-5 text-white/55">
+                  {effectiveSelectedSlot === ""
+                    ? "No specific time selected."
+                    : `Fastest open time: ${minuteLabel(effectiveSelectedSlot)}.`}
+                </div>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2">
@@ -1292,12 +1981,45 @@ function DirectoryView({
                     <option value="">No open slots</option>
                   )}
                 </select>
+                {quickSlots.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {quickSlots.map((slot) => (
+                      <button
+                        className={cn(
+                          "button-quiet px-2 py-1 text-xs",
+                          effectiveSelectedSlot === slot.startMinute && "border-[#f8e18e]/45 bg-[#f8e18e]/10 text-[#f8e18e]",
+                        )}
+                        key={slot._id}
+                        onClick={() => setSelectedSlot(slot.startMinute)}
+                        type="button"
+                      >
+                        {minuteLabel(slot.startMinute)}
+                        {slot.participantCount && slot.participantCount > 1 ? ` · ${slot.participantCount}/${settings.maxMeetingGroupSize}` : ""}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </Field>
             ) : (
               <div className="border border-white/10 bg-black/25 p-3 text-sm leading-6 text-white/55">
                 Register interest without choosing a time. If they accept, the app schedules the earliest event slot where both of you are available.
               </div>
             )}
+            <div className="grid gap-2">
+              <div className="text-xs font-medium uppercase tracking-[0.12em] text-white/45">Quick reason</div>
+              <div className="flex flex-wrap gap-2">
+                {reasonSuggestions.map((suggestion) => (
+                  <button
+                    className="button-quiet px-2 py-1 text-xs"
+                    key={suggestion}
+                    onClick={() => setReason(suggestion)}
+                    type="button"
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
+            </div>
             <Field label="Why meet?">
               <textarea
                 className="input min-h-28 resize-none"
@@ -1314,7 +2036,7 @@ function DirectoryView({
                 previewMode ||
                 (requestMode === "slot" && (atCap || !availableSlots.length)) ||
                 reason.trim().length < 8 ||
-                openTargetIds.has(selected._id)
+                selectedOpenTarget
               }
               type="submit"
             >
@@ -1331,26 +2053,334 @@ function DirectoryView({
   );
 }
 
+function MeetingDecisionPanel({
+  match,
+  onRegisterInterest,
+  onUseReason,
+  participant,
+  profile,
+  readiness,
+  reasonSuggestions,
+  starterSuggestions,
+}: {
+  match: MatchSignal | null;
+  onRegisterInterest: () => void;
+  onUseReason: (suggestion: string) => void;
+  participant: Account;
+  profile: DisplayParticipantProfile | null;
+  readiness: ActionReadiness;
+  reasonSuggestions: string[];
+  starterSuggestions: string[];
+}) {
+  const sourceTotal = profile ? sourceCount(profile) : 0;
+  const tags = (profile?.displayTags.length ? profile.displayTags : participant.topics).slice(0, 5);
+  const primaryReason =
+    match?.reasons[0] ??
+    (sourceTotal ? `${sourceTotal} public sources` : null) ??
+    participant.networkingIntent ??
+    participant.title;
+  return (
+    <section className="border border-[#f8e18e]/20 bg-[#f8e18e]/[0.055] p-3">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
+            <Lightbulb size={15} /> Why this could be worth 20 minutes
+          </div>
+          <p className="mt-1 text-sm leading-6 text-white/62">
+            {primaryReason || "Enough row data to send a specific intro."}
+          </p>
+        </div>
+      </div>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {profile && <Badge>{sourceTotal} sources</Badge>}
+        {profile && <Badge>{profile.confidence} confidence</Badge>}
+        {match?.reasons.slice(0, 2).map((reason) => <Badge key={reason}>{reason}</Badge>)}
+      </div>
+      {tags.length > 0 && <CompactTagRow items={tags} />}
+      <div className={cn(
+        "mt-3 border p-2 text-xs leading-5",
+        readiness.ready
+          ? "border-emerald-300/25 bg-emerald-300/10 text-emerald-100"
+          : "border-yellow-300/20 bg-yellow-300/10 text-yellow-100",
+      )}>
+        <span className="font-semibold">{readiness.title}.</span> {readiness.detail}
+      </div>
+      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+        <button
+          className="button-quiet justify-center"
+          onClick={() => onUseReason(reasonSuggestions[0] ?? `Interested in ${participant.displayName}'s work at ${participant.company}.`)}
+          type="button"
+        >
+          <MessageSquareText size={15} /> Use suggested note
+        </button>
+        <button className="button-quiet justify-center" onClick={onRegisterInterest} type="button">
+          <UserCheck size={15} /> Register interest
+        </button>
+      </div>
+      {starterSuggestions.length > 0 && (
+        <div className="mt-3 border-t border-[#f8e18e]/15 pt-3">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#f8e18e]/70">Conversation starters</div>
+          <div className="mt-2 grid gap-1.5">
+            {starterSuggestions.map((starter) => (
+              <button
+                className="border border-white/10 bg-black/25 px-2 py-1.5 text-left text-xs leading-5 text-white/58 transition hover:border-[#f8e18e]/40 hover:text-white"
+                key={starter}
+                onClick={() => onUseReason(starter)}
+                type="button"
+              >
+                {starter}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
+
+function ColdStartBanner({
+  actor,
+  onGoToProfile,
+}: {
+  actor: Account;
+  onGoToProfile: () => void;
+}) {
+  const missing = [
+    !actor.profileComplete ? "confirm your profile" : "",
+    !actor.directoryOptIn ? "show yourself in the directory" : "",
+    !actor.networkingIntent.trim() && actor.topics.length === 0 ? "add who you want to meet" : "",
+  ].filter(Boolean);
+  return (
+    <div className="grid gap-3 border-b border-[#f8e18e]/25 bg-[#f8e18e]/10 p-3 md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
+      <div>
+        <div className="text-sm font-semibold text-[#f8e18e]">Unlock booking in under a minute</div>
+        <div className="mt-1 text-xs leading-5 text-[#f8e18e]/75">
+          {missing.length ? missing.join(" · ") : "Set your availability and add a specific meeting intent so others know why to accept."}
+        </div>
+      </div>
+      <button className="button-primary h-9 min-h-9 px-3 text-xs" onClick={onGoToProfile} type="button">
+        <UserCheck size={14} /> Fix profile
+      </button>
+    </div>
+  );
+}
+
+function DiscoverySummary({
+  onShowPending,
+  onShowRecommended,
+  onShowSourced,
+  onReviewActions,
+  stats,
+}: {
+  onShowPending: () => void;
+  onShowRecommended: () => void;
+  onShowSourced: () => void;
+  onReviewActions: () => void;
+  stats: { greatLeads: number; openActions: number; pending: number; researched: number; sourceRich: number };
+}) {
+  return (
+    <div className="grid gap-2 border-b border-white/10 bg-black/20 p-3 sm:grid-cols-4">
+      <button className="border border-white/10 bg-[#101010] p-2 text-left transition hover:border-[#f8e18e]/45" onClick={onShowRecommended} type="button">
+        <div className="text-lg font-semibold text-white">{stats.greatLeads}</div>
+        <div className="text-[11px] uppercase tracking-[0.12em] text-white/45">recommended</div>
+      </button>
+      <button className="border border-white/10 bg-[#101010] p-2 text-left transition hover:border-[#f8e18e]/45" onClick={onShowSourced} type="button">
+        <div className="text-lg font-semibold text-white">{stats.sourceRich}</div>
+        <div className="text-[11px] uppercase tracking-[0.12em] text-white/45">2+ sources</div>
+      </button>
+      <button className="border border-white/10 bg-[#101010] p-2 text-left transition hover:border-[#f8e18e]/45" onClick={onReviewActions} type="button">
+        <div className="text-lg font-semibold text-white">{stats.openActions}</div>
+        <div className="text-[11px] uppercase tracking-[0.12em] text-white/45">open actions</div>
+      </button>
+      <button className="border border-white/10 bg-[#101010] p-2 text-left transition hover:border-[#f8e18e]/45" onClick={onShowPending} type="button">
+        <div className="text-lg font-semibold text-white">{stats.pending}</div>
+        <div className="text-[11px] uppercase tracking-[0.12em] text-white/45">needs research</div>
+      </button>
+    </div>
+  );
+}
+
+function companyAnchorId(company: string) {
+  return `company-${company.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "unknown"}`;
+}
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function companyDirectoryGroups(items: DirectoryItem[]): CompanyGroup[] {
+  const grouped = new Map<string, DirectoryItem[]>();
+  for (const item of items) {
+    const company = (item.participant.company || item.profile?.company || "Independent / unknown").trim();
+    grouped.set(company, [...(grouped.get(company) ?? []), item]);
+  }
+  return [...grouped.entries()]
+    .map(([company, groupItems]) => {
+      const tracks = [...new Set(groupItems.flatMap((item) => participantTracks(item.participant, item.profile).map((track) => track.name)))];
+      const sourceTotal = groupItems.reduce((total, item) => total + (item.profile ? sourceCount(item.profile) : 0), 0);
+      const description = companyDescription(company, groupItems, tracks);
+      return {
+        company,
+        description,
+        items: groupItems.sort((a, b) => b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName)),
+        sourceTotal,
+        tracks,
+      };
+    })
+    .sort((a, b) => {
+      const bestRankDelta = (b.items[0]?.rank ?? 0) - (a.items[0]?.rank ?? 0);
+      return bestRankDelta || b.sourceTotal - a.sourceTotal || a.company.localeCompare(b.company);
+    });
+}
+
+function companyDescription(company: string, items: DirectoryItem[], tracks: string[]) {
+  const sourcedProfile = items
+    .map((item) => item.profile)
+    .filter((profile): profile is DisplayParticipantProfile => Boolean(profile))
+    .sort((a, b) => sourceCount(b) - sourceCount(a))[0];
+  if (sourcedProfile) {
+    const firstSentence = sourcedProfile.displayBioMarkdown
+      .replace(/\s+/g, " ")
+      .split(/(?<=[.!?])\s+/)[0]
+      .replace(new RegExp(`^${escapeRegExp(company)}\\s+`, "i"), "");
+    if (firstSentence.length > 40) return firstSentence;
+    return sourcedProfile.displayHeadline;
+  }
+  if (tracks.length) return `Likely relevant to ${tracks.slice(0, 3).join(", ")} based on attendee titles and profile data.`;
+  return "Company context is limited to attendee-provided row data.";
+}
+
+function CompanyGroupCard({
+  activeTargetIds,
+  disabled,
+  group,
+  onQuickInterest,
+  onSelect,
+  onShortlist,
+  selectedId,
+  shortlistIds,
+}: {
+  activeTargetIds: Set<Id<"accounts">>;
+  disabled: boolean;
+  group: CompanyGroup;
+  onQuickInterest: (participant: Account) => void;
+  onSelect: (participant: Account) => void;
+  onShortlist: (participant: Account) => void;
+  selectedId: Id<"accounts"> | null;
+  shortlistIds: Array<Id<"accounts">>;
+}) {
+  return (
+    <section
+      className="scroll-mt-4 border border-white/10 bg-black/25 p-3"
+      id={companyAnchorId(group.company)}
+    >
+      <div className="grid gap-3 md:grid-cols-[minmax(0,1fr)_auto] md:items-start">
+        <div className="min-w-0">
+          <div className="flex min-w-0 flex-wrap items-center gap-2">
+            <Building2 className="text-[#f8e18e]" size={17} />
+            <h3 className="truncate text-base font-semibold leading-6 text-white">{group.company}</h3>
+            <Badge>{group.items.length} people</Badge>
+            <Badge>{group.sourceTotal} sources</Badge>
+          </div>
+          <p className="mt-2 max-w-4xl text-sm leading-6 text-white/58">{group.description}</p>
+          {group.tracks.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {group.tracks.map((track) => <Badge key={track}>{track}</Badge>)}
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="mt-3 grid gap-2">
+        {group.items.map(({ participant, profile }) => {
+          const schedule = participantSpeakerSchedule(participant);
+          return (
+            <div
+              className={cn(
+                "grid gap-2 border px-3 py-2 transition md:grid-cols-[minmax(0,1fr)_auto]",
+                selectedId === participant._id
+                  ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
+                  : "border-white/10 bg-[#101010] hover:border-white/25",
+              )}
+              key={participant._id}
+            >
+              <button className="min-w-0 text-left" onClick={() => onSelect(participant)} type="button">
+                <div className="flex min-w-0 flex-wrap items-center gap-2">
+                  <span className="truncate text-sm font-semibold leading-5 text-white">{participant.displayName}</span>
+                  <StatusBadge status={participant.ticketCategory} />
+                  {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
+                  {profile && <Badge>{sourceCount(profile)} sources</Badge>}
+                  {activeTargetIds.has(participant._id) && <Badge>request open</Badge>}
+                </div>
+                <div className="mt-1 truncate text-xs leading-5 text-white/50">
+                  {participant.title || profile?.title || "Title TBD"}
+                </div>
+                <div className="mt-1 line-clamp-2 text-xs leading-5 text-white/38">
+                  {profile?.displayHeadline || participant.networkingIntent || "Profile row only"}
+                </div>
+              </button>
+              <div className="flex flex-wrap gap-2 md:justify-end">
+                <button className="button-quiet h-8 min-h-8 px-2 text-xs" onClick={() => onSelect(participant)} type="button">
+                  Details
+                </button>
+                <button
+                  className={cn(
+                    "button-quiet h-8 min-h-8 px-2 text-xs",
+                    shortlistIds.includes(participant._id) && "border-[#f8e18e]/45 bg-[#f8e18e]/10 text-[#f8e18e]",
+                  )}
+                  onClick={() => onShortlist(participant)}
+                  type="button"
+                >
+                  {shortlistIds.includes(participant._id) ? "Saved" : "Maybe"}
+                </button>
+                <button
+                  className="button-quiet h-8 min-h-8 px-2 text-xs"
+                  disabled={disabled || activeTargetIds.has(participant._id)}
+                  onClick={() => onQuickInterest(participant)}
+                  type="button"
+                >
+                  Interest
+                </button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 function ParticipantCard({
   activeRequestOpen,
+  disabled,
   isSelected,
+  match,
   onClick,
+  onQuickInterest,
+  onShortlist,
   participant,
+  profile,
+  shortlisted,
 }: {
   activeRequestOpen: boolean;
+  disabled: boolean;
   isSelected: boolean;
+  match: MatchSignal;
   onClick: () => void;
+  onQuickInterest: () => void;
+  onShortlist: () => void;
   participant: Account;
+  profile: DisplayParticipantProfile | null;
+  shortlisted: boolean;
 }) {
-  const profile = participantProfileFor(participant);
   const tags = profile?.displayTags.length
     ? profile.displayTags
     : participant.topics.length
       ? participant.topics
       : [participant.city, participant.country].filter(Boolean);
+  const schedule = participantSpeakerSchedule(participant);
   const sourceTotal = profile ? sourceCount(profile) : 0;
   return (
-    <button
+    <div
       className={cn(
         "grid gap-2 border px-3 py-2.5 text-left transition md:grid-cols-[minmax(0,1fr)_auto]",
         isSelected
@@ -1358,12 +2388,19 @@ function ParticipantCard({
           : "border-white/10 bg-black/25 hover:border-white/25 hover:bg-white/[0.045]",
       )}
       onClick={onClick}
-      type="button"
+      role="button"
+      tabIndex={0}
+      onKeyDown={(event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        event.preventDefault();
+        onClick();
+      }}
     >
       <div className="min-w-0">
         <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
           <h3 className="truncate text-sm font-semibold leading-5 text-white md:text-[15px]">{participant.displayName}</h3>
           <StatusBadge status={participant.ticketCategory} />
+          {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
           {profile && <Badge>{sourceTotal} sources</Badge>}
           {activeRequestOpen && <Badge>request open</Badge>}
         </div>
@@ -1374,15 +2411,162 @@ function ParticipantCard({
           {profile?.displayHeadline || participant.networkingIntent || [participant.city, participant.country].filter(Boolean).join(", ") || "Profile research pending"}
         </p>
       </div>
-      <div className="hidden max-w-[280px] justify-self-end md:block">
-        <CompactTagRow items={tags.slice(0, 3)} />
+      <div className="grid gap-2 md:min-w-[220px] md:justify-items-end">
+        <div className="hidden max-w-[280px] justify-self-end md:block">
+          <CompactTagRow items={(match.reasons.length ? match.reasons : tags).slice(0, 3)} />
+        </div>
+        <div className="flex flex-wrap gap-2 md:justify-end">
+          <button
+            className="button-quiet h-8 min-h-8 px-2 text-xs"
+            onClick={(event) => {
+              event.stopPropagation();
+              onClick();
+            }}
+            type="button"
+          >
+            Details
+          </button>
+          <button
+            className={cn(
+              "button-quiet h-8 min-h-8 px-2 text-xs",
+              shortlisted && "border-[#f8e18e]/45 bg-[#f8e18e]/10 text-[#f8e18e]",
+            )}
+            onClick={(event) => {
+              event.stopPropagation();
+              onShortlist();
+            }}
+            type="button"
+          >
+            {shortlisted ? "Saved" : "Maybe"}
+          </button>
+          <button
+            className="button-quiet h-8 min-h-8 px-2 text-xs"
+            disabled={disabled || activeRequestOpen}
+            onClick={(event) => {
+              event.stopPropagation();
+              onQuickInterest();
+            }}
+            type="button"
+          >
+            Interest
+          </button>
+        </div>
       </div>
-    </button>
+    </div>
+  );
+}
+
+function StarterPicks({
+  onSelect,
+  picks,
+  selectedId,
+}: {
+  onSelect: (participant: Account) => void;
+  picks: Array<{ match: MatchSignal; participant: Account; profile: DisplayParticipantProfile | null }>;
+  selectedId: Id<"accounts"> | null;
+}) {
+  return (
+    <div className="min-w-0 border-b border-white/10 bg-black/20 px-3 py-2">
+      <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+        <div>
+          <div className="text-xs font-semibold uppercase tracking-[0.12em] text-[#f8e18e]">Quick start</div>
+          <div className="mt-1 text-xs leading-5 text-white/45">Optional suggested intros. Scroll sideways or skip to the full directory below.</div>
+        </div>
+      </div>
+      <div className="max-w-full min-w-0 overflow-x-auto overscroll-x-contain pb-1">
+        <div className="flex w-max gap-2">
+        {picks.map(({ match, participant, profile }) => {
+          const schedule = participantSpeakerSchedule(participant);
+          return (
+            <button
+              className={cn(
+                "grid min-h-28 w-[320px] flex-none content-between gap-2 border p-3 text-left transition",
+                selectedId === participant._id
+                  ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
+                  : "border-white/10 bg-[#101010] hover:border-[#f8e18e]/45 hover:bg-[#f8e18e]/5",
+              )}
+              key={participant._id}
+              onClick={() => onSelect(participant)}
+              type="button"
+            >
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="truncate text-sm font-semibold leading-5 text-white">{participant.displayName}</span>
+                  {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
+                  {profile && <Badge>{sourceCount(profile)} sources</Badge>}
+                </div>
+                <div className="mt-1 text-xs leading-5 text-white/55">
+                  {participant.title || profile?.title || "Title TBD"} · {participant.company || profile?.company || "Company TBD"}
+                </div>
+                <div className="mt-2 line-clamp-2 text-xs leading-5 text-white/45">
+                  {profile?.displayHeadline || participant.networkingIntent || "Researched profile"}
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                {match.reasons.slice(0, 1).map((reason) => (
+                  <span className="truncate text-[11px] leading-5 text-white/38" key={reason}>{reason}</span>
+                ))}
+              </div>
+            </button>
+          );
+        })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ShortlistTray({
+  items,
+  onClear,
+  onSelect,
+  selectedId,
+}: {
+  items: Array<{ match: MatchSignal; participant: Account; profile: DisplayParticipantProfile | null }>;
+  onClear: () => void;
+  onSelect: (participant: Account) => void;
+  selectedId: Id<"accounts"> | null;
+}) {
+  return (
+    <div className="border-b border-white/10 bg-[#0d0d0d] px-3 py-2">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">Maybe list</div>
+        <button className="button-quiet h-7 min-h-7 px-2 text-[11px]" onClick={onClear} type="button">
+          Clear
+        </button>
+      </div>
+      <div className="mt-2 flex gap-2 overflow-x-auto pb-1">
+        {items.map(({ participant, profile }) => {
+          const schedule = participantSpeakerSchedule(participant);
+          return (
+            <button
+              className={cn(
+                "min-w-[220px] border p-2 text-left transition",
+                selectedId === participant._id
+                  ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
+                  : "border-white/10 bg-black/25 hover:border-white/25",
+              )}
+              key={participant._id}
+              onClick={() => onSelect(participant)}
+              type="button"
+            >
+              <div className="truncate text-xs font-semibold text-white">{participant.displayName}</div>
+              <div className="mt-1 truncate text-[11px] text-white/45">{participant.company || profile?.company || "Company TBD"}</div>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
+                {profile && <Badge>{sourceCount(profile)} src</Badge>}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </div>
   );
 }
 
 function ParticipantDetailPanel({ participant }: { participant: Account }) {
   const profile = participantProfileFor(participant);
+  const schedule = participantSpeakerSchedule(participant);
   const location = [participant.city, participant.country].filter(Boolean).join(", ");
   return (
     <section className="grid gap-3">
@@ -1390,6 +2574,7 @@ function ParticipantDetailPanel({ participant }: { participant: Account }) {
         <div className="flex flex-wrap items-center gap-2">
           <h2 className="text-lg font-semibold leading-6">{participant.displayName}</h2>
           <StatusBadge status={participant.ticketCategory} />
+          {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
           <Badge>{participant.directoryOptIn ? "directory visible" : "hidden"}</Badge>
         </div>
         <div className="mt-2 text-sm leading-6 text-white/62">
@@ -1397,6 +2582,26 @@ function ParticipantDetailPanel({ participant }: { participant: Account }) {
         </div>
         {location && <div className="mt-1 text-xs leading-5 text-white/42">{location}</div>}
       </div>
+      {schedule && (
+        <section className="border border-[#f8e18e]/25 bg-[#f8e18e]/10 p-3">
+          <div className="text-xs font-semibold uppercase tracking-[0.12em] text-[#f8e18e]">
+            Speaker schedule
+          </div>
+          <p className="mt-1 text-xs leading-5 text-[#f8e18e]/75">
+            Most likely onsite {schedule.dateLabels.join(", ")}.
+          </p>
+          <div className="mt-3 grid gap-2">
+            {schedule.sessions.map((session) => (
+              <div className="border border-[#f8e18e]/20 bg-black/20 p-2" key={`${session.title}-${session.time}-${session.room}`}>
+                <div className="text-sm font-semibold leading-5 text-white">{session.title}</div>
+                <div className="mt-1 text-xs leading-5 text-white/55">
+                  {[session.dateLabel, session.time, session.room, session.track].filter(Boolean).join(" · ")}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
       {profile ? (
         <ParticipantProfilePanel profile={profile} />
       ) : (
@@ -1427,6 +2632,8 @@ function ParticipantProfilePanel({
       </div>
     );
   }
+  const primaryCount = profile.sources.primary.length;
+  const secondaryCount = profile.sources.secondary.length;
   return (
     <section className="border border-white/10 bg-black/25 p-3">
       <div className="flex flex-wrap items-center gap-2">
@@ -1440,9 +2647,25 @@ function ParticipantProfilePanel({
       </div>
       <TagRow items={profile.displayTags} />
       {!compact && (
-        <p className="mt-3 border-t border-white/10 pt-3 text-xs leading-5 text-white/42">
-          {profile.confidenceNote}
-        </p>
+        <div className="mt-3 border-t border-white/10 pt-3">
+          <div className="grid gap-2 sm:grid-cols-3">
+            <div className="border border-white/10 bg-black/25 p-2">
+              <div className="text-sm font-semibold text-white">{primaryCount}</div>
+              <div className="text-[11px] uppercase tracking-[0.12em] text-white/40">primary</div>
+            </div>
+            <div className="border border-white/10 bg-black/25 p-2">
+              <div className="text-sm font-semibold text-white">{secondaryCount}</div>
+              <div className="text-[11px] uppercase tracking-[0.12em] text-white/40">secondary</div>
+            </div>
+            <div className="border border-white/10 bg-black/25 p-2">
+              <div className="text-sm font-semibold text-white">{profile.confidence}</div>
+              <div className="text-[11px] uppercase tracking-[0.12em] text-white/40">confidence</div>
+            </div>
+          </div>
+          <p className="mt-3 text-xs leading-5 text-white/42">
+            {profile.confidenceNote}
+          </p>
+        </div>
       )}
       <ProfileSourceList profile={profile} compact={compact} />
     </section>
@@ -1515,7 +2738,13 @@ function ProfileView({
   const setMyAvailability = useMutation(api.networking.setMyAvailability);
   const setMyDayAvailability = useMutation(api.networking.setMyDayAvailability);
   const researchedProfile = participantProfileFor(actor);
+  const profileConfirmationDetail = actor.profileOverride
+    ? `confirmed · last edited ${editedAtLabel(actor.profileOverride.updatedAt)}`
+    : researchedProfile
+      ? "AI researched · needs your confirmation"
+      : "needs your confirmation";
   const [dragAvailability, setDragAvailability] = useState<boolean | null>(null);
+  const [dragDayAvailability, setDragDayAvailability] = useState<boolean | null>(null);
   const [form, setForm] = useState({
     displayName: actor.displayName,
     title: actor.title,
@@ -1528,6 +2757,8 @@ function ProfileView({
     profileHeadline: actor.profileOverride?.headline || researchedProfile?.headline || "",
     profileBioMarkdown: actor.profileOverride?.bioMarkdown || researchedProfile?.bioMarkdown || "",
     profileTags: (actor.profileOverride?.tags.length ? actor.profileOverride.tags : researchedProfile?.tags ?? actor.topics).join("; "),
+    profilePrimarySources: sourceLines(actor.profileOverride?.sources?.primary ?? researchedProfile?.sources.primary ?? []),
+    profileSecondarySources: sourceLines(actor.profileOverride?.sources?.secondary ?? researchedProfile?.sources.secondary ?? []),
     participantApproved: actor.profileOverride?.participantApproved || researchedProfile?.participantApproved || false,
   });
 
@@ -1578,6 +2809,13 @@ function ProfileView({
     });
   }
 
+  function setDayAvailability(date: string, label: string, available: boolean) {
+    void runAction(
+      () => setMyDayAvailability({ sessionToken, date, available }),
+      `${label} ${available ? "opened" : "hidden"}.`,
+    );
+  }
+
   function beginSlotDrag(date: string, startMinute: number, available: boolean) {
     const nextAvailable = !available;
     setDragAvailability(nextAvailable);
@@ -1589,55 +2827,88 @@ function ProfileView({
     setSlotAvailability(date, startMinute, dragAvailability);
   }
 
+  function beginDayDrag(date: string, label: string, openCount: number) {
+    const nextAvailable = openCount < slotLabels.length;
+    setDragDayAvailability(nextAvailable);
+    setDayAvailability(date, label, nextAvailable);
+  }
+
+  function enterDayDrag(date: string, label: string, openCount: number) {
+    if (dragDayAvailability === null) return;
+    if ((dragDayAvailability && openCount === slotLabels.length) || (!dragDayAvailability && openCount === 0)) return;
+    setDayAvailability(date, label, dragDayAvailability);
+  }
+
   return (
     <div
       className="grid gap-4"
-      onPointerLeave={() => setDragAvailability(null)}
-      onPointerUp={() => setDragAvailability(null)}
+      onPointerLeave={() => {
+        setDragAvailability(null);
+        setDragDayAvailability(null);
+      }}
+      onPointerUp={() => {
+        setDragAvailability(null);
+        setDragDayAvailability(null);
+      }}
     >
       <section className="border border-white/10 bg-[#101010]">
-        <SectionHeader icon={<Clock3 size={17} />} title="Your availability" detail="drag to paint open or hidden slots" />
-        <div className="grid gap-4 p-4">
+        <SectionHeader icon={<Clock3 size={17} />} title="Your availability" detail="click or drag slots and day headers" />
+        <div className="grid gap-3 p-4 md:grid-cols-2">
           {eventDateEntries(settings).map(([date, label]) => {
             const dayAvailability = availability.filter((slot) => slot.date === date);
             const openCount = dayAvailability.filter((slot) => slot.available).length;
+            const dayFullyOpen = openCount === slotLabels.length;
             return (
-              <div key={date} className="grid gap-2">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div className="text-xs">
-                    <span className="font-semibold text-white/70">{label}</span>
-                    <span className="ml-2 text-white/45">{openCount} open</span>
-                  </div>
+              <div
+                key={date}
+                className="grid min-w-0 content-start gap-2 border border-white/10 bg-black/20 p-3"
+                onPointerEnter={() => enterDayDrag(date, label, openCount)}
+              >
+                <div className="grid gap-2">
+                  <button
+                    aria-label={`Toggle all availability for ${label}`}
+                    aria-pressed={dayFullyOpen}
+                    className={cn(
+                      "cursor-pointer border px-3 py-2 text-left transition active:cursor-grabbing",
+                      dayFullyOpen
+                        ? "border-emerald-300/25 bg-emerald-300/10"
+                        : "border-white/10 bg-white/[0.035] hover:border-[#f8e18e]/40",
+                    )}
+                    disabled={actionPending}
+                    onPointerDown={(event) => {
+                      event.preventDefault();
+                      beginDayDrag(date, label, openCount);
+                    }}
+                    type="button"
+                  >
+                    <div className="flex items-center justify-between gap-3">
+                      <span className="text-sm font-semibold text-white/78">{label}</span>
+                      <span className="text-xs text-white/45">{openCount} open</span>
+                    </div>
+                    <div className="mt-1 text-[11px] uppercase tracking-[0.12em] text-white/35">
+                      Click or drag day to {dayFullyOpen ? "hide" : "open"} all
+                    </div>
+                  </button>
                   <div className="flex flex-wrap gap-2">
                     <button
-                      className="button-quiet h-8 min-h-8 px-2 text-xs"
+                      className="button-quiet h-8 min-h-8 cursor-pointer px-2 text-xs"
                       disabled={actionPending}
-                      onClick={() =>
-                        void runAction(
-                          () => setMyDayAvailability({ sessionToken, date, available: true }),
-                          `${label} opened.`,
-                        )
-                      }
+                      onClick={() => setDayAvailability(date, label, true)}
                       type="button"
                     >
                       Open all
                     </button>
                     <button
-                      className="button-quiet h-8 min-h-8 px-2 text-xs"
+                      className="button-quiet h-8 min-h-8 cursor-pointer px-2 text-xs"
                       disabled={actionPending}
-                      onClick={() =>
-                        void runAction(
-                          () => setMyDayAvailability({ sessionToken, date, available: false }),
-                          `${label} hidden.`,
-                        )
-                      }
+                      onClick={() => setDayAvailability(date, label, false)}
                       type="button"
                     >
                       Hide all
                     </button>
                   </div>
                 </div>
-                <div className="grid select-none grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
+                <div className="grid select-none gap-2">
                   {slotLabels.map((slot) => {
                     const availabilitySlot = dayAvailability.find((item) => item.startMinute === slot.minute);
                     const available = availabilitySlot?.available ?? false;
@@ -1647,17 +2918,21 @@ function ProfileView({
                         type="button"
                         aria-pressed={available}
                         className={cn(
-                          "flex h-12 min-w-0 touch-none flex-col items-center justify-center border px-2 text-xs font-semibold leading-tight transition",
+                          "flex h-12 min-w-0 cursor-pointer touch-none flex-col items-center justify-center border px-2 text-xs font-semibold leading-tight transition active:cursor-grabbing",
                           available
                             ? "border-emerald-300/25 bg-emerald-300/10 text-emerald-100"
-                            : "border-white/10 bg-white/[0.035] text-white/45",
+                            : "border-white/10 bg-white/[0.035] text-white/45 hover:border-[#f8e18e]/35",
                         )}
                         disabled={actionPending}
                         onPointerDown={(event) => {
                           event.preventDefault();
+                          event.stopPropagation();
                           beginSlotDrag(date, slot.minute, available);
                         }}
-                        onPointerEnter={() => enterSlotDrag(date, slot.minute, available)}
+                        onPointerEnter={() => {
+                          if (dragDayAvailability !== null) return;
+                          enterSlotDrag(date, slot.minute, available);
+                        }}
                         onKeyDown={(event) => {
                           if (event.key !== "Enter" && event.key !== " ") return;
                           event.preventDefault();
@@ -1680,7 +2955,7 @@ function ProfileView({
 
       <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_520px]">
       <form onSubmit={saveProfile} className="border border-white/10 bg-[#101010]">
-        <SectionHeader icon={<UserCheck size={17} />} title="Profile confirmation" detail={actor.profileComplete ? "complete" : "needs fields"} />
+        <SectionHeader icon={<UserCheck size={17} />} title="Profile confirmation" detail={profileConfirmationDetail} />
         <div className="grid gap-4 p-4 sm:grid-cols-2">
           <Field label="Name">
             <input className="input" value={form.displayName} onChange={(event) => setForm({ ...form, displayName: event.target.value })} required />
@@ -1750,6 +3025,32 @@ function ProfileView({
                 placeholder="AI governance; agents; infrastructure"
               />
             </Field>
+          </div>
+          <div className="sm:col-span-2">
+            <Field label="Primary sources">
+              <textarea
+                className="input min-h-28 resize-y"
+                value={form.profilePrimarySources}
+                onChange={(event) => setForm({ ...form, profilePrimarySources: event.target.value })}
+                placeholder="Label | URL | Note"
+              />
+            </Field>
+            <div className="mt-1 text-xs leading-5 text-white/38">
+              One source per line: label | URL | note.
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <Field label="Secondary sources">
+              <textarea
+                className="input min-h-28 resize-y"
+                value={form.profileSecondarySources}
+                onChange={(event) => setForm({ ...form, profileSecondarySources: event.target.value })}
+                placeholder="Label | URL | Note"
+              />
+            </Field>
+            <div className="mt-1 text-xs leading-5 text-white/38">
+              Remove sources that are wrong; add corrected public links before confirming.
+            </div>
           </div>
           <Toggle label="Show me in the booking directory" checked={form.directoryOptIn} onChange={(value) => setForm({ ...form, directoryOptIn: value })} />
           <Toggle label="Approve researched directory profile" checked={form.participantApproved} onChange={(value) => setForm({ ...form, participantApproved: value })} />

@@ -1,0 +1,199 @@
+[
+  {
+    "lookupKey": "04o8emb",
+    "displayName": "Nikolas Matarangas",
+    "headline": "Founder and CEO of Be in, building flexible and built-to-suit workplace offerings across Brazil.",
+    "company": "Be in",
+    "title": "Founder & CEO",
+    "location": "São Paulo, Brazil",
+    "tags": ["founder", "commercial real estate", "flexible workspace", "workplace strategy", "Brazil"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, SiiLA coverage, and podcast/social sources consistently identify him as founder/CEO of Be in.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Be in, a Brazilian workplace company focused on flexible offices, built-to-suit spaces, and Workspace as a Service. Useful match for conversations on commercial real estate, workplace flexibility, occupancy models, and scaling service-heavy physical businesses.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://br.linkedin.com/in/nmatarangas", "note": "Identifies Nikolas Matarangas as founder at Be in and managing director at Okto Partners." }
+      ],
+      "secondary": [
+        { "label": "SiiLA article", "url": "https://siila.com.br/news/nikolas-matarangas-method-be-in-12-states/8346/lang/en", "note": "Profiles him as founder and CEO of Be in and describes Be in's expansion across 12 Brazilian states." },
+        { "label": "Woba Convida YouTube episode", "url": "https://www.youtube.com/watch?v=x6r-1Vw0fyk", "note": "Interview episode featuring Nikolas Matarangas of Be in discussing office and coworking themes." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "17jhqyh",
+    "displayName": "Nilay Shah",
+    "headline": "Principal Software Engineering Manager at Microsoft focused on Azure Storage and data protection.",
+    "company": "Microsoft",
+    "title": "Principal Software Engineering Manager",
+    "location": "Seattle / Redmond, Washington, United States",
+    "tags": ["Microsoft Azure", "Azure Storage", "engineering management", "cloud infrastructure", "data protection"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public LinkedIn posts match the Microsoft Azure Storage role; independent non-LinkedIn corroboration is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal Software Engineering Manager at Microsoft working around Azure Storage. Relevant for attendees interested in cloud infrastructure, storage durability, backup, engineering leadership, and operating large-scale platform services.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nilaydshah", "note": "Lists him as Principal Software Engineering Manager at Microsoft, focused on Azure Storage." },
+        { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/nilaydshah_azure-updates-microsoft-azure-activity-7381946721746169856-eQQs", "note": "Post from his profile about Azure Data Lake Storage vaulted backup." }
+      ],
+      "secondary": [
+        { "label": "Azure Weekly issue", "url": "https://azureweekly.info/issue-160", "note": "Mentions a Nilay Shah MSDN post in Microsoft developer tooling context." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1x9jghi",
+    "displayName": "Nimesh Chakravarthi",
+    "headline": "Co-founder of Struct, building an autonomous on-call engineer for incident response.",
+    "company": "Struct",
+    "title": "Co-founder",
+    "location": "San Francisco, California, United States",
+    "tags": ["YC", "AI agents", "DevOps", "observability", "incident response", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "YC, LinkedIn, GitHub, and X sources consistently match the Struct founder profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of Struct, a YC-backed developer tools startup building an autonomous on-call engineer that cross-references logs, metrics, traces, and code to investigate incidents. Good match for AI agents, observability, reliability, DevOps workflows, and startup building.",
+    "sources": {
+      "primary": [
+        { "label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/struct-ai", "note": "Lists Nimesh Chakravarthi as a founder of Struct and describes the product as an on-call automation platform." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nimesh-chakravarthi-68238749", "note": "Identifies him as Co-Founder at Struct (YC F24) and ex-LinkedIn." },
+        { "label": "GitHub profile", "url": "https://github.com/nimeshmc", "note": "Personal developer profile says founder at struct.ai." }
+      ],
+      "secondary": [
+        { "label": "X profile", "url": "https://x.com/nimeshmc", "note": "Public profile lists San Francisco, Struct website, and co-founder role." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0cag3cf",
+    "displayName": "Nirmal Utwani",
+    "headline": "Director of Engineering at Amplitude and founding engineer focused on analytics, AI products, and distributed systems.",
+    "company": "Amplitude",
+    "title": "Director of Engineering",
+    "location": "San Mateo, California, United States",
+    "tags": ["analytics", "AI products", "distributed systems", "query engines", "product engineering", "founding engineer"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Amplitude author pages, and LinkedIn all connect him to Amplitude engineering leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founding engineer at Amplitude and Director of Engineering working across AI products and core analytics capabilities. Relevant for conversations on product analytics, distributed systems, query engines, LLM-powered analytics, and scaling engineering teams from early stage to public company.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://www.nirmalutwani.com/about", "note": "States he was Amplitude's first engineer and helped grow the company into a public business." },
+        { "label": "Amplitude blog author context", "url": "https://amplitude.com/blog/ai-product-learnings-2025", "note": "Describes him as a founding engineer and Director of Engineering leading AI products and core analytics capabilities." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nirmalutwani", "note": "Lists Director of Engineering at Amplitude and describes leadership of core analytics engineering." }
+      ],
+      "secondary": [
+        { "label": "TechCrunch author page", "url": "https://techcrunch.com/author/nirmal-utwani/", "note": "Identifies him as a long-tenured Amplitude engineering leader." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ogkjg1",
+    "displayName": "Nisarg Vyas",
+    "headline": "Founder and Executive Director at Infocusp with a long-running AI, computer science, and product engineering background.",
+    "company": "Infocusp",
+    "title": "Founder / Executive Director",
+    "location": "Mountain View, California, United States",
+    "tags": ["AI", "machine learning", "entrepreneurship", "product engineering", "technology services"],
+    "confidence": "medium",
+    "confidenceNote": "Sources strongly match Nisarg Vyas to Infocusp, but current Infocusp pages list him as Executive Director while another person is listed as CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and Executive Director at Infocusp, with experience in AI research, machine learning, and entrepreneurial technology leadership. Useful match for applied AI, engineering services, product development, and scaling technical teams.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nisargvyas", "note": "Identifies him as founder of Infocusp and places him in Mountain View." },
+        { "label": "Infocusp leadership page", "url": "https://www.infocusp.com/leadership/", "note": "Lists Nisarg Vyas as Executive Director with 20+ years of AI R&D and entrepreneurial leadership experience." },
+        { "label": "Infocusp about page", "url": "https://www.infocusp.com/about-us/", "note": "Lists him among company leaders as Executive Director." }
+      ],
+      "secondary": [
+        { "label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=_ELGmikAAAAJ", "note": "Public scholar profile associated with Nisarg Vyas and Infocusp." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1lephml",
+    "displayName": "Nishant Gupta",
+    "headline": "Staff software engineer and researcher at Meta working on distributed systems, applied AI, and agentic infrastructure.",
+    "company": "Meta",
+    "title": "Staff Software Engineer and Researcher",
+    "location": "United States",
+    "tags": ["Meta", "distributed systems", "AI infrastructure", "agentic workflows", "research engineering"],
+    "confidence": "high",
+    "confidenceNote": "Sessionize, OpenReview, and LinkedIn sources consistently describe a Meta AI infrastructure and research profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Staff software engineer and researcher at Meta focused on large-scale distributed systems, applied AI, and infrastructure for agentic workflows. Relevant for matchmaking around AI infrastructure, reliability, research engineering, and production-scale systems.",
+    "sources": {
+      "primary": [
+        { "label": "Sessionize speaker profile", "url": "https://sessionize.com/nishantgupta/", "note": "Identifies him as a Staff Software Engineer and Researcher at Meta specializing in distributed systems and applied AI." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nishantgupta-ai", "note": "Describes his work at Meta's SuperIntelligence Lab on distributed systems, AI infrastructure, and agentic computing." },
+        { "label": "OpenReview profile", "url": "https://openreview.net/profile?id=~Nishant_Gupta2", "note": "Lists Nishant Gupta as researcher in compute infrastructure at Facebook/Meta." }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "13mo7dg",
+    "displayName": "Nishant Joshi",
+    "headline": "Co-founder and CTO of Skillsync, applying open-source signals and AI to technical hiring.",
+    "company": "Skillsync",
+    "title": "Co-founder & CTO",
+    "location": "San Francisco, California, United States",
+    "tags": ["YC", "technical recruiting", "open source", "Rust", "developer search", "AI recruiting"],
+    "confidence": "high",
+    "confidenceNote": "YC, LinkedIn, and GitHub sources consistently identify him as Skillsync co-founder/CTO in San Francisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Skillsync, a YC startup focused on finding engineers from shipped work, code, and open-source contributions rather than traditional resumes. Good match for technical hiring, open-source talent signals, Rust, developer data, and AI recruiting workflows.",
+    "sources": {
+      "primary": [
+        { "label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/skillsync", "note": "Lists Nishant Joshi as a founder of Skillsync and describes the company as hiring engineers based on what they have shipped." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nishantjosh", "note": "Identifies him as Co-Founder CTO at Skillsync (YC W26) in San Francisco." },
+        { "label": "GitHub profile", "url": "https://github.com/nishantjoshi00", "note": "Public developer profile links to Skillsync, San Francisco, personal site, X, and LinkedIn." }
+      ],
+      "secondary": [
+        { "label": "Forbes Technology Council profile", "url": "https://councils.forbes.com/profile/Nishant-Joshi-Skillsync-Inc/e96b23aa-d81d-4891-8ce5-c93051911b82", "note": "Lists Nishant Joshi with Skillsync Inc." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0r7dm5z",
+    "displayName": "Nitish Mutha",
+    "headline": "Co-founder and CTO of Genie AI, building AI-native legal technology.",
+    "company": "Genie AI",
+    "title": "Co-founder & CTO",
+    "location": "London, United Kingdom",
+    "tags": ["legal tech", "AI contracts", "machine learning", "startup founder", "product architecture"],
+    "confidence": "high",
+    "confidenceNote": "Genie AI company pages, LinkedIn, and investor/profile sources consistently identify him as co-founder and CTO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Genie AI, an AI-native legal platform for contracts and legal workflows. Relevant for conversations on legal tech, contract automation, AI product architecture, machine learning, and scaling technical teams in regulated domains.",
+    "sources": {
+      "primary": [
+        { "label": "Genie AI founders page", "url": "https://www.genieai.co/our-founders", "note": "Company page identifies Nitish Mutha as CTO and co-founder and describes his machine learning background." },
+        { "label": "Genie AI author page", "url": "https://www.genieai.co/author/nitish-mutha", "note": "Lists him as CTO and Co-Founder of Genie AI and lead on technology architecture and design." },
+        { "label": "LinkedIn profile", "url": "https://uk.linkedin.com/in/nitishmutha", "note": "Describes his role leading Genie AI's technical vision and engineering architecture." }
+      ],
+      "secondary": [
+        { "label": "Entrepreneur First portfolio profile", "url": "https://www.joinef.com/companies/genie-ai/", "note": "Portfolio profile notes Genie AI and Nitish's machine learning education." },
+        { "label": "Wellfound company people page", "url": "https://wellfound.com/company/genie-ai-1/people", "note": "Lists Nitish Mutha as Genie AI co-founder and CTO." }
+      ]
+    }
+  }
+]

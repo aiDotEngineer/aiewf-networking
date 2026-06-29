@@ -1,0 +1,238 @@
+[
+  {
+    "lookupKey": "0629seo",
+    "displayName": "Yuval Belfer",
+    "headline": "AI21 Labs developer advocate helping teams build production RAG, agents, and LLM systems",
+    "company": "AI21 Labs",
+    "title": "Senior Developer Advocate",
+    "location": "Tel Aviv, IL",
+    "tags": ["AI21 Labs", "developer advocacy", "RAG", "AI agents", "LLM applications", "GenAI education"],
+    "confidence": "high",
+    "confidenceNote": "AI21, LinkedIn, DevNetwork, and teaching profiles consistently identify Yuval Belfer as a senior developer advocate at AI21 Labs focused on RAG, agents, and production GenAI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Developer Advocate at AI21 Labs working across RAG, agents, and production LLM systems. Useful match for teams comparing retrieval architectures, agent design, and practical GenAI deployment patterns.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://il.linkedin.com/in/yuval-belfer", "note": "Public profile connects Yuval Belfer to AI21 Labs and LLM, RAG, and AI-agent work."},
+        {"label": "AI21 World's Fair event page", "url": "https://www.ai21.com/events/ai-engineer-worlds-fair-2026/", "note": "AI21 names Yuval Belfer as Senior Developer Advocate and describes his RAG-focused World's Fair talk."},
+        {"label": "AI21 blog author page", "url": "https://www.ai21.com/blog/mind-the-gap/", "note": "AI21 article credits Yuval Belfer as Senior Developer Advocate and Technical Product Marketing at AI21."}
+      ],
+      "secondary": [
+        {"label": "DevNetwork advisory profile", "url": "https://www.devnetwork.com/advisory-board/yuval-belfer/", "note": "Profile describes him as AI21 Labs Senior Developer Advocate specializing in LLMs, RAG systems, and AI agents."},
+        {"label": "Nebius Academy team page", "url": "https://www.aifordatascience.nebius.com/team", "note": "Teaching profile identifies Yuval as an AI21 Labs developer advocate involved in NLP and generative AI education."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jvqa1a",
+    "displayName": "Zach Blumenfeld",
+    "headline": "Neo4j AI research engineer building GraphRAG, knowledge-graph, and agent-context systems",
+    "company": "Neo4j",
+    "title": "AI Research Engineer",
+    "location": "Washington DC-Baltimore Area, US",
+    "tags": ["Neo4j", "GraphRAG", "knowledge graphs", "AI agents", "graph data science", "entity resolution"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Neo4j, NVIDIA, GitHub, and AI Engineer sources consistently connect Zach Blumenfeld to Neo4j AI/ML graph work, GraphRAG, and agentic knowledge-graph systems.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI Research Engineer at Neo4j focused on GraphRAG, knowledge graphs, and context layers for agents. Strong match for conversations about graph-backed retrieval, decision traces, entity resolution, and AI data readiness.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/zachblumenfeld", "note": "Public profile lists Zach Blumenfeld at Neo4j, building AI and data-science capabilities."},
+        {"label": "Neo4j GraphRAG post", "url": "https://neo4j.com/blog/news/graphrag-python-package/", "note": "Neo4j article credits Zach Blumenfeld as AI Research Engineer at Neo4j for GraphRAG work."},
+        {"label": "GitHub profile", "url": "https://github.com/zach-blumenfeld", "note": "GitHub profile and repositories show Neo4j Aura Agent, GraphRAG, and knowledge-graph AI demos."}
+      ],
+      "secondary": [
+        {"label": "NVIDIA author profile", "url": "https://developer.nvidia.com/blog/author/zachblumenfeld/", "note": "NVIDIA identifies him as an AI/ML graph specialist at Neo4j with expertise in GraphRAG and agentic systems."},
+        {"label": "AI Engineer talk coverage", "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/neo4j-s-zach-blumenfeld-on-ai-agents-and-decision-traces", "note": "Coverage summarizes his AI Engineer talk on decision traces and context graphs for agents."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "05jdl9c",
+    "displayName": "Zach Bucknoff",
+    "headline": "GLG strategy leader applying consulting and psychology research background to expert-insight products",
+    "company": "GLG",
+    "title": "Strategy",
+    "location": "New York City, US",
+    "tags": ["strategy", "expert networks", "primary research", "consulting", "GLG", "commercial due diligence"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GLG-related public posts, The Org, and Columbia sources consistently match Zach Bucknoff to GLG strategy work, prior Bain consulting, and psychology research training.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Strategy professional at GLG and former Bain consultant with a psychology PhD background. Relevant for conversations about expert networks, primary research workflows, synthesis tools, and consulting insight products.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/zachbucknoffphd", "note": "Public profile identifies Zach Bucknoff as Strategy at GLG, ex-Bain, with a psychology PhD in New York."},
+        {"label": "LinkedIn myGLG post", "url": "https://www.linkedin.com/posts/zachbucknoffphd_at-bain-company-i-carved-out-a-niche-for-activity-7321237974644412416-oluN", "note": "First-person post describes his GLG role supporting new primary-research tools for consultants, investors, and corporate clients."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/glginsights/org-chart/zach-bucknoff", "note": "Organization profile lists Zach Bucknoff as Director, Strategic Initiatives at GLG and summarizes prior Bain and Columbia experience."},
+        {"label": "Columbia Psychology profile", "url": "https://psychology.columbia.edu/content/zach-bucknoff", "note": "University profile confirms his psychology research background in metacognition, agency, learning, memory, and morality."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1f0skoy",
+    "displayName": "Zach Lloyd",
+    "headline": "Warp founder building an agentic development environment and software-factory workflows",
+    "company": "Warp",
+    "title": "Founder and CEO",
+    "location": "New York, US",
+    "tags": ["Warp", "agentic development", "software factories", "developer tools", "AI coding agents", "terminal workflows"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly identify Zach Lloyd as Warp's founder and CEO, while the attendee row listed AI Engineer; this profile uses the public title and treats the attendee title as role context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Warp, building developer tooling for agentic software work. Good match for discussions about cloud coding agents, terminal-based workflows, skill loops, and managing software-factory throughput.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/zachlloyd", "note": "Public profile identifies Zach Lloyd as Warp founder and CEO in New York and includes recent AI Engineer World's Fair posts."},
+        {"label": "Warp team post", "url": "https://www.warp.dev/blog/whos-behind-warp-meet-the-team", "note": "Company blog identifies Zach Lloyd as Warp's CEO and describes Warp's developer-tooling mission."},
+        {"label": "Warp events page", "url": "https://www.warp.dev/events", "note": "Warp lists Zach Lloyd, CEO and founder, in events about AI and developer workflow."}
+      ],
+      "secondary": [
+        {"label": "First Round interview", "url": "https://www.firstround.com/ai/warp", "note": "Interview profiles Warp founder Zach Lloyd and his AI-first engineering practices."},
+        {"label": "Sequoia podcast", "url": "https://sequoiacap.com/podcast/making-the-case-for-the-terminal-as-ais-workbench-warps-zach-lloyd/", "note": "Podcast discusses Lloyd's view of terminals as workbenches for prompting and managing cloud agents."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1kf54vm",
+    "displayName": "Zack Proser",
+    "headline": "WorkOS applied AI and developer experience engineer shipping RAG, agent harnesses, and evals",
+    "company": "WorkOS",
+    "title": "Developer Experience Engineer",
+    "location": "United States",
+    "tags": ["WorkOS", "developer experience", "applied AI", "RAG", "agent harnesses", "evals"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub, X, WorkOS, and AI Engineer sources consistently connect Zack Proser to WorkOS developer experience, applied AI, RAG, agent harnesses, and production AI education.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer experience and applied AI engineer at WorkOS, focused on RAG, agent harnesses, evals, documentation, workshops, and practical AI enablement. Strong match for production AI and developer-education conversations.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://zackproser.com/", "note": "Self-authored profile says he is an AI engineer on the Applied AI team at WorkOS and writes about production AI."},
+        {"label": "About page", "url": "https://zackproser.com/about", "note": "Detailed profile describes WorkOS applied AI work on retrieval, agent harnesses, and evals."},
+        {"label": "GitHub profile", "url": "https://github.com/zackproser", "note": "GitHub profile lists Staff Engineer and Developer Experience Engineer at WorkOS, with prior Cloudflare and Pinecone experience."}
+      ],
+      "secondary": [
+        {"label": "WorkOS blog index", "url": "https://workos.com/blog?462dc798_page=19&ca561c31_page=12", "note": "WorkOS blog lists Zack Proser as an author on AI and developer-focused posts."},
+        {"label": "AI Engineer Europe schedule", "url": "https://www.ai.engineer/europe/schedule", "note": "Schedule lists Zack Proser of WorkOS for a developer-experience workshop on skills at scale."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "17zgomv",
+    "displayName": "Zander Cook",
+    "headline": "Lease End co-founder and CRO building consumer-friendly fintech for vehicle lease buyouts",
+    "company": "Lease End",
+    "title": "CRO",
+    "location": "Burley, ID, US",
+    "tags": ["Lease End", "fintech", "auto finance", "lease buyouts", "revenue leadership", "consumer finance"],
+    "confidence": "high",
+    "confidenceNote": "Lease End leadership, LinkedIn, Fast Company, and industry coverage consistently identify Zander Cook as Lease End co-founder and CRO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CRO of Lease End, focused on modernizing the lease-end and vehicle buyout experience for consumers. Useful match for fintech, auto finance, AI-enabled operations, and revenue leadership discussions.",
+    "sources": {
+      "primary": [
+        {"label": "Lease End leadership page", "url": "https://www.leaseend.com/about-us/our-leaders", "note": "Company leadership page lists Zander Cook as CRO and describes his co-founder role and auto-finance background."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/zander-cook-85a946211", "note": "Public profile identifies Zander Cook as co-founder at Lease End in Burley."},
+        {"label": "Fast Company profile", "url": "https://www.fastcompany.com/user/zander-cook", "note": "Fast Company lists Zander Cook as Lease End co-founder and describes the company as technology for end-of-lease processes."}
+      ],
+      "secondary": [
+        {"label": "Authority Magazine interview", "url": "https://medium.com/authority-magazine/zander-cook-of-lease-end-on-how-to-leverage-data-to-take-your-company-to-the-next-level-25641bcfe465", "note": "Interview identifies him as Lease End co-founder and Chief Revenue Officer with BYU and dealership-finance background."},
+        {"label": "BusinessWire AI release", "url": "https://www.businesswire.com/news/home/20250821207353/en/Lease-End-Debuts-AI-Constellation-to-Redefine-Auto-Lease-Buyouts", "note": "Release quotes Zander Cook as Lease End co-founder and CRO on AI tools for lease buyouts."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "12wbtte",
+    "displayName": "Zhengyao Jiang",
+    "headline": "Weco AI co-founder and CEO building self-improving software and automated research agents",
+    "company": "Weco AI",
+    "title": "Co-founder and CEO",
+    "location": "London, UK",
+    "tags": ["Weco AI", "automated research", "coding agents", "reinforcement learning", "self-improving software", "ML engineering"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Weco AI, LinkedIn, GitHub, Companies House, and research sources consistently identify Zhengyao Jiang as Weco AI co-founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Weco AI, building systems that automate the scientific method for software and ML engineering. Strong match for autonomous research, eval-driven coding agents, reinforcement learning, and self-improving software.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://zhengyaojiang.github.io/", "note": "Self-authored profile identifies Zhengyao Jiang as Weco AI co-founder and CEO and explains the AIDE automated-research thesis."},
+        {"label": "Weco AI team page", "url": "https://www.weco.ai/team", "note": "Company team page lists Zhengyao Jiang as Co-founder and CEO."},
+        {"label": "GitHub profile", "url": "https://github.com/ZhengyaoJiang", "note": "GitHub profile lists him as cofounder of WecoAI and PhD in machine learning at UCL."}
+      ],
+      "secondary": [
+        {"label": "Weco AI author page", "url": "https://www.weco.ai/blog/author/zhengyao-jiang", "note": "Company author page describes his research focus on LLM-driven agents for automated ML research and code optimization."},
+        {"label": "AIDE paper", "url": "https://arxiv.org/abs/2502.13138", "note": "Research paper lists Zhengyao Jiang as lead author on AI-Driven Exploration in the Space of Code."},
+        {"label": "Companies House appointment", "url": "https://find-and-update.company-information.service.gov.uk/officers/HLkcyOXCBOPzAja9FnifMWxcHn0/appointments", "note": "UK corporate record lists Zhengyao Jiang as an active director of WECO AI LTD."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0bfmok9",
+    "displayName": "Zixuan Li",
+    "headline": "Z.ai product and ecosystem leader driving GLM model releases, APIs, partnerships, and global branding",
+    "company": "Z.ai",
+    "title": "Head of Z.ai",
+    "location": "Beijing, CN",
+    "tags": ["Z.ai", "GLM models", "open models", "AI product strategy", "global ecosystem", "developer APIs"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, AI Engineer, podcast, and conference sources consistently identify Zixuan Li as Head of Z.ai or a senior Z.ai product and global ecosystem leader.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Z.ai, leading global product strategy, model releases, API services, ecosystem partnerships, and branding around GLM models. Strong match for open-model strategy, Chinese AI labs, developer platforms, and AI-native team discussions.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/zixuan-li-6bb818152", "note": "Public profile identifies Zixuan Li with Z.ai, CMU, MIT, and Head of Z.ai role in Beijing."},
+        {"label": "X profile", "url": "https://x.com/ZixuanLi_", "note": "Public profile says Zixuan Li leads Z.ai and links to the Z.ai site."},
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Software+Factories", "note": "Conference schedule lists Zixuan Li as Head of Z.ai for a GLM-5.2 open-weights talk."}
+      ],
+      "secondary": [
+        {"label": "The Sequence interview", "url": "https://thesequence.substack.com/p/the-sequence-chat-814-zais-zixuan", "note": "Interview introduces him as Head of Z.ai Global Ecosystem responsible for chat, API services, partnerships, and branding."},
+        {"label": "Web Directions speaker profile", "url": "https://webdirections.org/ai-engineer/speakers/zixuan-li.php", "note": "Speaker bio says he leads global product strategy, API development, model releases, research exploration, and branding at Z.ai."},
+        {"label": "High Capacity podcast", "url": "https://www.highcapacity.org/p/podcast-zai-inside-one-of-chinas", "note": "Podcast describes Zixuan Li as Z.ai Director of Product for generative AI strategy and global partnerships."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0gqbqwr",
+    "displayName": "Zubin Pratap",
+    "headline": "Cartesia DevRel leader explaining voice AI, speech models, and career-change engineering paths",
+    "company": "Cartesia AI",
+    "title": "Head of DevRel",
+    "location": "Melbourne, AU",
+    "tags": ["Cartesia AI", "developer relations", "voice AI", "speech models", "AI education", "career change"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources confirm Zubin Pratap as a Melbourne-based DevRel leader now at Cartesia, but the exact Head of DevRel title comes from the attendee row rather than the strongest public previews.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "DevRel leader at Cartesia focused on voice AI and speech-model education, with prior Google and Chainlink DevRel experience. Useful match for conversational AI, developer education, and technical career-change conversations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://au.linkedin.com/in/zubinpratap", "note": "Public profile identifies Zubin Pratap as a Melbourne-based DevRel engineering leader connected to Cartesia."},
+        {"label": "X profile", "url": "https://x.com/ZubinPratap", "note": "Public profile says DevRel at Cartesia.ai, ex-Google SWE, and recovering lawyer."},
+        {"label": "YouTube channel", "url": "https://www.youtube.com/@zubinpratap", "note": "Channel includes recent Cartesia voice-AI explainers and career-change engineering content."}
+      ],
+      "secondary": [
+        {"label": "freeCodeCamp podcast", "url": "https://www.freecodecamp.org/news/first-developer-job-at-age-38-with-lawyer-turned-software-engineer-zubin-pratap-podcast-203/", "note": "Podcast profile describes Zubin Pratap as a Melbourne software engineer and manager who moved from corporate law to Google engineering."},
+        {"label": "Chainlink hackathon speaker page", "url": "https://chain.link/hackathon/2025/speakers-and-judges", "note": "Past speaker page lists him as DevRel Engineering Manager at Chainlink Labs."},
+        {"label": "Cartesia company page", "url": "https://www.cartesia.ai/company", "note": "Company page describes Cartesia's focus on interactive intelligence and SSM-based AI architectures."}
+      ]
+    }
+  }
+]

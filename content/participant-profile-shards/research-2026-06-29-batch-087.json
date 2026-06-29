@@ -1,0 +1,401 @@
+[
+  {
+    "lookupKey": "0zct0r8",
+    "displayName": "Thorvald Johannessen",
+    "headline": "Equinor software advisor connected to developer practices, testing, and technical community building",
+    "company": "Equinor",
+    "title": "Senior Advisor",
+    "location": "Bergen, Norway",
+    "tags": ["software engineering practices", "Equinor", "developer enablement", "testing", "open source", "energy technology"],
+    "confidence": "low",
+    "confidenceNote": "Public Equinor developer-conference and GitHub evidence matches Thorvald Johannessen to Equinor software work, but the current Senior Advisor title is only weakly corroborated by public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior advisor at Equinor with public traces around software engineering practices, developer conferences, testing workshops, and Equinor open-source tooling.",
+    "sources": {
+      "primary": [
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/thorvaldj",
+          "note": "Public GitHub profile for Thorvald Johannessen shows activity around Equinor open-source repositories including segyio, ERT, and related engineering tools."
+        },
+        {
+          "label": "Equinor EDC Software 2022 agenda",
+          "url": "https://equinor.github.io/edc2022software/agenda.html",
+          "note": "Equinor internal developer conference agenda lists Thorvald Johannessen on the event day crew and includes a software-engineering-practices advisor bio reference."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Equinor EDC Software 2021 agenda",
+          "url": "https://equinor.github.io/edc2021software/agenda.html",
+          "note": "Conference agenda lists Thorvald Johannessen as responsible for a multi-day robocar workshop, supporting a developer-enablement profile."
+        },
+        {
+          "label": "OnePetro paper acknowledgement",
+          "url": "https://onepetro.org/DC/article/38/02/220/514982/Assisted-Cement-Log-Interpretation-Using-Machine",
+          "note": "Technical paper on machine-learning-assisted cement log interpretation acknowledges Thorvald Johannessen and cites Equinor dlisio tooling."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0dj92n1",
+    "displayName": "Tim de Boer",
+    "headline": "Perth technology consultancy founder helping teams with Agile, DevOps, cloud, and software delivery",
+    "company": "Interfuze Technology",
+    "title": "CEO / Founder",
+    "location": "Perth, Australia",
+    "tags": ["technology consulting", "Agile", "DevOps", "cloud", "solution architecture", "digital transformation"],
+    "confidence": "high",
+    "confidenceNote": "Interfuze, LinkedIn, Business News, and company LinkedIn sources consistently identify Tim de Boer as an Interfuze director/founder in Perth with Agile and technical consulting experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director and founder at Interfuze in Perth, advising organizations on Agile delivery, solution architecture, DevOps, cloud adoption, and custom software transformation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Interfuze about page",
+          "url": "https://www.interfuze.com.au/about-us",
+          "note": "Company page lists Tim de Boer as a director and describes his Agile, software, solution-delivery, leadership, and technical consulting background."
+        },
+        {
+          "label": "Interfuze story page",
+          "url": "https://www.interfuze.com.au/our-story",
+          "note": "Company story says Tim de Boer was one of the developers who founded the Perth technology consultancy in 2019."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://au.linkedin.com/in/timothydeboer",
+          "note": "Public profile identifies Tim de Boer as Director at Interfuze Consulting in the Greater Perth Area."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Business News profile",
+          "url": "https://www.businessnews.com.au/Person/Tim-de-Boer",
+          "note": "Business News lists Tim de Boer as Director at Interfuze and summarizes his cross-industry IT, solution architecture, DevOps, data, and project-management experience."
+        },
+        {
+          "label": "Interfuze LinkedIn company page",
+          "url": "https://au.linkedin.com/company/interfuze-consulting",
+          "note": "Company LinkedIn page lists Tim de Boer among Interfuze Consulting employees and places the firm in Perth, Western Australia."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "11m7roh",
+    "displayName": "Tim Garvin",
+    "headline": "Enterprise AI engineering leader driving GenAI, DevSecOps, and API initiatives in insurance",
+    "company": "Westfield Insurance",
+    "title": "GenAI Engineering Senior Manager",
+    "location": "Greater Cleveland, US",
+    "tags": ["GenAI", "insurance technology", "DevSecOps", "API engineering", "enterprise AI", "solution delivery"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn profile, his public role-change post, and The Org consistently connect Tim Garvin to Westfield Insurance leadership across GenAI, DevSecOps, and API engineering.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior manager at Westfield Insurance leading engineering teams across GenAI development and adoption, middleware/API engineering, and DevSecOps for insurance workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tcgarvin",
+          "note": "Public profile describes Tim Garvin as an enterprise AI engineering leader at Westfield Insurance helping lead GenAI, DevSecOps, and API Engineering."
+        },
+        {
+          "label": "LinkedIn role announcement",
+          "url": "https://www.linkedin.com/posts/tcgarvin_in-all-the-activity-i-forgot-to-mention-activity-7237933534600904704-jYac",
+          "note": "Public post says he joined Westfield Insurance as a senior manager over teams involved in GenAI development and adoption, middleware operations, and DevSecOps."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/westfield-insurance/org-chart/tim-garvin",
+          "note": "The Org lists Tim Garvin as Senior Manager and GenAI Leader at Westfield Insurance, focused on GenAI, DevSecOps, and API Engineering."
+        },
+        {
+          "label": "LinkedIn Westfield AI post",
+          "url": "https://www.linkedin.com/posts/tcgarvin_how-a-long-lived-super-regional-carrier-is-activity-7315386300193218561-hU2N",
+          "note": "Public post connects Tim Garvin to a Westfield Insurance GenAI solution highlighted in an insurance claims article."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0z8q0d1",
+    "displayName": "Tim Sweeney",
+    "headline": "Weights & Biases engineer building Weave observability and evaluation tools for LLM applications",
+    "company": "Weights & Biases by CoreWeave",
+    "title": "Principal Software Engineer",
+    "location": "San Francisco, US",
+    "tags": ["LLM observability", "AI evaluation", "developer tools", "open source", "Weights & Biases", "agent evaluation"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, W&B event page, and AI Engineer schedule consistently identify Tim Sweeney as a principal engineer at Weights & Biases working on Weave and AI-agent evaluation.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal software engineer at Weights & Biases and lead maintainer of Weave, focused on observability, tracing, and evaluation workflows for production LLM applications.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://timssweeney.com/",
+          "note": "Site identifies Tim Sweeney as a Principal Software Engineer at Weights & Biases and lead maintainer of Weave, an open-source observability platform for LLM applications."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tssweeney",
+          "note": "Public profile lists Tim Sweeney as Principal Software Engineer at Weights & Biases in San Francisco."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Weights & Biases AI Engineer event page",
+          "url": "https://wandb.ai/site/resources/events/ai-engineer-worlds-fair/",
+          "note": "W&B event page lists Tim Sweeney, Principal Engineer at Weights & Biases by CoreWeave, for a talk on autonomous AI research agents."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/schedule",
+          "note": "Conference schedule lists Tim Sweeney of Weights & Biases by CoreWeave as Principal Engineer presenting on autonomous AI research agents."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "13t90ef",
+    "displayName": "Timothy Brennan",
+    "headline": "Everpure technical leader working on AI infrastructure, storage telemetry, and agent performance",
+    "company": "Everpure",
+    "title": "Technical Director",
+    "location": "Santa Clara, US",
+    "tags": ["AI infrastructure", "storage systems", "LLM agents", "telemetry", "enterprise data", "technical leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, Everpure engineering blog authorship, and patent records connect Tim Brennan/Timothy Brennan to Everpure and storage-system technical work; public title evidence is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technical director at Everpure working around AI infrastructure and storage telemetry, including LLM-agent architectures for analyzing large-scale enterprise data safely and efficiently.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tibrennan",
+          "note": "Public profile identifies Tim Brennan in the San Francisco Bay Area; the participant row supplies the Everpure technical-director title."
+        },
+        {
+          "label": "Everpure engineering blog",
+          "url": "https://blog.everpuredata.com/purely-technical/making-llm-agents-think-once-then-act-fast/",
+          "note": "Everpure technical article credits Tim Brennan as a co-author on LLM-agent architecture for Everpure Storage Copilot."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Everpure blog author listing",
+          "url": "https://blog.everpuredata.com/products/evergreen/",
+          "note": "Everpure blog index lists Tim Brennan among authors for technical Everpure Storage Copilot content."
+        },
+        {
+          "label": "Justia patent record",
+          "url": "https://patents.justia.com/inventor/naveen-neelakantam",
+          "note": "Patent listing names Timothy Brennan among inventors on Everpure-assigned virtual storage system work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1jyeqg3",
+    "displayName": "Timothy Seward",
+    "headline": "ROI Revolution founder and CEO focused on ecommerce growth, retail media, and AI search",
+    "company": "ROI Revolution, Inc.",
+    "title": "CEO & Founder",
+    "location": "Raleigh, US",
+    "tags": ["ecommerce", "digital marketing", "retail media", "Amazon advertising", "search marketing", "AI search"],
+    "confidence": "high",
+    "confidenceNote": "ROI Revolution, LinkedIn, The Org, and MarketingSherpa consistently identify Timothy Seward as ROI Revolution founder and CEO in Raleigh.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of ROI Revolution, helping consumer brands and retailers drive ecommerce growth through performance marketing, Amazon advertising expertise, retail media, and newer AI search products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "ROI Revolution author page",
+          "url": "https://roirevolution.com/blog/author/timothy-seward-ceo/",
+          "note": "Company author page identifies Timothy Seward as Founder & CEO and links his writing on digital marketing and Brand Search AI."
+        },
+        {
+          "label": "ROI Revolution about page",
+          "url": "https://roirevolution.com/company/about-us/",
+          "note": "Company page says Timothy founded ROI Revolution in 2002 to drive growth acceleration for consumer brands using marketing strategy and technology."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/timothyseward",
+          "note": "Public profile identifies Timothy Seward as Author, Founder and CEO of ROI Revolution, Inc. in Raleigh, North Carolina."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "MarketingSherpa interview",
+          "url": "https://www.marketingsherpa.com/irce2014/videos/tim-seward.php",
+          "note": "MarketingSherpa interview identifies Timothy Seward as Founder and CEO of ROI Revolution and discusses paid-search marketing."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/roi-revolution-inc/org-chart/timothy-seward",
+          "note": "The Org lists Timothy Seward as Founder and CEO and summarizes ROI Revolution's ecommerce growth focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01twl9h",
+    "displayName": "Tina Manghnani",
+    "headline": "Microsoft product manager building Foundry Agent Service and enterprise agent tooling",
+    "company": "Microsoft",
+    "title": "Product Manager",
+    "location": "United States",
+    "tags": ["product management", "Microsoft Foundry", "AI agents", "developer tooling", "Azure AI", "enterprise AI"],
+    "confidence": "high",
+    "confidenceNote": "Microsoft author bio, LinkedIn, and event-profile sources consistently identify Tina Manghnani as a Microsoft product manager building Foundry agents platform tooling.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product manager at Microsoft building Foundry Agent Service, hosted agents, and developer tooling for operationalizing pro-code agents in enterprise systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Microsoft Foundry blog author bio",
+          "url": "https://devblogs.microsoft.com/foundry/hosted-agents-build26/",
+          "note": "Microsoft author bio describes Tina Manghnani as a Product Manager building Foundry agents platform and developer tooling for enterprise pro-code agents."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/tina-manghnani",
+          "note": "Public profile lists Tina Manghnani as Product Manager 2 for Foundry Agent Service at Microsoft."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Vendelux profile",
+          "url": "https://vendelux.com/app/profile/tina-manghnani/818b63fa-77e8-46c5-8f71-7bf936d125cf",
+          "note": "Event profile lists Tina Manghnani as Product Manager 2 at Microsoft with multiple event appearances."
+        },
+        {
+          "label": "The Register Azure AI article",
+          "url": "https://www.theregister.com/2023/05/25/microsoft_azure_ai_cloud/",
+          "note": "Article quotes Tina Manghnani as a Microsoft product manager for the machine-learning cloud platform."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1w8b0sy",
+    "displayName": "Tisha Chawla",
+    "headline": "Microsoft software engineer working on AI systems, data-platform infrastructure, and agent debugging",
+    "company": "Microsoft",
+    "title": "Software Engineer",
+    "location": "Hyderabad, India",
+    "tags": ["AI systems", "data platforms", "agent debugging", "latency", "software engineering", "research"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, AI Engineer video listing, Dev.to, and Topmate consistently identify Tisha Chawla as a Microsoft software engineer with AI systems and data-platform interests.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineer at Microsoft working in AI systems and data-platform infrastructure, with public writing and talks on agent failure reproduction, latency reasoning, and applied ML research.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://in.linkedin.com/in/tisha-chawla",
+          "note": "Public profile identifies Tisha Chawla as a Software Engineer at Microsoft focused on AI systems and data-platform infrastructure in Hyderabad."
+        },
+        {
+          "label": "Dev.to profile/article",
+          "url": "https://dev.to/tisha_chawla/spec-driven-development-when-structure-helps-and-when-it-becomes-tax-11bf",
+          "note": "Author profile lists Tisha Chawla as Software Engineer at Microsoft and includes technical writing about AI-assisted engineering."
+        },
+        {
+          "label": "Topmate profile",
+          "url": "https://topmate.io/tisha_chawla",
+          "note": "Public profile says Tisha is a software engineer at Microsoft and describes research contributions across multiple universities."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair video",
+          "url": "https://www.youtube.com/watch?v=Lc8zRh9muoY",
+          "note": "Video listing identifies Tisha Chawla from Microsoft as a software engineer in the Commerce and Ecosystem Data Platform team."
+        },
+        {
+          "label": "LinkedIn technical post",
+          "url": "https://www.linkedin.com/posts/tisha-chawla-a944031a3_latency-reasoning-aiengineering-activity-7458620465864155136-qVXY",
+          "note": "Public post snippet connects Tisha Chawla with Microsoft, research affiliations, and AI engineering topics such as latency reasoning."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1b6fqkb",
+    "displayName": "TM Lee",
+    "headline": "CoinGecko cofounder and president building crypto market data and decentralized-finance intelligence",
+    "company": "CoinGecko",
+    "title": "Cofounder",
+    "location": "Singapore",
+    "tags": ["crypto", "market data", "CoinGecko", "blockchain", "developer metrics", "startup leadership"],
+    "confidence": "high",
+    "confidenceNote": "CoinGecko, LinkedIn, GitHub, and multiple crypto-industry profiles consistently identify TM Lee as CoinGecko cofounder and current president; location evidence varies between Singapore and Malaysia.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder of CoinGecko, now president, focused on crypto market data, decentralized-finance intelligence, developer metrics, and products that make digital-asset markets easier to understand.",
+    "sources": {
+      "primary": [
+        {
+          "label": "CoinGecko leadership update",
+          "url": "https://www.coingecko.com/learn/strengthens-leadership",
+          "note": "CoinGecko announcement says cofounder TM Lee transitioned from CEO to President as Bobby Ong became CEO."
+        },
+        {
+          "label": "CoinGecko author page",
+          "url": "https://www.coingecko.com/author/tmlee",
+          "note": "CoinGecko author profile identifies TM Lee as the co-founder of CoinGecko and a Purdue CS graduate."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://my.linkedin.com/in/leetm",
+          "note": "Public profile identifies TM Lee as Co-Founder & President at CoinGecko."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/tmlee",
+          "note": "Public GitHub profile says TM Lee is co-founder at CoinGecko and links to the CoinGecko organization."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CoinGecko careers page",
+          "url": "https://careers.coingecko.com/",
+          "note": "Careers page introduces TM Lee as President and Bobby Ong as CEO, describing them as CoinGecko founders."
+        },
+        {
+          "label": "RootData profile",
+          "url": "https://www.rootdata.com/member/TM%20Lee?k=OTQ1OQ%3D%3D",
+          "note": "RootData lists TM Lee as co-founder and president of CoinGecko and notes Singapore-related blockchain research activity."
+        },
+        {
+          "label": "BeInCrypto profile",
+          "url": "https://beincrypto.com/people/tm-lee/",
+          "note": "Profile summarizes TM Lee's CoinGecko cofounder background and crypto-market analysis work."
+        }
+      ]
+    }
+  }
+]

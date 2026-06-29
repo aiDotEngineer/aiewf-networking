@@ -1,6 +1,100 @@
+import researchBatch002 from "../../content/participant-profile-shards/research-2026-06-29-batch-002.json";
+import researchBatch003 from "../../content/participant-profile-shards/research-2026-06-29-batch-003.json";
+import researchBatch004 from "../../content/participant-profile-shards/research-2026-06-29-batch-004.json";
+import researchBatch005 from "../../content/participant-profile-shards/research-2026-06-29-batch-005.json";
+import researchBatch006 from "../../content/participant-profile-shards/research-2026-06-29-batch-006.json";
+import researchBatch007 from "../../content/participant-profile-shards/research-2026-06-29-batch-007.json";
+import researchBatch008 from "../../content/participant-profile-shards/research-2026-06-29-batch-008.json";
+import researchBatch009 from "../../content/participant-profile-shards/research-2026-06-29-batch-009.json";
+import researchBatch010 from "../../content/participant-profile-shards/research-2026-06-29-batch-010.json";
+import researchBatch011 from "../../content/participant-profile-shards/research-2026-06-29-batch-011.json";
+import researchBatch012 from "../../content/participant-profile-shards/research-2026-06-29-batch-012.json";
+import researchBatch013 from "../../content/participant-profile-shards/research-2026-06-29-batch-013.json";
+import researchBatch014 from "../../content/participant-profile-shards/research-2026-06-29-batch-014.json";
+import researchBatch015 from "../../content/participant-profile-shards/research-2026-06-29-batch-015.json";
+import researchBatch016 from "../../content/participant-profile-shards/research-2026-06-29-batch-016.json";
+import researchBatch017 from "../../content/participant-profile-shards/research-2026-06-29-batch-017.json";
+import researchBatch018 from "../../content/participant-profile-shards/research-2026-06-29-batch-018.json";
+import researchBatch019 from "../../content/participant-profile-shards/research-2026-06-29-batch-019.json";
+import researchBatch020 from "../../content/participant-profile-shards/research-2026-06-29-batch-020.json";
+import researchBatch021 from "../../content/participant-profile-shards/research-2026-06-29-batch-021.json";
+import researchBatch022 from "../../content/participant-profile-shards/research-2026-06-29-batch-022.json";
+import researchBatch023 from "../../content/participant-profile-shards/research-2026-06-29-batch-023.json";
+import researchBatch024 from "../../content/participant-profile-shards/research-2026-06-29-batch-024.json";
+import researchBatch025 from "../../content/participant-profile-shards/research-2026-06-29-batch-025.json";
+import researchBatch026 from "../../content/participant-profile-shards/research-2026-06-29-batch-026.json";
+import researchBatch027 from "../../content/participant-profile-shards/research-2026-06-29-batch-027.json";
+import researchBatch028 from "../../content/participant-profile-shards/research-2026-06-29-batch-028.json";
+import researchBatch029 from "../../content/participant-profile-shards/research-2026-06-29-batch-029.json";
+import researchBatch030 from "../../content/participant-profile-shards/research-2026-06-29-batch-030.json";
+import researchBatch031 from "../../content/participant-profile-shards/research-2026-06-29-batch-031.json";
+import researchBatch032 from "../../content/participant-profile-shards/research-2026-06-29-batch-032.json";
+import researchBatch033 from "../../content/participant-profile-shards/research-2026-06-29-batch-033.json";
+import researchBatch034 from "../../content/participant-profile-shards/research-2026-06-29-batch-034.json";
+import researchBatch035 from "../../content/participant-profile-shards/research-2026-06-29-batch-035.json";
+import researchBatch036 from "../../content/participant-profile-shards/research-2026-06-29-batch-036.json";
+import researchBatch037 from "../../content/participant-profile-shards/research-2026-06-29-batch-037.json";
+import researchBatch038 from "../../content/participant-profile-shards/research-2026-06-29-batch-038.json";
+import researchBatch039 from "../../content/participant-profile-shards/research-2026-06-29-batch-039.json";
+import researchBatch040 from "../../content/participant-profile-shards/research-2026-06-29-batch-040.json";
+import researchBatch041 from "../../content/participant-profile-shards/research-2026-06-29-batch-041.json";
+import researchBatch042 from "../../content/participant-profile-shards/research-2026-06-29-batch-042.json";
+import researchBatch043 from "../../content/participant-profile-shards/research-2026-06-29-batch-043.json";
+import researchBatch044 from "../../content/participant-profile-shards/research-2026-06-29-batch-044.json";
+import researchBatch045 from "../../content/participant-profile-shards/research-2026-06-29-batch-045.json";
+import researchBatch046 from "../../content/participant-profile-shards/research-2026-06-29-batch-046.json";
+import researchBatch047 from "../../content/participant-profile-shards/research-2026-06-29-batch-047.json";
+import researchBatch048 from "../../content/participant-profile-shards/research-2026-06-29-batch-048.json";
+import researchBatch049 from "../../content/participant-profile-shards/research-2026-06-29-batch-049.json";
+import researchBatch050 from "../../content/participant-profile-shards/research-2026-06-29-batch-050.json";
+import researchBatch051 from "../../content/participant-profile-shards/research-2026-06-29-batch-051.json";
+import researchBatch052 from "../../content/participant-profile-shards/research-2026-06-29-batch-052.json";
+import researchBatch053 from "../../content/participant-profile-shards/research-2026-06-29-batch-053.json";
+import researchBatch054 from "../../content/participant-profile-shards/research-2026-06-29-batch-054.json";
+import researchBatch055 from "../../content/participant-profile-shards/research-2026-06-29-batch-055.json";
+import researchBatch056 from "../../content/participant-profile-shards/research-2026-06-29-batch-056.json";
+import researchBatch057 from "../../content/participant-profile-shards/research-2026-06-29-batch-057.json";
+import researchBatch058 from "../../content/participant-profile-shards/research-2026-06-29-batch-058.json";
+import researchBatch059 from "../../content/participant-profile-shards/research-2026-06-29-batch-059.json";
+import researchBatch060 from "../../content/participant-profile-shards/research-2026-06-29-batch-060.json";
+import researchBatch061 from "../../content/participant-profile-shards/research-2026-06-29-batch-061.json";
+import researchBatch062 from "../../content/participant-profile-shards/research-2026-06-29-batch-062.json";
+import researchBatch063 from "../../content/participant-profile-shards/research-2026-06-29-batch-063.json";
+import researchBatch064 from "../../content/participant-profile-shards/research-2026-06-29-batch-064.json";
+import researchBatch065 from "../../content/participant-profile-shards/research-2026-06-29-batch-065.json";
+import researchBatch066 from "../../content/participant-profile-shards/research-2026-06-29-batch-066.json";
+import researchBatch067 from "../../content/participant-profile-shards/research-2026-06-29-batch-067.json";
+import researchBatch068 from "../../content/participant-profile-shards/research-2026-06-29-batch-068.json";
+import researchBatch069 from "../../content/participant-profile-shards/research-2026-06-29-batch-069.json";
+import researchBatch070 from "../../content/participant-profile-shards/research-2026-06-29-batch-070.json";
+import researchBatch071 from "../../content/participant-profile-shards/research-2026-06-29-batch-071.json";
+import researchBatch072 from "../../content/participant-profile-shards/research-2026-06-29-batch-072.json";
+import researchBatch073 from "../../content/participant-profile-shards/research-2026-06-29-batch-073.json";
+import researchBatch074 from "../../content/participant-profile-shards/research-2026-06-29-batch-074.json";
+import researchBatch075 from "../../content/participant-profile-shards/research-2026-06-29-batch-075.json";
+import researchBatch076 from "../../content/participant-profile-shards/research-2026-06-29-batch-076.json";
+import researchBatch077 from "../../content/participant-profile-shards/research-2026-06-29-batch-077.json";
+import researchBatch078 from "../../content/participant-profile-shards/research-2026-06-29-batch-078.json";
+import researchBatch079 from "../../content/participant-profile-shards/research-2026-06-29-batch-079.json";
+import researchBatch080 from "../../content/participant-profile-shards/research-2026-06-29-batch-080.json";
+import researchBatch081 from "../../content/participant-profile-shards/research-2026-06-29-batch-081.json";
+import researchBatch082 from "../../content/participant-profile-shards/research-2026-06-29-batch-082.json";
+import researchBatch083 from "../../content/participant-profile-shards/research-2026-06-29-batch-083.json";
+import researchBatch084 from "../../content/participant-profile-shards/research-2026-06-29-batch-084.json";
+import researchBatch085 from "../../content/participant-profile-shards/research-2026-06-29-batch-085.json";
+import researchBatch086 from "../../content/participant-profile-shards/research-2026-06-29-batch-086.json";
+import researchBatch087 from "../../content/participant-profile-shards/research-2026-06-29-batch-087.json";
+import researchBatch088 from "../../content/participant-profile-shards/research-2026-06-29-batch-088.json";
+import researchBatch089 from "../../content/participant-profile-shards/research-2026-06-29-batch-089.json";
+import researchBatch090 from "../../content/participant-profile-shards/research-2026-06-29-batch-090.json";
+import researchBatch091 from "../../content/participant-profile-shards/research-2026-06-29-batch-091.json";
+import researchBatch092 from "../../content/participant-profile-shards/research-2026-06-29-batch-092.json";
+import researchBatch093 from "../../content/participant-profile-shards/research-2026-06-29-batch-093.json";
+import researchBatch094 from "../../content/participant-profile-shards/research-2026-06-29-batch-094.json";
+import researchBatch095 from "../../content/participant-profile-shards/research-2026-06-29-batch-095.json";
 import type { StaticParticipantProfile } from "./participant-profiles";
 
-export const participantProfiles: StaticParticipantProfile[] = [
+const baseParticipantProfiles: StaticParticipantProfile[] = [
   {
     lookupKey: "19anjvf",
     displayName: "Aayush Srivastava",
@@ -482,6 +576,303 @@ export const participantProfiles: StaticParticipantProfile[] = [
       ],
     },
   },
+  {
+    lookupKey: "14w80wr",
+    displayName: "- Matsuo Takaaki - 松尾 賢明",
+    headline: "Senior Manager in SoftBank Group CEO Office",
+    company: "SoftBank Group Corp.",
+    title: "Senior Manager",
+    location: "Tokyo, Japan",
+    tags: ["SoftBank", "CEO Office", "technology strategy", "software engineering", "Japan"],
+    confidence: "medium",
+    confidenceNote:
+      "Exact LinkedIn match confirms SoftBank Group senior manager role; secondary org-directory source adds CEO Office context but is marked unverified.",
+    participantApproved: false,
+    aiGenerated: true,
+    lastResearchedAt: "2026-06-29",
+    bioMarkdown:
+      "Takaaki Matsuo is a senior manager at SoftBank Group, with public profile evidence placing him in the CEO Office. Prior public directory data points to software engineering and team leadership experience within SoftBank-related organizations.",
+    sources: {
+      primary: [
+        {
+          label: "LinkedIn",
+          url: "https://jp.linkedin.com/in/takaaki-matsuo-7b7709119",
+          note: "Exact-name profile listing Senior Manager, CEO Office, SoftBank Group Corp.",
+        },
+      ],
+      secondary: [
+        {
+          label: "The Org",
+          url: "https://theorg.com/org/softbank/org-chart/takaaki-matsuo",
+          note: "Unverified org profile with CEO Office and prior SoftBank engineering context.",
+        },
+      ],
+    },
+  },
+  {
+    lookupKey: "0vej8xm",
+    displayName: "Aakash Bist",
+    headline: "AI infrastructure engineer working on LLM agents and storage systems",
+    company: "Everpure",
+    title: "Staff Engineer",
+    location: "Bengaluru, India",
+    tags: ["AI infrastructure", "LLM agents", "enterprise storage", "Pure Storage", "agentic workflows"],
+    confidence: "medium",
+    confidenceNote:
+      "Strong exact-name sources connect him to Pure Storage/Everpure AI infrastructure work; public titles vary between Staff Engineer, Member of Technical Staff, and Senior Software Engineer.",
+    participantApproved: false,
+    aiGenerated: true,
+    lastResearchedAt: "2026-06-29",
+    bioMarkdown:
+      "Aakash Bist works on AI infrastructure, LLM agents, and agentic workflows for enterprise storage. Public talks and writing connect him to Everpure/Pure Storage work on production LLM-agent architectures over large-scale telemetry.",
+    sources: {
+      primary: [
+        {
+          label: "Everpure Blog",
+          url: "https://blog.everpuredata.com/purely-technical/making-llm-agents-think-once-then-act-fast/",
+          note: "Bylined technical article on LLM agents and Everpure Storage Copilot.",
+        },
+        {
+          label: "LinkedIn",
+          url: "https://in.linkedin.com/in/mrbist",
+          note: "Exact-name profile focused on AI infrastructure and GenAI architecture at Pure Storage.",
+        },
+      ],
+      secondary: [
+        {
+          label: "Open Source India",
+          url: "https://www.opensourceindia.in/osi-speakers-2025/aakash-bist/",
+          note: "Speaker profile describing Pure Storage AI systems and agentic workflow work.",
+        },
+        {
+          label: "Times of India",
+          url: "https://timesofindia.indiatimes.com/technology/times-techies/why-flash-storage-may-be-taking-off-in-the-enterprise/articleshow/120111021.cms",
+          note: "Mentions Aakash Bist leading GenAI R&D from Pure Storage's Bengaluru center.",
+        },
+      ],
+    },
+  },
+  {
+    lookupKey: "18wlmgu",
+    displayName: "Aaron Mills",
+    headline: "CEO at Rhythm Technologies",
+    company: "Rhythm Technologies",
+    title: "CEO",
+    location: "Nashville, Tennessee, United States",
+    tags: ["startup leadership", "technology", "blockchain", "internet services"],
+    confidence: "low",
+    confidenceNote:
+      "Could not verify a strong public exact-name plus Rhythm Technologies CEO match; company evidence exists, but person-company linkage remains weak.",
+    participantApproved: false,
+    aiGenerated: true,
+    lastResearchedAt: "2026-06-29",
+    bioMarkdown:
+      "Aaron Mills is listed for this event as CEO of Rhythm Technologies. Public research found Rhythm Technologies as a small Nashville technology company, but did not find strong evidence tying this exact Aaron Mills to the company, so this profile should remain provisional.",
+    sources: {
+      primary: [
+        {
+          label: "Rhythm Technologies LinkedIn",
+          url: "https://www.linkedin.com/company/rhythm-technologies",
+          note: "Company page describing a small Nashville technology and internet company.",
+        },
+      ],
+      secondary: [
+        {
+          label: "LinkedIn search result",
+          url: "https://www.linkedin.com/in/aaron-mills-6a839b45",
+          note: "Exact-name technology executive profile appears in search, but does not clearly confirm current Rhythm Technologies CEO role.",
+        },
+      ],
+    },
+  },
+  {
+    lookupKey: "1e574m1",
+    displayName: "Aaron Moss",
+    headline: "AI Engineering Lead at Burns & McDonnell and Data Science Kansas City organizer",
+    company: "Burns & McDonnell",
+    title: "AI Eng Lead",
+    location: "Kansas City Metropolitan Area",
+    tags: ["AI engineering", "data science", "multi-agent systems", "community organizing", "Burns & McDonnell"],
+    confidence: "high",
+    confidenceNote:
+      "Exact-name LinkedIn result confirms AI Engineering Lead at Burns & McDonnell; community and event sources corroborate AI and Data Science KC activity.",
+    participantApproved: false,
+    aiGenerated: true,
+    lastResearchedAt: "2026-06-29",
+    bioMarkdown:
+      "Aaron Moss leads AI engineering work at Burns & McDonnell and helps organize Data Science Kansas City. Public posts and community pages connect him to multi-agent application work, local data-science community building, and practical AI engineering.",
+    sources: {
+      primary: [
+        {
+          label: "LinkedIn",
+          url: "https://www.linkedin.com/in/aaron-s-moss",
+          note: "Exact-name profile listing AI Engineering Lead at Burns & McDonnell and Data Science Kansas City organizer.",
+        },
+        {
+          label: "Data Science Kansas City",
+          url: "https://datasciencekc.org/",
+          note: "Community site listing Aaron Moss as a current organizer.",
+        },
+      ],
+      secondary: [
+        {
+          label: "LinkedIn post",
+          url: "https://www.linkedin.com/posts/andrey-shor_aaron-moss-i-had-a-great-opportunity-to-activity-7394104445103476736-2a5r",
+          note: "Post references Aaron Moss presenting a multi-agent app and Burns & McDonnell AI work.",
+        },
+        {
+          label: "AI Makerspace",
+          url: "https://aimakerspace.io/custom-solutions/",
+          note: "Testimonial page listing Aaron Moss as Lead AI Engineer at Burns & McDonnell.",
+        },
+      ],
+    },
+  },
+  {
+    lookupKey: "10ylwxx",
+    displayName: "Abhesh Kumar",
+    headline: "CTO at Springline Advisory leading enterprise technology, AI integration, and digital transformation",
+    company: "Springline Advisory",
+    title: "Chief Technology Officer",
+    location: "New York, New York, United States",
+    tags: ["CTO", "AI integration", "digital transformation", "professional services", "RegTech"],
+    confidence: "high",
+    confidenceNote:
+      "Springline profile, Forbes profile, and independent member profile all confirm CTO role and technology strategy focus.",
+    participantApproved: false,
+    aiGenerated: true,
+    lastResearchedAt: "2026-06-29",
+    bioMarkdown:
+      "Abhesh Kumar is Chief Technology Officer at Springline Advisory, where he leads technology strategy, digital transformation, and AI integration. His background spans enterprise technology modernization, regulatory technology, digital finance, and operating-model transformation.",
+    sources: {
+      primary: [
+        {
+          label: "Springline Advisory",
+          url: "https://springlineadvisory.com/team/abhesh-kumar/",
+          note: "Company profile confirming CTO role and technology strategy remit.",
+        },
+        {
+          label: "Forbes Technology Council",
+          url: "https://councils.forbes.com/profile/Abhesh-Kumar-Chief-Technology-Officer-Springline-Advisory/626c75ec-20fd-4f93-abf6-1b9c4cf60611",
+          note: "Profile listing CTO role, Springline Advisory affiliation, and New York location.",
+        },
+      ],
+      secondary: [
+        {
+          label: "Bretton Woods Committee",
+          url: "https://brettonwoods.org/meet-our-members-63/",
+          note: "Member profile describing enterprise technology strategy, AI integration, and prior DTCC Digital Assets role.",
+        },
+        {
+          label: "Inside Public Accounting",
+          url: "https://insidepublicaccounting.com/2024/11/27/abhesh-kumar-joins-springline-advisory/",
+          note: "News item on Kumar joining Springline Advisory as CTO.",
+        },
+      ],
+    },
+  },
+];
+
+const participantProfileShards = [
+  researchBatch002,
+  researchBatch003,
+  researchBatch004,
+  researchBatch005,
+  researchBatch006,
+  researchBatch007,
+  researchBatch008,
+  researchBatch009,
+  researchBatch010,
+  researchBatch011,
+  researchBatch012,
+  researchBatch013,
+  researchBatch014,
+  researchBatch015,
+  researchBatch016,
+  researchBatch017,
+  researchBatch018,
+  researchBatch019,
+  researchBatch020,
+  researchBatch021,
+  researchBatch022,
+  researchBatch023,
+  researchBatch024,
+  researchBatch025,
+  researchBatch026,
+  researchBatch027,
+  researchBatch028,
+  researchBatch029,
+  researchBatch030,
+  researchBatch031,
+  researchBatch032,
+  researchBatch033,
+  researchBatch034,
+  researchBatch035,
+  researchBatch036,
+  researchBatch037,
+  researchBatch038,
+  researchBatch039,
+  researchBatch040,
+  researchBatch041,
+  researchBatch042,
+  researchBatch043,
+  researchBatch044,
+  researchBatch045,
+  researchBatch046,
+  researchBatch047,
+  researchBatch048,
+  researchBatch049,
+  researchBatch050,
+  researchBatch051,
+  researchBatch052,
+  researchBatch053,
+  researchBatch054,
+  researchBatch055,
+  researchBatch056,
+  researchBatch057,
+  researchBatch058,
+  researchBatch059,
+  researchBatch060,
+  researchBatch061,
+  researchBatch062,
+  researchBatch063,
+  researchBatch064,
+  researchBatch065,
+  researchBatch066,
+  researchBatch067,
+  researchBatch068,
+  researchBatch069,
+  researchBatch070,
+  researchBatch071,
+  researchBatch072,
+  researchBatch073,
+  researchBatch074,
+  researchBatch075,
+  researchBatch076,
+  researchBatch077,
+  researchBatch078,
+  researchBatch079,
+  researchBatch080,
+  researchBatch081,
+  researchBatch082,
+  researchBatch083,
+  researchBatch084,
+  researchBatch085,
+  researchBatch086,
+  researchBatch087,
+  researchBatch088,
+  researchBatch089,
+  researchBatch090,
+  researchBatch091,
+  researchBatch092,
+  researchBatch093,
+  researchBatch094,
+  researchBatch095,
+] as StaticParticipantProfile[][];
+
+export const participantProfiles: StaticParticipantProfile[] = [
+  ...baseParticipantProfiles,
+  ...participantProfileShards.flat(),
 ];
 
 export const participantProfilesByLookupKey = new Map(

@@ -1,0 +1,801 @@
+[
+  {
+    "lookupKey": "01c6d38",
+    "displayName": "James Russo",
+    "headline": "Engineer at HeyGen and builder of agent-native video tooling",
+    "company": "HeyGen",
+    "title": "Senior Software Engineer / Project Lead",
+    "location": "New York, NY",
+    "tags": ["video AI", "developer tools", "agents", "open source", "TypeScript"],
+    "confidence": "high",
+    "confidenceNote": "HeyGen-authored posts, GitHub profile, and LinkedIn all tie James Russo to HeyGen and HyperFrames; exact internal seniority/project-lead wording comes from the participant row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "James Russo works on engineering at HeyGen, with recent public work around HyperFrames, an open-source framework for AI-generated video rendering. Useful matches: agent tooling, video generation workflows, developer experience, and launch/content automation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "HeyGen Research: Autonomous launch videos",
+          "url": "https://www.heygen.com/research/stripe-projects",
+          "note": "HeyGen article by James Russo on agent-driven video creation using HeyGen APIs and HyperFrames."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/jrusso1020",
+          "note": "Profile lists current affiliation with heygen-com and pinned HyperFrames work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/james-russo-56026897",
+          "note": "Profile snippet lists experience at HeyGen."
+        },
+        {
+          "label": "HeyGen Research: HTML to Video",
+          "url": "https://www.heygen.com/research/html-to-video",
+          "note": "HeyGen article by James Russo about HyperFrames rendering internals."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0bl17jt",
+    "displayName": "James Zou",
+    "headline": "Head of Frontier Agents at Together AI and Stanford AI-for-science researcher",
+    "company": "Together AI",
+    "title": "Head of Frontier Agents",
+    "location": "Stanford, CA / Bay Area",
+    "tags": ["AI agents", "AI for science", "biomedicine", "evaluation", "multi-agent systems"],
+    "confidence": "high",
+    "confidenceNote": "Together AI, event/social posts, and Stanford/personal pages consistently tie James Zou to frontier agents and AI-for-science work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "James Zou leads frontier-agent work at Together AI and is an associate professor at Stanford focused on AI for science and medicine. Useful matches: scientific agents, biomedical AI, agent evaluation, open research, and multi-agent collaboration.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Together AI Research",
+          "url": "https://www.together.ai/research",
+          "note": "Together Research page lists James Zou under Frontier Agents."
+        },
+        {
+          "label": "Personal site",
+          "url": "https://www.james-zou.com/",
+          "note": "Official profile describes his Stanford AI for Science Lab and biomedical data science role."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Together AI LinkedIn post",
+          "url": "https://www.linkedin.com/posts/togethercomputer_ai-agents-are-starting-to-do-science-together-activity-7476371855658958848-eVkc",
+          "note": "Together AI post identifies him as Head of Frontier Agents and describes his AI Engineer World's Fair session."
+        },
+        {
+          "label": "McKinsey interview",
+          "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/james-zou-on-integrating-ai-agents-into-biology-r-and-d-and-drug-discovery",
+          "note": "Interview covers his work applying AI agents to biotech, biology, and drug discovery."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0nw9u8l",
+    "displayName": "Jameson Lee",
+    "headline": "GTM and technical account executive at Pydantic",
+    "company": "Pydantic",
+    "title": "Member of GTM / Technical Account Executive",
+    "location": "New York City, NY",
+    "tags": ["GTM", "developer tools", "Pydantic", "AI agents", "observability"],
+    "confidence": "high",
+    "confidenceNote": "Pydantic author page, LinkedIn snippets, and event listings consistently tie Jameson Lee to Pydantic and New York AI/developer events.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jameson Lee works on the GTM side at Pydantic, including technical account work around production AI tooling. Useful matches: developer-tool adoption, Pydantic AI/Logfire, agent observability, and customer-facing AI infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Pydantic author page",
+          "url": "https://pydantic.dev/authors/jameson-lee",
+          "note": "Official Pydantic page lists Jameson Lee as Account Executive and team member."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jamesonlee1",
+          "note": "Profile snippet lists experience at Pydantic and location in New York."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Luma event",
+          "url": "https://luma.com/xclhh1tx",
+          "note": "Event page lists Jameson Lee from Pydantic as Technical Account Executive speaking on production AI agent harnesses."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/mimoemergence",
+          "note": "Public profile snippet describes Sales at Pydantic."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1tr68xo",
+    "displayName": "Jan Curn",
+    "headline": "Founder and CEO of Apify",
+    "company": "Apify",
+    "title": "CEO",
+    "location": "Prague / San Francisco",
+    "tags": ["web scraping", "browser automation", "AI agents", "developer platforms", "data infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Apify official company/profile pages and multiple speaker profiles consistently identify Jan Curn as founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jan Curn is the founder and CEO of Apify, a platform for web scraping, browser automation, and web data workflows used by AI agents. Useful matches: agent access to live web data, scraping infrastructure, automation platforms, and startup leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Apify profile",
+          "url": "https://apify.com/jancurn",
+          "note": "Official Apify profile identifies him as founder and CEO."
+        },
+        {
+          "label": "Apify About",
+          "url": "https://apify.com/about",
+          "note": "Company page lists Jan Curn in leadership as Founder & CEO and describes Apify's web data platform."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/jancurn/",
+          "note": "Speaker bio identifies him as founder and CEO of Apify and summarizes his software/startup background."
+        },
+        {
+          "label": "WeAreDevelopers speaker profile",
+          "url": "https://www.wearedevelopers.com/world-congress/speakers/jan-curn",
+          "note": "Conference speaker page describes his Apify role and focus on web data tools for AI agents."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "17d1da0",
+    "displayName": "Janavi Kumar",
+    "headline": "Innovation and digital sensory leader at General Mills",
+    "company": "General Mills",
+    "title": "Innovation Leader, Future Capabilities",
+    "location": "Minneapolis, MN",
+    "tags": ["consumer insights", "food innovation", "sensory science", "digital transformation", "R&D"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly tie Janavi Kumar to General Mills digital sensory and future-capability work; the exact current title is only weakly corroborated outside people-data aggregators, so confidence is medium.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Janavi Kumar works at General Mills on sensory and consumer research, with a focus on digital tools, emerging technologies, and future-facing capability development. Useful matches: food innovation, consumer insights, R&D experimentation, and applied AI/data methods in product development.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Society of Sensory Professionals profile",
+          "url": "https://www.sensorysociety.org/membership/Pages/Kumar.aspx",
+          "note": "Professional bio lists her General Mills role, future-focused capability development, and digital sensory work."
+        },
+        {
+          "label": "General Mills LinkedIn post",
+          "url": "https://www.linkedin.com/posts/general-mills_generalmillslife-activity-6731630225085521920-jzIY",
+          "note": "General Mills post profiles Janavi Kumar as a digital senior sensory scientist focused on digital tools and new technologies."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AigoraCast podcast",
+          "url": "https://aigora.libsyn.com/janavi-kumar-a-learning-mindset",
+          "note": "Podcast listing identifies her as a General Mills digital senior sensory scientist."
+        },
+        {
+          "label": "Society of Sensory Professionals keynote page",
+          "url": "https://www.sensorysociety.org/meetings/archives/2022Conference/program/Pages/Keynote-Speakers.aspx",
+          "note": "Conference page lists her General Mills digital sensory role and work creating future-state capabilities."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rxmkq3",
+    "displayName": "Jannik Wieser",
+    "headline": "AI enablement and agile transformation lead at 4flow",
+    "company": "4flow SE",
+    "title": "AI Enablement Lead",
+    "location": "Berlin, Germany",
+    "tags": ["AI enablement", "agile coaching", "supply chain technology", "digital transformation", "Berlin"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently tie Jannik Wieser to 4flow in Berlin, but the public title found is Agile Coach rather than the row's AI Enablement Lead title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jannik Wieser works at 4flow in Berlin, with public profiles pointing to agile coaching and organizational change work. Useful match for conversations around AI adoption, process enablement, and digital transformation inside supply chain and logistics organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://de.linkedin.com/in/jannik-wieser-53610b183/en",
+          "note": "Public LinkedIn result lists Jannik Wieser with 4flow and Berlin."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org - 4flow Agile Coaching team",
+          "url": "https://theorg.com/org/4flow/teams/agile-coaching",
+          "note": "Lists Jannik Wieser on 4flow's Agile Coaching team."
+        },
+        {
+          "label": "4flow company site",
+          "url": "https://www.4flow.com/about-4flow",
+          "note": "Describes 4flow as a global supply chain consulting, software, and 4PL services provider."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1v5qfe7",
+    "displayName": "Jarah Euston",
+    "headline": "Co-founder, President and COO of WorkWhile",
+    "company": "WorkWhile",
+    "title": "Co-founder",
+    "location": "San Francisco, United States",
+    "tags": ["future of work", "hourly labor", "marketplaces", "AI workforce platforms", "founder", "San Francisco"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and high-signal sources tie Jarah Euston to WorkWhile as co-founder; 2026 sources indicate she transitioned from CEO to President and COO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jarah Euston co-founded WorkWhile, an AI-powered labor platform for flexible hourly work. She is a strong match for conversations about worker-first marketplaces, AI in frontline labor, operations-heavy startups, and scaling mission-driven workforce products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn post on WorkWhile CEO transition",
+          "url": "https://www.linkedin.com/posts/jarah_big-news-ive-hired-a-new-ceo-for-workwhile-activity-7432881901637619712-7IiU",
+          "note": "States she co-founded WorkWhile and moved into Co-founder, President, and COO."
+        },
+        {
+          "label": "WorkWhile annual report",
+          "url": "https://content.workwhilejobs.com/hubfs/Guides_Ebooks/Flex_Work_Nation_Redefining_How_America_Works.pdf",
+          "note": "Includes a CEO letter from Jarah Euston and describes WorkWhile's labor marketplace."
+        },
+        {
+          "label": "About.me profile",
+          "url": "https://about.me/jarah",
+          "note": "Self-profile identifies her as co-founder and CEO of WorkWhile in San Francisco."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "World Economic Forum author profile",
+          "url": "https://www.weforum.org/stories/authors/jarah-euston/",
+          "note": "Lists Jarah Euston as CEO and co-founder of WorkWhile and summarizes prior founder/operator experience."
+        },
+        {
+          "label": "Built In SF CEO transition coverage",
+          "url": "https://www.builtinsf.com/articles/workwhile-names-simon-khalaf-ceo-20260227",
+          "note": "Reports Simon Khalaf becoming CEO and Euston transitioning to president and COO."
+        },
+        {
+          "label": "Fortune Series B coverage",
+          "url": "https://fortune.com/2025/06/16/workwhile-flexible-labor-platform-raises-23-million-series-b/",
+          "note": "Profiles Euston as CEO and cofounder of WorkWhile and discusses the company's frontline-worker focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0pvwe1g",
+    "displayName": "Jared Joselowitz",
+    "headline": "Senior AI Research Engineer at Ufonia",
+    "company": "Ufonia",
+    "title": "Research engineer",
+    "location": "",
+    "tags": ["AI research", "AI safety", "clinical AI", "evaluation", "interpretability", "LLMs"],
+    "confidence": "high",
+    "confidenceNote": "Ufonia's own team pages, Jared's personal site, OpenReview, and arXiv all tie him to AI research and Ufonia.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jared Joselowitz is a Senior AI Research Engineer at Ufonia working on AI alignment, interpretability, evaluation, and patient-facing clinical AI systems. Useful match for conversations about LLM evaluation, AI safety research, and deploying AI responsibly in healthcare.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Ufonia people profile",
+          "url": "https://www.ufonia.com/people/jared-joselowitz",
+          "note": "Ufonia profile identifies him as Senior AI Research Engineer and summarizes his AI alignment and evaluation focus."
+        },
+        {
+          "label": "Ufonia team page",
+          "url": "https://www.ufonia.com/about-us",
+          "note": "Lists Jared Joselowitz as Senior AI Research Engineer."
+        },
+        {
+          "label": "Personal site",
+          "url": "https://jossy.co.za/",
+          "note": "Personal portfolio describes him as a research engineer currently working on AI at Ufonia."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "OpenReview profile",
+          "url": "https://openreview.net/profile?id=~Jared_Joselowitz2",
+          "note": "Lists Jared Joselowitz as an engineer at Ufonia and notes Imperial College London master's studies."
+        },
+        {
+          "label": "arXiv paper",
+          "url": "https://arxiv.org/abs/2410.12491",
+          "note": "Lists Jared Joselowitz as an author on LLM training-goal and inverse-reinforcement-learning research."
+        },
+        {
+          "label": "Ufonia publications page",
+          "url": "https://www.ufonia.com/publications",
+          "note": "References Jared Joselowitz in Ufonia research/publication context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0uxx3mb",
+    "displayName": "Jarret Stuart",
+    "headline": "Co-founder of OceanSync Data Solutions",
+    "company": "OceanSync Data Solutions Inc.",
+    "title": "Co-founder",
+    "location": "Halifax, Canada",
+    "tags": ["ocean technology", "marine weather data", "SaaS", "sustainability", "entrepreneurship", "Halifax"],
+    "confidence": "high",
+    "confidenceNote": "Company and high-signal secondary sources consistently identify Jarret Stuart as an OceanSync founder or co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jarret Stuart co-founded OceanSync Data Solutions, a Halifax-based ocean-tech company building shipborne weather-data systems for safer and more efficient maritime operations. Useful match for maritime data, sustainability, ocean technology, and capital-intensive climate or infrastructure startups.",
+    "sources": {
+      "primary": [
+        {
+          "label": "OceanSync Netherlands about page",
+          "url": "https://www.oceansync.nl/",
+          "note": "Official OceanSync page identifies Jarret Stuart as founder and describes his entrepreneurship and sustainability background."
+        },
+        {
+          "label": "OceanSync company site",
+          "url": "https://oceansync.com/",
+          "note": "Official OceanSync site identifies the company as OceanSync Data Solutions Inc. in Halifax."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/jarretstuart",
+          "note": "Public LinkedIn result links Jarret Stuart to oceansync.com among his company websites."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Preqin company profile",
+          "url": "https://www.preqin.com/data/profile/asset/oceansync-data-solutions-inc--/620746",
+          "note": "States OceanSync was founded in 2020 by co-founders Jarret Stuart and Sebastiaan Ambtman."
+        },
+        {
+          "label": "Entrevestor coverage",
+          "url": "https://entrevestor.com/oceantech/entry/oceansync-tracks-maritime-weather1",
+          "note": "Reports OceanSync was founded in 2020 by Sebastiaan Ambtman and energy-sector entrepreneur Jarret Stuart."
+        },
+        {
+          "label": "Canada-Portugal Ocean Networking Day",
+          "url": "https://canada-portugal-ocean-networking-day.b2match.io/components/21153",
+          "note": "Lists Jarret Stuart as Managing Director at OceanSync Data Solutions Inc. in Halifax."
+        },
+        {
+          "label": "Government of Canada ACOA release",
+          "url": "https://www.canada.ca/en/atlantic-canada-opportunities/news/2021/07/remote-weather-stations-will-provide-ships-with-realtime-offshore-weather-data.html",
+          "note": "Describes OceanSync Data Solutions Inc. and its ship-based automated weather station technology."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hl52ic",
+    "displayName": "Jason Adams",
+    "headline": "Director of Engineering, AI at Automattic and WordPress Core AI team representative",
+    "company": "Automattic",
+    "title": "Director of Engineering, AI",
+    "location": "Colorado Springs, CO, US",
+    "tags": ["WordPress", "AI infrastructure", "developer tools", "CMS", "open source"],
+    "confidence": "high",
+    "confidenceNote": "WordPress.org profile and Make WordPress AI team page both tie Jason Adams / jason_the_adams to Automattic and Core AI work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason leads AI engineering work at Automattic and represents the WordPress Core AI team. Useful match for conversations about AI-native CMS infrastructure, WordPress developer workflows, open-source governance, and productionizing AI features for a very large web ecosystem.",
+    "sources": {
+      "primary": [
+        {
+          "label": "WordPress.org profile",
+          "url": "https://profiles.wordpress.org/jason_the_adams/",
+          "note": "Lists Jason Adams as Director of Engineering, AI at Automattic, in Colorado Springs, and links his WordPress/Core AI contributor identity."
+        },
+        {
+          "label": "Make WordPress AI team page",
+          "url": "https://make.wordpress.org/ai/",
+          "note": "Lists Jason Adams / jason_the_adams as Team Rep for WordPress AI and affiliated with Automattic."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jasontheadams",
+          "note": "Public profile headline identifies him as Director of Engineering, AI at Automattic."
+        },
+        {
+          "label": "LinkedIn post on Telex",
+          "url": "https://www.linkedin.com/posts/jasontheadams_the-telex-team-is-taking-huge-steps-forward-activity-7459968778731155457-yItZ",
+          "note": "Recent public post connects him to Automattic AI/WordPress product work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1y2scrm",
+    "displayName": "Jason Ardell",
+    "headline": "Engineering leader building freight and logistics data products at Shiplify",
+    "company": "Shiplify",
+    "title": "Director of Engineering",
+    "location": "Denver Metropolitan Area, US",
+    "tags": ["logistics technology", "freight data", "engineering leadership", "machine learning", "APIs"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, The Org, and logistics-industry event coverage consistently identify Jason Ardell as Shiplify engineering leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason is an engineering leader at Shiplify, a logistics data company focused on location intelligence and LTL accessorial data. Useful match for conversations about applied ML, freight-tech APIs, data quality, and leading engineering in specialized B2B markets.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jasonardell",
+          "note": "Public profile identifies Jason Ardell as a principal software / ML engineer and team lead at Shiplify."
+        },
+        {
+          "label": "Shiplify LinkedIn company page",
+          "url": "https://www.linkedin.com/company/shiplify",
+          "note": "Company page lists Jason Ardell among Shiplify employees and describes Shiplify's logistics data/API business."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org - Shiplify",
+          "url": "https://theorg.com/org/shiplify",
+          "note": "Org chart lists Jason Ardell as Director of Engineering at Shiplify."
+        },
+        {
+          "label": "SMC3 Insider Blog",
+          "url": "https://smc3blog.com/education-workshop-digital-transformation/",
+          "note": "Industry workshop recap names Jason Ardell as Director of Engineering at Shiplify."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "137o0k3",
+    "displayName": "Yavuz Jason Aybasti",
+    "headline": "AI sales and go-to-market leader helping enterprises adopt generative AI",
+    "company": "ByteDance",
+    "title": "AI Sales & GTM Leader",
+    "location": "San Francisco Bay Area, CA, US",
+    "tags": ["generative AI", "enterprise sales", "go-to-market", "BytePlus", "AI adoption"],
+    "confidence": "medium",
+    "confidenceNote": "Public LinkedIn data strongly matches the name, ByteDance affiliation, and AI/GTM focus; corroborating sources are mostly LinkedIn activity around BytePlus/ByteDance rather than independent profiles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Yavuz Jason works on enterprise generative-AI adoption and go-to-market at ByteDance/BytePlus. Useful match for conversations about AI sales motions, enterprise adoption, international BytePlus GTM, and translating AI infrastructure into customer-facing value.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/yavuz-jason-aybasti",
+          "note": "Public profile identifies Yavuz Jason Aybasti as helping enterprises adopt generative AI, with ByteDance listed."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn post by Gozde D.",
+          "url": "https://www.linkedin.com/posts/gozde-d-bb603387_byteplus-bytedance-enterpriseai-activity-7474709585782542337-CixE",
+          "note": "BytePlus/ByteDance enterprise AI post tags Yavuz Jason Aybasti among people involved in the effort."
+        },
+        {
+          "label": "LinkedIn directory search",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Aybasti",
+          "note": "Directory result ties Yavuz Jason Aybasti to ByteDance and Union City, CA."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1h29ize",
+    "displayName": "Jason Knight",
+    "headline": "Agentic transformation leader helping EWN shift toward AI-enabled software delivery",
+    "company": "EWN",
+    "title": "Head of Agentic Transformation",
+    "location": "Decatur, TX, US",
+    "tags": ["agentic AI", "transformation", "software delivery", "scrum", "change management"],
+    "confidence": "medium",
+    "confidenceNote": "Public LinkedIn profile and articles match the name, EWN role, and agentic-transformation framing; independent non-LinkedIn corroboration is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason leads agentic transformation at EWN, bringing a developer-to-Scrum-master background into AI-enabled organizational change. Useful match for conversations about introducing agents into software teams, change management, coaching, and practical AI adoption inside established SaaS companies.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jasontknight",
+          "note": "Public profile identifies Jason Knight as Head of Agentic Transformation at EWN."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn article",
+          "url": "https://www.linkedin.com/pulse/today-i-am-two-weeks-old-jason-knight-sbiec",
+          "note": "Article page shows Jason Knight with the Head of Agentic Transformation at EWN headline."
+        },
+        {
+          "label": "LinkedIn post",
+          "url": "https://www.linkedin.com/posts/jasontknight_professional-scrum-master-ii-activity-6637736832601853952-9FwR",
+          "note": "Public post page reinforces his Scrum/agile background and current EWN headline."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1hkp6rv",
+    "displayName": "Jason Liu",
+    "headline": "Developer Experience Engineer on the Codex team at OpenAI and creator of Instructor",
+    "company": "OpenAI",
+    "title": "Developer Experience Engineer",
+    "location": "New York, NY, US",
+    "tags": ["developer experience", "OpenAI", "Codex", "structured outputs", "RAG", "agents", "evals"],
+    "confidence": "high",
+    "confidenceNote": "Jason's personal site, public GitHub profile, and recent OpenAI/Codex public appearances consistently identify the same person and role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason works on developer experience for OpenAI's Codex team and is known for Instructor, structured-output tooling, and practical AI engineering writing. Useful match for conversations about agent workflows, evals, RAG, context engineering, developer tooling, and production LLM patterns.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://jxnl.co/",
+          "note": "Jason states he is a Developer Experience Engineer on the Codex team at OpenAI."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/jxnl",
+          "note": "Public profile identifies Jason Liu as creator of Instructor and an AI systems builder."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Cerebras LinkedIn post",
+          "url": "https://www.linkedin.com/posts/cerebras-systems_jason-liu-from-openai-answers-the-most-common-activity-7442238895846719489-y4qo",
+          "note": "Public post introduces Jason from OpenAI's Developer Experience team discussing Codex."
+        },
+        {
+          "label": "Latent Space podcast",
+          "url": "https://www.latent.space/p/instructor",
+          "note": "Podcast profile covers Jason Liu's role in creating Instructor and his AI engineering focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0leba2s",
+    "displayName": "Jason Lopatecki",
+    "headline": "Co-founder and CEO of Arize AI focused on AI observability, evaluations, and production agent reliability",
+    "company": "Arize AI",
+    "title": "Co-founder and CEO",
+    "location": "",
+    "tags": ["AI observability", "LLM evaluation", "AI agents", "machine learning infrastructure", "founder", "analytics"],
+    "confidence": "high",
+    "confidenceNote": "Arize's author page and conference speaker pages consistently identify Jason Lopatecki as co-founder and CEO of Arize AI, with prior TubeMogul/Adobe experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason Lopatecki is co-founder and CEO of Arize AI, where he works on observability and evaluation for AI systems and agents in production. He previously co-founded TubeMogul and helped scale it through IPO and acquisition by Adobe, giving him useful context for founders and technical leaders building data-heavy AI products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Arize AI author profile",
+          "url": "https://arize.com/author/jason-lopatecki/",
+          "note": "Company profile identifying him as co-founder and CEO of Arize AI and summarizing prior TubeMogul experience."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jason-lopatecki-9509941",
+          "note": "Professional profile listing current Arize AI role and founder background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The AI Conference speaker profile",
+          "url": "https://aiconference.com/speakers/jason-lopatecki/",
+          "note": "Conference bio describing his Arize AI role, AI observability focus, and TubeMogul background."
+        },
+        {
+          "label": "ODSC AI X Podcast episode",
+          "url": "https://podcasts.apple.com/us/podcast/from-llms-to-ai-agents-and-rag-mastering-genai/id1721516836?i=1000672396108",
+          "note": "Podcast listing him as Arize AI co-founder and CEO discussing GenAI evaluations."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fje3my",
+    "displayName": "Jason Loucks",
+    "headline": "Cloud and engineering leader at InMotion Hosting",
+    "company": "InMotion Hosting",
+    "title": "GM, Cloud Division and Director of Development & Engineering",
+    "location": "",
+    "tags": ["cloud infrastructure", "web hosting", "engineering leadership", "product development", "open source infrastructure", "managed hosting"],
+    "confidence": "high",
+    "confidenceNote": "InMotion Hosting's official leadership page names Jason Loucks as GM of the Cloud Division and Director of Development & Engineering; secondary directories corroborate the role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason Loucks leads cloud division work and development engineering at InMotion Hosting, a web hosting and managed services provider. He is a relevant match for conversations around cloud infrastructure, hosting platforms, open source infrastructure, and product development for technical operations teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "InMotion Hosting about page",
+          "url": "https://www.inmotionhosting.com/about-us",
+          "note": "Official company leadership page listing Jason Loucks as GM, Cloud Division and Director of Development & Engineering."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jasonloucks",
+          "note": "Professional profile for Jason Loucks describing executive product and development leadership experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Datanyze company profile",
+          "url": "https://www.datanyze.com/companies/inmotion-hosting/37571451",
+          "note": "Company directory entry corroborating his InMotion Hosting cloud division and development engineering leadership role."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03wku9j",
+    "displayName": "Jason Mattiace",
+    "headline": "VP of Engineering at Qualified, leading AI-powered B2B pipeline products",
+    "company": "Qualified",
+    "title": "VP of Engineering",
+    "location": "Los Angeles, California, United States",
+    "tags": ["engineering leadership", "agentic marketing", "AI SDR", "B2B SaaS", "Salesforce ecosystem", "startup engineering"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Delphi, The Org, and Qualified directory data consistently tie Jason Mattiace to engineering leadership at Qualified, with Los Angeles location appearing in multiple sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason Mattiace is VP of Engineering at Qualified, where he leads engineering for AI-driven products that help B2B marketing teams generate pipeline. He is useful to match with attendees working on agentic software development, AI SDR workflows, Salesforce-native SaaS, and scaling engineering teams in fast-moving AI product environments.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jason-mattiace",
+          "note": "Professional profile identifying him as VP of Engineering at Qualified and based in Los Angeles."
+        },
+        {
+          "label": "Delphi profile",
+          "url": "https://www.delphi.ai/jason-mattiace",
+          "note": "Profile states he leads engineering at Qualified and works on AI agents for B2B marketing pipeline."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/qualified-com/org-chart/jason-mattiace",
+          "note": "Organization profile describing his engineering leadership role at Qualified and prior founder/CTO experience."
+        },
+        {
+          "label": "Datanyze company profile",
+          "url": "https://www.datanyze.com/companies/qualified/356441348",
+          "note": "Company directory listing Jason Mattiace as Vice President, Engineering at Qualified."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1f5srvw",
+    "displayName": "Jason Palmer",
+    "headline": "Director of Innovation at NewEdge Capital Group",
+    "company": "NewEdge Capital Group",
+    "title": "Director of Innovation",
+    "location": "New Orleans, Louisiana, United States",
+    "tags": ["wealthtech", "innovation", "technical product management", "financial services", "founder", "platform technology"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and organization directory sources tie this Jason Palmer to NewEdge Capital Group and an innovation/product role; official company bio was not found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason Palmer is listed as Director of Innovation at NewEdge Capital Group, with prior platform technology work at NewEdge Advisors and founder/operator experience at MobileQubes. He is likely relevant for attendees interested in wealth management technology, innovation programs, product strategy, and platform operations in financial services.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jaspalmer",
+          "note": "Professional profile identifying him as Director of Innovation at NewEdge Capital Group and showing prior NewEdge Advisors and MobileQubes roles."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/newedge-capital-group/org-chart/jason-palmer",
+          "note": "Organization profile listing him as Director, Innovation at NewEdge Capital Group and summarizing prior platform and founder roles."
+        },
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/Jason/Palmer",
+          "note": "LinkedIn people directory result corroborating the NewEdge Capital Group affiliation and New Orleans location."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0tpgzps",
+    "displayName": "Jason Sommerset",
+    "headline": "Product and platform executive at Bandwidth focused on CPaaS and voice AI infrastructure",
+    "company": "Bandwidth",
+    "title": "VP/SVP Product & Platform",
+    "location": "United States",
+    "tags": ["CPaaS", "voice AI", "telecom APIs", "developer ecosystems", "product strategy", "communications infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Bandwidth pages, investor news, and product talks consistently connect Jason Sommerset to Bandwidth product leadership, though current public titles vary across VP Product, VP Product Management, and Principal Product Strategy & Innovation.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jason Sommerset is a product and platform leader at Bandwidth with deep experience in telecom APIs, CPaaS, messaging, and voice AI infrastructure. He is a strong match for attendees building AI agents that need production voice, communications APIs, developer platforms, or network-level reliability.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jasonsommerset",
+          "note": "Professional profile tying him to Bandwidth and describing AI/ML, CPaaS, and developer ecosystem focus."
+        },
+        {
+          "label": "Bandwidth voice AI blog",
+          "url": "https://www.bandwidth.com/blog/scaling-voice-ai-applications/",
+          "note": "Company blog quoting Jason Sommerset as Principal, Product Strategy & Innovation at Bandwidth on voice AI."
+        },
+        {
+          "label": "Personal website",
+          "url": "https://sommerset.io/index.html",
+          "note": "Personal site describing strategic product advisory, product strategy, new product development, and AI innovation guidance."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Bandwidth investor news release",
+          "url": "https://investors.bandwidth.com/news-releases/news-release-details/bandwidth-zendesk-and-kipsu-will-speak-texting-new-preferred",
+          "note": "Bandwidth release identifying Jason Sommerset as VP of Product in the context of business messaging and customer service."
+        },
+        {
+          "label": "Alan Quayle interview",
+          "url": "https://alanquayle.com/2013/08/23/interview-with-jason-sommerset-director-of-product-development-bandwidth/",
+          "note": "Interview naming him Director of Product Development at Bandwidth and discussing telecom APIs."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/bandwidth/org-chart/jason-sommerset",
+          "note": "Organization profile listing Jason Sommerset as VP Product Management at Bandwidth."
+        }
+      ]
+    }
+  }
+]

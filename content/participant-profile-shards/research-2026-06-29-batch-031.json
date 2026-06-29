@@ -1,0 +1,130 @@
+[
+  {
+    "lookupKey": "1qgx1an",
+    "displayName": "Bernhard Kaim",
+    "headline": "Developer-community business development leader connecting technology companies with developer audiences",
+    "company": "WeAreDevelopers",
+    "title": "Director Business Development",
+    "location": "",
+    "tags": ["developer communities", "business development", "partnerships", "developer marketing", "events"],
+    "confidence": "high",
+    "confidenceNote": "Company team page and LinkedIn public profile/search evidence align on name, employer, and business-development role; location was not verified from strong public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director Business Development at WeAreDevelopers, focused on helping companies reach developer and technical-decision-maker communities through events, partnerships, and developer-community programs.",
+    "sources": {
+      "primary": [
+        {"label": "WeAreDevelopers About", "url": "https://www.wearedevelopers.com/about", "note": "Company team page lists Bernhard Kaim as Director Business Development."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bernhard-kaim", "note": "Public profile/search result identifies him as Director BD at WeAreDevelopers."}
+      ],
+      "secondary": [
+        {"label": "WeAreDevelopers LinkedIn event post", "url": "https://www.linkedin.com/posts/wearedevelopers.org_mwc26-4yfn-ai-activity-7434586828013355010-M-fl", "note": "Company post references Bernhard as Director of Business Development at a major tech event."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1anbec9",
+    "displayName": "Bernie Pruss",
+    "headline": "Cloud data strategy and architecture leader focused on Snowflake-centered analytics platforms",
+    "company": "Cloud Data Consulting, Inc.",
+    "title": "CEO",
+    "location": "Denver, US",
+    "tags": ["data architecture", "Snowflake", "dbt", "data governance", "business intelligence", "analytics engineering"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, company team page, LinkedIn, and conference bio consistently identify Bernie Pruss with Cloud Data Consulting and senior data leadership; exact title varies between CEO, Founder, and Chief Data Solutions Architect.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and senior data architect at Cloud Data Consulting, helping teams design Snowflake-centered data platforms, analytics engineering workflows, governance practices, and business-ready data models.",
+    "sources": {
+      "primary": [
+        {"label": "Bernie Pruss personal site", "url": "https://berniepruss.com/", "note": "Personal site says he runs Cloud Data Consulting and works on data architectures with Snowflake, dbt, and Coalesce."},
+        {"label": "Cloud Data Consulting team page", "url": "https://clouddataconsulting.com/our-team/", "note": "Company page lists Bernie Pruss as Founder and Chief Data Solutions Architect and says the company is headquartered in Denver."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/berniepruss", "note": "Public profile/search result describes him as Founder and Chief Data Architect at Cloud Data Consulting."}
+      ],
+      "secondary": [
+        {"label": "INFORMS Analytics 2024 speaker profile", "url": "https://meetings.informs.org/wordpress/analytics2024/speakers/bernie-pruss/", "note": "Conference bio lists him as CEO and Chief Data Solutions Architect at Cloud Data Consulting with decades of data-systems experience."},
+        {"label": "Cloud Data Consulting LinkedIn company page", "url": "https://www.linkedin.com/company/cloud-data-consulting", "note": "Company profile describes Cloud Data Consulting as Denver-based IT consulting focused on data supply chains."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "13jbl8n",
+    "displayName": "Bill Easton",
+    "headline": "Product leader building developer tools, agent infrastructure, observability, and MCP ecosystem tooling",
+    "company": "Pydantic",
+    "title": "Head of Product",
+    "location": "Madison, US",
+    "tags": ["developer tools", "AI infrastructure", "agents", "observability", "MCP", "Pydantic", "FastMCP"],
+    "confidence": "high",
+    "confidenceNote": "Pydantic author page, LinkedIn, GitHub, and FastMCP sources consistently match Bill Easton, Pydantic Head of Product, Madison, and FastMCP maintainer context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Product at Pydantic and FastMCP maintainer, focused on bringing AI agents to production through developer tools, observability, MCP infrastructure, and reliable AI engineering workflows.",
+    "sources": {
+      "primary": [
+        {"label": "Pydantic author profile", "url": "https://pydantic.dev/authors/bill-easton", "note": "Official Pydantic profile lists him as Head of Product, FastMCP Maintainer, and focused on developer tools, observability, and AI infrastructure."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/williamseaston", "note": "Public profile/search result identifies him at Pydantic, responsible for helping customers bring agents to production, located in Madison."},
+        {"label": "GitHub profile", "url": "https://github.com/strawgate", "note": "GitHub profile confirms Bill Easton, Madison, website strawgate.com, and LinkedIn handle."}
+      ],
+      "secondary": [
+        {"label": "FastMCP maintainer announcement", "url": "https://jlowin.dev/blog/fastmcp-bill-easton", "note": "Announcement names Bill Easton as an external FastMCP maintainer and notes his observability product background."},
+        {"label": "Pydantic LinkedIn announcement", "url": "https://www.linkedin.com/posts/pydantic_welcoming-bill-easton-as-head-of-product-activity-7467302534844547072-t9xd", "note": "Company post announces him as Head of Product and summarizes Elastic, Amazon, Verve, FastMCP, and Pydantic AI background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1h7ra18",
+    "displayName": "Bill Roy",
+    "headline": "Mortgage technology founder building rules-based loan decisioning and pricing infrastructure",
+    "company": "LoanPASS",
+    "title": "Founder/ CEO",
+    "location": "Miami, US",
+    "tags": ["mortgage technology", "loan decisioning", "pricing engines", "fintech", "housing", "capital markets"],
+    "confidence": "high",
+    "confidenceNote": "LoanPASS, BlockGen, LinkedIn, and HousingWire sources consistently identify Bill Roy as founder/CEO tied to LoanPASS and Miami; career details are well supported by company and industry profiles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of LoanPASS, a mortgage-technology company building configurable loan decisioning and pricing tools for lenders. Longtime housing and financial-services operator with capital-markets, mortgage-tech, and fintech leadership experience.",
+    "sources": {
+      "primary": [
+        {"label": "LoanPASS announcement", "url": "https://www.loanpass.io/post/loanpass-founder-bill-roy-honored-as-2024-housingwire-vanguard", "note": "Company announcement identifies Bill Roy as LoanPASS founder and CEO and describes the company's rules-based loan decisioning engine."},
+        {"label": "BlockGen team page", "url": "https://blockgencorp.com/team.html", "note": "Company leadership page lists Bill Roy as Founder and CEO of BlockGen, with LoanPASS as a subsidiary, and gives career background."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bill-roy-4036ba158", "note": "Public profile/search result identifies him as Founder and CEO of LoanPASS."}
+      ],
+      "secondary": [
+        {"label": "HousingWire Vanguard profile", "url": "https://www.housingwire.com/winner-profile/2024-vanguard-bill-roy/", "note": "Industry award profile describes him as LoanPASS founder and CEO and summarizes his mortgage-tech and investment career."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "19fjfqe",
+    "displayName": "Bilun Sun",
+    "headline": "AI engineer applying LLMs, generative AI, and research engineering to clinical and scientific workflows",
+    "company": "InsightRx",
+    "title": "Principal AI Engineer",
+    "location": "Greater Montreal Metropolitan Area",
+    "tags": ["AI engineering", "LLMs", "generative AI", "healthcare AI", "precision dosing", "research engineering", "GFlowNets"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn strongly matches name, InsightRX, title, and location; additional career detail comes from The Org, Mila, and publication sources, with The Org marked unverified.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal AI Engineer at InsightRx in the Greater Montreal area, working at the intersection of applied AI, LLMs, generative systems, and healthcare/precision-dosing workflows. Prior public research traces connect them to Mila and machine-learning work on generative flow networks.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/bilun-sun", "note": "Public profile lists Bi Lun Sun as Principal AI Engineer at InsightRX, located in the Greater Montreal Metropolitan Area, with University of Waterloo listed."},
+        {"label": "Mila directory", "url": "https://mila.quebec/en/directory/bilun-bi-lun-sun", "note": "Mila directory lists Bilun Bi Lun Sun as alumni."},
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=jBj08KgAAAAJ", "note": "Scholar profile for Bilun Sun shows AI publications and a verified Mila affiliation."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/insightrx/org-chart/bi-lun-sun", "note": "Unverified org profile lists Bi Lun Sun as Principal AI Engineer at InsightRX and summarizes LLM, generative AI, Riskfuel, Mila, and Kindroid background."},
+        {"label": "arXiv publication", "url": "https://arxiv.org/abs/2310.02779", "note": "Machine-learning paper lists Bilun Sun as a coauthor on expected flow networks and GFlowNets research."},
+        {"label": "InsightRX LinkedIn activity", "url": "https://www.linkedin.com/posts/insightrx_insightrx-%F0%9D%99%9E%F0%9D%99%A8-%F0%9D%99%A3%F0%9D%99%A4%F0%9D%99%AC%F0%9D%99%AA%F0%9D%99%A8%F0%9D%99%9A%F0%9D%99%99-%F0%9D%99%9E%F0%9D%99%A3-%F0%9D%99%A2%F0%9D%99%A4%F0%9D%99%A7%F0%9D%99%9A-activity-7402358278011420672-irzp", "note": "Company activity describes InsightRX's precision-dosing platform and AI-agent direction."}
+      ]
+    }
+  }
+]

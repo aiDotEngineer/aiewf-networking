@@ -1,0 +1,237 @@
+[
+  {
+    "lookupKey": "0rfqlke",
+    "displayName": "Ammar Naseer",
+    "headline": "Co-founder and CTO building AI-native aircraft maintenance tools at Fleetcraft",
+    "company": "Fleetcraft",
+    "title": "Co-founder, CTO",
+    "location": "London, GB",
+    "tags": ["aviation", "aerospace", "AI", "maintenance operations", "startup founder", "enterprise software"],
+    "confidence": "high",
+    "confidenceNote": "Primary and company-adjacent sources consistently identify Ammar Naseer as Fleetcraft co-founder/CTO; company description and funding coverage align on AI for aircraft maintenance.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Fleetcraft, an AI software company focused on aircraft maintenance workflows. Ammar is useful to match with attendees working on aviation, MRO operations, regulated workflow automation, applied AI, and early-stage technical company building.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/aanaseer",
+          "note": "Lists Ammar Naseer as Co-founder, CTO at Fleetcraft and references AI in aerospace."
+        },
+        {
+          "label": "Fleetcraft LinkedIn company page",
+          "url": "https://uk.linkedin.com/company/fleetcraft-aero",
+          "note": "Describes Fleetcraft as AI built for aircraft maintenance and lists Ammar Naseer among employees."
+        },
+        {
+          "label": "Entrepreneurs First portfolio page",
+          "url": "https://www.joinef.com/companies/fleetcraft/",
+          "note": "Names Ammar Naseer as CTO and describes Fleetcraft's aircraft maintenance AI tools."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Startup Intros company profile",
+          "url": "https://startupintros.com/orgs/fleetcraft",
+          "note": "Summarizes Fleetcraft as co-founded by CEO Finn Quinlan and CTO Ammar Naseer, with AI for aviation maintenance."
+        },
+        {
+          "label": "Entrepreneurs First LinkedIn funding post",
+          "url": "https://www.linkedin.com/posts/entrepreneurs-first_november-portfolio-roundup-fleetcraft-activity-7401269332707536897-6iAJ",
+          "note": "Reports Fleetcraft's seed round and names Finn Quinlan as CEO and Ammar Naseer as CTO."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1c70uux",
+    "displayName": "Anand Madhavan",
+    "headline": "SVP Engineering at Midi Health, scaling AI-native women's health technology",
+    "company": "Midi Health",
+    "title": "Senior Vice President of Engineering",
+    "location": "Palo Alto / Mountain View, CA, US",
+    "tags": ["engineering leadership", "healthtech", "women's health", "AI-native products", "scaling teams", "consumer platforms"],
+    "confidence": "high",
+    "confidenceNote": "Anand's own LinkedIn post says he joined Midi Health as SVP Engineering; profile and secondary leadership pages align with prior engineering leadership history.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "SVP Engineering at Midi Health, where he is helping scale the engineering team, clinical AI infrastructure, and health data platform for women's midlife care. Previously held senior engineering leadership roles at Everlaw, Narvar, Snap, and Twitter.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/madhavananand",
+          "note": "Lists Anand Madhavan at Midi Health and Stanford University, located in the Mountain View area."
+        },
+        {
+          "label": "LinkedIn announcement post",
+          "url": "https://www.linkedin.com/posts/madhavananand_today-im-starting-a-new-chapter-joining-activity-7439379382546345984-bRi8",
+          "note": "Anand states he joined Midi Health as SVP of Engineering and describes the AI and care platform opportunity."
+        },
+        {
+          "label": "Midi Health website",
+          "url": "https://www.joinmidi.com/",
+          "note": "Describes Midi as an insurance-covered virtual clinic for perimenopause and menopause care."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "ELC speaker profile",
+          "url": "https://sfelc.com/speaker/anand-madhavan",
+          "note": "Summarizes prior engineering leadership roles at Everlaw, Narvar, Snap, and Twitter."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/midi-health/org-chart/anand-madhavan",
+          "note": "Unverified org profile listing Anand as Senior Vice President of Engineering at Midi Health."
+        },
+        {
+          "label": "Midi Health Series D press release",
+          "url": "https://www.joinmidi.com/press-release/series-d-announcement",
+          "note": "Provides company context on Midi Health's scale, funding, and Palo Alto base."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ct1tyw",
+    "displayName": "Anand Nimkar",
+    "headline": "Partner and Applied AI Practice Leader at Deloitte Canada",
+    "company": "Deloitte",
+    "title": "Partner, Applied AI Practice Leader",
+    "location": "Toronto, CA",
+    "tags": ["applied AI", "generative AI", "enterprise AI", "consulting", "cloud partnerships", "financial services"],
+    "confidence": "high",
+    "confidenceNote": "Deloitte's official profile identifies Anand Nimkar as leading Deloitte Canada's applied AI practice and serving as Chief Architect in the Canadian Office of Generative AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Partner at Deloitte Canada leading the applied AI practice. Anand works on AI strategy and implementation for large enterprises and public-sector organizations, including generative AI architecture, platform delivery, and AI ecosystem partnerships.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Deloitte profile",
+          "url": "https://www.deloitte.com/ca/en/about/people/profiles.anand-nimkar%2B21287c98.html",
+          "note": "Official Deloitte profile describing Anand as applied AI practice leader and Chief Architect for the Canadian Office of Generative AI."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/animkar",
+          "note": "Lists Anand Nimkar as Partner and Applied AI Practice Leader at Deloitte."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Deloitte new partner class",
+          "url": "https://www.deloitte.com/ca/en/about/new-partners.html",
+          "note": "Lists Anand Nimkar in Technology & Transformation, Ontario."
+        },
+        {
+          "label": "Akka and Deloitte collaboration announcement",
+          "url": "https://akka.io/blog/news-akka-and-deloitte",
+          "note": "Quotes Anand as Partner and Applied AI practice leader at Deloitte Canada on scaling agentic AI."
+        },
+        {
+          "label": "C-Vision event speaker page",
+          "url": "https://www.cvisionintl.com/events/custom/2024-nov-13-aws-deepgram-deloitte-event-toronto/attendees/speakers/anand-nimkar/",
+          "note": "Event page associating Anand Nimkar with Deloitte for a Toronto AI event."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1s0rbhb",
+    "displayName": "Anand Trivedi",
+    "headline": "Responsible technology and federal AI lead at REI Systems",
+    "company": "REI Systems, Inc.",
+    "title": "AI Offering Lead",
+    "location": "Sterling / Ashburn, VA, US",
+    "tags": ["government technology", "federal AI", "responsible AI", "AI governance", "public sector", "case management"],
+    "confidence": "medium",
+    "confidenceNote": "Official REI Systems articles consistently identify Anand as AI Offering Lead; the supplied Senior Director title was not directly verified in primary sources, and secondary org listings vary.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI Offering Lead at REI Systems working on federal AI adoption, governance, risk management, grants, case management, and workflow automation. Good match for attendees focused on public-sector AI, responsible technology, and government modernization.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/anand-trivedi",
+          "note": "Identifies Anand Trivedi with REI Systems, Harvard, GovTech, and responsible technology."
+        },
+        {
+          "label": "REI Systems AI governance article",
+          "url": "https://www.reisystems.com/navigating-the-federal-ai-governance-risk-management-landscape/",
+          "note": "Official REI Systems byline naming Anand Trivedi as AI Offering Lead."
+        },
+        {
+          "label": "REI Systems software governance article",
+          "url": "https://www.reisystems.com/accelerating-software-governance-with-ai/",
+          "note": "Official REI Systems article by Anand Trivedi on AI for federal software governance and risk management."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Federal News Network commentary",
+          "url": "https://federalnewsnetwork.com/commentary/2024/09/open-government-using-data-transparency-as-a-driver-of-economic-growth/",
+          "note": "Identifies Anand as REI Systems' AI/ML competency lead in open government commentary."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/rei-systems/org-chart/anand-trivedi",
+          "note": "Unverified profile summarizing responsible technology background and public-sector innovation experience."
+        },
+        {
+          "label": "REI Systems AI solutions announcement",
+          "url": "https://www.reisystems.com/rei-systems-unveils-mindful-ai-powered-solutions-to-drive-government-efficiency-through-digital-transformation/",
+          "note": "Quotes Anand Trivedi as AI offering lead at REI Systems."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1udp4zp",
+    "displayName": "Anastasia Shchogoleva",
+    "headline": "Engineering and operations leader at Manychat",
+    "company": "Manychat",
+    "title": "VP of Engineering",
+    "location": "London Area, GB",
+    "tags": ["engineering leadership", "operations", "product operations", "messaging platforms", "SaaS", "team scaling"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn identifies Anastasia as VP of Engineering at Manychat and other sources reference operations leadership; the supplied COO/CTO title was not verified in accessible primary sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering and operations leader at Manychat, a customer conversation automation platform. Her public footprint points to leadership across engineering, product operations, and scaling product teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/ashchogoleva",
+          "note": "Lists Anastasia Shchogoleva as VP of Engineering at Manychat in the London area."
+        },
+        {
+          "label": "Manychat engineering careers page",
+          "url": "https://careers.manychat.com/team/engineering",
+          "note": "Official Manychat page describing the engineering team's product and platform focus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn colleague post",
+          "url": "https://www.linkedin.com/posts/aleksandr-anosov-ios_four-years-ago-on-a-cold-autumn-night-on-activity-7419679699662168065-RPY_",
+          "note": "Mentions interviewing with Anastasia when she was Head of Product Operations at Manychat."
+        },
+        {
+          "label": "Clodura Manychat company profile",
+          "url": "https://www.clodura.ai/directory/company/manychat",
+          "note": "Third-party company profile listing Anastasia Shchogoleva in operations leadership."
+        }
+      ]
+    }
+  }
+]

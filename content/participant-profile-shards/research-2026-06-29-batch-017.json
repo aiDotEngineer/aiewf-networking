@@ -1,0 +1,135 @@
+[
+  {
+    "lookupKey": "1r1cvvx",
+    "displayName": "Alok Aggarwal",
+    "headline": "Hydrolix engineering leader working on AI, connectors, and high-scale observability data",
+    "company": "Hydrolix",
+    "title": "Director of Engineering",
+    "location": "Portland, OR, US",
+    "tags": [
+      "observability",
+      "data infrastructure",
+      "natural language analytics",
+      "engineering leadership",
+      "connectors",
+      "Databricks"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Hydrolix blog, LinkedIn preview, GitHub, and The Org results align on Alok Aggarwal at Hydrolix in Portland. Public title phrasing varies between Director of Engineering and Innovation Lab leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alok is an engineering leader at Hydrolix, where he works on innovation-lab efforts spanning natural-language querying, connectors, and high-scale event-data analytics. He is a strong match for conversations about observability, data infrastructure, AI-assisted analytics, and engineering team leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Hydrolix: Innovation Lab Q&A",
+          "url": "https://hydrolix.io/blog/innovation-lab/",
+          "note": "Hydrolix article featuring Alok Aggarwal and Innovation Lab work."
+        },
+        {
+          "label": "LinkedIn: Alok Aggarwal",
+          "url": "https://www.linkedin.com/in/alokaggarwal2/",
+          "note": "Professional profile preview tying Alok to Portland and Hydrolix."
+        },
+        {
+          "label": "GitHub: aggarwaa",
+          "url": "https://github.com/aggarwaa",
+          "note": "Public code profile for Alok Aggarwal."
+        },
+        {
+          "label": "Hydrolix: Natural Language Queries",
+          "url": "https://hydrolix.io/blog/natural-language-queries-with-hydrolix/",
+          "note": "Company technical context for AI-assisted analytics work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org: Alok Aggarwal",
+          "url": "https://theorg.com/org/hydrolix/org-chart/alok-aggarwal",
+          "note": "Directory profile listing Alok as Director, Innovation Lab at Hydrolix."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qvx4ki",
+    "displayName": "Alysia Palmer",
+    "headline": "Director of Engineering at Ibotta working in consumer and retail performance marketing technology",
+    "company": "Ibotta",
+    "title": "Director of Engineering",
+    "location": "",
+    "tags": [
+      "engineering leadership",
+      "consumer technology",
+      "retail media",
+      "performance marketing",
+      "commerce",
+      "marketplace platforms"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn search result and public preview identify Alysia Palmer as Director of Engineering at Ibotta; the attendee row supplies the same company and title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alysia is a Director of Engineering at Ibotta, a performance-marketing and consumer-rewards platform. She is a good match for conversations about engineering leadership, commerce systems, retail media, and scaling consumer product infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn: Alysia Palmer",
+          "url": "https://www.linkedin.com/in/alysiapalmer",
+          "note": "Professional profile preview listing Director of Engineering at Ibotta."
+        },
+        {
+          "label": "Ibotta",
+          "url": "https://www.ibotta.com/",
+          "note": "Company context for Ibotta's performance-marketing platform."
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "11lluz2",
+    "displayName": "Aman Raj",
+    "headline": "Co-founder and CEO of Decawork, building autonomous IT admin tooling for enterprises",
+    "company": "Decawork",
+    "title": "Co-founder & CEO",
+    "location": "",
+    "tags": [
+      "enterprise software",
+      "IT automation",
+      "AI agents",
+      "founder",
+      "B2B SaaS",
+      "workflow automation"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "The attendee row identifies Aman Raj as Decawork co-founder and CEO. Public sources strongly verify Decawork's company positioning, while founder-level public evidence is thinner.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aman is listed as co-founder and CEO of Decawork, which positions itself as an autonomous IT admin for enterprises. He is a useful match for conversations about enterprise AI agents, IT automation, B2B SaaS, and founder-led product development.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Decawork",
+          "url": "https://www.decawork.ai/",
+          "note": "Company site describing Decawork as an autonomous IT admin for enterprises."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "F4 Fund: Decawork AI",
+          "url": "https://f4.fund/startups/decawork",
+          "note": "Startup directory listing for Decawork AI."
+        },
+        {
+          "label": "RocketReach: Decawork AI",
+          "url": "https://rocketreach.co/decawork-ai-profile_b6a7248fc8885847",
+          "note": "Company directory page that surfaced Aman Raj in Decawork context; contact details intentionally not included."
+        }
+      ]
+    }
+  }
+]

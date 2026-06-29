@@ -1,0 +1,130 @@
+[
+  {
+    "lookupKey": "0w1e3xr",
+    "displayName": "Andrew Garvin",
+    "headline": "Metronome cofounder working on usage-based billing and AI-era monetization at Stripe",
+    "company": "Metronome / Stripe",
+    "title": "Cofounder, Metronome",
+    "location": "Oakland / San Francisco Bay Area, US",
+    "tags": ["usage-based billing", "pricing strategy", "AI monetization", "fintech", "Stripe", "startup operations"],
+    "confidence": "high",
+    "confidenceNote": "Public LinkedIn and event pages match Andrew Garvin as Metronome cofounder/COO, with Stripe and Metronome confirming the acquisition context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder of Metronome, now part of Stripe, focused on monetization infrastructure for usage-based and AI-native businesses. Useful connection for founders and GTM leaders thinking through pricing, metering, billing, and revenue operations as AI products move beyond seat-based SaaS.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/agarvin", "note": "Lists Andrew Garvin as Co-Founder at Metronome with Stripe experience."},
+        {"label": "Metronome blog", "url": "https://metronome.com/blog/our-next-chapter-metronome-is-now-part-of-stripe", "note": "Metronome announces it is now part of Stripe and frames its work around monetization infrastructure."},
+        {"label": "Stripe blog", "url": "https://stripe.com/blog/metronome-stripe-building-the-future-of-billing", "note": "Stripe says it finalized its acquisition of Metronome, an industry leader in usage-based billing."}
+      ],
+      "secondary": [
+        {"label": "Simon-Kucher event page", "url": "https://www.simon-kucher.com/en/events/roundtable-redesigning-revenue-models-and-go-market-ai-era", "note": "Lists Andrew Garvin as COO and cofounder of Metronome for an AI-era revenue model roundtable."},
+        {"label": "Gathr LinkedIn post", "url": "https://www.linkedin.com/posts/gathrcommunity_this-morning-we-sat-down-with-andrew-garvin-activity-7470085533721886720-d6kr", "note": "Describes Andrew Garvin discussing agentic AI pricing as Metronome cofounder."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0h64ybl",
+    "displayName": "Andrew Jackson",
+    "headline": "Registered as Chief AI Officer at B Capital; public corroboration is weak",
+    "company": "B Capital",
+    "title": "Chief AI Officer",
+    "location": "San Francisco, US",
+    "tags": ["AI strategy", "venture capital", "portfolio support", "enterprise AI", "investment operations"],
+    "confidence": "low",
+    "confidenceNote": "Could not independently confirm a B Capital Andrew Jackson or Chief AI Officer role. Official B Capital sources confirm a strong AI platform and AI leadership function, but identify another person as Head of AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Registration identifies Andrew as Chief AI Officer at B Capital in San Francisco. Treat as a tentative match for conversations around AI strategy inside venture firms, portfolio enablement, and AI adoption by growth-stage companies until identity is confirmed.",
+    "sources": {
+      "primary": [
+        {"label": "B Capital homepage", "url": "https://b.capital/", "note": "Official firm page describing B Capital as a global investment firm with technology, healthcare, and resilience tech focus."},
+        {"label": "B Capital AGM AI announcement", "url": "https://b.capital/news-article/b-capital-highlights-ai-driven-investment-momentum-and-global-thought-leadership-at-2025-annual-general-meeting-and-ceo-summit/", "note": "Official B Capital page describes AI-driven strategy, internal AI engineering, and portfolio support."},
+        {"label": "B Capital team page for Head of AI", "url": "https://b.capital/team/andrea-pisoni/", "note": "Official team page confirms B Capital has a Head of AI role, but it does not verify Andrew Jackson."}
+      ],
+      "secondary": [
+        {"label": "B Capital LinkedIn company page", "url": "https://www.linkedin.com/company/b-capital-group", "note": "Company profile summarizes B Capital's global investment focus and assets under management."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1sym0zj",
+    "displayName": "Andrew Jardine",
+    "headline": "Head of GTM at Adaptive ML focused on reinforcement learning adoption and open-source ML communities",
+    "company": "Adaptive ML",
+    "title": "Head of GTM",
+    "location": "New York, US",
+    "tags": ["GTM", "reinforcement learning", "open-source ML", "enterprise AI", "MLOps", "Hugging Face alumni"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources match Andrew Jardine to Adaptive ML GTM leadership, Hugging Face background, and MLOps community work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "GTM leader at Adaptive ML helping enterprises adopt reinforcement learning and task-specific model optimization. Previously worked in open-source ML go-to-market at Hugging Face and is active in the MLOps community, making him a strong match for AI infrastructure, enterprise adoption, and model-evaluation conversations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/andrew-iain-jardine", "note": "Lists Andrew Jardine as Head of Sales at Adaptive ML and open-source ML advocate."},
+        {"label": "LinkedIn post", "url": "https://www.linkedin.com/posts/andrew-iain-jardine_aligning-llms-with-direct-preference-optimization-activity-7161743412377964544-wcNp", "note": "Shows Andrew sharing technical ML research content from an Adaptive ML and Hugging Face background."}
+      ],
+      "secondary": [
+        {"label": "ODSC speaker page", "url": "https://staging6.odsc.com/blog/speaker/andrew-jardine/", "note": "Lists Andrew as Head of GTM at Adaptive ML and describes his reinforcement learning and Hugging Face background."},
+        {"label": "Let's Talk AI podcast page", "url": "https://podcast.ausha.co/let-s-talk-ai/72-llms-open-source-and-head-of-gtm-at-adaptive-ml-with-andrew-jardine", "note": "Podcast bio describes his Adaptive ML role, open-source ML advocacy, and MLOps community leadership."},
+        {"label": "Kili Technology webinar page", "url": "https://resources.kili-technology.com/kili-adaptiveml-llm-rlhf-webinar", "note": "Speaker bio says Andrew drives customer engagement and adoption of reinforcement learning at Adaptive ML."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1kc0dhn",
+    "displayName": "Andrew Meyer",
+    "headline": "DevSecOps AI builder at Pray.com with architecture, cybersecurity, and research operations experience",
+    "company": "Pray.com",
+    "title": "AI Builder - DevSecOps",
+    "location": "Henderson, US",
+    "tags": ["DevSecOps", "AI builder", "cybersecurity", "architecture", "research operations", "consumer apps"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn directory and The Org match Andrew Meyer to Pray.com and DevSecOps; location varies across public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "DevSecOps and AI builder at Pray.com with a background spanning architecture, cybersecurity, and research operations. Relevant for conversations about secure AI product development, infrastructure hardening, and operationalizing AI in consumer software.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/andrewmeyer2007", "note": "Public profile identifies Andrew Meyer with Pray.com and operations/research responsibilities."},
+        {"label": "LinkedIn people directory", "url": "https://www.linkedin.com/pub/dir/Andrew/Meyer/us-0-United-States", "note": "Directory result lists Andrew Meyer as DevSecOps AI Builder at Pray.com."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/pray/org-chart/andrew-meyer", "note": "Unverified org profile describes DevSecOps, architecture, cybersecurity, and Pray.com experience."},
+        {"label": "Lead411 Pray.com listing", "url": "https://www4.lead411.com/Zak_Shellabarger_167080602.html", "note": "Company directory lists Andrew Meyer among Pray.com colleagues as DevSecOps AI Builder."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0w0r899",
+    "displayName": "Andrew Orfalea",
+    "headline": "AI and advanced analytics specialist at Walker Advertising focused on legal marketing performance",
+    "company": "Walker Advertising",
+    "title": "Sr AI Analyst",
+    "location": "Los Angeles, US",
+    "tags": ["AI analytics", "marketing analytics", "legal marketing", "data science", "lead generation", "campaign optimization"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources match Andy Orfalea to Walker Advertising and advanced analytics; exact title appears as Advanced Analytics Specialist rather than Sr AI Analyst.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Analytics professional at Walker Advertising working around AI-enabled campaign optimization and legal marketing data. Good match for attendees interested in applied analytics, paid media optimization, lead quality, and practical AI use cases in services businesses.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/andy-orfalea", "note": "Lists Andy Orfalea in data analytics with Walker Advertising experience."},
+        {"label": "Walker Advertising AI analytics page", "url": "https://www.walkeradvertising.com/ai-analytics/", "note": "Official company page describes Walker Advertising's use of AI analytics to optimize legal marketing campaigns."},
+        {"label": "Walker Advertising AI role page", "url": "https://www.walkeradvertising.com/ai-role/", "note": "Official company page describes AI-enhanced media planning and advanced analytics for legal campaigns."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/bainbridge-growth/org-chart/andy-orfalea", "note": "Unverified profile says Andy currently works as an Advanced Analytics Specialist at Walker Advertising."},
+        {"label": "LinkedIn Orfalea directory", "url": "https://www.linkedin.com/pub/dir/%2B/Orfalea", "note": "Directory result lists Andy Orfalea with Walker Advertising and data analytics."}
+      ]
+    }
+  }
+]

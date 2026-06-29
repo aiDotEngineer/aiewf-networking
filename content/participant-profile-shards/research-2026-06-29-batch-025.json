@@ -1,0 +1,131 @@
+[
+  {
+    "lookupKey": "0ogghbc",
+    "displayName": "Arnold Liwanag",
+    "headline": "Enterprise AI CTO, advisor, and investor focused on practical AI transformation",
+    "company": "Disruptive Edge",
+    "title": "CTO",
+    "location": "Toronto, Canada",
+    "tags": ["enterprise AI", "AI strategy", "supplier data", "technology leadership", "advising"],
+    "confidence": "medium",
+    "confidenceNote": "Strong evidence for Arnold Liwanag as a Toronto-based enterprise AI CTO/advisor; current CTO role at Disruptive Edge is not directly confirmed by public primary sources found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Enterprise AI technology leader with CTO experience at TealBook and IVADO Labs, plus advisory work around AI strategy, supply-chain data, and enterprise transformation. Useful match for attendees working on practical AI adoption, data products, and startup-to-enterprise commercialization.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn", "url": "https://ca.linkedin.com/in/arnoldliwanag", "note": "Profile identifies him as an enterprise AI CTO, advisor, and investor in the Toronto area."},
+        {"label": "Creative Destruction Lab mentor profile", "url": "https://creativedestructionlab.com/mentors/arnold-liwanag/", "note": "Lists him as CTO and AI advisor for TealBook and describes AI leadership across startups and enterprises."},
+        {"label": "StratMinds VC team", "url": "https://stratminds.vc/team", "note": "Lists Arnold Liwanag as a next-generation AI and strategy advisor, ex-CTO at TealBook and IVADO Labs."}
+      ],
+      "secondary": [
+        {"label": "TealBook CTO announcement", "url": "https://www.tealbook.com/news/tealbook-announces-new-chief-technology-officer/", "note": "Company announcement for his TealBook CTO appointment and supplier-data AI background."},
+        {"label": "Elevate speaker profile", "url": "https://elevate.ca/speakers/arnold-liwanag/", "note": "Speaker page describing 20+ years in technology and strategy consulting."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0s6gw14",
+    "displayName": "Artak Avanesyan",
+    "headline": "Used-auto dealer and owner/operator in Orem, Utah",
+    "company": "Wasatch Auto Exchange",
+    "title": "Owner",
+    "location": "Orem, United States",
+    "tags": ["automotive retail", "used cars", "local business", "sales", "operations"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources connect Artak Avanesyan to Wasatch Auto Exchange activity and to ownership of Avanesyan Motors in Orem; direct official owner confirmation for Wasatch Auto Exchange is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Orem-based automotive retailer associated with Wasatch Auto Exchange and used-vehicle sales. Useful match for conversations about local business operations, dealership workflows, inventory, and practical automation in small business.",
+    "sources": {
+      "primary": [
+        {"label": "Wasatch Auto Exchange website", "url": "https://www.wasatchautoexchange.com/", "note": "Official dealership site for Wasatch Auto Exchange in Orem, Utah."},
+        {"label": "Facebook profile", "url": "https://www.facebook.com/WasatchAutoExchange/", "note": "Public profile ties Artak Avanesyan to Wasatch Auto Exchange activity in Orem."},
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/artak-avanesyan-824aab63", "note": "Lists Artak Avanesyan as owner/managing director at Avanesyan Motors in Orem."}
+      ],
+      "secondary": [
+        {"label": "BBB business profile", "url": "https://www.bbb.org/us/ut/orem/profile/used-car-dealers/avanesyan-motors-llc-1166-90028762", "note": "Lists Artak Avanesyan as owner for Avanesyan Motors, LLC."},
+        {"label": "Wasatch Auto Exchange testimonials", "url": "https://www.wasatchautoexchange.com/testimonials/", "note": "Customer testimonial names Artak in the context of Wasatch Auto Exchange."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ih7svp",
+    "displayName": "Artur Borycki",
+    "headline": "VP of AI Research and Development at Teradata focused on agentic AI and enterprise data platforms",
+    "company": "Teradata",
+    "title": "Vice President, AI Research and Development",
+    "location": "San Diego, United States",
+    "tags": ["agentic AI", "enterprise data", "vector search", "AI research", "data platforms"],
+    "confidence": "high",
+    "confidenceNote": "Teradata pages and professional profiles consistently identify Artur Borycki as a Teradata AI research and advanced research leader based in San Diego.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Teradata AI research leader working on enterprise AI, agentic development, vector embeddings, and data-platform architecture. Strong match for attendees building production AI systems on enterprise data infrastructure.",
+    "sources": {
+      "primary": [
+        {"label": "Teradata webinar profile", "url": "https://www.teradata.com/insights/videos/accelerate-agentic-ai-loom-agent-skills", "note": "Teradata page lists him as VP of Advanced Research and VP of AI Research and Development, with work on agentic platforms and MCP servers."},
+        {"label": "Teradata Possible session", "url": "https://www.teradata.com/events/possible/sessions/journey-to-ai-autonomy", "note": "Teradata event page lists Artur Borycki as VP of AI Research and Development."},
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/artur-borycki-53b0311", "note": "Professional profile for Artur Borycki in San Diego."}
+      ],
+      "secondary": [
+        {"label": "UCSD Center for Wireless Communications board page", "url": "https://cwc.ucsd.edu/board-members", "note": "Lists his Teradata innovation and advanced-development role."},
+        {"label": "arXiv paper", "url": "https://arxiv.org/html/2606.04196v1", "note": "Lists Artur Borycki with Teradata Advanced Research on vector indexes for Apache Iceberg."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "03f4q8a",
+    "displayName": "Arturo Nereu",
+    "headline": "Founder of Nereu building AI-assisted game-development tools",
+    "company": "Nereu",
+    "title": "Founder",
+    "location": "Austin, United States",
+    "tags": ["game development", "AI tools", "developer relations", "Unity", "game engines"],
+    "confidence": "high",
+    "confidenceNote": "Primary site, LinkedIn activity, and AI Engineer schedule evidence all align on Arturo Nereu's AI and game-development work and Nereu founder role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Game-development and developer-relations leader with experience at Unity, Diversion, and MongoDB. Now building Nereu, an AI-assisted game engine/tooling effort aimed at helping creators stay unstuck while making games.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://arturonereu.com/", "note": "Describes his AI and game-development background and experience with Unity, Diversion, and MongoDB."},
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/arturonereu", "note": "Professional profile for Arturo Nereu in developer relations, engineering, and advocacy."},
+        {"label": "LinkedIn post about Nereu", "url": "https://www.linkedin.com/posts/arturonereu_ill-be-on-stage-at-ai-engineer-worlds-fair-activity-7475630669377753089-QmnM", "note": "States he is building Nereu and presenting it as a game engine for everyone."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?q=Fouad+Matin", "note": "Lists the session 'The Next Game Engine Won't Have a Manual' with Nereu founder attribution."},
+        {"label": "Presentations page", "url": "https://www.arturonereu.com/presentations/", "note": "Shows talks on AI for game development, AI search, RAG, Unity, and multiplayer games."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0g5699n",
+    "displayName": "Arturo Tellez",
+    "headline": "Apple decision-intelligence leader working at the intersection of data, analytics, and AI",
+    "company": "Apple",
+    "title": "US Decision Intelligence Manager",
+    "location": "Cupertino, United States",
+    "tags": ["decision intelligence", "data science", "analytics", "Apple", "AI"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn search evidence supports Arturo Tellez at Apple as US Decision Intelligence Manager in the San Francisco Bay Area; the provided 'AI Sr Mgr' title was not independently confirmed in public sources found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Apple decision-intelligence manager with a data and analytics focus. Useful match for attendees interested in applied AI, decision systems, measurement, and enterprise data science inside large product organizations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/arturotellez", "note": "Lists Arturo Tellez as US Decision Intelligence Manager at Apple in the San Francisco Bay Area."},
+        {"label": "LinkedIn Apple anniversary post", "url": "https://www.linkedin.com/posts/arturotellez_apple-10yearsatapple-innovation-activity-7071152563915542528-doOs", "note": "Public post references his 10-year Apple milestone."},
+        {"label": "LinkedIn Apple post", "url": "https://www.linkedin.com/posts/arturotellez_apple-50years-activity-7438288110603431936-mLDV", "note": "Recent public Apple-related post from the same profile."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn people directory", "url": "https://www.linkedin.com/pub/dir/Arturo/T%C3%A9llez", "note": "Directory result surfaces Arturo Tellez at Apple with Stanford education context."}
+      ]
+    }
+  }
+]

@@ -1,0 +1,232 @@
+[
+  {
+    "lookupKey": "1gk2qbr",
+    "displayName": "Sunny Rekhi",
+    "headline": "Forward-deployed engineering leader helping enterprises adopt AI agents in production",
+    "company": "Decagon",
+    "title": "FDE CTO",
+    "location": "San Francisco Bay Area",
+    "tags": ["AI agents", "forward deployed engineering", "enterprise AI", "customer support AI", "founder stories", "product engineering"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, AI Engineer schedule, and public social sources consistently identify Sunny Rekhi as FDE CTO at Decagon; location comes from LinkedIn public profile evidence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "FDE CTO at Decagon, focused on how forward-deployed engineering helps enterprise teams adopt AI agents. Also writes and posts about startup and founder origin stories.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sunny-rekhi", "note": "Public profile identifies Sunny Rekhi as Forward Deployed Engineering, CTO at Decagon in the San Francisco Bay Area."},
+        {"label": "X profile", "url": "https://x.com/sunnyrekhi", "note": "Public social profile connects Sunny Rekhi with founder-story content and prior YC founder context."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?q=Sunny+Rekhi", "note": "Conference schedule lists Sunny Rekhi of Decagon as FDE CTO for a session on forward deployed engineering."},
+        {"label": "LinkedIn post", "url": "https://www.linkedin.com/posts/sunny-rekhi_tarsal-raises-6-million-for-security-data-activity-7176598536824737792-BY9A", "note": "Public post snippet repeats the Decagon FDE CTO title."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1jes2g8",
+    "displayName": "Susannah Soon",
+    "headline": "Computing academic applying AI, human-centred computing, and digital health research",
+    "company": "Curtin University",
+    "title": "Associate Professor",
+    "location": "Perth, Australia",
+    "tags": ["AI", "digital health", "human-centred computing", "computing education", "5G", "research collaboration"],
+    "confidence": "high",
+    "confidenceNote": "Curtin staff, Curtin research pages, LinkedIn, DBLP, and event bios consistently match Susannah Soon as a Curtin computing academic working on AI, human-centred computing, and digital health.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Associate Professor in computing at Curtin University, working across AI, human-centred computing, digital health, 5G, and industry-linked student product development.",
+    "sources": {
+      "primary": [
+        {"label": "Curtin staff profile", "url": "https://staffportal.curtin.edu.au/staff/profile/view/susannah-soon-4aabe072/", "note": "Curtin profile describes Susannah Soon as a research and teaching academic in computing, AI, and human-centred technology."},
+        {"label": "LinkedIn profile", "url": "https://au.linkedin.com/in/susannah-soon", "note": "Public profile lists her as Associate Professor in Computing at Curtin University."}
+      ],
+      "secondary": [
+        {"label": "Curtin Healthy Connections team", "url": "https://www.curtin.edu.au/research/research-areas/healthy-communities/healthy-connections/meet-the-team/", "note": "Curtin project page lists Associate Professor Susannah Soon as academic lead for digital health work."},
+        {"label": "Future of Work Institute event bio", "url": "https://www.futureofworkinstitute.com.au/events-1/beyond-the-buzz-what-can-we-really-expect-from-a-future-with-ai", "note": "Event bio says she holds a PhD in AI and focuses on product development, AI, human-centred computing, and UX."},
+        {"label": "DBLP author page", "url": "https://dblp.org/pid/63/4442", "note": "Computer science bibliography lists publications by Susannah Soon."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wkbnl9",
+    "displayName": "Susheem Koul",
+    "headline": "Microsoft software engineer writing about systems, developer tools, and AI engineering",
+    "company": "Microsoft",
+    "title": "Senior Software Engineer",
+    "location": "Hyderabad, India",
+    "tags": ["software engineering", "Microsoft", "developer tools", "AI agents", "systems thinking", "technical writing"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn strongly matches Susheem Koul at Microsoft, with Substack and conference/video sources corroborating software-engineering and AI-agent interests; exact seniority comes primarily from the attendee row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineer at Microsoft with interests in scalable systems, developer workflows, and AI-agent infrastructure. Writes publicly about software engineering, systems thinking, creativity, and engineering growth.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://in.linkedin.com/in/susheemkoul", "note": "Public profile identifies Susheem Koul as Engineering at Microsoft in Hyderabad."},
+        {"label": "Substack", "url": "https://susheemk.substack.com/", "note": "Author page for Susheem Koul describes writing on software engineering, systems thinking, creativity, and human growth."},
+        {"label": "GitHub profile", "url": "https://github.com/susheem-k-zz", "note": "Public GitHub profile uses the Susheem Koul handle and shows software projects including Python tooling."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair video", "url": "https://www.youtube.com/watch?v=Lc8zRh9muoY", "note": "Session listing identifies Susheem Koul from Microsoft as a software engineer speaking about reproducing agent failures."},
+        {"label": "LinkedIn post", "url": "https://www.linkedin.com/posts/susheemkoul_agent2agent-protocol-how-inter-agent-communication-activity-7448969135985704961-IekB", "note": "Public post snippet connects him to Microsoft and Agent2Agent protocol discussion."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qkh5ec",
+    "displayName": "Sushil Tiwari",
+    "headline": "DevOps engineering manager focused on healthcare platform operations and agentic AI infrastructure",
+    "company": "Aya Healthcare Inc",
+    "title": "Senior Devops Manager",
+    "location": "San Diego, US",
+    "tags": ["DevOps", "healthcare technology", "platform engineering", "agentic AI", "cloud infrastructure", "operations"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org both match Sushil Tiwari to Aya Healthcare senior IT DevOps management; location signals conflict between the attendee row and public LinkedIn snippet, so location remains participant-provided.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior DevOps manager at Aya Healthcare, working on healthcare technology operations, platform reliability, and AI-oriented engineering infrastructure.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sushilti", "note": "Public profile identifies Sushil Tiwari with Aya Healthcare and Senior Manager IT DevOps experience."}
+      ],
+      "secondary": [
+        {"label": "Aya Healthcare DevOps team on The Org", "url": "https://theorg.com/org/aya-healthcare-inc/teams/devops-engineering", "note": "Team page lists Sushil Tiwari as Senior Manager IT Devops on Aya Healthcare's DevOps Engineering team."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Sushil/Tiwari", "note": "Public directory result associates a Sushil Tiwari profile with Aya Healthcare and related experience."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hxjbo4",
+    "displayName": "Sydney Sarachek",
+    "headline": "NBA AI product leader building fan-facing basketball intelligence and generative AI experiences",
+    "company": "NBA",
+    "title": "Senior Director, AI",
+    "location": "New York, US",
+    "tags": ["sports technology", "AI products", "fan engagement", "generative AI", "basketball analytics", "Azure OpenAI"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, Microsoft customer story, and NBA organization sources consistently identify Sydney Sarachek as a senior NBA AI leader working on fan and basketball AI products.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Director of AI at the NBA, leading AI product and engineering work that makes basketball data more accessible and improves fan engagement through generative AI experiences.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sydneysarachek", "note": "Public profile identifies Sydney Sarachek as Senior Director, AI at the NBA, leading AI engineering and product work."},
+        {"label": "X profile", "url": "https://x.com/sydsar7", "note": "Public social profile says she is building AI products at the NBA."}
+      ],
+      "secondary": [
+        {"label": "Microsoft customer story", "url": "https://www.microsoft.com/en/customers/story/19758-national-basketball-association-azure-open-ai-service", "note": "Microsoft story quotes Sydney Sarachek as NBA AI Technical Lead on Azure OpenAI-powered fan experiences."},
+        {"label": "NBA AI and Partnerships on The Org", "url": "https://theorg.com/org/nba/teams/ai-and-partnerships", "note": "Organization page lists Sydney Sarachek as Senior Director, AI on the NBA AI and Partnerships team."},
+        {"label": "LinkedIn post", "url": "https://www.linkedin.com/posts/sydneysarachek_nba-to-track-players-ball-with-hawk-eye-activity-7041059987661451265-T5If", "note": "Public post snippet repeats Senior Director, AI at the NBA."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1j01155",
+    "displayName": "Takao Suzuki",
+    "headline": "Pharma digital transformation executive leading enterprise AI and DX programs",
+    "company": "Chugai Pharmaceutical Co., Ltd.",
+    "title": "Head of Digital Transformation Unit, Associate Vice President",
+    "location": "Chuo-ku, Japan",
+    "tags": ["digital transformation", "pharma", "enterprise AI", "healthcare innovation", "DX strategy", "change management"],
+    "confidence": "high",
+    "confidenceNote": "Chugai official stories, annual report, event materials, and LinkedIn consistently identify Takao Suzuki as Chugai's Head of Digital Transformation Unit and Associate Vice President.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Associate Vice President and Head of the Digital Transformation Unit at Chugai Pharmaceutical, leading DX and enterprise AI efforts for healthcare innovation after prior Microsoft DX strategy leadership.",
+    "sources": {
+      "primary": [
+        {"label": "Chugai story", "url": "https://www.chugai-pharm.co.jp/english/story/detail/20250404000000_28.html", "note": "Official Chugai article identifies Takao Suzuki as Head of the DX Unit and discusses successful digital transformation."},
+        {"label": "Chugai note interview", "url": "https://note.chugai-pharm.co.jp/n/n567c61352e5d?hl=en", "note": "Chugai interview says Takao Suzuki was appointed Head of the Digital Transformation Unit."},
+        {"label": "LinkedIn profile", "url": "https://jp.linkedin.com/in/takao-suzuki", "note": "Public profile lists him as AVP and Head of DX Unit at Chugai Pharma, Roche Group."}
+      ],
+      "secondary": [
+        {"label": "Chugai Innovation Day listing", "url": "https://note.chugai-pharm.co.jp/n/n5932af611aed?hl=en", "note": "Event listing names Takao Suzuki as Senior Vice President, Head of Digital Transformation Unit, Chugai Pharmaceutical."},
+        {"label": "Chugai Annual Report 2025", "url": "https://www.chugai-pharm.co.jp/english/ir/reports_downloads/annual_reports/files/eAR2025_12_spread.pdf", "note": "Annual report lists Takao Suzuki as Associate Vice President and Head of Digital Transformation Unit."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0lx56zp",
+    "displayName": "Tanvir Ahmed Shaikh",
+    "headline": "AI systems management program director bridging enterprise AI, policy, and responsible operations",
+    "company": "Carnegie Mellon University Heinz College Of Information Systems & Public Policy",
+    "title": "Director for AI Systems Management Programs",
+    "location": "Pittsburgh, US",
+    "tags": ["AI systems management", "AI leadership", "higher education", "enterprise AI", "responsible AI", "systems thinking"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Heinz College announcement, CMU directory, and public posts consistently match Tanvir Ahmed Shaikh to CMU Heinz AI Systems Management leadership in Pittsburgh.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director for AI Systems Management programs at CMU Heinz College, focused on preparing leaders to manage complex AI systems across technology, policy, governance, and enterprise operations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tanvirahmedshaikh", "note": "Public profile identifies him as Director AI Systems and Adjunct Professor at Carnegie Mellon University in Pittsburgh."},
+        {"label": "CMU Heinz directory", "url": "https://www.heinz.cmu.edu/directory/", "note": "Heinz College staff directory lists Tanvir Ahmed Shaikh in Artificial Intelligence Leadership."}
+      ],
+      "secondary": [
+        {"label": "Heinz College LinkedIn announcement", "url": "https://www.linkedin.com/posts/carnegie-mellon-university---h.-john-heinz-iii-college_we-would-like-to-extend-a-warm-welcome-to-activity-7420497783796858880-kZPb", "note": "Heinz College post welcomes Tanvir Ahmed Shaikh as Artificial Intelligence Systems Management Program Director."},
+        {"label": "Tanvir Ahmed Shaikh LinkedIn post", "url": "https://www.linkedin.com/posts/tanvirahmedshaikh_pittsburgh-carnegiemellon-heinzcollege-activity-7444407245788008448-u1wP", "note": "Public post says he moved to Pittsburgh to direct three AI Systems Management programs at CMU Heinz."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0bp9mrq",
+    "displayName": "Taranjeet Singh",
+    "headline": "Founder building the memory layer for AI agents and personalized LLM applications",
+    "company": "Mem0",
+    "title": "CEO",
+    "location": "San Francisco, US",
+    "tags": ["AI agents", "memory infrastructure", "LLM applications", "open source", "developer tools", "Y Combinator"],
+    "confidence": "high",
+    "confidenceNote": "YC, Mem0, X, Forbes Councils, and investor sources consistently identify Taranjeet Singh as Mem0 co-founder/CEO in San Francisco, focused on AI memory infrastructure.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Mem0, building memory infrastructure for AI agents and LLM applications so assistants can remember context, personalize interactions, and improve over time.",
+    "sources": {
+      "primary": [
+        {"label": "Mem0 author profile", "url": "https://mem0.ai/author/taranjeet-singh", "note": "Company author page says Taranjeet leads Mem0, a memory layer used by developers shipping agents to production."},
+        {"label": "X profile", "url": "https://x.com/taranjeetio", "note": "Public profile identifies him as Founder and CEO of Mem0, the memory layer for AI agents."},
+        {"label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/mem0", "note": "YC profile lists Mem0 as a San Francisco AI memory company founded by Taranjeet Singh and Deshraj Yadav, with Taranjeet as co-founder and CEO."}
+      ],
+      "secondary": [
+        {"label": "Basis Set portfolio profile", "url": "https://www.basisset.com/portfolio-companies/mem0", "note": "Investor profile describes Mem0's memory infrastructure platform and lists Taranjeet Singh as founder in San Francisco."},
+        {"label": "Forbes Councils profile", "url": "https://councils.forbes.com/profile/Taranjeet-Singh-Co-founder-CEO-Mem0/426fb5ad-7d97-43a5-a0ad-3797c6a75c33", "note": "Profile identifies Taranjeet Singh as Mem0 co-founder and CEO with product, growth, and software-engineering background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1nq9vue",
+    "displayName": "Tariq Shaukat",
+    "headline": "Enterprise software CEO focused on AI code verification, code quality, and developer productivity",
+    "company": "Sonar",
+    "title": "CEO",
+    "location": "",
+    "tags": ["developer tools", "code quality", "AI code verification", "enterprise software", "cloud leadership", "governance"],
+    "confidence": "high",
+    "confidenceNote": "Sonar, Forbes Technology Council, McKinsey, LinkedIn, and industry sources consistently identify Tariq Shaukat as Sonar CEO and former Google Cloud and Bumble president.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO of Sonar, working on AI code verification, code quality, code security, and governance for software teams. Previously held senior leadership roles at Google Cloud, Bumble, Caesars, and McKinsey.",
+    "sources": {
+      "primary": [
+        {"label": "Sonar press release", "url": "https://www.sonarsource.com/company/press-releases/tariq-shaukat-joins-sonar-as-co-ceo/", "note": "Company announcement says Tariq Shaukat joined Sonar as co-CEO after senior roles at Bumble and Google Cloud."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tariq-shaukat", "note": "Public profile snippet identifies him as CEO at Sonar and board member at Public Storage and Gap Inc."}
+      ],
+      "secondary": [
+        {"label": "Forbes Technology Council profile", "url": "https://councils.forbes.com/profile/Tariq-Shaukat-CEO-Sonar/057b3bf8-4b0d-4e60-bd54-8745eaaf1e77", "note": "Profile describes Tariq Shaukat as CEO of Sonar, focused on AI code verification and governance."},
+        {"label": "McKinsey interview", "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/how-ai-is-shaking-up-coding-interview-with-sonar-ceo-tariq-shaukat", "note": "Interview identifies him as CEO and board director of Sonar discussing AI-assisted coding."},
+        {"label": "IT Brew profile", "url": "https://www.itbrew.com/stories/2025/11/20/a-long-and-varied-career-led-tariq-shaukat-to-code-security", "note": "Industry profile says he moved to Sonar in 2023 as CEO after Google Cloud and Bumble leadership roles."}
+      ]
+    }
+  }
+]

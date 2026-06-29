@@ -1,0 +1,232 @@
+[
+  {
+    "lookupKey": "1wccmc1",
+    "displayName": "Tyler Fong",
+    "headline": "NVIDIA Brev product engineer helping developers get faster access to GPU infrastructure",
+    "company": "NVIDIA",
+    "title": "Dev Tech Engineer",
+    "location": "Santa Clara, US",
+    "tags": ["NVIDIA", "Brev", "GPU infrastructure", "developer experience", "AI infrastructure", "cloud GPUs"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently connect Tyler Fong to NVIDIA/Brev and GPU developer infrastructure work; the exact Dev Tech Engineer title is from the attendee row rather than a public profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Dev tech engineer at NVIDIA working around Brev and GPU developer infrastructure. Useful contact for developers building AI workloads that need smoother GPU access and cloud setup.",
+    "sources": {
+      "primary": [
+        {"label": "X profile", "url": "https://x.com/tyler_fong_", "note": "Public profile says Tyler Fong works on enterprise product at NVIDIA and Brev."}
+      ],
+      "secondary": [
+        {"label": "NVIDIA AI LinkedIn post", "url": "https://www.linkedin.com/posts/nvidia-ai_its-now-easier-than-ever-for-developers-activity-7416902140130013184-Pp59", "note": "NVIDIA AI post names Tyler Fong among the team working with Shadeform to bring GPU providers into NVIDIA Brev."},
+        {"label": "Shadeform partner post", "url": "https://www.linkedin.com/posts/ed-goode_today-were-super-excited-to-announce-nvidia-activity-7416889499231887360-K4bw", "note": "Partner post says Shadeform worked with Nader Khalil, Alec Fong, Tyler Fong, and team on NVIDIA Brev GPU offerings."},
+        {"label": "Exceeds AI profile", "url": "https://myteam.exceeds.ai/profile/tylerfong", "note": "Engineering activity profile identifies Tyler Fong with NVIDIA organization work on the brevdev/brev-cli repository."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1opoq5i",
+    "displayName": "Tyler Gillam",
+    "headline": "DigitalOcean AI infrastructure engineer building model routing and inference products",
+    "company": "DigitalOcean",
+    "title": "Senior Software Engineer II",
+    "location": "Austin, US",
+    "tags": ["AI infrastructure", "model routing", "inference", "DigitalOcean", "cloud platforms", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, DigitalOcean's company blog, and a public AI Engineer World's Fair speaker post consistently identify Tyler Gillam as a DigitalOcean Senior Software Engineer II working on AI inference routing.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Software Engineer II at DigitalOcean working on agentic AI infrastructure and inference routing. He helps teams choose models by cost, latency, task type, and product constraints.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tdgillam", "note": "Public profile identifies Tyler Gillam as Senior Software Engineer II for Agentic AI at DigitalOcean."},
+        {"label": "LinkedIn speaker post", "url": "https://www.linkedin.com/posts/tdgillam_excited-to-be-speaking-at-ai-engineer-world-activity-7475970496950632448-KORe", "note": "Public post says he is speaking at AI Engineer World's Fair about model routing work at DigitalOcean."}
+      ],
+      "secondary": [
+        {"label": "DigitalOcean blog", "url": "https://www.digitalocean.com/blog/behind-deploy-2026", "note": "DigitalOcean says Tyler Gillam helped build and demo the Inference Router, its AI routing product."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Tyler/Gillam", "note": "Public directory result repeats Senior Software Engineer II at DigitalOcean in Austin."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1xx4ryg",
+    "displayName": "Utpal Nadiger",
+    "headline": "OpenComputer and Digger co-founder building persistent cloud infrastructure for software agents",
+    "company": "OpenComputer",
+    "title": "Co-founder",
+    "location": "San Francisco, US",
+    "tags": ["AI agents", "agent infrastructure", "developer tools", "cloud infrastructure", "Digger", "OpenComputer"],
+    "confidence": "high",
+    "confidenceNote": "OpenComputer, X, GitHub, and podcast/interview sources consistently connect Utpal Nadiger to OpenComputer, Digger, agent infrastructure, and San Francisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder building OpenComputer and Digger, focused on persistent cloud computers and execution environments for AI agents. Good match for agent runtime, sandboxing, and developer-infrastructure conversations.",
+    "sources": {
+      "primary": [
+        {"label": "X profile", "url": "https://x.com/utpalnadiger", "note": "Public profile says Utpal Nadiger is building opencomputer.dev at digger.dev."},
+        {"label": "GitHub profile", "url": "https://github.com/UtpalJayNadiger", "note": "GitHub profile lists Utpal Nadiger, San Francisco, Digger affiliation, and devtools/open-source interests."},
+        {"label": "OpenComputer blog", "url": "https://opencomputer.dev/blog/where-should-the-agent-live", "note": "OpenComputer post lists Utpal Nadiger as an author on agent placement and sandbox lifecycle design."}
+      ],
+      "secondary": [
+        {"label": "Scaling DevTools podcast", "url": "https://scalingdevtools.com/podcast/episodes/shipping-22-products-to-find-the-true-product-utpal-from-digger-dev", "note": "Podcast bio identifies Utpal Nadiger as cofounder of Digger.dev and describes Digger's DevOps-agent work."},
+        {"label": "The Org Digger page", "url": "https://theorg.com/org/digger/offices/hq", "note": "Organization page lists Utpal Nadiger as co-founder at Digger."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1cmdr2x",
+    "displayName": "Vadivel Kumar Thangavelu",
+    "headline": "Exzeo technology executive applying AI and platform engineering to insurance software",
+    "company": "Exzeo",
+    "title": "CTO - Applied AI",
+    "location": "India",
+    "tags": ["insurance technology", "applied AI", "platform engineering", "enterprise software", "Exzeo", "technology leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly confirm Vadivel Kumar Thangavelu as an Exzeo senior technology executive, but they more often list him as SVP or director rather than the attendee-provided CTO - Applied AI title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology executive at Exzeo, working in insurance software and applied AI leadership. Relevant for conversations about rebuilding insurance workflows with AI, data, and platform systems.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://in.linkedin.com/in/vadivelk", "note": "Public profile identifies Vadivel Kumar Thangavelu as SVP at Exzeo."},
+        {"label": "Exzeo leadership page", "url": "https://www.exzeo.com/leadership", "note": "Company leadership page lists Vadivel Kumar as Senior Vice President."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/exzeo/org-chart/vadivel-kumar-thangavelu", "note": "Organization profile describes him as a senior executive at Exzeo USA and CEO of Exzeo Software Pvt. Ltd."},
+        {"label": "ZaubaCorp director page", "url": "https://www.zaubacorp.com/VADIVEL-KUMAR-THANGAVELU-03029881", "note": "Corporate-records page associates Vadivel Kumar Thangavelu with Exzeo Software Private Limited as a director."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0659czx",
+    "displayName": "Vaibhav Arya",
+    "headline": "AI.Tech managing partner and Media.net executive building AI-backed internet businesses",
+    "company": "AI.Tech",
+    "title": "Managing Partner",
+    "location": "Dubai, AE",
+    "tags": ["startup studio", "AI businesses", "adtech", "Media.net", "company building", "machine learning"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and AI.Tech company sources match Vaibhav Arya to AI.Tech, while business databases and press sources corroborate his Media.net executive background; location comes from the attendee row and Media.net's Dubai context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Managing Partner at AI.Tech and Media.net executive, focused on building AI and machine-learning powered businesses. Useful contact for company-building, adtech, and AI startup studio conversations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/vaibhavarya", "note": "Public profile lists Vaibhav Arya as Managing Partner at AI.Tech and CEO at Media.net."},
+        {"label": "AI.Tech website", "url": "https://ai.tech/", "note": "Company site describes AI.Tech as a startup studio and holding company building AI and machine-learning powered businesses."},
+        {"label": "AI.Tech LinkedIn page", "url": "https://www.linkedin.com/company/aitech-global", "note": "Company page describes AI.Tech and lists Vaibhav Arya among employees."}
+      ],
+      "secondary": [
+        {"label": "Tracxn Media.net profile", "url": "https://tracxn.com/d/companies/medianet/__KGosSbn-GwX7BPgf51YxqBkoT3zoW4JHpIVU_F8SXlA", "note": "Business database identifies Vaibhav Arya as Media.net CEO and AI.Tech as investor context."},
+        {"label": "Adweek article", "url": "https://www.adweek.com/adweek-wire/media-net-hires-netflix-ad-exec-adam-gerber/", "note": "Press article quotes Vaibhav Arya as Media.net's CEO."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0zoqzm8",
+    "displayName": "Vaibhav Beohar",
+    "headline": "BMO machine-learning engineer building AML, fraud, and GenAI workflows for financial services",
+    "company": "BMO",
+    "title": "ML Engineer",
+    "location": "Toronto, CA",
+    "tags": ["machine learning", "financial services", "AML", "fraud detection", "GenAI", "data science"],
+    "confidence": "high",
+    "confidenceNote": "Personal website, LinkedIn, and UC Berkeley alumni page consistently identify Vaibhav Beohar as a Toronto-based machine-learning/data-science professional connected to BMO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Machine-learning engineer at BMO working on AML reporting, fraud investigation workflows, and GenAI assistants. Strong fit for financial-services AI, applied ML, and production data-science discussions.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://www.beohar.com/", "note": "Portfolio lists Vaibhav Beohar as Sr. Machine Learning Engineer at Bank of Montreal in Toronto and describes AML and GenAI work."},
+        {"label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/beohar", "note": "Public profile describes Vaibhav Beohar as a data science and machine learning professional in Toronto."}
+      ],
+      "secondary": [
+        {"label": "UC Berkeley School of Information profile", "url": "https://www.ischool.berkeley.edu/people/vaibhav-beohar", "note": "Alumni profile connects Vaibhav Beohar to advanced analytics, ML, AI, and his LinkedIn profile."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Vaibhav/Beohar", "note": "Directory result associates a Toronto Vaibhav Beohar profile with BMO and data science/machine learning."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0uezajf",
+    "displayName": "Vaibhav Gupta",
+    "headline": "Boundary founder and BAML creator building a programming language for reliable AI software",
+    "company": "Boundary",
+    "title": "Founder and CEO",
+    "location": "Seattle, US",
+    "tags": ["BAML", "AI programming languages", "developer tools", "LLM reliability", "Y Combinator", "structured outputs"],
+    "confidence": "high",
+    "confidenceNote": "Boundary, YC, Sessionize, podcast, and LinkedIn sources consistently identify Vaibhav Gupta as Boundary's founder/CEO and co-creator of BAML.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Boundary, building BAML, a programming language and developer workflow for reliable AI components, structured LLM outputs, testing, and agent-oriented software.",
+    "sources": {
+      "primary": [
+        {"label": "Boundary team page", "url": "https://boundaryml.com/who-are-we", "note": "Company page lists Vaibhav Gupta as CEO and co-founder."},
+        {"label": "Sessionize speaker profile", "url": "https://sessionize.com/vbv/", "note": "Speaker profile identifies Vaibhav Gupta as Founder and CEO of Boundary and co-creator of BAML."},
+        {"label": "LinkedIn post", "url": "https://www.linkedin.com/posts/vaigup_5-years-12-pivots-3-yc-applications-2-activity-7411872603792924672-JxqR", "note": "Public post identifies him as CEO at Boundary/BAML and describes the company's path to a programming language for LLMs."}
+      ],
+      "secondary": [
+        {"label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/boundary", "note": "YC profile says Boundary was founded by Vaibhav Gupta and Aaron Villalpando Gonzalez and describes BAML."},
+        {"label": "Super Data Science podcast", "url": "https://www.superdatascience.com/podcast/sds-859-baml-the-programming-language-for-ai-with-vaibhav-gupta", "note": "Podcast episode identifies Vaibhav Gupta as founder and CEO of Boundary and discusses BAML."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0bgxumf",
+    "displayName": "Valeria Wu",
+    "headline": "Google DeepMind product manager working on Gemini Live and speech-to-speech AI experiences",
+    "company": "Google DeepMind",
+    "title": "Product Manager",
+    "location": "Stanford, US",
+    "tags": ["Google DeepMind", "Gemini Live", "voice agents", "multimodal AI", "speech-to-speech", "product management"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Google product/blog posts, and the AI Engineer World's Fair schedule consistently identify Valeria Wu as a Google DeepMind product manager working on Gemini Live or speech-to-speech model products.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product manager at Google DeepMind working on Gemini Live and speech-to-speech AI model experiences. Strong match for voice agents, real-time multimodal interaction, and AI product strategy.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/valeriawu", "note": "Public profile lists Valeria Wu as a Research Product Manager at Google DeepMind with Stanford background."},
+        {"label": "Google blog post", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/", "note": "Google post credits Valeria Wu as Product Manager on Gemini Flash Live audio improvements."},
+        {"label": "Google AI Studio article", "url": "https://x.com/GoogleAIStudio/article/1970545734736023564", "note": "Google AI Studio article lists Valeria Wu as Product Manager, Google DeepMind, for Gemini Live API voice-agent work."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?q=Fouad+Matin", "note": "Conference schedule lists Valeria Wu Fon of Google DeepMind as Product Manager for a speech-to-speech model research session."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/%2B/WU/us-84-San-Francisco-Bay-Area", "note": "Directory result repeats Valeria Wu's Google DeepMind and Stanford affiliation."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0d6okbm",
+    "displayName": "Varun Pant",
+    "headline": "AWS NeuroSymbolic AI builder connecting formal verification, Lean, and AI engineering",
+    "company": "AWS",
+    "title": "Builder, NeuroSymbolic AI",
+    "location": "Seattle, US",
+    "tags": ["AWS", "neurosymbolic AI", "formal verification", "Lean4", "automated reasoning", "LLM evaluation"],
+    "confidence": "high",
+    "confidenceNote": "AI Engineer World's Fair, AI Tinkerers, and LinkedIn public posts consistently identify Varun Pant as an AWS NeuroSymbolic AI engineering/product leader working on formal reasoning and Lean-related topics.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Builder on AWS NeuroSymbolic AI, focused on formal reasoning, Lean4, and trustworthy AI engineering. Good match for code verification, automated reasoning, and LLM evaluation discussions.",
+    "sources": {
+      "primary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises", "note": "Schedule lists Varun Pant as Builder, NeuroSymbolic AI at AWS for a Lean4/formal verification session."},
+        {"label": "AI Tinkerers presenter page", "url": "https://seattle.aitinkerers.org/connect/mu_7ReVwjfDPIY/presenters", "note": "Presenter page identifies Varun Pant as engineering and product leader for AWS NeuroSymbolic AI at Amazon."},
+        {"label": "AI Tinkerers meetup page", "url": "https://seattle.aitinkerers.org/p/ai-tinkerers-seattle-september-2024-meetup", "note": "Meetup page lists Varun Pant as Engg and Product Leader for AWS NeuroSymbolic AI at Amazon."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn post interaction", "url": "https://www.linkedin.com/posts/byron-cook-8765205_s2n-bignumdocs2nbignumsoundnessmd-at-activity-7433197163720892417-kZoP", "note": "Public LinkedIn snippet labels Varun Pant as Engineering & Product Leader at AWS NeuroSymbolic AI discussing soundness mechanisms."},
+        {"label": "AI Engineer schedule mirror", "url": "https://www.ai.engineer/schedule", "note": "Main conference schedule repeats Varun Pant's AWS NeuroSymbolic AI session listing."}
+      ]
+    }
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "lookupKey": "1xhgb4p",
+    "displayName": "Varun Shenoy",
+    "headline": "Long Lake cofounder deploying frontier AI into essential services and complex industries",
+    "company": "Long Lake",
+    "title": "Cofounder",
+    "location": "",
+    "tags": ["frontier AI", "vertical AI", "essential services", "enterprise transformation", "AI adoption", "operations"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, X profile, and AI Engineer World's Fair schedule consistently identify Varun Shenoy as a Long Lake cofounder focused on deploying frontier technology into essential services.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder at Long Lake, focused on applying frontier AI to essential services and operationally messy industries. Good match for conversations on vertical AI deployment, enterprise adoption, and making agents useful outside Silicon Valley.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://varunshenoy.com/", "note": "Personal homepage says Varun Shenoy is a cofounder at Long Lake focused on deploying frontier technology into essential services."},
+        {"label": "X profile", "url": "https://x.com/varunshenoy_", "note": "Public profile identifies him as cofounder at Long Lake's llmh account."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises", "note": "Conference schedule lists Varun Shenoy as Cofounder at Long Lake for a talk on vertical superintelligence."},
+        {"label": "X post", "url": "https://x.com/varunshenoy_/status/2059711407697129887", "note": "Authored post references how Long Lake is using Devin as engineering leverage."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "09cgfay",
+    "displayName": "Varun Singh",
+    "headline": "Arcee AI pre-training lead building open frontier reasoning models",
+    "company": "Arcee AI",
+    "title": "Pre-Training Lead",
+    "location": "San Francisco, US",
+    "tags": ["pre-training", "open models", "reasoning models", "model training", "Arcee AI", "research engineering"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, Arcee AI social posts, podcast listings, and AI Engineer World's Fair schedule consistently identify Varun Singh as Pre-Training Lead at Arcee AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Pre-Training Lead at Arcee AI working on frontier open reasoning models and the training systems behind them. Useful match for model training, open-weight reasoning, and research-engineering conversations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/varun-singh-cs", "note": "Public profile lists Varun Singh as Pre-training Lead at Arcee AI in San Francisco."},
+        {"label": "GitHub profile", "url": "https://github.com/sapiosaturn", "note": "GitHub profile identifies Varun Singh as Pre-training lead at Arcee AI and shows public transformer/model-training work."}
+      ],
+      "secondary": [
+        {"label": "Arcee AI LinkedIn post", "url": "https://www.linkedin.com/posts/arcee-ai_building-frontier-open-reasoning-models-activity-7447651942107082752-ATp9", "note": "Arcee AI post names CTO Lucas Atkins and Pre-Training Lead Varun Singh discussing Trinity model training."},
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?q=From+Zero+to+Leaderboard%3A+Building+an+End-to-End+AI+Agent+Evaluation&session=asn_2026_06_29_workshop_track_08_1420", "note": "Conference schedule lists Varun Singh as Pre-Training Lead at Arcee AI."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0m1ob4p",
+    "displayName": "Vasant Kearney",
+    "headline": "Onlay AI founder and medical physicist building healthcare AI for dental revenue workflows",
+    "company": "Onlay AI",
+    "title": "CEO",
+    "location": "Los Angeles, US",
+    "tags": ["healthcare AI", "dental AI", "revenue cycle", "medical imaging", "clinical automation", "founder"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, Onlay AI company page, Stedi interview, Google Scholar, and The Org consistently match Vasant Kearney to CEO/founder leadership at Onlay AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Onlay AI, building healthcare AI systems for dental revenue cycle automation. Brings a medical physics and clinical AI research background across imaging, radiotherapy, and dental workflows.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://vasantkearney.com/", "note": "Personal site describes Vasant Kearney, PhD, as Founder and CEO of Onlay AI building healthcare AI systems for dental revenue cycle automation."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/vasant-kearney-7b7a48b3", "note": "Public profile lists him as CEO of Onlay AI."},
+        {"label": "Onlay AI LinkedIn page", "url": "https://www.linkedin.com/company/onlay-ai", "note": "Company page lists Vasant Kearney as CEO of Onlay AI."}
+      ],
+      "secondary": [
+        {"label": "Stedi spotlight", "url": "https://www.stedi.com/blog/spotlight-vasant-kearney-onlay-ai", "note": "Interview identifies Vasant Kearney as CEO of Onlay AI and discusses health tech work."},
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=IEL5iFIAAAAJ", "note": "Scholar profile identifies Vasant Kearney, PhD, as Chief Executive Officer at Onlay AI with AI and insurance research interests."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "02yhw9q",
+    "displayName": "Venkatesh Babu Sekar",
+    "headline": "NetApp enterprise architect focused on AI/ML, GenAI, and data science systems",
+    "company": "NetApp",
+    "title": "Enterprise Architect",
+    "location": "North Carolina, US",
+    "tags": ["enterprise architecture", "AI/ML", "GenAI", "data science", "NetApp", "AWS"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org match Venkatesh Babu Sekar to NetApp AI/ML enterprise architecture; public sources support North Carolina-area AI architecture work, though detailed current scope is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Enterprise architect at NetApp working across AI/ML, GenAI, and data science. Useful contact for enterprise AI architecture, storage/data-platform constraints, and productionizing ML systems.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/venkateshbabus", "note": "Public profile identifies Venkatesh Babu Sekar as an Enterprise Architect for AI/ML and GenAI at NetApp."}
+      ],
+      "secondary": [
+        {"label": "The Org NetApp AI team", "url": "https://theorg.com/org/netapp/teams/artificial-intelligence", "note": "NetApp artificial intelligence team page lists Venkatesh Babu Sekar as Enterprise Architect for AI/ML and Senior Data Scientist."},
+        {"label": "AI Tinkerers Raleigh attendee page", "url": "https://raleigh.aitinkerers.org/p/ai-tinkerers-raleigh-meetup-august-12-2026", "note": "Local AI event page lists Venkatesh Babu Sekar among attendees from NetApp and related AI/architecture communities."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0mtzbe5",
+    "displayName": "Ventali Tan",
+    "headline": "MV37 founder exploring AI, science, reinforcement learning, and formal reasoning systems",
+    "company": "MV37",
+    "title": "Founder",
+    "location": "San Francisco, US",
+    "tags": ["AI research", "scientific discovery", "reinforcement learning", "formal methods", "symbolic reasoning", "angel investing"],
+    "confidence": "medium",
+    "confidenceNote": "Personal site and X profile identify Ventali Tan in San Francisco and connect him to MV37/AI research; independent third-party corroboration of MV37 is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder at MV37, an independent AI research lab, exploring AI systems for scientific discovery, reinforcement learning, and hybrid language-model/formal reasoning architectures.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://ventalitan.com/", "note": "Personal site lists MV37 as an independent AI research lab and describes work on scientific discovery, reinforcement learning, and hybrid symbolic/LM architectures."},
+        {"label": "X profile", "url": "https://x.com/_ventali", "note": "Public profile lists Ventali Tan in San Francisco and links to the same personal site."}
+      ],
+      "secondary": [
+        {"label": "X post referencing MV37 workdir", "url": "https://x.com/_ventali?lang=en", "note": "Recent public profile/posts reference the mv37-org workdir project, corroborating active MV37-related work."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1tgyexn",
+    "displayName": "Vetrichelvan Jeyapalpandy",
+    "headline": "HeyElsa AI cofounder and CTO building natural-language crypto execution infrastructure",
+    "company": "HeyElsa AI",
+    "title": "CTO",
+    "location": "India",
+    "tags": ["crypto AI", "DeFi", "on-chain automation", "CTO", "web3", "frontend engineering"],
+    "confidence": "high",
+    "confidenceNote": "HeyElsa MiCA whitepaper, funding/team pages, exchange documentation, and prior Frontier profile consistently identify Vetrichelvan Jeyapalpandy as a technical founder/CTO in crypto and DeFi products.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder and CTO at HeyElsa AI, building an AI interface for crypto and DeFi execution. Previously co-founded Frontier and has a long software-development background across web3 products.",
+    "sources": {
+      "primary": [
+        {"label": "HeyElsa MiCA whitepaper", "url": "https://docs.heyelsa.ai/elsa-white-paper/heyelsa-mica-whitepaper", "note": "Official HeyElsa documentation lists Vetrichelvan Jeyapalpandy as CTO."},
+        {"label": "Frontier about page", "url": "https://www.frontier.xyz/about", "note": "Frontier profile lists Vetrichelvan Jeyapalpandy as co-founder and CTO with software, blockchain, and DeFi experience."}
+      ],
+      "secondary": [
+        {"label": "Startup Intros HeyElsa profile", "url": "https://startupintros.com/orgs/heyelsa", "note": "Company profile says HeyElsa was founded by Dhawal Shah and Vetrichelvan Jeyapalpandy and raised pre-seed/seed funding."},
+        {"label": "Bithumb HeyElsa disclosure PDF", "url": "https://feed-content.bithumb.com/cms/copied-da539a6f-61d8-4a08-a2ce-7958c79c36c1.pdf", "note": "Exchange disclosure names Vetrichelvan Jeyapalpandy as Co-Founder and CTO."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1i0rmsu",
+    "displayName": "Vicki Harris",
+    "headline": "Chevron technology leader working across AI-enabled energy, platforms, and partnerships",
+    "company": "Chevron",
+    "title": "AI Partnerships",
+    "location": "San Ramon, CA, US",
+    "tags": ["enterprise AI", "energy technology", "digital transformation", "platform engineering", "partnerships", "Chevron"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, The Org, and public video sources match Victoria/Vicki Harris to Chevron technology leadership in San Ramon; the exact AI Partnerships title is from the attendee row rather than clearly public current-title evidence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chevron technology leader connected to AI-enabled digital solutions, platform engineering, and energy-sector transformation. Relevant for conversations about enterprise AI partnerships in industrial and energy contexts.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/victoria-vicki-harris-3bb9891", "note": "Public profile identifies Victoria (Vicki) Harris in San Ramon with Chevron-related professional context."}
+      ],
+      "secondary": [
+        {"label": "The Org Chevron profile", "url": "https://theorg.com/org/chevron-corporation/org-chart/victoria-harris", "note": "Organization profile describes Victoria Harris as a Chevron technology leader and former CIO for Chevron New Energies focused on AI-enabled digital solutions."},
+        {"label": "UiPath FORWARD IV video", "url": "https://www.youtube.com/watch?v=-B1pZvueXJY", "note": "Event video identifies Vicki Harris as Manager, Application Platform Engineering Services at Chevron."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0rjyjkx",
+    "displayName": "Victor Ching",
+    "headline": "Miso founder and CEO scaling South Korea's home-services marketplace",
+    "company": "Miso",
+    "title": "CEO",
+    "location": "Seoul, KR",
+    "tags": ["marketplaces", "consumer technology", "home services", "Korea startups", "operations", "YC"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, YC company profile, Forbes, FedEx, Korea Herald, and other startup profiles consistently identify Victor Ching as Founder/CEO of Miso in South Korea.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Miso, a South Korean marketplace for booking home services. Brings experience scaling consumer marketplaces, operations-heavy services, and product/engineering teams in Korea.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://victor.is/", "note": "Personal site says Victor Ching is Founder and CEO of Miso, a South Korean marketplace for booking services."},
+        {"label": "Y Combinator Miso profile", "url": "https://www.ycombinator.com/companies/miso", "note": "YC profile lists Victor Ching as Founder/CEO of Miso and describes the company as a home-services booking app in South Korea."}
+      ],
+      "secondary": [
+        {"label": "Forbes profile", "url": "https://www.forbes.com/sites/johnkang/2022/08/09/korean-house-cleaning-app-miso-wants-to-become-the-amazon-of-home-services/", "note": "Forbes identifies Victor Ching as cofounder and CEO of Miso and covers the company's expansion beyond cleaning."},
+        {"label": "FedEx business profile", "url": "https://www.fedex.com/en-my/business-insights/sme/how-a-start-up-transformed-koreas-home-cleaning-service.html", "note": "FedEx profile says Miso was established by Victor Ching and is a leading home-services platform in Korea."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rbikrn",
+    "displayName": "Vida Ekhlas",
+    "headline": "ICONIQ product manager with AI/ML product and investment-technology experience",
+    "company": "ICONIQ",
+    "title": "Sr Product Manager, Technology Strategy",
+    "location": "New York City, US",
+    "tags": ["product management", "AI/ML products", "technology strategy", "financial technology", "investment modeling", "ICONIQ"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and directory results match Vida Ekhlas to Senior Product Manager at ICONIQ; Fields Institute and CMU sources corroborate a BlackRock/investor-modeling and engineering/product background, but the exact Technology Strategy title is attendee-provided.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior product manager at ICONIQ with prior AI/ML product and investment-technology experience. Useful match for conversations on productizing ML, technology strategy, and financial-services AI workflows.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/vidaekhlas", "note": "Public profile identifies Vida Ekhlas as Senior Product Manager at ICONIQ and describes AI/ML product-building experience."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/%2B/Ekhlas", "note": "Directory result repeats Vida Ekhlas as Senior Product Manager at ICONIQ in the New York City metropolitan area."},
+        {"label": "Fields Institute workshop page", "url": "https://www.fields.utoronto.ca/activities/22-23/investor", "note": "Workshop page lists Vida Ekhlas of BlackRock in a machine-learning-for-investor-modelling context."},
+        {"label": "Carnegie Mellon commencement program", "url": "https://www.cmu.edu/commencement/assets/finalprogram2019web.pdf", "note": "CMU program corroborates Vida Ekhlas's mechanical engineering and business administration education background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0w70w4t",
+    "displayName": "Vidhya Sivakumaran",
+    "headline": "IMO Health clinical informatics and terminology data engineering leader applying AI to healthcare coding",
+    "company": "IMO Health",
+    "title": "VP, Clinical Informatics and Data Engineering",
+    "location": "Chicago, US",
+    "tags": ["clinical informatics", "healthcare AI", "medical coding", "terminology", "knowledge graphs", "data engineering"],
+    "confidence": "high",
+    "confidenceNote": "IMO Health expert page, authored posts, webinars, and LinkedIn posts consistently identify Vidhya Sivakumaran as VP of Clinical Informatics and Terminology Data Engineering at IMO Health.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of Clinical Informatics and Terminology Data Engineering at IMO Health, working on clinical terminology, medical coding, healthcare knowledge graphs, and LLM-assisted coding workflows.",
+    "sources": {
+      "primary": [
+        {"label": "IMO Health expert page", "url": "https://www.imohealth.com/our-experts/", "note": "IMO Health lists Vidhya Sivakumaran, PhD, as Vice President, Clinical Informatics and Terminology Data Engineering."},
+        {"label": "IMO Health Q&A", "url": "https://www.imohealth.com/resources/in-my-opinion-talking-clinical-terminology-with-vidhya-sivakumaran/", "note": "Company Q&A identifies her title and describes her PhD, clinical informatics, and terminology work."}
+      ],
+      "secondary": [
+        {"label": "IMO Health AI medical coding article", "url": "https://www.imohealth.com/resources/ai-powered-medical-coding-what-works-and-what-doesnt/", "note": "Article names Vidhya Sivakumaran as an IMO Health expert discussing LLMs and medical coding."},
+        {"label": "IMO Health knowledge graph webinar", "url": "https://go.imohealth.com/WBN-NA-260512-Power-knowledge-graphs-healthcare_04-Registration-Page-New-Form.html", "note": "Webinar registration page lists her as a featured speaker on healthcare knowledge graphs."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "074bv2y",
+    "displayName": "Vikram Java",
+    "headline": "DoorDash engineering leader building delivery experience and support systems",
+    "company": "DoorDash",
+    "title": "Engineering Manager",
+    "location": "San Francisco, US",
+    "tags": ["engineering management", "DoorDash", "delivery experience", "customer support", "applied ML", "platform engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn post, LinkedIn directory, and The Org match Vikram Java to DoorDash engineering leadership; exact Engineering Manager title is inferred from attendee row and related DoorDash hiring post.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at DoorDash working on delivery experience, support systems, and LLM-powered applications for consumer operations. Good match for platform engineering, applied ML, and high-scale product systems.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn hiring post", "url": "https://www.linkedin.com/posts/vikramjava_engineering-hiring-leadership-activity-7369123663310180354-MEJ7", "note": "Vikram Java's public post says DoorDash delivery experience engineering teams are scaling LLM-powered applications and platform systems."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Vikram/%2B/us-84-San-Francisco-Bay-Area", "note": "Directory result identifies Vikram Java as an engineering leader at DoorDash in the San Francisco Bay Area."},
+        {"label": "The Org DoorDash engineering page", "url": "https://theorg.com/org/doordash/org-chart/ryan-sokol", "note": "DoorDash org chart lists Vikram Java in engineering leadership under DoorDash engineering."}
+      ]
+    }
+  }
+]

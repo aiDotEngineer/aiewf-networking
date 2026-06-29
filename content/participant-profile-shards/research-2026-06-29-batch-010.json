@@ -1,0 +1,249 @@
+[
+  {
+    "lookupKey": "0z464uq",
+    "displayName": "Alex Zerntev",
+    "headline": "AI and full-stack engineer at RAW Labs",
+    "company": "RAW Labs",
+    "title": "AI Engineer",
+    "location": "Athens, Greece",
+    "tags": [
+      "AI engineering",
+      "full-stack engineering",
+      "data science",
+      "big data",
+      "software engineering",
+      "enterprise data"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and RAW Labs company listings match the attendee name, role, company, and Greece/Athens context; The Org adds consistent work-history and education details but marks the profile unverified.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI and full-stack engineer at RAW Labs, with a background spanning software engineering, data science, big data, and AI. Useful contact for conversations on practical AI systems, data-heavy applications, and production software engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://gr.linkedin.com/in/alex-zerntev-839415127",
+          "note": "Lists Alex Zerntev as AI Engineer and Full Stack Engineer at RAW Labs in Greece."
+        },
+        {
+          "label": "RAW Labs LinkedIn company page",
+          "url": "https://www.linkedin.com/company/raw-labs",
+          "note": "Company page lists Alex Zerntev among RAW Labs employees and identifies RAW Labs as an IT services company."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/raw-labs/org-chart/alex-zerntev",
+          "note": "Unverified profile with role, RAW Labs tenure, prior engineering roles, Athens context, and data science education details."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "07afvjq",
+    "displayName": "Alexa Schwarz",
+    "headline": "COO and Chief Product Officer at Buoy",
+    "company": "Buoy Software",
+    "title": "COO",
+    "location": "New York, United States",
+    "tags": [
+      "health tech",
+      "AI-native operations",
+      "product leadership",
+      "operations",
+      "consumer technology",
+      "generative AI"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn directory results match name, COO/CPO role, Buoy Software, New York, ex-Amazon, and AI-native healthcare operations; GoFractional provides consistent product and operations background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "COO and Chief Product Officer at Buoy, focused on AI-native healthcare operations. Product and operations leader with experience across consumer technology, automation, and generative AI applications.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/alexaschwarz",
+          "note": "Lists Alexa Schwarz as COO and Chief Product Officer at Buoy Software, based in New York."
+        },
+        {
+          "label": "Buoy Health LinkedIn company page",
+          "url": "https://www.linkedin.com/company/buoyhealth",
+          "note": "Describes Buoy as a digital health company using AI technology for personalized clinical support and healthcare navigation."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "GoFractional profile",
+          "url": "https://www.gofractional.com/member/alexa-schwarz",
+          "note": "Summarizes her fractional CPO/product leadership background, ex-Amazon experience, and interest in generative AI and omnichannel operations."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0blc5r2",
+    "displayName": "Alexander Ivakhnenko",
+    "headline": "Senior technology leader at SPS Commerce",
+    "company": "SPS Commerce",
+    "title": "Sr. Director of Engineering",
+    "location": "Minneapolis, United States",
+    "tags": [
+      "engineering leadership",
+      "enterprise architecture",
+      "API platforms",
+      "supply chain technology",
+      "retail network",
+      "software development"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Name and SPS Commerce affiliation are well supported; public sources show Senior Director of Technology and prior Enterprise Architect rather than the exact supplied Sr. Director of Engineering title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior technology leader at SPS Commerce with experience in enterprise architecture, software development leadership, and API/platform standards for retail supply-chain systems. Strong match for conversations on scalable engineering organizations and integration-heavy platforms.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/aivakhnenko",
+          "note": "Lists Alexander Ivakhnenko as a strategic technology leader with SPS Commerce experience, including Enterprise Architect."
+        },
+        {
+          "label": "SPS Commerce technology site",
+          "url": "https://tech.spscommerce.com/",
+          "note": "Describes SPS Commerce engineering practices and its technology organization."
+        },
+        {
+          "label": "SPS Commerce official site",
+          "url": "https://www.spscommerce.com/",
+          "note": "Identifies SPS Commerce as a retail EDI, sales, and item-data platform company."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/sps-commerce/org-chart/alexander-ivakhnenko",
+          "note": "Lists Alexander Ivakhnenko as Senior Director of Technology at SPS Commerce with prior enterprise architecture and software-development leadership roles."
+        },
+        {
+          "label": "SPSCommerce GitHub discussion",
+          "url": "https://github.com/SPSCommerce/sps-api-standards/discussions/23",
+          "note": "Shows public technical discussion participation by alexander-ivakhnenko on SPS API standards and sandbox/test-context architecture."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "14kr5tm",
+    "displayName": "Alexander Kvamme",
+    "headline": "Partner at Quiet Capital focused on AI, infrastructure, enterprise, and deeptech",
+    "company": "Quiet Capital",
+    "title": "Partner",
+    "location": "San Francisco, United States",
+    "tags": [
+      "venture capital",
+      "AI startups",
+      "infrastructure",
+      "enterprise software",
+      "deeptech",
+      "founder",
+      "angel investing"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Quiet Capital author bio, and LinkedIn all align on Quiet Capital partner/investor role and AI/deeptech focus; location varies between Menlo Park/San Francisco Bay Area sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Partner at Quiet Capital investing in early-stage AI, infrastructure, enterprise, and deeptech companies. Three-time founder and angel investor with prior company-building experience around Pathlight/Echo AI and SeatMe.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://kvam.me/about-me/",
+          "note": "States he invests in early-stage AI startups with Quiet Capital and is building in AI inference; mentions Echo AI and selected investments."
+        },
+        {
+          "label": "Quiet Capital essay author bio",
+          "url": "https://quiet.com/essays/ai-at-the-speed-of-silicon/",
+          "note": "Identifies Alex Kvamme as a Quiet partner focused on infrastructure, enterprise, and deeptech, with founder and angel-investor background."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/akvamme",
+          "note": "Lists Alexander Kvamme as Founder and Investor with experience at Quiet Capital and Duke education."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes Technology Council profile",
+          "url": "https://councils.forbes.com/profile/Alexander-Kvamme-CEO-Pathlight/ccf4273b-19d7-46d2-82da-fe2952089dc5",
+          "note": "Legacy profile describing his Pathlight CEO role, SeatMe co-founder background, and startup investing/advising."
+        },
+        {
+          "label": "PitchBook investor profile",
+          "url": "https://pitchbook.com/profiles/investor/228927-07",
+          "note": "Lists Alexander Kvamme as an angel investor and Quiet Capital lead partner, with Pathlight CEO/co-founder background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12jcmuh",
+    "displayName": "Alexandre Sluijter",
+    "headline": "AI and advanced analytics engineering leader at Moog",
+    "company": "Moog Inc.",
+    "title": "Chief Engineer AI",
+    "location": "East Aurora, New York, United States",
+    "tags": [
+      "industrial AI",
+      "advanced analytics",
+      "smart factories",
+      "manufacturing AI",
+      "IoT",
+      "aerospace and defense",
+      "quality inspection"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Public evidence strongly links Alexandre/Alex Sluijter to Moog, AI, IoT, smart factories, and advanced analytics, but the exact current title Chief Engineer AI was not found in accessible primary sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI and advanced analytics leader at Moog working around industrial AI, IoT, and smart-factory initiatives. Relevant for conversations on applying AI to manufacturing quality, aerospace/defense systems, and operational analytics.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Moog AI manufacturing article",
+          "url": "https://www.moog.com/news/blog/sdg/advanced-manufacturing-using-ai.html",
+          "note": "Official Moog article describes use of artificial intelligence for advanced manufacturing quality inspection."
+        },
+        {
+          "label": "Moog and Unibap AI collaboration",
+          "url": "https://www.moog.com/news/operating-group-news/2019/Moog-UnibapAB-Collaboration.html",
+          "note": "Official Moog news item on AI processing technology for space and defense applications."
+        },
+        {
+          "label": "Moog Hugging Face organization",
+          "url": "https://huggingface.co/MOOGINC",
+          "note": "Moog Inc. organization page on Hugging Face lists Alexandre Sluijter as the visible team member."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn post from Asian Institute of Management visit",
+          "url": "https://www.linkedin.com/posts/vanarloeyu_ai-artificialintelligence-iot-activity-6623547105397039105-1FHI",
+          "note": "Describes Alexandre Sluijter sharing how Moog uses AI and IoT in smart factories and data science at its Baguio factory."
+        },
+        {
+          "label": "FlashIntel profile",
+          "url": "https://www.flashintel.ai/people/Alexandre-Sluijter-f234c90558e4e333f9b1f55bd0d60757/",
+          "note": "Lists Alexandre Sluijter as Advanced Analytics Lead at Moog Inc. in East Aurora, New York."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,601 @@
+[
+  {
+    "lookupKey": "1tu1z65",
+    "displayName": "Kota Matsuo",
+    "headline": "Technology and AI strategy leader at SoftBank Group",
+    "company": "SoftBank Group Corp.",
+    "title": "Director",
+    "location": "Tokyo, Japan",
+    "tags": ["AI strategy", "SoftBank", "technology leadership", "patents", "research"],
+    "confidence": "medium",
+    "confidenceNote": "Multiple public sources connect Kota Matsuo to SoftBank/SoftBank Group and AI/technology work; exact row title differs from richer public title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI and technology strategy leader at SoftBank Group, associated with the CEO Office Technology Group. Earlier public research footprint includes machine learning and sensor publications, and recent patent activity lists him as a SoftBank Group inventor.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://sg.linkedin.com/in/kota-matsuo",
+          "note": "Personal profile headline: Transform Technology into Society and Customer Value."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "ResearchGate",
+          "url": "https://www.researchgate.net/profile/Kota-Matsuo",
+          "note": "Lists SoftBank AI Development Team group-leader affiliation and prior publications."
+        },
+        {
+          "label": "Google Patents",
+          "url": "https://patents.google.com/patent/JP2025068326A/ja",
+          "note": "Names Kota Matsuo as inventor on a SoftBank Group Corp. patent application."
+        },
+        {
+          "label": "The Org",
+          "url": "https://theorg.com/org/softbank/org-chart/kota-matsuo",
+          "note": "Unverified org-chart page listing CEO Office Technology Group role."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0c1b0xp",
+    "displayName": "Kristen Gillan",
+    "headline": "Project management and AI-project leadership professional",
+    "company": "Gilead Sciences",
+    "title": "Associate Director",
+    "location": "United States",
+    "tags": ["project management", "AI project management", "mentorship", "pharma", "PMP"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly identify the person and credentials, and a Gilead-related post names her among Gilead team contacts; exact current Gilead title is from the participant row rather than independently visible in snippets.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Project-management professional with DBA, PMP, and PMI-CPMAI credentials. Public activity shows involvement in professional mentorship and connection to Gilead business/operations internship support.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/kristen-gillan-dba-pmp-pmi-cpmai-485943168",
+          "note": "Personal profile identifying Kristen Gillan with DBA, PMP, and PMI-CPMAI credentials."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn post by Adil Hasan",
+          "url": "https://www.linkedin.com/posts/adil-hasan-3b58b3160_gilead-gilead-gilead-youve-made-a-activity-7365784457108230145-9HbZ",
+          "note": "Names Kristen Gillan, DBA, PMP among Gilead team members thanked for internship support."
+        },
+        {
+          "label": "LinkedIn post by Stephanie Stach",
+          "url": "https://www.linkedin.com/posts/stephanielstach_pmiportland-projectmanagement-mentorship-activity-7470843333679185921-pVAy",
+          "note": "Names Kristen Gillan as a PMI Portland mentorship panelist."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0semvcx",
+    "displayName": "Kristie Stalberger",
+    "headline": "Engineering leader at Ibotta",
+    "company": "Ibotta",
+    "title": "Director of Engineering",
+    "location": "Greater Milwaukee",
+    "tags": ["engineering leadership", "software engineering", "team growth", "Ibotta", "consumer technology"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and multiple public directory sources align on Ibotta engineering leadership; richer career details come from secondary directory pages.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at Ibotta with a software-engineering management background. Public sources place her in Greater Milwaukee and describe prior engineering-management experience at Northwestern Mutual and earlier software-engineering work.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/kristiestalberger",
+          "note": "Personal profile listing Director of Engineering at Ibotta and Greater Milwaukee location."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org",
+          "url": "https://theorg.com/org/ibotta/org-chart/kristie-stalberger",
+          "note": "Unverified org-chart profile with Ibotta engineering role and career summary."
+        },
+        {
+          "label": "Neuron",
+          "url": "https://neuron.com/profile/3705865912/kristie-stalberger",
+          "note": "Public profile confirming Director of Engineering at Ibotta and Greater Milwaukee."
+        },
+        {
+          "label": "LinkedIn post by Sierra Winter",
+          "url": "https://www.linkedin.com/posts/sierra-winter-72726511b_stemoutreach-aspirations-learning-activity-6625482443526934528-QurR",
+          "note": "Mentions presenting with Kristie Stalberger while representing Northwestern Mutual technology careers."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0z3o1hm",
+    "displayName": "Kunal Bhasin",
+    "headline": "Co-founder, CTO and CPO at Fabrion",
+    "company": "Fabrion",
+    "title": "Co-founder, CTO, CPO",
+    "location": "San Francisco, US",
+    "tags": ["enterprise AI", "manufacturing", "supply chain", "product leadership", "AWS alum"],
+    "confidence": "medium",
+    "confidenceNote": "Exact Fabrion role is corroborated by Constellation and Forbes; LinkedIn activity ties the same Kunal B. profile to Fabrion, but public primary profile detail is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology and product executive building Fabrion, an AI-native platform for industrial manufacturing and supplier management. Public profiles emphasize zero-to-one startup work, enterprise systems, distributed data platforms, automotive and supply-chain domains, with prior executive experience at AWS, Aptiv, Scoot, ICIX and Terracotta.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn post by Kunal B.",
+          "url": "https://www.linkedin.com/posts/kunaalkb_careers-at-fabrion-join-our-team-activity-7376439632273526784-_rm4",
+          "note": "Primary social post says Fabrion is hiring for an AI-native industrial manufacturing platform and identifies the profile as Founder/CTO/CPO/GM."
+        },
+        {
+          "label": "LinkedIn post by Kunal B.",
+          "url": "https://www.linkedin.com/posts/kunaalkb_llms-still-have-a-ways-to-go-for-agi-and-activity-7429699586644115456-p59B",
+          "note": "Primary social post discusses Fabrion's enterprise AI guardrails, permissions and security work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Constellation Research profile",
+          "url": "https://www.constellationr.com/user/kunal-bhasin",
+          "note": "Person profile lists Kunal Bhasin as Co-founder, CTO, CPO at Fabrion and summarizes enterprise systems, data/AI, automotive and supply-chain experience."
+        },
+        {
+          "label": "Forbes Technology Council profile",
+          "url": "https://councils.forbes.com/profile/Kunal-Bhasin-Fabrion/f53f6bdf-853b-40ae-a25d-d5c88a57df02",
+          "note": "Member profile associates Kunal Bhasin with Fabrion."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1jm62s7",
+    "displayName": "Kurtis Van Gent",
+    "headline": "Senior Staff Software Engineer at Google Cloud working on AI and databases",
+    "company": "Google",
+    "title": "Senior Staff Software Engineer",
+    "location": "",
+    "tags": ["Google Cloud", "AI ecosystems", "databases", "developer tools", "open source"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub profile, LinkedIn and AI Engineer schedule all align on identity, Google Cloud role and AI/database focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Staff Software Engineer at Google Cloud focused on AI ecosystems, database integrations and developer experience. His public work centers on production-grade platform engineering, open-source tools and making databases easier to use with generative AI systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site about page",
+          "url": "https://kvg.dev/about/",
+          "note": "Personal site identifies him as Senior Staff Software Engineer at Google Cloud working on AI and databases."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/kurtisvg",
+          "note": "Primary developer profile describes Google Cloud AI ecosystems for databases and production-quality developer tooling."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Kurtis+Van+Gent",
+          "note": "Event schedule lists Kurtis Van Gent as Senior Staff Software Engineer at Google."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/kurtisvg",
+          "note": "Professional profile lists Senior Staff Software Engineer at Google and AI/database work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1jsh0nm",
+    "displayName": "Kwindla Hultman Kramer",
+    "headline": "Co-founder and CEO of Daily; creator of Pipecat",
+    "company": "Daily/Pipecat",
+    "title": "Cofounder/CEO",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["voice AI", "real-time infrastructure", "WebRTC", "Pipecat", "developer platforms"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Daily author page, GitHub, LinkedIn and multiple podcast/interview sources consistently identify the same person and role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Daily, building real-time audio, video and AI infrastructure. He is closely associated with Pipecat, an open-source framework for production voice agents, and writes and speaks about WebRTC, latency, turn-taking, orchestration and the practical engineering of real-time AI systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://machine-theory.com/",
+          "note": "Personal site states he is a founder and CEO of Daily and works on real-time audio, video and AI infrastructure."
+        },
+        {
+          "label": "Daily author page",
+          "url": "https://www.daily.co/blog/author/kwindla-hultman-kramer/",
+          "note": "Company author page identifies Kwindla as CEO and describes his background in collaboration systems and video calling frameworks."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/kwindla",
+          "note": "Primary developer profile shows Pipecat-related voice AI repositories and projects."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "TWIML podcast episode",
+          "url": "https://twimlai.com/podcast/twimlai/building-voice-ai-agents-that-dont-suck",
+          "note": "Podcast page identifies him as co-founder and CEO of Daily and creator of Pipecat, discussing production voice AI architecture."
+        },
+        {
+          "label": "Heavybit Demuxed episode",
+          "url": "https://www.heavybit.com/library/podcasts/demuxed/ep-16-real-time-video-with-kwindla-hultman-kramer-of-daily-co",
+          "note": "Interview page identifies him as Daily.co co-founder and gives prior CTO/CEO background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0020jk0",
+    "displayName": "Kyle Boss",
+    "headline": "AI strategy and technical leadership at Tinder",
+    "company": "Tinder",
+    "title": "Tech Lead, AI Strategy",
+    "location": "Los Angeles, CA",
+    "tags": ["AI strategy", "engineering velocity", "developer tooling", "software engineering", "Tinder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn profile and recent posts consistently identify him as AI Strategy & Technical Leadership at Tinder; older authored technical writing ties the same person to Tinder engineering and UC Berkeley.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads AI strategy and technical initiatives at Tinder, with recent work focused on AI-native engineering workflows, developer tooling, and changing how teams ship software. He has a long Tinder engineering footprint, including prior senior software engineering work on Tinder web properties and employee-resource leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/kyleboss",
+          "note": "Identifies Kyle Boss as based in Los Angeles and working at Tinder in AI strategy and technical leadership."
+        },
+        {
+          "label": "Kyle Boss LinkedIn post on AI engineering hiring",
+          "url": "https://www.linkedin.com/posts/kyleboss_androiddeveloper-aiengineering-hiring-activity-7453871148007784448-ah7P",
+          "note": "Describes his Tinder team hiring for AI-native engineering workflows and SDLC changes."
+        },
+        {
+          "label": "Kyle Boss on Medium/HackerNoon",
+          "url": "https://medium.com/hackernoon/the-magic-behind-git-reward-ab89575cd227",
+          "note": "Authored technical writing; author bio identifies him as a Tinder software engineer and UC Berkeley CS alumnus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Tinder LinkedIn feature reposted by Kyle Boss",
+          "url": "https://www.linkedin.com/posts/kyleboss_activity-6806628933942030336-14Tu",
+          "note": "Tinder feature describes him as a senior software engineer working on Tinder web and marketing sites."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0nnd9oj",
+    "displayName": "Lakshmi Dixit",
+    "headline": "VP of Engineering and Operations at Zillow focused on AI-enabled engineering and platform operations",
+    "company": "Zillow Group",
+    "title": "Vice President, Engineering and AI Enablement",
+    "location": "Greater Seattle Area",
+    "tags": ["engineering leadership", "AI enablement", "real estate technology", "platform operations", "Zillow"],
+    "confidence": "high",
+    "confidenceNote": "Zillow-owned news pages and a SheTO speaker page consistently identify her as a Zillow VP in engineering/tech operations and quote her on AI trends.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Zillow engineering executive working at the intersection of technology operations and AI enablement. Zillow has cited her perspective on multimodal AI, self-healing systems, and faster product delivery, and SheTO listed her as a speaker on measuring AI value and scale.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Zillow News: The next chapter of AI in real estate",
+          "url": "https://www.zillow.com/news/next-chapter-of-ai-in-real-estate/",
+          "note": "Quotes Lakshmi Dixit as Zillow vice president of tech engineering and operations on multimodal AI, automation, and product delivery speed."
+        },
+        {
+          "label": "SheTO Summit speaker page",
+          "url": "https://www.sheto.org/summit/topics/measuring-ai-boost-value-metrics-and-scale",
+          "note": "Lists Lakshmi Dixit as VP of Engineering and Ops at Zillow on an AI measurement and scale panel."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Zillow HBCU Hackathon announcement",
+          "url": "https://www.zillow.com/news/announcing-the-winners-of-zillows-hbcu-hackathon/",
+          "note": "Lists her as a Zillow vice president of Tech Engineering and Operations among hackathon judges."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/lakshmidixit",
+          "note": "Public profile result places Lakshmi Dixit in the Greater Seattle Area."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01fmjsz",
+    "displayName": "Lakshmi Narasimhamurthy",
+    "headline": "Court Executive at the New Jersey Judiciary with IT project and data governance background",
+    "company": "NJ Courts",
+    "title": "Court Executive 3A",
+    "location": "Plainsboro, NJ",
+    "tags": ["public sector", "judiciary", "IT project management", "data governance", "New Jersey"],
+    "confidence": "medium",
+    "confidenceNote": "Public LinkedIn and public payroll records support the NJ Judiciary affiliation; limited public person-specific material supports only a terse operational profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "New Jersey Judiciary technology and operations professional, publicly listed as Court Executive 3A after prior senior IT project-management work. Her public footprint points to judiciary systems, program management, and data-governance-adjacent work rather than a broad external speaking profile.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/lakshminarasimhamurthy",
+          "note": "Identifies her as Court Executive 3A at State of New Jersey Judiciary and previously senior IT project manager."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "GovSalaries public record",
+          "url": "https://govsalaries.com/narasimhamurthy-lakshmi-215546494",
+          "note": "Person-specific public record showing employment at New Jersey Judiciary from 2019 to 2025."
+        },
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Lakshmi/Narasimhamurthy",
+          "note": "Directory result corroborates State of New Jersey Judiciary affiliation and Plainsboro, NJ location."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0me1nh2",
+    "displayName": "Lakshya Agarwal",
+    "headline": "Forward Deployed Engineer at Tavily building agentic search and AI application workflows",
+    "company": "Nebius",
+    "title": "Forward Deployed Engineer",
+    "location": "Toronto, CA",
+    "tags": ["agentic search", "AI engineering", "forward deployed engineering", "Tavily", "LLM applications"],
+    "confidence": "medium",
+    "confidenceNote": "Multiple strong sources identify him as a Tavily FDE in Toronto; the row listed Nebius, but public sources show Nebius as an event partner rather than his employer.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Toronto-based Forward Deployed Engineer publicly tied to Tavily, working on AI search, agentic workflows, and applied LLM systems. His public work includes Tavily technical writing, an agentic Slack bot webinar with Nebius, and McGill Delve commentary on moving from vibe coding toward accountable agentic engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://lakshyaag.com/",
+          "note": "Self-authored profile says he is a Forward Deployed Engineer at Tavily working at the intersection of AI and search."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/lakshyaag",
+          "note": "Lists Forward Deployed Engineering at Tavily, Toronto location, and prior Bain/McGill background."
+        },
+        {
+          "label": "Tavily blog author page/listing",
+          "url": "https://www.tavily.com/blog",
+          "note": "Shows Tavily technical posts authored by Lakshya Agarwal on agent search and integrations."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Nebius webinar page",
+          "url": "https://nebius.com/events/webinar-build-an-expert-agentic-slack-bot",
+          "note": "Lists Lakshya Agarwal as Forward Deployed Engineer at Tavily for a Tavily-Nebius agentic Slack bot webinar."
+        },
+        {
+          "label": "McGill Delve podcast page",
+          "url": "https://delve.mcgill.ca/listen/agentic-engineering-solves-the-vibe-coding-problem-in-workplaces/",
+          "note": "Identifies him as a McGill alumnus and Tavily forward-deployed engineer discussing agentic engineering."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/lakshyaag",
+          "note": "Public profile result identifies him as a Forward Deployed Engineer at Tavily."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0110or7",
+    "displayName": "Lance Martin",
+    "headline": "Member of Technical Staff at Anthropic; agent and context-engineering practitioner",
+    "company": "Anthropic",
+    "title": "MTS",
+    "location": "San Francisco, CA",
+    "tags": ["agents", "context engineering", "developer tools", "LLM systems", "LangChain alumni"],
+    "confidence": "high",
+    "confidenceNote": "Current Anthropic role is supported by LinkedIn and X; technical focus is supported by his own blog and podcast/speaker sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "MTS at Anthropic working around agent workflows and context engineering. Previously at LangChain, where he was a visible practitioner and educator on RAG, agents, LangGraph, and production LLM systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/lance-martin-64a33b5",
+          "note": "Lists Member of Technical Staff at Anthropic and prior LangChain role."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/RLanceMartin?lang=en",
+          "note": "Self-described as MTS at Anthropic with focus on sync-to-async, proactive, and multi-player Anthropic UX."
+        },
+        {
+          "label": "Lance Martin blog",
+          "url": "https://rlancemartin.github.io/2025/06/23/context_engineering/",
+          "note": "Own technical writing on context engineering for agents."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Latent Space episode",
+          "url": "https://www.latent.space/p/context-engineering-for-agents-lance",
+          "note": "Interview and transcript focused on context engineering for agents."
+        },
+        {
+          "label": "BRXND profile",
+          "url": "https://www.brxnd.ai/people/lance-martin",
+          "note": "Speaker/profile page describing LangChain work, courses, and applied projects."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0xm7iyn",
+    "displayName": "Larisa Lautman",
+    "headline": "Investor relations and asset-management professional at Fidem Financial",
+    "company": "Fidem Financial",
+    "title": "Business Development",
+    "location": "Philadelphia, US",
+    "tags": ["investor relations", "asset management", "risk management", "financial services", "MBA"],
+    "confidence": "medium",
+    "confidenceNote": "Fidem team page is the strongest current source; FINRA/SEC records corroborate financial-services background but are not current employer records.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Investor relations and business-development professional at Fidem Financial with prior experience across asset management, risk management, and wealth/financial services firms including Morgan Stanley, New York Life, and Lincoln Financial. Holds an MBA from NYU and London Business School.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Fidem Financial team page",
+          "url": "https://www.fidem-financial.com/team",
+          "note": "Current company profile listing Manager, Investor Relations and career summary."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "FINRA BrokerCheck report",
+          "url": "https://files.brokercheck.finra.org/individual/individual_6701060.pdf",
+          "note": "Regulatory report confirming securities exams and prior financial-services registration history."
+        },
+        {
+          "label": "SEC IAPD report",
+          "url": "https://reports.adviserinfo.sec.gov/reports/individual/individual_6701060.pdf",
+          "note": "Investment adviser public disclosure report with registration and employment history."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "124k0mn",
+    "displayName": "Laurent Gil",
+    "headline": "President and co-founder of CAST AI; cloud cost and Kubernetes optimization leader",
+    "company": "CAST.AI",
+    "title": "co founder",
+    "location": "",
+    "tags": ["cloud infrastructure", "Kubernetes", "FinOps", "AI infrastructure", "founder", "product strategy"],
+    "confidence": "high",
+    "confidenceNote": "Company leadership page, LinkedIn, speaker profile, and author bios consistently identify him as CAST AI co-founder/president and describe prior founder exits.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "President and co-founder of CAST AI, focused on product, business development, and Kubernetes/cloud optimization. Previously co-founded Zenedge, acquired by Oracle, and Viewdle, acquired by Google.",
+    "sources": {
+      "primary": [
+        {
+          "label": "CAST AI leadership page",
+          "url": "https://cast.ai/about-us/",
+          "note": "Company source listing Laurent Gil as President and Co-Founder."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/laurentgil",
+          "note": "Professional profile describing founder/president role and FinOps affiliations."
+        },
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/laurentgil/",
+          "note": "Speaker bio covering CAST AI role and prior Zenedge/Viewdle founder history."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The New Stack author profile",
+          "url": "https://thenewstack.io/author/laurent-gil/",
+          "note": "Author bio describing co-founder/president role and prior Zenedge background."
+        },
+        {
+          "label": "Cota Capital founder spotlight",
+          "url": "https://www.cotacapital.com/founder-stories/founders-spotlight-laurent-gil-leon-kuperman-yuri-frayman/",
+          "note": "Investor profile on CAST AI founders and company positioning."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "17k30a6",
+    "displayName": "Laurie Voss",
+    "headline": "Head of Developer Relations at Arize AI; developer-tools leader and npm co-founder",
+    "company": "Arize AI",
+    "title": "Head of Developer Relations",
+    "location": "San Francisco, CA",
+    "tags": ["developer relations", "AI observability", "evals", "developer tools", "open source", "npm"],
+    "confidence": "high",
+    "confidenceNote": "Arize, LinkedIn, personal site, X/Bluesky, and speaker/webinar sources consistently support current role and developer-tools background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of Developer Relations at Arize AI, focused on AI observability, evals, and agent debugging education. Longtime web and developer-tools practitioner; co-founded npm and previously led DevRel at LlamaIndex.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Arize team page",
+          "url": "https://arize.com/about-us/",
+          "note": "Company source listing Laurie Voss as Head of Developer Relations."
+        },
+        {
+          "label": "Arize author page",
+          "url": "https://arize.com/author/laurie-voss/",
+          "note": "Company author page with recent writing on evals, traces, and agent harnesses."
+        },
+        {
+          "label": "Personal site",
+          "url": "https://seldo.com/about/",
+          "note": "Self-authored background covering web development and founding npm."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/seldo",
+          "note": "Self-described as Head of Developer Relations at Arize AI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "DataCamp webinar",
+          "url": "https://www.datacamp.com/webinars/evals-for-agents-with-arize",
+          "note": "Webinar profile for evals and debugging AI agents with Arize."
+        },
+        {
+          "label": "Maven profile",
+          "url": "https://maven.com/p/f501ce/evals-in-action-with-arize",
+          "note": "Course/profile summary covering Arize role and prior LlamaIndex, Netlify, and npm experience."
+        },
+        {
+          "label": "Business Insider",
+          "url": "https://www.businessinsider.com/npm-cofounder-laurie-voss-resigns-2019-6",
+          "note": "Independent coverage of npm co-founder history."
+        }
+      ]
+    }
+  }
+]

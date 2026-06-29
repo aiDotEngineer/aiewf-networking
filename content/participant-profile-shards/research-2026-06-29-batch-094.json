@@ -1,0 +1,278 @@
+[
+  {
+    "lookupKey": "0mw7o1n",
+    "displayName": "Yegór Kryukov",
+    "headline": "Capital One senior lead machine learning engineer focused on applied ML systems",
+    "company": "Capital One",
+    "title": "Senior Lead Machine Learning Engineer",
+    "location": "Washington, DC, US",
+    "tags": ["machine learning", "applied AI", "Capital One", "MLOps", "financial technology", "software engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and personal-site evidence match Yegór Kryukov to a senior ML role at Capital One; public evidence is thinner on recent projects, so the profile stays concise.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior lead machine learning engineer at Capital One. Relevant contact for applied ML engineering, model delivery, and practical AI systems in regulated financial-services environments.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yegork", "note": "Public profile identifies Yegór Kryukov as a Senior Lead Machine Learning Engineer at Capital One."},
+        {"label": "Personal website", "url": "https://yegork.github.io/", "note": "Personal site for Yegór Kryukov links to his public engineering and professional profiles."}
+      ],
+      "secondary": [
+        {"label": "GitHub profile", "url": "https://github.com/yegork", "note": "GitHub profile corroborates the same public technical identity."},
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?user=rg82g_sAAAAJ", "note": "Scholar profile associates Yegór Kryukov with machine-learning research publications."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "06acp7u",
+    "displayName": "Yi Zheng",
+    "headline": "One Health Link founder building AI-enabled health communication and data workflows",
+    "company": "One Health Link, Inc.",
+    "title": "CEO",
+    "location": "United States",
+    "tags": ["health AI", "healthcare communication", "One Health Link", "startup founder", "digital health", "clinical workflows"],
+    "confidence": "medium",
+    "confidenceNote": "Company, LinkedIn, and company-registration sources connect Yi Zheng to One Health Link; public technical detail is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of One Health Link, working on healthcare communication and data workflows. Useful contact for health-AI product, patient/provider coordination, and startup-building conversations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yi-zheng-181a12155", "note": "Public profile identifies Yi Zheng with One Health Link leadership."},
+        {"label": "One Health Link website", "url": "https://www.onehealthlink.com/", "note": "Company site describes One Health Link's health communication and care-coordination focus."}
+      ],
+      "secondary": [
+        {"label": "Corporation Wiki company profile", "url": "https://www.corporationwiki.com/p/3gk7qk/one-health-link-inc", "note": "Company-registration aggregator lists One Health Link, Inc. and Yi Zheng as an associated person."},
+        {"label": "OpenCorporates company record", "url": "https://opencorporates.com/companies/us_ca/5325559", "note": "Corporate record corroborates One Health Link, Inc. as a registered company."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "07m2wcm",
+    "displayName": "Yogendra Miraje",
+    "headline": "FactSet lead machine learning engineer applying ML and NLP to financial-data products",
+    "company": "FactSet",
+    "title": "Lead Machine Learning Engineer",
+    "location": "United States",
+    "tags": ["machine learning", "NLP", "financial data", "FactSet", "search", "AI engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, patent, and publication-index evidence connect Yogendra Miraje to FactSet and ML/NLP work; public sources provide limited recent biographical detail.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Lead machine learning engineer at FactSet working around ML and NLP for financial-data products. Good match for search, extraction, and production ML in finance conversations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yogendra-miraje", "note": "Public profile identifies Yogendra Miraje as a Lead Machine Learning Engineer at FactSet."},
+        {"label": "Google Patents inventor page", "url": "https://patents.google.com/?inventor=Yogendra+Miraje", "note": "Patent index lists Yogendra Miraje on information-retrieval and document-processing inventions."}
+      ],
+      "secondary": [
+        {"label": "Semantic Scholar author page", "url": "https://www.semanticscholar.org/author/Yogendra-Miraje/145419649", "note": "Author page corroborates ML/NLP publication activity for Yogendra Miraje."},
+        {"label": "FactSet AI solutions page", "url": "https://www.factset.com/solutions/artificial-intelligence", "note": "Company page gives context for FactSet's AI and financial-data product focus."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jo8pog",
+    "displayName": "Yohei Nakajima",
+    "headline": "Untapped Capital managing partner and BabyAGI creator exploring autonomous-agent patterns",
+    "company": "Untapped Capital / BabyAGI",
+    "title": "Managing Partner",
+    "location": "Seattle, US",
+    "tags": ["BabyAGI", "AI agents", "venture capital", "startup investing", "autonomous agents", "open source"],
+    "confidence": "high",
+    "confidenceNote": "Personal, GitHub, X, Untapped Capital, and speaker sources consistently identify Yohei Nakajima as Untapped Capital managing partner and creator of BabyAGI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Managing Partner at Untapped Capital and creator of BabyAGI. Strong match for conversations about agent loops, autonomous workflows, open-source AI experiments, and early-stage AI investing.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://yoheinakajima.com/", "note": "Personal site describes Yohei Nakajima's AI experiments, investing, and BabyAGI work."},
+        {"label": "GitHub profile", "url": "https://github.com/yoheinakajima", "note": "GitHub profile hosts BabyAGI and related open-source AI-agent projects."},
+        {"label": "X profile", "url": "https://x.com/yoheinakajima", "note": "Public profile identifies him as creator of BabyAGI and an investor at Untapped Capital."}
+      ],
+      "secondary": [
+        {"label": "Untapped Capital team page", "url": "https://www.untapped.vc/team/yohei-nakajima", "note": "Firm page lists Yohei Nakajima as Managing Partner."},
+        {"label": "TED AI speaker page", "url": "https://tedai-sanfrancisco.ted.com/speakers/yohei-nakajima", "note": "Speaker page identifies him as BabyAGI creator and VC."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qbbgla",
+    "displayName": "Yonas Fisseha",
+    "headline": "Juniper Square co-founder and CTO building software infrastructure for private markets",
+    "company": "Juniper Square",
+    "title": "Chief Technology Officer and Co-Founder",
+    "location": "San Francisco, US",
+    "tags": ["private markets", "fintech", "software architecture", "Juniper Square", "engineering leadership", "investment operations"],
+    "confidence": "high",
+    "confidenceNote": "Juniper Square, LinkedIn, investor, and company-profile sources consistently identify Yonas Fisseha as Juniper Square's co-founder and CTO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Juniper Square, building software for private-market investment operations. Useful match for fintech infrastructure, engineering leadership, and enterprise workflow automation.",
+    "sources": {
+      "primary": [
+        {"label": "Juniper Square leadership page", "url": "https://www.junipersquare.com/company/leadership", "note": "Company page lists Yonas Fisseha as Co-Founder and Chief Technology Officer."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yonasfisseha", "note": "Public profile identifies him as co-founder and CTO of Juniper Square."}
+      ],
+      "secondary": [
+        {"label": "Ribbit Capital profile", "url": "https://ribbitcap.com/companies/juniper-square", "note": "Investor page describes Juniper Square and its private-markets software focus."},
+        {"label": "The Org profile", "url": "https://theorg.com/org/juniper-square/org-chart/yonas-fisseha", "note": "Org profile corroborates Yonas Fisseha's CTO and co-founder role."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "15cgida",
+    "displayName": "Yong Quan Tan",
+    "headline": "Kairos Labs founder building agentic AI workflows and Singapore AI community experiments",
+    "company": "Kairos Labs",
+    "title": "Founder",
+    "location": "Singapore, SG",
+    "tags": ["AI agents", "Kairos Labs", "Singapore", "startup founder", "AI community", "developer tools"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and event/community sources connect Yong Quan Tan to Kairos Labs and Singapore AI work; public company detail remains limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Kairos Labs in Singapore, working on agentic AI workflows and community-facing AI experiments. Good match for builders comparing startup, agent, and local ecosystem notes.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yongquantan", "note": "Public profile identifies Yong Quan Tan as founder of Kairos Labs in Singapore."},
+        {"label": "Kairos Labs website", "url": "https://kairoslabs.ai/", "note": "Company site gives context for Kairos Labs' AI-agent and workflow focus."}
+      ],
+      "secondary": [
+        {"label": "Nebius startup page", "url": "https://nebius.com/startups/yong-quan-tan", "note": "Nebius startup-program page lists Yong Quan Tan and Kairos Labs."},
+        {"label": "AI Tinkerers event page", "url": "https://singapore.aitinkerers.org/p/making-singapore-agentic-again", "note": "Singapore AI Tinkerers event page references Yong Quan Tan in local agentic-AI community activity."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1o20wq9",
+    "displayName": "Yoni Michael",
+    "headline": "typedef co-founder building developer tools and AI-native software systems",
+    "company": "typedef",
+    "title": "Co-Founder",
+    "location": "San Francisco, US",
+    "tags": ["developer tools", "AI engineering", "typedef", "startup founder", "software engineering", "product engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and typedef public pages match Yoni Michael to a co-founder role; public information about the company remains relatively sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of typedef, building developer-tooling and AI-native software systems. Relevant for conversations about product engineering, code-generation workflows, and early technical teams.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yonimichael", "note": "Public profile identifies Yoni Michael as co-founder of typedef."},
+        {"label": "typedef website", "url": "https://www.typedef.ai/", "note": "Company site provides context for typedef's AI and developer-product focus."}
+      ],
+      "secondary": [
+        {"label": "Y Combinator company page", "url": "https://www.ycombinator.com/companies/typedef", "note": "YC profile lists typedef and its founders."},
+        {"label": "GitHub profile", "url": "https://github.com/yonimichael", "note": "GitHub profile corroborates Yoni Michael's public technical identity."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0y8wr13",
+    "displayName": "Yu Su",
+    "headline": "Ohio State associate professor researching NLP, agents, and semantic parsing",
+    "company": "Ohio State University",
+    "title": "Associate Professor, Computer Science and Engineering",
+    "location": "Columbus, US",
+    "tags": ["NLP", "AI agents", "semantic parsing", "Ohio State", "research", "language models"],
+    "confidence": "high",
+    "confidenceNote": "Ohio State, personal, Google Scholar, and lab sources consistently identify Yu Su as an OSU CSE associate professor researching NLP, semantic parsing, and language-agent systems.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Associate Professor in Computer Science and Engineering at Ohio State. Researches NLP, semantic parsing, interactive agents, and language-model systems, making him a strong match for research-to-product AI discussions.",
+    "sources": {
+      "primary": [
+        {"label": "Ohio State faculty page", "url": "https://cse.osu.edu/people/su.809", "note": "University page lists Yu Su as an associate professor in Computer Science and Engineering."},
+        {"label": "Personal website", "url": "https://ysu1989.github.io/", "note": "Personal site describes his research in NLP, semantic parsing, agents, and language models."}
+      ],
+      "secondary": [
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?user=RDbVZ_cAAAAJ", "note": "Scholar profile corroborates his publication record in NLP and AI."},
+        {"label": "OSU NLP Group page", "url": "https://nlp.osu.edu/", "note": "Lab page lists Yu Su and gives context for OSU NLP research activity."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0gvz0je",
+    "displayName": "Yuchen Fama",
+    "headline": "Red Hat AI engineer and vLLM contributor working on open model serving infrastructure",
+    "company": "Red Hat",
+    "title": "Software Engineer",
+    "location": "United States",
+    "tags": ["vLLM", "Red Hat", "model serving", "open source", "inference", "AI infrastructure"],
+    "confidence": "medium",
+    "confidenceNote": "GitHub, Red Hat, and OpenInfra sources connect Yuchen Fama to Red Hat AI and vLLM work; public profiles vary between software-engineering and product/technical leadership titles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Red Hat AI practitioner working around vLLM and open model-serving infrastructure. Useful contact for inference stacks, open-source AI systems, and production serving tradeoffs.",
+    "sources": {
+      "primary": [
+        {"label": "GitHub profile", "url": "https://github.com/yf225", "note": "GitHub profile identifies Yuchen Fama with Red Hat and includes vLLM-related open-source activity."},
+        {"label": "Red Hat author page", "url": "https://www.redhat.com/en/authors/yuchen-fama", "note": "Red Hat author page lists Yuchen Fama and AI/infrastructure content."}
+      ],
+      "secondary": [
+        {"label": "OpenInfra Summit speaker page", "url": "https://openinfra.dev/summit/vancouver-2023/summit-schedule/events/27424/building-an-open-source-cloud-native-ai-platform-with-kubeflow-and-openshift-ai", "note": "Conference page lists Yuchen Fama of Red Hat on open-source AI platform work."},
+        {"label": "vLLM GitHub organization", "url": "https://github.com/vllm-project/vllm", "note": "Project repository gives context for the open model-serving stack associated with the attendee record."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0gu87ig",
+    "displayName": "Yuichiro Yamada",
+    "headline": "Findy CEO building engineering talent and productivity platforms in Japan",
+    "company": "Findy Inc.",
+    "title": "CEO",
+    "location": "Tokyo, JP",
+    "tags": ["Findy", "engineering talent", "developer productivity", "Japan startups", "SaaS", "technical recruiting"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources identify the Findy CEO as Yuichiro Yamada; the attendee row says Yuichiro Yamana, which appears to be a surname typo.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO of Findy, a Japan-based platform for engineering talent, developer productivity, and technical hiring. Relevant for conversations about software-team analytics, recruiting, and Japan's developer ecosystem.",
+    "sources": {
+      "primary": [
+        {"label": "Findy executive profile", "url": "https://findy.co.jp/about/", "note": "Company about page lists Yuichiro Yamada as representative director and CEO of Findy."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yuichiro-yamada-9b85095b", "note": "Public profile identifies Yuichiro Yamada as CEO of Findy Inc."}
+      ],
+      "secondary": [
+        {"label": "World Economic Forum profile", "url": "https://www.weforum.org/people/yuichiro-yamada/", "note": "WEF profile identifies Yuichiro Yamada as founder and CEO of Findy."},
+        {"label": "Startup DB company page", "url": "https://startup-db.com/companies/findy", "note": "Startup database profile corroborates Findy's company identity and leadership."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "04q9x5g",
+    "displayName": "Yulia Migunova-Khegay",
+    "headline": "Pebbly Beach AI co-founder building AI tools from Australia's Sunshine Coast",
+    "company": "Pebbly Beach AI",
+    "title": "Co-Founder",
+    "location": "Sunshine Beach, AU",
+    "tags": ["AI tools", "startup founder", "Pebbly Beach AI", "Australia", "product strategy", "small business AI"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and Pebbly Beach AI public pages match Yulia Migunova-Khegay to the company; public information is limited, so the profile avoids over-specific claims.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of Pebbly Beach AI on Australia's Sunshine Coast. Good match for practical conversations about AI tools, small-business workflows, and early-stage product building.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yulia-migunova-khegay", "note": "Public profile identifies Yulia Migunova-Khegay as co-founder of Pebbly Beach AI."},
+        {"label": "Pebbly Beach AI website", "url": "https://pebblybeach.ai/", "note": "Company site provides context for Pebbly Beach AI's product and services."}
+      ],
+      "secondary": [
+        {"label": "Pebbly Beach AI LinkedIn company page", "url": "https://www.linkedin.com/company/pebbly-beach-ai", "note": "Company page corroborates Pebbly Beach AI as the organization in the attendee record."},
+        {"label": "Instagram profile", "url": "https://www.instagram.com/pebblybeach.ai/", "note": "Public social profile corroborates the company's public brand and AI-tool focus."}
+      ]
+    }
+  }
+]

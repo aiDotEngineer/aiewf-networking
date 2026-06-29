@@ -1,0 +1,140 @@
+[
+  {
+    "lookupKey": "06day8f",
+    "displayName": "Brendan Rappazzo",
+    "headline": "Machine learning scientist focused on LLM research, fine-tuning, RL, and agentic workflows",
+    "company": "Morgan Stanley",
+    "title": "Machine Learning Scientist",
+    "location": "New York, NY",
+    "tags": ["LLMs", "machine learning research", "reinforcement learning", "fine-tuning", "agentic workflows", "financial services AI", "Cornell PhD"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, AI Engineer schedule, LinkedIn search result, Google Scholar, and Cornell page align on identity, Morgan Stanley ML research role, and LLM research focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Machine learning scientist in Morgan Stanley's Machine Learning Research group, focused on large language models across research and applied work. Useful match for conversations on RL for LLMs, adaptive pretraining/SFT/RL, agentic workflows, and bringing frontier-model research into financial-services production settings.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://www.bhogan.net/", "note": "States he is an AI/ML researcher at Morgan Stanley, based in NYC, focused on LLMs, fine-tuning, RL, and agentic workflows."},
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Harness+Engineering", "note": "Lists Brendan Rappazzo as a Morgan Stanley Machine Learning Scientist speaking on autonomous multi-agent research."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/brendan-rappazzo-hogan-763734115", "note": "Search result identifies AI/ML role at Morgan Stanley and New York location."}
+      ],
+      "secondary": [
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=7Ha1788AAAAJ", "note": "Scholar profile for Brendan Hogan Rappazzo with machine learning and AI research record."},
+        {"label": "Cornell CS research page", "url": "https://www.cs.cornell.edu/gomes/research.php", "note": "Cornell page notes Brendan Rappazzo as now an AI/ML researcher at Morgan Stanley."},
+        {"label": "Morgan Stanley Hugging Face organization", "url": "https://huggingface.co/morganstanley", "note": "Morgan Stanley ML Research presence references open-source ML research projects and Brendan Rappazzo profile imagery."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "013x662",
+    "displayName": "Brennan Erbz",
+    "headline": "Founder and CEO building Flik, an AI creative agent for video, image, audio, and content production",
+    "company": "Flik",
+    "title": "CEO & Co-Founder",
+    "location": "Los Angeles, CA",
+    "tags": ["generative media", "AI agents", "creative tools", "video generation", "founder", "Y Combinator", "consumer AI", "entertainment technology"],
+    "confidence": "high",
+    "confidenceNote": "YC, Flik website, social profile search results, LinkedIn content, and recent company coverage consistently identify him as Flik founder/CEO in Los Angeles with prior Snap and Hashletes background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Flik, a Los Angeles AI creative platform that turns ideas into video, image, audio, and other finished media assets through agentic workflows. Good match for conversations on generative-media product design, creative agents, AI-native content production, and startup building.",
+    "sources": {
+      "primary": [
+        {"label": "Flik website", "url": "https://www.flikai.com/", "note": "Describes Flik as a creative agent for videos, images, and audio in a single workspace."},
+        {"label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/flik", "note": "Lists Flik as active, Los Angeles-based, with Brennan Erbz as Founder and CEO."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/brennanerbz", "note": "Search result identifies Brennan Erbz with Flik, Y Combinator, and Los Angeles."},
+        {"label": "X profile", "url": "https://x.com/BrennanErbz", "note": "Search result bio identifies him as Founder and CEO of Flik with YC/SV Angel/A Capital backing and prior Hashletes/Snap background."}
+      ],
+      "secondary": [
+        {"label": "Business Wire Flik launch announcement", "url": "https://www.businesswire.com/news/home/20260408189442/en/Flik-Unveils-Breakthrough-Generative-AI-Agent-with-50000-Already-on-Waitlist", "note": "Company announcement describes Flik's generative AI agent and notes Erbz's Snap and Hashletes background."},
+        {"label": "LinkedIn product walkthrough post", "url": "https://www.linkedin.com/posts/brennanerbz_quick-walkthrough-of-flik-the-way-i-think-activity-7460134153070477313-361Q", "note": "Recent post explains Flik as an agent-orchestrated content factory with workspace, skills, and editor concepts."},
+        {"label": "Just AI News interview", "url": "https://justainews.com/industries/gaming-and-entertainment/interview-with-brennan-erbz-and-stafford-schlitt-co-founders-of-flik-ai/", "note": "Interview coverage describes Brennan Erbz and Stafford Schlitt as Flik AI co-founders."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "115560i",
+    "displayName": "Brian Chew",
+    "headline": "Singapore-based AI/platforms software engineer and builder active in Codex, Cursor, and local AI communities",
+    "company": "GovTech Singapore",
+    "title": "Software Engineer",
+    "location": "Singapore",
+    "tags": ["software engineering", "AI tools", "platform engineering", "developer tooling", "Codex", "Cursor", "Singapore AI community", "full-stack projects"],
+    "confidence": "high",
+    "confidenceNote": "GitHub profile, personal site, LinkedIn search result, and recent public posts align on identity, Singapore location, GovTech Singapore affiliation, and AI/developer-tooling interests.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Singapore-based software engineer working on AI, platforms, and developer tooling at GovTech Singapore. Active builder and community participant around Codex, Cursor, and agentic engineering, with a portfolio of small AI and web systems useful for practical developer-tooling conversations.",
+    "sources": {
+      "primary": [
+        {"label": "GitHub profile", "url": "https://github.com/bchewy", "note": "Profile and README state Brian Chew is in Singapore, works on AI/platforms at GovTech Singapore, and builds AI/tooling projects."},
+        {"label": "Personal website", "url": "https://bchewy.com/", "note": "Personal site presents Brian Chew's projects, social links, and recent public activity."},
+        {"label": "LinkedIn profile", "url": "https://sg.linkedin.com/in/brian-chew", "note": "Search result identifies Brian C. with GovTech Singapore, Singapore Management University, and Codex/Cursor ambassador positioning."},
+        {"label": "X profile", "url": "https://x.com/brianchew", "note": "Search result identifies Brian Chew as active around Codex and Cursor communities."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn Codex meetup recap", "url": "https://www.linkedin.com/posts/brian-chew_brian-chew-brianchew-on-x-activity-7474059890508869632-wmxA", "note": "Recent post recaps a Singapore Codex meetup and highlights agentic coding workflows and community demos."},
+        {"label": "LinkedIn builder/project post", "url": "https://www.linkedin.com/posts/brian-chew_brian-chew-solutions-engineer-builder-activity-7412063859102052352-acGf", "note": "Public post lists multiple AI and web projects including canyoubeatgroq.com, bchewy.com, and PDF-to-LLMs tooling."},
+        {"label": "The Generative Beings member profile", "url": "https://thegenerativebeings.com/members/brian-1", "note": "Lists Brian Chew as a Singapore member with information-systems, DevOps, AI, and cloud interests."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "176b791",
+    "displayName": "Brian Lewis",
+    "headline": "AI product lead at Millennium focused on enterprise AI evaluation and product enablement",
+    "company": "Millennium",
+    "title": "AI Product Lead",
+    "location": "New York, NY",
+    "tags": ["AI product", "enterprise AI", "AI evaluation", "financial services", "infrastructure", "startup evaluation", "product management"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn search result, AI Engineer schedule, and Millennium careers page align on name, company, AI product role, and enterprise AI evaluation topic, but detailed biography is sparse outside LinkedIn and event listings.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI Product Lead at Millennium, with public event context around evaluating AI startups for enterprise adoption and product-enablement roles in financial services. Likely useful match for conversations on AI vendor assessment, enterprise deployment criteria, and productizing AI inside large organizations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/brianthomaslewis", "note": "Search result identifies Brian L. as AI Product Lead at Millennium in New York."},
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises", "note": "Lists Brian Lewis of Millennium as AI Product Lead speaking on which AI startups land enterprise contracts."},
+        {"label": "AI Engineer schedule", "url": "https://www.ai.engineer/schedule", "note": "Public schedule lists Brian Lewis, Millennium, AI Product Lead, and the talk on evaluating AI startups at Millennium Management."}
+      ],
+      "secondary": [
+        {"label": "Millennium careers job page", "url": "https://career.mlp.com/careers/job/755955422287", "note": "AI Product Manager posting identifies Brian Lewis as hiring manager and describes AI product work within Millennium infrastructure."},
+        {"label": "LinkedIn hiring post", "url": "https://www.linkedin.com/posts/brianthomaslewis_we-are-hiring-again-role-ai-product-manager-activity-7447079263385575424-jzD-", "note": "Public LinkedIn post from Brian L. promotes an AI Product Manager role at Millennium."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Brian/Lewis%2B/us-0-United-States", "note": "Directory result corroborates Brian L. as AI Product Lead at Millennium in New York."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0w0x33g",
+    "displayName": "Brian Moseley",
+    "headline": "Co-founder and CTO of Sixfold, building agentic AI for insurance underwriting",
+    "company": "Sixfold",
+    "title": "Co-founder & CTO",
+    "location": "New York, NY",
+    "tags": ["agentic AI", "insurance underwriting", "insurtech", "enterprise AI", "AI agents", "generative AI", "CTO", "founder"],
+    "confidence": "high",
+    "confidenceNote": "Sixfold event pages, Sixfold blog posts, LinkedIn, and company/news coverage consistently identify him as Sixfold co-founder/CTO focused on generative AI and underwriting.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO at Sixfold, where he works on generative and agentic AI systems for insurance underwriting. Useful match for enterprise AI builders, insurance-tech operators, and teams thinking through where agents help in regulated, document-heavy workflows.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bmoseley", "note": "Search result identifies Brian Moseley at Sixfold in New York, focused on generative AI for insurance underwriting."},
+        {"label": "Sixfold SF Ruby 2025 event page", "url": "https://www.sixfold.ai/events/sixfold-sf-ruby-2025", "note": "Lists Brian Moseley as Co-founder and CTO at Sixfold."},
+        {"label": "Sixfold AI agents article", "url": "https://www.sixfold.ai/content/post/ai-agents", "note": "Sixfold article features CTO Brian Moseley discussing agentic AI and its relevance to insurance underwriting."},
+        {"label": "Sixfold launch article", "url": "https://www.sixfold.ai/content/post/sixfold-generative-ai", "note": "Sixfold founding announcement describes Brian Moseley as CTO and co-founder, joining from American Express developer experience leadership."}
+      ],
+      "secondary": [
+        {"label": "Sixfold behind-the-scenes category", "url": "https://www.sixfold.ai/content/category/behind-the-scenes", "note": "Sixfold content hub references a Q&A with Brian Moseley on tech tools, culture, AI, and the Sixfold underwriting platform."},
+        {"label": "Sixfold Year One Q&A", "url": "https://www.sixfold.ai/content/post/interview-co-founder-coo-jane-tran", "note": "Co-founder Jane Tran references Brian Moseley as Sixfold co-founder and CTO."},
+        {"label": "The Insurer coverage", "url": "https://www.theinsurer.com/ti/news/exclusive-sixfold-launches-ai-underwriting-agent-with-straight-through-quote-and-2026-06-12/", "note": "Recent industry coverage says Sixfold was co-founded in 2023 with CTO Brian Moseley and serves P&C and life and health underwriting."}
+      ]
+    }
+  }
+]

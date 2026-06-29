@@ -1,0 +1,447 @@
+[
+  {
+    "lookupKey": "04p70ua",
+    "displayName": "Noor Syed",
+    "headline": "Applied AI engineer focused on LLM applications, backend systems, and distributed computing",
+    "company": "Luminary Works",
+    "title": "Applied AI Engineer",
+    "location": "Mississauga, Canada",
+    "tags": ["applied AI", "LLMs", "backend engineering", "distributed systems", "HPC"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn matches the Luminary Works role and Greater Toronto area; personal sites corroborate AI, backend, distributed systems, and HPC interests but not the exact employer.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Noor Syed is an applied AI engineer at Luminary Works. Public materials point to work around LLM applications, backend design, distributed systems, and high-performance computing, making him a useful match for practical AI engineering and systems conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/nsyed1",
+          "note": "Lists Noor Syed as an ML Engineer at Luminary Works in the Greater Toronto Area."
+        },
+        {
+          "label": "Personal site",
+          "url": "https://www.noorsyed.com/",
+          "note": "Personal site says he helps businesses with AI potential and LLM development."
+        },
+        {
+          "label": "Personal technical site",
+          "url": "https://n00rsy.com/",
+          "note": "Personal site describes interests in backend design, distributed systems, HPC, and applying LLMs to real-world problems."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/Noor/Syed",
+          "note": "Directory result shows Noor Syed as ML Engineer in the Greater Toronto Area with Luminary Works."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0t0ukmn",
+    "displayName": "Ofir Balassiano",
+    "headline": "Co-founder and Chief Product Officer at Bloom Security, focused on AI-era endpoint and software supply-chain security",
+    "company": "Bloom Security",
+    "title": "CPO & Co-Founder",
+    "location": "Wilmington, DE",
+    "tags": ["cybersecurity", "AI security", "product leadership", "endpoint security", "software supply chain"],
+    "confidence": "high",
+    "confidenceNote": "Bloom Security's first-party about page, SecureWorld speaker page, X profile, and Bloom-authored post all match the same role and security background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ofir Balassiano is co-founder and CPO of Bloom Security, where he leads product strategy for endpoint security in AI-heavy developer environments. His background includes security research leadership at Palo Alto Networks, Dig Security, XM Cyber, and service in Mamram.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Bloom Security about page",
+          "url": "https://bloom.security/about",
+          "note": "First-party company page lists Ofir Balassiano as Chief Product Officer and summarizes his Palo Alto Networks, Dig Security, XM Cyber, and Mamram background."
+        },
+        {
+          "label": "Bloom Security blog post",
+          "url": "https://bloom.security/blog/your-pipeline-is-probably-covered-is-your-endpoint",
+          "note": "Bloom Security article by Ofir Balassiano on endpoint exposure in software supply-chain attacks."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/ofir_balassiano",
+          "note": "Public profile says Co-Founder and CPO at Bloom Security and former research lead at Palo Alto Networks."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "SecureWorld speaker profile",
+          "url": "https://events.secureworld.io/speakers/ofir-balassiano/",
+          "note": "Speaker page lists Ofir as Co-Founder and CPO at Bloom Security and describes his AI, cloud, identity, and data-security research background."
+        },
+        {
+          "label": "SecureWorld Kansas City agenda",
+          "url": "https://events.secureworld.io/agenda/kansas-city-ks-2026/",
+          "note": "Conference agenda repeats Bloom Security role and product-security focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fjv76f",
+    "displayName": "Ognyan Chikov",
+    "headline": "Head of Engineering at LimeChain building enterprise blockchain and Web3 infrastructure",
+    "company": "LimeChain",
+    "title": "Head of Engineering",
+    "location": "Sofia, Bulgaria",
+    "tags": ["blockchain", "Web3", "engineering leadership", "Solana", "zero knowledge"],
+    "confidence": "high",
+    "confidenceNote": "LimeChain event pages, Sessionize, LinkedIn posts, and The Org consistently identify him as LimeChain Head of Engineering in Sofia.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ognyan Chikov is Head of Engineering at LimeChain, leading enterprise-grade decentralized systems work. Public speaker materials highlight blockchain architecture, Solana, zero-knowledge implementations, mentoring through LimeAcademy, and a PhD background in computer systems and telecommunications.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LimeChain Solana Accelerate event",
+          "url": "https://limechain.tech/events/solana-accelerate",
+          "note": "First-party event page lists Ognyan Chikov as Head of Engineering."
+        },
+        {
+          "label": "LimeChain SEZ Dubai event",
+          "url": "https://limechain.tech/events/solana-economic-zone-dubai",
+          "note": "First-party event page lists Ognyan as Head of Engineering and describes a Solana workshop led by LimeChain's engineering leadership."
+        },
+        {
+          "label": "LimeChain LinkedIn post",
+          "url": "https://www.linkedin.com/posts/limechain_ognyan-chikov-joined-as-one-of-the-first-activity-7293182771865219072-oZKj",
+          "note": "Company post says Ognyan grew from developer to Head of Engineering and discusses blockchain, AI, and leadership."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/ognyan-chikov/",
+          "note": "Speaker profile lists him as Head of Engineering at LimeChain in Sofia with blockchain, AI, and mentoring topics."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/limechain/org-chart/ognyan-chikov",
+          "note": "Org-chart profile lists Ognyan Chikov as Head of Engineering at LimeChain."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "15agnp5",
+    "displayName": "Oleksii Ratych",
+    "headline": "SVP of R&D and Architecture at Playtika with deep software architecture and engineering-management experience",
+    "company": "Playtika",
+    "title": "SVP R&D and Architecture",
+    "location": "Ukraine",
+    "tags": ["gaming", "software architecture", "R&D leadership", "engineering management", "Playtika"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, The Org, and older person-authored LinkedIn posts consistently connect Olexii/Oleksii Ratych with Playtika architecture leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Oleksii Ratych is publicly listed as SVP R&D and Architecture at Playtika. His public footprint points to long-running software development, architecture, and engineering-management work in gaming technology.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ua.linkedin.com/in/olexiir",
+          "note": "Lists Olexii Ratych as SVP R&D and Architecture at Playtika."
+        },
+        {
+          "label": "LinkedIn post by Olexii Ratych",
+          "url": "https://www.linkedin.com/posts/oratych_playtika-infinite-ways-to-play-activity-6521868611076923392-dES-",
+          "note": "Person-authored post about hiring a Java System Architect for Playtika Kyiv."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/playtika-ltd/org-chart/olexii-ratych",
+          "note": "Lists Olexii Ratych as SVP of R&D and Architecture at Playtika and summarizes prior technical leadership."
+        },
+        {
+          "label": "The Org Playtika technology org chart",
+          "url": "https://theorg.com/org/playtika-ltd/org-chart/uri-rubin",
+          "note": "Technology management org chart includes Olexii Ratych as SVP R&D and Architecture."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1shv05h",
+    "displayName": "Olive Song",
+    "headline": "Senior research engineer at MiniMax working on RL training, model evaluation, and agentic reasoning models",
+    "company": "MiniMax",
+    "title": "Senior Research Engineer",
+    "location": "New York, NY",
+    "tags": ["LLMs", "reinforcement learning", "model evaluation", "agentic reasoning", "MiniMax"],
+    "confidence": "high",
+    "confidenceNote": "NYU, MiniMax, AI Engineer schedule, LinkedIn directory, and podcast listings all point to the same MiniMax research-engineering identity.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Olive Song is a Senior Research Engineer at MiniMax working on LLM reinforcement learning, frontier model evaluation, and agentic reasoning. Public event listings also identify her as MiniMax's RL lead for AI Engineer World's Fair programming.",
+    "sources": {
+      "primary": [
+        {
+          "label": "MiniMax technical seminar",
+          "url": "https://www.minimax.io/news/minimax-m1-technical-seminar-2",
+          "note": "First-party MiniMax seminar lists Jiayuan Song as technical staff presenting on scaling and RL for MiniMax M1."
+        },
+        {
+          "label": "NYU Center for Data Science alumni spotlight",
+          "url": "https://cds.nyu.edu/alumni-spotlights/",
+          "note": "NYU profile says Olive Song is a Senior Research Engineer at MiniMax working on LLM reinforcement learning and model evaluation."
+        },
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Olive/Song/us-0-United-States",
+          "note": "Directory result lists Olive S. as Senior Research Engineer at MiniMax with RL training and frontier model evaluation."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI",
+          "note": "Schedule lists Olive Song of MiniMax as RL Lead for a session on MiniMax models and infrastructure."
+        },
+        {
+          "label": "ThursdAI guests page",
+          "url": "https://thursdai.news/guests",
+          "note": "Guest profile lists Olive Song as Senior Researcher at MiniMax AI."
+        },
+        {
+          "label": "NYU CDS Medium article",
+          "url": "https://nyudatascience.medium.com/by-the-numbers-career-outcomes-student-success-at-nyu-cds-d66e295858ef",
+          "note": "NYU CDS article says Olive Song is a Senior Research Engineer at MiniMax leading model evaluation and working on RL."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "09nlspq",
+    "displayName": "Oliver Eikenberry",
+    "headline": "Principal Architect at Liatrio helping enterprises with platform engineering, DevOps, and AI-first technology change",
+    "company": "Liatrio",
+    "title": "Principal Architect",
+    "location": "Austin, TX",
+    "tags": ["platform engineering", "DevOps", "enterprise AI", "architecture", "cloud"],
+    "confidence": "high",
+    "confidenceNote": "Liatrio first-party author pages/posts, LinkedIn, and The Org all match the Principal Architect role and Austin location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Oliver Eikenberry is a Principal Architect at Liatrio with more than two decades across infrastructure, DevOps, release engineering, architecture, and leadership. His recent public writing connects platform health and enterprise technology practice to AI adoption.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Liatrio blog: high-performing product teams",
+          "url": "https://www.liatrio.com/resources/blog/high-performing-product-teams",
+          "note": "First-party Liatrio article by Oliver Eikenberry, listed as Principal Architect."
+        },
+        {
+          "label": "Liatrio LinkedIn post",
+          "url": "https://www.linkedin.com/posts/liatrio_principal-architect-oliver-eikenberry-brings-activity-7416918533210755072--X17",
+          "note": "Company post describes Oliver as a Principal Architect based in Austin with broad technical and leadership experience."
+        },
+        {
+          "label": "Liatrio resources page",
+          "url": "https://www.liatrio.com/resources",
+          "note": "Liatrio resources list a 2026 AI/platform article authored by Oliver Eikenberry."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/oeikenberry",
+          "note": "Lists Oliver Eikenberry as Principal Architect at Liatrio."
+        },
+        {
+          "label": "The Org architecture group",
+          "url": "https://theorg.com/org/liatrio/teams/architecture-group",
+          "note": "Lists Oliver Eikenberry as a Principal Architect in Liatrio's architecture group."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1d3wxz3",
+    "displayName": "Oliver Wemyss",
+    "headline": "Dropbox senior manager working across corporate infrastructure, software asset management, and enterprise systems",
+    "company": "Dropbox, Inc.",
+    "title": "Sr Manager of Corporate AI & Software Engineering",
+    "location": "Rancho Palos Verdes, CA",
+    "tags": ["Dropbox", "corporate infrastructure", "software asset management", "enterprise systems", "IT operations"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently match Oliver Wemyss at Dropbox, but they corroborate corporate infrastructure and software asset management more strongly than the row-provided Corporate AI & Software Engineering title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Oliver Wemyss is publicly associated with Dropbox as a senior manager in corporate infrastructure and software asset management. His background appears centered on enterprise systems, IT operations, network engineering, and corporate engineering functions.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/oliver-wemyss-146971100",
+          "note": "Lists Oliver Wemyss with Dropbox and a senior-manager corporate infrastructure / software asset management role."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "SignalHire profile",
+          "url": "https://www.signalhire.com/profiles/oliver-wemyss%27s-email/61269986",
+          "note": "Public profile lists Oliver Wemyss as a Dropbox senior manager for corporate infrastructure and software asset management, with prior enterprise systems roles."
+        },
+        {
+          "label": "Adapt profile",
+          "url": "https://www.adapt.io/contact/oliver-wemyss/402463336",
+          "note": "Public profile lists Oliver Wemyss as Senior Manager Corporate Infrastructure and Software Asset Management at Dropbox in Rancho Palos Verdes."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qmyo61",
+    "displayName": "Olivia Woolley",
+    "headline": "AI scientist at Bellevue Asset Management / BB Biotech applying data science to biotech investment",
+    "company": "Bellevue Asset Management",
+    "title": "AI Scientist",
+    "location": "Zurich, Switzerland",
+    "tags": ["AI", "biotech", "investment management", "data science", "digital epidemiology"],
+    "confidence": "high",
+    "confidenceNote": "BB Biotech/Bellevue first-party team and fact-sheet materials plus LinkedIn directory results align on the same AI Scientist role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Dr. Olivia Woolley is an AI Scientist at Bellevue Asset Management and a member of BB Biotech's investment management team. Her background includes Novartis data science and ETH Zurich postdoctoral research in digital epidemiology and complex networks.",
+    "sources": {
+      "primary": [
+        {
+          "label": "BB Biotech team page",
+          "url": "https://www.bbbiotech.ch/all-en/all/about-bb-biotech/team",
+          "note": "First-party page lists Dr. Olivia Woolley as AI Scientist and member of the BB Biotech investment management team at Bellevue Asset Management."
+        },
+        {
+          "label": "BB Biotech 2026 fact sheet PDF",
+          "url": "https://www.bbbiotech.ch/_Resources/Persistent/5/a/e/1/5ae15f6db5e271a14e4d022c777ed6ff335ac684/factsheet_2603_BB_BIOTECH_CH0038389992-SIX_global_en.pdf",
+          "note": "Bellevue/BB Biotech fact sheet lists Dr. Olivia Woolley as AI Scientist."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn Switzerland directory",
+          "url": "https://ch.linkedin.com/pub/dir/%2B/Woolley/ch-0-Schweiz",
+          "note": "Directory result lists Olivia Woolley Meza as AI Scientist at BB Biotech / Bellevue Asset Management in Zurich."
+        },
+        {
+          "label": "BB Biotech Q1 2026 report PDF",
+          "url": "https://www.bbbiotech.ch/_Resources/Persistent/7/7/c/f/77cf02d73af127b0d8cede35355d0c0832027388/BION%202026_Q1_de.pdf",
+          "note": "Company report names Olivia Woolley as AI Scientist among Bellevue Asset Management investment-manager staff."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "10by17k",
+    "displayName": "Omar Hijazi",
+    "headline": "Microsoft global business executive and digital strategist focused on retail, cloud, and AI-enabled transformation",
+    "company": "Microsoft",
+    "title": "Senior Director",
+    "location": "Los Angeles, CA",
+    "tags": ["Microsoft", "retail", "digital strategy", "cloud", "AI transformation"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and Microsoft-related public posts support the Microsoft identity and Los Angeles location; public sources found describe retail industry leadership and digital strategy more strongly than the exact Senior Director title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Omar Hijazi is publicly identified as a Microsoft global business executive and digital strategist in the Los Angeles area. Public posts connect him to Microsoft retail advisory work and themes such as AI-powered personalization, retail cloud, IoT, and unified data platforms.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ohijazi",
+          "note": "Lists Omar Hijazi as a global business executive and digital strategist at Microsoft in the Los Angeles Metropolitan Area."
+        },
+        {
+          "label": "Medium profile",
+          "url": "https://medium.com/@imOmarHijazi/keeping-better-track-from-factory-to-checkout-d3e543ed8bd3",
+          "note": "Person-authored article page identifies Omar Hijazi as a global business executive and digital strategist."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Retail Cloud Alliance LinkedIn post",
+          "url": "https://www.linkedin.com/posts/kayla-broussard_kyndryl-microsoft-inthememory-activity-7258233367845120-LHMu",
+          "note": "Post names Omar Hijazi as Americas Industry Leader, Retail Advisory at Microsoft in a discussion of AI, IoT, and unified data for retail."
+        },
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/Omar/Hijazi/us-0-United-States",
+          "note": "Directory result shows Omar Hijazi in the Los Angeles Metropolitan Area with Microsoft."
+        },
+        {
+          "label": "F6S member profile",
+          "url": "https://www.f6s.com/member/omarhijazi",
+          "note": "Profile describes Omar Hijazi as a global business executive and digital strategist with multinational leadership experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1e5ppy1",
+    "displayName": "Omer Primor",
+    "headline": "Director of Product Marketing at Bright Data focused on data, AI, and go-to-market strategy",
+    "company": "Bright Data",
+    "title": "Director of Product Marketing",
+    "location": "Israel",
+    "tags": ["product marketing", "go-to-market", "web data", "AI infrastructure", "Bright Data"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Bright Data company activity, The Information, G-CMO, and directory sources consistently list Omer Primor as Director of Product Marketing at Bright Data.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Omer Primor is Director of Product Marketing at Bright Data, working at the intersection of product marketing, GTM, web data, and AI infrastructure. Public event and community listings connect him to Israel's senior marketing ecosystem and Bright Data's AI/data positioning.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://il.linkedin.com/in/omer-primor",
+          "note": "Lists Omer Primor as Director of Product Marketing at Bright Data with product marketing, GTM, data, and AI positioning."
+        },
+        {
+          "label": "Bright Data LinkedIn company page",
+          "url": "https://il.linkedin.com/company/bright-data",
+          "note": "Company page activity mentions Omer Primor in Bright Data's AI and data-infrastructure context."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/OPrimor",
+          "note": "Public profile and posts associate Omer Primor with Bright Data and public web data infrastructure for AI and BI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Information profile",
+          "url": "https://www.theinformation.com/u/omerprimor",
+          "note": "Lists Omer Primor as Director of Product Marketing at Bright Data."
+        },
+        {
+          "label": "G-CMO Next profile list",
+          "url": "https://www.g-cmo.com/next/",
+          "note": "Senior marketing program page lists Omer Primor as Director of Product Marketing at Bright Data."
+        },
+        {
+          "label": "Clodura Bright Data directory",
+          "url": "https://www.clodura.ai/directory/company/bright-data",
+          "note": "Bright Data company directory lists Omer Primor as Director of Product Marketing."
+        }
+      ]
+    }
+  }
+]

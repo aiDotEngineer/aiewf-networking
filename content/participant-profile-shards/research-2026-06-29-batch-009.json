@@ -1,0 +1,217 @@
+[
+  {
+    "lookupKey": "13k63ai",
+    "displayName": "Ajay S",
+    "headline": "Software engineer at Google; exact public identity match is weak",
+    "company": "Google",
+    "title": "Software Engineer",
+    "location": "",
+    "tags": ["software engineering", "Google", "developer tools", "backend engineering", "AI engineering"],
+    "confidence": "low",
+    "confidenceNote": "Participant row gives Ajay S as a Software Engineer at Google, but public search results produce multiple Ajay S candidates and only a weak LinkedIn directory result for an Ajay S at Google DeepMind. Treat this profile as provisional until the attendee supplies a full name or primary profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ajay is listed as a software engineer at Google. Given the weak public identity match, use this profile as a lightweight conversation starter around Google engineering, applied AI, and production software systems rather than as a verified background summary.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn directory search",
+          "url": "https://www.linkedin.com/pub/dir/Ajay/S./in-0-India",
+          "note": "Directory snippet includes an Ajay S listed as Software Engineer at Google DeepMind, but does not prove this is the attendee."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/",
+          "note": "Company context for the strongest weak-match search result; not person-specific."
+        },
+        {
+          "label": "Google Careers: Software Engineer",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/?q=Software%20Engineer",
+          "note": "Company role context for software engineering at Google; not person-specific."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ui824g",
+    "displayName": "Ajit Singh",
+    "headline": "Chief Architect at The Friedkin Group focused on enterprise technology execution and transformation",
+    "company": "The Friedkin Group",
+    "title": "Chief Architect",
+    "location": "Houston, US",
+    "tags": ["enterprise architecture", "IT leadership", "digital transformation", "automotive", "hospitality", "enterprise systems", "technology strategy"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name public sources connect Ajit Singh to The Friedkin Group, Chief Architect role, Houston-area civic leadership, and 2026 Next CIO recognition.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ajit is Chief Architect at The Friedkin Group, a diversified Houston-based business group spanning automotive, hospitality, entertainment, sports, and related operating companies. He is a useful match for conversations on enterprise architecture, technology execution, AI adoption in complex operating groups, and the path from architecture leadership toward CIO-level responsibility.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ajitsingh-masterbuilder",
+          "note": "Professional profile snippet lists Ajit Singh as Chief Architect at The Friedkin Group."
+        },
+        {
+          "label": "The Friedkin Group LinkedIn post",
+          "url": "https://www.linkedin.com/posts/friedkin-companies-inc-_we-did-it-congratulations-to-the-friedkin-activity-7270485112725606401-8A7O",
+          "note": "Company post includes Ajit Singh commenting as part of The Friedkin Group community."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CIO 100 Awards",
+          "url": "https://event.foundryco.com/cio100-symposium-and-awards/awards/",
+          "note": "Lists Ajit Singh of The Friedkin Group, Inc. as a 2026 NextCIO winner."
+        },
+        {
+          "label": "United Way Greater Houston",
+          "url": "https://unitedwayhouston.org/for-donors/other-leadership-giving-groups/",
+          "note": "Lists Ajit Singh, The Friedkin Group, as an Impact Circle Committee member."
+        },
+        {
+          "label": "The Org: Friedkin Companies",
+          "url": "https://theorg.com/org/friedkin-companies-inc",
+          "note": "Company context for Friedkin as a Houston-headquartered privately held consortium."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "11sp14h",
+    "displayName": "Akash Bhatia",
+    "headline": "BCG global technology-sector leader advising software companies on GenAI strategy, growth, and pricing",
+    "company": "Boston Consulting Group",
+    "title": "Managing Director and Senior Partner - Global Technology Sector Leader",
+    "location": "San Francisco, US",
+    "tags": ["GenAI strategy", "enterprise software", "technology strategy", "go-to-market", "AI pricing", "growth tech", "consulting"],
+    "confidence": "high",
+    "confidenceNote": "Official BCG sources match Akash Bhatia's name, senior partner role, global technology-sector leadership, Silicon Valley/Bay Area location, and enterprise software/GenAI focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akash leads BCG's global technology-sector work, with a focus on enterprise software and growth technology companies. He advises technology leaders on product strategy, GTM, pricing, ecosystems, and GenAI-driven business-model shifts, including AI-first SaaS and agentic AI monetization.",
+    "sources": {
+      "primary": [
+        {
+          "label": "BCG expert profile",
+          "url": "https://www.bcg.com/about/people/experts/akash-bhatia",
+          "note": "Official profile with title, Silicon Valley/Bay Area location, enterprise software focus, and GenAI leadership."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akash-bhatia-bcg",
+          "note": "Professional profile linked from the official BCG expert page."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "BCG: Agentic AI software pricing",
+          "url": "https://www.bcg.com/publications/2025/rethinking-b2b-software-pricing-in-the-era-of-ai",
+          "note": "BCG article co-authored by Akash on agentic AI and software pricing."
+        },
+        {
+          "label": "BCG: AI disruptors",
+          "url": "https://www.bcg.com/publications/2026/meet-the-new-generation-of-ai-disruptors",
+          "note": "Recent BCG AI article listed on Akash's official publication profile."
+        },
+        {
+          "label": "The Org",
+          "url": "https://theorg.com/org/bcg/org-chart/akash-bhatia",
+          "note": "Secondary executive profile for BCG role and enterprise software focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0klo96g",
+    "displayName": "Akash Jana",
+    "headline": "Microsoft engineer working around Azure developer tooling and package-management workflows",
+    "company": "Microsoft",
+    "title": "Principal Engineer",
+    "location": "Redmond, US",
+    "tags": ["Microsoft", "Azure DevOps", "Azure Artifacts", "developer tooling", "package management", "software supply chain", "engineering systems"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources match Akash Jana to Microsoft in the Greater Seattle area and Microsoft Developer Community activity under an MSFT label, but the exact Principal Engineer title is from the participant row rather than independently verified public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akash is listed as a Principal Engineer at Microsoft in Redmond. Public Microsoft-owned traces point to work around Azure DevOps and Azure Artifacts, making him a good match for conversations on developer platforms, package ecosystems, software supply chain metadata, and large-scale engineering systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akash-jana",
+          "note": "Professional profile snippet lists Akash Jana as an engineer at Microsoft in the Greater Seattle Area."
+        },
+        {
+          "label": "Microsoft Developer Community",
+          "url": "https://developercommunity.microsoft.com/t/Feature-Request%3A-Implement-PEP-700-uplo/11065528",
+          "note": "Microsoft-owned developer feedback page showing Akash Jana with an MSFT label on Azure Artifacts work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Azure DevOps Developer Community",
+          "url": "https://developercommunity.visualstudio.com/AzureDevOps",
+          "note": "Search/result context repeatedly surfaces Akash Jana [MSFT] on Azure DevOps and Azure Artifacts feedback."
+        },
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/Akash/Jana",
+          "note": "Directory snippet corroborates an Akash Jana at Microsoft in the Greater Seattle Area."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1j1ifo7",
+    "displayName": "Akhilesh Gadde",
+    "headline": "Apple technical lead building enterprise GenAI, RAG, AI-agent, and automation platforms",
+    "company": "Apple",
+    "title": "Technical Lead",
+    "location": "Cupertino, US",
+    "tags": ["GenAI", "RAG", "AI agents", "enterprise AI", "distributed systems", "SDKs", "self-healing networks", "Applied AI"],
+    "confidence": "medium",
+    "confidenceNote": "Public speaker and secondary profiles strongly match Akhilesh Gadde to Apple GenAI and enterprise AI work, while the exact Technical Lead title and Cupertino location come from the participant row rather than the public sources, which emphasize GenAI Solutions Architect and Milpitas.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akhilesh builds enterprise-grade GenAI systems at Apple, with public materials highlighting RAG, LLMs, autonomous AI agents, internal workflow automation, and developer SDKs. His prior work spans VMware SD-WAN self-healing systems, Intuit, Juniper Networks, and Ericsson.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Sessionize",
+          "url": "https://sessionize.com/akhilesh-gadde/",
+          "note": "Speaker profile describing Apple GenAI Solutions Architect work across RAG, LLMs, AI agents, SDKs, and enterprise automation."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akhilesh-gadde/",
+          "note": "Professional profile linked from Sessionize; public access may show limited preview."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Justia patents",
+          "url": "https://patents.justia.com/inventor/murtaza-zafer",
+          "note": "Patent listing names Akhilesh Gadde as an inventor on self-healing SD-WAN anomaly remediation patents."
+        },
+        {
+          "label": "TechBullion profile",
+          "url": "https://techbullion.com/akhilesh-gadde-leading-innovation-at-the-intersection-of-ai-and-enterprise-technology/",
+          "note": "Secondary profile summarizing Apple GenAI work, VMware self-healing network systems, and enterprise AI focus."
+        },
+        {
+          "label": "Journal of Computer Science and Technology Studies",
+          "url": "https://al-kindipublishers.org/index.php/jcsts/article/view/9582",
+          "note": "Lists Akhilesh Gadde as author of a 2025 article on generative AI, no-code development, and vibe coding."
+        }
+      ]
+    }
+  }
+]

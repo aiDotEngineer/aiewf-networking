@@ -1,0 +1,132 @@
+[
+  {
+    "lookupKey": "1elr4aa",
+    "displayName": "Arun Kumar",
+    "headline": "Co-founder and managing partner focused on enterprise AI delivery and telecom transformation",
+    "company": "Ligaments AI Company",
+    "title": "Managing Partner",
+    "location": "Dallas, US",
+    "tags": ["enterprise AI", "telecom", "digital transformation", "AI strategy", "delivery leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Strong match on name, company, and Ligaments AI role; Dallas location comes from participant-provided data rather than public source evidence found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and managing partner at Ligaments AI Company, working on composable enterprise AI solutions. Public company posts describe him as a telecom software and AI expert with nearly 20 years of experience in high-scale digital transformations and operations.",
+    "sources": {
+      "primary": [
+        {"label": "Arun Kumar LinkedIn profile", "url": "https://www.linkedin.com/in/arun-kumar-4ai", "note": "Lists Arun as AI aficionado, co-founder, delivery/client partner, telecom domain expert at Ligaments AI Company."},
+        {"label": "Arun Kumar LinkedIn announcement", "url": "https://www.linkedin.com/posts/arun-kumar-4ai_im-joining-ligaments-ai-company-as-co-founder-activity-7419388974290616320-raSS", "note": "Announces joining Ligaments AI; company comment names him co-founder and managing partner."},
+        {"label": "Ligaments AI website", "url": "https://ligaments.ai/", "note": "Official company site for Ligaments AI and its LigaX platform."}
+      ],
+      "secondary": [
+        {"label": "Ligaments AI Company LinkedIn", "url": "https://www.linkedin.com/company/ligaments-ai", "note": "Company page describes composable AI solutions for enterprise AI journeys and headquarters in Prosper, Texas."},
+        {"label": "The Org - Ligaments AI Company", "url": "https://theorg.com/org/ligaments-ai-company", "note": "Unverified org listing names Arun Kumar as co-founder and managing partner."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0mtwzcv",
+    "displayName": "Arun Sekhar",
+    "headline": "Principal product manager for Microsoft AI developer experience and Azure AI SDKs",
+    "company": "Microsoft",
+    "title": "Principal Product Manager",
+    "location": "Redmond, WA, US",
+    "tags": ["Azure AI", "AI developer experience", "SDKs", "developer tools", "Microsoft Foundry"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary/professional sources consistently identify Arun Sekhar as a Microsoft principal product manager working on AI developer experience and Azure AI SDKs.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Microsoft principal product manager focused on AI developer experience and Azure AI SDKs. His background spans developer, dev lead, and PM work across Microsoft technologies, with public speaking around Microsoft Reactor, Foundry Models, and AI application development.",
+    "sources": {
+      "primary": [
+        {"label": "Arun Sekhar LinkedIn profile", "url": "https://www.linkedin.com/in/rcarun", "note": "Lists principal product manager for AI Developer Experience at Microsoft."},
+        {"label": "Arun Sekhar GitHub profile", "url": "https://github.com/achandmsft", "note": "Lists principal product manager for AI Developer Experience, Microsoft affiliation, and Redmond location."},
+        {"label": "Arun Sekhar X profile", "url": "https://x.com/rcarunmsft", "note": "Public profile references his role as principal PM for Azure AI SDKs."}
+      ],
+      "secondary": [
+        {"label": "Microsoft Reactor AI Dev Days speaker page", "url": "https://developer.microsoft.com/en-us/reactor/series/s-1612/", "note": "Microsoft event page lists Arun Sekhar as a Microsoft principal product manager."},
+        {"label": "Sessionize speaker profile", "url": "https://sessionize.com/arun-chandrasekhar/", "note": "Speaker profile describes his Azure AI SDKs role and long Microsoft/cloud/devops background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1b8nu9c",
+    "displayName": "Aryamika Bhatia Ondaatje",
+    "headline": "Co-founder and COO building AI inference infrastructure at Aranya",
+    "company": "Aranya",
+    "title": "COO",
+    "location": "San Francisco, CA, US",
+    "tags": ["AI infrastructure", "inference", "Kubernetes", "operations", "startup leadership"],
+    "confidence": "high",
+    "confidenceNote": "Public LinkedIn, company, and press sources consistently identify Aryamika as Aranya co-founder/COO in San Francisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and COO at Aranya, an AI infrastructure company building cluster-scale systems for inference workloads. Her background includes an MIT Sloan MBA and product/community leadership around AI and technology events.",
+    "sources": {
+      "primary": [
+        {"label": "Aryamika Bhatia Ondaatje LinkedIn profile", "url": "https://www.linkedin.com/in/aryamikaondaatje", "note": "Lists co-founder and COO at Aranya, MIT Sloan MBA, and prior AI circle leadership."},
+        {"label": "Aranya website", "url": "https://aranya.tech/", "note": "Official company site describes Aranya's cluster and inference infrastructure work."},
+        {"label": "Aranya LinkedIn company page", "url": "https://www.linkedin.com/company/aranya-inc", "note": "Company page lists San Francisco location and Aryamika among Aranya employees."}
+      ],
+      "secondary": [
+        {"label": "PRNewswire Aranya stealth announcement", "url": "https://www.prnewswire.com/news-releases/aranya-emerges-from-stealth-to-meet-surging-demand-for-ai-inference-infrastructure-announcing-partnerships-with-hydra-host-and-leading-ai-inference-companies-across-1-700-gpus-302755332.html", "note": "Names Aryamika Bhatia Ondaatje as a founder and describes Aranya's ClusterdOS/inference infrastructure positioning."},
+        {"label": "HPCwire Aranya announcement", "url": "https://www.hpcwire.com/off-the-wire/aranya-emerges-from-stealth-with-clusterdos-targets-ai-inference-infrastructure-at-scale/", "note": "Covers Aranya's launch and names Aryamika among the founders."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1puj6r6",
+    "displayName": "Aryan Daga",
+    "headline": "Co-founder of Morphiq Labs, working on agent-facing developer tool discovery and benchmarks",
+    "company": "Morphiq Labs",
+    "title": "Cofounder",
+    "location": "San Francisco, US",
+    "tags": ["AI agents", "developer tools", "benchmarks", "agent experience", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and Morphiq public pages align on name, role, company, and San Francisco location; less independent biographical depth was available.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of Morphiq Labs, which studies and improves how coding agents discover, evaluate, and integrate developer tools. His recent work includes Morphiq Bench, benchmarking tool selection by agents such as Codex, Claude Code, and Cursor.",
+    "sources": {
+      "primary": [
+        {"label": "Aryan Daga LinkedIn profile", "url": "https://www.linkedin.com/in/aryandaga", "note": "Lists Aryan as co-founder at Morphiq Labs in San Francisco."},
+        {"label": "Morphiq website", "url": "https://trymorphiq.com/", "note": "Official company site describes Morphiq's agent-discovery and developer-tool benchmarking products."},
+        {"label": "Aryan Daga LinkedIn Morphiq Bench post", "url": "https://www.linkedin.com/posts/aryandaga_your-next-user-might-not-choose-your-dev-activity-7462987517705801728-iNEu", "note": "Founder post describes Morphiq Bench and the agent-as-user thesis."}
+      ],
+      "secondary": [
+        {"label": "Morphiq Labs LinkedIn company page", "url": "https://www.linkedin.com/company/trymorphiq", "note": "Company page lists Morphiq Labs, its website, team size, and Aryan Daga among employees."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Aryan/Daga", "note": "Directory result corroborates Aryan Daga as co-founder at Morphiq Labs in San Francisco, CA."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1bvcblj",
+    "displayName": "Aryan Vichare",
+    "headline": "Founding engineer at Arena focused on design engineering and AI/LLM product experiences",
+    "company": "Arena",
+    "title": "Founding Engineer",
+    "location": "San Francisco, US",
+    "tags": ["AI products", "design engineering", "LLMs", "web development", "evaluation"],
+    "confidence": "high",
+    "confidenceNote": "Personal website, LinkedIn, and X profile consistently match the name, Arena role, prior Vercel AI work, and San Francisco location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founding engineer at Arena, working at the intersection of design engineering and AI/LLMs. Previously he was on Vercel's AI team, where he helped build the chat-based v0.dev experience and AI Playground.",
+    "sources": {
+      "primary": [
+        {"label": "Aryan Vichare personal website", "url": "https://www.aryanvichare.dev/", "note": "Personal site states he is a founding engineer at Arena and previously worked on Vercel AI products including chat-based v0.dev."},
+        {"label": "Aryan Vichare LinkedIn profile", "url": "https://www.linkedin.com/in/aryanvichare", "note": "Lists founding engineer at Arena, previous AI work at Vercel, and design engineering/AI focus."},
+        {"label": "Aryan Vichare X profile", "url": "https://x.com/aryanvichare10", "note": "Public profile shows San Francisco location and links to personal site."}
+      ],
+      "secondary": [
+        {"label": "Aryan Vichare LinkedIn Arena announcement", "url": "https://www.linkedin.com/posts/aryanvichare_im-excited-to-share-that-ive-joined-lmarena-activity-7338943218677424128-RzRF", "note": "LinkedIn activity around joining Arena corroborates role timing."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Aryan/Vichare", "note": "Directory result corroborates founding engineer role, prior Vercel work, and San Francisco Bay Area location."}
+      ]
+    }
+  }
+]

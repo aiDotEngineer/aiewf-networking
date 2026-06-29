@@ -72,6 +72,23 @@ function splitList(value: string | undefined) {
   return value?.split(/[;,]/).map((item) => item.trim()).filter(Boolean) ?? [];
 }
 
+function splitProfileSources(value: string | undefined) {
+  return (value ?? "")
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .slice(0, 24)
+    .map((line) => {
+      const [label = "", url = "", ...noteParts] = line.split("|").map((part) => part.trim());
+      return {
+        label: label.slice(0, 120),
+        url: url.slice(0, 500),
+        note: noteParts.join(" | ").slice(0, 500),
+      };
+    })
+    .filter((source) => source.label && source.url);
+}
+
 function tokenValue() {
   return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}-${Math.random()
     .toString(36)
@@ -161,6 +178,7 @@ function profileOverrideSummary(override: ParticipantProfileOverride | null | un
     headline: override.headline,
     bioMarkdown: override.bioMarkdown,
     tags: override.tags,
+    sources: override.sources,
     participantApproved: override.participantApproved,
     approvedAt: override.approvedAt,
     updatedAt: override.updatedAt,
@@ -226,6 +244,10 @@ async function upsertProfileOverride(
     headline: string;
     bioMarkdown: string;
     tags: string[];
+    sources?: {
+      primary: Array<{ label: string; note: string; url: string }>;
+      secondary: Array<{ label: string; note: string; url: string }>;
+    };
     participantApproved: boolean;
   },
 ) {
@@ -239,9 +261,10 @@ async function upsertProfileOverride(
     participantApproved: fields.participantApproved,
     updatedAt: timestamp,
   };
+  const patchWithSources = fields.sources ? { ...patch, sources: fields.sources } : patch;
   const nextFields = fields.participantApproved
-    ? { ...patch, approvedAt: existing?.approvedAt ?? timestamp }
-    : patch;
+    ? { ...patchWithSources, approvedAt: existing?.approvedAt ?? timestamp }
+    : patchWithSources;
   if (existing) {
     await ctx.db.patch(existing._id, nextFields);
   } else {
@@ -1630,6 +1653,8 @@ export const updateMyProfile = mutation({
     profileHeadline: v.optional(v.string()),
     profileBioMarkdown: v.optional(v.string()),
     profileTags: v.optional(v.string()),
+    profilePrimarySources: v.optional(v.string()),
+    profileSecondarySources: v.optional(v.string()),
     participantApproved: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
@@ -1659,13 +1684,23 @@ export const updateMyProfile = mutation({
       args.profileHeadline !== undefined ||
       args.profileBioMarkdown !== undefined ||
       args.profileTags !== undefined ||
+      args.profilePrimarySources !== undefined ||
+      args.profileSecondarySources !== undefined ||
       args.participantApproved !== undefined
     ) {
       const profileTags = args.profileTags === undefined ? accountTopics : splitList(args.profileTags);
+      const sources =
+        args.profilePrimarySources !== undefined || args.profileSecondarySources !== undefined
+          ? {
+              primary: splitProfileSources(args.profilePrimarySources),
+              secondary: splitProfileSources(args.profileSecondarySources),
+            }
+          : undefined;
       await upsertProfileOverride(ctx, actor._id, {
         headline: args.profileHeadline?.trim() ?? "",
         bioMarkdown: args.profileBioMarkdown?.trim() ?? "",
         tags: profileTags.length ? profileTags : accountTopics,
+        sources,
         participantApproved: args.participantApproved ?? false,
       });
     }

@@ -1,0 +1,262 @@
+[
+  {
+    "lookupKey": "0ifu96d",
+    "displayName": "Teddy Kim",
+    "headline": "AI and digital-platform engineering leader working on developer productivity at Thrivent",
+    "company": "Thrivent",
+    "title": "Principal Engineer",
+    "location": "Nashville, US",
+    "tags": ["AI engineering", "digital platforms", "developer productivity", "engineering leadership", "financial services", "product delivery"],
+    "confidence": "low",
+    "confidenceNote": "Public LinkedIn evidence connects Teddy Kim to Thrivent engineering and developer-productivity work, but the exact Principal Engineer title and Nashville location come mainly from the attendee row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at Thrivent working around AI, digital platforms, and the economics of product delivery. Useful match for conversations about platform teams, developer productivity, and financial-services engineering.",
+    "sources": {
+      "primary": [
+        {"label": "Teddy Kim LinkedIn post", "url": "https://www.linkedin.com/posts/teddykim_i-had-a-football-coach-who-would-lose-his-activity-7265752023495499778-Gv8t", "note": "Person-specific public post shows Teddy Kim posting about Thrivent context and links to his engineering-oriented articles."}
+      ],
+      "secondary": [
+        {"label": "Steve Bauer LinkedIn post", "url": "https://www.linkedin.com/posts/steve-bauer-6885545_great-session-and-really-bad-picture-from-activity-7194335435945381888-IuyX", "note": "Public post names Teddy Kim on a Thrivent team session about improving the economics of product delivery and engineering productivity."},
+        {"label": "Elizabeth Bertani public resume", "url": "https://us.bold.pro/my/elizabeth-bertani", "note": "Public resume mentions Digital Platform teams under Teddy Kim at Thrivent, corroborating his role in Thrivent digital-platform engineering."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0yzxvvh",
+    "displayName": "Tejas Kumar",
+    "headline": "IBM AI engineer and keynote speaker teaching practical AI harnesses and agent reliability",
+    "company": "IBM",
+    "title": "AI Engineer",
+    "location": "Berlin, Germany",
+    "tags": ["AI engineering", "agent harnesses", "developer relations", "public speaking", "web engineering", "developer education"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, personal website, AI Engineer schedule, and recent talk listings consistently identify Tejas Kumar as an IBM AI engineer and international technical speaker.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI engineer and international keynote speaker at IBM, focused on making AI systems reliable through harnesses, demos, and developer education. Strong fit for agent reliability, web engineering, and devrel conversations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://de.linkedin.com/in/tejasq", "note": "Public profile identifies Tejas Kumar as an AI Engineer and keynote speaker connected to IBM."},
+        {"label": "Personal website", "url": "https://tej.as/", "note": "Personal site presents Tejas Kumar as a keynote speaker, author, and developer educator."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Workshops+Day+1", "note": "Conference schedule lists Tejas Kumar of IBM on an AI-native workshop session."},
+        {"label": "InfoQ presentation", "url": "https://www.infoq.com/presentations/ai-innovation-2025/", "note": "Talk transcript identifies Tejas Kumar as a developer relations engineer at IBM working on AI solutions."},
+        {"label": "WebExpo speaker page", "url": "https://webexpo.net/prague2026/sessions/premium-workshop-beyond-the-prompt-applied-ai-engineering/", "note": "Speaker page lists Tejas Kumar as an AI Engineer at IBM and links his public technical channels."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pxtg7z",
+    "displayName": "Tela Mathias",
+    "headline": "PhoenixTeam founder applying GenAI to mortgage technology, regulatory workflows, and AI education",
+    "company": "PhoenixTeam",
+    "title": "Founder",
+    "location": "Arlington, US",
+    "tags": ["mortgage technology", "GenAI", "regtech", "AI education", "founder", "financial services"],
+    "confidence": "high",
+    "confidenceNote": "PhoenixTeam, HousingWire, MBA NewsLink, and Inc. consistently identify Tela Mathias as a PhoenixTeam founder and AI/regtech leader in mortgage technology.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "PhoenixTeam founder and Phoenix Burst CEO bringing GenAI into mortgage operations, regulatory change, and industry education. Useful match for AI in regulated workflows and practical workforce adoption.",
+    "sources": {
+      "primary": [
+        {"label": "PhoenixTeam team page", "url": "https://www.phoenixoutcomes.com/who-we-are", "note": "Official team page lists Tela Mathias as Chief Nerd and Mad Scientist at PhoenixTeam and CEO of Phoenix Burst."},
+        {"label": "PhoenixTeam recognition post", "url": "https://www.phoenixoutcomes.com/news-and-insights/tela-gallagher-mathias-recognized-as-a-2025-housingwire-vanguard", "note": "Company post describes her leadership in GenAI, Phoenix Burst, AI education, and mortgage technology."}
+      ],
+      "secondary": [
+        {"label": "HousingWire Vanguard profile", "url": "https://www.housingwire.com/winner-profile/2025-vanguard-tela-mathias/", "note": "Industry profile identifies Tela Mathias as Chief Nerd and Mad Scientist at PhoenixTeam and CEO of Phoenix Burst."},
+        {"label": "MBA NewsLink Q&A", "url": "https://newslink.mba.org/mba-newslinks/2025/january/mba-newslink-tuesday-jan-14-2025/newslink-qa-phoenixteams-tela-mathias-talks-genai-thursdays-speed-learning-webinar/", "note": "Interview says she owns PhoenixTeam with longtime colleagues and works on AI-powered mortgage solutions."},
+        {"label": "Inc. Female Founders profile", "url": "https://www.inc.com/profile/tela-mathias", "note": "Founder profile lists Tela Mathias, PhoenixTeam, leadership, and Arlington location."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "02wszkt",
+    "displayName": "Tereza Tizkova",
+    "headline": "Factory growth operator and AI-agent community builder with E2B founding-team experience",
+    "company": "Factory",
+    "title": "Growth",
+    "location": "San Francisco, US",
+    "tags": ["growth", "AI agents", "software factories", "developer tools", "community", "startup operations"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, personal site, GitHub, and AI Engineer schedule consistently identify Tereza Tizkova as Growth at Factory and a former E2B founding member.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Growth at Factory, building community and go-to-market around software factories and coding agents. Previously a founding member at E2B, with a public writing footprint around AI agents and startup growth.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tereza-tizkova-568439174", "note": "Public profile lists Tereza Tizkova as Growth at Factory and founding member at E2B."},
+        {"label": "X profile", "url": "https://x.com/tereza_tizkova", "note": "Public profile says growth at Factory and founding member at E2B."},
+        {"label": "Personal website", "url": "https://www.terezatizkova.com/", "note": "Personal site links her public social, GitHub, and writing profiles and places her between San Francisco and Prague."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Software+Factories", "note": "Conference schedule lists Tereza Tizkova as Growth at Factory for a Software Factories session."},
+        {"label": "GitHub profile", "url": "https://github.com/tizkovatereza", "note": "Public GitHub profile lists Factory, San Francisco, her personal site, X, and LinkedIn."},
+        {"label": "LinkedIn article", "url": "https://www.linkedin.com/pulse/why-factory-my-dream-company-join-tereza-tizkova-wzigc", "note": "Article by Tereza Tizkova says she joined Factory in a growth role."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1b57u7h",
+    "displayName": "Terralynn Forsyth",
+    "headline": "Pragmatico cofounder and CPO building human-agency-centered AI products",
+    "company": "Pragmatico",
+    "title": "Cofounder, CPO",
+    "location": "Toronto, Canada",
+    "tags": ["AI product", "future of work", "human agency", "product leadership", "startup founder", "workforce technology"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, Pragmatico founder announcement posts, and prior FutureFit AI/NEXT Canada sources consistently match Terralynn Forsyth as an AI product founder and Pragmatico cofounder/CPO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder and CPO at Pragmatico, building AI that extends human agency. Former FutureFit AI and Cogentic Labs product founder focused on workforce transitions, product leadership, and practical AI adoption.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/terralynnforsyth", "note": "Public profile lists Terralynn Forsyth as Cofounder and CPO at Pragmatico, building AI that extends human agency."},
+        {"label": "X profile", "url": "https://x.com/terralynn_f", "note": "Public profile says she is cofounder and CPO at Pragmatico, previously Cogentic Labs and FutureFit AI."}
+      ],
+      "secondary": [
+        {"label": "Randy Stocklin LinkedIn announcement", "url": "https://www.linkedin.com/posts/randystocklin_when-i-think-about-what-makes-a-great-founding-activity-7452342882621124608-0c47", "note": "Public post announces Terralynn Forsyth joining Pragmatico as co-founder and Chief Product Officer after its acquisition of Cogentic Labs."},
+        {"label": "Santiago Jaramillo LinkedIn announcement", "url": "https://www.linkedin.com/posts/santiagojaramillo_exciting-milestone-pragmatico-has-acquired-activity-7452341624308781056-QNSu", "note": "Public post says Pragmatico acquired Cogentic Labs and its founder Terralynn Forsyth joined as co-founder and CPO."},
+        {"label": "NEXT Canada profile", "url": "https://www.nextcanada.com/terralynn-forsyth/", "note": "Alumni profile describes her FutureFit AI product leadership and future-of-work focus."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "121i57d",
+    "displayName": "Terrence Harvey-Franklin",
+    "headline": "InMotion Hosting engineering and business-intelligence manager working in hosting operations",
+    "company": "InMotion Hosting",
+    "title": "Senior Manager, Engineering",
+    "location": "Hampton, US",
+    "tags": ["hosting", "business intelligence", "engineering management", "web infrastructure", "operations", "data platforms"],
+    "confidence": "low",
+    "confidenceNote": "LinkedIn and The Org corroborate Terrence Harvey-Franklin at InMotion Hosting, but public sources list Business Intelligence Manager rather than the attendee row's Senior Manager, Engineering title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Manager at InMotion Hosting with public signals around business intelligence and hosting operations. Best matched for conversations about web infrastructure, data-driven operations, and engineering management in hosting.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/eatmycode", "note": "Public profile identifies Terrence Harvey-Franklin as Business Intelligence Manager at InMotion Hosting in Hampton, Virginia."}
+      ],
+      "secondary": [
+        {"label": "InMotion Hosting HQ on The Org", "url": "https://theorg.com/org/inmotion-hosting/offices/hq", "note": "Organization page lists Terrence Harvey-Franklin as Business Intelligence Manager at InMotion Hosting."},
+        {"label": "InMotion Hosting org chart on The Org", "url": "https://theorg.com/org/inmotion-hosting", "note": "Company org page includes Terrence Harvey-Franklin among InMotion Hosting roles."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Terrence/Harvey", "note": "Public directory result associates Terrence Harvey-Franklin with InMotion Hosting and Hampton, Virginia."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "11kh862",
+    "displayName": "Thais Castello Branco",
+    "headline": "Taste Labs founder building taste infrastructure for AI evaluation and subjective quality",
+    "company": "Taste",
+    "title": "Founder & CEO",
+    "location": "San Francisco, US",
+    "tags": ["AI evaluation", "taste infrastructure", "post-training", "RL environments", "design quality", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, AI Council, investor sources, and recent launch coverage consistently identify Thais Castello Branco as founder and CEO of Taste Labs.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Taste Labs, building infrastructure for subjective AI evaluation, post-training data, and RL environments. Previously on Exa's founding team, with a focus on model quality and aesthetic judgment.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/thais-castello-branco", "note": "Public profile lists Thais Castello Branco as CEO and Founder of Taste Labs and previously founding team at Exa."},
+        {"label": "X profile", "url": "https://x.com/thaiscbranco_", "note": "Public profile says she is CEO at Taste Labs and focused on ending AI slop."}
+      ],
+      "secondary": [
+        {"label": "AI Council speaker page", "url": "https://aicouncil.com/speakers/thais-castello-branco", "note": "Speaker bio identifies her as founder and CEO of Taste, building taste infrastructure for AI across subjective domains."},
+        {"label": "Amplify Partners investment post", "url": "https://amplifypartners.com/blog-posts/kill-the-slop-announcing-our-investment-in-taste", "note": "Investor post identifies Thais Castello Branco as founder and CEO of Taste."},
+        {"label": "LinkedIn launch post", "url": "https://www.linkedin.com/posts/thais-castello-branco_were-excited-to-introduce-taste-labs-our-activity-7472678790620467200-NWoR", "note": "Public post discusses Taste Labs' launch, funding, and work on AI taste and evaluation."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "05rke3c",
+    "displayName": "Thomas Dohmke",
+    "headline": "Entire cofounder and former GitHub CEO building developer platforms for human-agent collaboration",
+    "company": "Entire",
+    "title": "CEO and co-founder",
+    "location": "Seattle, US",
+    "tags": ["developer tools", "AI coding agents", "software development", "human-agent collaboration", "GitHub", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Entire, LinkedIn, VivaTech, and press coverage consistently identify Thomas Dohmke as Entire cofounder/CEO and former GitHub CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder and CEO of Entire, building developer infrastructure for human-agent collaboration in the AI coding era. Previously CEO of GitHub, where he helped scale Copilot and developer platform strategy.",
+    "sources": {
+      "primary": [
+        {"label": "Entire launch announcement", "url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round", "note": "Company announcement says former GitHub CEO Thomas Dohmke launched Entire as a developer platform for human-agent collaboration."},
+        {"label": "Entire blog post", "url": "https://entire.io/blog/hello-entire-world", "note": "Thomas Dohmke-authored company post announces Entire and its first open-source CLI product."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/ashtom", "note": "Public profile lists links to Entire and presents Thomas Dohmke's software-development background."}
+      ],
+      "secondary": [
+        {"label": "VivaTech speaker profile", "url": "https://vivatech.com/speakers/thomas-dohmke-entire-d92c09e5-0a56-44fd-9ff1-f3d29af67f2c", "note": "Speaker bio lists Thomas Dohmke as cofounder and CEO of Entire, based in Seattle."},
+        {"label": "GeekWire coverage", "url": "https://www.geekwire.com/2026/former-github-ceo-launches-new-developer-platform-with-huge-60m-seed-round/", "note": "Article covers Dohmke launching Entire after GitHub and describes its AI coding-agent platform focus."},
+        {"label": "Axios coverage", "url": "https://www.axios.com/2026/02/10/former-github-ceo-ai-coding-startup", "note": "News coverage identifies Thomas Dohmke launching Entire as an AI coding startup."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0a4owi5",
+    "displayName": "Thomas Henn",
+    "headline": "Rokken CTO and machine learning engineer applying ML to industrial and medical-device innovation",
+    "company": "Rokken",
+    "title": "CTO",
+    "location": "Osaka, Japan",
+    "tags": ["machine learning", "medical devices", "industrial AI", "computer vision", "R&D", "Japan"],
+    "confidence": "high",
+    "confidenceNote": "Rokken official pages in Japanese and English/French plus patent and research records consistently match Thomas Henn to Rokken, Osaka, and machine-learning engineering work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and machine learning engineer at Rokken, applying ML to real-world industrial and medical-device problems. Background includes Osaka Prefecture University research and patents with Rokken and Terumo.",
+    "sources": {
+      "primary": [
+        {"label": "Rokken Japanese about page", "url": "https://rokken.tech/ja/about-us", "note": "Official page lists Thomas Henn as CTO and machine learning engineer, with Osaka Prefecture University training and Rokken tenure."},
+        {"label": "Rokken English about page", "url": "https://rokken.tech/en/about-us", "note": "Official page includes Thomas Henn among Rokken creative members and machine-learning leadership."}
+      ],
+      "secondary": [
+        {"label": "Justia patent listing", "url": "https://patents.justia.com/inventor/iselin-erikssen", "note": "Patent listing names Thomas Henn as an inventor on Rokken and Terumo diagnostic-support applications."},
+        {"label": "ResearchGate publication page", "url": "https://www.researchgate.net/publication/303812160_Selecting_the_Best_Player_Formation_for_Corner-Kick_Situations_Based_on_Bayes%27_Estimation", "note": "Research publication lists Thomas Henn with Osaka Prefecture University machine-learning research."},
+        {"label": "HELIOS2016 team paper", "url": "https://chaosscripting.net/files/competitions/RoboCup/WorldCup/2016/2DSim/tdps/TDP_HELIOS.pdf", "note": "Academic team description lists Thomas Henn at Osaka Prefecture University in AI/robot-soccer research context."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0dcxg4z",
+    "displayName": "Thor 雷神 Schaeff",
+    "headline": "Google DeepMind developer-experience engineer helping developers build with Gemini audio and realtime AI",
+    "company": "Google DeepMind",
+    "title": "Developer Experience Engineer",
+    "location": "New York, US",
+    "tags": ["developer experience", "Gemini", "voice AI", "realtime agents", "developer relations", "AI audio"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, Google Cloud Next, DEV, and podcast/event sources consistently identify Thor Schaeff as a Google DeepMind developer-experience engineer focused on Gemini and AI audio.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer Experience Engineer at Google DeepMind, helping developers build with Gemini, Google AI Studio, and realtime audio/voice-agent APIs. Previously worked in DX roles at Stripe, Supabase, and ElevenLabs.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/thorwebdev", "note": "Public profile identifies Thor Schaeff as Developer Experience at Google DeepMind in New York."},
+        {"label": "GitHub profile", "url": "https://github.com/thorwebdev", "note": "Public GitHub profile says DX at Google DeepMind and links Thor's developer channels."},
+        {"label": "DEV profile", "url": "https://dev.to/thorwebdev", "note": "Author profile lists Thor as DX at Google DeepMind and includes Google AI/Gemini tutorials."}
+      ],
+      "secondary": [
+        {"label": "Google Cloud Next speaker page", "url": "https://www.googlecloudevents.com/next-vegas/speaker/2142367/thor-schaeff", "note": "Official Google event page lists Thor Schaeff as Developer Relations Engineer at DeepMind focused on Gemini audio models and realtime voice agents."},
+        {"label": "ThursdAI guest profile", "url": "https://thursdai.news/guests/thorwebdev", "note": "Guest profile identifies him as Developer Experience Engineer at Google DeepMind focused on Gemini API."},
+        {"label": "JSConf MX speaker page", "url": "https://www.jsconf.mx/speakers/XfsL4eXex1", "note": "Speaker page lists Thor Schaeff as Developer Experience Engineer at Google DeepMind, based in NYC, with prior Stripe, Supabase, and ElevenLabs experience."}
+      ]
+    }
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "lookupKey": "1059ski",
+    "displayName": "Natalia Angarita",
+    "headline": "Head of Data Science at Skyscanner",
+    "company": "Skyscanner",
+    "title": "Director, Head of Data Science",
+    "location": "United Kingdom",
+    "tags": ["data science", "travel technology", "machine learning", "analytics leadership", "marketing analytics"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, The Org, and prior PyData speaker bio align on Skyscanner data science leadership and an applied data science background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Data science leader at Skyscanner with a PhD engineering background and experience spanning applied machine learning, analytics strategy, and commercial travel technology. Useful match for conversations on production data science teams, experimentation, marketing analytics, and AI-enabled travel products.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://uk.linkedin.com/in/natalia-angarita-705a1173", "note": "Lists Natalia Angarita as Head of Data Science with a PhD engineering and data science background." },
+        { "label": "LinkedIn Skyscanner post", "url": "https://www.linkedin.com/posts/natalia-angarita-705a1173_senior-data-scientist-advertising-london-activity-7032060239105392640-zt5h", "note": "Shows her posting as Head of Data Science about Skyscanner data science work." }
+      ],
+      "secondary": [
+        { "label": "The Org - Skyscanner org chart", "url": "https://theorg.com/org/skyscanner/org-chart/natalia-angarita", "note": "Summarizes her role as Head of Data Science at Skyscanner and prior Capgemini data science work." },
+        { "label": "PyData London 2016 speaker profile", "url": "https://pydata.org/london2016/speaker/profile/49/", "note": "Older speaker bio confirming applied data science, analytics, signal processing, MSc and PhD background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0u031w6",
+    "displayName": "Natalie Meurer",
+    "headline": "Head of Agent Engineering at Sierra",
+    "company": "Sierra",
+    "title": "Head of Agent Engineering",
+    "location": "San Francisco Bay Area",
+    "tags": ["agent engineering", "AI agents", "enterprise AI", "LLM production", "customer experience"],
+    "confidence": "high",
+    "confidenceNote": "Sierra author page, LinkedIn, X profile, and Stanford/Samvid bios consistently identify her agent engineering role and background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Agent engineering leader at Sierra building production AI agents for enterprise customer experience. Former Palantir engineer and Stanford GSB MBA; strong match for applied LLM systems, agent-team design, privacy-sensitive deployments, and enterprise AI workflows.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nataliemeurer", "note": "States that she co-leads Sierra's Agent Engineering organization." },
+        { "label": "Sierra author profile", "url": "https://sierra.ai/author/natalie-meurer", "note": "Company page identifies her as an Agent Engineer at Sierra and notes Palantir, Stanford GSB, and Georgetown background." },
+        { "label": "X profile", "url": "https://x.com/natalie_meurer", "note": "Public profile describes her as Head of Agent Engineering at Sierra." }
+      ],
+      "secondary": [
+        { "label": "Stanford GSB profile", "url": "https://www.gsb.stanford.edu/programs/mba/life-community/voices/natalie-meurer", "note": "Confirms Stanford GSB affiliation and interest in ethical norms around technology." },
+        { "label": "Samvid Scholars profile", "url": "https://samvidscholars.org/team/natalie-meurer/", "note": "Summarizes MBA, Georgetown, Palantir, and privacy-protective software background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "114de0b",
+    "displayName": "Nate Gross",
+    "headline": "Senior Manager, Software Engineering at Sony Interactive Entertainment",
+    "company": "Sony Interactive Entertainment (PlayStation)",
+    "title": "Senior Manager, Software Engineering",
+    "location": "Aliso Viejo, California, United States",
+    "tags": ["game development", "cloud gaming", "AI for games", "software engineering leadership", "PlayStation"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and MIT CSAIL course materials align on PlayStation/SIE, cloud gaming, and AI/game-development expertise.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineering leader at PlayStation working on cloud gaming and AI's impact on game development. Useful match for conversations on game production pipelines, generative AI in creative workflows, cloud gaming systems, and engineering leadership in entertainment technology.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nate-gross", "note": "Lists Nate Gross as creating the future of cloud gaming at PlayStation with senior software engineering roles." },
+        { "label": "MIT CSAIL event bio", "url": "https://www.csail.mit.edu/event/game-development-age-ai", "note": "Identifies him as a Sony Interactive Entertainment speaker working on PlayStation cloud gaming." }
+      ],
+      "secondary": [
+        { "label": "MIT calendar - Nexus of Games and AI", "url": "https://calendar.mit.edu/event/the-nexus-of-games-and-ai-nexus-ii-mit-iap-2026", "note": "Lists him as Sr. Manager, Software Engineering at SIE giving a lecture on AI reshaping game development." },
+        { "label": "MIT CSAIL Alliances recap", "url": "https://cap.csail.mit.edu/level-nexus-games-and-ai-ii-2026", "note": "References his SIE session on how AI is reshaping game design." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0elgmq7",
+    "displayName": "Nathan Holmberg",
+    "headline": "CTO and Co-founder at Thematic",
+    "company": "Thematic",
+    "title": "CTO",
+    "location": "Auckland, New Zealand",
+    "tags": ["customer intelligence", "NLP", "text analytics", "enterprise AI", "customer feedback"],
+    "confidence": "high",
+    "confidenceNote": "Thematic leadership page, LinkedIn, AWS case study, and YC company profile consistently identify him as CTO/co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and co-founder of Thematic, building AI-powered customer intelligence and feedback analytics. Strong match for discussions on enterprise NLP, customer feedback pipelines, LLM evaluation, sentiment/theme extraction, and trusted AI for CX teams.",
+    "sources": {
+      "primary": [
+        { "label": "Thematic leadership page", "url": "https://getthematic.com/about", "note": "Company page lists Nathan Holmberg as CTO and Co-founder." },
+        { "label": "LinkedIn profile", "url": "https://nz.linkedin.com/in/nathanholmberg", "note": "Lists him as CTO and co-founder at Thematic with NLP and semantic analysis experience." }
+      ],
+      "secondary": [
+        { "label": "AWS case study", "url": "https://aws.amazon.com/solutions/case-studies/generative-ai-thematic/", "note": "Quotes Nathan Holmberg as Thematic's chief technology officer and co-founder discussing LLM evaluation." },
+        { "label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/thematic", "note": "Lists Thematic as founded by Nathan Holmberg and Alyona Medelyan." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0r99fzk",
+    "displayName": "Nathan Stevenson",
+    "headline": "Founder and CEO at ForwardLane",
+    "company": "ForwardLane",
+    "title": "CEO",
+    "location": "Fort Lauderdale, Florida, United States",
+    "tags": ["wealthtech", "decision intelligence", "financial services AI", "enterprise AI", "founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, ForwardLane resources, and multiple financial-services profiles consistently identify him as ForwardLane founder/CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of ForwardLane, focused on AI decision intelligence for wealth and asset management. Useful match for fintech operators, enterprise AI buyers, and builders working on agentic workflows, distribution intelligence, and applied AI in regulated financial services.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nathanstvnsn", "note": "Public profile describes him as founder of ForwardLane and Signalhaus, building AI decision velocity infrastructure." },
+        { "label": "ForwardLane resources", "url": "https://forwardlane.com/resources", "note": "Company resources page lists Nathan Stevenson as CEO of ForwardLane authoring decision intelligence content." },
+        { "label": "ForwardLane Decision Velocity Framework", "url": "https://forwardlane.com/resources/decision-velocity-framework", "note": "ForwardLane article by Nathan Stevenson, CEO, on decision velocity." }
+      ],
+      "secondary": [
+        { "label": "grIP Venture Studio profile", "url": "https://www.gripventure.com/nathan-stevenson", "note": "Profile says he is CEO and founder of ForwardLane with quantitative finance, computer science, and applied AI background." },
+        { "label": "Financial Planning author page", "url": "https://www.financial-planning.com/author/nathan-stevenson", "note": "Identifies him as ForwardLane founder and CEO and commentator on AI in financial services." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12qx2er",
+    "displayName": "Neil Fu",
+    "headline": "Deep Tech Investment at Temasek",
+    "company": "Temasek",
+    "title": "Investor",
+    "location": "Singapore",
+    "tags": ["deep tech investing", "venture capital", "Temasek", "technology investing", "Singapore"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn profile and posts identify Shenluo (Neil) Fu at Temasek; The Org provides corroborating but unverified investment-team context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Investment professional focused on deep tech at Temasek. Useful match for founders and operators discussing enterprise AI, frontier technology commercialization, Singapore/Asia investment themes, and institutional capital perspectives.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://sg.linkedin.com/in/shenluof", "note": "Lists Neil Fu as Deep Tech Investment at Temasek, based in Singapore." },
+        { "label": "LinkedIn Wharton post", "url": "https://www.linkedin.com/posts/shenluof_happy-to-share-that-im-starting-my-mba-at-activity-6960784921493733376-zXfP", "note": "Public post under Shenluo (Neil) Fu profile confirms Temasek affiliation and Wharton MBA start." }
+      ],
+      "secondary": [
+        { "label": "The Org - Temasek investment management", "url": "https://theorg.com/org/temasek/teams/investment-management", "note": "Unverified team directory lists Shenluo Fu as an investment professional at Temasek." },
+        { "label": "Temasek portfolio overview", "url": "https://www.temasek.com.sg/en/our-investments/our-portfolio", "note": "Company source for Temasek's global investment portfolio and institutional context." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0stui8b",
+    "displayName": "Neill Walker",
+    "headline": "CTO consultant and director at Binary Planet IT Solutions",
+    "company": "Binary Planet IT Solutions",
+    "title": "CTO",
+    "location": "London, United Kingdom",
+    "tags": ["technology leadership", "software engineering", "IT consulting", "product delivery", "UK technology"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn supports CTO consultant background, while UK Companies House confirms Neill Richard Walker as active director of Binary Planet IT Solutions; public evidence for the exact CTO title at Binary Planet is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Experienced UK technology leader and CTO consultant with a software engineering background and active directorship at Binary Planet IT Solutions. Useful match for practical conversations on software delivery, IT leadership, consulting, and customer-centric product engineering.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://uk.linkedin.com/in/neillwalker", "note": "Describes Neill Walker as a CTO consultant and experienced IT leader with a software engineering background." },
+        { "label": "UK Companies House officer appointment", "url": "https://find-and-update.company-information.service.gov.uk/officers/gS-QwJsiK26kttqfLgzu4uuuxiY/appointments", "note": "Official UK registry shows Neill Richard Walker as active director of Binary Planet IT Solutions Limited." }
+      ],
+      "secondary": [
+        { "label": "UK Companies House filing history", "url": "https://find-and-update.company-information.service.gov.uk/company/09053603/filing-history", "note": "Official company filings corroborate Binary Planet IT Solutions Limited and Walker-related updates." }
+      ]
+    }
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "lookupKey": "1dsqdq5",
+    "displayName": "Ari Morcos",
+    "headline": "CEO and co-founder of DatologyAI, focused on automated data curation for better AI model training",
+    "company": "DatologyAI",
+    "title": "CEO & Co-Founder",
+    "location": "",
+    "tags": ["AI data curation", "deep learning", "model training", "research", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary sources confirm Ari Morcos as DatologyAI co-founder and CEO, with prior FAIR, DeepMind, and Harvard neuroscience background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and co-founder of DatologyAI, where he works on automated data curation to improve AI model training. He previously conducted AI research at FAIR and DeepMind and has a PhD in neuroscience from Harvard.",
+    "sources": {
+      "primary": [
+        {"label": "Ari Morcos personal site", "url": "https://www.arimorcos.com/", "note": "Personal site states he is co-founder and CEO of DatologyAI and describes the company's automated data curation focus."},
+        {"label": "DatologyAI about page", "url": "https://www.datologyai.com/about", "note": "Company page lists Ari Morcos as Co-Founder and CEO and summarizes his FAIR, DeepMind, NeurIPS, ICLR, and Harvard background."},
+        {"label": "Ari Morcos X profile", "url": "https://x.com/arimorcos", "note": "Social profile identifies him as CEO and co-founder of DatologyAI, formerly at Meta AI FAIR and DeepMind."}
+      ],
+      "secondary": [
+        {"label": "Imbue podcast profile", "url": "https://imbue.com/blog/2024-07-11-podcast-episode-36-ari-morcos", "note": "Interview page describes DatologyAI's focus on training-data intervention and Morcos's research background."},
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=v-A_7UsAAAAJ", "note": "Scholar profile supports his AI, deep learning, and machine learning research footprint."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "085zn0s",
+    "displayName": "Arjun Harbhajanka",
+    "headline": "Software engineer at Bloomberg with prior Meta and Oracle experience and an interest in enterprise AI adoption",
+    "company": "Bloomberg",
+    "title": "Software Engineer",
+    "location": "New York, NY, US",
+    "tags": ["software engineering", "Bloomberg", "enterprise AI", "C++", "Python", "machine learning"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn search snippets and public event pages confirm Bloomberg software engineering role; limited non-LinkedIn primary detail was available.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineer at Bloomberg with prior experience at Meta and Oracle. His public posts indicate interest in enterprise AI transformation and bringing AI conference learnings back into large-organization engineering contexts.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/arjun-0612", "note": "Profile snippet identifies him as SWE at Bloomberg, previously at Meta and Oracle, with Purdue computer science background."},
+        {"label": "LinkedIn AI conference post", "url": "https://www.linkedin.com/posts/arjun-0612_i-recently-had-the-chance-to-attend-an-ai-activity-7377427377452236800-ldJ2", "note": "Post describes attending an AI conference on behalf of Bloomberg and interest in enterprise AI transformation."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair 2026 schedule", "url": "https://www.ai.engineer/worldsfair/schedule?q=Fouad+Matin", "note": "Event schedule search result lists Arjun Harbhajanka associated with Bloomberg."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/%2B/Harbhajanka", "note": "Directory snippet corroborates Bloomberg role and New York location."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "02b1cbb",
+    "displayName": "Arjun Rao",
+    "headline": "AI product and technology professional at AmbyTech",
+    "company": "AmbyTech",
+    "title": "AI Product Lead",
+    "location": "San Diego, CA, US",
+    "tags": ["AI product", "product management", "customer experience", "entrepreneurship", "design innovation"],
+    "confidence": "medium",
+    "confidenceNote": "The attendee-provided title says AI Product Lead; public LinkedIn snippets identify him as Product Manager at AmbyTech Inc. and AmbyTech's company page confirms him as an employee. Evidence is consistent but sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Works on product at AmbyTech, with public profile signals around technology, entrepreneurship, design innovation, and AI-enabled customer experience tooling. Useful match for conversations on applied AI product development and early-stage product strategy.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://in.linkedin.com/in/arjun96rao", "note": "Profile snippet identifies Arjun Rao as Product Manager at AmbyTech Inc. with technology, entrepreneurship, design, and innovation positioning."},
+        {"label": "Amby Tech LinkedIn company page", "url": "https://www.linkedin.com/company/ambyproai", "note": "Company page lists Arjun Rao among employees and shows a San Diego primary office address."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn post snippet", "url": "https://www.linkedin.com/posts/arjun96rao_a-great-opportunity-to-meet-folks-with-different-activity-7056412127443488770-DdYt", "note": "Public post snippet ties the same LinkedIn profile to entrepreneurial interests."},
+        {"label": "LinkedIn post snippet", "url": "https://www.linkedin.com/posts/arjun96rao_a-truly-memorable-experience-activity-7084703446951497728-Qsrs", "note": "Public post snippet corroborates the same AmbyTech profile and UC San Diego connection."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1p7hu2y",
+    "displayName": "Arjun Singh",
+    "headline": "CEO and co-founder of Superconductor; previously co-founded Gradescope",
+    "company": "Superconductor",
+    "title": "CEO",
+    "location": "",
+    "tags": ["AI coding agents", "developer tools", "education technology", "Rails", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Primary and high-signal secondary sources consistently identify him as Superconductor CEO/co-founder and former Gradescope CEO/co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and co-founder of Superconductor, building tools for controlling AI coding agents across browser, phone, GitHub, and Slack. He previously co-founded Gradescope, an AI-assisted grading platform acquired by Turnitin.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/arjun-singh-629216105", "note": "Profile snippet lists him as CEO and Cofounder of Superconductor and former CEO and Cofounder of Gradescope."},
+        {"label": "RubyEvents profile", "url": "https://www.rubyevents.org/profiles/arjun810", "note": "Speaker profile describes Superconductor's AI coding-agent control product and his Gradescope background."}
+      ],
+      "secondary": [
+        {"label": "Reach Capital profile", "url": "https://www.reachcapital.com/team/arjun-singh/", "note": "Profile says he is CEO and Co-founder of Superconductor, co-founder and former CEO of Gradescope, and later Chief Strategy Officer at Turnitin."},
+        {"label": "EdSurge author profile", "url": "https://www.edsurge.com/author/arjun-singh", "note": "Profile supports his Gradescope CEO/co-founder background and AI teaching roots at UC Berkeley."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1dw2u9c",
+    "displayName": "Arnab Naskar",
+    "headline": "Co-founder and co-CEO of STOKR, building regulated tokenized capital-markets infrastructure from Luxembourg",
+    "company": "STOKR S.A.",
+    "title": "Co-Founder",
+    "location": "Luxembourg",
+    "tags": ["tokenization", "capital markets", "Bitcoin", "digital securities", "fintech", "Luxembourg"],
+    "confidence": "high",
+    "confidenceNote": "STOKR press releases and public profiles consistently identify Arnab Naskar as co-founder, co-CEO or business lead of STOKR, focused on regulated tokenized assets.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of STOKR, a Luxembourg-based platform for regulated tokenized securities and alternative assets. His work centers on Bitcoin-based capital-markets infrastructure, digital securities, and compliant access to tokenized investment products.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://de.linkedin.com/in/arnab-naskar-15814856", "note": "Profile snippet identifies him as co-founder and co-CEO of STOKR, focused on tokenizing financial assets."},
+        {"label": "STOKR tokenized asset volume announcement", "url": "https://stokr.io/stoke-post/%241-billion-tokenized-asset-volume", "note": "STOKR announcement quotes Arnab Naskar as Co-Founder and Co-CEO and describes the platform's Bitcoin-based capital-markets vision."},
+        {"label": "STOKR funding announcement", "url": "https://stokr.io/press-releases/stokr-funding-round-fulgur-ventures", "note": "Company press release identifies him as STOKR Co-CEO and discusses STOKR's asset-tokenization strategy."}
+      ],
+      "secondary": [
+        {"label": "Around The Coin podcast profile", "url": "https://www.aroundthecoin.com/podcast/episode-315-arnab-naskar-co-founder-of-stokr", "note": "Podcast profile says Arnab co-founded STOKR and oversees business strategy for open and decentralized capital markets."},
+        {"label": "BankingHub interview article", "url": "https://www.bankinghub.eu/blog/security-tokens-interview-stokr", "note": "Article states Tobias Seidl and Arnab Naskar founded STOKR in 2018 as an investment marketplace for alternative assets."},
+        {"label": "F6S STOKR profile", "url": "https://www.f6s.com/company/stokr", "note": "Startup profile places Arnab Naskar in Luxembourg and notes his LegalTech and FinTech interests."}
+      ]
+    }
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "lookupKey": "1izadl9",
+    "displayName": "Carlos Sanchez",
+    "headline": "Principal Scientist at Adobe focused on AEM, cloud-native delivery, Kubernetes, and agentic applications",
+    "company": "Adobe",
+    "title": "Principal Scientist",
+    "location": "A Coruña, Spain / Los Angeles, CA",
+    "tags": ["Adobe Experience Manager", "Kubernetes", "DevOps", "Progressive Delivery", "Open Source", "Apache Maven", "Jenkins", "Agentic Applications"],
+    "confidence": "high",
+    "confidenceNote": "Identity, role, Adobe affiliation, and technical focus are confirmed by his Sessionize profile and personal blog; location varies between profile sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal Scientist at Adobe Experience Manager working across software automation, cloud-native delivery, Kubernetes, progressive delivery, and agentic applications. Longtime open source contributor, Apache Software Foundation member, and author of the Jenkins Kubernetes plugin.",
+    "sources": {
+      "primary": [
+        {"label": "Sessionize speaker profile", "url": "https://sessionize.com/csanchez/", "note": "Lists Carlos as Principal Scientist at Adobe, with expertise in software automation, agentic applications, Kubernetes, DevOps, and progressive delivery."},
+        {"label": "Personal blog about page", "url": "https://blog.csanchez.org/about/", "note": "Personal site describes him as an Apache member and open source advocate focused on software development tools, cloud computing, DevOps, and startups."},
+        {"label": "LinkedIn profile", "url": "https://es.linkedin.com/in/carlossg", "note": "Search result confirms Principal Scientist at Adobe and Apache Software Foundation membership."}
+      ],
+      "secondary": [
+        {"label": "FOSDEM 2026 speaker page", "url": "https://fosdem.org/2026/schedule/speaker/carlos_sanchez/", "note": "Conference bio corroborates Adobe AEM role, Jenkins Kubernetes plugin authorship, Apache membership, and Kubernetes/Jenkins/Maven contributions."},
+        {"label": "Software Engineering Daily episode", "url": "https://softwareengineeringdaily.com/2023/12/29/bonus-episode-adobe-cloud-native-with-carlos-sanchez/", "note": "Interview page summarizes his Adobe AEM work and open source background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1dqu3x2",
+    "displayName": "Cathy Tanimura",
+    "headline": "Principal, Data Science at Summit Partners, advising growth companies on analytics, data strategy, and AI readiness",
+    "company": "Summit Partners",
+    "title": "Principal, Data Science",
+    "location": "Menlo Park, CA, US",
+    "tags": ["Data Science", "Analytics", "Data Strategy", "AI Strategy", "Growth Companies", "SQL", "Portfolio Operations", "Summit Partners"],
+    "confidence": "high",
+    "confidenceNote": "Summit Partners team page confirms current title, role, location, and prior experience; speaker and book sources corroborate data leadership background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Data science principal at Summit Partners working with portfolio companies on analytics, data strategy, decision-making, and product improvement. Previously built or led analytics teams at Strava, Okta, and Zynga, and authored O'Reilly's SQL for Data Analysis.",
+    "sources": {
+      "primary": [
+        {"label": "Summit Partners team profile", "url": "https://www.summitpartners.com/team/cathy-tanimura", "note": "Official profile lists her as Principal, Data Science in Summit's Peak Performance Group and describes her portfolio-company data and analytics work."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/cathytanimura", "note": "Search result confirms Summit Partners affiliation and San Francisco-area location."},
+        {"label": "O'Reilly book page", "url": "https://www.oreilly.com/library/view/sql-for-data/9781492088776/", "note": "Publisher page identifies Cathy Tanimura as author of SQL for Data Analysis."}
+      ],
+      "secondary": [
+        {"label": "AI & Big Data Expo speaker profile", "url": "https://www.ai-expo.net/northamerica/speaker/cathy-tanimura/", "note": "Speaker bio corroborates Summit role, prior Strava/Okta/Zynga analytics leadership, and SQL book authorship."},
+        {"label": "Summit Partners AI data strategy article", "url": "https://www.summitpartners.com/resources/three-ways-ai-impacts-data-strategy", "note": "Shows her current thought leadership on AI's impact on data strategy for growth companies."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1yvgrtk",
+    "displayName": "Cesar Caixeta",
+    "headline": "Head of Technology at VTEX working on GenAI platforms, AI agents, developer platforms, and digital commerce",
+    "company": "VTEX",
+    "title": "Head of Technology",
+    "location": "New York, NY, US",
+    "tags": ["VTEX", "Digital Commerce", "GenAI Platforms", "AI Agents", "Developer Platforms", "Agentic Applications", "AI Strategy", "Engineering Leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn snippets and posts strongly match Cesar Caixeta Ferreira at VTEX and his AI-agent work; New York location is taken from participant-provided data rather than independently confirmed.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology leader at VTEX focused on AI-native commerce platforms, agentic applications, and developer productivity. Recent posts describe work on VTEX AI Workspace, multi-agent architectures, and generative AI's impact on software development.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://br.linkedin.com/in/cesarcaixetaf", "note": "Search result lists Cesar Caixeta Ferreira as Head of Technology at VTEX, with GenAI platforms, AI agents, developer platforms, and MIT MBA in the headline."},
+        {"label": "LinkedIn post on VTEX AI Workspace", "url": "https://www.linkedin.com/posts/cesarcaixetaf_vtexday-techleadership-generativeai-activity-7449106462250835968-15Of", "note": "Describes the VTEX AI Workspace release, AI strategy, agentic application platform architecture, and digital commerce agents."},
+        {"label": "LinkedIn post on AI-native software", "url": "https://www.linkedin.com/posts/cesarcaixetaf_agenticai-aws-vtex-activity-7458875799232864257-VowH", "note": "Discusses senior VTEX engineering leadership collaboration on AI-native software, AgenticOps, and multi-agent architectures."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn post on VTEX Day GenAI talk", "url": "https://pt.linkedin.com/posts/cesarcaixetaf_vtexday-genai-ai-activity-7452895645037813760-l9Jn", "note": "Corroborates his public focus on generative AI and software engineering practices such as spec-driven development."},
+        {"label": "LinkedIn post on MIT graduation", "url": "https://www.linkedin.com/posts/cesarcaixetaf_mit-mitsloan-mba-activity-6937463376440692736-ZHti", "note": "Corroborates MIT Sloan MBA background referenced in his public headline."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1t6e5ao",
+    "displayName": "Cetin Akat",
+    "headline": "Founder at White Horse Tech with a developer background and interest in LLM applications",
+    "company": "White Horse Tech",
+    "title": "Founder",
+    "location": "Izmir, Türkiye",
+    "tags": ["White Horse Tech", "Full-Stack Development", "Software Development", "Web Applications", "LLM", "Founder", "Turkey"],
+    "confidence": "low",
+    "confidenceNote": "Public evidence confirms a Çetin Akat developer profile and a White Horse Technology company site, but there is no strong public source directly linking the same person to Founder at White Horse Tech or LLM work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder profile likely connected to White Horse Tech and software development. Public traces show a Çetin Akat full-stack developer identity and a White Horse Technology business offering web services and custom software; founder and LLM details need participant confirmation.",
+    "sources": {
+      "primary": [
+        {"label": "GitHub profile", "url": "https://github.com/cetinakat", "note": "Profile for Çetin Akat describes an enthusiastic full-stack developer and links to cetinakat.com."},
+        {"label": "White Horse Technology website", "url": "https://whitehorsetechno.com/", "note": "Company site describes web services, custom software development, IT solutions, digital marketing, finance, and business consulting under the White Horse Group."}
+      ],
+      "secondary": [
+        {"label": "Truelancer profile search result", "url": "https://www.truelancer.com/freelancer/cetinakat", "note": "Search result describes Çetin Akat as an interactive web developer and freelance programmer in Izmir."},
+        {"label": "GitHub search result", "url": "https://github.com/cetinakat", "note": "Search result corroborates the same GitHub identity as a full-stack developer."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "11cgvjr",
+    "displayName": "Chad Nagle",
+    "headline": "CTO at Tivly with AI-native engineering leadership experience across insurtech and regulated industries",
+    "company": "Tivly",
+    "title": "Chief Technology Officer",
+    "location": "Duxbury, MA, US",
+    "tags": ["Tivly", "CTO", "AI-Native Engineering", "Engineering Leadership", "Insurtech", "IT Governance", "Agile Transformation", "Regulated Industries"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn search result and The Org profile align on Chad Nagle as Tivly CTO; location is based on participant-provided Duxbury and LinkedIn's broader Greater Boston signal.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Tivly leading engineering and technical governance. Background spans agile transformation, IT governance, program leadership, and regulated environments including insurtech, healthcare, genomics, and defense.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/chad-nagle", "note": "Search result identifies Chad Nagle as CTO with AI-native engineering leadership and Tivly affiliation."},
+        {"label": "Tivly LinkedIn company page", "url": "https://www.linkedin.com/company/tivlyofficial", "note": "Company activity references Chad Nagle as CTO in the Tivly network."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/tivly/org-chart/chad-nagle", "note": "Lists Chad Nagle as Chief Technology Officer and summarizes prior technical leadership, governance, agile, and regulated-industry experience."},
+        {"label": "The Org Tivly org chart", "url": "https://theorg.com/org/tivly", "note": "Tivly org chart includes Chad Nagle as Chief Technology Officer on the leadership team."}
+      ]
+    }
+  }
+]

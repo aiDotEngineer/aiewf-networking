@@ -1,0 +1,495 @@
+[
+  {
+    "lookupKey": "16zcd7a",
+    "displayName": "Gabe Harms",
+    "headline": "Senior Staff Software Engineer at Buildr with construction software and integrations background",
+    "company": "Buildr",
+    "title": "Senior Staff Software Engineer",
+    "location": "United States",
+    "tags": ["construction tech", "software engineering", "SaaS", "integrations", "Ruby on Rails", "preconstruction"],
+    "confidence": "medium",
+    "confidenceNote": "Participant-supplied current Buildr role is plausible but public evidence found mainly confirms prior Procore engineering work and public GitHub; Buildr company context is verified separately.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior staff software engineer at Buildr, a preconstruction platform for general contractors. Previously publicly profiled for engineering work at Procore, including a DocuSign integration prototype using OAuth, webhooks, and Ruby on Rails. Useful match for construction SaaS, workflow automation, and technical integrations in contractor operations.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gabe-harms-b2a70299", "note": "Public result identifies Gabe Harms as an engineering manager at Procore with senior software engineering experience." },
+        { "label": "GitHub profile", "url": "https://github.com/gabeharms", "note": "Public developer profile." },
+        { "label": "Buildr website", "url": "https://buildr.com/", "note": "Company site describes Buildr as AI-powered preconstruction software." }
+      ],
+      "secondary": [
+        { "label": "DocuSign Developer Spotlight", "url": "https://www.docusign.com/blog/developers/developer-spotlight-gabe-harms-procore", "note": "Older profile confirms Procore engineering and DocuSign integration work." },
+        { "label": "DocuSign Procore integration article", "url": "https://www.docusign.com/blog/developers/procore-adds-value-to-its-construction-management-software-with-the-docusign", "note": "Mentions Gabe Harms building a Procore eSignature proof of concept." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1kxutq1",
+    "displayName": "Gabor Angyal",
+    "headline": "AI, governance, trust, privacy, and safety engineering leader at DigitalOcean",
+    "company": "DigitalOcean",
+    "title": "Senior Director, AI & Business Technology Engineering",
+    "location": "Boston, MA, US",
+    "tags": ["AI governance", "trust and safety", "privacy engineering", "security", "SaaS", "identity", "passwordless authentication"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn directly matches the name, current DigitalOcean role, Boston area, and AI/governance positioning; older LastPass and GitHub sources corroborate security and engineering background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Director of AI & Business Technology Engineering at DigitalOcean, with a background leading engineering, privacy, safety, and trust work. Previously associated with LastPass security engineering and public security guidance. Strong match for enterprise AI governance, SaaS platform engineering, authentication, and privacy/security operating models.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gabor-angyal", "note": "Lists current DigitalOcean senior director role and Boston location." },
+        { "label": "GitHub profile", "url": "https://github.com/gangyal", "note": "Public profile with Boston and LastPass/LogMeIn context." },
+        { "label": "LastPass author page", "url": "https://blog.lastpass.com/authors/gabor-angyal", "note": "Security writing archive." }
+      ],
+      "secondary": [
+        { "label": "SiliconANGLE LastPass coverage", "url": "https://siliconangle.com/2021/12/28/lastpass-users-report-attempted-logins-using-master-passwords/", "note": "Quotes him as senior director of engineering at LastPass." },
+        { "label": "LastPass business security post", "url": "https://blog.lastpass.com/posts/how-lastpass-keeps-your-business-safe", "note": "Public security guidance authored by Gabor Angyal." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qjdnif",
+    "displayName": "Gabriel Dayley",
+    "headline": "Web architect and engineering manager at FamilySearch",
+    "company": "FamilySearch",
+    "title": "Engineering Manager",
+    "location": "Lehi, UT, US",
+    "tags": ["web architecture", "engineering management", "FamilySearch", "JavaScript", "web platforms", "software engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Public evidence strongly matches Gabriel Dayley at FamilySearch, but found sources list him as Web Architect/Engineering Manager rather than the participant-provided Software Development Engineer title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering manager and web architect at FamilySearch, with public conference/community traces around web development. Useful match for conversations on web platform architecture, engineering leadership, and large-scale consumer or nonprofit software systems.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gabriel-dayley-1b28646", "note": "Public result identifies him as Web Architect and Engineering Manager at FamilySearch." },
+        { "label": "Facebook public profile", "url": "https://www.facebook.com/gabriel.dayley/", "note": "Public result lists Engineering Manager at FamilySearch and Lehi, Utah." }
+      ],
+      "secondary": [
+        { "label": "The Org FamilySearch engineering management", "url": "https://theorg.com/org/familysearch-inc/teams/engineering-management", "note": "Unverified org page listing Gabriel Dayley." },
+        { "label": "JSConf US 2018 team page", "url": "https://2018.jsconf.us/team/", "note": "Conference/community context with FamilySearch." },
+        { "label": "No Fluff Just Stuff archive", "url": "https://nofluffjuststuff.com/archive/286", "note": "Older web-focused event archive." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0dv3ie0",
+    "displayName": "Gabriel Spencer-Harper",
+    "headline": "CEO and co-founder of Meticulous, building automated frontend testing for developers",
+    "company": "Meticulous",
+    "title": "CEO, Co-Founder",
+    "location": "San Francisco, CA, US",
+    "tags": ["developer tools", "frontend testing", "visual regression testing", "Y Combinator", "software engineering", "QA automation", "startups"],
+    "confidence": "high",
+    "confidenceNote": "Meticulous author page, YC company profile, and LinkedIn all identify him as CEO/co-founder or founder of Meticulous, with prior Dropbox and Opendoor engineering background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and co-founder of Meticulous, a YC-backed developer-tools company that automates frontend and end-to-end UI testing. Previously worked in engineering at Dropbox and Opendoor. Strong match for developer productivity, QA automation, frontend reliability, and startup building.",
+    "sources": {
+      "primary": [
+        { "label": "Meticulous author page", "url": "https://www.meticulous.ai/author/gabriel-spencer-harper", "note": "Company page states CEO/co-founder role and prior Dropbox/Opendoor background." },
+        { "label": "Y Combinator Meticulous profile", "url": "https://www.ycombinator.com/companies/meticulous", "note": "YC profile for Meticulous and founder listing." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gabrielsharper", "note": "Public profile lists CEO and co-founder at Meticulous." }
+      ],
+      "secondary": [
+        { "label": "Meticulous seed round announcement", "url": "https://www.meticulous.ai/blog/meticulous-announces-4m-seed-round", "note": "Company post by Gabriel Spencer-Harper." },
+        { "label": "Forbes profile", "url": "https://www.forbes.com/profile/gabriel-spencer-harper/", "note": "Founder profile for Meticulous." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0doqacq",
+    "displayName": "Garry Tan",
+    "headline": "President and CEO of Y Combinator; designer, engineer, founder, and early-stage investor",
+    "company": "Y Combinator",
+    "title": "President & CEO",
+    "location": "San Francisco, CA, US",
+    "tags": ["startups", "venture capital", "Y Combinator", "founder coaching", "AI coding", "product design", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "YC's own profile directly confirms current President and CEO role, prior YC partnership, Initialized Capital, Posterous, and Palantir background; personal/public channels corroborate.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "President and CEO of Y Combinator and a General Partner. Previously a YC partner, co-founder of Initialized Capital and Posterous, and an early designer and engineering manager at Palantir. Strong match for startup fundraising, founder strategy, product taste, engineering culture, and AI-assisted software development.",
+    "sources": {
+      "primary": [
+        { "label": "Y Combinator profile", "url": "https://www.ycombinator.com/people/garry-tan", "note": "Official YC profile." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/garrytan", "note": "Public professional profile." },
+        { "label": "YouTube channel", "url": "https://www.youtube.com/garrytan", "note": "Public personal channel." },
+        { "label": "X profile", "url": "https://x.com/garrytan", "note": "Public social profile." }
+      ],
+      "secondary": [
+        { "label": "Y Combinator announcement", "url": "https://www.ycombinator.com/blog/welcome-home-garry-tan", "note": "YC announcement naming him President and CEO." },
+        { "label": "Economic Club of Washington DC speaker page", "url": "https://www.economicclub.org/events/garry-tan", "note": "Speaker bio and career background." },
+        { "label": "YC Startup Library AI coding setup", "url": "https://www.ycombinator.com/library/OW-inside-garry-tan-s-ai-coding-setup", "note": "YC content on his AI coding setup." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fa6wfl",
+    "displayName": "Gaurav Kesharwani",
+    "headline": "CTO building healthcare voice AI agents for dental practices",
+    "company": "ThirdVoice AI",
+    "title": "CTO",
+    "location": "Emeryville, US",
+    "tags": ["voice AI", "healthcare AI", "dental technology", "patient scheduling", "OpenAI Realtime", "LiveKit", "HIPAA"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and ThirdVoice company sources match Gaurav Kesharwani as CTO at ThirdVoice AI; participant location is not independently verified from public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at ThirdVoice AI, building voice agents for dental practices that handle scheduling, clinical notes, patient outreach, and PMS integrations. Strong match for realtime voice AI, healthcare workflow automation, and HIPAA-conscious AI product design.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gauravkesharwani", "note": "Identifies him as CTO at ThirdVoice AI." },
+        { "label": "ThirdVoice AI LinkedIn company page", "url": "https://www.linkedin.com/company/thirdvoice-ai", "note": "Company context and employee association." },
+        { "label": "Third Voice website", "url": "https://thirdvoice.ai/", "note": "Product context for dental AI voice agents." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/thirdvoice-ai/org-chart/gaurav-kesharwani", "note": "Unverified CTO org profile." },
+        { "label": "LinkedIn article by Gaurav Kesharwani", "url": "https://www.linkedin.com/pulse/dawn-multimodal-ai-comparison-gpt-4o-googles-gemini-gaurav-kesharwani-x7sqc", "note": "Public AI article tied to same profile." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "09vcdnc",
+    "displayName": "Gautam Kumar",
+    "headline": "Amazon software development engineer in Seattle",
+    "company": "Amazon",
+    "title": "Software Development Engineer",
+    "location": "Seattle, US",
+    "tags": ["software engineering", "Amazon", "cloud engineering", "backend systems", "distributed systems"],
+    "confidence": "medium",
+    "confidenceNote": "Exact name, Amazon role, and Seattle location match a public LinkedIn profile, but the name is common and little domain-specific public evidence was available.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software Development Engineer at Amazon in Seattle. Public evidence supports an Amazon SDE profile but does not expose enough project detail to infer a narrow technical specialty, so he is best matched around software engineering, cloud systems, and large-scale product development.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gautam-kumar-b093a36a", "note": "Lists Gautam Kumar as Software Development Engineer II at Amazon in Seattle." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Gautam/Kumar/us-0-United-States", "note": "Directory result repeats Seattle/Amazon match." },
+        { "label": "Stackforce profile", "url": "https://www.stackforce.co/talent/gautam-kumar-software-engineer-6a28cfd95d68ff3d9b7c68c9", "note": "Aggregated recruiting profile; treated as secondary." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qfw0wm",
+    "displayName": "Gavin Brown",
+    "headline": "Perth-based managing director at Trafalgar Asset Management",
+    "company": "Trafalgar Asset Management Pty Ltd",
+    "title": "Managing Director",
+    "location": "Perth, AU",
+    "tags": ["asset management", "investment management", "finance", "private company leadership", "Australia"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn matches the requested name, title, company, and Perth area; Australian business registry confirms the company, but public detail on current responsibilities is sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Managing Director at Trafalgar Asset Management Pty Ltd in the Greater Perth Area. Public information is limited, but the profile suggests a finance and asset-management operator suitable for conversations about investing, private markets, and Australian business networks.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://au.linkedin.com/in/gavinbrownaus", "note": "Lists Gavin B. as Managing Director at Trafalgar Asset Management Pty Ltd." },
+        { "label": "ABN Lookup history", "url": "https://abr.business.gov.au/AbnHistory/View?id=93002506274", "note": "Confirms Trafalgar Asset Management Pty Ltd." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn Australia directory result", "url": "https://au.linkedin.com/pub/dir/Gavin/Brown/au-0-Australia", "note": "Repeats Greater Perth Area match." },
+        { "label": "Moovit business listing", "url": "https://moovitapp.com/index/en-gb/public_transportation-Trafalgar_Asset_Management-Perth-site_356393783-622", "note": "Weak local listing for company location context." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fepf48",
+    "displayName": "Gee Rittenhouse",
+    "headline": "AWS security services executive leading enterprise cloud security products",
+    "company": "AWS",
+    "title": "VP Security Services",
+    "location": "",
+    "tags": ["cloud security", "AWS", "enterprise security", "Security Hub", "GuardDuty", "Inspector", "cybersecurity leadership", "AI security"],
+    "confidence": "high",
+    "confidenceNote": "AWS author page, LinkedIn, SANS, and conference/speaker sources consistently identify Gee Rittenhouse as VP Security Services at AWS, with prior CEO and Cisco security leadership experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Vice President of Security Services at AWS, overseeing major cloud-security services including Security Hub, GuardDuty, and Inspector. Previously led Skyhigh Security and Cisco's security business, bringing deep executive experience across enterprise security, cloud platforms, and security operations.",
+    "sources": {
+      "primary": [
+        { "label": "AWS Security Blog author profile", "url": "https://aws.amazon.com/blogs/security/aws-security-hub-is-expanding-to-unify-security-operations-across-multicloud-environments/", "note": "AWS page identifies him as VP Security Services." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/geerittenhouse", "note": "Professional profile and AWS enterprise security context." },
+        { "label": "AWS re:Inforce slide deck", "url": "https://pages.awscloud.com/rs/112-TZM-766/images/OSR206-Amsterdam-English.pdf", "note": "AWS presentation listing VP, Security Services." }
+      ],
+      "secondary": [
+        { "label": "SANS profile", "url": "https://www.sans.org/profiles/gee-rittenhouse", "note": "Speaker profile and career background." },
+        { "label": "BankInfoSecurity coverage", "url": "https://www.bankinfosecurity.com/aws-snags-skyhighs-gee-rittenhouse-to-run-security-business-a-24626", "note": "AWS hiring coverage." },
+        { "label": "Cisco author archive", "url": "https://blogs.cisco.com/author/geerittenhouse", "note": "Prior Cisco security leadership source." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1yvrfq6",
+    "displayName": "Gennadiy Bezkorovayniy",
+    "headline": "MiaRec founder and CEO building conversation intelligence and contact-center voice AI",
+    "company": "MiaRec, Inc.",
+    "title": "CEO",
+    "location": "Campbell, US",
+    "tags": ["conversation intelligence", "contact center AI", "voice AI", "call recording", "quality management", "customer experience", "telecommunications"],
+    "confidence": "high",
+    "confidenceNote": "MiaRec company pages, blog author page, LinkedIn, and press releases consistently identify Gennadiy Bezkorovayniy as MiaRec founder/CEO in Campbell, with contact-center AI and telecom focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of MiaRec, a conversation-intelligence company for contact centers. He has a long background in telecommunications, call recording, voice AI, automated quality management, and turning customer conversations into operational follow-up actions.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gbezko", "note": "Lists CEO role at MiaRec." },
+        { "label": "MiaRec About page", "url": "https://www.miarec.com/about", "note": "Company history and founder context." },
+        { "label": "MiaRec author page", "url": "https://blog.miarec.com/author/gennadiy-bezko", "note": "Official founder/CEO bio." }
+      ],
+      "secondary": [
+        { "label": "MiaRec Ask AI article", "url": "https://blog.miarec.com/introducing-ask-ai", "note": "Company blog post by Gennadiy." },
+        { "label": "EIN Presswire partnership release", "url": "https://www.einpresswire.com/article/775952429/miarec-partners-with-webex-by-cisco-to-improve-employee-and-customer-experiences", "note": "Press release quoting him as founder and CEO." },
+        { "label": "Call Centre Helper article", "url": "https://www.callcentrehelper.com/miarec-launched-ai-action-engine-273771.htm", "note": "Industry coverage on MiaRec AI Action Engine." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1bbp3uw",
+    "displayName": "Geoffrey Huntley",
+    "headline": "Creator of the Ralph Wiggum loop and AI software-engineering writer",
+    "company": "Independent",
+    "title": "Software engineer / developer advocate",
+    "location": "Millers Point, AU",
+    "tags": ["AI agents", "software engineering", "developer tools", "LLM workflows", "Ralph loop"],
+    "confidence": "high",
+    "confidenceNote": "Primary personal site and posts connect Geoffrey Huntley to Ralph Wiggum/while-loop agent work; location comes from attendee-provided context and public profile snippets.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Geoffrey Huntley writes and speaks about AI-assisted software engineering, especially the Ralph Wiggum loop: a deliberately simple agent workflow built around repeated, scoped loops. Useful match for agent orchestration, code automation, developer tooling, and practical LLM engineering habits.",
+    "sources": {
+      "primary": [
+        { "label": "Geoffrey Huntley personal site", "url": "https://ghuntley.com/", "note": "Personal site and writing archive." },
+        { "label": "Ralph Wiggum as a software engineer", "url": "https://ghuntley.com/ralph/", "note": "Primary essay on the Ralph loop pattern." },
+        { "label": "Everything is a Ralph loop", "url": "https://ghuntley.com/loop/", "note": "Primary follow-up on Ralph loops." }
+      ],
+      "secondary": [
+        { "label": "Dev Interrupted interview", "url": "https://linearb.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop", "note": "Podcast profile." },
+        { "label": "LinkedIn profile", "url": "https://au.linkedin.com/in/geoffreyhuntley", "note": "Public profile snippet." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "09lplcn",
+    "displayName": "Geoffrey Litt",
+    "headline": "Design engineer at Notion focused on malleable software and tools for thought",
+    "company": "Notion",
+    "title": "Design Engineer",
+    "location": "",
+    "tags": ["design engineering", "malleable software", "tools for thought", "HCI", "AI-assisted programming"],
+    "confidence": "high",
+    "confidenceNote": "Personal website directly states current Notion role and prior Ink & Switch/MIT HCI background; event/social snippets support Design Engineer title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Geoffrey Litt designs and prototypes software environments for thinking. He works at Notion and has a research background spanning Ink & Switch and MIT HCI, with current interests in malleable software, end-user programmability, and AI-assisted personal tools.",
+    "sources": {
+      "primary": [
+        { "label": "Geoffrey Litt personal site", "url": "https://www.geoffreylitt.com/", "note": "Primary bio and writing." },
+        { "label": "Geoffrey Litt X profile", "url": "https://x.com/geoffreylitt", "note": "Primary social profile." }
+      ],
+      "secondary": [
+        { "label": "Dialectic interview profile", "url": "https://jacksondahl.com/dialectic/geoffrey-litt", "note": "Long-form profile on malleable software and research background." },
+        { "label": "Notion malleable software conversation", "url": "https://www.youtube.com/watch?v=vzlcK1IDBAM", "note": "Public Notion conversation." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "129n7lc",
+    "displayName": "Geoji Paul",
+    "headline": "Cybersecurity leader focused on threat fusion, cyber risk, and security operations",
+    "company": "Centene Corporation",
+    "title": "Sr. Director, Cyber Security",
+    "location": "Austin, TX, US",
+    "tags": ["cybersecurity", "SecOps", "threat intelligence", "digital forensics", "cyber risk"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn snippets and FAIR Institute materials connect Geoji Paul to Centene cyber leadership; attendee title is broader than some sources that specify Cyber Threat Fusion Center.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Geoji Paul is a Centene cybersecurity leader with experience across cyber threat management, digital forensics, security operations, and quantitative cyber risk. Strong match for enterprise security, healthcare cyber defense, risk quantification, and AI-era security operations.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/geojipaul", "note": "Centene affiliation, cyber focus, and Austin location." },
+        { "label": "Geoji Paul personal security post", "url": "https://www.linkedin.com/posts/geojipaul_shifting-theory-of-constraints-in-cybersecurity-activity-7382574581448040448-LP9u", "note": "Public cybersecurity thought-leadership post." }
+      ],
+      "secondary": [
+        { "label": "FAIR Institute profile/interview", "url": "https://www.fairinstitute.org/blog/geoji-paul-of-centene-and-nathan-thomack-of-emerson-on-what-to-expect-in-your-fair-journey", "note": "Centene and FAIR/cyber-risk context." },
+        { "label": "UMSL Cybersecurity Faculty", "url": "https://www.umsl.edu/cybersecurity/people/index.html", "note": "Instructor profile and credentials." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0sgrint",
+    "displayName": "Gerard Gonzalez",
+    "headline": "Founder at Buildr, an AI-powered preconstruction platform for general contractors",
+    "company": "Buildr",
+    "title": "Founder",
+    "location": "Orange County, CA, US",
+    "tags": ["construction tech", "preconstruction", "SaaS", "AI in construction", "Procore ecosystem"],
+    "confidence": "medium",
+    "confidenceNote": "Likely match to Gerard Edward / Edward / Ed Gonzalez at Buildr. Public-facing Buildr and podcast sources usually use Edward or Ed Gonzalez rather than Gerard.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Gerard Gonzalez appears to be the Buildr founder publicly known as Edward or Ed Gonzalez. Buildr builds AI-powered preconstruction software for general contractors, with emphasis on CRM, bid workflows, estimating, workforce planning, and Procore-adjacent construction operations.",
+    "sources": {
+      "primary": [
+        { "label": "Buildr homepage", "url": "https://buildr.com/", "note": "Company product context." },
+        { "label": "Buildr blog author listing", "url": "https://buildr.com/blog/", "note": "Buildr-owned blog lists Edward Gonzalez as founder/co-founder and author." },
+        { "label": "Edward Gonzalez LinkedIn", "url": "https://www.linkedin.com/in/gedwardgonzalez", "note": "Public profile identifies Edward Gonzalez as co-founder at Buildr." }
+      ],
+      "secondary": [
+        { "label": "Preconstruction Podcast episode", "url": "https://www.nichessp.com/pre-construction-podcast/73-caleb-taylor-and-ed-gonzalez", "note": "Podcast with Buildr co-founders Caleb Taylor and Ed Gonzalez." },
+        { "label": "DBIA/eShow exhibitor profile", "url": "https://maps.goeshow.com/dbia/annual/2024/BB3C60BC-580E-EF11-8100-B0DE0BDD54BD", "note": "Event profile naming Edward Gonzalez as founder." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0b6xwpp",
+    "displayName": "Gerardo Lopez",
+    "headline": "Cofounder and CTO at HyphaMetrics working on cross-media measurement technology",
+    "company": "HyphaMetrics",
+    "title": "CTO",
+    "location": "Seattle, US",
+    "tags": ["media measurement", "computer vision", "AI", "adtech", "cross-platform analytics"],
+    "confidence": "medium",
+    "confidenceNote": "Strong match for Gerardo Lopez / Gerardo Lopez Zamudio as HyphaMetrics cofounder and CTO. Attendee location says Seattle, while public sources variously point to Mexico, New York company HQ, or other locations.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Gerardo Lopez is HyphaMetrics' cofounder and CTO, working on technology for cross-media and individual-level media measurement. Relevant matches include AI/computer vision, audience measurement, adtech, privacy-aware panels, and media analytics infrastructure.",
+    "sources": {
+      "primary": [
+        { "label": "HyphaMetrics homepage", "url": "https://www.hyphametrics.com/", "note": "Company homepage." },
+        { "label": "Gerardo Lopez Zamudio LinkedIn", "url": "https://mx.linkedin.com/in/gerardo-l%C3%B3pez-zamudio-3b7528aa", "note": "Public profile identifies cofounder and CTO role." }
+      ],
+      "secondary": [
+        { "label": "Research Live launch article", "url": "https://www.research-live.com/article/news/media-measurement-startup-hyphametrics-launches/id/5076082", "note": "Launch coverage naming him co-founder and CTO." },
+        { "label": "Justia HyphaMetrics patents", "url": "https://patents.justia.com/assignee/hyphametrics-inc", "note": "Patent listings name him as inventor." },
+        { "label": "Craft HyphaMetrics profile", "url": "https://craft.co/hyphametrics", "note": "Company profile listing co-founder and CTO." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1vnya0u",
+    "displayName": "Gerardo Molina",
+    "headline": "CEO at Milan Group",
+    "company": "Milan Group",
+    "title": "CEO",
+    "location": "Bucaramanga, Colombia",
+    "tags": ["manufacturing", "bicycles", "Colombia", "executive leadership", "retail"],
+    "confidence": "medium",
+    "confidenceNote": "Participant-provided company, role, and location align with public Milan Group/Bicicletas Milan references naming Gerardo Molina and Bucaramanga, but current CEO/title evidence is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Colombian executive associated with Milan Group/Bicicletas Milan, a Bucaramanga-rooted bicycle and fitness equipment business. Useful match for manufacturing, local commerce, sporting goods distribution, and scaling family-led businesses.",
+    "sources": {
+      "primary": [
+        { "label": "Colombia Milan Group listing", "url": "https://colombia.imb2b.com/", "note": "Lists Colombia Milan Group in Bucaramanga and names Gerardo Molina as contact." },
+        { "label": "Bicicleta Milan company blog", "url": "https://milan-bicicletasmilan.blogspot.com/", "note": "Company history and Molina family context." }
+      ],
+      "secondary": [
+        { "label": "Las2Orillas bicycle importers article", "url": "https://www.las2orillas.co/boom-de-bicicletas-en-colombia-3-grandes-importadores-los-ganadores/", "note": "Background on Industrias de Bicicletas Milan." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0t0z84o",
+    "displayName": "Geremy Gibson",
+    "headline": "AI Governance at Broadcom",
+    "company": "Broadcom",
+    "title": "AI Governance",
+    "location": "Colorado Springs, United States",
+    "tags": ["AI governance", "cloud operations", "enterprise infrastructure", "VMware", "Broadcom"],
+    "confidence": "medium",
+    "confidenceNote": "Public evidence strongly matches Geremy Gibson as a VMware cloud operations senior manager in the Colorado Springs/Woodland Park area; AI Governance and Broadcom are participant-provided and plausible through VMware/Broadcom context but not well corroborated in public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Enterprise infrastructure and cloud operations leader from the VMware/Broadcom ecosystem, with participant-provided focus on AI governance. Good match for operational controls, enterprise AI adoption, cloud platforms, and governance in large technical organizations.",
+    "sources": {
+      "primary": [
+        { "label": "Geremy Gibson LinkedIn profile", "url": "https://www.linkedin.com/in/geremygibson", "note": "Search result identifies Senior Manager, Cloud Operations with VMware." }
+      ],
+      "secondary": [
+        { "label": "VMware Explore Command Center LinkedIn post", "url": "https://www.linkedin.com/posts/franciscomartinezmarketing_inside-the-vmware-explore-barcelona-command-activity-7130684287019806720-XMEG", "note": "Mentions Geremy Gibson in VMware Explore infrastructure work." },
+        { "label": "GitLab issue comment by Geremy Gibson", "url": "https://gitlab.com/gitlab-org/gitlab/-/issues/20532", "note": "Public issue thread referencing VMware project/group administration needs." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12owipy",
+    "displayName": "Gil Feig",
+    "headline": "Co-founder & CTO at Merge",
+    "company": "Merge",
+    "title": "Co-founder & CTO",
+    "location": "New York, United States",
+    "tags": ["APIs", "integrations", "enterprise AI", "developer tools", "SaaS", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and high-signal sources consistently identify Gil Feig as Merge co-founder and CTO, with background in integrations, APIs, and engineering leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Merge, building unified API and connective infrastructure for integrations and production AI systems. Strong match for enterprise AI infrastructure, API design, integration maintenance, MCP, data normalization, and engineering leadership.",
+    "sources": {
+      "primary": [
+        { "label": "Merge webinar speaker page", "url": "https://www.merge.dev/webinars/integration-maintenance-ruined-my-life", "note": "Merge lists Gil Feig as CTO and co-founder." },
+        { "label": "Merge blog article", "url": "https://www.merge.dev/blog/why-integrations-almost-ruined-my-life", "note": "Merge-hosted article by Gil Feig." },
+        { "label": "Gil Feig LinkedIn profile", "url": "https://www.linkedin.com/in/gilfeig", "note": "Professional profile." },
+        { "label": "Gil Feig X profile", "url": "https://x.com/GilFeig", "note": "Public social profile." }
+      ],
+      "secondary": [
+        { "label": "DataCamp podcast profile", "url": "https://www.datacamp.com/podcast/navigating-the-challenges-of-product-integrations", "note": "Podcast profile and integration background." },
+        { "label": "Forbes Technology Council profile", "url": "https://councils.forbes.com/profile/Gil-Feig-Co-Founder-CTO-Merge/1dc4f18c-1053-4131-9323-e9abaf9ea9e7", "note": "Profile listing CTO/co-founder role." },
+        { "label": "First Round Review on Merge", "url": "https://review.firstround.com/merges-path-to-product-market-fit/", "note": "Background on Merge founding story." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "196lvln",
+    "displayName": "Giselle van Dongen",
+    "headline": "Developer Advocate at Restate",
+    "company": "Restate",
+    "title": "Developer Advocate",
+    "location": "Bergamo, Italy",
+    "tags": ["developer advocacy", "distributed systems", "durable execution", "serverless", "AI agents", "streaming"],
+    "confidence": "high",
+    "confidenceNote": "Multiple Restate, speaker, and conference sources consistently identify Giselle van Dongen as a Developer Advocate at Restate with distributed systems and big data background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer Advocate at Restate helping teams build resilient, scalable distributed applications and durable AI-agent workflows. Previously worked in big data analytics and distributed stream processing and holds a PhD from Ghent University.",
+    "sources": {
+      "primary": [
+        { "label": "Sessionize profile", "url": "https://sessionize.com/giselle-van-dongen/", "note": "Speaker profile and Restate role." },
+        { "label": "Restate team page", "url": "https://restate.dev/team", "note": "Restate team listing." },
+        { "label": "Restate blog article", "url": "https://www.restate.dev/blog/dealing-with-versioning-in-long-running-agents", "note": "Restate-hosted article by Giselle." },
+        { "label": "LinkedIn profile", "url": "https://it.linkedin.com/in/giselle-van-dongen", "note": "LinkedIn snippet lists Restate Developer Advocate." }
+      ],
+      "secondary": [
+        { "label": "Spring I/O 2025 speaker profile", "url": "https://2025.springio.net/speakers/giselle-van-dongen/", "note": "Conference profile." },
+        { "label": "KotlinConf 2024 speaker profile", "url": "https://2024.kotlinconf.com/speakers/29714cd6-635b-4d48-b373-e7b27689b965/", "note": "Conference profile." },
+        { "label": "Devoxx Belgium speaker profile", "url": "https://m.devoxx.com/events/dvbe24/speaker/15450/giselle-van-dongen", "note": "Conference profile." }
+      ]
+    }
+  }
+]

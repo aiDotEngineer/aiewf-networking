@@ -1,0 +1,131 @@
+[
+  {
+    "lookupKey": "0mneguf",
+    "displayName": "Ben Kus",
+    "headline": "CTO at Box focused on enterprise AI, content intelligence, and secure cloud platforms",
+    "company": "Box",
+    "title": "Chief Technology Officer",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["enterprise AI", "content management", "agentic AI", "cloud security", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "Box speaker bio and LinkedIn consistently identify Ben Kus as CTO of Box; multiple Box and industry sources connect him to enterprise AI strategy and prior Subspace/BigFix work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Box, where he leads technology and AI strategy for secure enterprise content intelligence. Previously co-founded Subspace, acquired by Box, and held architecture/security leadership roles around BigFix and IBM. Useful match for conversations on enterprise AI adoption, agentic workflows, unstructured data, and secure cloud platforms.",
+    "sources": {
+      "primary": [
+        {"label": "Box speaker bio", "url": "https://www.box.com/events/cards/resource/299311?resource_id=BenKus-299311", "note": "Official Box bio identifies him as CTO and summarizes AI strategy, Subspace, BigFix/IBM, and UC Berkeley background."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/benkus", "note": "Public profile identifies him as Chief Technology Officer at Box in the San Francisco Bay Area."}
+      ],
+      "secondary": [
+        {"label": "InformationWeek author profile", "url": "https://www.informationweek.com/author/ben-kus-", "note": "Contributor profile repeats Box CTO role and focus on enterprise unstructured data and AI."},
+        {"label": "Computerworld interview", "url": "https://www.computerworld.com/article/4054046/box-cto-ben-kus-talks-up-the-marriage-of-cloud-storage-genai-agents.html", "note": "Interview context on Box's agentic AI direction."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "16tg51g",
+    "displayName": "Ben Limmer",
+    "headline": "Co-founder and Chief Architect at ContextBridge building tools for reliable AI coding workflows",
+    "company": "ContextBridge",
+    "title": "Co-founder / Chief Architect",
+    "location": "Denver, CO, US",
+    "tags": ["AI coding tools", "developer experience", "cloud architecture", "engineering leadership", "agent context"],
+    "confidence": "high",
+    "confidenceNote": "ContextBridge's site, LinkedIn, and GitHub profile align on Ben Limmer's ContextBridge role, Denver location, and developer-experience/architecture focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and Chief Architect at ContextBridge, building infrastructure for higher-quality AI coding workflows and agent context management. Background spans developer tooling, technical mentorship, cloud architecture, and scaling engineering systems. Good match for conversations on coding agents, plan review, context hygiene, and pragmatic engineering quality.",
+    "sources": {
+      "primary": [
+        {"label": "ContextBridge website", "url": "https://contextbridge.ai/", "note": "Company site lists Ben Limmer as Co-founder / Chief Architect and describes his engineering leadership and cloud systems background."},
+        {"label": "GitHub profile", "url": "https://github.com/blimmer", "note": "Public GitHub profile lists Ben Limmer, ContextBridge affiliation, Denver location, and developer-experience focus."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/blimmer", "note": "Public profile identifies him as Co-Founder at ContextBridge in Denver."}
+      ],
+      "secondary": [
+        {"label": "PlanBridge site", "url": "https://plan.contextbridge.ai/", "note": "Product page says PlanBridge is built by Donnie Flood, Josh Carver, and Ben Limmer at ContextBridge AI."},
+        {"label": "ContextBridge LinkedIn company page", "url": "https://www.linkedin.com/company/contextbridge", "note": "Company page lists Ben Limmer among ContextBridge employees and Denver as a company location."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "17dudvb",
+    "displayName": "Ben Oren",
+    "headline": "GTM and sales leader at Guild.ai helping enterprises operationalize AI agents",
+    "company": "Guild.ai",
+    "title": "VP GTM",
+    "location": "San Francisco, CA, US",
+    "tags": ["enterprise sales", "GTM", "AI agents", "agent control plane", "enterprise AI"],
+    "confidence": "medium",
+    "confidenceNote": "Guild sources confirm Ben Oren recently joined as VP of Sales/GTM and his enterprise technology background; public LinkedIn location shows Colorado, while the provided participant record says San Francisco.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "GTM leader at Guild.ai focused on helping enterprises move AI agents from experimentation into governed production use. His recent Guild post cites prior enterprise adoption work across Box, Twilio, JumpCloud, and Aampe. Useful match for conversations on AI agent commercialization, enterprise buyer education, and control-plane adoption.",
+    "sources": {
+      "primary": [
+        {"label": "Guild.ai author post", "url": "https://www.guild.ai/blog/news/why-ben-oren-joined-guild", "note": "Ben Oren's Guild post explains why he joined and describes his focus on enterprise AI, governance, observability, and control planes."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bforen", "note": "Public profile identifies him as a GTM leader at Guild.ai and shows prior enterprise GTM experience."}
+      ],
+      "secondary": [
+        {"label": "Guild.ai LinkedIn announcement", "url": "https://www.linkedin.com/posts/guild-ai-group_were-excited-to-welcome-ben-oren-as-guilds-activity-7475217358710714371-huSy", "note": "Guild welcome post links to his joining story and frames the company mission around operating AI inside real companies."},
+        {"label": "Guild.ai news index", "url": "https://www.guild.ai/blog/news", "note": "Guild news index lists Ben Oren's joining article among company updates."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0o3jthz",
+    "displayName": "Bereket Engida",
+    "headline": "Founder of Better Auth building open-source TypeScript authentication infrastructure",
+    "company": "Better Auth",
+    "title": "Founder & CEO",
+    "location": "San Francisco, CA, US",
+    "tags": ["developer tools", "authentication", "open source", "TypeScript", "YC founder"],
+    "confidence": "high",
+    "confidenceNote": "Better Auth, GitHub, YC, and LinkedIn sources consistently identify Bereket Engida as founder/creator of Better Auth with a TypeScript developer-infrastructure focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Better Auth, an open-source TypeScript authentication framework backed by YC and Peak XV. Builds developer infrastructure with an emphasis on owning auth data, clean APIs, and strong DX. Useful match for conversations on auth architecture, open-source devtools, TypeScript ecosystems, and scaling founder-led infrastructure projects.",
+    "sources": {
+      "primary": [
+        {"label": "Better Auth seed announcement", "url": "https://better-auth.com/blog/seed-round", "note": "Official Better Auth post by Bereket Engida announces seed funding and describes the product roadmap."},
+        {"label": "GitHub profile", "url": "https://github.com/Bekacru", "note": "Profile identifies Bereket Engida as author of Better Auth and other open-source libraries."},
+        {"label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/better-auth", "note": "YC profile lists Better Auth and Bereket Engida as founder, with product description and San Francisco location."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bekacru", "note": "Public profile identifies him as creator of Better Auth in San Francisco."}
+      ],
+      "secondary": [
+        {"label": "TechCrunch profile", "url": "https://techcrunch.com/2025/06/25/this-self-taught-ethiopian-dev-built-an-authentication-tool-and-got-into-yc/", "note": "Reports Better Auth's funding, origin story, and developer adoption."},
+        {"label": "devtools.fm episode", "url": "https://www.devtools.fm/episode/150", "note": "Podcast episode focused on Bereket Engida and the Better Auth library."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0f1g9kj",
+    "displayName": "Bernard Lin",
+    "headline": "CTO at Future Verification Technology working on verification, anti-fraud, cloud, blockchain, and data systems",
+    "company": "Future Verification Technology",
+    "title": "Chief Technology Officer",
+    "location": "New York, NY, US",
+    "tags": ["verification", "anti-fraud", "blockchain", "cloud computing", "machine learning"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and secondary company databases identify Bernard Lin as CTO of Future Verification Technology; the strongest detailed profile is on The Org and marked unverified, so confidence is medium.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Future Verification Technology, a verification-as-a-service company focused on fraud reduction and transparency. Public profiles describe experience across cloud computing, big data strategy, machine learning, blockchain, and engineering leadership. Useful match for conversations on authenticity, product verification, anti-fraud infrastructure, and applied blockchain systems.",
+    "sources": {
+      "primary": [
+        {"label": "Future Verification Technology website", "url": "https://fvt.ai/", "note": "Company site describes Future Verification Technology as a verification-as-a-service company focused on fraud reduction and transparency."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bernardlin", "note": "Public profile places Bernard Lin at Future Verification Technology Inc. in New York."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/future-verification-technology/org-chart/bernard-lin", "note": "Lists Bernard Lin as CTO and summarizes cloud, big data, machine learning, and blockchain experience; page is marked unverified."},
+        {"label": "The Org leadership team", "url": "https://theorg.com/org/future-verification-technology/teams/leadership-team", "note": "Lists Bernard Lin on the Future Verification Technology leadership team as Chief Technology Officer."},
+        {"label": "ZoomInfo company profile", "url": "https://www.zoominfo.com/c/future-verification-technology-inc/556518599", "note": "Company profile lists Bernard Lin as CTO and summarizes FVT's software and verification focus."}
+      ]
+    }
+  }
+]

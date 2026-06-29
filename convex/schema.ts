@@ -30,6 +30,12 @@ const meetingParticipantRole = v.union(
   v.literal("requester"),
 );
 
+const profileSource = v.object({
+  label: v.string(),
+  note: v.string(),
+  url: v.string(),
+});
+
 export default defineSchema({
   eventSettings: defineTable({
     key: v.string(),
@@ -84,6 +90,10 @@ export default defineSchema({
     headline: v.string(),
     bioMarkdown: v.string(),
     tags: v.array(v.string()),
+    sources: v.optional(v.object({
+      primary: v.array(profileSource),
+      secondary: v.array(profileSource),
+    })),
     participantApproved: v.boolean(),
     approvedAt: v.optional(v.number()),
     updatedAt: v.number(),

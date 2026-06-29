@@ -1,0 +1,102 @@
+[
+  {
+    "lookupKey": "1sp93fw",
+    "displayName": "Bruno Alves",
+    "headline": "Engineering leader at VTEX focused on AI-native software and commerce platforms",
+    "company": "VTEX",
+    "title": "Head of Engineering",
+    "location": "New York, US",
+    "tags": ["engineering leadership", "ecommerce", "AI engineering", "platform engineering", "VTEX"],
+    "confidence": "medium",
+    "confidenceNote": "Role and VTEX affiliation are supported by LinkedIn/search-result evidence and secondary org/event references; participant-provided New York location conflicts with public profile snippets indicating Porto Alegre, Brazil.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at VTEX with senior engineering-management experience in digital commerce. Useful match for conversations on AI-native engineering workflows, platform teams, and scaling software delivery in commerce environments.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://br.linkedin.com/in/mrbrunoalves", "note": "Public profile snippet identifies Bruno Alves as Head of Engineering / senior engineering manager at VTEX."}
+      ],
+      "secondary": [
+        {"label": "VTEX engineering management listing on The Org", "url": "https://theorg.com/org/vtex/teams/engineering-management", "note": "Lists Bruno Alves in VTEX engineering management, though the page is marked unverified."},
+        {"label": "LinkedIn post mentioning VTEX senior engineering leadership", "url": "https://www.linkedin.com/posts/cesarcaixetaf_agenticai-aws-vtex-activity-7458875799232864257-VowH", "note": "Describes a VTEX senior engineering leadership visit to AWS focused on agentic AI, multi-agent systems, and spec-driven development; Bruno appears in the interaction context."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0c7b5f4",
+    "displayName": "Bryan Batchelder",
+    "headline": "Product leader for Datex Footprint WMS, focused on AI-enabled warehouse operations",
+    "company": "Datex Inc. / Footprint WMS",
+    "title": "VP of Product",
+    "location": "Clearwater, FL, US",
+    "tags": ["product leadership", "warehouse management systems", "supply chain", "AI in logistics", "enterprise software"],
+    "confidence": "high",
+    "confidenceNote": "Datex official pages and industry-event sources consistently identify Bryan Batchelder as VP of Product at Datex and describe his WMS, logistics, integrations, and AI-related work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of Product at Datex, leading product strategy for Footprint WMS. Strong match for supply-chain software, low-code warehouse platforms, AI-enabled logistics, integrations, and productizing enterprise operations technology.",
+    "sources": {
+      "primary": [
+        {"label": "Datex leadership page", "url": "https://datexcorp.com/about-datex/", "note": "Official Datex page says Bryan Batchelder is Vice President of Product and leads product strategy, roadmap, analyst relations, technology partnerships, and responsible AI adoption."},
+        {"label": "Datex Studio announcement", "url": "https://datexcorp.com/datex-inc-unveils-datex-studio-next-step-engineering-warehouse-agility-promat-2025/", "note": "Official Datex announcement quotes him on adapting Footprint WMS to supply-chain complexity, labor shortages, compliance, and integrations."}
+      ],
+      "secondary": [
+        {"label": "ProMat 2025 speaker profile", "url": "https://pm2025.mapyourshow.com/8_0/sessions/speaker-details.cfm?speakerid=319", "note": "Speaker bio cites over 21 years in warehousing, distribution, 3PL, complex IT projects, risk management, and systems integration."},
+        {"label": "Supply Chain Digest expert article", "url": "https://www.scdigest.com/experts/26_03_26_speed_of_change.php?cid=23078", "note": "Industry article lists him as VP of Product at Datex and summarizes his WMS and logistics background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0vjpauw",
+    "displayName": "Bryan Kinas",
+    "headline": "AI lead at Caterpillar helping move enterprise AI from experimentation to measurable value",
+    "company": "Caterpillar",
+    "title": "AI Lead",
+    "location": "Peoria, IL, US",
+    "tags": ["enterprise AI", "manufacturing", "AI transformation", "industrial technology", "AI agents"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and event-speaker sources consistently identify Bryan Kinas as AI Lead at Caterpillar; local and educational references further support his AI-speaking and mentoring activity.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI Lead at Caterpillar working on enterprise AI and ML initiatives in an industrial context. Useful match for manufacturing AI, agent workflows, business-value framing, and practical adoption inside large organizations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bryan-kinas", "note": "Public profile snippet says he leads high-impact AI/ML initiatives at Caterpillar and focuses on measurable enterprise value."}
+      ],
+      "secondary": [
+        {"label": "AMG World speaker profile", "url": "https://www.amg-world.co.uk/speaker/bryan-kinas/", "note": "Speaker page for AI & Data Transformation in Manufacturing lists Bryan Kinas as AI Lead at Caterpillar."},
+        {"label": "LinkedIn post on AI-agent communication", "url": "https://www.linkedin.com/posts/bryan-kinas_ai-is-amazing-for-some-tasks-ai-is-destructive-activity-7473033479396556800-5r_9", "note": "Recent public post discusses lessons from building with AI agents."},
+        {"label": "Rotary event mention", "url": "https://www.facebook.com/mtghrotary/photos/rotary-speaker-today-was-bryan-kinas-ai-lead-at-caterpillar-who-shared-his-persp/1346415944192013/", "note": "Local event post identifies him as AI Lead at Caterpillar and notes an AI-focused talk."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1lt5jcf",
+    "displayName": "Bryce Reynolds",
+    "headline": "QofAI co-founder and technical builder applying AI to middle-market operations",
+    "company": "QofAI",
+    "title": "CTO",
+    "location": "San Jose, CA, US",
+    "tags": ["AI consulting", "forward deployed engineering", "technical architecture", "middle market", "enterprise AI"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly support QofAI affiliation, co-founder/builder identity, San Jose location, and prior Netflix/CloudKitchens architecture experience; the exact CTO title is participant-provided and not directly confirmed in found public snippets.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technical founder at QofAI working on AI value creation for middle-market companies and investors. Good match for practical AI implementation, forward-deployed engineering, operating-model analysis, and scalable technical architecture.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/brycereynolds", "note": "Public profile snippet links Bryce Reynolds to QofAI, San Jose, and a builder/founder technical background."},
+        {"label": "QofAI website", "url": "https://qofai.com/", "note": "Company site describes QofAI as an AI value-creation platform for the middle market with consulting and forward-deployed engineering."},
+        {"label": "QofAI LinkedIn company page", "url": "https://www.linkedin.com/company/qofai", "note": "Company page lists Bryce Reynolds among QofAI employees."}
+      ],
+      "secondary": [
+        {"label": "Graeme Waitzkin LinkedIn post announcing QofAI work", "url": "https://www.linkedin.com/posts/gwaitzkin_turns-out-most-of-my-career-has-been-about-activity-7436815873555849216-xUrB", "note": "Co-founder post says Bryce developed complex technical architectures at Netflix and CloudKitchens and helped build QofAI for middle-market AI adoption."},
+        {"label": "Jason Lange LinkedIn post on QofAI", "url": "https://www.linkedin.com/posts/jasonlange_ai-valuecreation-privateequity-activity-7434946029386420226-a4yZ", "note": "QofAI co-founder post describes Bryce as a builder with technical architecture experience at Netflix and CloudKitchens."}
+      ]
+    }
+  }
+]

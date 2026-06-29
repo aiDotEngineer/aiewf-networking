@@ -1,0 +1,233 @@
+[
+  {
+    "lookupKey": "17sdlzj",
+    "displayName": "Omri Bruchim",
+    "headline": "Engineering Group Lead for AI at monday.com, working on applied AI product engineering.",
+    "company": "monday.com",
+    "title": "Engineering Group Lead, AI",
+    "location": "Tel Aviv, Israel",
+    "tags": ["AI product engineering", "engineering leadership", "monday.com", "applied AI", "SaaS"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, X, and event pages consistently identify Omri Bruchim as an AI engineering group lead at monday.com.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering Group Lead for AI at monday.com, focused on applied AI work inside a large SaaS product. Useful match for conversations on AI features, engineering leadership, productized LLM workflows, and scaling AI adoption in work management software.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://il.linkedin.com/in/omribruchim", "note": "Lists Omri Bruchim with monday.com experience." },
+        { "label": "GitHub profile", "url": "https://github.com/bruchim", "note": "Personal developer profile identifies him as Omri Bruchim and links to his X profile." },
+        { "label": "X profile", "url": "https://x.com/omribruchim", "note": "Public profile posts about monday.com's AI work platform." }
+      ],
+      "secondary": [
+        { "label": "AI Infra Summit speaker page", "url": "https://www.ai-infra-summit.com/speakers/omri-bruchim", "note": "Speaker listing names him as Engineering Group Lead - AI at monday.com and describes his AI platform leadership." },
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Graphs", "note": "Schedule listing identifies Omri Bruchim as Engineering Group Manager at Monday." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0rkfrbq",
+    "displayName": "Omri Lifshitz",
+    "headline": "Co-founder and CTO at Upriver, building AI-native operations for e-commerce teams.",
+    "company": "Upriver",
+    "title": "Co-Founder & CTO",
+    "location": "Tel Aviv, Israel",
+    "tags": ["AI agents", "e-commerce", "startup leadership", "operations automation", "software engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Upriver, LinkedIn, GitHub, and X sources match Omri Lifshitz to Upriver co-founder/CTO; public sources list him as CTO rather than CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO at Upriver, an AI-focused startup for e-commerce operations. Good match for conversations on agentic workflows, marketplace tooling, technical cofounder work, and turning repetitive commercial operations into AI-assisted systems.",
+    "sources": {
+      "primary": [
+        { "label": "Upriver about page", "url": "https://upriverdata.com/about", "note": "Company page lists Omri Lifshitz as Co-Founder and CTO." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/omri-lifshitz-8a531814a", "note": "Lists Omri Lifshitz as Co-Founder & CTO at Upriver." },
+        { "label": "GitHub profile", "url": "https://github.com/omrilifshitz", "note": "Personal developer profile identifies him as Omri Lifshitz and CTO at Upriver." }
+      ],
+      "secondary": [
+        { "label": "Hetz Ventures portfolio page", "url": "https://www.hetz.vc/portfolio/upriver", "note": "Investor page says Upriver was founded by Ido Bronstein as CEO and Omri Lifshitz as CTO." },
+        { "label": "Big Data LDN speaker page", "url": "https://www.bigdataldn.com/en-gb/conference/session-details.4500.251979.lets-talk-about-context-_-why-ai-agents-are-not-that-smart%21.html", "note": "Speaker bio identifies him as Co-Founder & CTO of Upriver." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0423ier",
+    "displayName": "Or Chen",
+    "headline": "Co-founder and CTO of Clover Security, focused on AI-assisted product security.",
+    "company": "Clover Security",
+    "title": "Co-Founder & CTO",
+    "location": "Tel Aviv, Israel",
+    "tags": ["security", "application security", "AI security", "startup leadership", "product security"],
+    "confidence": "high",
+    "confidenceNote": "Clover Security, LinkedIn, GitHub, and AI Engineer speaker sources consistently match the co-founder/CTO role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO at Clover Security, building AI-assisted product security workflows. Relevant for attendees interested in AppSec, secure SDLC, AI security tooling, and founder-led security products.",
+    "sources": {
+      "primary": [
+        { "label": "Clover Security about page", "url": "https://www.clover.security/about", "note": "Company page lists Or Chen as Co-Founder and CTO." },
+        { "label": "LinkedIn profile", "url": "https://il.linkedin.com/in/or-chen-84a04015", "note": "Lists Or Chen as Co-Founder & CTO at Clover Security." },
+        { "label": "GitHub profile", "url": "https://github.com/chenor", "note": "Personal developer profile links Or Chen to Clover Security." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Security", "note": "Schedule context includes Clover Security security-track programming." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1066gu4",
+    "displayName": "Oscar Mullin",
+    "headline": "SVP of Technology at Mercado Libre, leading large-scale AI and engineering work across Latin America.",
+    "company": "MercadoLibre",
+    "title": "SVP of Technology",
+    "location": "Latin America",
+    "tags": ["AI engineering", "e-commerce", "engineering leadership", "platform scale", "Latin America"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, AI Engineer, Sequoia, and MercadoLibre technology content consistently identify him as a senior technology leader at Mercado Libre.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior technology leader at Mercado Libre working at marketplace scale across AI, engineering platforms, and Latin American e-commerce. Strong match for conversations on applied GenAI, agentic systems in production, high-scale engineering organizations, and marketplace technology.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://uy.linkedin.com/in/oscarmullin/en", "note": "Lists Oscar Mullin as SVP of Technology leading cloud, infrastructure, platforms, data, AI, GenAI, agents, and internal tools at MercadoLibre." },
+        { "label": "MercadoLibre technology article", "url": "https://medium.com/mercadolibre-tech/mercado-libre-and-the-new-era-of-generative-ai-c908ed596283", "note": "MercadoLibre Tech article by Oscar Mullin on Mercado Libre and generative AI." },
+        { "label": "LinkedIn article", "url": "https://www.linkedin.com/pulse/our-journey-agentic-ai-oscar-mullin-ussmf", "note": "Oscar Mullin writes about Mercado Libre's journey with agentic AI." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI", "note": "Schedule listing identifies Oscar Mullin as Sr. VP of Tech at MercadoLibre." },
+        { "label": "QCon San Francisco speaker page", "url": "https://qconsf.com/speakers/oscarmullin", "note": "Speaker bio identifies him as VP of Technology at Mercado Libre leading Cloud Services, Data, and AI solutions." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0af7zw2",
+    "displayName": "Oskar Sundholm",
+    "headline": "AI Engineering Manager at Mehiläinen, working on practical healthcare AI systems.",
+    "company": "Mehiläinen Ltd",
+    "title": "AI Engineering Manager",
+    "location": "Turku, Finland",
+    "tags": ["healthcare AI", "AI engineering", "engineering management", "Finland", "clinical workflows"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, AI Engineer, and Mehiläinen AI content connect Oskar Sundholm to Mehiläinen's AI engineering work; public non-LinkedIn personal profile data is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI Engineering Manager at Mehiläinen, working on applied AI in healthcare settings. Useful match for conversations on healthcare AI delivery, regulated product engineering, clinical workflow support, and managing AI teams inside a care provider.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://fi.linkedin.com/in/oskarsundholm", "note": "Lists Oskar Sundholm as AI Engineering Manager at Mehiläinen in Turku." },
+        { "label": "Mehiläinen AI assistant article", "url": "https://www.mehilainen.fi/en/press-release/mehilainen-developing-ai-powered-assistant-support-healthcare-professionals", "note": "Company article describes Mehiläinen's AI assistant work and healthcare AI direction." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn hiring post", "url": "https://www.linkedin.com/posts/oskarsundholm_ai-engineer-ai-scientist-mehil%C3%A4inen-activity-7475466945954430976-CKhs", "note": "Oskar Sundholm posts as AI Engineering Manager at Mehiläinen while hiring AI engineers and scientists." },
+        { "label": "LinkedIn Aino project mention", "url": "https://www.linkedin.com/posts/nellilahteenmaki_mehil%C3%A4iselle-ensimm%C3%A4inen-oma-l%C3%A4%C3%A4kinn%C3%A4llisen-activity-7143233113228296192-hZGC", "note": "Mehiläinen Aino medical-device post thanks Oskar Sundholm among the long-running project contributors." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1obvpo7",
+    "displayName": "Pam Cardona",
+    "headline": "Technical Program Manager at Netflix with experience across streaming media and civic technology.",
+    "company": "Netflix",
+    "title": "Technical Program Manager",
+    "location": "San Francisco Bay Area, United States",
+    "tags": ["technical program management", "Netflix", "platform delivery", "civic technology", "product operations"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and a public Substack interview identify Pam Cardona as a Netflix technical program manager; older public records corroborate her civic technology background but do not add Netflix role detail.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technical Program Manager at Netflix with a background spanning software delivery and civic technology. Useful match for conversations on TPM practice, cross-functional execution, streaming-platform operations, and moving complex technical work through large organizations.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/pamcardona", "note": "Lists Pam Cardona as Technical Program Manager at Netflix." },
+        { "label": "Substack interview", "url": "https://royaljellies.substack.com/p/3-pam-cardona", "note": "Interview describes Pam Cardona's path through Duolingo, Uber, DNC, Stripe, and now Netflix." }
+      ],
+      "secondary": [
+        { "label": "Democracy in Action profile", "url": "https://p2008.org/dems08/obamaorg.html", "note": "Historical public profile lists Pam Cardona's civic technology and engineering work before later TPM roles." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0z0mma2",
+    "displayName": "Parth Asawa",
+    "headline": "UC Berkeley CS PhD student researching AI agents, computer vision, and interactive systems.",
+    "company": "UC Berkeley",
+    "title": "CS PhD Student",
+    "location": "Berkeley, California, United States",
+    "tags": ["AI agents", "computer vision", "human-computer interaction", "robotics", "research"],
+    "confidence": "high",
+    "confidenceNote": "Personal website, UC Berkeley lab profile, Google Scholar, GitHub, and X consistently match Parth Asawa's Berkeley CS PhD and AI research profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CS PhD student at UC Berkeley working across AI agents, computer vision, robotics, and interactive systems. Good match for research conversations on agent interfaces, embodied AI, multimodal systems, and turning lab work into developer-facing AI tools.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://pgasawa.github.io/", "note": "Personal site identifies Parth Asawa as a CS PhD student at UC Berkeley." },
+        { "label": "GitHub profile", "url": "https://github.com/pgasawa", "note": "Developer profile identifies him as a CS PhD student at Berkeley and links to his personal site, X, and LinkedIn." },
+        { "label": "Continual Learning Bench repository", "url": "https://github.com/pgasawa/continual-learning-bench", "note": "Repository and paper list Parth Asawa as an author on a frontier AI systems benchmark." }
+      ],
+      "secondary": [
+        { "label": "X profile", "url": "https://x.com/pgasawa", "note": "Public profile identifies him as a CS PhD student at Berkeley EECS." },
+        { "label": "Laude impact profile", "url": "https://www.laude.org/impact/parth-asawa", "note": "Profile lists him as a UC Berkeley CS PhD student and links his Scholar, GitHub, X, and LinkedIn profiles." },
+        { "label": "Snorkel AI interview", "url": "https://snorkel.ai/blog/benchtalks-parth-asawa-continual-learning-bench/", "note": "Interview features Parth Asawa discussing Continual Learning Bench." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1cly5hm",
+    "displayName": "Parth Patil",
+    "headline": "AI technologist in Reid Hoffman's office, building tools around personal AI and public-facing AI demos.",
+    "company": "Office of Reid Hoffman",
+    "title": "Netrunner",
+    "location": "Los Angeles, California, United States",
+    "tags": ["AI agents", "personal AI", "prototyping", "developer tools", "product strategy"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, GitHub, and Reid Hoffman AI project pages consistently connect Parth Patil to the Office of Reid Hoffman and AI product prototyping work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI technologist working with the Office of Reid Hoffman on personal AI and public AI experiments. Useful match for conversations on agent prototypes, AI-native workflows, creator/operator tools, and rapid product exploration.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/parthpatil", "note": "Lists Parth Patil working with the Office of Reid Hoffman." },
+        { "label": "GitHub profile", "url": "https://github.com/parthpatil", "note": "Developer profile for Parth Patil with AI and software project context." }
+      ],
+      "secondary": [
+        { "label": "Possible Reid Riffs episode", "url": "https://www.possible.fm/podcasts/riffs041/", "note": "Possible page introduces Parth Patil as Reid Hoffman's AI specialist colleague for an AI mastery miniseries." },
+        { "label": "Hard Skill Exchange Agentic OS page", "url": "https://hardskill.exchange/summit/agentic-os/", "note": "Event page identifies Parth Patil as Netrunner for Applied AI and Agent Systems in the Office of Reid Hoffman." },
+        { "label": "Village Global podcast page", "url": "https://www.villageglobal.com/insights/the-application-of-intelligence-how-reid-hoffmans-ai-specialist-thinks-about-coding-agents", "note": "Podcast page describes him as AI specialist in Reid Hoffman's office and builder/operator of coding-agent workflows." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1j2mmjv",
+    "displayName": "Parth Pratap",
+    "headline": "Applied AI product leader at Caterpillar focused on enterprise AI and digital products.",
+    "company": "Caterpillar Inc.",
+    "title": "Applied AI",
+    "location": "Dallas-Fort Worth, Texas, United States",
+    "tags": ["applied AI", "product management", "industrial technology", "enterprise AI", "Caterpillar"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, ProductCamp Dallas, and business directory sources connect Parth Pratap to Caterpillar digital product and applied AI work; detailed first-party bio is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Applied AI product leader at Caterpillar, working at the intersection of industrial technology, digital products, and enterprise AI adoption. Relevant for conversations on AI in heavy industry, productizing enterprise AI, and digital transformation in large operating companies.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/parthpratap", "note": "Lists Parth Pratap in product and applied AI work at Caterpillar." },
+        { "label": "LinkedIn applied AI hiring post", "url": "https://www.linkedin.com/posts/parthpratap_come-work-with-an-amazing-team-the-team-activity-7470203938999476224-2R0y", "note": "Parth Pratap shares a Caterpillar Principal Digital Product Manager, Applied AI role on his team." },
+        { "label": "LinkedIn AI accelerator post", "url": "https://www.linkedin.com/posts/parthpratap_come-work-with-an-amazing-team-thats-is-activity-7460746949516791808-fd7U", "note": "Parth Pratap posts about a Caterpillar AI Accelerator strategy role shaping AI inside Caterpillar." }
+      ],
+      "secondary": [
+        { "label": "Bryan K. LinkedIn post", "url": "https://www.linkedin.com/posts/bryan-kinas_if-youre-in-the-dallas-area-dont-miss-activity-7443002973565227009-UquM", "note": "Caterpillar AI lead shares ProductCamp Dallas spotlight naming Parth Pratap as a product and AI strategist." },
+        { "label": "Caterpillar digital technology page", "url": "https://www.caterpillar.com/en/company/innovation/digital.html", "note": "Company page provides context for Caterpillar's digital and technology work." }
+      ]
+    }
+  }
+]

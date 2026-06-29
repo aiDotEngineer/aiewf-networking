@@ -1,0 +1,257 @@
+[
+  {
+    "lookupKey": "1nq609j",
+    "displayName": "Adel Elmahdy",
+    "headline": "Software engineer at Coactive AI working in multimodal AI infrastructure",
+    "company": "Coactive AI",
+    "title": "Software Engineer",
+    "location": "San Jose, US",
+    "tags": ["software engineering", "multimodal AI", "visual search", "AI infrastructure"],
+    "confidence": "low",
+    "confidenceNote": "Coactive AI's San Jose presence and product area are verified, but no strong public profile ties Adel Elmahdy to Coactive AI. Avoid conflating with other public Adel Elmahdy AI research profiles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Adel is listed for this event as a software engineer at Coactive AI, a San Jose-based multimodal AI company focused on making image, video, and audio content searchable and analyzable. This is a provisional match for conversations about visual AI systems, media intelligence workflows, and production AI tooling.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Coactive AI contact",
+          "url": "https://www.coactive.ai/contact",
+          "note": "Company location and contact surface."
+        },
+        {
+          "label": "Coactive multimodal AI platform",
+          "url": "https://www.coactive.ai/product/multimodal-ai-platform",
+          "note": "Company product context."
+        },
+        {
+          "label": "Coactive docs",
+          "url": "https://docs.coactive.ai/docs-guides/introduction/overview",
+          "note": "Technical product documentation."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "MIT News",
+          "url": "https://news.mit.edu/2025/coactive-helps-machines-understand-visual-content-ai-0609",
+          "note": "Secondary profile of Coactive's visual-content AI work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1llndks",
+    "displayName": "Aditya Jami",
+    "headline": "Meltwater technology leader focused on enterprise AI, media intelligence, and large-scale data systems",
+    "company": "Meltwater",
+    "title": "Chief Technology Officer",
+    "location": "San Francisco, US",
+    "tags": ["enterprise AI", "media intelligence", "data platforms", "knowledge graphs", "engineering leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Strong public evidence matches Aditya Jami at Meltwater in San Francisco, but public sources identify him as CTO rather than the submitted AI Software Engineer title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aditya is a technology leader at Meltwater working across AI, media intelligence, and large-scale data products. Public profiles emphasize AI and data science strategy, multimodal data management, cloud ML, information networks, and knowledge graphs.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Meltwater",
+          "url": "https://www.meltwater.com/en/our-story",
+          "note": "Company leadership and story page."
+        },
+        {
+          "label": "Stanford profile",
+          "url": "https://cs.stanford.edu/people/adityaj/",
+          "note": "Personal academic/profile page."
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/adityajami",
+          "note": "Public code profile."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/adityajami",
+          "note": "Public social profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Council speaker profile",
+          "url": "https://aicouncil.com/speakers/aditya-jami",
+          "note": "Speaker bio and AI leadership context."
+        },
+        {
+          "label": "Forbes India",
+          "url": "https://www.forbesindia.com/article/leadership/we-will-be-building-ai-from-india-meltwaters-aditya-jami/95371/1",
+          "note": "Interview on Meltwater AI work."
+        },
+        {
+          "label": "Comparably",
+          "url": "https://www.comparably.com/companies/meltwater/aditya-jami",
+          "note": "Executive profile."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03719w7",
+    "displayName": "Aditya Yadav",
+    "headline": "Senior data scientist at Brigit working on fintech data and applied ML",
+    "company": "Brigit",
+    "title": "Senior Data Scientist",
+    "location": "Seattle, US",
+    "tags": ["data science", "fintech", "consumer finance", "machine learning", "financial health"],
+    "confidence": "low",
+    "confidenceNote": "Brigit's product and data-science hiring context are verified, but no strong public profile ties this Aditya Yadav to Brigit or Seattle.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aditya is listed for this event as a senior data scientist at Brigit, a consumer financial health app. The current match is provisional, but the likely conversation area is applied ML in fintech, cash-flow intelligence, credit-building products, and data-driven consumer finance experiences.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Brigit",
+          "url": "https://www.hellobrigit.com/",
+          "note": "Company product surface."
+        },
+        {
+          "label": "Brigit jobs",
+          "url": "https://jobs.ashbyhq.com/brigit/9338bd61-b892-474b-964b-6e5c22285c48",
+          "note": "Company data-science hiring context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Plaid customer story",
+          "url": "https://plaid.com/customer-stories/brigit/",
+          "note": "Brigit product and fintech context."
+        },
+        {
+          "label": "Upbound acquisition announcement",
+          "url": "https://investor.upbound.com/news-releases/news-release-details/upbound-group-enters-definitive-agreement-acquire-brigit-leading",
+          "note": "Secondary company background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1mmbigf",
+    "displayName": "Adnan Masood",
+    "headline": "Chief AI Architect at UST focused on enterprise AI strategy, data-centric AI, and production GenAI",
+    "company": "UST",
+    "title": "Chief AI Architect",
+    "location": "",
+    "tags": ["enterprise AI", "GenAI strategy", "AI governance", "data-centric AI", "Microsoft Regional Director", "speaker"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and high-signal sources consistently identify Adnan Masood as Chief AI Architect at UST and an enterprise AI speaker/author.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Adnan is Chief AI Architect at UST, a Microsoft Regional Director, author, and frequent speaker on enterprise AI. He works on AI strategy, machine learning, cognitive computing, data-centric AI, and operationalizing GenAI for large organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "UST profile",
+          "url": "https://www.ust.com/en/boundless/boundless-thinkers/adnan-masood-phd",
+          "note": "Company profile."
+        },
+        {
+          "label": "Personal site",
+          "url": "https://adnanmasood.com/",
+          "note": "Personal site and speaking/writing footprint."
+        },
+        {
+          "label": "Medium profile",
+          "url": "https://medium.com/@adnanmasood/about",
+          "note": "Public writing profile."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adnano",
+          "note": "Professional profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Microsoft Regional Director profile",
+          "url": "https://mvp.microsoft.com/en-us/RD/profile/529350b9-d547-41f9-9278-20c4acda0341",
+          "note": "Microsoft community profile."
+        },
+        {
+          "label": "Sessionize",
+          "url": "https://sessionize.com/adnan-masood/",
+          "note": "Speaker profile."
+        },
+        {
+          "label": "Denodo DataFest",
+          "url": "https://www.denododatafest.com/session/data-centric-artificial-intelligence-ai-practitioners-perspective",
+          "note": "Data-centric AI speaking context."
+        },
+        {
+          "label": "IDC blog",
+          "url": "https://www.idc.com/resource-center/blog/organizations-seek-competitive-edge-with-ai-centers-of-excellence/",
+          "note": "Enterprise AI centers of excellence context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1d9cnm7",
+    "displayName": "Agustinus Nalwan",
+    "headline": "Global Head of AI at CAR Group and AWS ML Hero focused on AI, data platforms, and computer vision",
+    "company": "CAR Group",
+    "title": "Global Head of AI",
+    "location": "Melbourne, Australia",
+    "tags": ["AI leadership", "data platforms", "computer vision", "AWS", "ML platforms", "automotive"],
+    "confidence": "high",
+    "confidenceNote": "Public LinkedIn, conference, AWS, and speaker sources consistently connect Agustinus Nalwan to CAR Group/carsales AI leadership, data platforms, and AWS ML Hero recognition.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Agustinus is Global Head of AI at CAR Group, formerly described as GM of AI, Data Platform and Data Science at carsales. He is an AWS ML Hero and public speaker with deep experience across software, games, mobile, computer vision, AI, and automotive marketplace data platforms.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://au.linkedin.com/in/agustinus-nalwan",
+          "note": "Professional profile."
+        },
+        {
+          "label": "carsales dev blog",
+          "url": "https://medium.com/carsales-dev/staying-in-the-tech-my-career-journey-de154c315cc3",
+          "note": "First-person career journey."
+        },
+        {
+          "label": "Sessionize",
+          "url": "https://sessionize.com/agustinus-nalwan/",
+          "note": "Speaker profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "YOW! speaker profile",
+          "url": "https://yowcon.com/perth-2023/speakers/2823/agustinus-nalwan",
+          "note": "Conference speaker bio."
+        },
+        {
+          "label": "AWS Heroes webinar",
+          "url": "https://pages.awscloud.com/AWS-Heroes-in-15-How-Carsales-uses-Amazon-SageMaker-Notebooks_2023_0301-SN-MCL_OD",
+          "note": "AWS ML Hero and carsales SageMaker context."
+        },
+        {
+          "label": "CIO Advisor APAC",
+          "url": "https://machine-learning.cioadvisorapac.com/cxoinsights/how-recent-advancement-in-ai-has-been-impacting-businesses-nwid-1955.html",
+          "note": "AI business impact commentary."
+        },
+        {
+          "label": "GOTO expert profile",
+          "url": "https://gotopia.tech/experts?page=0",
+          "note": "Expert/speaker listing."
+        }
+      ]
+    }
+  }
+]

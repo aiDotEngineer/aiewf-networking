@@ -1,0 +1,524 @@
+[
+  {
+    "lookupKey": "05z7vyw",
+    "displayName": "Evandro Sasse",
+    "headline": "CTO and founding team member at Superfiliate",
+    "company": "Superfiliate",
+    "title": "CTO",
+    "location": "Florianopolis, BR",
+    "tags": ["creator commerce", "affiliate marketing", "Rails", "React", "product engineering", "startup engineering"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, and company/team references consistently identify him as Superfiliate CTO and founding team; location comes from GitHub.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and founding team member at Superfiliate, a creator marketing platform for affiliate, referral, ambassador, and loyalty programs. Evandro appears product-oriented and hands-on across Rails, React, Python, UX, and DevOps, with useful context for scaling engineering teams in commerce and creator-economy startups.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://br.linkedin.com/in/evsasse", "note": "Identifies Evandro Sasse as CTO and founding team at Superfiliate; mentions Rails, React, product, Python, UX, and DevOps interests." },
+        { "label": "GitHub profile", "url": "https://github.com/evsasse", "note": "Lists CTO at Superfiliate and location as Florianopolis, Brazil." }
+      ],
+      "secondary": [
+        { "label": "Inc. profile of Superfiliate", "url": "https://www.inc.com/ali-donaldson/i-quit-my-dream-job-working-for-steve-case-then-he-invested-in-my-startup/91203445", "note": "Describes Superfiliate's early team formation and names Evandro Sasse as CTO." },
+        { "label": "Caplight Superfiliate profile", "url": "https://www.caplight.com/company/superfiliate-inc", "note": "Lists Evandro Sasse as CTO, founding team." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rg95ft",
+    "displayName": "Eyal Ben Ezra",
+    "headline": "Co-founder and CEO of Willow, an enterprise control plane for AI agents",
+    "company": "Willow",
+    "title": "CEO",
+    "location": "Tel Aviv, IL",
+    "tags": ["AI agents", "enterprise security", "governance", "MCP", "access control", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Willow's own blog and Eyal's LinkedIn consistently identify him as CEO and co-founder; multiple secondary funding articles corroborate the company focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Willow, building governance, access control, audit, and revocation infrastructure for enterprise AI agents. Useful match for attendees working on agent security, MCP governance, platform engineering, and enterprise AI rollout.",
+    "sources": {
+      "primary": [
+        { "label": "Willow launch blog", "url": "https://withwillow.ai/blog/meet-willow-formerly-webrix", "note": "Authored by Eyal Ben Ezra and names him as CEO and co-founder; explains Willow's AI agent governance layer." },
+        { "label": "LinkedIn profile", "url": "https://il.linkedin.com/in/eyalbe", "note": "Identifies Eyal Ben Ezra as CEO at Willow and based in Tel Aviv-Yafo." },
+        { "label": "Willow seed funding blog", "url": "https://withwillow.ai/blog/willow-7m-seed-funding", "note": "Company-authored description of Willow's control plane for enterprise AI agents." }
+      ],
+      "secondary": [
+        { "label": "FinTech Global funding coverage", "url": "https://fintech.global/2026/06/05/hetz-ventures-backs-willows-7m-ai-agent-security-play/", "note": "Reports Willow's $7M seed and names Eyal Ben Ezra as CEO and former Wix engineer." },
+        { "label": "SecurityWeek funding coverage", "url": "https://www.securityweek.com/willow-raises-7-million-for-securing-autonomous-ai-agents/", "note": "Covers Willow's autonomous AI agent security positioning and quotes Ben Ezra." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "05keewz",
+    "displayName": "Eyal Blum",
+    "headline": "Software engineer at Figma focused on AI coding adoption and mobile/product engineering",
+    "company": "Figma",
+    "title": "Software Engineer",
+    "location": "San Francisco, CA",
+    "tags": ["Figma", "AI coding", "developer productivity", "mobile engineering", "Kotlin", "product quality"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and AI Engineer schedule match the Figma role; public evidence is thinner than for founder profiles, so confidence is medium.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineer at Figma with public writing on making AI coding tools work through planning artifacts, design docs, and implementation plans. Likely a strong match for conversations about developer velocity, engineering process, mobile/product quality, and practical AI adoption inside product teams.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/eyalg", "note": "Identifies Eyal Blum as a software engineer at Figma with 15+ years of engineering experience." },
+        { "label": "Medium profile", "url": "https://medium.com/@eyalg", "note": "Lists Eyal Blum's writing, including AI coding workflow and Android/Kotlin articles." },
+        { "label": "Medium article", "url": "https://medium.com/@eyalg/testing-androidx-room-kotlin-coroutines-2d1faa3e674f", "note": "Older technical article showing Android, Kotlin, coroutine, and testing interests." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises", "note": "Lists Eyal Blum as a Figma software engineer speaking on AI coding adoption." },
+        { "label": "Mesh profile", "url": "https://me.sh/profile/eyal-guthmann", "note": "Aggregates LinkedIn-derived details including Figma role and San Francisco location." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1egewxe",
+    "displayName": "Felipe Barreiros",
+    "headline": "Senior product engineer at AWS and product.engineer author",
+    "company": "AWS | Product.Engineer",
+    "title": "Product Engineer",
+    "location": "Austin, TX",
+    "tags": ["product engineering", "AWS", "AI product development", "developer education", "entrepreneurship", "TEDx"],
+    "confidence": "high",
+    "confidenceNote": "Product.engineer author page, LinkedIn, TED, and event listings consistently identify Felipe's AWS product engineering, TEDx, Global Shaper, and entrepreneurship background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior product engineer at AWS and author at product.engineer, writing about engineers owning the full product cycle. Felipe also has founder, developer education, TEDx, and World Economic Forum Global Shaper credentials, making him a strong match for product-minded engineers, AI tooling builders, and startup operators.",
+    "sources": {
+      "primary": [
+        { "label": "product.engineer authors page", "url": "https://www.product.engineer/authors", "note": "Lists Felipe Barreiros as Sr. Product Engineer at AWS, author, TEDx speaker, Global Shaper, and founder with exits." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/felipebarreiros", "note": "Identifies Felipe as Product Engineer at AWS, TEDx speaker, Global Shaper, and entrepreneur." },
+        { "label": "product.engineer article", "url": "https://www.product.engineer/blog/how-to-become-a-product-engineer", "note": "Shows Felipe's product engineering writing and author bio." }
+      ],
+      "secondary": [
+        { "label": "TED talk page", "url": "https://www.ted.com/talks/felipe_barreiros_como_ficar_de_recuperacao_a_vida_toda_me_fez_criar_uma_escola", "note": "TEDxJoaoPessoa talk page for Felipe Barreiros." },
+        { "label": "Lu.ma NewHack Open Class", "url": "https://luma.com/ang659k7", "note": "Event bio describes Felipe's AWS product engineering, TEDx, Global Shaper, AI, product, and entrepreneurship background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1sktlfa",
+    "displayName": "Felix Schmidt",
+    "headline": "Co-founder of CareNext, working on patient admission and discharge workflows",
+    "company": "CareNext GmbH",
+    "title": "Co-Founder & Managing Director",
+    "location": "Nurnberg, DE",
+    "tags": ["healthcare software", "patient transfer", "care facilities", "business development", "digital health", "Germany"],
+    "confidence": "high",
+    "confidenceNote": "CareNext's own team page and LinkedIn identify Felix Schmidt as a CareNext founder in Nurnberg; secondary company database corroborates founder status.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of CareNext, focused on partner and business development for healthcare workflow software. CareNext supports patient transfer, admission management, and discharge management for care facilities, care services, and clinics in Germany.",
+    "sources": {
+      "primary": [
+        { "label": "CareNext team profile", "url": "https://carenext.net/team/felix-schmidt/", "note": "CareNext's site identifies Felix Schmidt as co-founder and responsible for partner and business development." },
+        { "label": "LinkedIn profile", "url": "https://de.linkedin.com/in/felix-schmidt-58b849170", "note": "Identifies Felix Schmidt as founder at CareOne | CareNext GmbH and based in Nurnberg." }
+      ],
+      "secondary": [
+        { "label": "Tracxn CareNext company profile", "url": "https://tracxn.com/d/companies/carenext/__C2XWQk4bklxsPfMliovxE8Pge02CdIrpNQODJUHGb_M", "note": "Lists CareNext GmbH as a German company founded by Daniel Eberhardt, Daniel Ederer, and Felix Schmidt, focused on patient admission and discharge software." },
+        { "label": "CareNext LinkedIn post", "url": "https://de.linkedin.com/posts/carenext_im-interview-mit-felix-schmidt-activity-7341726864886956032-B_mf", "note": "CareNext company post references an interview with Felix Schmidt about the future of care and change management." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "13aio7b",
+    "displayName": "Femi Idowu",
+    "headline": "Gen AI and cloud data architect focused on Azure AI, data platforms, IoT, and enterprise AI governance",
+    "company": "Microsoft",
+    "title": "AI Architect",
+    "location": "Zurich, Switzerland",
+    "tags": ["generative AI", "Azure", "data architecture", "cloud solutions", "IoT", "AI governance"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public event and Microsoft partner-training sources match Femi Idowu at Microsoft in AI/data/cloud architecture roles; current exact title varies across sources between AI Architect, Gen AI Architect, Cloud Data Architect, and Senior Cloud Solution Architect.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Femi is a Microsoft AI and cloud data architect working across Azure AI, Data + AI solution architecture, IoT, data governance, and confidential computing. Useful match for conversations on enterprise GenAI adoption, Azure OpenAI, AI governance, and production data-platform modernization.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://ch.linkedin.com/in/femi-idowu-b8a4141", "note": "Public LinkedIn result identifies Femi Idowu in Zurich with Microsoft credentials." },
+        { "label": "Cloud Champion Microsoft partner training", "url": "https://also.cloudchampion.fi/c/microsoft-tech-team-presents-learn-it-all-feb-23/", "note": "Lists Femi Idowu as Senior Cloud Solution Architect Data & AI at Microsoft for an IoT and Digital Twins session." }
+      ],
+      "secondary": [
+        { "label": "ODSC AI Executive Summit speaker listing", "url": "https://odsc.ai/east/aix-east/", "note": "Lists Femi Idowu as Gen AI Architect at Microsoft." },
+        { "label": "Fashion Law London speaker post", "url": "https://www.linkedin.com/posts/fashion-law-london_meet-the-speakers-femi-idowu-cloud-solutions-activity-7194960400705056768-Ysx4", "note": "Describes his Microsoft cloud data architecture work across AI, ML, big data, Azure OpenAI, IoT, GRC, and confidential computing." },
+        { "label": "IPKat Fashion Law London event listing", "url": "https://ipkitten.blogspot.com/2024/03/interested-in-exploring-ai-in-fashion.html", "note": "Lists Femi as Cloud Solutions Architect (Data + AI), Microsoft, speaking on AI in fashion." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qqo4s9",
+    "displayName": "Fernando Orta",
+    "headline": "Founder and CEO of Podemos Progresar, a Mexican microfinance platform serving women micro-entrepreneurs",
+    "company": "Podemos Progresar",
+    "title": "CEO",
+    "location": "Mexico City, Mexico",
+    "tags": ["fintech", "microfinance", "financial inclusion", "impact", "Mexico", "entrepreneurship"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, investor materials, EY, and media sources consistently identify Fernando Orta as founder/CEO of Podemos Progresar.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Fernando founded Podemos Progresar to expand access to financial services for women micro-entrepreneurs in Mexico. He is a strong match for attendees interested in financial inclusion, impact-oriented fintech, microfinance operations, and scaling purpose-led services in emerging markets.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://mx.linkedin.com/in/fernando-orta-2505149", "note": "Identifies Fernando Orta as CEO and Founder of Podemos Progresar." },
+        { "label": "Podemos Progresar LinkedIn", "url": "https://www.linkedin.com/company/podemos-progresar", "note": "Company page describes Podemos Progresar as a Mexican microfinance organization supporting women entrepreneurs." }
+      ],
+      "secondary": [
+        { "label": "Alloy Merchant Finance investment announcement", "url": "https://www.globalprivatecapital.org/app/uploads/2021/07/2021-07-09-Podemos-Press-Release-ENGLISH-002.pdf", "note": "States Podemos was founded in 2010 by Fernando Orta and focuses on supporting women with micro businesses." },
+        { "label": "EY Entrepreneur Of The Year Mexico 2021", "url": "https://www.ey.com/es_mx/ey-entrepreneur-of-the-year-mexico/2021", "note": "Lists Fernando Orta of Podemos Progresar as winner in the En aceleracion category." },
+        { "label": "Mexico Business News contributor page", "url": "https://mexicobusiness.news/media/audioarticle/2023/08/08/taking-full-responsibility-powerful-game-changer", "note": "Attributes an expert contributor article to Fernando Orta, CEO of Podemos Progresar." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qan0ch",
+    "displayName": "Filip Makraduli",
+    "headline": "Machine learning engineer and developer relations practitioner building small-model inference and AI search infrastructure at Superlinked",
+    "company": "Superlinked",
+    "title": "Machine Learning Engineer",
+    "location": "London, United Kingdom",
+    "tags": ["machine learning", "developer relations", "AI infrastructure", "inference", "vector search", "retrieval", "open source"],
+    "confidence": "high",
+    "confidenceNote": "GitHub, LinkedIn, Substack, and recent talk coverage consistently match Filip Makraduli to Superlinked, ML engineering, DevRel, and small-model inference work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Filip works at the intersection of ML engineering, DevRel, vector search, and inference infrastructure. He is a useful match for builders working on AI search, retrieval, embeddings, agents, open-source model serving, and taking small models into production.",
+    "sources": {
+      "primary": [
+        { "label": "GitHub profile", "url": "https://github.com/fm1320", "note": "Self-described Machine Learning Engineer and DevRel currently working on Superlinked small-model inference for AI search, retrieval, and agents." },
+        { "label": "LinkedIn profile", "url": "https://uk.linkedin.com/in/filipmakraduli", "note": "Lists Superlinked, London, Imperial College London, and related ML/NLP background." },
+        { "label": "Substack", "url": "https://filipmakraduli.substack.com/", "note": "Personal AI writing page describing him as a full-time ML engineer interested in AI and technology." }
+      ],
+      "secondary": [
+        { "label": "StartupHub.ai talk coverage", "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/superlinked-s-filip-makraduli-on-small-model-inference-infrastructure", "note": "Summarizes his AI Engineer Europe talk on small-model inference infrastructure at Superlinked." },
+        { "label": "AI Engineer YouTube talk", "url": "https://www.youtube.com/watch?v=qdh_x-uRs9g", "note": "Talk listing for 'The Small Model Infrastructure Nobody Built (So We Did)' by Filip Makraduli, Superlinked." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1dlxd37",
+    "displayName": "Fiona Crowe",
+    "headline": "CEO of St Catherine's College, leading residential-college strategy, student community, expansion, and education innovation",
+    "company": "St Catherine's College INC",
+    "title": "Chief Executive Officer",
+    "location": "Perth, Western Australia",
+    "tags": ["education", "higher education", "leadership", "residential college", "student experience", "AI education", "governance"],
+    "confidence": "high",
+    "confidenceNote": "St Catherine's College and EduFest WA sources clearly identify Fiona Crowe as CEO and describe her leadership responsibilities.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Fiona leads St Catherine's College across UWA and Curtin residential-college communities, with work spanning student experience, infrastructure expansion, leadership programs, and partnerships. She is a strong match for conversations on education innovation, youth entrepreneurship, institutional leadership, and AI-enabled learning communities.",
+    "sources": {
+      "primary": [
+        { "label": "St Catherine's College leadership page", "url": "https://www.stcats.com.au/about-us/our-people", "note": "Lists Fiona Crowe as CEO and Board Member, and includes her CEO statement on the College's strategy and community." },
+        { "label": "AITAI network page", "url": "https://www.aitai.org.au/community", "note": "Lists Fiona Crowe as CEO at St Cats in the AITAI team; AITAI is an initiative of St Catherine's College." }
+      ],
+      "secondary": [
+        { "label": "EduFest WA speaker profile", "url": "https://www.edufestwa.com/speakers/fiona-crowe", "note": "Describes her role developing the College's reputation, fostering an 800-person community, and overseeing major infrastructure projects." },
+        { "label": "St Catherine's College UWA Resident Handbook 2026", "url": "https://stcatherinescollegedemo.squarespace.com/s/Handbook_UWA_2026.pdf", "note": "Identifies Fiona Crowe as CEO of St Catherine's College Inc." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "02praoq",
+    "displayName": "Fiora Au",
+    "headline": "Head of Data & Analytics at LIC, combining agritech data strategy, product leadership, governance, and transformation experience",
+    "company": "Livestock Improvement Corporation",
+    "title": "Head of Data & Analytics",
+    "location": "Hamilton, New Zealand",
+    "tags": ["data analytics", "agritech", "product leadership", "governance", "transformation", "healthtech", "New Zealand"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn search results, an Equestrian Sports New Zealand nomination PDF, and third-party org data consistently identify Fiora Au as Head of Data & Analytics at LIC; location is inferred from the participant record and LIC's Hamilton/Newstead base.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Fiora leads data and analytics at LIC, a New Zealand dairy agritech cooperative, and brings prior product, governance, startup, healthtech, and transformation experience. She is a useful match for attendees interested in applied data strategy, agritech, product-led transformation, and governance in technology-heavy organizations.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://nz.linkedin.com/in/fiora-au", "note": "Public LinkedIn result lists Fiora Au as Head of Data & Analytics at Livestock Improvement Corporation and a board member." },
+        { "label": "Equestrian Sports New Zealand nomination PDF", "url": "https://www.nzequestrian.org.nz/wp-content/uploads/Fiora_NOM.pdf", "note": "Fiora's nomination profile states she is Head of Data & Analytics at LIC, leading transformational data strategy and execution." },
+        { "label": "LIC website", "url": "https://www.lic.co.nz/", "note": "Company site describes LIC's dairy genetics, herd testing, MINDA, and farm-data services." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/techwondoe/org-chart/fiora-au", "note": "Summarizes Fiora's current LIC role and prior product, advisory, and technology leadership roles." },
+        { "label": "Women in Tech podcast profile", "url": "https://www.womenintechshow.com/fiora-au-of-orion-health-revolutionizing-global-healthcare-women-in-tech-new-zealand/", "note": "Older profile documenting Fiora's Orion Health background in healthcare software and technology." },
+        { "label": "LIC company profile on Yahoo Finance", "url": "https://nz.finance.yahoo.com/quote/LIC.NZ/profile/", "note": "Places Livestock Improvement Corporation in Hamilton, New Zealand and describes its data-recording and farm-management information services." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0pd8124",
+    "displayName": "Flor Ronsmans De Vry",
+    "headline": "Alchemy engineering lead building smart-wallet, onboarding, and agentic payments infrastructure",
+    "company": "Alchemy",
+    "title": "Tech Lead, Internal AI",
+    "location": "San Francisco, CA, US",
+    "tags": ["web3", "smart wallets", "agentic payments", "developer platforms", "NFT infrastructure", "startup acquisitions"],
+    "confidence": "high",
+    "confidenceNote": "Self-authored LinkedIn and multiple acquisition reports connect Flor Ronsmans De Vry to HeyMint, Alchemy, smart wallets, and current Alchemy work; the exact 'Internal AI' title appears to come from the participant record rather than public pages.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Flor works on Alchemy's wallet and financial-services infrastructure, with recent public work around Agentcard and secure agentic payments. They previously co-founded and served as CTO of HeyMint, which joined Alchemy to expand smart-wallet onboarding and NFT launch tooling.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/florrdv", "note": "Public profile snippet lists Flor Ronsmans De Vry as Financial Services at Alchemy and previously HeyMint, acquired by Alchemy." },
+        { "label": "LinkedIn post on HeyMint joining Alchemy", "url": "https://www.linkedin.com/posts/florrdv_alchemy-acquires-nft-launchpad-heymint-to-activity-7331760125814157312-KgEs", "note": "Self-authored post describes HeyMint's work, co-founders, user scale, and joining Alchemy." },
+        { "label": "Slash x Alchemy blog", "url": "https://www.slash.com/blog/slash-alchemy", "note": "Identifies Flor Ronsmans De Vry as Alchemy Wallets Lead in the context of on-chain payments infrastructure." }
+      ],
+      "secondary": [
+        { "label": "The Block acquisition coverage", "url": "https://www.theblock.co/post/355479/alchemy-acquires-heymint-develop-alchemy-smart-wallets", "note": "Reports Alchemy's acquisition of HeyMint and quotes Flor Ronsmans De Vry on onboarding." },
+        { "label": "crypto.news acquisition coverage", "url": "https://crypto.news/alchemy-acquires-nft-launchpad-heymint-to-accelerate-smart-wallet-development/", "note": "Reports Flor as HeyMint co-founder and CTO joining Alchemy to support smart-wallet development." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0708fyh",
+    "displayName": "Florian Fontaine-Papion",
+    "headline": "AI solutions leader helping enterprises put frontier open-weight models into production",
+    "company": "Reflection AI",
+    "title": "Director of AI Solutions",
+    "location": "San Francisco, CA, US",
+    "tags": ["frontier AI", "open-weight models", "enterprise AI", "AI solutions", "robotics", "climate tech"],
+    "confidence": "high",
+    "confidenceNote": "Public LinkedIn snippets and the AI Engineer event page identify him as Head of AI Solutions at Reflection AI in San Francisco; 'Director' is preserved from the participant record though public pages use 'Head'.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Florian leads AI solutions work at Reflection AI, focused on taking frontier open intelligence into enterprise production. His background includes AI startup founding, vision-guided robotics, BCG, and earlier climate-tech work.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/florian-fontaine-papion", "note": "Public profile snippet lists Head of AI Solutions at ReflectionAI in the San Francisco Bay Area." },
+        { "label": "LinkedIn Reflection AI post", "url": "https://www.linkedin.com/posts/florian-fontaine-papion_the-first-time-i-heard-about-reflection-ais-activity-7382077041971511296-uBXn", "note": "Self-authored post describes Reflection AI's mission around frontier open-weight models and enterprise AI transformation." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer World's Fair side-event listing", "url": "https://www.ai.engineer/worldsfair", "note": "Lists Florian Fontaine-Papion as Reflection's Head of AI Solutions for a Reflection-hosted event." },
+        { "label": "French Tech Journal EyePick listing", "url": "https://www.frenchtechjournal.com/la-machine-18-mistral-ai-shakes-its-moneymaker-2/", "note": "Mentions Florian Fontaine-Papion as an EyePick founder, supporting prior AI/robotics startup background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0g9c62c",
+    "displayName": "Francesco Bonacci",
+    "headline": "Founder building open-source infrastructure and benchmarks for computer-use agents",
+    "company": "Cua",
+    "title": "Founder & CEO",
+    "location": "San Francisco, CA, US",
+    "tags": ["computer-use agents", "cloud desktops", "AI infrastructure", "open source", "benchmarks", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "YC, GitHub, LinkedIn, and Cua-related pages consistently identify Francesco Bonacci as founder of Cua and connect him to computer-use agent infrastructure.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Francesco is the founder and CEO of Cua, a YC-backed company giving AI agents cloud desktops and open-source computer-use infrastructure. He previously worked on gaming AI at Xbox/Microsoft AI and now writes and ships tooling around sandboxes, CUAs, and Cua-Bench.",
+    "sources": {
+      "primary": [
+        { "label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/cua", "note": "Lists Cua as a San Francisco YC company founded by Francesco Bonacci and describes its cloud desktop product for agents." },
+        { "label": "GitHub profile", "url": "https://github.com/francedot", "note": "Shows Francesco Bonacci and pinned Cua repositories for open-source computer-use agent infrastructure." },
+        { "label": "LinkedIn profile", "url": "https://es.linkedin.com/in/francesco-bonacci-70428a121", "note": "Public profile snippet lists Francesco as Founder at Cua AI (YC X25), previously Gaming AI at Xbox." },
+        { "label": "Cua blog", "url": "https://cua.ai/blog", "note": "Cua team blog includes multiple posts by Francesco Bonacci on computer-use infrastructure." }
+      ],
+      "secondary": [
+        { "label": "Luma Hack_Use judges page", "url": "https://luma.com/hack_use", "note": "Identifies Francesco Bonacci as Founder & CEO of Cua and an early builder in computer-use agents." },
+        { "label": "Orange Collective Cua portfolio page", "url": "https://www.orangecollective.vc/portfolio/cua", "note": "Describes Cua's open-source framework for AI agents controlling operating systems and notes Francesco's prior Xbox/Microsoft AI work." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0fcmy8e",
+    "displayName": "Francis Suo",
+    "headline": "Enterprise AI and analytics leader applying decision systems at Fortune 10 healthcare scale",
+    "company": "CVS Health",
+    "title": "AVP",
+    "location": "New York, NY, US",
+    "tags": ["enterprise AI", "healthcare analytics", "data products", "decision systems", "retail media", "CVS Health"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and ANA pages support Francis Suo's CVS Health AI/data leadership; title variants include Associate VP of Data, Analytics and AI and enterprise AI systems architect.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Francis leads enterprise AI, data, and analytics work at CVS Health, with a focus on decision systems that govern growth, capital, and learning at large-company scale. His background spans healthcare analytics, AI product leadership, and technical training from Johns Hopkins.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/francissuo", "note": "Public profile snippet lists Francis Suo at CVS Health with an enterprise AI systems and value-delivery headline." }
+      ],
+      "secondary": [
+        { "label": "ANA AI Committee profile", "url": "https://www.ana.net/committee/profile/id/AIFORUM", "note": "Lists Francis Suo as Associate VP of Data, Analytics and AI at CVS Health." },
+        { "label": "ANA Analytics & Data Science Committee profile", "url": "https://www.ana.net/committee/profile/id/ANALYTICS", "note": "Also lists Francis Suo as Associate VP of Data, Analytics and AI at CVS Health." },
+        { "label": "LinkedIn CVS Media Exchange leadership mention", "url": "https://www.linkedin.com/posts/parbinderdhariwal_oneheart-cvshealth-activity-7293301430889660416-ztGV", "note": "Mentions Francis Suo among CVS Media Exchange leadership peers." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0284dbe",
+    "displayName": "Francisco Arceo",
+    "headline": "Open-source AI platform engineer focused on production AI, feature stores, Kubeflow, and Feast",
+    "company": "Red Hat",
+    "title": "Senior Principal Software Engineer",
+    "location": "Basking Ridge, NJ, US",
+    "tags": ["open source AI", "Red Hat OpenShift AI", "Kubeflow", "Feast", "MLOps", "production AI", "feature stores"],
+    "confidence": "high",
+    "confidenceNote": "Red Hat author page, personal site, InfoQ speaker page, and Red Hat articles consistently identify Francisco Javier Arceo as a Senior Principal Software Engineer working on AI/ML, Feast, and Kubeflow; location is from participant record.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Francisco is a Senior Principal Software Engineer at Red Hat OpenShift AI working on production AI infrastructure. He is a Feast maintainer and Kubeflow Steering Committee member, with prior AI/ML, data, and fintech experience at companies including AIG, Goldman Sachs, Fast, and Affirm.",
+    "sources": {
+      "primary": [
+        { "label": "Red Hat author profile", "url": "https://www.redhat.com/en/authors/francisco-javier-arceo", "note": "Official Red Hat page lists Francisco Javier Arceo as Senior Principal Software Engineer, Feast maintainer, and Kubeflow Steering Committee member." },
+        { "label": "Personal site about page", "url": "https://franciscojavierarceo.dev/about-me", "note": "Personal site states he is a Senior Principal Software Engineer at Red Hat OpenShift AI and summarizes prior roles." },
+        { "label": "Red Hat Feast article", "url": "https://www.redhat.com/en/blog/feast-open-source-feature-store-ai", "note": "Red Hat article by Francisco discusses Feast and production AI data challenges." }
+      ],
+      "secondary": [
+        { "label": "InfoQ Dev Summit speaker profile", "url": "https://devsummit.infoq.com/speakers/franciscojavierarceo", "note": "Speaker profile lists Francisco as Senior Principal Software Engineer at Red Hat, Kubeflow Steering Committee member, and Feast maintainer." },
+        { "label": "Muck Rack author profile", "url": "https://muckrack.com/francisco-arceo", "note": "Aggregates Red Hat, InfoQ, and related AI/ML articles by Francisco Javier Arceo." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hgwgnw",
+    "displayName": "Frank Coyle",
+    "headline": "UC Berkeley generative AI lecturer and founder of The AI Edge",
+    "company": "University of California, Berkeley",
+    "title": "Faculty Lecturer",
+    "location": "Berkeley, US",
+    "tags": ["generative AI", "LLMs", "AI education", "computer science", "agentic systems"],
+    "confidence": "high",
+    "confidenceNote": "UC Berkeley profile, personal site, The AI Edge page, and Medium profile consistently identify Frank Coyle as a Berkeley AI lecturer focused on generative AI and LLMs.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Computer science educator teaching generative AI and LLMs at UC Berkeley after three decades at SMU. Useful match for attendees working on AI curriculum, applied LLM systems, knowledge representation, and bridges between neuroscience and artificial intelligence.",
+    "sources": {
+      "primary": [
+        { "label": "UC Berkeley School of Information profile", "url": "https://www.ischool.berkeley.edu/people/frank-coyle", "note": "Official Berkeley profile lists his generative AI and LLM teaching and prior SMU experience." },
+        { "label": "The AI Edge about page", "url": "https://www.codesupreme.ai/about", "note": "The AI Edge page describes Frank teaching graduate generative AI and LLM courses at UC Berkeley." },
+        { "label": "Personal site", "url": "https://www.frank-coyle.ai/", "note": "Personal site describes his move from SMU to UC Berkeley and current focus on generative AI and LLMs." }
+      ],
+      "secondary": [
+        { "label": "Medium profile", "url": "https://medium.com/@coyle_41098", "note": "Profile describes him as a Berkeley AI lecturer and neuroscientist writing about biological and artificial minds." },
+        { "label": "Bologna Business School faculty page", "url": "https://www.bbs.unibo.it/en/faculty/frank-coyle/", "note": "Faculty page lists him as UC Berkeley faculty and summarizes his background in AI, computer science, and neuroscience." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wdrnuz",
+    "displayName": "Frederico Amaral",
+    "headline": "Founder and CEO of Lerian building open-source financial infrastructure",
+    "company": "Lerian",
+    "title": "Founder and CEO",
+    "location": "Sao Paulo, Brazil",
+    "tags": ["fintech", "core banking", "open source", "financial infrastructure", "founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, Lerian company/blog pages, and funding coverage consistently identify Fred Amaral as Lerian founder/CEO and former Dock founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Fintech founder building Lerian, an open-core financial infrastructure company around ledgers, reconciliation, and core banking. Previously founded Dock and brings a mix of technical, banking, and infrastructure-company experience relevant to fintech platform builders.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://br.linkedin.com/in/fredcamaral", "note": "Profile says Fred founded Lerian and that Lerian builds open-source software for financial technology systems." },
+        { "label": "GitHub profile", "url": "https://github.com/fredcamaral", "note": "Profile identifies him as founder of Lerian and Dock and links him to LerianStudio." },
+        { "label": "Lerian company site", "url": "https://lerian.studio/en/", "note": "Company site describes Lerian's open-source ledger and modular financial infrastructure products." },
+        { "label": "Lerian Blog author page", "url": "https://blog.lerian.studio/author/fred/", "note": "Official Lerian blog author page for Fred Amaral with posts on Midaz and financial infrastructure." }
+      ],
+      "secondary": [
+        { "label": "LatamList funding coverage", "url": "https://latamlist.com/lerian-raises-3-1m-in-a-round-led-by-maya-capital/", "note": "Reports Lerian was founded by Fred Amaral and quotes him as founder and CEO." },
+        { "label": "Emerging VC Fellows interview", "url": "https://www.emergingvcfellows.com/blog/fred-amaral", "note": "Interview summarizes his USP, investment banking, Uber, Dock, and Lerian background." },
+        { "label": "Finextra seed round coverage", "url": "https://www.finextra.com/pressarticle/108647/brazilian-financial-infrastructure-startup-lerian-raises-r30-million-in-seed-round", "note": "Funding coverage describes Lerian's financial infrastructure focus and founding team." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0nqcfsf",
+    "displayName": "Frederid Palacios",
+    "headline": "LATAM delivery and software architecture leader at FPT Software",
+    "company": "FPT Software",
+    "title": "LATAM Delivery Director",
+    "location": "San Jose, Costa Rica",
+    "tags": ["nearshore delivery", "software architecture", "enterprise software", "LATAM", "cloud"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn matches the current FPT LATAM Delivery Director role, while Intertec/FPT pages support his senior architecture and LATAM delivery context after Intertec became part of FPT.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "LATAM delivery leader and longtime software architect working across enterprise systems, nearshore teams, and business-critical applications. Good match for conversations about distributed delivery, Costa Rica/LatAm engineering operations, cloud modernization, and high-scale enterprise software.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://cr.linkedin.com/in/frederidp/en", "note": "Profile lists Frederid Palacios as LATAM Delivery Director at FPT Software in the San Jose Metropolitan Area." },
+        { "label": "Intertec official profile", "url": "https://www.intertecintl.com/frederid-palacios-intertec-international", "note": "Official profile describes him as a seasoned software architect with more than 25 years of experience." },
+        { "label": "Intertec about page", "url": "https://www.intertecintl.com/about", "note": "Company page notes FPT Software's majority interest in Intertec and lists Frederid Palacios in executive leadership." }
+      ],
+      "secondary": [
+        { "label": "FPT LATAM nearshore blog", "url": "https://fptsoftware.com/resource-center/blogs/unlock-real-time-tech-collaboration-and-expert-growth-with-fpt-latam", "note": "FPT Software describes its LATAM delivery centers and nearshore software delivery positioning." },
+        { "label": "The Org profile", "url": "https://theorg.com/org/intertec-international/org-chart/frederid-palacios", "note": "The Org profile repeats his CTO/software architecture background and links him to Intertec leadership." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0wxbjoe",
+    "displayName": "Gabe Brown",
+    "headline": "BigBox VR co-founder and Head of Technology for Meta VR games",
+    "company": "BigBox VR / Meta",
+    "title": "Head of Technology, Games",
+    "location": "Seattle, US",
+    "tags": ["VR", "games", "Meta", "live service", "multiplayer"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Meta developer content, BigBox pages, and acquisition coverage consistently connect Gabe Brown to BigBox VR, Meta, POPULATION: ONE, and technology leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VR games technology leader and BigBox VR co-founder behind POPULATION: ONE, now part of Meta. Strong match for attendees building social VR, multiplayer systems, live-service games, and platform-defining consumer experiences.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gabebrownbuilds", "note": "Profile lists Gabe Brown as Head of Technology at BigBox VR, a Meta company." },
+        { "label": "Meta Horizon developer blog", "url": "https://developers.meta.com/horizon/blog/watch-now-oculus-at-gdc-showcase/", "note": "Meta developer content identifies Gabe Brown as a BigBox VR co-founder discussing POPULATION: ONE architecture." },
+        { "label": "BigBox VR announcement", "url": "https://www.bigboxvr.com/nov82018.html", "note": "Official BigBox page names Chia Chin Lee and Gabe Brown as co-founders and describes POPULATION: ONE." },
+        { "label": "X profile", "url": "https://x.com/gabosgab", "note": "Profile identifies him as BigBox VR co-founder and CTO." }
+      ],
+      "secondary": [
+        { "label": "GeekWire acquisition coverage", "url": "https://www.geekwire.com/2021/facebook-acquires-seattle-virtual-reality-gaming-company-bigbox-vr-makers-population-one/", "note": "Reports Facebook's acquisition of Seattle-based BigBox VR and names Gabe Brown as co-founder." },
+        { "label": "Craft executive profile", "url": "https://craft.co/bigbox-vr/executives", "note": "Lists Gabe Brown as Head of Technology, Games for BigBox VR." },
+        { "label": "The Stranger VR article", "url": "https://www.thestranger.com/slog/2021/11/12/62762286/i-went-looking-for-the-metaverse-and-wound-up-punching-myself-in-the-face", "note": "Quotes Gabe Brown as BigBox VR's head of technology on VR motion-comfort design." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0vkzq8w",
+    "displayName": "Gabe De Mesa",
+    "headline": "OpenGov AI agents engineer building production government software assistants",
+    "company": "OpenGov",
+    "title": "Software Engineer III",
+    "location": "San Francisco, US",
+    "tags": ["AI agents", "govtech", "full stack", "TypeScript", "public sector"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Sessionize, personal site, X, and recent AI Engineer talk materials consistently identify Gabe De Mesa as an OpenGov Software Engineer III working on AI agents.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software Engineer III at OpenGov working on AI agents for state and local government software. Brings full-stack experience across TypeScript, React, Python, Go, GraphQL, and AI/ML, with recent public work on scaling OG Assist in production.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/gabedemesa", "note": "Profile lists him as Software Engineer III at OpenGov with full-stack and AI/ML skills." },
+        { "label": "Sessionize speaker profile", "url": "https://sessionize.com/gabe-de-mesa/", "note": "Speaker profile says he works on OpenGov's AI Agents team and holds CS degrees from UIUC and UC Irvine." },
+        { "label": "Personal site", "url": "https://www.gabedemesa.com/", "note": "Personal site summarizes his full-stack software background, education, and OpenGov project experience." },
+        { "label": "X profile", "url": "https://x.com/jamesjellow", "note": "Profile lists San Francisco location and links to his personal website." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer YouTube talk", "url": "https://www.youtube.com/watch?v=4uFVSLgD2Q4", "note": "Talk features Gabe De Mesa of OpenGov presenting on building and scaling OG Assist." },
+        { "label": "StartupHub.ai coverage", "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/opengov-s-gabe-de-mesa-on-scaling-ai-agents-in-production", "note": "Article summarizes his AI Engineer presentation on OpenGov's production AI agent architecture." }
+      ]
+    }
+  }
+]

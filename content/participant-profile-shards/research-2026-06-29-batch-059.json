@@ -1,0 +1,563 @@
+[
+  {
+    "lookupKey": "04tr9ho",
+    "displayName": "Marquis Wong",
+    "headline": "IMC Trading engineering and AI leader",
+    "company": "IMC Trading",
+    "title": "VP of AI",
+    "location": "Chicago, IL",
+    "tags": ["trading", "engineering", "AI", "options pricing"],
+    "confidence": "medium",
+    "confidenceNote": "Name, company, Chicago, and IMC/Harvey Mudd sources match; exact VP of AI title is from the participant row and was not independently confirmed.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Marquis Wong is publicly tied to IMC Trading in Chicago and to engineering/development leadership, including an IMC-sponsored Harvey Mudd Clinic liaison role. The participant row lists him as VP of AI; public sources found support IMC engineering leadership but not that exact title.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/marquis-wong-70386614", "note": "Lists Marquis Wong at IMC Trading in Chicago." },
+        { "label": "Harvey Mudd Clinic project", "url": "https://www.hmc.edu/clinic/2023/numerical-integration-of-parabolic-pdes/", "note": "Names Marquis Wong '11 as an IMC Trading liaison for a numerical options-pricing project." }
+      ],
+      "secondary": [
+        { "label": "Built In Chicago profile", "url": "https://www.builtinchicago.org/articles/advantages-staying-company-long-haul-imc-trading", "note": "Profiles Marquis Wong as a long-tenured IMC Trading software engineer." },
+        { "label": "The Org IMC development management", "url": "https://theorg.com/org/imc-trading/teams/development-management", "note": "Directory lists Marquis Wong as Development Team Lead at IMC Trading." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jetnbs",
+    "displayName": "Marsel Shaibekov",
+    "headline": "Founder and CEO of 312 School",
+    "company": "312 School",
+    "title": "Founder",
+    "location": "Schaumburg, IL",
+    "tags": ["education", "DevOps", "cloud", "training", "SRE"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific and company-specific public sources connect Marsel Shaibekov/Marsel S. to 312 School as founder or CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Marsel Shaibekov is publicly tied to 312 School as founder/CEO. 312 School is a Schaumburg-based technology training organization focused on DevOps, cloud, Linux, AWS, containers, and site reliability engineering.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/marsel7", "note": "Lists Marsel S. as Founder at 312 School." },
+        { "label": "312 School LinkedIn company page", "url": "https://www.linkedin.com/company/312-school", "note": "Company page lists Marsel S. among employees." },
+        { "label": "Instagram profile", "url": "https://www.instagram.com/marsel_shaibekov/", "note": "Identifies him as founder of 312 School and 312 Tech Community." },
+        { "label": "312 Tech Community Facebook post", "url": "https://www.facebook.com/312.school.devops/posts/meet-marsel-we-would-like-to-start-introducing-you-to-the-members-of-312-school-/578744123605373/", "note": "Introduces Marsel as 312 School co-founder and instructor." }
+      ],
+      "secondary": [
+        { "label": "Clutch Krazimo review", "url": "https://clutch.co/profile/krazimo", "note": "Verified review identifies Marsel Shaibekov as CEO of 312 School." },
+        { "label": "The Org profile", "url": "https://theorg.com/org/312-school/org-chart/marsel-s", "note": "Directory lists Marsel S. as CEO at 312 School." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "043k5bh",
+    "displayName": "Martin Zatkovič",
+    "headline": "AI integration lead at Seznam.cz; SEO and LLM practitioner",
+    "company": "Seznam.cz",
+    "title": "Software Developer",
+    "location": "Czechia",
+    "tags": ["AI", "SEO", "LLMs", "RAG", "agents", "Seznam"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub, LinkedIn, and event pages consistently identify the same person and Seznam.cz AI-integration role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Martin Zatkovič is publicly listed as leading AI integration at Seznam.cz and working on agents, RAG, embeddings, SEO, and LLM topics. He publishes through his personal site and appears on Czech SEO/AI event programs.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://www.zatkovic.cz/", "note": "States he handles AI integration at Seznam and works on SEO and LLM topics." },
+        { "label": "GitHub profile", "url": "https://github.com/zatkoma", "note": "Lists Martin Zatkovič as Head of AI integration in Seznam.cz." },
+        { "label": "LinkedIn profile", "url": "https://cz.linkedin.com/in/martin-zatkovic", "note": "Lists Martin Zatkovič as leading AI integration at Seznam.cz." }
+      ],
+      "secondary": [
+        { "label": "AI Bootcamp", "url": "https://www.aibootcamp.cz/", "note": "Lists Martin Zatkovič as Lead of AI integration at Seznam.cz." },
+        { "label": "SEO Restart 2024", "url": "https://www.seorestart.cz/2024", "note": "Lists Martin Zatkovič as a speaker on SEO and search changes." },
+        { "label": "TechTower AI & Marketing 2025", "url": "https://www.techtower.cz/en/events/ai-marketing-2025/", "note": "Lists him as Lead of AI integration at Seznam.cz." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hdy96o",
+    "displayName": "Masashi Enya",
+    "headline": "MOON-X co-founder, director, CTO, and global business leader",
+    "company": "MOON-X Inc.",
+    "title": "Co-founder, Director /Executive Vice President",
+    "location": "Tokyo, Japan",
+    "tags": ["ecommerce", "D2C", "global business", "technology leadership", "Japan"],
+    "confidence": "high",
+    "confidenceNote": "Official MOON-X pages and person-specific profiles consistently match name, company, co-founder/director role, and international leadership responsibilities.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Masashi Enya is a MOON-X co-founder and director with public leadership roles tied to MOON-X USA and MOON-X Shanghai. Public profiles also describe prior CTO and technology leadership experience, including Aperza and Rakuten-related work.",
+    "sources": {
+      "primary": [
+        { "label": "MOON-X about page", "url": "https://www.moon-x-japan.co.jp/about/en", "note": "Lists Masashi Enya in MOON-X management and as Director/CEO of MOON-X USA." },
+        { "label": "MOON-X USA launch news", "url": "https://www.moon-x.com/news/en/l2CCx8-B", "note": "Names Masashi Enya as CEO of MOON-X USA." },
+        { "label": "MOON-X Shanghai launch news", "url": "https://www.moon-x.com/news/en/BFXly5Li", "note": "Names him as Co-Founder, Director, and Head of Global Business." },
+        { "label": "LinkedIn profile", "url": "https://vn.linkedin.com/in/masashi-enya-21792430", "note": "Lists Masashi Enya as Co-founder at MOON-X Inc." },
+        { "label": "Wantedly profile", "url": "https://sg.wantedly.com/id/masashi_enya", "note": "Lists Masashi Enya as MOON-X co-founder/director." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/moon-x/org-chart/masashi-enya", "note": "Summarizes co-founder/director role and prior Rakuten/Aperza experience." },
+        { "label": "EquityZen MOON-X profile", "url": "https://equityzen.com/company/moonx/", "note": "Lists Masashi Enya in MOON-X management as Co-founder CTO." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12o0db1",
+    "displayName": "Matheus Anzzulin",
+    "headline": "CTO and co-founder of Payfy",
+    "company": "payfy",
+    "title": "CTO",
+    "location": "Brazil",
+    "tags": ["fintech", "expense management", "CTO", "software", "payments"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Payfy fundraising profile, and Brazilian startup media sources consistently identify Matheus Anzzulin as Payfy CTO/co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matheus Anzzulin is publicly identified as CTO at Payfy, a Brazilian corporate expense management fintech. Funding and company-profile sources describe Payfy as a platform for corporate cards, reimbursements, approvals, reporting, and expense control.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://br.linkedin.com/in/matheusanzzulin", "note": "Lists Matheus Anzzulin as CTO at Payfy." },
+        { "label": "Payfy Captable profile", "url": "https://captable.com.br/projects/payfy", "note": "Lists Matheus Anzzulin as CTO." }
+      ],
+      "secondary": [
+        { "label": "SC Inova funding article", "url": "https://scinova.com.br/catarinense-payfy-capta-r-4-milhoes-com-bb-ventures/", "note": "Names Matheus Anzzulin as CTO of Payfy." },
+        { "label": "Startups.com.br funding article", "url": "https://startups.com.br/negocios/fintech/bb-ventures-do-banco-do-brasil-injeta-r-4-mi-na-fintech-payfy/", "note": "Names Matheus Anzzulin as a Payfy founder." },
+        { "label": "ZoomInfo Payfy profile", "url": "https://www.zoominfo.com/c/payfy/558162420", "note": "Directory source listing Matheus Anzzulin as Payfy CTO." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "091dndg",
+    "displayName": "Matt Brockman",
+    "headline": "AI engineer at E2B working on cloud sandboxes for agents",
+    "company": "E2B",
+    "title": "AI Engineer",
+    "location": "",
+    "tags": ["AI agents", "sandboxes", "developer infrastructure", "E2B"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific sources connect Matt Brockman to E2B and AI sandbox work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matt Brockman is an AI engineer at E2B, where he writes about and presents on sandbox infrastructure for AI agents. Public E2B and AI Engineer materials connect him to OpenAI Agents SDK sandbox support and a workshop on sandbox failure modes.",
+    "sources": {
+      "primary": [
+        { "label": "E2B blog post", "url": "https://e2b.dev/blog/e2b-is-now-in-agents-sdk", "note": "Lists Matt Brockman as AI Engineer and author of an E2B post about OpenAI Agents SDK sandbox support." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/matt-brockman-629214139", "note": "Public profile identifies him with E2B." },
+        { "label": "GitHub profile", "url": "https://github.com/matthewlouisbrockman", "note": "Person-specific developer profile under Matt Brockman." },
+        { "label": "X profile", "url": "https://x.com/badphilosopher", "note": "Person-specific public profile used by E2B workshop announcements." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Workshops+Day+1", "note": "Lists Matt Brockman of E2B on the workshop schedule." },
+        { "label": "E2B LinkedIn workshop post", "url": "https://www.linkedin.com/posts/e2b-dev_our-own-matt-brockman-is-hosting-a-workshop-activity-7474948307899863040-uFuN", "note": "E2B says Matt Brockman is hosting a workshop on sandbox failure modes." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hho8k3",
+    "displayName": "Matt Dailey",
+    "headline": "Founder of Ref, building context and review infrastructure for coding agents",
+    "company": "Ref.",
+    "title": "Founder",
+    "location": "",
+    "tags": ["MCP", "coding agents", "developer tools", "Ref", "documentation search"],
+    "confidence": "high",
+    "confidenceNote": "Personal, company, and ecosystem sources consistently identify Matt Dailey with Ref/ref.tools and coding-agent context work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matt Dailey is building Ref and publishes about MCP, documentation search, and coding-agent context. Public profiles and posts also describe prior work at Figma and Palantir.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/matthewjdailey", "note": "Public profile says Matt Dailey is building ref.tools." },
+        { "label": "GitHub gists profile", "url": "https://gist.github.com/MatthewDailey", "note": "Person-specific developer profile says Building ref.tools." },
+        { "label": "X profile", "url": "https://x.com/reactiverobot", "note": "Public profile says he is building ref.tools and previously worked at Figma and Palantir." },
+        { "label": "Ref LinkedIn company page", "url": "https://www.linkedin.com/company/ref-tools", "note": "Ref company page lists Matt Dailey among employees." }
+      ],
+      "secondary": [
+        { "label": "PulseMCP guest post", "url": "https://www.pulsemcp.com/posts/pricing-the-unknown-a-paid-mcp-server", "note": "Describes Matt Dailey as founder of Ref." },
+        { "label": "AI in Production LinkedIn post", "url": "https://www.linkedin.com/posts/sterlingchin_excited-to-have-matt-dailey-speaking-at-ai-activity-7454651999368871936-7aN4", "note": "Event post describes him as founder of Ref and gives prior Figma/Palantir context." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0pmjj4n",
+    "displayName": "Matt Koch",
+    "headline": "AI/ML engineering director at Slalom in Denver",
+    "company": "Slalom",
+    "title": "Director of AI/ML Engineering",
+    "location": "Denver, CO",
+    "tags": ["AI ML", "engineering leadership", "consulting", "Slalom", "Denver"],
+    "confidence": "medium",
+    "confidenceNote": "Strong match on name, company, title, and Denver; public depth is limited beyond LinkedIn and alumni notes.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matthew Koch is publicly listed as an AI/ML Engineering Director at Slalom in Denver. A Knox alumni note independently references his promotion to director of software engineering at Slalom Build and Denver relocation context.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/ximsce", "note": "Identifies Matthew Koch as AI/ML Engineering Director at Slalom in Denver." },
+        { "label": "LinkedIn hiring post", "url": "https://www.linkedin.com/posts/ximsce_software-slalombuild-buildthefuture-activity-6950274543865278464-LX0U", "note": "Person-specific post describes Slalom Build hiring in Denver." }
+      ],
+      "secondary": [
+        { "label": "Knox Magazine class notes PDF", "url": "https://www.knox.edu/documents/Magazine/FA2023ClassNotes.pdf", "note": "Alumni note says Matt Koch was promoted to director of software engineering at Slalom Build." },
+        { "label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Matthew/Koch", "note": "Directory snippet repeats the AI/ML Engineering Director at Slalom, Denver profile match." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1tvervh",
+    "displayName": "Matt May",
+    "headline": "Security software engineer; row data says founder of Tabsec",
+    "company": "Tabsec, Inc.",
+    "title": "Founder",
+    "location": "Seattle, WA",
+    "tags": ["security", "detection engineering", "software engineering", "Tabsec"],
+    "confidence": "low",
+    "confidenceNote": "Public person-specific sources support a security-engineering identity, but the Tabsec founder role is row-sourced and not independently confirmed.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matt May has public profiles showing information-security software work, including a LinkedIn profile as Staff Security Software Engineer at Pinterest and a GitHub profile focused on useful security software. The Tabsec founder/company association is from the participant row and was not independently confirmed in person-specific public sources.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/matthewclarkmay", "note": "Public profile identifies Matt May as a Staff Security Software Engineer at Pinterest." },
+        { "label": "GitHub profile", "url": "https://github.com/MatthewClarkMay", "note": "Person-specific profile says he is an information security engineer who writes software." },
+        { "label": "Tabsec website", "url": "https://tabsec.io/", "note": "Company site describes AI agent detection and response; it does not publicly name Matt May." }
+      ],
+      "secondary": [
+        { "label": "T-Pot attack-map credits", "url": "https://github.com/telekom-security/t-pot-attack-map", "note": "Credits original attack map to Matthew Clark May, supporting security-software background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "07kw481",
+    "displayName": "Matt Pocock",
+    "headline": "TypeScript educator and AI Hero creator focused on practical AI engineering",
+    "company": "Total TypeScript / AI Hero",
+    "title": "Educator, content creator and engineer",
+    "location": "",
+    "tags": ["TypeScript", "AI engineering", "education", "developer tools", "content"],
+    "confidence": "high",
+    "confidenceNote": "Multiple first-party profiles and event sources consistently identify Matt Pocock and his Total TypeScript / AI Hero work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matt Pocock is an educator, content creator, and engineer behind Total TypeScript and AI Hero. His public sites describe prior work on the XState core team and at Vercel, and current work teaching AI engineering and TypeScript.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://www.mattpocock.com/", "note": "Identifies him as an educator, content creator, engineer, Total TypeScript author, and AI Hero builder." },
+        { "label": "AI Hero", "url": "https://www.aihero.dev/", "note": "First-party course site says he created Total TypeScript and is building AI Hero." },
+        { "label": "Total TypeScript", "url": "https://www.totaltypescript.com/", "note": "First-party site describes his TypeScript educator role." },
+        { "label": "GitHub profile", "url": "https://github.com/mattpocock", "note": "Developer profile says he is building Total TypeScript and was previously at Vercel and Stately." },
+        { "label": "X profile", "url": "https://x.com/mattpocockuk", "note": "Public profile says he is author of Total TypeScript and AI Hero." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Software+Factories", "note": "Lists Matt Pocock speaking on Building Great Agent Skills." },
+        { "label": "Reactiflux transcript", "url": "https://www.reactiflux.com/transcripts/matt-pocock_mapleleaf", "note": "Interview transcript discusses his XState and Vercel background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wzx92o",
+    "displayName": "Matt White",
+    "headline": "Global CTO of AI at The Linux Foundation; CTO at the PyTorch Foundation",
+    "company": "Linux Foundation / PyTorch",
+    "title": "Global CTO of AI",
+    "location": "Denver, CO",
+    "tags": ["open source AI", "PyTorch", "Linux Foundation", "AI infrastructure", "generative AI"],
+    "confidence": "high",
+    "confidenceNote": "Multiple current primary/first-party sources match name, title, organizations, and AI leadership focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matt White leads AI technical strategy at The Linux Foundation and the PyTorch Foundation. His public materials focus on open-source AI infrastructure, PyTorch, LF AI & Data, generative AI, and AI standards/community work.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://www.matt-white.com/", "note": "Lists Global CTO of AI at Linux Foundation and CTO/former Executive Director at PyTorch Foundation." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mdwdata", "note": "Public profile matches The Linux Foundation/PyTorch leadership role." },
+        { "label": "LF AI & Data blog", "url": "https://lfaidata.foundation/blog/2026/02/12/why-im-joining-the-pytorch-foundation/", "note": "Linux Foundation ecosystem post says White is moving into Global CTO of AI and PyTorch Foundation CTO roles." }
+      ],
+      "secondary": [
+        { "label": "Stanford OpenLab event", "url": "https://openlab.stanford.edu/events/seminar/open-source-ai-infrastructure-and-future-ai-ecosystem-matt-white", "note": "Event page describes him as Global CTO of AI at Linux Foundation and CTO/former Executive Director of PyTorch Foundation." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03bfdmw",
+    "displayName": "Matthew Casper",
+    "headline": "Software engineer at Buildr; open-source developer",
+    "company": "Buildr",
+    "title": "Senior Staff Software Engineer",
+    "location": "San Diego, CA",
+    "tags": ["software engineering", "Ruby", "Rails", "Rust", "developer tools", "SRE"],
+    "confidence": "medium",
+    "confidenceNote": "Name, location, Buildr affiliation, and software-engineering background match across public sources; public sources found list Software Engineer rather than the row's Senior Staff title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matt Casper is publicly listed as a San Diego-based software engineer at Buildr. His GitHub profile shows active public software work, including Rust and developer-tooling projects.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/matt-casper-012ab4a4", "note": "Lists Matt Casper as Software Engineer at Buildr in San Diego." },
+        { "label": "GitHub profile", "url": "https://github.com/mcasper", "note": "Public GitHub profile for Matt Casper with developer-tooling projects." }
+      ],
+      "secondary": [
+        { "label": "Growjo Buildr people listing", "url": "https://growjo.com/company/Buildr", "note": "Lists Matt Casper among Buildr people as Software Engineer." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03ti858",
+    "displayName": "Matthew Davis",
+    "headline": "Senior Partner and Head of Pioneering Intelligence at Flagship Pioneering",
+    "company": "Flagship Pioneering",
+    "title": "Senior Partner, Head of Pioneering Intelligence",
+    "location": "Cambridge, MA",
+    "tags": ["AI", "life sciences", "biotech", "venture creation", "scientific discovery"],
+    "confidence": "high",
+    "confidenceNote": "Current Flagship profile and LinkedIn match the exact name, title, organization, and Cambridge/Flagship context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matthew Davis leads Pioneering Intelligence at Flagship Pioneering, applying AI to innovation in life sciences and adjacent fields. Flagship says he joined in 2024 as Chief AI Scientist for a Pioneering Business Unit focused on sustainability and health ventures.",
+    "sources": {
+      "primary": [
+        { "label": "Flagship Pioneering profile", "url": "https://www.flagshippioneering.com/people/matthew-davis", "note": "First-party profile with Senior Partner and Head of Pioneering Intelligence title." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/matthew-davis-51233386", "note": "Public profile/activity aligns with Flagship Pioneering and Pioneering Intelligence." }
+      ],
+      "secondary": [
+        { "label": "The Org team page", "url": "https://theorg.com/org/flagship-pioneering/teams/pioneering-intelligence", "note": "Lists Matthew Davis on the Pioneering Intelligence team." },
+        { "label": "Lab of the Future USA agenda", "url": "https://www.lab-of-the-future.com/USA/agenda/track-sessions-d2/platform-biology-ai-and-programmable-medicine/", "note": "Speaker listing with same title and organization." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0iizvea",
+    "displayName": "Matthew Eggertson",
+    "headline": "Co-founder and CTO at Recursive Industries; product and technology leader",
+    "company": "Recursive Industries",
+    "title": "Founder & CTO",
+    "location": "San Francisco, CA",
+    "tags": ["startups", "product", "software", "Y Combinator", "insurtech", "AI"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and Recursive Industries public pages support the current affiliation; older coverage supports technical-founder background but not the current Recursive title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matthew Eggertson is publicly listed as Co-Founder and CTO at Recursive Industries and as a Y Combinator alumnus. Earlier public coverage identifies him as CTO of Samos Insurance, with prior experience at Crunchyroll and Flatiron Health.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/matteggertson", "note": "Lists Recursive Industries Co-Founder and CTO and Y Combinator background." },
+        { "label": "Recursive Industries LinkedIn company page", "url": "https://www.linkedin.com/company/recursive-industries", "note": "Company page lists Matthew Eggertson among employees." }
+      ],
+      "secondary": [
+        { "label": "BetaKit coverage of Samos", "url": "https://betakit.com/samos-launches-insurance-product-for-accidental-death-during-surgery/", "note": "Identifies Matt Eggertson as CTO of Samos." },
+        { "label": "Happenstance profile", "url": "https://happenstance.ai/u/fd8776c6-897f-43e0-81da-79a273b9c945", "note": "Aggregated profile summarizing product/technology leadership and prior roles." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jgyyam",
+    "displayName": "Matthew Jewkes",
+    "headline": "Cofounder and CTO at Standard Cybernetics; AI Engineer World's Fair speaker",
+    "company": "Standard Cybernetics",
+    "title": "Cofounder & CTO",
+    "location": "",
+    "tags": ["AI agents", "cybernetics", "software", "developer community"],
+    "confidence": "low",
+    "confidenceNote": "Two person-specific public sources were found, but only the event schedule confirms the current Standard Cybernetics affiliation; older source establishes identity/background but is dated.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matthew Jewkes is listed on the AI Engineer World's Fair schedule as Cofounder and CTO at Standard Cybernetics for the talk \"Superhuman performance is a shape, not just nines.\" An older Signal/Open Whisper Systems post describes him as a software founder and developer-community contributor.",
+    "sources": {
+      "primary": [
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/schedule", "note": "Lists Matthew Jewkes as Cofounder & CTO at Standard Cybernetics." },
+        { "label": "Signal blog", "url": "https://signal.org/blog/winter-lineup-2014/", "note": "Older Open Whisper Systems profile for Matthew Jewkes describing software/community work." }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "0dgi4go",
+    "displayName": "Matthew Smith",
+    "headline": "VP of Engineering at Sharpen",
+    "company": "Sharpen Technologies",
+    "title": "VP of Engineering",
+    "location": "",
+    "tags": ["engineering leadership", "SaaS", "contact center", "software engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org match the name, company, and VP Engineering title; limited first-party biographical detail was found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matt Smith is publicly listed as VP of Engineering at Sharpen. Public company/team directories place him in the Indianapolis/Sharpen context, consistent with an engineering leadership role.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mattsmi", "note": "Lists Matt Smith as VP of Engineering at Sharpen." }
+      ],
+      "secondary": [
+        { "label": "The Org Sharpen HQ page", "url": "https://theorg.com/org/sharpen/offices/hq", "note": "Lists Matt Smith as VP of Engineering at Sharpen." },
+        { "label": "LinkedIn public directory result", "url": "https://qa.linkedin.com/pub/dir/Matt/Smith?trk=prof-samename-searchmore", "note": "Directory result includes Matt Smith, VP of Engineering at Sharpen." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "17lnijx",
+    "displayName": "Matthew Tiemann",
+    "headline": "AI developer at Foundry-Logic building custom AI agents",
+    "company": "Foundry-Logic",
+    "title": "Lead Technology Developer",
+    "location": "Washington, DC",
+    "tags": ["AI agents", "Foundry-Logic", "developer", "agent tools"],
+    "confidence": "medium",
+    "confidenceNote": "Name and Foundry-Logic match across personal LinkedIn, company LinkedIn, and public posts; public title differs slightly from row title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Matthew Tiemann's public LinkedIn profile says he is an AI Developer at Foundry-Logic focused on custom AI agents. His public LinkedIn posts also point to agent tooling work through The Agent Meta; the row title says Lead Technology Developer.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/matthew-tiemann", "note": "Personal profile lists AI Developer at Foundry-Logic building custom AI agents." },
+        { "label": "LinkedIn post: The Agent Meta", "url": "https://www.linkedin.com/posts/matthew-tiemann_the-agent-meta-activity-7355643202491633666-wGQG", "note": "Public post describes building an AI-agent tooling curation site." },
+        { "label": "Foundry-Logic LinkedIn company page", "url": "https://www.linkedin.com/company/foundry-logic", "note": "Company page lists Matthew Tiemann among employees." }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "0ockkie",
+    "displayName": "Max Drake",
+    "headline": "Product engineer at tldraw working on infinite-canvas software and AI demos",
+    "company": "tldraw",
+    "title": "Product Engineer",
+    "location": "London, UK",
+    "tags": ["tldraw", "product engineering", "infinite canvas", "AI UX", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "Name, company, and title match across personal site, tldraw team page, and multiple event bios.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Max Drake's personal site says she is currently a product engineer at tldraw, an infinite canvas SDK company based in London. tldraw's company page lists Max Drake as Product Engineer, and conference bios tie her work to tldraw's SDK and AI demos.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site: work", "url": "https://maxdrake.md/work", "note": "States current product engineer role at tldraw and prior Fermat work." },
+        { "label": "tldraw company page", "url": "https://tldraw.dev/company", "note": "Official team page lists Max Drake as Product Engineer." }
+      ],
+      "secondary": [
+        { "label": "GitNation speaker profile", "url": "https://gitnation.com/person/max_drake", "note": "Conference profile summarizes tldraw role and AI-demo context." },
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?q=Erina+Karati", "note": "Event schedule lists Max Drake of tldraw as Product Engineer." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "151hlsw",
+    "displayName": "Max Kan",
+    "headline": "Tokenomics analyst at SemiAnalysis covering AI model economics and infrastructure",
+    "company": "SemiAnalysis",
+    "title": "Tokenomics Analyst",
+    "location": "San Francisco, CA",
+    "tags": ["SemiAnalysis", "tokenomics", "AI infrastructure", "model economics", "semiconductors"],
+    "confidence": "high",
+    "confidenceNote": "Name, employer, and tokenomics role match across LinkedIn, SemiAnalysis bylines, podcast/article references, and Business Insider.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Max Kan's LinkedIn profile lists SemiAnalysis and Williams College. SemiAnalysis articles credit him as a co-author on AI coding-assistant and fast-token economics coverage, and Business Insider identifies his role as tokenomics analyst at SemiAnalysis.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/maxkan", "note": "Personal profile lists SemiAnalysis and Williams College." },
+        { "label": "SemiAnalysis: The Coding Assistant Breakdown", "url": "https://newsletter.semianalysis.com/p/the-coding-assistant-breakdown-more", "note": "Credits Max Kan as co-author on AI coding-assistant economics coverage." },
+        { "label": "SemiAnalysis: Cerebras Faster Tokens Please", "url": "https://newsletter.semianalysis.com/p/cerebras-faster-tokens-please", "note": "Credits Max Kan as co-author on fast-token and AI infrastructure economics coverage." }
+      ],
+      "secondary": [
+        { "label": "Business Insider", "url": "https://www.businessinsider.com/ai-token-economy-spending-workplace-budgets-usage-caps-software-engineer-2026-6", "note": "Identifies Max Kan as SemiAnalysis tokenomics analyst." },
+        { "label": "SemiAnalysis Weekly podcast", "url": "https://podcasts.apple.com/us/podcast/semianalysis-weekly/id1877544643", "note": "Episode listing includes Max Kan on AI model wars and tokenomics." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "02lt4d6",
+    "displayName": "Maxim Nemchenko",
+    "headline": "Chief Solutions & Technology Architect at Wirestock",
+    "company": "Wirestock",
+    "title": "Chief Solutions & Technology Architect",
+    "location": "Yerevan, Armenia",
+    "tags": ["Wirestock", "solutions architecture", "software engineering", "leadership", "Yerevan"],
+    "confidence": "medium",
+    "confidenceNote": "Name, company, title, and Yerevan location match LinkedIn and The Org; The Org marks the profile unverified, so confidence is not high.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Maxim Nemchenko's LinkedIn result lists him as Chief Solutions & Technology Architect at Wirestock and a startup tech mentor with long-running IT experience. The Org profile places him in Wirestock leadership/engineering and says he joined Wirestock in 2022 after prior software engineering, team lead, and solutions architecture roles.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://am.linkedin.com/in/maxim-nemchenko", "note": "Lists Chief Solutions & Technology Architect at Wirestock and 20+ years in IT." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/wirestock/org-chart/maxim-nemchenko", "note": "Lists Wirestock title, Yerevan location, career history, and education; page is marked unverified." },
+        { "label": "The Org Wirestock leadership team", "url": "https://theorg.com/org/wirestock/teams/leadership-team", "note": "Lists Maxim Nemchenko as Chief Solutions & Technology Architect." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0xuhxdi",
+    "displayName": "Maxime Rivest",
+    "headline": "Applied AI engineer and DSPy contributor focused on API design and LLM developer tools",
+    "company": "DSPy",
+    "title": "Core Contributor",
+    "location": "",
+    "tags": ["DSPy", "applied AI", "developer tools", "API design", "LLM tools"],
+    "confidence": "high",
+    "confidenceNote": "Name and technical focus match personal site, GitHub, X/search snippet, and AI Engineer speaker listing; DSPy core-contributor title is event-sourced.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Maxime Rivest's personal site describes him as an applied AI engineer focused on API design, tool making, and AI, with recent writing about DSPy. His GitHub profile lists AI/developer-tool projects, and the AI Engineer schedule lists him as a DSPy Core Contributor.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://maximerivest.com/", "note": "Describes applied AI, API design, tool making, and DSPy writing." },
+        { "label": "GitHub profile", "url": "https://github.com/maximerivest", "note": "Lists public AI/developer-tool repositories." },
+        { "label": "Attachments documentation", "url": "https://maximerivest.github.io/attachments/", "note": "Project documentation credits Maxime Rivest and describes an LLM context funnel library." },
+        { "label": "X profile", "url": "https://x.com/MaximeRivest", "note": "Search result states he has made DSPy community libraries and is now a DSPy contributor." }
+      ],
+      "secondary": [
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/worldsfair/schedule?track=Harness+Engineering", "note": "Event schedule lists Maxime Rivest as DSPy Core Contributor." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16wnpci",
+    "displayName": "Maximillian Piras",
+    "headline": "Founding designer at Yutori focused on AI product UX",
+    "company": "Yutori",
+    "title": "Founding Designer",
+    "location": "New York, NY",
+    "tags": ["Yutori", "product design", "AI UX", "consumer AI", "design"],
+    "confidence": "high",
+    "confidenceNote": "Name, company, and founding-designer role match portfolio, LinkedIn, Yutori company page, public X post, and event listing.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Maximillian Piras's portfolio says he is Founding Designer at Yutori and frames the role as a continuation of his work in AI UX after Headliner. Yutori's company page lists him as Designer, and other public event/social sources identify him as Yutori's founding designer.",
+    "sources": {
+      "primary": [
+        { "label": "Personal portfolio: About", "url": "https://www.maximillian.nyc/about.html", "note": "Lists Founding Designer at Yutori and prior Headliner/8tracks design history." },
+        { "label": "Yutori company profile", "url": "https://yutori.com/company/maximillian-piras", "note": "Company page for Maximillian Piras lists him as Designer." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/maximilliannyc", "note": "Personal profile lists Founding Designer at Yutori." },
+        { "label": "X post", "url": "https://x.com/MVXMXM/status/1882609828432068929", "note": "Public post announces joining Yutori as founding designer." }
+      ],
+      "secondary": [
+        { "label": "Vercel Demo Night event", "url": "https://luma.com/h31ppnn6", "note": "Event page lists Maximillian Piras as Founding Designer, Yutori." },
+        { "label": "YouTube talk: The Bitter Layout", "url": "https://www.youtube.com/watch?v=BZtD0yYAgCQ", "note": "Talk metadata describes him as founding designer at Yutori working on AI web agents." }
+      ]
+    }
+  }
+]

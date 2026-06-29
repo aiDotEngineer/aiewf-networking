@@ -1,0 +1,263 @@
+[
+  {
+    "lookupKey": "1orsuov",
+    "displayName": "Amar Goel",
+    "headline": "Co-founder and CEO of Bito; serial entrepreneur focused on AI developer tools",
+    "company": "Bito",
+    "title": "Co-founder and CEO",
+    "location": "Menlo Park, US",
+    "tags": [
+      "AI coding agents",
+      "developer tools",
+      "code review",
+      "startup founder",
+      "PubMatic"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Bito's own about and blog pages identify Amar as co-founder and CEO, and secondary company profiles support the Menlo Park/Bito context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Amar Goel is co-founder and CEO of Bito, building AI systems for code review and deep codebase context. He previously founded PubMatic and Komli Media, bringing repeat founder experience across developer productivity, ad tech, and scaled software businesses.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Bito About Us",
+          "url": "https://bito.ai/about-us/",
+          "note": "Official Bito page naming Amar as co-founder and CEO and summarizing prior founder history."
+        },
+        {
+          "label": "Bito AI Architect in Linear blog",
+          "url": "https://bito.ai/blog/ai-architect-in-linear/",
+          "note": "Official Bito author bio describing Amar as co-founder and CEO with PubMatic and Komli Media background."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/amargoel",
+          "note": "Primary professional profile listing Bito role and San Francisco Bay Area presence."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "PubMatic management bio",
+          "url": "https://investors.pubmatic.com/management/amar-goel",
+          "note": "Company investor bio confirming PubMatic founder history."
+        },
+        {
+          "label": "Tracxn Bito profile",
+          "url": "https://tracxn.com/d/companies/bito/__ZCM7iaKIUMJ295zVzHi0NLIYyug0S3GrT9TvSBCptP4",
+          "note": "Company profile listing Bito as Menlo Park based and founded by Amar Goel, Anand Das, and Mukesh Agarwal."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ngfi79",
+    "displayName": "Ameya Bhatawdekar",
+    "headline": "VP, Field CTO at Braintrust, working on AI evaluation and observability",
+    "company": "Braintrust",
+    "title": "VP, Field CTO",
+    "location": "",
+    "tags": [
+      "AI evals",
+      "AI observability",
+      "production AI",
+      "ML engineering",
+      "Dropbox Dash"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Braintrust-authored posts and multiple event/podcast listings identify Ameya as Field CTO or VP, Field CTO at Braintrust.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ameya Bhatawdekar is VP, Field CTO at Braintrust, focused on helping teams evaluate, observe, and improve production AI systems. He writes and speaks about eval-driven product development and previously led ML work for Dropbox Dash and other large-scale intelligent systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Braintrust blog: Evals are the new PRD",
+          "url": "https://www.braintrust.dev/blog/evals-are-the-new-prd",
+          "note": "Official Braintrust post authored by Ameya on evaluation-driven AI product development."
+        },
+        {
+          "label": "Braintrust blog: The six generations of AI agents and how to eval them",
+          "url": "https://www.braintrust.dev/blog/six-generations-ai-agents",
+          "note": "Official Braintrust post co-authored by Ameya about AI agents and eval strategy."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ameyab",
+          "note": "Primary professional profile associated with Braintrust."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Paris Blockchain Week speaker profile",
+          "url": "https://parisblockchainweek.com/speaker-2026/ameya-bhatawdekar",
+          "note": "Speaker bio listing Ameya as VP, Field CTO at Braintrust and describing Dropbox, Microsoft, Facebook, and browser experience."
+        },
+        {
+          "label": "WorkOS interview recap",
+          "url": "https://workos.com/blog/ameya-bhatawdekar-braintrust-ai-evaluations-humanx",
+          "note": "Interview article describing Ameya's work at Braintrust on AI evaluations."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0filf7r",
+    "displayName": "Amir Alush",
+    "headline": "GM of Camtek AI Center Tel Aviv and co-founder/CTO of Visual Layer",
+    "company": "Visual Layer",
+    "title": "GM, Visual Layer",
+    "location": "Tel-Aviv, IL",
+    "tags": [
+      "computer vision",
+      "visual AI",
+      "visual data management",
+      "semiconductor inspection",
+      "AI research leadership"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Visual Layer and Camtek sources confirm Amir as Visual Layer co-founder/CTO; LinkedIn search result indicates post-acquisition GM role at Camtek AI Center Tel Aviv.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Dr. Amir Alush co-founded Visual Layer, a visual data management and analytics company built around large-scale computer vision workflows. Following Camtek's 2026 acquisition of Visual Layer, he is associated with leading Camtek's AI Center in Tel Aviv, connecting visual AI research with industrial inspection and metrology use cases.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Visual Layer About Us",
+          "url": "https://www.visual-layer.com/about-us",
+          "note": "Official Visual Layer page naming Dr. Amir Alush as a founder and describing the company's visual data management mission."
+        },
+        {
+          "label": "Camtek acquisition announcement",
+          "url": "https://www.camtek.com/news-and-events/camtek-announces-acquisition-of-visual-layer-to-deepen-its-visual-ai-capabilities-in-its-inspection-and-metrology-offering/",
+          "note": "Official Camtek release naming Amir Alush as Visual Layer founder and CTO and explaining the acquisition."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://il.linkedin.com/in/amiralush",
+          "note": "Primary professional profile listing GM, Camtek AI Center Tel Aviv and co-founder/CTO history."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CTech seed funding article",
+          "url": "https://www.calcalistech.com/ctechnews/article/sjqnxkbr2",
+          "note": "Coverage of Visual Layer's seed funding naming Amir Alush and Danny Bickson as co-founders."
+        },
+        {
+          "label": "Globes acquisition coverage",
+          "url": "https://en.globes.co.il/en/article-camtek-acquires-israeli-ai-startup-visual-layer-1001540059",
+          "note": "Business coverage of Camtek acquiring Visual Layer, identifying Amir as CTO and co-founder."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "032t0i9",
+    "displayName": "Amit Desai",
+    "headline": "Director of Voice AI and Assistant at Roku, focused on conversational TV discovery",
+    "company": "Roku",
+    "title": "Director of Voice AI",
+    "location": "",
+    "tags": [
+      "voice AI",
+      "conversational AI",
+      "TV discovery",
+      "product leadership",
+      "speech technology"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Current Roku role is supported by LinkedIn and press quotes, but I found limited official Roku profile material for a full independent bio.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Amit Desai leads voice AI and assistant work at Roku, with a focus on conversational content discovery for TV. His background spans voice user interfaces, speech recognition, product strategy, and hosted speech applications.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/amit-v-desai",
+          "note": "Primary professional profile listing Director, Voice AI and Assistant work across product, UX, engineering, and strategy."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "StreamTV Insider Roku voice article",
+          "url": "https://www.streamtvinsider.com/technology/roku-readies-ai-powered-voice-content-discovery",
+          "note": "Industry article quoting Amit Desai as Roku Director of Product and UX for Roku Voice on AI-powered content discovery."
+        },
+        {
+          "label": "PCWorld Roku AI search article",
+          "url": "https://www.pcworld.com/article/2941278/rokus-adding-ai-search-and-hopefully-better-recommendations.html",
+          "note": "Coverage quoting Amit as Roku's director of product and UX for voice and conversational AI."
+        },
+        {
+          "label": "Speech Technology Magazine Voxify Q&A",
+          "url": "https://www.speechtechmag.com/Articles/Editorial/Q--A/Amit-Desai-Chief-Technology-Officer-and-Founder-Voxify-35413.aspx",
+          "note": "Older Q&A documenting Amit's speech technology and voice user interface expertise as Voxify CTO and founder."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "14tqd18",
+    "displayName": "Amit Vadi",
+    "headline": "Head of Community, Google DeepMind DevX",
+    "company": "Google DeepMind",
+    "title": "Head of Community, DevX",
+    "location": "London, UK",
+    "tags": [
+      "developer community",
+      "Google DeepMind",
+      "Gemini API",
+      "AI Studio",
+      "developer experience",
+      "startup accelerators"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, and official Google Cloud event pages consistently identify Amit as Head of Community for Google DeepMind DevX/Developer Experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Amit Vadi leads community for Google DeepMind Developer Experience, helping builders engage with Gemini, AI Studio, open models, hackathons, and accelerator programs. He is London-based and previously worked across Google Cloud, Apple, and startup ecosystem initiatives.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/amitvadi",
+          "note": "Primary professional profile listing Head of Community, Google DeepMind DevX, Apple alum, and London Area."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/vadiamit",
+          "note": "Primary social profile describing Amit as head of community at Google DeepMind DevX and focused on helping developers with open models."
+        },
+        {
+          "label": "Google DeepMind Gemini Builders event",
+          "url": "https://cloud.google.com/events/google-deepmind-gemini-builders",
+          "note": "Official Google event agenda listing Amit Vadi as Head of Community, Developer Experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google Cloud Summit London session",
+          "url": "https://www.googlecloudevents.com/london-summit/session/4201248/google-deepmind-what%27s-new-in-google-ai",
+          "note": "Event session listing Amit as Head of Community, Developer Experience at Google DeepMind."
+        },
+        {
+          "label": "Google DeepMind Startup Sessions",
+          "url": "https://cloud.google.com/events/gemma-4-ltw",
+          "note": "Official event page listing Amit as Head of Community at Google DeepMind among speakers."
+        },
+        {
+          "label": "CTO Connect with DeepMind Stockholm",
+          "url": "https://cloud.google.com/events/cto-connect-with-deepmind/google-stockholm",
+          "note": "Official Google Cloud event page listing Amit Vadi as Head of Community, Google DeepMind DevX."
+        }
+      ]
+    }
+  }
+]

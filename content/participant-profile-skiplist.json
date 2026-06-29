@@ -1,0 +1,422 @@
+[
+  {
+    "lookupKey": "0xopbpg",
+    "displayName": "Allen Racho",
+    "reason": "Only company-context source found; no credible public person-specific source tied to Ulta."
+  },
+  {
+    "lookupKey": "1bpo6wv",
+    "displayName": "Allison Howard",
+    "reason": "Stealth founder row has no credible public identity match yet."
+  },
+  {
+    "lookupKey": "0wygbyv",
+    "displayName": "Ankit Bisht",
+    "reason": "Only a LinkedIn people-directory result found; no reliable public source tying the person to Java Group Ventures."
+  },
+  {
+    "lookupKey": "0gbyzuk",
+    "displayName": "C C",
+    "reason": "Initials-only attendee row; no credible public person-specific source tied to ICONIQ engineering."
+  },
+  {
+    "lookupKey": "05lngqd",
+    "displayName": "Douglas Alves",
+    "reason": "Batch research did not find at least two credible public sources tying this exact person to Fidelity trading technology."
+  },
+  {
+    "lookupKey": "1a9ivme",
+    "displayName": "Dwayne Holmes",
+    "reason": "Batch research did not find at least two credible public sources tying this exact person to CVS Health distinguished engineering."
+  },
+  {
+    "lookupKey": "0slwir9",
+    "displayName": "Elijah Williams",
+    "reason": "Batch research found only weak person-specific evidence and company-context sources; not enough to display a useful public profile."
+  },
+  {
+    "lookupKey": "1e4etvi",
+    "displayName": "Eric Polin",
+    "reason": "Batch research did not find at least two credible public sources tying this exact person to the participant row."
+  },
+  {
+    "lookupKey": "0dfw4tf",
+    "displayName": "Erik Tastepe",
+    "reason": "Batch research did not find enough credible person-specific public evidence for a useful attendee-facing profile."
+  },
+  {
+    "lookupKey": "1j1wv6s",
+    "displayName": "Gilberto Villarreal",
+    "reason": "Batch research found only LinkedIn directory snippets and no reliable person/company source to verify current COHETE role details."
+  },
+  {
+    "lookupKey": "196cn19",
+    "displayName": "Hao Le",
+    "reason": "Batch research found company context for Corpay but no reliable person-specific source tying this exact Hao Le to the participant row."
+  },
+  {
+    "lookupKey": "0rnlunv",
+    "displayName": "Guido Rocco Pardini",
+    "reason": "Batch research found public evidence for Shaga Labs, but too little person-company evidence for the attendee-provided Extrinsic Cognition CEO role."
+  },
+  {
+    "lookupKey": "1f5emlt",
+    "displayName": "invoice statement",
+    "reason": "Non-person attendee row; no credible participant identity to research or display."
+  },
+  {
+    "lookupKey": "0upi9tt",
+    "displayName": "Jack Nicholls",
+    "reason": "Batch research did not find enough credible public evidence tying this exact person to the B Capital Applied AI Lead row."
+  },
+  {
+    "lookupKey": "18whtcr",
+    "displayName": "James Frain",
+    "reason": "Batch research found only one credible public person-specific source; not enough to display a sourced profile."
+  },
+  {
+    "lookupKey": "1lcc57s",
+    "displayName": "James Highsmith",
+    "reason": "Batch research did not find enough credible public person-specific evidence tying this exact person to KOROMAS."
+  },
+  {
+    "lookupKey": "0hq88r9",
+    "displayName": "Jared Rodriguez",
+    "reason": "Batch research did not find enough credible public person-specific evidence tying this exact person to Tivly CIO."
+  },
+  {
+    "lookupKey": "0lepncp",
+    "displayName": "Jeff Lai",
+    "reason": "Batch research did not find at least two credible public sources tying this exact person to the Salesforce principal software engineer row."
+  },
+  {
+    "lookupKey": "0bleucs",
+    "displayName": "John Mancine",
+    "reason": "Batch research did not return at least two credible public person-specific sources tying this exact person to the SNHU AVP AI Engineering row."
+  },
+  {
+    "lookupKey": "1l8e0z4",
+    "displayName": "Jonathan Palma",
+    "reason": "Batch research found only social-profile evidence and no strong independent or company source confirming the VIDI founder row."
+  },
+  {
+    "lookupKey": "01tgswh",
+    "displayName": "Joseph Wolfe",
+    "reason": "Batch research found a Seattle software developer identity but no credible public source tying this exact person to the Buildr Staff Software Engineer row."
+  },
+  {
+    "lookupKey": "125drjz",
+    "displayName": "Jun Kang Chin",
+    "reason": "Batch research did not return at least two credible public person-specific sources tying this exact person to the Google software engineering manager row."
+  },
+  {
+    "lookupKey": "1hpt3ik",
+    "displayName": "Kashyap B",
+    "reason": "Batch research found only weak person-directory evidence, mainly LinkedIn snippets for a Goldman Sachs software engineering manager; not enough credible person-specific public sources for prose."
+  },
+  {
+    "lookupKey": "0tb46bf",
+    "displayName": "Kat Li",
+    "reason": "Batch research could not confidently resolve the Citadel AI/tech investor and agent-builder identity; search results returned likely mismatches."
+  },
+  {
+    "lookupKey": "184aj2p",
+    "displayName": "Kayla Hiltermann",
+    "reason": "Batch research found a sparse Hugging Face profile but no credible person-specific public source confirming the Founder & CEO role at WAVES + SPACE."
+  },
+  {
+    "lookupKey": "0ca2h1l",
+    "displayName": "Kekoa Vincent",
+    "reason": "Batch research found only a LinkedIn profile and third-party directory/lead-gen style listings for the TradeStation role; not enough credible person-specific public sources for substantive prose."
+  },
+  {
+    "lookupKey": "01lrsra",
+    "displayName": "Kelvin Poon",
+    "reason": "Batch research found LinkedIn and sparse subscriber/directory references tying him to Harvard Management Company, but not enough credible public person-specific sources for a sourced profile."
+  },
+  {
+    "lookupKey": "1v06upm",
+    "displayName": "Kevin Dickinson",
+    "reason": "Batch research did not corroborate Kevin Dickinson as Chief AI Officer at Southern New Hampshire University; current public SNHU leadership pages point to different AI leaders."
+  },
+  {
+    "lookupKey": "144th69",
+    "displayName": "Khanin Udomchoksakul",
+    "reason": "Batch research corroborated an AI optimization/deep learning identity, but did not corroborate the CEO / Neural Nova AI row claim with two credible public person-specific sources."
+  },
+  {
+    "lookupKey": "0d621xb",
+    "displayName": "Krishneel Prasad",
+    "reason": "Batch research found only a LinkedIn directory snippet clearly matching General Manager at Datacom in Auckland; no second credible person-specific public source was found."
+  },
+  {
+    "lookupKey": "00a2ztq",
+    "displayName": "Kristin Shimko",
+    "reason": "Batch research found LinkedIn and sales-directory snippets matching Slate Path Capital and title, but sources were too thin or directory-like for substantive profile prose."
+  },
+  {
+    "lookupKey": "1jx560d",
+    "displayName": "Kriti Khurana",
+    "reason": "Batch research found only one credible matching public source for the Google software engineer row; other same-name results appeared to be different people."
+  },
+  {
+    "lookupKey": "11ng2fq",
+    "displayName": "Kurt Bowen",
+    "reason": "Batch research found no credible person-specific public sources matching Manufacturing Excellence at Hendrickson-Intl in Woodridge."
+  },
+  {
+    "lookupKey": "1l1yfdh",
+    "displayName": "Kyle Tran",
+    "reason": "Batch research found only one strong person-specific source for the current Broadcom Senior AI Infrastructure role; other hits were directories, comments, or weak corroboration."
+  },
+  {
+    "lookupKey": "0axx5im",
+    "displayName": "Lalitha Singh",
+    "reason": "Batch research found only a LinkedIn profile and light LinkedIn mentions; not enough credible person-specific public sources for substantive directory prose."
+  },
+  {
+    "lookupKey": "0x3an4h",
+    "displayName": "Lee Moore",
+    "reason": "Batch research did not find two credible public person-specific sources matching the submitted Travelers lead engineer identity; results were ambiguous across multiple same-name profiles."
+  },
+  {
+    "lookupKey": "0egawb7",
+    "displayName": "Lin Cheong",
+    "reason": "Batch research found likely Lin Lee Cheong AI/ML sources, but public sources did not verify the submitted Scale AI company or Sr Director, Agentic Applications title."
+  },
+  {
+    "lookupKey": "0uosi9v",
+    "displayName": "Linda Chen",
+    "reason": "Batch research found ambiguous public hits across multiple Linda Chen profiles; Voltai/head-of-marketing attribution did not clear the two-source person-specific bar."
+  },
+  {
+    "lookupKey": "1lgl3h9",
+    "displayName": "Lisa Vorobieva",
+    "reason": "Batch research found only sparse directory/LinkedIn-style results; insufficient credible public person-specific sourcing for substantive prose."
+  },
+  {
+    "lookupKey": "1sbo8ly",
+    "displayName": "Mahek Maheshwari",
+    "reason": "Batch research found multiple same-name profiles, but no two credible person-specific sources tied the exact person to Scaler AI Labs, Director of Growth, or San Francisco."
+  },
+  {
+    "lookupKey": "0wdru9g",
+    "displayName": "Manmohit Rekhi",
+    "reason": "Batch research found exact-name AI-engineer sources pointing to Google Cloud, but no credible public source confirming the participant-row Capital One Staff AI Engineer identity."
+  },
+  {
+    "lookupKey": "0wpfjwm",
+    "displayName": "Matheus Montenegro",
+    "reason": "Batch research found person-specific sources for a Matt/Matheus Montenegro linked to Pingback and VidMonsters, including an M&A connection to Hotmart, but fewer than two credible sources confirm the exact Technology Sr Director at Hotmart attendee identity."
+  },
+  {
+    "lookupKey": "0xdv5d4",
+    "displayName": "Matt Anderson",
+    "reason": "Batch research found only one clear person-specific public source for the Broadcom software-engineer identity, with multiple plausible same-name profiles in search results."
+  },
+  {
+    "lookupKey": "1p4gu8s",
+    "displayName": "Michael Shaw",
+    "reason": "Batch research found only one credible person-specific public source matching the Jane/Vancouver principal developer identity; other results were directory duplicates, unrelated people, or insufficiently person-specific."
+  },
+  {
+    "lookupKey": "1aqthf5",
+    "displayName": "Miguel Ruiz",
+    "reason": "Batch research could not find at least two credible person-specific public sources matching Miguel Ruiz as CEO of Axionomic AI; results were dominated by unrelated Don Miguel Ruiz profiles, an unrelated Axionomic blockchain company, and unrelated same-name LinkedIn profiles."
+  },
+  {
+    "lookupKey": "0aiehpr",
+    "displayName": "Mike Gwilt",
+    "reason": "Batch research found fewer than two credible person-specific public sources connecting Mike Gwilt to CoupleWork AI or the Founding Engineer role; results mostly pointed to unrelated medical-writing and academic-publication identities."
+  },
+  {
+    "lookupKey": "13vhx70",
+    "displayName": "Mike Smith",
+    "reason": "Batch research found only one credible person-specific public source for the DV Trading AI identity, with many ambiguous Michael/Mike Smith results and insufficient corroboration."
+  },
+  {
+    "lookupKey": "1kdto00",
+    "displayName": "Mohid Butt",
+    "reason": "Batch research found only one credible person-specific public source matching the row facts: GitHub user mohidbt lists Mohid Butt as Data Science/Data Scientist at Uber; other results were ambiguous or appeared to refer to different people."
+  },
+  {
+    "lookupKey": "09m6qdc",
+    "displayName": "Nathan Tarr",
+    "reason": "Batch research matched LinkedIn and public-directory snippets for Founding Engineer at Kinetic, but could not verify the same person with at least two credible public sources without relying on low-signal scraped directories or unrelated namesakes."
+  },
+  {
+    "lookupKey": "0r2yu91",
+    "displayName": "Pankaj Singh",
+    "reason": "Batch research could not match the submitted Optum senior director AI/ML engineering profile to at least two credible person-specific public sources."
+  },
+  {
+    "lookupKey": "0zde097",
+    "displayName": "Paul Stanley",
+    "reason": "Batch research could not corroborate the Arcsight Capital Miami portfolio manager identity with at least two credible person-specific public sources."
+  },
+  {
+    "lookupKey": "1500264",
+    "displayName": "Paulo Rodrigues",
+    "reason": "Batch research could not corroborate the Boundary compiler engineer identity with at least two credible person-specific public sources."
+  },
+  {
+    "lookupKey": "1m1gmvz",
+    "displayName": "Peter Pine",
+    "reason": "Batch research did not find at least two credible person-specific public sources matching the submitted M3 USA senior engineer profile."
+  },
+  {
+    "lookupKey": "1gad58h",
+    "displayName": "Piotr Goral",
+    "reason": "Batch research could not find two credible public sources tying the exact person to praktika.ai and Toronto."
+  },
+  {
+    "lookupKey": "03adbta",
+    "displayName": "Prasad Kami Kami",
+    "reason": "Batch research found public evidence too thin and mostly single-platform or directory-style for the Optum DevOps and SRE identity."
+  },
+  {
+    "lookupKey": "1c6hmkn",
+    "displayName": "Qiyao Qin",
+    "reason": "Batch research did not find at least two credible public sources independently tying the exact submitted identity to the OpenAI member-of-technical-staff attendee row."
+  },
+  {
+    "lookupKey": "0a6fvr2",
+    "displayName": "Rangachari Bhatter Venkata",
+    "reason": "Batch research could not find two credible public sources matching the Optum Technology lead product manager profile."
+  },
+  {
+    "lookupKey": "0a07w32",
+    "displayName": "Rebecca Dun",
+    "reason": "Batch research could not find two credible public sources matching the Amazon software engineer profile in San Mateo."
+  },
+  {
+    "lookupKey": "1xcn3ek",
+    "displayName": "REN SHINKAI",
+    "reason": "Batch research could not find two credible public sources matching the Recruit technical product manager identity."
+  },
+  {
+    "lookupKey": "079jsn2",
+    "displayName": "Robert Lee",
+    "reason": "Batch research could not match him to at least two credible public sources tied to the Walker Advertising AI Director - Sales role."
+  },
+  {
+    "lookupKey": "0blf38o",
+    "displayName": "Robert Norton",
+    "reason": "Batch research could not match him to at least two credible public person-level sources for RouteNavigator.com."
+  },
+  {
+    "lookupKey": "1kz1ux6",
+    "displayName": "Roee Farjoun",
+    "reason": "Batch research could not corroborate the requested Cognifence Chief of Staff role with at least two credible public sources."
+  },
+  {
+    "lookupKey": "1nvenhx",
+    "displayName": "Ryan Kanzeg",
+    "reason": "Batch research could not match the ATPCO engineering manager identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "08w3gwm",
+    "displayName": "Ryan Houser",
+    "reason": "Batch research could not match the Founder at Elentari identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "0kqw7z7",
+    "displayName": "S H W",
+    "reason": "Batch research could not confidently match the initials/name to at least two credible public person-specific sources for the DSO National Laboratories programme director identity."
+  },
+  {
+    "lookupKey": "1p0dhv2",
+    "displayName": "Sakthivel Namachivayam",
+    "reason": "Batch research found insufficient public person-specific evidence beyond sparse profile traces for the Distinguished Engineer at Early Warning Service identity."
+  },
+  {
+    "lookupKey": "17fmsi5",
+    "displayName": "Sam Dalton",
+    "reason": "Batch research could not match the CTO at Dandelion identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "1h0ed2z",
+    "displayName": "Sanath Shivaswamy",
+    "reason": "Batch research could not verify the Founder CEO at 352 Labs identity with at least two credible public sources."
+  },
+  {
+    "lookupKey": "1p0has2",
+    "displayName": "SATOSHI UEJIMA",
+    "reason": "Batch research found weak or conflicting public evidence and could not verify the VP at Recruit Co., Ltd. identity with at least two credible sources."
+  },
+  {
+    "lookupKey": "1pu15vq",
+    "displayName": "Shreeyans Bhavaraju",
+    "reason": "Batch research could not match the submitted CEO at NCompas Technology Solutions identity to at least two credible public sources; public evidence points to other NCompas leadership and separate Shreeyans traces."
+  },
+  {
+    "lookupKey": "0hqsg4o",
+    "displayName": "Sophie Goldberg",
+    "reason": "Batch research found public sources matching a Beach Point executive assistant profile, not the submitted AI engineer profile, so the identity did not meet the two-source match bar."
+  },
+  {
+    "lookupKey": "09ikwk7",
+    "displayName": "Subbanarasimhiah Harish",
+    "reason": "Batch research could not match the submitted CTO at Preemptive Security identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "07dwwlp",
+    "displayName": "Syed Parvez",
+    "reason": "Batch research found credible SOLVE sources for a likely different person or name variant, but not two credible public sources matching Syed Parvez closely enough."
+  },
+  {
+    "lookupKey": "1gx2jhn",
+    "displayName": "Tim Owen",
+    "reason": "Batch research found LinkedIn and directory-style echoes but not two credible public sources with enough independent corroboration for the Westfield Insurance enterprise architect identity."
+  },
+  {
+    "lookupKey": "0w6ab8o",
+    "displayName": "Trung Kien Nguyen",
+    "reason": "Batch research could not confidently match the Sportsbet principal AI engineer identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "0rm202t",
+    "displayName": "Tsunehiko Nagayama",
+    "reason": "Batch research could not confidently match the Mizuho Bank digital strategist identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "1eph1py",
+    "displayName": "Tushar Narang",
+    "reason": "Batch research could not confidently match the Newedge Capital Group platform and operations director identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "0s8tli2",
+    "displayName": "Ty Robben",
+    "reason": "Batch research could not confidently match the One Pen Insurance CEO identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "1muly4g",
+    "displayName": "Tyler Carper",
+    "reason": "Batch research could not confidently match the Pending Spark founder identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "1aa8mmq",
+    "displayName": "Udaya Karthick Radha Krishnan",
+    "reason": "Batch research could not match the Ligaments AI principal architect identity to at least two credible public person-level sources."
+  },
+  {
+    "lookupKey": "1r2etgy",
+    "displayName": "Vasily Alekseenko",
+    "reason": "Batch research could not corroborate the attendee-provided Founder at Causal identity with at least two credible public sources."
+  },
+  {
+    "lookupKey": "0e5au0m",
+    "displayName": "Vinicius de Oliveira",
+    "reason": "Batch research could not match the Inevita Society founder identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "09qj5nz",
+    "displayName": "Vitaliy Zakharchenko",
+    "reason": "Batch research could not match the XR Edge AI founder and CEO identity to at least two credible public sources."
+  },
+  {
+    "lookupKey": "0xky3e9",
+    "displayName": "YOSUKE KOBAYASHI",
+    "reason": "Batch research could not confidently match the submitted Recruit Japan software engineer and project manager identity to at least two credible public sources."
+  }
+]

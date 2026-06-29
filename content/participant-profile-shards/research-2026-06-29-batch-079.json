@@ -1,0 +1,294 @@
+[
+  {
+    "lookupKey": "0fqss2w",
+    "displayName": "Sam Hesson",
+    "headline": "Meta AI agents incubation engineer and former Nanome CTO/co-founder building agentic development systems.",
+    "company": "Meta",
+    "title": "AI Agents Incubation EM",
+    "location": "Seattle, WA",
+    "tags": ["AI agents", "agentic coding", "XR", "molecular design", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, and AI Tinkerers sources consistently connect Sam Hesson to Meta AI agents incubation and prior Nanome CTO/co-founder work. Exact EM wording comes from the participant row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sam works on AI agents incubation at Meta and previously co-founded Nanome, where he led technology for immersive molecular design tools. Strong match for conversations about agentic coding systems, AI development workflows, XR for science, and moving AI-heavy prototypes into production engineering loops.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/samhessenauer",
+          "note": "Professional profile preview identifies him with AI Agents Incubation at Meta and prior Nanome CTO/co-founder experience."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/shessenauer",
+          "note": "Public developer profile lists AI Agents Incubation at Meta and prior Nanome co-founder/CTO context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Tinkerers One-Shot episode",
+          "url": "https://one-shot.aitinkerers.org/p/what-happens-when-you-hit-claude-s-limits-sam-hesson-meta-ai",
+          "note": "Interview page describes Hesson as a former Nanome CTO/co-founder now on Meta's AI incubation team, discussing parallel AI-agent development architecture."
+        },
+        {
+          "label": "Caplight Nanome profile",
+          "url": "https://www.caplight.com/company/nanome",
+          "note": "Company database lists Sam Hesson as Nanome co-founder and CTO advisor."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0d01v9o",
+    "displayName": "Samir Dhruva",
+    "headline": "GTM systems and revenue operations leader applying AI to lead-to-cash, Salesforce, and RevOps workflows.",
+    "company": "GTM / RevOps Consultancy",
+    "title": "GTM Systems & RevOps Leader",
+    "location": "San Jose, CA",
+    "tags": ["RevOps", "GTM systems", "Salesforce", "AI automation", "lead-to-cash"],
+    "confidence": "medium",
+    "confidenceNote": "Public evidence consistently matches Samir Dhruva to GTM systems, revenue operations, Salesforce, and AI-driven automation. The consultancy affiliation is participant-provided rather than independently named in public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Samir is a GTM systems and revenue operations leader with deep Salesforce and lead-to-cash experience. He is experimenting with AI-powered GTM analytics and multi-agent RevOps workflows, making him a useful match for conversations about sales systems, revenue architecture, CRM automation, and practical AI adoption in operations teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Samir/Dhruva%2B%E2%98%81%EF%B8%8F",
+          "note": "LinkedIn public directory identifies Samir Dhruva as a GTM Systems and Revenue Operations Leader, founding Salesforce engineer at Snowflake, and AI-driven automation practitioner."
+        },
+        {
+          "label": "GTMForge LinkedIn post",
+          "url": "https://www.linkedin.com/posts/samir-dhruva_gtm-revops-agenticai-activity-7449343463269089280-SmCL",
+          "note": "Public post describes his GTMForge multi-agent AI system for GTM expertise and memory."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI-powered analytics LinkedIn post",
+          "url": "https://www.linkedin.com/posts/samir-dhruva_gtm-revenueoperations-salesops-activity-7439139067495342080-fpye",
+          "note": "Post connects him to GTM, revenue operations, sales operations, and AI-powered analytics."
+        },
+        {
+          "label": "California BPPE school catalog",
+          "url": "https://www.bppe.ca.gov/webapplications/annualReports/2018/document/1f9018ba-716a-4579-a978-cd69b58185b4",
+          "note": "Public catalog lists a Samir Dhruva with 20+ years of enterprise software and Salesforce CRM experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fxxd8s",
+    "displayName": "San Nguyen",
+    "headline": "Enterprise GenAI engineering leader at Woven by Toyota focused on secure, scalable LLM solutions.",
+    "company": "Woven by Toyota",
+    "title": "Senior Lead, GenAI Engineering",
+    "location": "Tokyo, Japan",
+    "tags": ["enterprise GenAI", "LLM platforms", "secure AI", "engineering leadership", "automotive technology"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn profile and posts consistently match San Nguyen to Woven by Toyota and enterprise GenAI leadership in Tokyo. The Senior Lead title is from the participant row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "San leads enterprise GenAI engineering work at Woven by Toyota, focused on secure and scalable LLM solutions. Useful match for conversations on enterprise AI delivery, automotive software, security-aware GenAI adoption, and engineering practices for production LLM systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://jp.linkedin.com/in/san-nguyen91",
+          "note": "Public profile identifies Nguyen as an enterprise GenAI leader at Woven by Toyota in Tokyo."
+        },
+        {
+          "label": "Woven by Toyota GenAI hiring post",
+          "url": "https://www.linkedin.com/posts/san-nguyen91_woven-by-toyota-software-engineer-generative-activity-7260818422777675777-4hFo",
+          "note": "Post ties him to Woven by Toyota Generative AI Engineering hiring and enterprise GenAI leadership."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Woven by Toyota productivity engineering post",
+          "url": "https://www.linkedin.com/posts/san-nguyen91_woven-by-toyota-senior-engineering-manager-activity-7268063587300970500-BQyo",
+          "note": "Additional public post links him to Woven by Toyota engineering hiring and leadership context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0lcb4gj",
+    "displayName": "Sarah Chieng",
+    "headline": "Head of DevX at Cerebras working on fast inference, developer workflows, and AI application patterns.",
+    "company": "Cerebras",
+    "title": "Head of DevX",
+    "location": "San Francisco, CA",
+    "tags": ["developer experience", "fast inference", "AI coding", "Cerebras", "agent workflows"],
+    "confidence": "high",
+    "confidenceNote": "Personal resume, Cerebras author page, LinkedIn, and public talks consistently identify Sarah Chieng as Head of DevX at Cerebras.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sarah leads developer experience at Cerebras, working where fast inference meets practical AI engineering workflows. She writes and speaks about building with fast models, agent workflows, structured outputs, and developer habits for high-speed AI systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal resume",
+          "url": "https://sarahchieng.com/resume",
+          "note": "Self-published resume lists Head of DevX at Cerebras starting September 2025."
+        },
+        {
+          "label": "Cerebras author page",
+          "url": "https://www.cerebras.ai/author/sarah-chieng",
+          "note": "Official Cerebras author page lists Sarah Chieng and her writing on AI workflows, fast inference, and developer practices."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/milksandmatcha",
+          "note": "Public profile preview links her to Cerebras, MIT, and San Francisco."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer Europe talk",
+          "url": "https://www.youtube.com/watch?v=TeGsFFNqRLA",
+          "note": "Talk listing identifies Sarah Chieng from Cerebras presenting on fast models and developer workflows."
+        },
+        {
+          "label": "Office Hours profile",
+          "url": "https://officehours.com/sarah-chieng",
+          "note": "Profile lists Head of DevX at Cerebras and San Francisco location."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "010li47",
+    "displayName": "Sarah Sanders",
+    "headline": "Context Engineer at PostHog focused on documentation, AI context, and developer-facing product knowledge.",
+    "company": "PostHog",
+    "title": "Context Engineer",
+    "location": "Philadelphia, PA",
+    "tags": ["documentation", "context engineering", "developer experience", "AI onboarding", "PostHog"],
+    "confidence": "high",
+    "confidenceNote": "PostHog people/community pages, GitHub, State of Docs, and AI Engineer schedule sources consistently identify Sarah Sanders as a Context Engineer at PostHog.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sarah is a Context Engineer at PostHog, working on docs, product context, and AI-assisted developer onboarding. She is a strong match for conversations about documentation as infrastructure, context engineering, product-led developer experience, and how teams make AI outputs useful rather than noisy.",
+    "sources": {
+      "primary": [
+        {
+          "label": "PostHog people page",
+          "url": "https://posthog.com/people",
+          "note": "Official PostHog people page lists Sarah Sanders as Context Engineer in Philadelphia on the Docs team."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/sarahxsanders",
+          "note": "Public GitHub profile says she is doing robot things at PostHog."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "State of Docs contributors",
+          "url": "https://www.stateofdocs.com/2026/contributors",
+          "note": "Contributor page lists Sarah Sanders as Context Engineer at PostHog."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Harness+Engineering",
+          "note": "Conference schedule lists Sarah Sanders as Context Engineer at PostHog."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "15d980y",
+    "displayName": "Sarah Wray",
+    "headline": "OpenAI events producer/operator supporting large developer and creative technology events.",
+    "company": "OpenAI",
+    "title": "Events",
+    "location": "Los Angeles, CA",
+    "tags": ["events", "developer events", "OpenAI", "event production", "creative technology"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn directory, OpenAI DevDay creative credits, and verified employee listing connect Sarah Wray to OpenAI events. Public detail is limited, so the profile is intentionally concise.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sarah works on events at OpenAI, with public credits around OpenAI DevDay and creative technology programming. Relevant for conversations about developer events, AI community programming, production partnerships, and translating technical launches into live attendee experiences.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Sarah/Wray",
+          "note": "Public directory result lists Sarah Wray as Events at OpenAI in Los Angeles."
+        },
+        {
+          "label": "OpenAI DevDay 2025 creative credits",
+          "url": "https://kennethkuh.info/OpenAI-DevDay-2025",
+          "note": "Project credits for OpenAI DevDay 2025 list Sarah Wray as a producer."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Verified employee public listing",
+          "url": "https://notdivided.org/",
+          "note": "Public verified-signature page lists Sarah Wray as a current OpenAI employee in Events."
+        },
+        {
+          "label": "OpenAI creative event LinkedIn post",
+          "url": "https://www.linkedin.com/posts/paul-trillo-544b268_thank-you-to-everyone-who-contributed-and-activity-7078412965716127745-wqCA",
+          "note": "Public post thanks Sarah X. Wray for helping produce an OpenAI-adjacent creative technology event."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0f7juf0",
+    "displayName": "Satyajith Mundakkal",
+    "headline": "Global CTO at Hexaware focused on enterprise AI, agentic systems, cybersecurity, and technology transformation.",
+    "company": "Hexaware Technologies",
+    "title": "CTO",
+    "location": "Chennai, India",
+    "tags": ["enterprise AI", "agentic AI", "cybersecurity", "technology strategy", "IT services"],
+    "confidence": "high",
+    "confidenceNote": "Hexaware, LinkedIn, ETCIO, and industry coverage consistently identify Satyajith Mundakkal as Hexaware's CTO or Global CTO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Satyajith is Global CTO at Hexaware, working across enterprise AI strategy, agentic systems, cybersecurity, and large-scale technology transformation. Strong match for discussions on AI-first IT services, enterprise governance, workforce upskilling, and moving agentic AI from demos into client delivery.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Hexaware AIconics press release",
+          "url": "https://hexaware.com/press-release/hexaware-clinches-ai-implementer-of-the-year-at-the-aiconics-awards/",
+          "note": "Official Hexaware release quotes Satyajith Mundakkal as Chief Technical Officer and discusses Hexaware's AI implementations."
+        },
+        {
+          "label": "Hexaware Mythos ebook",
+          "url": "https://hexaware.com/ebook/mythos-measured/",
+          "note": "Official Hexaware ebook credits Satyajith Mundakkal as CTO of Hexaware."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://in.linkedin.com/in/satyajith-mundakkal-149b5677",
+          "note": "Public LinkedIn profile identifies him as Global CTO at Hexaware Technologies."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "ETCIO author page",
+          "url": "https://cio.economictimes.indiatimes.com/author/479270010/satyajith-mundakkal",
+          "note": "ETCIO author page lists Satyajith Mundakkal as CTO of Hexaware Technologies."
+        },
+        {
+          "label": "IT Brief Agentic AI Academy coverage",
+          "url": "https://itbrief.com.au/story/hexaware-launches-agentic-ai-academy-to-upskill-global-workforce",
+          "note": "Industry coverage quotes him as Hexaware Chief Technology Officer on agentic AI workforce upskilling."
+        }
+      ]
+    }
+  }
+]

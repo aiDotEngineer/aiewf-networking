@@ -1,0 +1,266 @@
+[
+  {
+    "lookupKey": "1bw36re",
+    "displayName": "Andre Apollaro",
+    "headline": "Founder and CEO of Payfy, building corporate spend management for Brazilian companies",
+    "company": "Payfy",
+    "title": "CEO and Co-founder",
+    "location": "Florianopolis, Brazil",
+    "tags": [
+      "fintech",
+      "corporate spend management",
+      "B2B SaaS",
+      "payments",
+      "Brazil"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Payfy author page, LinkedIn, and Brazilian startup coverage consistently identify Andre Apollaro as Payfy founder/CEO and describe the company focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology entrepreneur and CEO/co-founder of Payfy, a Brazilian fintech focused on corporate expense management, cards, reimbursements, approvals, ERP integrations, and finance-team automation. Useful connection for conversations on fintech GTM in Brazil, CFO workflows, corporate spend controls, and scaling B2B financial operations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Payfy author profile",
+          "url": "https://payfy.io/autor/andre-apollaro",
+          "note": "Company-hosted profile describes Andre as a technology entrepreneur and founder of Payfy."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/andre-apollaro",
+          "note": "Lists experience at Payfy and location in Santa Catarina."
+        },
+        {
+          "label": "Payfy LinkedIn company page",
+          "url": "https://br.linkedin.com/company/payfyapp",
+          "note": "Describes Payfy as a corporate expense management platform with cards, Pix, reimbursements, approvals, reports, ERP integrations, and open API."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "SC Inova funding coverage",
+          "url": "https://scinova.com.br/catarinense-payfy-capta-r-4-milhoes-com-bb-ventures/",
+          "note": "Reports Payfy's seed funding from BB Ventures and names Andre Apollaro as CEO."
+        },
+        {
+          "label": "MSW Capital portfolio page",
+          "url": "https://www.mswcapital.com.br/portfolio/payfy",
+          "note": "Describes Payfy as a corporate expense management platform integrated with ERPs and accounting."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1czne2k",
+    "displayName": "André Peixoto",
+    "headline": "Director of Operations at EBANX focused on payment performance across emerging markets",
+    "company": "EBANX",
+    "title": "Director of Operations",
+    "location": "Curitiba, Brazil",
+    "tags": [
+      "payments",
+      "operations",
+      "LatAm",
+      "fraud prevention",
+      "merchant success",
+      "AI transformation"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, EBANX event materials, and Sumsub expert profile align on André Peixoto's EBANX operations leadership and payments-performance focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Operations leader at EBANX working across payment performance, fraud prevention, merchant integration, technical account management, and business operations. Strong match for conversations about LatAm payments, approval-rate optimization, issuer/acquirer relationships, and operational AI transformation across global payment flows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/andr%C3%A9-peixoto-691a93150",
+          "note": "Identifies André as Director of Operations at EBANX and highlights operations leadership across LatAm, EMEA, and APAC."
+        },
+        {
+          "label": "EBANX SFO meetup agenda",
+          "url": "https://www.ebanx.com/en/-events-sfo-meetup/",
+          "note": "Lists André Peixoto, Director of Operations at EBANX, as a keynote speaker on payment performance."
+        },
+        {
+          "label": "EBANX LinkedIn post",
+          "url": "https://www.linkedin.com/posts/ebanx_ebanx-payments-activity-7436500271024865280-RUcm",
+          "note": "Features André discussing emerging-market payment processing, approval rates, fraud, and issuer behavior."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sumsub expert profile",
+          "url": "https://sumsub.com/blog/experts/andre-peixoto/",
+          "note": "Profiles André as Director of Operations at EBANX leading cross-functional payments, business operations, fraud prevention, and merchant integration teams."
+        },
+        {
+          "label": "C-Suite podcast Facebook video",
+          "url": "https://www.facebook.com/csuitepodcast/videos/andr%C3%A9-peixoto-director-of-operations-at-ebanx-shares-how-close-collaboration-wit/1166719268760867/",
+          "note": "Secondary media appearance on issuer collaboration and balancing risk control with approval rates."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ylurnr",
+    "displayName": "Andrew Correa",
+    "headline": "CTO and co-founder of Yuzu Labs, building GTM intelligence and action workflows",
+    "company": "Yuzu Labs",
+    "title": "CTO",
+    "location": "San Francisco, United States",
+    "tags": [
+      "GTM intelligence",
+      "AI agents",
+      "B2B SaaS",
+      "revenue operations",
+      "machine learning",
+      "founder"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Yuzu Labs' own About page names Andrew Correa as CTO and co-founder; company blog bylines and LinkedIn support the technical/operator profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and co-founder of Yuzu Labs, an AI-native GTM action layer that turns sales conversations, emails, and deal signals into next actions. Background spans COO/CTO leadership, production software and hardware, LLM training, and peer-reviewed ML research. Useful connection for GTM AI, revenue intelligence, agent workflows, and early-stage product architecture.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Yuzu Labs About page",
+          "url": "https://www.yuzulabs.io/about",
+          "note": "Company-hosted page identifies Andrew Correa as CTO and co-founder and summarizes his operator and technical background."
+        },
+        {
+          "label": "Yuzu Labs blog author listing",
+          "url": "https://www.yuzulabs.io/posts",
+          "note": "Shows multiple Yuzu posts authored by Andrew Correa in June 2026."
+        },
+        {
+          "label": "Yuzu Labs blog post by Andrew Correa",
+          "url": "https://www.yuzulabs.io/posts/memory-compounding-knowledge",
+          "note": "Primary authored post on deal memory, forecast accuracy, and GTM intelligence."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/andrewcorrea",
+          "note": "Public profile identifies Andrew as an engineer with a large professional network."
+        },
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?hl=en&user=liUYouoAAAAJ",
+          "note": "Scholar profile for Andrew G. A. Correa, useful as supporting evidence for research background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0k1lm4i",
+    "displayName": "Andrew Dai",
+    "headline": "Co-founder and CEO of Elorian AI, building visual reasoning systems after Google Brain and DeepMind",
+    "company": "Elorian AI",
+    "title": "Co-founder and CEO",
+    "location": "Palo Alto, United States",
+    "tags": [
+      "visual reasoning",
+      "multimodal AI",
+      "DeepMind",
+      "Google Brain",
+      "foundation models",
+      "AI research"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Elorian's official site, Andrew's LinkedIn, and investor/media coverage consistently identify him as co-founder/CEO and former Google Brain/DeepMind researcher.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Elorian AI, a multimodal reasoning lab focused on visual reasoning. Previously spent nearly 14 years at Google, including Google Brain and DeepMind, with work tied to Gemini, PaLM 2, GLaM, and pretraining/data leadership. Strong match for discussions on foundation models, visual intelligence, multimodal reasoning, and AI research company building.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Elorian AI official site",
+          "url": "https://elorian.ai/",
+          "note": "Company site lists Andrew Dai as Co-Founder and CEO and describes Elorian's visual reasoning thesis."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/andrewdai",
+          "note": "Public profile identifies Andrew as Co-founder at Elorian AI, ex-DeepMind, located in Palo Alto."
+        },
+        {
+          "label": "LinkedIn launch post",
+          "url": "https://www.linkedin.com/posts/andrewdai_elorian-is-building-the-foundation-of-visual-activity-7448069840642220032-O0eb",
+          "note": "Andrew announces Elorian AI, describes former Google Brain/DeepMind background, and mentions $55M raised."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/AndrewDai?lang=en",
+          "note": "Public social profile describes Andrew as co-founder and CEO at Elorian AI and a deep learning/LLM researcher."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Pulse 2.0 funding coverage",
+          "url": "https://pulse2.com/elorian-ai-55-million-raised-for-multimodal-reasoning-research-lab-founded-by-former-deepmind-leaders/",
+          "note": "Reports Elorian AI's $55M raise and Andrew Dai's former Google Brain and DeepMind leadership background."
+        },
+        {
+          "label": "Delta Podcast episode",
+          "url": "https://podcasts.apple.com/se/podcast/ep-58-andrew-dai-elorian-ceo-and-former-deepmind/id1854467446?i=1000770011727&l=en-GB",
+          "note": "Podcast listing describes Andrew as Elorian co-founder/CEO and former DeepMind research director."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1lrtbaa",
+    "displayName": "Andrew Ervin",
+    "headline": "Generative AI manager at Eastman leading enterprise AI enablement and applied copilots",
+    "company": "Eastman",
+    "title": "Manager, Artificial Intelligence",
+    "location": "Kingsport, United States",
+    "tags": [
+      "generative AI",
+      "enterprise AI",
+      "Microsoft Fabric",
+      "Azure OpenAI",
+      "AI upskilling",
+      "manufacturing"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Microsoft customer story, and workforce-development report consistently identify Andrew Ervin as Eastman's generative AI manager and describe his enterprise AI work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Manager of AI and generative AI at Eastman, focused on enterprise AI adoption, data-enabled copilots, and AI upskilling. Public case studies describe work on internal ChatGPT usage, Microsoft Fabric, Azure OpenAI, and sales-copilot workflows that reduce customer-research and reporting time. Useful connection for practical enterprise AI rollout in industrial and materials organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/andrew-ervin-b7514a312",
+          "note": "Identifies Andrew Ervin as Manager, Generative AI at Eastman in Kingsport, Tennessee."
+        },
+        {
+          "label": "Microsoft customer story",
+          "url": "https://www.microsoft.com/en/customers/story/25673-eastman-chemical-company-microsoft-fabric",
+          "note": "Quotes Andrew Ervin, Manager of Generative AI at Eastman, on Fabric, sales copilots, voice-first workflows, and AI-enabled customer research."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Innovative Upskilling profile PDF",
+          "url": "https://cdn.fs.pathlms.com/iDflphNuTyWl6MWTQnqn",
+          "note": "Workforce-development profile cites Andrew Ervin as Generative AI Manager at Eastman and describes Eastman's generative AI literacy and upskilling work."
+        },
+        {
+          "label": "ASQ Northeast TN event listing",
+          "url": "https://www.facebook.com/ASQNortheastTN1106/",
+          "note": "Community event listing references a Generative AI session by Andrew Ervin."
+        }
+      ]
+    }
+  }
+]

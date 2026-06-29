@@ -1,0 +1,301 @@
+[
+  {
+    "lookupKey": "0b6wgih",
+    "displayName": "Abhishek Bhardwaj",
+    "headline": "Agent and RL infrastructure engineer focused on secure sandboxes for AI agents",
+    "company": "OpenAI",
+    "title": "Member of Technical Staff, RL & Agent Infrastructure",
+    "location": "",
+    "tags": [
+      "agent infrastructure",
+      "RL infrastructure",
+      "AI sandboxes",
+      "distributed systems",
+      "operating systems",
+      "microVMs",
+      "MCP"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, GitHub/X profiles, AI Engineer schedule, and Sessionize align around OpenAI agent/RL infrastructure and Arrakis sandbox work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Abhishek builds RL and agent infrastructure at OpenAI, with a systems background spanning operating systems, distributed infrastructure, and secure sandboxes. He previously built Arrakis, a microVM-based sandbox platform for AI agents with code execution, computer-use, snapshotting, Python SDK, and MCP support.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://abshkbh.com/",
+          "note": "Self-published profile and project context."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/abshkbh",
+          "note": "Professional profile for OpenAI RL and agent infrastructure work."
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/abshkbh",
+          "note": "Public code profile."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/abshkbh",
+          "note": "Public social profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Abhishek+Bhardwaj",
+          "note": "Conference schedule context."
+        },
+        {
+          "label": "Sessionize",
+          "url": "https://sessionize.com/abhishek-bhardwaj/",
+          "note": "Speaker profile."
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=wsFd22SL1s8",
+          "note": "Related talk/video context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "05n5m60",
+    "displayName": "Abhishek Khowala",
+    "headline": "Intel principal engineer applying AI, edge inference, and federated learning to health and life sciences",
+    "company": "Intel Corporation",
+    "title": "Principal AI Engineer",
+    "location": "Chandler, AZ, US",
+    "tags": [
+      "healthcare AI",
+      "life sciences",
+      "federated learning",
+      "edge inference",
+      "agentic AI",
+      "medical imaging",
+      "AI product architecture"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, SEMI bio, Intel-related publications, and conference listings consistently identify him as an Intel Principal Engineer / Head of AI for Health and Life Sciences in the Phoenix/Chandler area.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Abhishek is a Principal AI Engineer at Intel focused on healthcare and life sciences AI. His work spans federated learning, edge inference, medical AI workflows, and translating healthcare market needs into deployable AI solutions.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akhowala",
+          "note": "Professional profile."
+        },
+        {
+          "label": "Intel healthcare blog",
+          "url": "https://community.intel.com/t5/Blogs/Products-and-Solutions/Healthcare/bg-p/blog-healthcare",
+          "note": "Intel healthcare AI context."
+        },
+        {
+          "label": "Intel healthcare AI paper",
+          "url": "https://www.intel.fr/content/dam/www/public/us/en/documents/white-papers/use-ai-and-imaging-data-to-unlock-insights-and-improve-healthcare-paper.pdf",
+          "note": "Intel paper on AI and imaging data in healthcare."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "SEMI bio",
+          "url": "https://www.semi.org/en/bio-abhishek-khowala",
+          "note": "Conference bio."
+        },
+        {
+          "label": "SEMICON West speakers",
+          "url": "https://semiconwest2025.eventscribe.net/biography.asp?goToLetter=K&pfp=Speakers",
+          "note": "Speaker listing."
+        },
+        {
+          "label": "HealthTech Magazine",
+          "url": "https://healthtechmagazine.net/article/2024/12/intel-powerhouse-healthcare-ai-heres-how",
+          "note": "Secondary healthcare AI context."
+        },
+        {
+          "label": "Microsoft Tech Community",
+          "url": "https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/optimizing-azure-healthcare-multimodal-ai-models-for-intel-cpu-architecture/4401088",
+          "note": "Related Intel healthcare AI optimization context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0z38gwh",
+    "displayName": "Abhishek Loiwal",
+    "headline": "Voice AI systems architect building production-grade fintech support agents",
+    "company": "Fini",
+    "title": "AI Systems Architect",
+    "location": "Amsterdam, Netherlands",
+    "tags": [
+      "voice AI",
+      "AI agents",
+      "fintech support",
+      "applied ML",
+      "infrastructure",
+      "evaluation systems",
+      "high-frequency trading"
+    ],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Fini announcement, The Org, and recent event listings consistently point to Fini voice AI systems architecture in Amsterdam, with prior HFT background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Abhishek designs voice AI architectures and evaluation systems at Fini for enterprise fintech support. He brings an applied ML and infrastructure mindset shaped by previous high-frequency trading work, with emphasis on reliable, scalable systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://nl.linkedin.com/in/abhishekloiwal",
+          "note": "Professional profile."
+        },
+        {
+          "label": "Fini LinkedIn announcement",
+          "url": "https://www.linkedin.com/posts/usefini_were-excited-to-welcome-abhishek-loiwal-activity-7418940323135074304-lEaH",
+          "note": "Company announcement of his Fini role."
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/abhishekloiwal",
+          "note": "Public code profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org: Fini",
+          "url": "https://theorg.com/org/fini/offices/hq",
+          "note": "Fini organization context."
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/watch?v=9gxxZf8DwwI",
+          "note": "Related video context."
+        },
+        {
+          "label": "Stackforce",
+          "url": "https://www.stackforce.co/talent/abhishek-loiwal-co-founder-69e8f1e987c6dd56193ffcea",
+          "note": "Profile and prior founder context."
+        },
+        {
+          "label": "LinkedIn post",
+          "url": "https://www.linkedin.com/posts/deep-singla_its-great-fun-to-bring-builders-together-activity-7429819495411752961-S9eq",
+          "note": "Community/event context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jnbnh5",
+    "displayName": "Adam Hyder",
+    "headline": "Engineering executive leading product development for private funds technology",
+    "company": "Juniper Square",
+    "title": "Chief Development Officer & EVP Engineering",
+    "location": "San Francisco Bay Area, US",
+    "tags": [
+      "engineering leadership",
+      "SaaS",
+      "private funds",
+      "enterprise software",
+      "product development",
+      "security software",
+      "scaling engineering teams"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Juniper Square announcement and LinkedIn confirm his current CDO/EVP Engineering role; PR and prior leadership coverage support his background in Malwarebytes, BlueJeans, Jobvite, Yahoo HotJobs, and SaaS/security engineering leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Adam leads engineering and development at Juniper Square, overseeing platform and product delivery for private funds customers. He has held senior technology roles across SaaS, cybersecurity, collaboration, recruiting, and consumer internet companies.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Juniper Square announcement",
+          "url": "https://www.junipersquare.com/news/adam-hyder",
+          "note": "Company announcement of his Chief Development Officer role."
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adamhyder",
+          "note": "Professional profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "PR Newswire",
+          "url": "https://www.prnewswire.com/news-releases/adam-hyder-joins-juniper-square-as-chief-development-officer-302114677.html",
+          "note": "Syndicated announcement of Juniper Square role."
+        },
+        {
+          "label": "People Matters",
+          "url": "https://sea.peoplemattersglobal.com/news/appointments/malwarebytes-hires-adam-hyder-to-head-engineering-24971",
+          "note": "Prior Malwarebytes engineering leadership coverage."
+        },
+        {
+          "label": "Onrec",
+          "url": "https://www.onrec.com/news/news-archive/jobvite-names-adam-hyder-veteran-yahoo-engineering-leader-as-chief-technology-offi",
+          "note": "Prior Jobvite CTO coverage."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "170jw89",
+    "displayName": "Adam Ritzel",
+    "headline": "Software engineering leader managing internal systems for industrial laundry technology",
+    "company": "Alliance Laundry Systems",
+    "title": "Senior Director of Software Engineering",
+    "location": "St. Louis, MO, US",
+    "tags": [
+      "software engineering leadership",
+      "internal systems",
+      "manufacturing technology",
+      "enterprise software",
+      "digital systems",
+      "design"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Current role and company are mainly supported by LinkedIn search result snippets; X and GitHub corroborate identity and St. Louis presence, but detailed public professional sources are limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Adam is a software engineering leader at Alliance Laundry Systems, where his public profile indicates responsibility for internal systems. His public footprint also reflects a design-oriented engineering background and St. Louis base.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adam-ritzel",
+          "note": "Professional profile."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/adamritzel",
+          "note": "Public social profile."
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/adamritzel",
+          "note": "Public code profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "ALS Software GitHub followers",
+          "url": "https://github.com/orgs/ALSSoftware/followers",
+          "note": "Related organization footprint."
+        },
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Ritzel",
+          "note": "Directory search context for identity matching."
+        }
+      ]
+    }
+  }
+]

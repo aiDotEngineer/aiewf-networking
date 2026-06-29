@@ -1,0 +1,597 @@
+[
+  {
+    "lookupKey": "1oghwec",
+    "displayName": "Mayank Kohaley",
+    "headline": "Founder at Stealth Startup; former engineering leader associated with Zeta Global and Nudgespot",
+    "company": "Stealth Startup",
+    "title": "Founder",
+    "location": "San Bruno, CA",
+    "tags": ["engineering", "startup", "Ruby", "SaaS", "marketing tech"],
+    "confidence": "medium",
+    "confidenceNote": "Identity is supported by multiple person-specific sources, but the current Stealth Startup founder role is row-sourced and was not independently verified.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Public sources tie Mayank Kohaley to software engineering work in the Bay Area, including a GitHub profile and earlier Ruby community participation. Secondary public sources also associate him with Nudgespot and Zeta Global engineering leadership; the current stealth-founder role comes from the participant row.",
+    "sources": {
+      "primary": [
+        { "label": "GitHub profile", "url": "https://github.com/mayankkohaley", "note": "Public developer profile for Mayank Kohaley, location San Francisco." },
+        { "label": "Bangalore Ruby Developers Google Group", "url": "https://groups.google.com/g/bangalorerug/c/SSlyIpRiUew", "note": "Mayank Kohaley self-introduction discussing software engineering and Ruby." }
+      ],
+      "secondary": [
+        { "label": "Wellfound: Nudgespot team", "url": "https://wellfound.com/company/nudgespot-1/people", "note": "Lists Mayank Kohaley as a former Nudgespot team member in San Francisco." },
+        { "label": "LinkedIn post by Bharat Goyal", "url": "https://www.linkedin.com/posts/bharat-goyal-40a541_zeta-global-is-crushing-it-i-am-so-proud-activity-7194192191609597952-3ydi", "note": "Mentions Mayank Kohaley among Zeta Global engineering leadership." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03yyiyw",
+    "displayName": "Meena Mani",
+    "headline": "Senior Vice President of Product Development, Brokerage & Crypto at TradeStation",
+    "company": "Tradestation Inc",
+    "title": "SVP Brokerage Development",
+    "location": "Plantation, FL",
+    "tags": ["fintech", "brokerage", "crypto", "product", "technology leadership"],
+    "confidence": "high",
+    "confidenceNote": "Role and company are confirmed by LinkedIn and TradeStation/University of Miami conference sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Meena Mani leads brokerage and crypto product development at TradeStation. TradeStation and conference materials identify her as a panel participant for the University of Miami Business of Blockchain Technology Conference.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/meena-mani-digitaltechnology", "note": "Lists Meena Mani as Senior Vice President of Product Development - Brokerage & Crypto at TradeStation." },
+        { "label": "TradeStation press release", "url": "https://www.tradestation.com/press-and-news/tradestation-announces-title-sponsorship-of-the-university-of-miamis-inaugural-business-of-blockchain-technology-conference/", "note": "Names Meena Mani as Senior Vice President, Brokerage and Crypto Product Development." }
+      ],
+      "secondary": [
+        { "label": "Business Wire release", "url": "https://www.businesswire.com/news/home/20230508005538/en/TradeStation-Announces-Title-Sponsorship-of-the-University-of-Miamis-Inaugural-Business-of-Blockchain-Technology-Conference", "note": "Syndicated TradeStation announcement naming Meena Mani and her conference role." },
+        { "label": "University of Miami conference program PDF", "url": "https://www.herbert.miami.edu/_assets/pdfs/faculty-research/business-conferences/blockchain-technology-conference/blockchain-conference-2023-program.pdf", "note": "Conference program lists Meena Mani as a participant." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0a91du7",
+    "displayName": "Meera Vinod",
+    "headline": "Product Manager, Gen AI at AIG; responsible AI and HCI practitioner",
+    "company": "AIG",
+    "title": "GenAI Platform Product Manager",
+    "location": "Atlanta, GA",
+    "tags": ["GenAI", "product management", "responsible AI", "HCI", "UX"],
+    "confidence": "high",
+    "confidenceNote": "AIG GenAI product role is corroborated by LinkedIn and UC Berkeley; row-provided Atlanta location was not independently verified in the strongest public sources found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Meera Vinod is publicly listed by UC Berkeley as a Product Manager, Gen AI at AIG and MIMS 2023 alum. Her LinkedIn and writing emphasize AI product management, responsible AI, HCI, explainability, and user experience.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/meera-vinod", "note": "Lists Meera Vinod as AI Product Manager with AIG and UC Berkeley School of Information background." },
+        { "label": "UC Berkeley School of Information event", "url": "https://www.ischool.berkeley.edu/events/2025/career-spotlight-careers-artificial-intelligence", "note": "Lists Meera Vinod as Product Manager, Gen AI at AIG." },
+        { "label": "Medium article", "url": "https://medium.com/%40meera_vinod/improving-linkedins-new-gen-ai-feature-set-with-explainability-a19b262f72d0", "note": "Person-authored writing on GenAI explainability and UX." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn post on AI collaboration and explainability", "url": "https://www.linkedin.com/posts/meera-vinod_chi-wrapped-up-a-couple-of-weeks-ago-the-activity-7457505717655257088-H-xC", "note": "Public post reflecting her AI, HCI, and explainability interests." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01xtw7a",
+    "displayName": "Meitar Ronen",
+    "headline": "AI Lead at Clover Security; computer vision and deep clustering researcher",
+    "company": "Clover Security",
+    "title": "AI Lead",
+    "location": "Tel Aviv, Israel",
+    "tags": ["AI security", "computer vision", "deep learning", "clustering", "research"],
+    "confidence": "high",
+    "confidenceNote": "Current role and research identity are supported by LinkedIn plus publication/code sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Meitar Ronen is publicly listed as AI Lead at Clover Security and has prior research output in computer vision and unsupervised deep clustering. His CVPR 2022 paper DeepDPM and related GitHub repository identify him as an author.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://il.linkedin.com/in/meitar-ronen", "note": "Lists Meitar Ronen as AI Lead at Clover Security with prior General Motors and Microsoft experience." },
+        { "label": "DeepDPM GitHub repository", "url": "https://github.com/bgu-cs-vil/deepdpm", "note": "Official implementation naming Meitar Ronen as an author." },
+        { "label": "CVPR Open Access paper page", "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Ronen_DeepDPM_Deep_Clustering_With_an_Unknown_Number_of_Clusters_CVPR_2022_paper.html", "note": "CVPR 2022 paper by Meitar Ronen, Shahaf E. Finder, and Oren Freifeld." }
+      ],
+      "secondary": [
+        { "label": "arXiv: DeepDPM", "url": "https://arxiv.org/abs/2203.14309", "note": "Preprint metadata and abstract for DeepDPM." },
+        { "label": "LinkedIn Clover Security post", "url": "https://www.linkedin.com/posts/meitar-ronen_not-another-security-booth-for-not-another-activity-7442096857037676544-OLwe", "note": "Recent public post under Meitar Ronen's Clover Security profile." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ueo6ob",
+    "displayName": "Mengliao Wang",
+    "headline": "AI Platform Manager at Geotab",
+    "company": "Geotab Inc.",
+    "title": "AI Platform Manager",
+    "location": "Canada",
+    "tags": ["AI platform", "MLOps", "Geotab", "Kubernetes", "cloud infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Role is corroborated by LinkedIn and Geotab/Google Cloud-related public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mengliao (Mike) Wang is listed as AI Platform Manager at Geotab. Google Cloud published a Geotab engineering article by him about multi-cluster Kubernetes on GKE, and The Org lists him on Geotab's AI Platform Development team.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/mengliao-mike-wang-49862926", "note": "Lists Mengliao (Mike) Wang as AI Platform Manager at Geotab." },
+        { "label": "Google Cloud Blog guest post", "url": "https://cloud.google.com/blog/products/containers-kubernetes/multi-cluster-kubernetes-with-gke-at-geotab", "note": "Article by Mengliao Wang as Senior Software Developer and Team Lead at Geotab." }
+      ],
+      "secondary": [
+        { "label": "The Org: Geotab AI Platform Development", "url": "https://theorg.com/org/geotab/teams/ai-platform-development", "note": "Lists Mengliao Wang as Manager, AI Platform." },
+        { "label": "University of Toronto ARIA brochure PDF", "url": "https://mscac.utoronto.ca/wp-content/uploads/2024/02/2022_ARIA-Brochure.pdf", "note": "Lists Mengliao Wang as industry supervisor at Geotab Inc." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wzigmc",
+    "displayName": "Merlin Triplett",
+    "headline": "Vice President of Engineering at Dispatch",
+    "company": "Dispatch",
+    "title": "Vice President of Engineering",
+    "location": "Minneapolis, MN",
+    "tags": ["engineering leadership", "logistics", "delivery tech", "platforms", "scalable systems"],
+    "confidence": "high",
+    "confidenceNote": "Current Dispatch role is confirmed by the company page and corroborated by organizational directory sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Merlin Triplett is listed by Dispatch as its Vice President of Engineering. Dispatch describes him as leading engineering, driving innovation, cultivating technical excellence, and building scalable customer-centric solutions.",
+    "sources": {
+      "primary": [
+        { "label": "Dispatch company leadership page", "url": "https://www.dispatchit.com/company", "note": "First-party company page naming Merlin Triplett as Vice President of Engineering." }
+      ],
+      "secondary": [
+        { "label": "The Org: Dispatch org chart", "url": "https://theorg.com/org/dispatchit", "note": "Lists Merlin Triplett as VP, Engineering at Dispatch." },
+        { "label": "The Org: Engineering and Product team", "url": "https://theorg.com/org/dispatchit/teams/engineering-and-product", "note": "Lists Merlin Triplett within Dispatch's Engineering and Product team." },
+        { "label": "Equilar executive profile reference", "url": "https://people.equilar.com/bio/person/jewel-evans-darrington-dispatchit-inc-de/43651239", "note": "Names Merlin Triplett as Vice President, Engineering at DispatchIt in executive connection data." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1usq6e8",
+    "displayName": "Merve Noyan",
+    "headline": "Machine learning developer advocate at Hugging Face focused on multimodal and open-source AI",
+    "company": "Hugging Face",
+    "title": "Developer Advocate",
+    "location": "Paris, France",
+    "tags": ["developer advocacy", "Hugging Face", "open source", "multimodal AI", "computer vision", "ML education"],
+    "confidence": "high",
+    "confidenceNote": "Multiple first-party or profile sources match the row name, employer, and role area.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Merve Noyan is a machine learning advocate/developer advocate at Hugging Face. Public profiles and talks emphasize open-source ML, computer vision, multimodality, LLMs, vision-language models, and making foundation models more accessible through tooling and education.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://merveenoyan.github.io/me/", "note": "Identifies her as a Paris-based ML practitioner working at Hugging Face." },
+        { "label": "Hugging Face profile", "url": "https://huggingface.co/merve", "note": "Active Hugging Face profile with posts, articles, and projects under Merve." },
+        { "label": "GitHub profile", "url": "https://github.com/merveenoyan", "note": "Describes work around zero-shot vision, multimodality, optimization, and transformers." }
+      ],
+      "secondary": [
+        { "label": "PyData Paris 2024 speaker profile", "url": "https://pretalx.com/pydata-paris-2024/speaker/QKYJWS/", "note": "Lists her as a machine learning advocate engineer at Hugging Face." },
+        { "label": "Google Developers story", "url": "https://developers.google.com/community/stories/developerjourney/202212-merve", "note": "Identifies her as a Google Developer Expert in Machine Learning." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qxwv48",
+    "displayName": "Michael Ahmarani",
+    "headline": "Technology leader at ARC Group Benefits",
+    "company": "ARC",
+    "title": "VP",
+    "location": "Montreal, Canada",
+    "tags": ["insurance", "group benefits", "technology leadership", "Montreal"],
+    "confidence": "medium",
+    "confidenceNote": "Name and ARC affiliation match; public sources show Director of Technology rather than the row-provided VP title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Public sources identify Michael Ahmarani as Director/Directeur de la technologie at ARC Group Benefits Inc., a Montreal group benefits and pension plans firm. The participant row lists VP; public evidence found supports technology leadership at ARC but not that exact title.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/mikeahmarani", "note": "Lists Michael Ahmarani as Directeur de la technologie at ARC Group Benefits." },
+        { "label": "ARC Group Benefits LinkedIn company page", "url": "https://ca.linkedin.com/company/arc-group-benefits-inc-", "note": "Official company profile lists Michael Ahmarani among ARC employees." }
+      ],
+      "secondary": [
+        { "label": "ZoomInfo ARC Group Benefits profile", "url": "https://www.zoominfo.com/c/arc-group-benefits-inc/356071339", "note": "Org chart lists Michael Ahmarani as Director of Technology." },
+        { "label": "Datanyze ARC Group Benefits profile", "url": "https://www.datanyze.com/companies/arc-group-benefits/356071339", "note": "Lists Michael Ahmarani as Director of Technology." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1skf8k3",
+    "displayName": "Michael Brigl",
+    "headline": "Head of BCG Central Europe and Managing Director & Senior Partner at BCG",
+    "company": "The Boston Consulting Group GmbH",
+    "title": "Head of BCG Central Europe",
+    "location": "Munich, Germany",
+    "tags": ["BCG", "consulting", "Central Europe", "private equity", "deep tech", "generative AI"],
+    "confidence": "high",
+    "confidenceNote": "BCG first-party pages and conference profiles match the row name, employer, title, and Munich location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Brigl leads BCG's business across Germany, Austria, Switzerland, Poland, Hungary, and the Czech Republic from Munich. His public materials emphasize Central Europe leadership, private equity, deep tech, digital transformation, and generative AI in strategy consulting.",
+    "sources": {
+      "primary": [
+        { "label": "BCG expert profile", "url": "https://www.bcg.com/about/people/experts/michael-brigl", "note": "States that he leads BCG's business in Austria, Czech Republic, Germany, Hungary, Poland, and Switzerland." },
+        { "label": "BCG Germany page", "url": "https://www.bcg.com/germany", "note": "Lists Michael Brigl as Managing Director & Senior Partner, Head of BCG Central Europe, Munich." },
+        { "label": "LinkedIn profile", "url": "https://de.linkedin.com/in/michael-brigl", "note": "Lists him as Head of BCG Germany, Austria, Switzerland & CEE." }
+      ],
+      "secondary": [
+        { "label": "TECH by Handelsblatt speaker profile", "url": "https://www.tech-europe.org/speaker/michael-brigl", "note": "Speaker bio says he heads BCG in Central Europe." },
+        { "label": "Falling Walls profile", "url": "https://falling-walls.com/de/foundation/people/michael-brigl", "note": "Lists him as Head of BCG Central Europe since 2022." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1c3satz",
+    "displayName": "Michael Chen",
+    "headline": "Chief AI Officer at Delta Dental of Michigan, Ohio, and Indiana",
+    "company": "Delta Dental of Michigan",
+    "title": "Chief AI officer",
+    "location": "Okemos, MI",
+    "tags": ["AI governance", "insurance", "healthcare", "enterprise AI", "claims processing", "data governance"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific sources match the row name, Delta Dental affiliation, and Chief AI Officer role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Chen is publicly listed as Sr. Director and Chief AI Officer for Delta Dental of Michigan, Ohio, and Indiana. Speaker bios say he co-led the design of Delta Dental of Michigan's core claims processing platform and now drives enterprise AI strategy.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mchen", "note": "Lists Michael Chen as Chief AI Officer at Delta Dental." },
+        { "label": "Delta Dental of Michigan LinkedIn company page", "url": "https://www.linkedin.com/company/delta-dental-of-michigan", "note": "Company profile lists Michael Chen among Delta Dental of Michigan employees." }
+      ],
+      "secondary": [
+        { "label": "DATAVERSITY AIGOV25 speaker profile", "url": "https://training.dataversity.net/courses/aigov25-adding-ai-governance-to-an-established-data-governance-program", "note": "Lists him as Sr. Director and Chief AI Officer." },
+        { "label": "AI Governance Conference profile", "url": "https://aigovconference.com/", "note": "Lists Michael Chen as Sr. Director and Chief AI Officer at Delta Dental of Michigan, Ohio, and Indiana." },
+        { "label": "MSU Research Foundation summit recap", "url": "https://msufoundation.org/data-science-ai-summit-explores-how-agentic-ai-is-reshaping-talent-research-and-innovation/", "note": "Reports that he discussed agentic AI use in claims review with human oversight." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "11e390x",
+    "displayName": "Michael Chen",
+    "headline": "Co-founder and CTO of Arphie",
+    "company": "Arphie",
+    "title": "CTO",
+    "location": "San Francisco, CA",
+    "tags": ["startup", "CTO", "Arphie", "AI agents", "RFP automation", "enterprise software", "infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Arphie first-party materials, LinkedIn, and startup profiles match the row name, company, role, and San Francisco context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Chen is the co-founder and CTO of Arphie, a San Francisco AI company building agents for RFPs, security questionnaires, DDQs, and related enterprise workflows. Arphie's funding announcement says he previously led infrastructure teams at Asana and Palantir.",
+    "sources": {
+      "primary": [
+        { "label": "Arphie seed announcement", "url": "https://www.arphie.ai/blog/arphies-2-9m-seed-round-led-by-general-catalyst", "note": "Identifies Michael Chen as CTO and co-founder." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/michael-chen-4751029a", "note": "Lists Michael Chen as Co-Founder & CTO at Arphie." },
+        { "label": "Arphie LinkedIn company page", "url": "https://www.linkedin.com/company/arphie", "note": "Company page lists Michael Chen as Co-Founder & CTO." }
+      ],
+      "secondary": [
+        { "label": "StartupHub.ai Arphie profile", "url": "https://www.startuphub.ai/startups/arphie", "note": "Profiles Arphie as an AI RFP and questionnaire automation startup." },
+        { "label": "Standout Arphie profile", "url": "https://standout.work/companies/286153ae-21b6-4bcb-9887-c0b119b59587", "note": "Lists Michael Chen as a founder and notes prior infrastructure leadership at Asana and Palantir." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fkfm2j",
+    "displayName": "Michael Gaskin",
+    "headline": "Chief Information Officer at Camarena Health",
+    "company": "Camarena Health",
+    "title": "Chief Information Officer",
+    "location": "Madera, CA",
+    "tags": ["healthcare", "CIO", "community health", "IT leadership", "Madera"],
+    "confidence": "high",
+    "confidenceNote": "Official Camarena Health staff page and LinkedIn match the row name, organization, and CIO title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Gaskin is Chief Information Officer at Camarena Health in California's Central Valley. Public profiles and Camarena's own staff materials identify him as part of the executive leadership team.",
+    "sources": {
+      "primary": [
+        { "label": "Camarena Health staff page", "url": "https://www.camarenahealth.org/about-us/staff/", "note": "Lists Michael Gaskin, BS, as Chief Information Officer." },
+        { "label": "Camarena Health 2024 annual report", "url": "https://www.camarenahealth.org/wp-content/uploads/2025/08/CAM-2025-02-11-2024-Annual-Report-WEB-2.pdf", "note": "Annual report lists Michael Gaskin as Chief Information Officer." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/michaelgaskin", "note": "Lists Michael Gaskin as Chief Information Officer at Camarena Health." }
+      ],
+      "secondary": [
+        { "label": "The Org profile", "url": "https://theorg.com/org/camarena-health/org-chart/michael-gaskin", "note": "Lists him as CIO and summarizes prior IT leadership roles." },
+        { "label": "Cause IQ Camarena Health profile", "url": "https://www.causeiq.com/organizations/camarena-health%2C942503904/", "note": "Personnel listing includes Michael Gaskin as Chief Information Officer." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1kor6jk",
+    "displayName": "Michael Goldman",
+    "headline": "Division Leader, Computational Engineering Division at Lawrence Livermore National Laboratory",
+    "company": "Lawrence Livermore National Laboratory",
+    "title": "Division Leader",
+    "location": "Livermore, CA",
+    "tags": ["national lab", "AI", "national security", "data science", "computational engineering"],
+    "confidence": "high",
+    "confidenceNote": "Multiple LLNL first-party pages match the participant name, employer, role, and Livermore affiliation.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael J. Goldman leads LLNL's Computational Engineering Division, an organization focused on engineering modeling and simulation, data analytics, decision science, and signal/image processing. His LLNL bio says his work spans overhead imagery, machine learning, data compression, system development, and AI/national security.",
+    "sources": {
+      "primary": [
+        { "label": "LLNL People profile", "url": "https://people.llnl.gov/goldman21", "note": "Person-specific LLNL bio with current title, education, and project areas." },
+        { "label": "LLNL Engineering leadership page", "url": "https://engineering.llnl.gov/about", "note": "Lists Mike Goldman as Computational Engineering Division Lead." },
+        { "label": "LLNL Data Science Institute leadership page", "url": "https://data-science.llnl.gov/our-mission/leadership", "note": "Lists Michael Goldman as Director Emeritus and notes DSI director tenure." }
+      ],
+      "secondary": [
+        { "label": "Sasakawa Peace Foundation USA NEXT Japan AI Study Trip PDF", "url": "https://spfusa.org/wp-content/uploads/2024/08/NEXT-Japan-AI-Study-Trip-Overview.pdf", "note": "Participant bio corroborates LLNL Global Security and AI-related background." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0vngamf",
+    "displayName": "Michael Grinich",
+    "headline": "Founder and CEO of WorkOS",
+    "company": "WorkOS",
+    "title": "CEO",
+    "location": "San Francisco, CA",
+    "tags": ["developer tools", "enterprise SaaS", "identity", "auth", "founder"],
+    "confidence": "high",
+    "confidenceNote": "WorkOS, LinkedIn, GitHub, X, and speaker bios consistently match the same WorkOS founder identity.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Grinich is the founder and CEO of WorkOS, a developer platform for enterprise-readiness features such as SSO, directory sync, audit logs, and access control. Public bios also note he previously co-founded Nylas and studied computer science at MIT.",
+    "sources": {
+      "primary": [
+        { "label": "WorkOS podcast host bio", "url": "https://workos.com/podcast/building-the-next-generation-of-developer-tools", "note": "First-party WorkOS page where Grinich identifies himself as WorkOS founder." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/grinich", "note": "Lists Founder, WorkOS, San Francisco, and MIT." },
+        { "label": "GitHub profile", "url": "https://github.com/grinich", "note": "Profile says WorkOS founder and links X and LinkedIn." },
+        { "label": "X profile/status", "url": "https://x.com/grinich/status/1230189771101630465?lang=en", "note": "Self-identifies as founder and CEO of WorkOS and mentions prior Nylas role." }
+      ],
+      "secondary": [
+        { "label": "Identiverse speaker profile", "url": "https://identiverse.com/idv25/speaker/?idvid=1663688", "note": "Speaker bio describes WorkOS role, Nylas, and MIT background." },
+        { "label": "LeadDev profile", "url": "https://leaddev.com/community/michael-grinich", "note": "Conference/community bio for WorkOS founder and CEO." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03eig10",
+    "displayName": "Michael Masson",
+    "headline": "CTO at Botpress",
+    "company": "Botpress Technologies",
+    "title": "CTO",
+    "location": "Montreal, Canada",
+    "tags": ["AI agents", "developer tools", "Botpress", "chatbots", "Montreal"],
+    "confidence": "high",
+    "confidenceNote": "Botpress event pages, Botpress LinkedIn posts, GitHub, and LinkedIn all match the same Botpress CTO identity.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Masson is CTO at Botpress, where public materials associate him with AI agents, developer tooling, and Botpress events. His GitHub profile links him to Botpress and his personal site, and Botpress public event material lists him as CTO.",
+    "sources": {
+      "primary": [
+        { "label": "Botpress events page", "url": "https://botpress.com/events", "note": "Lists Michael Masson as CTO at Botpress for Botpress AI events." },
+        { "label": "GitHub profile", "url": "https://github.com/michaelmass", "note": "Personal GitHub profile links to Botpress and michaelmasson.com." },
+        { "label": "LinkedIn profile", "url": "https://ca.linkedin.com/in/michaelmasson55/en", "note": "Lists CTO at Botpress and Quebec/Canada location." },
+        { "label": "Botpress LinkedIn post", "url": "https://www.linkedin.com/posts/botpress_our-cto-mike-loves-to-talk-about-coding-activity-7446919655501287424-W5r4", "note": "Botpress post refers to Michael Masson as CTO." }
+      ],
+      "secondary": [
+        { "label": "Firecrawl Botpress case study", "url": "https://www.firecrawl.dev/blog/how-botpress-enhances-knowledge-base-creation-with-firecrawl", "note": "Mentions Michael Masson, CTO at Botpress." },
+        { "label": "YouTube talk listing", "url": "https://www.youtube.com/watch?v=eFMsgHyAKgE&vl=en", "note": "Talk listing names Michael Masson as Botpress CTO speaking about AI agents." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "13iwzz9",
+    "displayName": "Michael Richman",
+    "headline": "Founder of Cmd+Ctrl and engineering leader at Bitly",
+    "company": "Bitly | Cmd+Ctrl",
+    "title": "VP | Founder",
+    "location": "Denver, CO",
+    "tags": ["AI coding agents", "developer tools", "mobile devtools", "Bitly", "Cmd+Ctrl"],
+    "confidence": "medium",
+    "confidenceNote": "Identity is strongly linked by Cmd+Ctrl authorship and X handle; exact VP title from the row was not independently confirmed.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Richman writes about Cmd+Ctrl, a remote orchestration layer for AI coding agents, and his X profile describes him as an engineering leader at Bitly and founder of Cmd+Ctrl. A Bitly engineering post from 2014 is signed by Michael Richman with the same X handle.",
+    "sources": {
+      "primary": [
+        { "label": "Cmd+Ctrl blog post", "url": "https://docs.cmd-ctrl.ai/blog/what-is-cmd-ctrl", "note": "First-party Cmd+Ctrl article authored by Michael Richman." },
+        { "label": "X profile", "url": "https://x.com/mrwoofster", "note": "Profile says engineering leader at Bitly and founder of Cmd+Ctrl." },
+        { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/michael-richman-b7807b2_what-is-cmdctrl-activity-7431563263773159424-Sdys", "note": "Michael Richman post says he built Cmd+Ctrl." },
+        { "label": "Bitly engineering blog post", "url": "https://word.bitly.com/post/74069870671/optimizing-text-processing", "note": "Bitly engineering post signed by Michael Richman with the same X handle." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/michael-richman-b7807b2", "note": "Person-specific profile for Michael Richman in Denver." },
+        { "label": "TwStalker mirror of X profile", "url": "https://ww.twstalker.com/mrwoofster", "note": "Mirror preserves X bio and recent Cmd+Ctrl-related posts." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1uevgiw",
+    "displayName": "Michael Ritinski",
+    "headline": "Analyst and Partner at Foxhaven Asset Management",
+    "company": "Foxhaven",
+    "title": "Partner",
+    "location": "Charlottesville, VA",
+    "tags": ["investment management", "public equities", "TMT", "consumer", "industrials"],
+    "confidence": "medium",
+    "confidenceNote": "Foxhaven first-party team page confirms the person and firm but says analyst; LinkedIn and secondary databases also use partner language.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Ritinski is listed by Foxhaven as an analyst focused across TMT, consumer, and industrials. Foxhaven says he began securities analysis work as an undergraduate and earned a BS in Commerce with a finance concentration from the University of Virginia in 2014.",
+    "sources": {
+      "primary": [
+        { "label": "Foxhaven team page", "url": "https://www.foxhavencap.com/team", "note": "First-party team bio for Michael Ritinski at Foxhaven." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/michael-ritinski-b311b65a", "note": "Lists Analyst and Partner at Foxhaven Asset Management LP." }
+      ],
+      "secondary": [
+        { "label": "Tracxn Foxhaven profile", "url": "https://tracxn.com/d/private-equity/foxhavenassetmanagement/__PzJNiC4ByUhtr6w8XqmKxEtkGbUsspGdW4waMMih9Ik", "note": "Lists Michael Ritinski as partner in Charlottesville." },
+        { "label": "The Org Foxhaven page", "url": "https://theorg.com/org/foxhaven", "note": "Lists Michael Ritinski in Foxhaven org chart as analyst." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ufohof",
+    "displayName": "Michael Sekits",
+    "headline": "Co-Founder and Managing Director at Strandview Capital",
+    "company": "Strandview Capital",
+    "title": "MD",
+    "location": "El Segundo, CA",
+    "tags": ["fintech", "investment", "banking technology", "private equity", "Strandview"],
+    "confidence": "high",
+    "confidenceNote": "Strandview first-party pages, Btech Consortium, LinkedIn, SEC adviser materials, and nonprofit board pages consistently identify the same person.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Sekits is co-founder and managing director of Strandview Capital, an El Segundo investment firm focused on financial services and technology. Strandview and Btech Consortium materials link him to bank technology and fintech investing.",
+    "sources": {
+      "primary": [
+        { "label": "Strandview Capital profile", "url": "https://www.strandview.com/team/mike-sekits/", "note": "First-party bio for Mike Sekits, including board roles and education." },
+        { "label": "Strandview Capital team page", "url": "https://www.strandview.com/", "note": "Lists Michael Sekits as co-founder and managing director." },
+        { "label": "Btech Consortium team page", "url": "https://btechconsortium.com/about/our-team/", "note": "Lists Michael Sekits as co-founder and managing director at Strandview Capital." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sekits", "note": "Person-specific LinkedIn profile for Mike Sekits tied to Strandview and Evergreen Goodwill." }
+      ],
+      "secondary": [
+        { "label": "SEC Form ADV PDF", "url": "https://reports.adviserinfo.sec.gov/reports/ADV/284289/PDF/284289.pdf", "note": "Regulatory filing lists Michael Sekits as managing member for Strandview Capital." },
+        { "label": "Evergreen Goodwill board page", "url": "https://evergreengoodwill.org/about-us/board-and-staff/", "note": "Lists Michael Sekits as Chair, Strandview Capital." },
+        { "label": "Forbes Councils profile", "url": "https://councils.forbes.com/profile/Mike-Sekits-Managing-Director-Btech-Consortium/9fc878c0-dd5e-4f29-8521-d6cfdf807481", "note": "Profiles Mike Sekits as managing director of Btech Consortium." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1guwfhv",
+    "displayName": "Michael Shelton",
+    "headline": "Executive Director and Principal Engineer for Kubernetes Platform at JPMorganChase",
+    "company": "JPMorganChase",
+    "title": "Principal Engineer- Kubernetes Platform",
+    "location": "Jersey City, NJ",
+    "tags": ["Kubernetes", "platform engineering", "cloud infrastructure", "financial services", "SRE"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific sources match the name, company, and Kubernetes platform role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Shelton is a Kubernetes platform engineering leader at JPMorganChase. Public sources connect him to principal Kubernetes engineering roles and a conference talk on running multi-tenant Kubernetes in a regulated financial-services environment.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/michaelshelton86", "note": "Profile lists Michael Shelton as Kubernetes Principal Engineer with JPMorgan Chase experience." },
+        { "label": "YouTube: Lessons Learned Running Kubernetes Multi-Tenant", "url": "https://www.youtube.com/watch?v=K8QckQQuaDw", "note": "Talk listing names Michael Shelton of JPMorgan Chase discussing Kubernetes operations." }
+      ],
+      "secondary": [
+        { "label": "Open Source in Finance Forum New York", "url": "https://conferenceconnect.com/events/open-source-in-finance-forum-new-york", "note": "Speaker listing names Michael Shelton as Lead Kubernetes Architect at JPMorgan Chase & Co." },
+        { "label": "The Org JPMorgan Chase org chart", "url": "https://theorg.com/org/jpmorgan-chase/org-chart/kevin-cameron", "note": "Org chart lists Michael Shelton as Executive Director and Principal Engineer for Kubernetes Platform." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qwtp8s",
+    "displayName": "Michael Stock",
+    "headline": "Co-Founder of Buildr",
+    "company": "Buildr",
+    "title": "Founder",
+    "location": "",
+    "tags": ["construction tech", "SaaS", "software engineering", "Ruby", "Elixir", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub, Stack Overflow, and LinkedIn all align on Mike/Michael Stock and Buildr.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Stock II is a co-founder of Buildr, a construction software company. Public developer profiles also connect him to Ruby, Elixir, Swift, GitHub, Stack Overflow, and Buildr-related engineering work.",
+    "sources": {
+      "primary": [
+        { "label": "Personal site", "url": "https://mikeastock.com/", "note": "Personal page identifies Mike Stock as Co-Founder of Buildr." },
+        { "label": "GitHub profile", "url": "https://github.com/mikeastock", "note": "GitHub profile identifies Michael Stock as Co-Founder of @buildrtech." },
+        { "label": "Stack Overflow profile", "url": "https://stackoverflow.com/users/1769125", "note": "Developer profile identifies Mike Stock as Co-founder of Buildr." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/mikeastock", "note": "Profile identifies Michael Stock II as Co-Founder of Buildr." }
+      ],
+      "secondary": [
+        { "label": "Tracxn Buildr company profile", "url": "https://tracxn.com/d/companies/buildr/__Fw4Yw-ZreeXKRo2RLvCUZyh5G5sVuJU2H0vbBeV3hfo", "note": "Company profile lists Michael Stock among Buildr's founders." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03lo7qq",
+    "displayName": "Michael Weng",
+    "headline": "Investment Analyst in the U.S. Equity Division at T. Rowe Price",
+    "company": "T. Rowe Price Investment Management",
+    "title": "Investment Analyst",
+    "location": "Baltimore, MD",
+    "tags": ["investment research", "equities", "business services", "asset management", "finance"],
+    "confidence": "high",
+    "confidenceNote": "First-party T. Rowe Price sources match the participant row's name, firm, and investment analyst role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Weng is an investment analyst in T. Rowe Price's U.S. Equity Division. T. Rowe Price materials describe his coverage as business services, including HCM and consulting.",
+    "sources": {
+      "primary": [
+        { "label": "T. Rowe Price biography", "url": "https://www.troweprice.com/institutional/us/en/bios/biodetails.bio-michael-weng.html", "note": "Bio identifies Michael Weng as an investment analyst in the U.S. Equity Division." },
+        { "label": "T. Rowe Price U.S. equities presentation", "url": "https://www.troweprice.com/content/dam/gdx/images/campaigns/us-equities/USSC-presentation-US-Equity-Event-2024.pdf", "note": "Research coverage material lists Michael Weng for HCM and consulting." }
+      ],
+      "secondary": [
+        { "label": "Used Car Week 2022 attendee list", "url": "https://usedcarweek.biz/wp-content/uploads/UCW22_Public_AttendeeList_FINAL.pdf", "note": "Public attendee list names Michael Weng as Investment Analyst at T. Rowe Price Investment Management." },
+        { "label": "LinkedIn public directory", "url": "https://www.linkedin.com/pub/dir/Michael/Weng/us-0-United-States", "note": "Directory result lists a Michael Weng as Vice President, Investment Analyst at T. Rowe Price." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01ezn3u",
+    "displayName": "Michael Winnick",
+    "headline": "Founder and CEO of Dscout",
+    "company": "Dscout",
+    "title": "CEO",
+    "location": "Chicago, IL",
+    "tags": ["user research", "UXR", "SaaS", "startup founder", "AI", "customer insights"],
+    "confidence": "high",
+    "confidenceNote": "Multiple first-party Dscout sources and conference profiles match the name, company, founder/CEO role, and Chicago context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michael Winnick is the founder and CEO of Dscout, a user research platform based in Chicago. Dscout materials describe his background leading the innovation consultancy gravitytank before its acquisition by Salesforce, and recent first-party content connects him to AI and user research strategy.",
+    "sources": {
+      "primary": [
+        { "label": "Dscout Series B announcement", "url": "https://dscout.com/people-nerds/dscout-raises-7-5-million-series-b-funding-round", "note": "Dscout bio identifies Michael Winnick as CEO and founder." },
+        { "label": "Dscout: GenAI at Dscout", "url": "https://dscout.com/people-nerds/genai-at-dscout", "note": "First-party page names Dscout CEO Michael Winnick in connection with AI." },
+        { "label": "Dscout: The AI + Human Opportunity", "url": "https://dscout.com/people-nerds/the-ai-and-human-opportunity", "note": "First-party article names Michael Winnick as Dscout founder and CEO." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/michael-winnick-482293", "note": "Public profile result matches Michael Winnick in the Greater Chicago Area." }
+      ],
+      "secondary": [
+        { "label": "UXDX profile", "url": "https://uxdx.com/profile/michael-winnick/", "note": "Conference profile identifies Michael Winnick as CEO of Dscout." },
+        { "label": "Churn.fm episode", "url": "https://www.churn.fm/episode/creating-human-relationship-capital-to-reduce-churn", "note": "Podcast page identifies Michael Winnick as founder and CEO of Dscout." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "04uj6vb",
+    "displayName": "Michelangelo D'Agostino",
+    "headline": "VP of AI/ML at Grainger",
+    "company": "Grainger",
+    "title": "VP of AI/ML",
+    "location": "",
+    "tags": ["AI", "machine learning", "enterprise AI", "NLP", "LLMs", "industrial commerce"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, and multiple event pages match the distinctive name, Grainger role, and AI/ML background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Michelangelo D'Agostino is VP of AI/ML at Grainger, where public event bios say his team builds AI-driven products for the maintenance, repair, and operations industry. His public profiles also show prior leadership roles at Tegus, Cameo, ShopRunner, Civis Analytics, and Braintree/Venmo.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/michelangelod", "note": "Profile headline identifies him as an AI leader at Grainger." },
+        { "label": "GitHub profile", "url": "https://github.com/mdagost", "note": "Profile identifies Michelangelo D'Agostino as VP of AI/ML at Grainger." },
+        { "label": "LinkedIn hiring post", "url": "https://www.linkedin.com/posts/michelangelod_senior-manager-applied-machine-learning-activity-7353407721062248450-lllT", "note": "Public post describes hiring for ML work at Grainger." }
+      ],
+      "secondary": [
+        { "label": "INFORMS Regional Analytics Chicago 2025 speakers", "url": "https://meetings.informs.org/wordpress/regional-analytics-chicago2025/speakers/", "note": "Speaker bio identifies him as VP of AI/ML at Grainger." },
+        { "label": "CDO Vision speaker profile", "url": "https://cdovision.aim.media/speakers/michelangelo-d-agostino", "note": "Speaker profile identifies him as VP of AI/ML at Grainger." },
+        { "label": "Executives' Club of Chicago: The AI Growth Engine", "url": "https://www.executivesclub.org/events/the-ai-growth-engine/", "note": "Event page lists Michelangelo D'Agostino as VP of AI/ML at Grainger." }
+      ]
+    }
+  }
+]

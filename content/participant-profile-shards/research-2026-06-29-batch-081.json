@@ -1,0 +1,422 @@
+[
+  {
+    "lookupKey": "1r60ovk",
+    "displayName": "Serkan Varoglu",
+    "headline": "RenaissanceRe infrastructure architecture leader focused on enterprise IT platforms and operations.",
+    "company": "RenaissanceRe",
+    "title": "VP, IT Manager - Infrastructure Architecture",
+    "location": "Dublin, Ireland",
+    "tags": ["IT infrastructure", "architecture", "enterprise operations", "insurance technology", "cloud platforms"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, a public role-change post, and The Org consistently identify Serkan Varoglu as VP, IT Manager - Infrastructure Architecture at RenaissanceRe.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Serkan Varoglu leads infrastructure architecture work at RenaissanceRe, with a background spanning infrastructure management, systems administration, consulting, and technical training. Useful match for enterprise IT, cloud/infrastructure modernization, and AI adoption inside regulated insurance environments.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ie.linkedin.com/in/serkanvaroglu",
+          "note": "Public profile identifies him as VP, IT Manager - Infrastructure Architecture at RenaissanceRe in Ireland."
+        },
+        {
+          "label": "LinkedIn role update",
+          "url": "https://www.linkedin.com/posts/serkanvaroglu_im-happy-to-share-that-im-starting-a-new-activity-7181041839565602816-rypw",
+          "note": "Public post says he started the VP, IT Manager - Infrastructure Architecture role at RenaissanceRe."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/renaissancere/org-chart/serkan-varoglu",
+          "note": "Unverified org profile matches the same RenaissanceRe infrastructure architecture role and career background."
+        },
+        {
+          "label": "The Org infrastructure team",
+          "url": "https://theorg.com/org/renaissancere/teams/infrastructure-management",
+          "note": "Infrastructure Management team listing includes Serkan Varoglu in the same VP IT infrastructure architecture role."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1yznkds",
+    "displayName": "Seth Alexander",
+    "headline": "Prime Medicine RNA technologies director working on prime-editing delivery and oligonucleotide therapeutics.",
+    "company": "Prime Medicine",
+    "title": "Director, Enterprise AI",
+    "location": "Cambridge, Massachusetts, United States",
+    "tags": ["biotech", "RNA technologies", "prime editing", "drug development", "life sciences"],
+    "confidence": "medium",
+    "confidenceNote": "Multiple public sources match Seth Alexander to Prime Medicine and RNA technologies leadership, but public sources found list RNA Technologies rather than the participant-row Enterprise AI title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Seth Alexander is publicly associated with Prime Medicine's RNA technologies work, including non-viral delivery of prime editors and oligonucleotide therapeutics. Good match for biotech AI, therapeutic platform workflows, and conversations where software, data, and molecular design meet regulated drug development.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Prime Medicine presentation PDF",
+          "url": "https://primemedicine.com/wp-content/uploads/2023/10/Prime-OTS-GSD1b-deck-Seth-FINAL.pdf",
+          "note": "Prime Medicine-hosted deck identifies Seth C. Alexander, PhD as Head of RNA Technologies and a Prime Medicine employee."
+        },
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Seth/Alexander",
+          "note": "LinkedIn public directory connects Seth Alexander with Prime Medicine and Yale."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Streamly expert profile",
+          "url": "https://streamly.video/expert/seth-alexander-ph-d",
+          "note": "Expert profile lists Seth Alexander, PhD as Director of RNA Technologies at Prime Medicine."
+        },
+        {
+          "label": "TIDES USA agenda",
+          "url": "https://informaconnect.com/tides/agenda/3/",
+          "note": "Conference agenda lists Seth Alexander, PhD from Prime Medicine as Director of RNA Technologies."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1y4ttyb",
+    "displayName": "Shadi Branch",
+    "headline": "TradeStation product engineering leader working across fintech trading platforms, data networks, and AI strategy.",
+    "company": "TradeStation",
+    "title": "VP of Engineering",
+    "location": "Dallas, Texas, United States",
+    "tags": ["fintech", "trading platforms", "product engineering", "AI strategy", "data platforms"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently connect Shadi Branch to TradeStation product/platform engineering leadership in Dallas, though exact title wording varies across VP Product Engineering, VP Product Development, and VP Software Development.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Shadi Branch leads fintech platform engineering work at TradeStation, with public writing on low-code/no-code and trading-industry application development. Relevant for conversations about AI in trading systems, data networks, engineering leadership, compliance-aware automation, and product-platform strategy.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Shadi/%2A",
+          "note": "LinkedIn public directory lists Shadi Branch in Dallas with TradeStation and VP product development / trading platforms context."
+        },
+        {
+          "label": "LinkedIn directory variant",
+          "url": "https://www.linkedin.com/pub/dir/Shadi/At",
+          "note": "Public result lists Shadi Branch as VP Product Engineering with AI and platform strategy at TradeStation."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CIOReview article",
+          "url": "https://www.cioreview.com/cxoinsight/create-tailormade-applications-lowcode-and-no-code-platforms-nid-37016-cid-215.html",
+          "note": "Article byline identifies Shadi Branch as VP of Software Development, Trading Platforms at TradeStation."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "11p3733",
+    "displayName": "Shafik Quoraishee",
+    "headline": "New York Times Games staff engineer building mobile game features and experimenting with AI for puzzle products.",
+    "company": "The New York Times Games",
+    "title": "Staff Engineer",
+    "location": "New York, New York, United States",
+    "tags": ["mobile games", "Android", "AI in games", "puzzle products", "accessibility"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Sessionize, NYT/Open work, Medium writing, and public talks consistently identify Shafik Quoraishee with New York Times Games engineering and AI/game experimentation.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Shafik Quoraishee builds mobile game experiences at The New York Times Games, including work around Wordle, Connections, Crosswords, and experimental AI features such as handwriting recognition. Strong match for AI-in-product, mobile engineering, game UX, accessibility, and tools for editorial puzzle workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/shafik-quoraishee",
+          "note": "Public profile says he works on the New York Times Games team and lists related NYT Games engineering publications."
+        },
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/squoraishee/",
+          "note": "Speaker bio identifies him as a Senior Android Games Engineer on the New York Times Games team working on Wordle, Connections, and Crossword integrations."
+        },
+        {
+          "label": "Medium article",
+          "url": "https://squoraishee.medium.com/building-crossplay-the-new-york-times-new-multiplayer-game-ef4f65a0aa96",
+          "note": "Self-authored post says he helped build a New York Times multiplayer word game and links to his professional profile."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Neo4j Nodes AI agenda",
+          "url": "https://neo4j.com/nodes-ai/agenda/graph-theory-and-games-a-case-study-on-new-york-times-connections/",
+          "note": "Conference page describes his New York Times Games engineering work and AI interest."
+        },
+        {
+          "label": "Brave Technologist podcast",
+          "url": "https://brave.com/podcast/e71/",
+          "note": "Podcast page identifies him as a senior mobile/AI game developer at The New York Times."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1j5c7kn",
+    "displayName": "Shane O'Neil",
+    "headline": "Exchange Solutions CTO applying generative and agentic AI to enterprise loyalty platforms.",
+    "company": "Exchange Solutions Inc.",
+    "title": "Chief Technology Officer",
+    "location": "Toronto, Ontario, Canada",
+    "tags": ["loyalty technology", "generative AI", "agentic systems", "SaaS", "enterprise platforms"],
+    "confidence": "high",
+    "confidenceNote": "Exchange Solutions, LinkedIn, BusinessWire, and executive-directory sources consistently identify Shane O'Neil as CTO at Exchange Solutions.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Shane O'Neil is CTO at Exchange Solutions, where he works at the intersection of AI, SaaS, and enterprise loyalty. Good match for conversations about generative AI in loyalty platforms, agentic delivery across engineering and QA, scalable SaaS architecture, and enterprise customer-engagement systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Exchange Solutions about page",
+          "url": "https://exchangesolutions.com/about/",
+          "note": "Company leadership page lists Shane O'Neil as Chief Technology Officer and describes his AI, SaaS, and loyalty-platform work."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/shaneoneil",
+          "note": "Public profile identifies him as Chief Technology Officer at Exchange Solutions Inc. in Toronto."
+        },
+        {
+          "label": "Exchange Solutions generative AI announcement",
+          "url": "https://exchangesolutions.com/resources/exchange-solutions-unveils-industry-first-generative-ai-feat/",
+          "note": "Company announcement quotes Shane O'Neil as CTO on generative AI features for loyalty marketers."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "BusinessWire announcement",
+          "url": "https://www.businesswire.com/news/home/20240519249356/en/Exchange-Solutions-Unveils-Industry-First-Generative-AI-Feature-Enablement-for-a-Loyalty-Platform",
+          "note": "Newswire coverage quotes him as Chief Technology Officer at Exchange Solutions."
+        },
+        {
+          "label": "The Official Board profile",
+          "url": "https://www.theofficialboard.com/biography/shane-o-neil-d647g",
+          "note": "Executive profile lists him as CTO at Exchange Solutions and summarizes prior technology leadership roles."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "07xzmwp",
+    "displayName": "Shanna Criste",
+    "headline": "BILL product and growth leader with prior LegalZoom product, compliance, and tax operations experience.",
+    "company": "BILL",
+    "title": "VP, Growth",
+    "location": "Chicago, Illinois, United States",
+    "tags": ["growth", "product operations", "compliance", "fintech", "business operations"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public profile/search sources connect Shanna Criste to BILL product/growth work and prior LegalZoom leadership; independent high-signal sources beyond LinkedIn-style profiles are limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Shanna Criste works in product and growth at BILL, with prior leadership across LegalZoom product operations, compliance, and tax-related initiatives. Relevant for fintech growth, product operations, compliance workflows, and AI-enabled process improvement in business-finance products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/shannagast",
+          "note": "Public profile identifies Shanna (Gast) Criste with product at BILL and prior LegalZoom product/business operations leadership."
+        },
+        {
+          "label": "LinkedIn public activity",
+          "url": "https://www.linkedin.com/posts/cassiedivine_stop-waiting-to-be-chosen-activity-7434628700165533696-qNKd",
+          "note": "Public activity snippet lists Shanna (Gast) Criste as Product at BILL."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Humantic AI public profile reference",
+          "url": "https://humantic.ai/public-profile/trace-rodgerson-b2aa543214c8d147",
+          "note": "Related BILL employee index lists Shanna (Gast) Criste as VP of Growth at BILL."
+        },
+        {
+          "label": "Mesh profile",
+          "url": "https://me.sh/profile/shanna-gast-criste",
+          "note": "Aggregated profile summarizes prior LegalZoom VP and product/business operations background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "14qm6jb",
+    "displayName": "Shaun Keenan",
+    "headline": "AutoHub CTO and technical strategy leader focused on cloud architecture, distributed systems, and GenAI platforms.",
+    "company": "AutoHub",
+    "title": "Chief Technology Officer",
+    "location": "San Francisco, California, United States",
+    "tags": ["cloud architecture", "distributed systems", "GenAI", "technical strategy", "platform engineering"],
+    "confidence": "medium",
+    "confidenceNote": "Magpie Software and LinkedIn search evidence connect Shaun Keenan to AutoHub CTO/technical strategy work; his personal site strongly supports identity and architecture background but is not updated to the AutoHub CTO role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Shaun Keenan is a San Francisco-based architecture and platform leader publicly tied to AutoHub CTO work, with deep experience in distributed systems, cloud migration, developer enablement, and GenAI applications. Strong match for infrastructure modernization, AI platform strategy, and engineering leadership across software portfolio companies.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Magpie Software team page",
+          "url": "https://www.magpiesoftware.com/",
+          "note": "Company team page says Shaun Keenan is CTO at AutoHub and leads technology strategy across Emergence Software portfolio companies."
+        },
+        {
+          "label": "Personal website",
+          "url": "https://skeenan.net/",
+          "note": "Self-published profile lists San Francisco location, architecture strategy, distributed systems, cloud migration, and GenAI applications experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Shaun/Keenan/us-0-United-States",
+          "note": "LinkedIn public directory matches Shaun Keenan in the San Francisco Bay Area with AutoHub and technical strategy positioning."
+        },
+        {
+          "label": "Wellfound profile",
+          "url": "https://wellfound.com/p/shaun-keenan",
+          "note": "Startup profile corroborates his San Francisco platform-architecture background and prior Sauce Labs, Gap, Salesforce experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qwvem4",
+    "displayName": "Shawn King",
+    "headline": "Minty/addShoppers CTO leading engineering, architecture, and product technology for ecommerce shopper platforms.",
+    "company": "Minty",
+    "title": "Chief Technology Officer",
+    "location": "Huntersville, North Carolina, United States",
+    "tags": ["ecommerce", "data platforms", "engineering leadership", "product technology", "retail tech"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, addShoppers company LinkedIn, The Org, and other company-directory sources consistently identify Shawn King as CTO of addShoppers, DBA Minty.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Shawn King is CTO at addShoppers, doing business as Minty, where he leads engineering, architecture, and product technology for ecommerce savings and shopper-engagement products. Useful match for data cleanup, retail/ecommerce AI, product-platform leadership, and conversion or lifecycle systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/shawn-king-00a2396a",
+          "note": "Public profile identifies him as CTO at addShoppers DBA Minty, leading engineering, architecture, and product technology strategy."
+        },
+        {
+          "label": "addShoppers LinkedIn company page",
+          "url": "https://www.linkedin.com/company/addshoppers",
+          "note": "Company page describes addShoppers DBA Minty and lists Shawn King among employees."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org addShoppers profile",
+          "url": "https://theorg.com/org/addshoppers",
+          "note": "Org chart lists Shawn King as Chief Technology Officer under addShoppers."
+        },
+        {
+          "label": "ZoomInfo company profile",
+          "url": "https://www.zoominfo.com/c/addshoppers-inc/345739811",
+          "note": "Company profile notes addShoppers rebranded as Minty and lists Shawn King as CTO."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0zxi9q5",
+    "displayName": "Shay Bracha",
+    "headline": "BioCatch software infrastructure and GenAI lead building automation and engineering tooling.",
+    "company": "BioCatch LTD",
+    "title": "AI Team Lead",
+    "location": "Tel Aviv, Israel",
+    "tags": ["GenAI", "software infrastructure", "automation", "fraud prevention", "engineering tooling"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and BioCatch-authored engineering content connect Shay Bracha to BioCatch infrastructure, automation, and GenAI work; public sources found do not use the exact participant-row AI Team Lead title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Shay Bracha leads software infrastructure and GenAI-related work at BioCatch, with public writing on automation test infrastructure and modern end-to-end engineering tooling. Relevant for fraud-prevention platforms, internal GenAI tools, developer productivity, and automation infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://il.linkedin.com/in/shay-bracha-64942763",
+          "note": "Public profile identifies Shay Bracha as Software Infra Team Lead and GenAI Lead at BioCatch in Israel."
+        },
+        {
+          "label": "BioCatch Tech Blog on Medium",
+          "url": "https://medium.com/%40BioCatchTechBlog/automation-test-infrastructure-using-modern-end-to-end-testing-solution-93bba29116b3",
+          "note": "BioCatch engineering blog post is authored by Shay Bracha, System Automation Team Leader at BioCatch."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org BioCatch engineering team",
+          "url": "https://theorg.com/org/biocatch/teams/engineering-team",
+          "note": "Unverified engineering team listing includes Shay Bracha as Automation Infrastructure Team Leader."
+        },
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Shay/Bracha",
+          "note": "Public directory result matches Shay Bracha to BioCatch and software infrastructure / GenAI lead wording."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "19gmuhg",
+    "displayName": "Shivam Sinha",
+    "headline": "Qumis co-founder and CTO building AI-enabled insurance knowledge and risk workflow tools.",
+    "company": "Qumis",
+    "title": "Chief Technology Officer",
+    "location": "Chicago, Illinois, United States",
+    "tags": ["insurtech", "AI copilots", "insurance workflows", "risk analysis", "startup engineering"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, F6S, LegalTech Atlas, and funding coverage consistently identify Shivam/Shiv Sinha as Qumis co-founder and CTO in Chicago.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Shivam Sinha is co-founder and CTO of Qumis, building AI-enabled tools for insurance policy, claims, and complex-risk workflows. He brings fintech and application-development experience to insurtech automation, making him a useful match for AI copilots, structured reasoning over documents, and startup technical leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/shiv-sinha",
+          "note": "Public profile identifies Shiv Sinha as co-founder and CTO of Qumis and links the identity to Shivam Sinha."
+        },
+        {
+          "label": "F6S member profile",
+          "url": "https://www.f6s.com/member/shivamsinha2",
+          "note": "Profile lists Shivam Sinha with Qumis Inc., Chicago, and a startup technology leadership background."
+        },
+        {
+          "label": "F6S company profile",
+          "url": "https://www.f6s.com/company/qumis-inc",
+          "note": "Qumis company profile lists Shivam Sinha and Dan Schuleman as people associated with the AI copilot company."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LegalTech Atlas company profile",
+          "url": "https://legaltechatlas.com/companies/qumis",
+          "note": "Company profile describes Qumis as an AI platform for insurance policies and claims and lists Dan Schuleman and Shivam Sinha."
+        },
+        {
+          "label": "AlleyWatch funding report",
+          "url": "https://www.alleywatch.com/2026/02/the-weekly-notable-startup-funding-report-2-23-26/",
+          "note": "Funding roundup says Qumis was founded by Dan Schuleman and Shivam Sinha and describes its insurance AI platform."
+        }
+      ]
+    }
+  }
+]

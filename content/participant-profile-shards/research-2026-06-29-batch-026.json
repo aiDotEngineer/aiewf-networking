@@ -1,0 +1,138 @@
+[
+  {
+    "lookupKey": "1x45wlr",
+    "displayName": "Baris Coskun",
+    "headline": "AI security and large-scale security analytics researcher at AWS",
+    "company": "Amazon",
+    "title": "Sr. Principal Scientist",
+    "location": "New York, NY, US",
+    "tags": ["AI security", "cybersecurity", "machine learning", "security analytics", "large-scale data", "AWS", "research"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Amazon Science, NYU, LinkedIn, and Google Scholar consistently identify him as an AWS senior principal scientist in New York focused on AI, machine learning, and information security.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Principal Scientist at Amazon Web Services in New York City working at the intersection of AI, machine learning, and large-scale information security. He founded AWS's Security Analytics and AI Research team, has prior research experience at Yahoo Research and AT&T Security Research, and is also listed as an NYU Tandon adjunct professor.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://www.acetandcoskun.com/baris/", "note": "Identifies Coskun as a Senior Principal Scientist at AWS in New York City focused on AI/ML for large-scale information security applications."},
+        {"label": "Amazon Science author profile", "url": "https://www.amazon.science/author/baris-coskun", "note": "Amazon profile and publications connect him to security, privacy, abuse prevention, anomaly detection, and AWS research."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/coskubar", "note": "Lists him as Senior Principal Scientist at AWS and notes work on AI for security, security for AI, and founding AWS Security Analytics and AI Research."},
+        {"label": "NYU Tandon faculty page", "url": "https://engineering.nyu.edu/faculty/baris-coskun", "note": "Lists him as an adjunct professor in electrical/computer engineering and computer science with research interests in machine learning, data science, and information security."}
+      ],
+      "secondary": [
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=Y_s9uTwAAAAJ", "note": "Verified scholarly profile for Amazon Web Services with interests including machine learning, data mining, information security, and network security."},
+        {"label": "Amazon Research Awards announcement", "url": "https://www.amazon.science/research-awards/program-updates/10-amazon-research-awards-recipients-announced", "note": "Quotes Coskun as a senior principal scientist with GuardDuty discussing AI and cybersecurity research."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "11o34rf",
+    "displayName": "Bassem Radieddine",
+    "headline": "Engineering Director at Broadcom with semiconductor and memory-circuit patent background",
+    "company": "Broadcom Inc.",
+    "title": "Engineering Director",
+    "location": "Irvine, CA, US",
+    "tags": ["semiconductors", "engineering leadership", "Broadcom", "memory circuits", "hardware", "patents"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and people-directory sources align on Broadcom director role and Irvine location; patents provide technical signal, but public biographical detail is sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering Director at Broadcom Inc. based in Irvine. Public patent records list him as an inventor on Broadcom memory-cell and high-voltage switch circuitry patents, suggesting a semiconductor hardware background useful for conversations around chip engineering, embedded systems, and technical leadership.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bassem-radieddine-a11a874", "note": "Lists Radieddine as Director of Engineering at Broadcom Inc. in Irvine."},
+        {"label": "Broadcom company profile", "url": "https://www.broadcom.com/company/about-us/executives", "note": "Official Broadcom site confirms the company's semiconductor and infrastructure software context, though not Radieddine's individual profile."}
+      ],
+      "secondary": [
+        {"label": "Justia patents inventor page", "url": "https://patents.justia.com/inventor/bassem-radieddine", "note": "Lists patent applications and grants naming Bassem Radieddine, including Broadcom-related one-time programmable memory cell work."},
+        {"label": "Google Patents - memory cell with fuse element", "url": "https://patents.google.com/patent/US6898103B2/en", "note": "Names Bassem Radieddine as an inventor on a Broadcom-originated memory-cell patent."},
+        {"label": "Wiza profile", "url": "https://wiza.co/d/broadcom/e7fe/bassem-radieddine", "note": "People-directory listing says he is Director of Engineering at Broadcom and based in Irvine; contact details were ignored."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pue1of",
+    "displayName": "Ben Guo",
+    "headline": "Cofounder and President of Zo Computer, building an AI-powered personal cloud computer",
+    "company": "Zo Computer",
+    "title": "Cofounder",
+    "location": "Brooklyn, NY, US",
+    "tags": ["AI agents", "personal cloud", "developer tools", "Stripe", "Venmo", "agentic computing", "product engineering"],
+    "confidence": "high",
+    "confidenceNote": "Zo's official team page, LinkedIn, X, GitHub, and speaker pages consistently identify him as Zo Computer cofounder/president with prior Stripe and Venmo experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cofounder and President of Zo Computer, where he is building an AI-powered personal cloud computer for agents, automations, and personal software. Previously he was on the early Venmo team and spent more than eight years at Stripe, including work as an early engineer on Terminal and mobile/developer-platform strategy.",
+    "sources": {
+      "primary": [
+        {"label": "Zo Computer team page", "url": "https://zo.computer/team", "note": "Official team page lists Ben Guo as President and Cofounder in Brooklyn, with early Venmo and Stripe background."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/0thernet", "note": "Lists him as Zo Computer cofounder and notes Stripe experience from 2015 to 2023, including early work on Terminal."},
+        {"label": "X profile", "url": "https://x.com/0thernet", "note": "Profile identifies him as cofounder and president at Zo Computer, with prior Stripe, Venmo, and Harvard affiliations."},
+        {"label": "GitHub profile", "url": "https://github.com/0thernet", "note": "Profile and pinned repositories show Zo Computer-related work and Stripe iOS history."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/schedule", "note": "Lists Benjamin Guo as Cofounder at Zo Computer."},
+        {"label": "MLOps Community speaker page", "url": "https://home.mlops.community/public/videos/velocity-coding-not-vibe-coding-benjamin-guo-2025-11-27", "note": "Speaker bio describes his Venmo, Stripe Terminal, and Zo Computer background."},
+        {"label": "Supra Insider interview", "url": "https://suprainsider.substack.com/p/101-why-everyone-should-have-an-ai", "note": "Interview summary frames Zo as a personal cloud computer with built-in AI agents, file storage, scheduled tasks, and text/email commands."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ahfuoa",
+    "displayName": "Ben Hart",
+    "headline": "CTO at Nawiri Group, supporting technology for purpose-led African travel brands",
+    "company": "Nawiri Group",
+    "title": "CTO",
+    "location": "Cape Town, Western Cape, South Africa",
+    "tags": ["travel technology", "hospitality", "responsible travel", "safari operations", "technology leadership", "Cape Town", "Nawiri Group"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and org-directory sources identify him as Nawiri Group CTO in Cape Town; official company sources establish Nawiri's business context, but his own public bio is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief Technology Officer at Nawiri Group, a purpose-led African travel group behind safari and responsible-travel brands including Asilia and Go2Africa. His background appears centered on software and technology leadership for travel, hospitality, and impact-oriented operations, with public sources placing him in Cape Town.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://za.linkedin.com/in/benhart", "note": "Lists Ben Hart as Chief Technology Officer at Nawiri Group in Cape Town."},
+        {"label": "Nawiri Group official site", "url": "https://www.nawirigroup.com/", "note": "Official company site describes Nawiri Group as a purpose-led travel group based in Africa, operating safari brands and impact initiatives."},
+        {"label": "Nawiri Group about page", "url": "https://www.nawirigroup.com/about-us", "note": "Explains Nawiri's mission around sustainable travel, ecosystems, and local communities."}
+      ],
+      "secondary": [
+        {"label": "The Org - Nawiri Group org chart", "url": "https://theorg.com/org/nawiri-group/org-chart/jeroen-harderwijk", "note": "Org chart lists Ben Hart as Chief Technology Officer at Nawiri Group."},
+        {"label": "Prospeo profile", "url": "https://prospeo.io/p/ben-hart-email-and-phone", "note": "People-directory profile lists him as Nawiri Group CTO in Cape Town and notes prior software-development leadership roles; contact details were ignored."},
+        {"label": "B Lab profile for Nawiri Group", "url": "https://www.bcorporation.net/en-us/find-a-b-corp/company/nawiri-group-ltd/", "note": "B Corp listing describes Nawiri Group's responsible travel subsidiaries and operating footprint."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1cp8vvb",
+    "displayName": "Ben Hylak",
+    "headline": "CTO and Cofounder of Raindrop, building observability for AI agents",
+    "company": "Raindrop.ai",
+    "title": "CTO + Co-Founder",
+    "location": "San Francisco, CA, US",
+    "tags": ["AI observability", "AI agents", "evals", "production monitoring", "human interface", "visionOS", "Apple", "Raindrop"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, Raindrop blog, YC profile, LinkedIn, and X consistently identify him as Raindrop cofounder/CTO with prior Apple Human Interface and SpaceX avionics experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and Cofounder of Raindrop, which monitors production AI agents and helps teams detect, track, and fix hidden failures. Previously worked on Apple's Human Interface team, including visionOS, and has earlier avionics experience at SpaceX. Useful match for conversations on AI product reliability, observability, evals, and agent failure modes.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://www.benhylak.com/", "note": "Identifies Hylak as cofounder of Raindrop and describes its focus on discovering, tracking, and fixing AI-agent issues."},
+        {"label": "Raindrop blog author page/article", "url": "https://www.raindrop.ai/blog/thoughts-on-evals/", "note": "Official Raindrop article lists him as CTO and Co-Founder and discusses evals and production AI monitoring."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/benhylak", "note": "Lists Co-Founder and CTO role at Raindrop, plus prior Apple and software experience."},
+        {"label": "X profile", "url": "https://x.com/benhylak", "note": "Profile identifies him as CTO at Raindrop, with prior Apple design and SpaceX engineering experience."}
+      ],
+      "secondary": [
+        {"label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/raindrop", "note": "Lists Raindrop as a YC W24 company in San Francisco and names Ben Hylak as a founder building AI-agent monitoring."},
+        {"label": "Pulse 2.0 seed funding article", "url": "https://pulse2.com/raindrop-15-million-seed-funding/", "note": "Reports Raindrop's funding and names Ben Hylak among the founders, with Apple Human Interface Design background."},
+        {"label": "Substack about page", "url": "https://benhylak.substack.com/about", "note": "Lists him as CTO at Raindrop.ai, ex-Apple design, and SpaceX avionics."}
+      ]
+    }
+  }
+]

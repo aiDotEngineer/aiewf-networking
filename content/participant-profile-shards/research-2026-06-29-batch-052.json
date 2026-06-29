@@ -1,0 +1,461 @@
+[
+  {
+    "lookupKey": "0dr889g",
+    "displayName": "Joeran Kinzel",
+    "headline": "Software engineering manager and full-stack developer in Santa Barbara",
+    "company": "KARL STORZ North America",
+    "title": "Software Engineering Manager",
+    "location": "Santa Barbara, US",
+    "tags": ["software engineering", "full-stack development", "IoT", "hardware products", "medical technology"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly match Joeran Kinzel in Santa Barbara as a software engineer/full-stack developer and IoT co-founder; the current KARL STORZ title is participant-provided.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joeran Kinzel is a Santa Barbara-based software engineer with a full-stack and hardware/product background. Public profiles connect him to web/software consulting and IoT product work, making him a useful match for conversations around engineering management, connected devices, and productizing technical systems.",
+    "sources": {
+      "primary": [
+        { "label": "GitHub profile", "url": "https://github.com/j10l", "note": "Person-specific developer profile listing Joeran Kinzel, Santa Barbara, CA." },
+        { "label": "Medium profile", "url": "https://medium.com/@joeran_kinzel", "note": "Person-specific profile describing him as a Santa Barbara-based full-stack developer, web designer, and business consultant." },
+        { "label": "Bio.site profile", "url": "https://bio.site/j10l", "note": "Person-specific landing page for Joeran Kinzel/J10L with software-engineer positioning and links." }
+      ],
+      "secondary": [
+        { "label": "IoT M2M Council article", "url": "https://iotm2mcouncil.org/iot-library/news/iot-newsdesk/quantum-leaps-into-iot-platform-for-hobbyists/", "note": "Person-specific mention identifying Joeran Kinzel as a Quantum co-founder discussing an IoT platform." },
+        { "label": "KARL STORZ company overview", "url": "https://www.karlstorz.com/de/en/about-us.htm", "note": "Company context for KARL STORZ as a global medtech organization; not person-specific." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01g6for",
+    "displayName": "Joey Rudisill",
+    "headline": "Credit union CIO focused on AI, data strategy, and digital banking",
+    "company": "Central Willamette Credit Union",
+    "title": "Chief Information Officer",
+    "location": "Salem, Oregon, US",
+    "tags": ["credit unions", "AI adoption", "digital banking", "data strategy", "information security", "payments"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific and organization sources confirm Joey Rudisill as CIO at Central Willamette Credit Union and describe his AI, cloud, data, digital banking, payments, API, and Banking-as-a-Service experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joey Rudisill is CIO at Central Willamette Credit Union with deep credit-union technology experience across AI adoption, cloud, data strategy, digital banking, payments, APIs, and information security. He is a useful match for practical AI deployment in regulated financial services and member-facing technology modernization.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/rudisill", "note": "Person-specific profile identifying Joey Rudisill as CIO at Central Willamette Credit Union." },
+        { "label": "Central Willamette leadership page", "url": "https://www.centralwcu.org/about-us", "note": "Organization page listing Joey Rudisill as Vice President, Chief Information Officer." },
+        { "label": "Central Willamette AI webinar page", "url": "https://www.centralwcu.org/ai-for-small-business", "note": "Organization page naming CIO Joey Rudisill as an AI webinar expert and describing his technology, data strategy, and information security focus." }
+      ],
+      "secondary": [
+        { "label": "CU Town Hall Episode 101", "url": "https://www.big-fintech.com/cu-town-hall-episode-101-joey-rudisill/", "note": "Person-specific episode bio describing his 20+ years in credit-union technology, cloud, data, digital, payments, APIs, and Banking-as-a-Service." },
+        { "label": "CUbroadcast ChatGPT episode", "url": "https://www.cubroadcast.com/episodes/3227-central-willamette-launching-chatgpt-tech-to-enhance-relevancy", "note": "Interview page identifying him as Central Willamette CIO discussing ChatGPT technology for credit unions." },
+        { "label": "CUbroadcast actionable AI episode", "url": "https://www.cubroadcast.com/episodes/4112-industry-tech-execs-share-real-world-actionable-ai-tasks-credit-unions-can-use-now", "note": "Industry interview page describing practical AI use at Central Willamette and Joey's views on AI adoption." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wmewlz",
+    "displayName": "John Craft",
+    "headline": "Docker solutions engineer and former data-privacy startup co-founder",
+    "company": "Docker",
+    "title": "Solutions Engineer, Strategic",
+    "location": "Seattle, Washington, US",
+    "tags": ["Docker", "developer tools", "software delivery", "data privacy", "SaaS", "DevOps", "AI agents"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and speaker profiles confirm Docker role; event and media sources corroborate his Docker speaking work and previous Privacy Dynamics co-founder/CTO background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "John Craft is a solutions engineer at Docker helping teams streamline and secure software delivery. He previously co-founded Privacy Dynamics, bringing SaaS, data privacy, and engineering leadership experience to conversations about developer platforms, secure workflows, and AI-enabled delivery.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/john-b-craft", "note": "Person-specific profile listing Docker role and Privacy Dynamics background." },
+        { "label": "Sessionize speaker profile", "url": "https://sessionize.com/john-craft/", "note": "Person-specific speaker page identifying him as a Docker Solutions Engineer and former Privacy Dynamics co-founder." },
+        { "label": "X profile", "url": "https://x.com/john_craft", "note": "Person-specific social profile stating he is at Docker and previously at Privacy Dynamics." }
+      ],
+      "secondary": [
+        { "label": "DevOpsDays speaker page", "url": "https://devopsdays.org/events/2025-des-moines/speakers", "note": "Conference page listing John Craft as Docker Solutions Engineer with a software delivery/security-focused bio." },
+        { "label": "GeekWire Tech Moves", "url": "https://www.geekwire.com/2025/tech-moves-typeface-hires-first-cmo-microsoft-adds-cvp-wellsaid-names-new-ceo/", "note": "News item reporting John Craft joined Docker as a solutions engineer and previously co-founded Privacy Dynamics." },
+        { "label": "AI Engineer World's Fair schedule", "url": "https://www.ai.engineer/schedule", "note": "Conference schedule listing John Craft on Docker's autonomous agents workshop." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qqyvaz",
+    "displayName": "John Gesimondo",
+    "headline": "Netflix staff software engineer using AI for developer productivity and sustainable work",
+    "company": "Netflix",
+    "title": "Staff Software Engineer",
+    "location": "San Francisco, California, US",
+    "tags": ["software engineering", "Netflix", "generative AI", "developer productivity", "mental health", "neurodivergence", "automation"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and GitHub confirm current Netflix affiliation, while QCon and InfoQ sources provide detailed person-specific background on his AI automation and sustainable mental-peace work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "John Gesimondo is a Staff Software Engineer at Netflix with public work on using GenAI for developer productivity, migrations, documentation, and sustainable mental peace at work. He is a strong match for attendees interested in practical AI workflows, engineering culture, and supporting neurodivergent high performers.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/jmondo", "note": "Person-specific profile identifying John Gesimondo as Staff Software Engineer at Netflix." },
+        { "label": "GitHub profile", "url": "https://github.com/jmondo", "note": "Person-specific developer profile listing Netflix and San Francisco, with personal site link." },
+        { "label": "Personal website", "url": "https://jmondo.com/", "note": "Person-specific personal site for John Gesimondo with software-developer background." },
+        { "label": "X profile", "url": "https://x.com/jmondo", "note": "Person-specific social profile describing him as a tech worker and Chrome extension maker." }
+      ],
+      "secondary": [
+        { "label": "QCon San Francisco speaker profile", "url": "https://qconsf.com/speakers/johngesimondo", "note": "Conference profile describing his Netflix tenure, AI automation focus, and talk on GenAI for sustainable mental peace." },
+        { "label": "InfoQ profile", "url": "https://www.infoq.com/profile/John-Gesimondo/", "note": "Person-specific author/speaker profile describing him as a Netflix software engineer with 14 years of experience." },
+        { "label": "InfoQ presentation transcript", "url": "https://www.infoq.com/presentations/genai-well-being/", "note": "Presentation page and transcript for his GenAI and sustainable mental peace talk." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0cmjb9g",
+    "displayName": "John Holmes",
+    "headline": "AI architect at Hudson River Trading",
+    "company": "Hudson River Trading",
+    "title": "AI Architect",
+    "location": "New York, New York, US",
+    "tags": ["AI architecture", "quantitative trading", "software architecture", "AI-assisted coding", "MIT"],
+    "confidence": "medium",
+    "confidenceNote": "Public social/profile sources consistently identify John Holmes with Hudson River Trading and MIT, but role wording varies between Architect and AI Architect and detailed professional biography is sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "John Holmes is an architect at Hudson River Trading with an MIT background and public interest in AI-assisted coding. He is potentially relevant for conversations about AI architecture, trading technology, and practical developer workflows in high-performance environments.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/jholmes", "note": "Person-specific profile identifying John Holmes with Hudson River Trading, MIT education, and New York location." },
+        { "label": "X profile", "url": "https://x.com/jsholmes", "note": "Person-specific social profile referencing architect role, HRT, AI, and coding interests." },
+        { "label": "Facebook profile", "url": "https://www.facebook.com/jsholmes99/", "note": "Person-specific profile identifying John Holmes as Architect at Hudson River Trading and MIT alumnus." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn public directory result", "url": "https://www.linkedin.com/pub/dir/John/Holmes/us-0-United-States", "note": "Directory result corroborating a John Holmes profile as Architect at Hudson River Trading in New York with MIT education." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "123t9pw",
+    "displayName": "John Lindquist",
+    "headline": "Co-founder of egghead.io and developer-education builder focused on modern web and AI-assisted workflows",
+    "company": "egghead.io",
+    "title": "Co-founder",
+    "location": "",
+    "tags": ["developer education", "web development", "AI coding workflows", "automation", "Script Kit"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public profiles and owned/project pages consistently identify John Lindquist as egghead.io co-founder and active developer educator.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "John Lindquist co-founded egghead.io and has spent years teaching concise web-development lessons. He is also active around automation and AI-assisted coding workflows, including Script Kit and recent Codex-oriented developer education.",
+    "sources": {
+      "primary": [
+        { "label": "egghead.io instructor/resources page", "url": "https://egghead.io/q/resources-by-john-lindquist", "note": "Identifies John Lindquist as a co-founder of egghead.io and describes his web-application background." },
+        { "label": "GitHub profile", "url": "https://github.com/johnlindquist", "note": "Owned developer profile linking egghead.io and johnlindquist.com." },
+        { "label": "Personal site", "url": "https://johnlindquist.com/", "note": "John Lindquist's personal publishing site." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/john-lindquist-84230766", "note": "Public professional profile for John Lindquist, co-founder of egghead.io." },
+        { "label": "YouTube channel", "url": "https://www.youtube.com/user/johnlindquist", "note": "Public teaching channel with web-development and coding-workflow content." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0fxmtnf",
+    "displayName": "John Ousterhout",
+    "headline": "Stanford computer scientist known for Tcl/Tk, log-structured file systems, Raft, and software-design education",
+    "company": "Stanford University",
+    "title": "Bosack Lerner Professor of Computer Science / Professor Emeritus",
+    "location": "Stanford, California, US",
+    "tags": ["computer science", "distributed systems", "software design", "programming languages", "Stanford", "Tcl/Tk", "Raft"],
+    "confidence": "high",
+    "confidenceNote": "Stanford pages, his personal Stanford site, ACM, and NAE sources consistently establish identity, affiliation, research areas, and major contributions.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "John Ousterhout is a Stanford computer scientist whose work spans distributed systems, operating systems, storage, programming languages, and software design. He is widely known for Tcl/Tk, log-structured file systems, Raft, and the book _A Philosophy of Software Design_.",
+    "sources": {
+      "primary": [
+        { "label": "Stanford Profiles", "url": "https://profiles.stanford.edu/john-ousterhout", "note": "Stanford profile describing his professor role and research in software infrastructure." },
+        { "label": "Stanford personal homepage", "url": "https://web.stanford.edu/~ouster/cgi-bin/home.php", "note": "Personal Stanford page listing professor role, retirement note, research, publications, and software-design work." },
+        { "label": "Stanford School of Engineering profile", "url": "https://engineering.stanford.edu/people/john-ousterhout", "note": "Stanford Engineering profile for John Ousterhout." }
+      ],
+      "secondary": [
+        { "label": "ACM Awards profile", "url": "https://awards.acm.org/award-recipients/ousterhout_1957745", "note": "Lists ACM Fellow and Grace Murray Hopper Award recognition." },
+        { "label": "National Academy of Engineering profile", "url": "https://www.nae.edu/27774/Professor-John-K-Ousterhout", "note": "NAE member profile for Professor John K. Ousterhout." },
+        { "label": "Software Engineering Radio interview", "url": "https://se-radio.net/2022/07/episode-520-john-ousterhout-on-a-philosophy-of-software-design/", "note": "Interview page about his software-design book and major technical contributions." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1v8b9fa",
+    "displayName": "Johnny Montoya",
+    "headline": "AI engineer and data/AI creator focused on agentic systems and organizational knowledge workflows",
+    "company": "Unloquer",
+    "title": "AI Engineer",
+    "location": "",
+    "tags": ["AI engineering", "agentic systems", "Python", "data engineering", "knowledge workflows", "content creation"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly match a Johnny Montoya working in AI, but current public affiliation appears as Unloquer and prior sources mention La Haus rather than the provided company name.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Johnny Montoya works on AI engineering and agentic systems, with public talks around executable skills and turning organizational knowledge into reusable agent capabilities. His background also includes data, analytics, ML, and generative-AI product work.",
+    "sources": {
+      "primary": [
+        { "label": "PyCon Colombia 2026 speaker page", "url": "https://2026.pycon.co/speakers/johnny-montoya/", "note": "Speaker page identifies Johnny Montoya as AI Engineer at Unloquer and describes his agentic-systems focus." },
+        { "label": "GitHub profile", "url": "https://github.com/eldelosdatos", "note": "Public GitHub profile for Johnny Montoya under the eldelosdatos handle." },
+        { "label": "Johnny's Substack", "url": "https://eldelosdatos.substack.com/", "note": "Personal Substack associated with the El de los datos identity." }
+      ],
+      "secondary": [
+        { "label": "PyCon Colombia 2024 speaker page", "url": "https://2024.pycon.co/en/speakers/johnny-montoya", "note": "Earlier speaker bio describes more than a decade leading data, analytics, and ML teams." },
+        { "label": "Computing Education Things post", "url": "https://computingeducationthings.substack.com/p/26-context-engineering-is-the-new", "note": "Mentions Alexander 'Johnny' Montoya as an AI Research Engineer at La Haus and discusses his AI-context work." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0dy88tc",
+    "displayName": "Jon Flowers",
+    "headline": "Technology executive at IMPRES Technology Solutions working across IT leadership and federal technology operations",
+    "company": "IMPRES Technology Solutions",
+    "title": "Vice President of Information Technology",
+    "location": "Austin, Texas, US",
+    "tags": ["IT leadership", "federal technology", "infrastructure", "technology operations", "vendor management"],
+    "confidence": "medium",
+    "confidenceNote": "Several public sources connect Jon Flowers to IMPRES Technology Solutions and VP-level IT leadership, though one current IMPRES leadership page lists a different VP title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jon Flowers is a VP-level technology leader at IMPRES Technology Solutions, a federal technology solutions company. Public sources connect him with IT leadership, website modernization, and technology operations in the federal contracting and defense technology space.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/jonflowersv", "note": "Public professional profile connecting Jon Flowers with IMPRES Technology Solutions." },
+        { "label": "IMPRES leadership page", "url": "https://www.imprestechnology.com/leadership/", "note": "Company leadership page listing Jon Flowers on the IMPRES executive team." }
+      ],
+      "secondary": [
+        { "label": "The Org IMPRES org chart", "url": "https://theorg.com/org/impres-technology-solutions/org-chart/richard-fu", "note": "Org chart lists Jon Flowers as Vice President of Information Technology." },
+        { "label": "GoodFirms UPQODE review", "url": "https://www.goodfirms.co/company/upqode", "note": "Public review attribution lists Jon Flowers as VP of IT at IMPRES Technology Solutions." },
+        { "label": "GitHub profile", "url": "https://github.com/jon-flowers", "note": "Public developer profile for Jonathan Flowers listing IMPRES Technology Solutions and Austin, Texas." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "154y0gq",
+    "displayName": "Jonathan Almeida",
+    "headline": "Partner at Visagio Australia focused on AI implementation and complex operations",
+    "company": "Visagio Australia",
+    "title": "Partner",
+    "location": "Perth, Western Australia, Australia",
+    "tags": ["AI implementation", "operations transformation", "management consulting", "graduate talent", "Western Australia"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources align on Jonathan Almeida as a Perth-based Partner at Visagio Australia, with recent AI and business-innovation activity.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jonathan Almeida is a Partner at Visagio Australia working on AI implementation and technology-enabled operations transformation. He is a useful match for attendees interested in enterprise AI adoption, consulting delivery, operational change, and Western Australia's tech ecosystem.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://au.linkedin.com/in/almeida-jonathan", "note": "Lists Jonathan Almeida as Partner at Visagio Australia in Perth, with AI implementation positioning." },
+        { "label": "AIM WA event page", "url": "https://aimwa.com/event/ai-innovation-with-integrity/", "note": "Names Jonathan Almeida, Partner at Visagio, on an AI innovation panel in Western Australia." }
+      ],
+      "secondary": [
+        { "label": "Consultancy.com.au article", "url": "https://www.consultancy.com.au/news/6889/visagio-becomes-upskilling-partner-of-wa-data-science-hub", "note": "Quotes Visagio partner Jonathan Almeida on graduate and intern development." },
+        { "label": "Visagio Australia Instagram post", "url": "https://www.instagram.com/p/CpMbrEBv3WS/", "note": "Company social post identifies Jonathan Almeida as Visagio's partner." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "10kqbu2",
+    "displayName": "Jonathan Fiscus",
+    "headline": "Head of AI at Briefs Finance building AI-native products and operations",
+    "company": "Briefs Finance",
+    "title": "Head of AI",
+    "location": "Detroit, Michigan, United States",
+    "tags": ["AI products", "AI operations", "fintech", "software engineering", "Detroit tech"],
+    "confidence": "high",
+    "confidenceNote": "Public event, company, LinkedIn, and personal-site sources support JD/Jonathan Fiscus as Head of AI at Briefs Finance with a software engineering background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jonathan Fiscus is Head of AI at Briefs Finance, focused on AI-native products and AI-first operations. His background spans hands-on software engineering, technical leadership, and team mentoring, with recent visibility in the Detroit tech community.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://iamfiscus.com/", "note": "Self-authored site describes JD Fiscus as a software builder with experience across industries, team management, mentoring, and hands-on coding." },
+        { "label": "Michigan Tech Week speaker page", "url": "https://www.michigantechweek.com/speakers", "note": "Lists JD Fiscus as Head of AI at Briefs Finance." },
+        { "label": "Briefs Finance LinkedIn company page", "url": "https://www.linkedin.com/company/briefsfinance", "note": "Lists JD Fiscus among employees as Head of AI." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn activity result", "url": "https://www.linkedin.com/posts/jdfiscus_detriot-activity-7463386830080598019-N4YQ", "note": "Public LinkedIn activity identifies JD Fiscus as Head of AI and references Briefs Finance and Detroit-area AI work." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1lfaa97",
+    "displayName": "Jonathan Reyes",
+    "headline": "Senior Principal Engineer at Dispatch working on AI-accelerated engineering and delivery infrastructure",
+    "company": "Dispatch",
+    "title": "Senior Principal Engineer",
+    "location": "Denver Metropolitan Area, Colorado, United States",
+    "tags": ["principal engineering", "AI-assisted development", "logistics technology", "platform architecture", "developer productivity"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, organization profile, and public case studies consistently identify Jonathan Reyes as a Denver-area Senior Principal or Principal Engineer at Dispatch.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jonathan Reyes is a Senior Principal Engineer at Dispatch, with public work around AI-accelerated engineering, platform architecture, and logistics technology. He is a strong match for conversations on engineering leadership, AI-assisted delivery, database environments, and last-mile operations systems.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://jonathanreyes.com/", "note": "Personal site lists Denver Metropolitan Area and current position as Senior Principal Engineer at Dispatch." },
+        { "label": "The Org profile", "url": "https://theorg.com/org/dispatchit/org-chart/jonathan-reyes", "note": "Org profile lists Jonathan Reyes as Senior Principal Engineer at Dispatch and summarizes prior technical leadership roles." }
+      ],
+      "secondary": [
+        { "label": "Newswire article", "url": "https://www.newswire.com/news/how-dispatch-is-building-the-next-generation-of-ai-accelerated-teams-22564260", "note": "Quotes Jonathan Reyes, Principal Engineer at Dispatch, on AI as an engineering co-pilot." },
+        { "label": "Neon customer story", "url": "https://neon.com/blog/how-dispatch-speeds-up-development-with-neon-while-keeping-workloads-on-aurora", "note": "Quotes Jonathan Reyes, Principal Engineer at Dispatch, on database branching and development environments." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "09vaxve",
+    "displayName": "Jones Madruga",
+    "headline": "Engineering leader and AI advisor with fintech-scale platform experience",
+    "company": "Nubank / Independent advisory",
+    "title": "Director of Engineering / Fractional CTO and AI Advisor",
+    "location": "São Paulo, Brazil",
+    "tags": ["AI engineering", "fintech platforms", "engineering leadership", "fractional CTO", "machine learning", "Nubank"],
+    "confidence": "medium",
+    "confidenceNote": "Found strong person-specific sources for Jones Madruga as an AI and engineering leader, recently Director of Engineering at Nubank. Could not verify the supplied Mal.ai affiliation from public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jones Madruga is an engineering executive and AI advisor with experience scaling fintech, edtech, and mobility platforms. Recent public profile highlights Director of Engineering work at Nubank, AI-integrated customer experiences, CTO roles, and applied machine-learning teaching.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://jonesmadruga.com/", "note": "Self-authored profile describes Jones Madruga as a fractional CTO and AI advisor, formerly Director of Engineering at Nubank, with production AI and platform-scale experience." },
+        { "label": "LinkedIn profile", "url": "https://br.linkedin.com/in/jonesmadruga/pt", "note": "Public LinkedIn result identifies Jones Madruga as an engineering leader at Nubank." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn post result", "url": "https://www.linkedin.com/posts/jonesmadruga_nubank-acquires-dex-to-accelerate-data-and-activity-7399877179091701760-i9c5", "note": "Public LinkedIn result shows Jones Madruga positioning around Nubank, CTO, Director of Engineering, AI, and product engineering leadership." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0t50t35",
+    "displayName": "Joni Klippert",
+    "headline": "CEO and Co-Founder of StackHawk, focused on developer-first application security",
+    "company": "StackHawk",
+    "title": "CEO, Co-Founder",
+    "location": "Denver, US",
+    "tags": ["application security", "developer tools", "DevSecOps", "SaaS leadership", "product leadership"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources consistently identify Joni Klippert as StackHawk CEO and co-founder, with Denver/Boulder-area product leadership background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Joni Klippert is CEO and Co-Founder of StackHawk, a developer-focused application security company. She is a strong match for conversations about DevSecOps, developer tools, product-led security, and scaling technical SaaS teams.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/joniklippert", "note": "Lists Joni Klippert as Founder / CEO at StackHawk and shows prior product roles at VictorOps and Splunk." },
+        { "label": "StackHawk About page", "url": "https://www.stackhawk.com/about/", "note": "Company page lists Joni Klippert as CEO and Co-Founder." }
+      ],
+      "secondary": [
+        { "label": "Costanoa Ventures profile", "url": "https://www.costanoa.vc/portfolio/stackhawk-is-focused-on-enabling-engineers-to-easi", "note": "Investor profile describes Klippert as StackHawk CEO and Co-Founder and summarizes the company focus." },
+        { "label": "ColoradoBiz profile", "url": "https://coloradobiz.com/joni-klipperts-career-of-building-software-for-software-engineers/", "note": "Profiles Klippert as StackHawk co-founder and CEO in Denver with a career building software for software engineers." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1075unx",
+    "displayName": "Jordan Leach",
+    "headline": "Principal at Tenon, building practical AI systems for businesses",
+    "company": "Tenon Works, LLC.",
+    "title": "Principal",
+    "location": "Atlanta, US",
+    "tags": ["AI consulting", "machine learning infrastructure", "computer vision", "backend systems", "enterprise software"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and Tenon's site align on a Principal named Jordan at Tenon in Atlanta, but the Tenon site uses first name only.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jordan Leach is Principal at Tenon, an AI consulting firm. Public materials point to experience in enterprise-scale software, ML infrastructure, computer vision, backend systems, and translating AI capability into business value.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/jordan-k-leach", "note": "Lists Jordan Leach as Principal at Tenon, based in Atlanta." },
+        { "label": "Tenon About page", "url": "https://tenon.works/about", "note": "Describes Tenon's principal, Jordan, as having enterprise-scale software experience at Amazon across ML infrastructure, computer vision, and backend services." }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "0hrn8y6",
+    "displayName": "Jordan Long",
+    "headline": "Co-Founder and CTO of Nectir, building AI infrastructure for higher education",
+    "company": "Nectir",
+    "title": "Co-Founder, CTO",
+    "location": "San Jose, US",
+    "tags": ["edtech", "AI in education", "higher education", "learning platforms", "startup engineering"],
+    "confidence": "high",
+    "confidenceNote": "Several credible sources consistently identify Jordan Long as Nectir co-founder and CTO, with detail on Nectir's higher-education AI platform.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jordan Long is Co-Founder and CTO of Nectir, which builds AI infrastructure and course assistants for schools. He is a strong match for conversations about education AI, FERPA-conscious deployment, LMS integrations, and founder-led technical execution.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/jordan-t-long", "note": "Jordan Long's profile describes founding Nectir in 2018 while at UC Santa Barbara." },
+        { "label": "Nectir support videos page", "url": "https://support.nectir.io/explore/nectir-ai-videos", "note": "Nectir materials list a podcast featuring Jordan Long as Co-Founder and CTO." }
+      ],
+      "secondary": [
+        { "label": "Ardan Labs podcast", "url": "https://ardanlabs.buzzsprout.com/1466944/episodes/16974894-startups-ai-and-nectir-with-jordan-long", "note": "Interview identifies Jordan Long as Nectir co-founder and CTO and discusses his startup and AI education work." },
+        { "label": "TechCrunch article", "url": "https://techcrunch.com/2024/12/05/nectir-lets-teachers-tailor-ai-chatbots-to-provide-their-students-with-247-educational-support/", "note": "Names Jordan Long as Nectir co-founder and CTO in coverage of Nectir's AI classroom assistant product." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "01ny3nw",
+    "displayName": "José Camacho",
+    "headline": "Solutions Architect and GenAI Lead at Xpand IT, working on enterprise AI and cloud-native architecture",
+    "company": "Xpand IT",
+    "title": "Solutions Architect / GenAI Lead",
+    "location": "Lisbon, PT",
+    "tags": ["generative AI", "solution architecture", "cloud-native architecture", "AI agents", "enterprise software"],
+    "confidence": "medium",
+    "confidenceNote": "Person-specific public sources strongly tie José Camacho to Xpand IT and GenAI architecture, but they list Solutions Architect / GenAI Lead rather than the provided Managing Partner title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "José Camacho is a Solutions Architect and GenAI Lead at Xpand IT. He is relevant for conversations about enterprise GenAI, agentic AI, cloud-native architecture, Semantic Kernel, and AI-enabled software delivery.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://josecamacho.net/", "note": "José Camacho describes himself as a Solutions Architect at Xpand IT focused on cloud-native architecture and enterprise Generative AI solutions." },
+        { "label": "LinkedIn profile", "url": "https://pt.linkedin.com/in/josemnbcamacho", "note": "Lists José Camacho as Solution Architect | GenAI Lead at Xpand IT in Lisbon." }
+      ],
+      "secondary": [
+        { "label": "Xpand IT Agentic AI webinar", "url": "https://xpand-it.com/en/resources/knowledge-hub/webinar-on-demand-agentic-ai/", "note": "Xpand IT speaker page lists José Camacho as Solutions Architect at Xpand IT." },
+        { "label": "Xpand IT Intelligent Customer Experiences event", "url": "https://xpand-it.com/pt-pt/recursos/eventos/intelligent-customer-experiences/", "note": "Event agenda includes José Camacho in AI software delivery and engineering team sessions." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1t0ilqi",
+    "displayName": "Jose Manuel Peña Mendez",
+    "headline": "Commercial AI and business intelligence leader at AAISA with applied analytics and data science background",
+    "company": "AAISA",
+    "title": "Head of Commercial AI",
+    "location": "Santiago, CL",
+    "tags": ["commercial AI", "business intelligence", "applied analytics", "data science", "finance"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources identify him as Head of Commercial Business Intelligence at AAISA and provide strong analytics credentials; the supplied Head of Commercial AI title appears adjacent but not directly confirmed in the strongest sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jose Manuel Peña Mendez is a commercial analytics and AI leader at AAISA with an applied analytics, data science, and finance background. He is a useful match for conversations about AI adoption in commercial teams, BI, portfolio analytics, and practical data science.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://cl.linkedin.com/in/jose-manuel-pena", "note": "Lists Jose Manuel Peña Mendez as Head of Commercial Business Intelligence at AAISA in Santiago." },
+        { "label": "LinkedIn AI Tinkerers Santiago post", "url": "https://es.linkedin.com/posts/jose-manuel-pena_ya-se-viene-la-segunda-fecha-del-ai-tinkerers-activity-7310386585567387648-5EX5", "note": "Person-specific post shows Peña Mendez connected to AI Tinkerers Santiago and lists his AAISA role." }
+      ],
+      "secondary": [
+        { "label": "Columbia SPS profile", "url": "https://sps.columbia.edu/person/jose-manuel-pena-mendez", "note": "University profile describes his applied analytics degree, industrial engineering background, CFA designation, and data science work." },
+        { "label": "Columbia SPS alumni article", "url": "https://sps.columbia.edu/news/jose-manuel-pena-mendez-improving-equity-management-through-machine-learning", "note": "Profiles his machine-learning and finance background, including portfolio management and startup analytics work." }
+      ]
+    }
+  }
+]

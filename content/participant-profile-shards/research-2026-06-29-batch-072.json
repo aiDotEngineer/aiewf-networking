@@ -1,0 +1,412 @@
+[
+  {
+    "lookupKey": "1u7o4pn",
+    "displayName": "Rahul Joglekar",
+    "headline": "Enterprise AI architect at Point32Health and Harvard Extension instructor focused on data, analytics, and applied AI.",
+    "company": "Point32Health",
+    "title": "Enterprise AI Architect",
+    "location": "Greater Boston, Massachusetts, United States",
+    "tags": ["enterprise AI", "healthcare", "data analytics", "architecture", "AI education"],
+    "confidence": "high",
+    "confidenceNote": "Harvard course faculty page and LinkedIn consistently identify Rahul Joglekar as a Point32Health enterprise technical / AI architect with data and analytics expertise.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Enterprise AI architect at Point32Health with a healthcare data and analytics background, plus more than a decade of Harvard Extension teaching. Useful match for enterprise AI use cases, regulated healthcare AI, data architecture, and practical AI education.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Harvard Division of Continuing Education course page",
+          "url": "https://coursebrowser.dce.harvard.edu/course/deep-learning/",
+          "note": "Faculty bio identifies Rahul B. Joglekar as Enterprise Technical Architect at Point32Health and describes his enterprise AI architect role."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/rahuljoglekar",
+          "note": "Public profile lists Rahul Joglekar as a technical leader at Point32Health in Greater Boston."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org Point32Health architecture division",
+          "url": "https://theorg.com/org/point32health/teams/architecture-division",
+          "note": "Org listing places Rahul Joglekar in Point32Health's architecture division as an enterprise technical architect."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1342z83",
+    "displayName": "Rahul Reddy Komatireddi",
+    "headline": "Applied Materials AI engineering leader working on computer vision and machine learning for semiconductor defect inspection.",
+    "company": "Applied Materials",
+    "title": "Engineering Manager - AI",
+    "location": "Santa Clara, California, United States",
+    "tags": ["semiconductors", "computer vision", "machine learning", "defect inspection", "Applied Materials"],
+    "confidence": "medium",
+    "confidenceNote": "Patent and research sources strongly match Rahul Reddy Komatireddi to Applied Materials machine-learning work; public sources found did not independently confirm the exact Engineering Manager - AI title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI engineering leader at Applied Materials whose public patents and publications center on wafer defect classification, optical inspection, and semiconductor computer vision. Good match for conversations on manufacturing AI, ML for inspection, and production computer-vision systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Justia patents inventor page",
+          "url": "https://patents.justia.com/inventor/rahul-reddy-komatireddi",
+          "note": "Inventor page lists multiple Applied Materials patents by Rahul Reddy Komatireddi covering machine-learning defect classification."
+        },
+        {
+          "label": "IEEE paper PDF",
+          "url": "https://ieeexplore.ieee.org/iel7/10012686/10013085/10013145.pdf",
+          "note": "Conference paper lists Rahul Reddy Komatireddi with Applied Materials on deep learning for hybrid-bonding defect classification."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "SciSpace author page",
+          "url": "https://scispace.com/authors/rahul-reddy-komatireddi-wnih9obj",
+          "note": "Author index aggregates Rahul Reddy Komatireddi's Applied Materials publications in computer vision and defect analysis."
+        },
+        {
+          "label": "USPTO Official Gazette patent",
+          "url": "https://patentsgazette.uspto.gov/week01/OG/html/1542-1/US12518367-20260106.html",
+          "note": "Official patent notice names Rahul Reddy Komatireddi as an inventor on an Applied Materials defect-classification patent."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1e113eq",
+    "displayName": "Rahul Sawant",
+    "headline": "Tech Architect at HashedIn by Deloitte and former AntStack founding member building serverless and AI developer tools.",
+    "company": "HashedIn by Deloitte",
+    "title": "Tech Architect",
+    "location": "Bengaluru, Karnataka, India",
+    "tags": ["serverless", "frontend engineering", "LLM tools", "developer tools", "HashedIn by Deloitte"],
+    "confidence": "high",
+    "confidenceNote": "Personal site and LinkedIn both identify Rahul Sawant as Tech Architect at HashedIn by Deloitte and former founding member at AntStack.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Tech Architect at HashedIn by Deloitte, previously a founding member at AntStack. Strong match for serverless architecture, frontend systems, LLM developer tools, and practical engineering leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://raalzz.com/",
+          "note": "Personal homepage identifies Rahul Sawant as Tech Architect at HashedIn by Deloitte and highlights selected work such as LLM Council."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://in.linkedin.com/in/raalzz",
+          "note": "Public profile lists Rahul Sawant as Tech Architect at HashedIn by Deloitte and former founding member at AntStack."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn AntStack transition post",
+          "url": "https://www.linkedin.com/posts/vishwasnavadak_today-antstack-is-joining-hashedin-by-deloitte-activity-7467215351080984577-2Ekq",
+          "note": "Public post about AntStack joining HashedIn by Deloitte references Rahul Sawant as part of the AntStack story."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1v6mxf1",
+    "displayName": "Rainer Schuhsler",
+    "headline": "Marketing technology leader at NOV working at the intersection of digital marketing, analytics, and energy technology.",
+    "company": "NOV",
+    "title": "Director of Marketing Technology",
+    "location": "Houston, Texas, United States",
+    "tags": ["marketing technology", "digital analytics", "energy", "NOV", "web operations"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public directory sources match Rainer Schuhsler to NOV as Director of Marketing Technology in Houston; deeper primary public material is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Marketing Technology at NOV. Useful match for conversations on martech stacks, analytics, enterprise web operations, and bringing AI into industrial energy-company marketing workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/rainerschuhsler",
+          "note": "Public profile connects Rainer Schuhsler to NOV with Houston location and Texas Tech education."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn public directory",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Schuhsler",
+          "note": "Directory result lists Rainer Schuhsler as Director of Marketing Technology in Houston, TX, at NOV."
+        },
+        {
+          "label": "Humantic AI related NOV profile",
+          "url": "https://humantic.ai/public-profile/alex-navinkov-cpa-mba-f3fc326d8a4fc616",
+          "note": "Public index of NOV employees lists Rainer Schuhsler as Director of Marketing Technology at NOV."
+        },
+        {
+          "label": "Stack Overflow profile",
+          "url": "https://stackoverflow.com/users/1058650/rainer-schuhsler",
+          "note": "Older public technical profile for Rainer Schuhsler, with Google Analytics activity matching a marketing-technology background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1v8l6t1",
+    "displayName": "Rajat Saddi",
+    "headline": "Interfuze consultant leading digital transformation work with Agile, DevOps, and enterprise solution delivery experience.",
+    "company": "Interfuze",
+    "title": "Lead Consultant",
+    "location": "Perth, Western Australia, Australia",
+    "tags": ["digital transformation", "Agile", "DevOps", "solution architecture", "consulting"],
+    "confidence": "high",
+    "confidenceNote": "Interfuze's official team page and LinkedIn match Rajat Saddi to Interfuze in Perth; public pages found use Lead Consultant rather than the supplied Principal Consultant title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Lead Consultant at Interfuze in Perth, focused on digital transformation, Agile and DevOps delivery, and pragmatic enterprise solution architecture. Good match for public-sector, health, and enterprise modernization conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Interfuze about page",
+          "url": "https://www.interfuze.com.au/about-us",
+          "note": "Official Interfuze profile describes Rajat Saddi as Lead Consultant leading digital transformation and better-business projects."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://au.linkedin.com/in/rajat-saddi-7b48024",
+          "note": "Public profile lists Rajat Saddi as Lead Consultant at Interfuze Consulting in the Greater Perth Area."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Interfuze LinkedIn company page",
+          "url": "https://au.linkedin.com/company/interfuze-consulting",
+          "note": "Company page references Rajat Saddi in Interfuze's AI Engineer World's Fair planning context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fpqj9r",
+    "displayName": "Rajesh Bhatia",
+    "headline": "Senior Director of Engineering at Cloudflare working on AI engineering platforms and delegated software engineering workflows.",
+    "company": "Cloudflare",
+    "title": "Senior Director of Engineering",
+    "location": "San Francisco Bay Area, California, United States",
+    "tags": ["Cloudflare", "AI engineering", "developer productivity", "platform engineering", "agents"],
+    "confidence": "high",
+    "confidenceNote": "Summit speaker page and org-chart sources both identify Rajesh Bhatia as Senior Director of Engineering at Cloudflare; summit material specifically covers Cloudflare's AI engineering stack.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Director of Engineering at Cloudflare, publicly speaking about Cloudflare's path from assisted coding to delegated engineering. Strong match for AI engineering adoption, internal developer platforms, MCP, identity controls, and agent governance at scale.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Background Agents Summit session",
+          "url": "https://background-agents.com/summit/sessions/rajesh-bhatia/",
+          "note": "Speaker page identifies Rajesh Bhatia as Senior Director of Engineering at Cloudflare and describes his Cloudflare AI engineering stack session."
+        },
+        {
+          "label": "Ona summit speakers page",
+          "url": "https://ona.com/events/background-agents-virtual-summit",
+          "note": "Event page lists Rajesh Bhatia as Senior Director of Engineering at Cloudflare."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/cloudflare/org-chart/rajesh-bhatia",
+          "note": "Org-chart profile lists Rajesh Bhatia as Senior Director of Engineering at Cloudflare with prior engineering leadership roles."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "110jvjv",
+    "displayName": "Rajesh Prabhu",
+    "headline": "CTO at Get My Parking building AI, computer vision, and SaaS systems for parking operations.",
+    "company": "Get My Parking",
+    "title": "Chief Technology Officer",
+    "location": "India",
+    "tags": ["parking technology", "computer vision", "SaaS", "IoT", "mobility"],
+    "confidence": "high",
+    "confidenceNote": "Get My Parking official pages, LinkedIn, and AWS startup material consistently identify Rajesh Prabhu as CTO and tie him to AI-powered parking technology.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Get My Parking, applying AI, computer vision, cloud architecture, and SaaS systems to modernize parking operations. Useful match for vertical AI, mobility infrastructure, IoT integrations, and niche CV model deployment.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Get My Parking leadership page",
+          "url": "https://www.getmyparking.com/about.php",
+          "note": "Official company page lists Rajesh Prabhu as Chief Technical Officer."
+        },
+        {
+          "label": "Get My Parking announcement",
+          "url": "https://blog.getmyparking.com/2022/04/05/get-my-parking-welcomes-new-cto-rajesh-prabhu/",
+          "note": "Company announcement names Rajesh Prabhu as CTO and describes his SaaS and parking-technology remit."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://in.linkedin.com/in/erajsh",
+          "note": "Public profile identifies Rajesh Prabhu as CTO at Get My Parking, building parking AI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AWS Startups case study",
+          "url": "https://startups.aws.com/learn/get-my-parking-accelerates-ai-innovation-in-the-parking-industry",
+          "note": "AWS case study quotes Rajesh Prabhu as CTO on Get My Parking's custom computer-vision models."
+        },
+        {
+          "label": "Parking Network article",
+          "url": "https://www.parking.net/parking-news/get-my-parking/new-cto-rajesh-prabhu",
+          "note": "Industry coverage repeats Get My Parking's appointment of Rajesh Prabhu as CTO."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0c5glvs",
+    "displayName": "Ramakrishna Deepak Dastrala",
+    "headline": "Enterprise AI and fintech technology leader, publicly listed as IntellectAI CTO and newly appointed CEO of Purple Fabric.",
+    "company": "IntellectAI / Purple Fabric",
+    "title": "Chief Technology Officer; CEO - Purple Fabric",
+    "location": "Chennai, Tamil Nadu, India",
+    "tags": ["enterprise AI", "fintech", "insurance AI", "AI platforms", "product leadership"],
+    "confidence": "high",
+    "confidenceNote": "IntellectAI and AI 100 sources identify Deepak Dastrala as CTO; a June 8, 2026 Intellect Design Arena filing says he was appointed CEO of Purple Fabric, so the participant's CTO affiliation appears to be in transition.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Enterprise AI and fintech technology leader associated with IntellectAI's AI platforms and, as of a June 2026 filing, CEO of Purple Fabric. Strong match for insurance AI, financial-services AI platforms, productized enterprise AI, and regulated AI adoption.",
+    "sources": {
+      "primary": [
+        {
+          "label": "IntellectAI our story",
+          "url": "https://www.intellectai.com/our-story/",
+          "note": "Official IntellectAI page lists Deepak Dastrala as Chief Technology Officer."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://in.linkedin.com/in/deepak-dastrala-a3b7625",
+          "note": "Public profile identifies Deepak Dastrala's IntellectAI CTO background and current Purple Fabric CEO role."
+        },
+        {
+          "label": "Intellect Design Arena filing",
+          "url": "https://www.intellectdesign.com/investor/intimations/Intimaton-of-Change-in-SMP.pdf",
+          "note": "June 8, 2026 public filing says Deepak Dastrala was appointed CEO of Purple Fabric."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI 100 Leaders profile",
+          "url": "https://www.ai100leaders.com/deepak-dastrala",
+          "note": "Profile describes Deepak Dastrala as Partner and Chief Technology Officer at Intellect Design Arena focused on enterprise AI and fintech."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/intellect-design-arena-ltd/org-chart/deepak-dastrala",
+          "note": "Org profile lists Deepak Dastrala as Partner and CTO at IntellectAI, responsible for AI and data platforms."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0a5454c",
+    "displayName": "Ramana Siddanth Emani",
+    "headline": "Data Scientist at Auditoria AI building AI agents and efficient local-model research projects.",
+    "company": "Auditoria AI",
+    "title": "Data Scientist",
+    "location": "San Francisco Bay Area, California, United States",
+    "tags": ["data science", "AI agents", "local AI", "LLM training", "Auditoria AI"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, The Org, and AI Engineer schedule sources consistently identify Ramana Siddanth Emani as a Data Scientist at Auditoria AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Data Scientist at Auditoria AI building agentic research tools and local-model experiments. Good match for local AI, LLM training efficiency, finance automation, and applied data-science workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/siddanth-emani",
+          "note": "Public profile lists Ramana Siddanth Emani as Data Scientist at Auditoria.AI and builder of SmartResearch Agent."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/SiddanthEmani",
+          "note": "Developer profile identifies Ramana Siddanth Emani with Auditoria AI and links to AI/data-science project work."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/schedule",
+          "note": "Public conference schedule lists Ramana Siddanth Emani as Data Scientist at Auditoria AI for the Local AI session Compression at the Edge."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org Auditoria HQ page",
+          "url": "https://theorg.com/org/auditoria-ai/offices/hq",
+          "note": "Org page lists Ramana Siddanth Emani as Data Scientist at Auditoria AI."
+        },
+        {
+          "label": "LinkedIn project post",
+          "url": "https://www.linkedin.com/posts/siddanth-emani_ai-automation-research-activity-7352737372066693120-IbJ-",
+          "note": "Public post describes his automated AI research pipeline and reinforces his Auditoria.AI data-science role."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16hata2",
+    "displayName": "Ramon Burgos",
+    "headline": "Systems architect and agentic-AI practitioner working across AI orchestration, cloud infrastructure, and ERP automation.",
+    "company": "Coqui Cloud / independent",
+    "title": "Systems Architect and Agentic AI Orchestrator",
+    "location": "Colorado, United States",
+    "tags": ["agentic AI", "systems architecture", "cloud infrastructure", "ERP automation", "AI orchestration"],
+    "confidence": "low",
+    "confidenceNote": "Public sources strongly match Ramon Luis Rios Burgos / Ramon Rios Jr to systems architecture and agentic AI work, but did not corroborate the supplied Agentic Protocol company or exact Staff AI Engineer title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Systems architect and agentic-AI practitioner whose public work centers on AI orchestration, cloud infrastructure, ERP automation, and practical systems integration. Useful match for agent workflows, infrastructure architecture, and AI-enabled operations discussions; current company/title should be confirmed directly.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://ramonrios.net/",
+          "note": "Personal site for Ramon Rios Jr describes systems architecture, agentic AI swarms, cloud infrastructure, and AI automation work."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ramon-rios-a8ba3035",
+          "note": "Public profile describes Ramon Rios as an agentic AI orchestrator and systems architect."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/RamonRiosJr",
+          "note": "Developer profile links Ramon Rios Jr to Coqui Cloud, systems architecture, and public social profiles."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Facebook public profile",
+          "url": "https://www.facebook.com/ingrios/",
+          "note": "Public profile uses the full name Ramon Luis Rios Burgos and describes system architecture, Lean Six Sigma, and AI / ERP strategy."
+        },
+        {
+          "label": "Personal about page",
+          "url": "https://ramonrios.net/about",
+          "note": "About page describes his current focus on AI, automation, edge computing, and Coqui Cloud solution architecture."
+        }
+      ]
+    }
+  }
+]

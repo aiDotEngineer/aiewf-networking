@@ -1,0 +1,132 @@
+[
+  {
+    "lookupKey": "15wwnzz",
+    "displayName": "Ashok Chandrasekar",
+    "headline": "Staff Software Engineer at Google focused on LLM inference performance, Kubernetes, and AI infrastructure",
+    "company": "Google",
+    "title": "Staff Software Engineer",
+    "location": "Seattle, WA",
+    "tags": ["AI infrastructure", "LLM inference", "Kubernetes", "performance benchmarking", "distributed systems", "cloud native"],
+    "confidence": "high",
+    "confidenceNote": "Primary GitHub and research-profile sources match the provided name, Google affiliation, Seattle location, and LLM inference/Kubernetes focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Staff Software Engineer at Google working on systems for ML, especially LLM inference optimization and performance evaluation on Kubernetes. Useful match for conversations on AI infrastructure, benchmarking, distributed systems, and production serving performance.",
+    "sources": {
+      "primary": [
+        {"label": "GitHub profile", "url": "https://github.com/achandrasekar", "note": "Lists Google, Seattle, and focus on systems for ML, LLM inference optimization, performance evaluation, and Kubernetes."},
+        {"label": "Personal site", "url": "https://ashokc.dev/", "note": "Linked from his GitHub and OpenReview profiles."},
+        {"label": "OpenReview profile", "url": "https://openreview.net/profile?id=~Ashok_Chandrasekar1", "note": "Researcher at Google with expertise in LLM inference, benchmarking, Kubernetes, system efficiency, distributed systems, and AI infrastructure."}
+      ],
+      "secondary": [
+        {"label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=FrKanlMAAAAJ", "note": "Shows publication activity including LLM performance in Kubernetes with OpenTelemetry."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/ashokchandrasekar", "note": "Search result corroborates Google experience and distributed systems/cloud-native background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qnuyrd",
+    "displayName": "Ashray Malhotra",
+    "headline": "Director, Emerging Products at Adobe, building GenAI products after co-founding Rephrase.ai",
+    "company": "Adobe",
+    "title": "Director, Emerging Products",
+    "location": "San Francisco, CA",
+    "tags": ["generative AI", "AI video", "synthetic audiences", "product strategy", "Adobe Firefly", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, and acquisition coverage consistently connect Ashray Malhotra with Adobe, Rephrase.ai, and generative AI video/product work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Emerging Products at Adobe, with recent work around Adobe Brand Intelligence Predict and synthetic audiences. Previously co-founded and led Rephrase.ai, an AI video startup acquired by Adobe, making him a strong match for product, GenAI video, creative tooling, and startup-to-enterprise discussions.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://www.ashraymalhotra.com/", "note": "States GenAI at Adobe and ex-CEO/co-founder of Rephrase.ai, acquired by Adobe."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/ashraymalhotra", "note": "Lists Adobe, ex-co-founder and CEO of Rephrase.ai, Forbes 30 Under 30 Asia, and generative AI video focus."},
+        {"label": "X profile", "url": "https://x.com/ashray_malhotra", "note": "Public social profile references Rephrase.ai, Forbes Asia 30 Under 30, and Adobe Synthetic Audiences work."}
+      ],
+      "secondary": [
+        {"label": "Times of India acquisition coverage", "url": "https://timesofindia.indiatimes.com/gadgets-news/adobe-buys-indian-generative-ai-startup-rephrase-ai-what-makes-the-deal-important/articleshow/105425071.cms", "note": "Reports Adobe's acquisition of Rephrase.ai and identifies Ashray Malhotra as one of its founders."},
+        {"label": "LinkedIn post on Adobe Brand Intelligence Predict", "url": "https://www.linkedin.com/posts/ashraymalhotra_launching-adobe-brand-intelligence-predict-activity-7467459795407507456-tN4_", "note": "Describes his current synthetic-audience product work at Adobe."},
+        {"label": "Forbes Rephrase.ai profile", "url": "https://www.forbes.com/profile/rephraseai/", "note": "Lists Ashray Malhotra among Rephrase.ai cofounders in Forbes 30 Under 30 Asia coverage."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0es9r3w",
+    "displayName": "Atakan Kandemir",
+    "headline": "Engineering leader at Uber with public profile evidence around software engineering in the San Francisco Bay Area",
+    "company": "Uber",
+    "title": "Distinguished Engineer",
+    "location": "San Francisco Bay Area",
+    "tags": ["software engineering", "engineering leadership", "Uber", "platform engineering", "backend systems"],
+    "confidence": "medium",
+    "confidenceNote": "Search results strongly match name and Uber affiliation, but public sources found describe Lead or Senior Software Engineer rather than Distinguished Engineer.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Uber engineering leader in the San Francisco Bay Area. Public evidence supports an Uber software engineering role, but the exact seniority/title should be treated as participant-provided until directly confirmed.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/atakan-kandemir", "note": "Search result identifies Atakan Kandemir as an Uber software engineer in the San Francisco Bay Area."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn people search", "url": "https://www.linkedin.com/pub/dir/Atakan/Kandemir", "note": "Corroborates an Atakan Kandemir profile associated with Uber and the San Francisco Bay Area."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "05bpj55",
+    "displayName": "Atendra Yadav",
+    "headline": "Amazon technology leader with cloud, retail, logistics, enterprise architecture, and AI-agent interests",
+    "company": "Amazon",
+    "title": "Senior Tech Manager",
+    "location": "Seattle, WA",
+    "tags": ["Amazon", "AWS", "cloud architecture", "enterprise architecture", "AI agents", "retail technology", "logistics"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources match the name and Amazon affiliation, but the visible public title is Principal Solutions Architect rather than Senior Tech Manager.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Amazon technology leader with public writing and event activity around cloud transformation, AI agents, engineering quality, retail, logistics, and enterprise architecture. Good match for conversations about practical AI adoption, architecture, and large-company engineering workflows.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/atendra", "note": "Search result identifies Atendra Yadav at Amazon with cloud, retail, logistics, and enterprise architecture focus."},
+        {"label": "LinkedIn post on AWS re:Invent and AI agents", "url": "https://www.linkedin.com/posts/atendra_reinvent-awsreinvent-aws-activity-7401407930291650560-z7hW", "note": "Shows current interest in AWS, cloud, AI agents, and real-world deployment conversations."},
+        {"label": "LinkedIn post on AI in engineering quality", "url": "https://www.linkedin.com/posts/atendra_softwareengineering-techleadership-codereview-activity-7462560707935608832-E-IV", "note": "Discusses AI-first engineering, code review bottlenecks, and quality instincts."}
+      ],
+      "secondary": [
+        {"label": "ResearchGate profile", "url": "https://www.researchgate.net/profile/Atendra-Yadav-2", "note": "Corroborates Amazon affiliation and Seattle location, though with limited detail."},
+        {"label": "LinkedIn post on AWS AI Practitioner", "url": "https://www.linkedin.com/posts/atendra_aipractitioner-aws-activity-7402470313227390977-wYPh", "note": "Mentions AWS certification and frames today's AI transition as analogous to the earlier cloud transition."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "14t3mbe",
+    "displayName": "Atoof Shakir",
+    "headline": "CTO and founder at Seldon Technologies working on multimodal AI, representation learning, and evaluation infrastructure",
+    "company": "Seldon Technologies, Inc",
+    "title": "CTO",
+    "location": "Zurich, Switzerland",
+    "tags": ["multimodal AI", "representation learning", "video intelligence", "evaluation infrastructure", "music information retrieval", "ETH Zurich", "Seldon"],
+    "confidence": "medium",
+    "confidenceNote": "Primary sources strongly support Atoof Shakir's Seldon, ETH Zurich, multimodal AI, and Zurich context, but public sources found say founder or pre-doctoral researcher rather than explicitly CTO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO/founder profile in the Seldon and ETH Zurich ecosystem, working across multimodal AI, representation learning, video intelligence, and evaluation data for next-generation AI systems. Strong match for attendees interested in multimodal model evaluation, applied research, audio/video datasets, and agentic systems.",
+    "sources": {
+      "primary": [
+        {"label": "Agentic Systems Lab profile", "url": "https://www.agenticsystemslab.org/team/atoof-shakir", "note": "Describes Atoof's work in multimodal AI, representation learning, video intelligence, and Seldon."},
+        {"label": "Hugging Face profile", "url": "https://huggingface.co/atoof", "note": "Shows Atoof Shakir's AI profile, Seldon Technologies organization membership, and recent dataset/model activity."},
+        {"label": "Seldon Technologies Hugging Face organization", "url": "https://huggingface.co/Seldon-Technologies", "note": "Confirms Seldon Technologies organization, company website link, and Atoof Shakir as a team member."},
+        {"label": "LinkedIn profile", "url": "https://ch.linkedin.com/in/atoof-shakir", "note": "Public profile result for Atoof Shakir in Switzerland."}
+      ],
+      "secondary": [
+        {"label": "Agentic Systems Lab homepage", "url": "https://www.agenticsystemslab.org/", "note": "Lists Atoof Shakir as a founder of Seldon in the lab ventures section."},
+        {"label": "arXiv IncompeBench paper", "url": "https://arxiv.org/abs/2602.11941", "note": "Lists Atoof Shakir as a coauthor on a 2026 benchmark for music information retrieval."},
+        {"label": "DBLP profile", "url": "https://dblp.org/pid/430/6873", "note": "Bibliographic profile corroborating the IncompeBench publication."}
+      ]
+    }
+  }
+]

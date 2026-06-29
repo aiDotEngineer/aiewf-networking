@@ -1,0 +1,778 @@
+[
+  {
+    "lookupKey": "1slxes5",
+    "displayName": "Eleena Png",
+    "headline": "Founder at ALGINEX in Singapore with public interest in AI agents and workflows",
+    "company": "ALGINEX",
+    "title": "Founder and CEO",
+    "location": "Singapore, SG",
+    "tags": ["founder", "AI agents", "Singapore", "startup leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn search result supports Founder at ALGINEX and Singapore location; an OpenAI Academy certificate supports AI-agent learning interest. Limited public company detail found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of ALGINEX based in Singapore. Public signals point to startup leadership and interest in AI agent workflows; useful match for founders and builders exploring AI-enabled products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/eleenapng",
+          "note": "Search result lists Eleena P. as Founder at ALGINEX with Singapore location."
+        },
+        {
+          "label": "OpenAI Academy certificate",
+          "url": "https://academy.openai.com/public/certificate/j5fpt717ws",
+          "note": "Certificate issued to Eleena Png for Agents and Workflows."
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "0sum75f",
+    "displayName": "Elizabeth Fuentes",
+    "headline": "AWS Developer Advocate focused on production-ready AI agents, evaluation, and guardrails",
+    "company": "AWS",
+    "title": "Developer Advocate",
+    "location": "San Francisco, US",
+    "tags": ["AWS", "developer advocacy", "AI agents", "LLM evaluation", "guardrails", "Python"],
+    "confidence": "high",
+    "confidenceNote": "Multiple first-party and professional sources align on AWS Developer Advocate role, AI-agent focus, and San Francisco location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer advocate at AWS helping developers build production-ready AI applications. She publishes and speaks on agent evaluation, guardrails, context management, hallucination reduction, and practical AWS AI demos.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://elifuentes.tech/",
+          "note": "Describes Elizabeth Fuentes Leone as Developer Advocate at AWS helping developers build production-ready AI applications."
+        },
+        {
+          "label": "AWS Builder Center profile",
+          "url": "https://builder.aws.com/community/%40elizabethfuentes12",
+          "note": "AWS community profile for Elizabeth Fuentes with developer-education mission."
+        },
+        {
+          "label": "DEV profile",
+          "url": "https://dev.to/elizabethfuentes12",
+          "note": "Lists work as AWS Developer Advocate, San Francisco location, and AI application/tutorial focus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/elizabeth-fuentes-leone/",
+          "note": "Speaker bio says she focuses on making agents fast, cheap, and correct in production."
+        },
+        {
+          "label": "AWS News Blog author page",
+          "url": "https://aws.amazon.com/blogs/aws/author/eliaws/page/2/",
+          "note": "AWS author page describes her mission to explain complex AWS concepts for developers."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1knpcg9",
+    "displayName": "Emily Chin",
+    "headline": "AI and data practitioner at Innodata; participant title indicates agentic ecommerce practice leadership",
+    "company": "Innodata",
+    "title": "Technical Practice Leader, Agentic eCommerce",
+    "location": "Ridgefield Park, US",
+    "tags": ["agentic ecommerce", "applied AI", "data science", "Innodata", "research"],
+    "confidence": "medium",
+    "confidenceNote": "Public LinkedIn evidence supports an Emily C. at Innodata in an applied AI/research role; exact Technical Practice Leader, Agentic eCommerce title is only supported by participant-provided data.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI and data practitioner at Innodata working around applied research and agentic ecommerce. Relevant match for attendees exploring AI-mediated shopping, commerce workflows, data quality, and enterprise AI implementation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/emilyuchin",
+          "note": "Search result lists Emily C. as Applied Research Scientist at Innodata with UC Berkeley education."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/Emily/Chin",
+          "note": "Directory result includes an Emily Chin profile connected with Innodata and AI/data background."
+        },
+        {
+          "label": "McKinsey agentic commerce report",
+          "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-agentic-commerce-opportunity-how-ai-agents-are-ushering-in-a-new-era-for-consumers-and-merchants",
+          "note": "High-signal context source on the agentic commerce domain, not a source for Emily's personal role."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0f1f0ob",
+    "displayName": "Emmie Chang",
+    "headline": "CEO and Co-Founder of Yuzu Labs, building AI-powered GTM and revenue workflows from customer conversations",
+    "company": "Yuzu Labs",
+    "title": "CEO / Co-Founder",
+    "location": "San Francisco, US",
+    "tags": ["founder", "Yuzu Labs", "AI video", "GTM", "revenue operations", "YC alum"],
+    "confidence": "high",
+    "confidenceNote": "Yuzu, LinkedIn, YC, X, and Happenstance sources consistently support her Yuzu Labs founder role, San Francisco location, and GTM/video AI focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO and Co-Founder of Yuzu Labs, building AI systems that turn sales conversations into deal intelligence, follow-ups, videos, and buyer-facing assets. YC alum and serial founder with prior education-tech and marketplace experience.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/emmie",
+          "note": "Profile describes Emmie Chang as CEO and Co-Founder of Yuzu Labs, focused on AI for revenue and GTM conversations."
+        },
+        {
+          "label": "Yuzu Labs blog",
+          "url": "https://www.yuzulabs.io/posts",
+          "note": "Yuzu company site lists Emmie Chang as author of founder notes and GTM intelligence posts."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/Emmie",
+          "note": "Profile describes Emmie as Founder at Yuzu Labs, AI for Revenue, based in San Francisco."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/futureleague",
+          "note": "YC profile lists Emmie Chang as Founder/CEO and says she is building Yuzu, a video GTM platform for B2B SaaS companies."
+        },
+        {
+          "label": "Happenstance profile",
+          "url": "https://happenstance.ai/u/emmie",
+          "note": "Summarizes her as a serial entrepreneur, YC alum, AI video founder, and Founder/CEO of Yuzu Labs."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0tcygnv",
+    "displayName": "Eno Reyes",
+    "headline": "Co-Founder and CTO at Factory AI",
+    "company": "Factory",
+    "title": "CTO & Co-Founder",
+    "location": "San Francisco, CA, US",
+    "tags": ["AI agents", "software engineering", "developer tools", "enterprise AI", "startups"],
+    "confidence": "high",
+    "confidenceNote": "Multiple strong public sources identify Eno Reyes as Factory co-founder and CTO and describe Factory's work on AI software development agents.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Factory, building enterprise platforms for deploying and measuring frontier software development agents. Previously worked on applied AI and ML engineering at Hugging Face and Microsoft.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/enoreyes",
+          "note": "Lists Eno Reyes as CTO and co-founder at Factory in San Francisco."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/EnoReyes",
+          "note": "Public profile describes him as CTO at Factory AI and focused on software that builds software."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google Cloud Next 2026 speaker profile",
+          "url": "https://www.googlecloudevents.com/next-vegas/speaker/2152804/eno-reyes",
+          "note": "Speaker bio identifies him as Factory co-founder and CTO and notes prior roles at Hugging Face and Microsoft."
+        },
+        {
+          "label": "Sequoia founder profile",
+          "url": "https://sequoiacap.com/founder/eno-reyes/",
+          "note": "Founder profile for Factory describes Reyes as co-founder and CTO."
+        },
+        {
+          "label": "OpenAI customer story",
+          "url": "https://openai.com/index/factory/",
+          "note": "Describes Factory as founded by Matan Grinberg and Eno Reyes and focused on autonomous software development."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1r5wuzf",
+    "displayName": "Erfan Rostami",
+    "headline": "CTO at Voltai, building AI for semiconductors",
+    "company": "Voltai",
+    "title": "CTO",
+    "location": "Atherton, CA, US",
+    "tags": ["semiconductors", "EDA", "AI copilots", "hardware intelligence", "Stanford"],
+    "confidence": "high",
+    "confidenceNote": "Forbes, LinkedIn, Voltai company listings, and DAC speaker materials consistently connect Erfan Rostami with Voltai and semiconductor AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO of Voltai, focused on AI systems for semiconductor and electronics workflows. Public writing and conference appearances center on AI copilots for chip design, EDA productivity, and hardware intelligence.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/erfier",
+          "note": "Lists Erfan Rostami at Voltai with Stanford background."
+        },
+        {
+          "label": "Voltai LinkedIn company page",
+          "url": "https://www.linkedin.com/company/voltai-inc",
+          "note": "Describes Voltai as building AI models for electronics and lists Erfan Rostami among employees."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes Technology Council profile",
+          "url": "https://www.forbes.com/councils/forbestechcouncil/people/erfanrostami/",
+          "note": "Identifies him as CTO of Voltai, building AI for semiconductors."
+        },
+        {
+          "label": "DAC 2025 presentation listing",
+          "url": "https://62dac.conference-program.com/presentation/?id=EF101&sess=sess212",
+          "note": "Lists Erfan Rostami of Voltai as a presenter on EDA startup innovation."
+        },
+        {
+          "label": "Lux Capital semiconductor AI analysis",
+          "url": "https://www.luxcapital.com/content/the-looming-labor-crisis-in-chip-design",
+          "note": "References VoltAI's semiconductor foundation-model work and Rostami's views on AI copilots for chip design."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0xqzqjj",
+    "displayName": "Eric Kightley",
+    "headline": "Software Engineer at Pulse Security AI",
+    "company": "Pulse Security AI",
+    "title": "Software Engineer",
+    "location": "San Francisco Bay Area, CA, US",
+    "tags": ["software engineering", "security AI", "data science", "applied mathematics", "cybersecurity"],
+    "confidence": "medium",
+    "confidenceNote": "Current Pulse Security AI role is primarily supported by LinkedIn; independent sources strongly support his applied mathematics, data science, and software background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineer at Pulse Security AI with a quantitative background in applied mathematics and data science. Prior public academic work includes sparse Gaussian mixture modeling and PhD research at the University of Colorado Boulder.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/erickightley",
+          "note": "Lists Eric Kightley as a software engineer at Pulse Security AI in the San Francisco Bay Area."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/EricKightley",
+          "note": "Public GitHub profile describes him as a data scientist and applied mathematics PhD."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "University of Colorado Boulder IQ Biology profile",
+          "url": "https://www.colorado.edu/certificate/iqbiology/eric-kightley",
+          "note": "University profile summarizes his applied mathematics PhD research and prior degrees."
+        },
+        {
+          "label": "Pulse Security AI LinkedIn company page",
+          "url": "https://www.linkedin.com/company/pulse-security-ai-inc",
+          "note": "Company page describes Pulse Security AI as building agentic workflows for security leaders."
+        },
+        {
+          "label": "arXiv author listing",
+          "url": "https://arxiv.org/a/becker_s_1",
+          "note": "Lists Eric Kightley as an author on machine learning research with Stephen Becker."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1o1zlmy",
+    "displayName": "Erik Manuevo",
+    "headline": "Founder and SVP/GM of Chegg AI Services",
+    "company": "Chegg, Inc.",
+    "title": "SVP/GM, AI Services",
+    "location": "San Francisco, CA, US",
+    "tags": ["AI services", "education technology", "AI data", "operations", "expert networks"],
+    "confidence": "high",
+    "confidenceNote": "Chegg investor materials and LinkedIn sources consistently identify Erik Manuevo as leading Chegg's AI Services business.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and SVP/GM of Chegg AI Services, leading Chegg's expansion into AI model training, data licensing, and expert-powered STEM reasoning workflows. Background spans operations leadership and AI venture building across education and enterprise platforms.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/erikmanuevo",
+          "note": "Public profile lists him as founder and SVP/GM of Chegg AI Services."
+        },
+        {
+          "label": "LinkedIn announcement post",
+          "url": "https://www.linkedin.com/posts/erikmanuevo_quotes-activity-7462621148334264321-SCS0",
+          "note": "Manuevo announces his return to Chegg to start and lead the new AI Services business."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Chegg investor press release",
+          "url": "https://investor.chegg.com/Press-Releases/press-release-details/2026/Chegg-Expands-Into-AI-Model-Training--Leveraging-a-Decade-of-Learning-Expertise-Subject-Matter-Experts-and-Proprietary-Data/default.aspx",
+          "note": "Chegg identifies Erik Manuevo as General Manager of AI Services and quotes him on data quality and governance."
+        },
+        {
+          "label": "Chegg LinkedIn company page",
+          "url": "https://www.linkedin.com/company/chegg-inc-",
+          "note": "Company page describes Chegg's AI-powered academic support and expert network, and lists Erik Manuevo among employees."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1l6gr9w",
+    "displayName": "Erik Meijer",
+    "headline": "Research scholar and programming languages leader focused on verifiable agentic compute",
+    "company": "Leibniz Labs",
+    "title": "Research Scholar",
+    "location": "Palo Alto, CA, US",
+    "tags": ["programming languages", "formal methods", "agentic AI", "reactive programming", "developer tools"],
+    "confidence": "high",
+    "confidenceNote": "Public profiles and event pages consistently identify Erik Meijer as a computer scientist known for LINQ, Rx, C#/VB/Dart/Hack work, with current or recent affiliations including Leibniz Labs and AI-native software research.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Programming languages researcher and entrepreneur best known for LINQ, Reactive Extensions, and work across Haskell, C#, Visual Basic, Dart, and Hack. Useful match for attendees working on verifiable AI agents, language design, runtime safety, and developer productivity.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/erikmeijer1",
+          "note": "Lists Erik Meijer at Leibniz Labs in Palo Alto and summarizes his language, API, and type-system background."
+        },
+        {
+          "label": "AI Engineer World's Fair 2026 schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Erik+Meijer",
+          "note": "Lists Erik Meijer as Research Scholar at Leibniz Labs for the talk 'In Code They Act, In Proof We Trust'."
+        },
+        {
+          "label": "Enterprise AI Summit speaker page",
+          "url": "https://enterpriseaisummit2026.sched.com/speaker/erik.29ed5cgk",
+          "note": "Speaker page identifies Erik Meijer with Leibniz Labs and Applied Duality background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI By the Bay LinkedIn post",
+          "url": "https://www.linkedin.com/posts/bythebay_video-recording-release-erik-meijer-activity-7407434570125553665-3HSB",
+          "note": "Describes his 'Verifiably Safe Agentic Compute' talk and his experience in Haskell, C#, Dart, and Rx."
+        },
+        {
+          "label": "DBLP profile",
+          "url": "https://dblp.org/pers/m/Meijer_0001%3AErik",
+          "note": "Publication index for Erik Meijer with former affiliations including Microsoft Research and Applied Duality."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1cfduxq",
+    "displayName": "Erik Norden",
+    "headline": "AI systems and silicon strategy executive focused on AGI infrastructure",
+    "company": "Zyphra",
+    "title": "AI Technology & Strategy Executive",
+    "location": "San Francisco Bay Area, CA, US",
+    "tags": ["AI infrastructure", "AI hardware", "AGI strategy", "semiconductors", "agents", "systems architecture"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public event and company sources connect Erik Norden to Zyphra and describe a senior AI systems career spanning Apple Neural Engine, Google TPU work, NVIDIA, and AI infrastructure strategy.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI systems and hardware executive at Zyphra with deep experience across neural accelerators, large-scale AI platforms, and AI infrastructure strategy. Relevant for conversations on AGI systems, inference bottlenecks, silicon/software co-design, and agent infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/eriknorden",
+          "note": "Professional profile for Erik Norden in the San Jose area."
+        },
+        {
+          "label": "smAiT company advisor profile",
+          "url": "https://smait.ai/company",
+          "note": "Lists Erik Norden as an AI and computer architect, formerly at Google, Apple, and NVIDIA, now leading AI Technology & Strategy at Zyphra."
+        },
+        {
+          "label": "WEKA video page",
+          "url": "https://www.weka.io/resources/video/building-superintelligence-with-zyphras-chief-ai-strategy-officer/",
+          "note": "Identifies him as Zyphra's Chief AI Strategy Officer discussing superintelligence and AI agents."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Infra Summit LinkedIn recap",
+          "url": "https://www.linkedin.com/posts/ignitegtm_aiinfrasummit-aiinfrastructure-neuralengine-activity-7407490800584065024-0Bo1",
+          "note": "Describes Norden from Zyphra and summarizes his AI infrastructure work across NVIDIA, Apple, and Google."
+        },
+        {
+          "label": "SemiWiki DVCon Europe 2024 notes",
+          "url": "https://semiwiki.com/semiconductor-services/350198-notes-from-dvcon-europe-2024/",
+          "note": "Reports his Zyphra keynote on AI systems, silicon, algorithms, and data."
+        },
+        {
+          "label": "CredPR AI Infra Summit 2025 recap",
+          "url": "https://www.credpr.com/blog/2025/11/13/event-spotlight-ai-infra-summit-2025",
+          "note": "Lists Erik Norden as Chief AI Strategy Officer at Zyphra on the Code to Cloud panel."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0erfd07",
+    "displayName": "Erika Bricky",
+    "headline": "Marketing and community operator in agentic browser infrastructure",
+    "company": "Browserbase",
+    "title": "Marketing Lead",
+    "location": "San Francisco, CA, US",
+    "tags": ["browser automation", "agent infrastructure", "developer marketing", "community", "go-to-market"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly support Erika Bricky at Browserbase in marketing/community roles; they do not support the provided Microsoft researcher affiliation, so this profile uses the better-supported current public identity.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Marketing and community lead at Browserbase, working around browser automation and agent infrastructure. Good match for attendees building developer platforms, agent tooling, technical communities, and GTM around AI infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/erikabricky",
+          "note": "Professional profile for Erika Bricky in San Francisco."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/brickywhat?lang=en",
+          "note": "Public social profile with posts mentioning joining Browserbase."
+        },
+        {
+          "label": "Browserbase blog",
+          "url": "https://browserbase.com/blog",
+          "note": "Lists Erika Bricky as an author on Browserbase company content."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/browserbase/org-chart/erika-bricky",
+          "note": "Identifies Erika Bricky as Marketing Lead at Browserbase and summarizes prior community and partnerships experience."
+        },
+        {
+          "label": "LinkedIn post about joining Browserbase",
+          "url": "https://www.linkedin.com/posts/erikabricky_today-is-my-first-day-at-browserbase-activity-7337972598418415619-JJo4",
+          "note": "Public post where Erika Bricky says it is her first day at Browserbase."
+        },
+        {
+          "label": "Browserbase customer stories page",
+          "url": "https://www.browserbase.com/customer-stories",
+          "note": "Shows Erika Bricky as an author on Browserbase customer content."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0att8r9",
+    "displayName": "Erina Karati",
+    "headline": "Applied AI systems builder with Microsoft and Supercell engineering experience",
+    "company": "Supercell",
+    "title": "AI Engineer",
+    "location": "Bellevue, WA, US",
+    "tags": ["agentic AI", "multi-agent systems", "generative AI", "software engineering", "Windows networking"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, GitHub, and AI Engineer schedule sources consistently identify Erina Karati as a former Microsoft engineer and current or recent AI engineer at Supercell with agentic AI and GenAI systems focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Applied AI systems builder focused on agentic and generative AI systems. Former Microsoft engineer with Supercell AI experience and graduate work in computer science, useful for attendees exploring multi-agent research, AI product engineering, and production debugging.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://www.erinakarati.dev/",
+          "note": "Describes Erina Karati as an applied AI systems builder, former Microsoft engineer, Supercell AI engineer, and University of Minnesota CS graduate."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ekarati",
+          "note": "Lists Erina Karati as former engineer at Microsoft and AI engineer at Supercell."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/ekarati",
+          "note": "Public developer profile mentioning three years at Microsoft and production debugging experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair 2026 schedule search",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Erina+Karati",
+          "note": "Lists Erina Karati on the 'Autoresearch in a Multi-Agent AI Village' session with Supercell and former Microsoft affiliation."
+        },
+        {
+          "label": "Behance profile",
+          "url": "https://www.behance.net/ekarati/info",
+          "note": "Public profile listing Erina Karati as a Windows Networking Engineer at Microsoft and linking to LinkedIn."
+        },
+        {
+          "label": "LinkedIn project post",
+          "url": "https://www.linkedin.com/posts/ekarati_what-if-agentic-ai-could-empower-the-creation-activity-7346632606962065409-zgVW",
+          "note": "Post associated with Erina Karati about building Project Paradox, a multi-agent LLM framework."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "009p2i7",
+    "displayName": "Esteban Elia",
+    "headline": "Head of AI and Data Science at MODO focused on agentic commerce and AI-first transformation",
+    "company": "MODO",
+    "title": "Head of AI & Data Science",
+    "location": "Buenos Aires, Argentina",
+    "tags": ["AI", "Data Science", "Fintech", "Agentic Commerce", "AI Transformation", "Financial Services"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources identify Esteban Elia as Head of AI/Data Science at MODO and connect him to AI-in-finance speaking and applied AI work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads AI and data science at MODO, Argentina's payments and fintech app, with public work around agentic commerce, AI-first transformation, and AI in financial services. Useful match for teams building AI products in regulated consumer-finance environments.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn post by Esteban Elia",
+          "url": "https://es.linkedin.com/posts/estebanelia_chatgpt-activity-7437891367030140928-APKE",
+          "note": "Public LinkedIn post identifies him as Head of AI & Data Science at MODO and discusses MODO inside ChatGPT."
+        },
+        {
+          "label": "AIFI26 speaker page",
+          "url": "https://www.aifi.lat/speaker",
+          "note": "Lists Esteban Elia as Head of AI & Data Science, MODO."
+        },
+        {
+          "label": "AILat program",
+          "url": "https://ai-lat.com/programa",
+          "note": "Lists Esteban Elia as Head of Data Science & AI at MODO on an AI/finance program."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "La Nacion profile",
+          "url": "https://www.lanacion.com.ar/economia/le-pegaban-si-se-sacaba-10-se-redescubrio-con-los-simpson-y-es-una-de-las-personas-mas-inteligentes-nid30082024/",
+          "note": "Profiles him as MODO's data-science leader and notes prior machine-learning work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "134z8ig",
+    "displayName": "Esteban Villaseca",
+    "headline": "Technology executive at AFP Habitat working across IT leadership, transformation, automation, and AI governance",
+    "company": "AFP HABITAT",
+    "title": "CTO / Gerente de Tecnologia de Informacion",
+    "location": "Santiago, Chile",
+    "tags": ["Financial Services", "Pension Funds", "IT Leadership", "Digital Transformation", "Automation", "AI Governance"],
+    "confidence": "high",
+    "confidenceNote": "Regulatory and company sources identify Esteban Villaseca Nieto as AFP Habitat's information technology executive; public directory sources also map him to CIO/CTO-style responsibilities.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior technology leader at AFP Habitat, a major Chilean pension-fund administrator. Strong match for conversations on AI adoption, automation, governance, and modernization in regulated financial-services infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "CMF Chile executive registry",
+          "url": "https://www.cmfchile.cl/institucional/mercados/entidad.php?control=svs&grupo=&mercado=V&pestania=47&row=&rut=98000100&tipoentidad=RVEMI&vig=VI",
+          "note": "Official Chilean financial regulator lists Esteban Villaseca Nieto as Gerente de Tecnologia de Informacion at AFP Habitat."
+        },
+        {
+          "label": "AFP Habitat Cuenta Publica 2023",
+          "url": "https://www.afphabitat.cl/cuenta-publica-2023/",
+          "note": "Company page names Esteban Villaseca as Gerente de Tecnologias de la Informacion."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://cl.linkedin.com/in/evillaseca",
+          "note": "Public LinkedIn result describes him as CIO/Gerente TI, CTO, focused on digital transformation, AI, automation, and IT governance."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org AFP Habitat profile",
+          "url": "https://theorg.com/org/afp-habitat",
+          "note": "Lists Esteban Villaseca as Chief Information Officer at AFP Habitat."
+        },
+        {
+          "label": "MarketScreener profile",
+          "url": "https://www.marketscreener.com/insider/ESTEBAN-VILLASECA-NIETO-A3EPHV/",
+          "note": "Lists him as Manager-Information Technology / Chief Tech-Sci-R&D Officer at AFP Habitat."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "06yqhg4",
+    "displayName": "Etan Ginsberg",
+    "headline": "Founder and CEO of Martian, building model-routing and interpretability infrastructure for LLM applications",
+    "company": "Martian Learning, Inc.",
+    "title": "Chief Executive Officer",
+    "location": "San Francisco, United States",
+    "tags": ["LLM Infrastructure", "Model Routing", "AI Interpretability", "AI Startups", "Developer Tools", "Mechanistic Interpretability"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public sources identify Etan Ginsberg as Martian's founder/co-founder and connect Martian to LLM routing, interpretability, and San Francisco operations.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Martian, an AI infrastructure company known for LLM model routing and interpretability-oriented tooling. Relevant match for founders and engineers working on model selection, AI gateways, cost/performance optimization, and safer model architectures.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/etanginsberg",
+          "note": "Identifies Etan Ginsberg as Founder at Martian in San Francisco."
+        },
+        {
+          "label": "Etan Ginsberg on X",
+          "url": "https://x.com/EtanGinsberg",
+          "note": "Public social profile describes him as Founder at Martian and references funding from NEA and General Catalyst."
+        },
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?hl=en&user=q8xtSPQAAAAJ",
+          "note": "Verified academic profile under University of Pennsylvania with AI, generative AI, and machine-learning interests."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "TechCrunch on Martian launch",
+          "url": "https://techcrunch.com/2023/11/15/martians-tool-automatically-switches-between-llms-to-reduce-costs/",
+          "note": "Reports Ginsberg and Shriyash Upadhyay founded Martian to build LLM routing and interpretability-aligned products."
+        },
+        {
+          "label": "Unite.AI interview",
+          "url": "https://www.unite.ai/etan-ginsberg-co-founder-of-martian-interview-series/",
+          "note": "Interview profile describes him as co-founder of Martian and explains the company's model-routing product."
+        },
+        {
+          "label": "PrivCo company profile",
+          "url": "https://www.privco.com/company/martian-learning",
+          "note": "Lists Martian Learning, Inc. as San Francisco based and founded by Etan Ginsberg and Shriyash Upadhyay."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0zv4jzu",
+    "displayName": "Ethan Cha",
+    "headline": "AI Development Lead at The Carlyle Group focused on enterprise AI systems and AI/ML infrastructure",
+    "company": "The Carlyle Group",
+    "title": "AI Development Lead",
+    "location": "New York, United States",
+    "tags": ["Enterprise AI", "AI Development", "Machine Learning Infrastructure", "MLOps", "Financial Services", "Agent Tooling"],
+    "confidence": "medium",
+    "confidenceNote": "Current Carlyle role is supported by LinkedIn search results, The Org, and the AI Engineer World's Fair schedule; personal site and GitHub confirm the same professional identity, though some older public profiles still show prior Cedar affiliation.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI development lead at The Carlyle Group with a background in AI/ML infrastructure and production ML systems. Useful match for enterprise AI builders, finance-industry AI teams, and attendees interested in human/agent tool-layer architecture.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://ethancha.net/",
+          "note": "Personal site links to his GitHub and LinkedIn profiles."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ethancha0411",
+          "note": "Public LinkedIn result identifies Ethan J. Cha as AI Development Lead at The Carlyle Group."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/echa-cedar",
+          "note": "Confirms the Ethan Cha identity, ML/Ops background, New York location, and LinkedIn link."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org AI Development team page",
+          "url": "https://theorg.com/org/the-carlyle-group/teams/ai-development",
+          "note": "Lists Ethan J. Cha as AI Development Lead on The Carlyle Group's AI Development team."
+        },
+        {
+          "label": "AI Engineer World's Fair 2026 schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Security",
+          "note": "Lists Ethan (Jung Min) Cha of The Carlyle Group as AI Development Lead for a talk on dual-surface architecture."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1h0hbm0",
+    "displayName": "Eugene Yan",
+    "headline": "Member of Technical Staff at Anthropic focused on reliable AI systems, LLMs, recommendations, and applied ML",
+    "company": "Anthropic",
+    "title": "Member of Technical Staff",
+    "location": "Seattle, United States",
+    "tags": ["LLMs", "AI Systems", "Machine Learning", "Recommendation Systems", "Search", "Applied ML", "AI Safety"],
+    "confidence": "high",
+    "confidenceNote": "His personal site, LinkedIn, and current public speaker listings consistently identify him as Member of Technical Staff at Anthropic, with a long public record in applied ML and recommender systems.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Member of Technical Staff at Anthropic building safe, reliable AI systems at scale. Previously led or built ML and AI systems at Amazon, Alibaba/Lazada, and healthtech; writes widely about LLMs, recommender systems, search, and practical ML engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Eugene Yan about page",
+          "url": "https://eugeneyan.com/about/",
+          "note": "Personal bio states he is a Member of Technical Staff at Anthropic and summarizes prior Amazon, Alibaba/Lazada, healthtech, and IBM work."
+        },
+        {
+          "label": "Eugene Yan personal site",
+          "url": "https://eugeneyan.com/",
+          "note": "Homepage states his current Anthropic role and focus on safe, reliable AI systems that scale."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/eugeneyan",
+          "note": "Public LinkedIn result identifies him as at Anthropic and links his personal site and GitHub."
+        },
+        {
+          "label": "Eugene Yan on X",
+          "url": "https://x.com/eugeneyan?lang=en",
+          "note": "Public social profile includes his update about joining Anthropic."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair 2026 schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Security",
+          "note": "Lists Eugene Yan of Anthropic as Member of Technical Staff for a security-track talk."
+        },
+        {
+          "label": "Amazon Science profile",
+          "url": "https://www.amazon.science/working-at-amazon/eugene-yan-and-the-art-of-writing-about-science",
+          "note": "Profiles his earlier Amazon applied-science work and public technical writing."
+        },
+        {
+          "label": "Applied LLMs author page",
+          "url": "https://applied-llms.org/about.html",
+          "note": "Older author bio documents his applied ML, recommender-systems, and LLM writing background."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "lookupKey": "1rsvfkf",
+    "displayName": "Alfonso Bastias",
+    "headline": "Founder of Albarena.ai and Assistant Teaching Professor in Computer Science at University of Colorado Boulder",
+    "company": "Albarena.ai / University of Colorado Boulder",
+    "title": "Founder; Assistant Teaching Professor",
+    "location": "Boulder, CO, US",
+    "tags": [
+      "decision intelligence",
+      "AI",
+      "data science",
+      "machine learning",
+      "decision support systems",
+      "risk simulation",
+      "education"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "University role and research areas are confirmed by CU Boulder; Albarena founder role is supported by self-authored profile and company site, but CEO wording was not independently confirmed in primary public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alfonso works at the intersection of AI, data science, decision support, and responsible innovation. He teaches in CU Boulder's Data Science and Computer Science programs and is building Albarena.ai, an AI-powered decision-intelligence platform for structured, evidence-based organizational decisions.",
+    "sources": {
+      "primary": [
+        {
+          "label": "CU Boulder faculty profile",
+          "url": "https://www.colorado.edu/faculty/bastias/",
+          "note": "Confirms Assistant Teaching Professor role, Data Science Program, Computer Science department, and research interests in AI, ML, LLMs, decision support, risk management, and innovation."
+        },
+        {
+          "label": "Alfonso Bastias about.me profile",
+          "url": "https://about.me/alfonsobastias",
+          "note": "Self-authored profile describing him as founder of Albarena.ai and a decision-intelligence builder in Boulder."
+        },
+        {
+          "label": "Albarena.ai",
+          "url": "https://www.albarena.ai/",
+          "note": "Company site describes Albarena as an AI-powered ecosystem for decision-making, simulations, strategic planning, and organizational insight."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Justia patent listing",
+          "url": "https://patents.justia.com/inventor/alfonso-gonzalo-bastias-largo",
+          "note": "Lists a strategic decision methodology patent application using hierarchical strategy modeling and Monte Carlo simulation."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0qa4y3i",
+    "displayName": "Ali Khial",
+    "headline": "Head of AI/ML at G2i, focused on frontier AI evaluation and agentic software engineering",
+    "company": "G2i",
+    "title": "Head of AI/ML",
+    "location": "Miami, FL, US",
+    "tags": [
+      "AI/ML leadership",
+      "frontier model evaluation",
+      "human data",
+      "agentic software engineering",
+      "benchmarks",
+      "engineering teams"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Title and work focus are supported by LinkedIn and AI Engineer schedule; Miami location comes from the provided participant record and was not independently confirmed in public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ali leads AI/ML work at G2i, where the focus is building engineering and human-data teams for frontier AI evaluation, coding benchmarks, and agentic software workflows. Good match for conversations about eval design, training data operations, and production-oriented AI engineering talent.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Ali Khial LinkedIn",
+          "url": "https://www.linkedin.com/in/ali-khial",
+          "note": "Public LinkedIn snippet states he leads AI/ML at G2i and works on frontier AI evaluation and agentic software engineering."
+        },
+        {
+          "label": "G2i.ai",
+          "url": "https://www.g2i.ai/",
+          "note": "G2i describes its work as assembling senior engineering teams for evals, RL environments, agent workflows, and training data programs."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair 2026 schedule",
+          "url": "https://www.ai.engineer/schedule",
+          "note": "Lists Ali Khial as G2i Head of AI/ML speaking on benchmarks."
+        },
+        {
+          "label": "G2i LinkedIn company page",
+          "url": "https://www.linkedin.com/company/g2i-inc",
+          "note": "Company page frames G2i as an AI engineering company supporting frontier labs, enterprises, and startups."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "08omobi",
+    "displayName": "Ali Moradian",
+    "headline": "Director of Generative AI at Varicent, building production LLM systems and AI platforms",
+    "company": "Varicent",
+    "title": "Director, Generative AI",
+    "location": "Canada",
+    "tags": [
+      "generative AI",
+      "LLM systems",
+      "AI platforms",
+      "enterprise SaaS",
+      "sales performance management",
+      "AI architecture",
+      "team scaling"
+    ],
+    "confidence": "medium",
+    "confidenceNote": "Current title and focus are supported by LinkedIn snippets; additional company context is from Varicent sources, but there were limited public person-specific sources beyond LinkedIn.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ali leads Generative AI initiatives at Varicent, with public profile language emphasizing production LLM systems, AI platforms, hands-on architecture, and scaling AI engineering teams. Strong fit for discussions on enterprise GenAI architecture and AI-native revenue software.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Ali Moradian LinkedIn",
+          "url": "https://ca.linkedin.com/in/alimoradian",
+          "note": "Public LinkedIn snippet identifies him as Director of Generative AI at Varicent and describes his focus on production LLM systems, AI platforms, architecture, and team scaling."
+        },
+        {
+          "label": "Varicent AI for Sales",
+          "url": "https://www.varicent.com/products/ai-for-sales",
+          "note": "Official Varicent product page describes its AI-native sales performance management platform."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Varicent GenAI assistants announcement",
+          "url": "https://www.varicent.com/news/genai-assistants-unlock-revenue-opportunities",
+          "note": "Provides context on Varicent's GenAI assistants for sales planning and revenue workflows."
+        },
+        {
+          "label": "Varicent LinkedIn company page",
+          "url": "https://www.linkedin.com/company/varicent",
+          "note": "Company profile describes Varicent as a Toronto-headquartered SaaS provider for sales and revenue performance management."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0xshutv",
+    "displayName": "Aliisa Rosenthal",
+    "headline": "General Partner at Acrew Capital focused on AI-native enterprise companies and go-to-market strategy",
+    "company": "Acrew Capital",
+    "title": "General Partner",
+    "location": "San Francisco Bay Area, CA, US",
+    "tags": [
+      "venture capital",
+      "AI-native companies",
+      "enterprise software",
+      "go-to-market",
+      "sales leadership",
+      "founder advising",
+      "OpenAI"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Acrew team page and LinkedIn corroborate current role; Acrew materials and press coverage support prior OpenAI sales leadership and AI-native enterprise focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aliisa is a General Partner at Acrew Capital working with founders building AI-native enterprise companies. She previously helped scale OpenAI's go-to-market function, including ChatGPT Enterprise, and brings operator depth in sales, pricing, GTM architecture, and early commercial hiring.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Acrew Capital team profile",
+          "url": "https://www.acrewcapital.com/team-members/aliisa-rosenthal",
+          "note": "Confirms General Partner role, AI-native enterprise focus, prior OpenAI executive role, ChatGPT Enterprise launch involvement, and earlier roles at Mixpanel and WalkMe."
+        },
+        {
+          "label": "Aliisa Rosenthal LinkedIn",
+          "url": "https://www.linkedin.com/in/aliisa-rosenthal",
+          "note": "Public LinkedIn snippet confirms General Partner role at Acrew Capital and former OpenAI Head of Sales positioning."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Acrew announcement",
+          "url": "https://perspectives.acrewcapital.com/p/welcoming-acrews-newest-general-partner",
+          "note": "Acrew article describes her role advising founders on AI-native growth teams, GTM strategy, pricing, sales architecture, and commercial hires."
+        },
+        {
+          "label": "PRNewswire announcement",
+          "url": "https://www.prnewswire.com/news-releases/as-ai-becomes-a-platform-early-builders-move-into-venture-302666179.html",
+          "note": "Press release announcing her move from OpenAI sales leadership to Acrew Capital as General Partner."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0n0qt5z",
+    "displayName": "Allen Pike",
+    "headline": "Co-founder and CEO of Forestwalk Labs, building AI-powered product tools for teams",
+    "company": "Forestwalk Labs",
+    "title": "Co-founder & CEO",
+    "location": "Vancouver, BC, Canada",
+    "tags": [
+      "AI product engineering",
+      "LLM tools",
+      "product leadership",
+      "founder",
+      "Cedarloop",
+      "meeting agents",
+      "developer tools",
+      "Vancouver AI community"
+    ],
+    "confidence": "high",
+    "confidenceNote": "Personal site, resume, Forestwalk site, and LinkedIn consistently support current role, location, and focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Allen is Co-founder and CEO of Forestwalk Labs in Vancouver, where he builds AI-powered tools for product teams, including Cedarloop, a live meeting agent. He previously founded Steamclock, worked at Apple, writes about product and engineering, hosts It Shipped That Way, and organizes the Infer Vancouver AI meetup.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Allen Pike personal about page",
+          "url": "https://allenpike.com/me/",
+          "note": "Describes Forestwalk Labs, Cedarloop, writing, podcasting, speaking, Infer Vancouver, Steamclock, and Apple background."
+        },
+        {
+          "label": "Allen Pike resume",
+          "url": "https://allenpike.com/resume/",
+          "note": "Confirms Forestwalk Labs CEO and co-founder role, Vancouver base, AI/product focus, and prior Steamclock and Apple experience."
+        },
+        {
+          "label": "Forestwalk Labs",
+          "url": "https://forestwalk.ai/",
+          "note": "Company site identifies Forestwalk as a Vancouver product startup building useful tools for product teams and lists Allen as a product engineer."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Allen Pike LinkedIn",
+          "url": "https://ca.linkedin.com/in/allenpike",
+          "note": "Public LinkedIn snippet confirms Co-founder and CEO role at Forestwalk Labs and Vancouver location."
+        },
+        {
+          "label": "Forestwalk Labs LinkedIn",
+          "url": "https://ca.linkedin.com/company/forestwalk",
+          "note": "Company page lists Forestwalk Labs as a Vancouver software development startup founded in 2024."
+        }
+      ]
+    }
+  }
+]

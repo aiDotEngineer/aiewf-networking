@@ -1,0 +1,355 @@
+[
+  {
+    "lookupKey": "0n2swr2",
+    "displayName": "Robert McHardy",
+    "headline": "Pre-training lead at poolside working on architecture research, distributed training, and coding models.",
+    "company": "poolside",
+    "title": "Team & Tech Lead, Applied Research / Pre-training",
+    "location": "London, United Kingdom",
+    "tags": ["poolside", "LLM pre-training", "distributed training", "coding models", "AI research"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, public AI Engineer schedule, and poolside technical-report authorship consistently identify Robert McHardy as a poolside pre-training lead.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Pre-training lead at poolside focused on architecture research, distributed training, and large coding models. Useful match for conversations on frontier-model training, agentic coding systems, evaluation, and applied research leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://www.robertmchardy.de/",
+          "note": "Personal profile lists his poolside applied-research and pre-training roles, publications, and prior AI research work."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/robert-mchardy",
+          "note": "Public profile identifies him as pre-training lead at poolside."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/robert_mchardy",
+          "note": "Public social profile describes his poolside pre-training role and prior AssemblyAI / InstaDeep work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI",
+          "note": "Conference schedule lists Robert McHardy from poolside as Pre-training Lead."
+        },
+        {
+          "label": "Laguna M.1/XS.2 technical report",
+          "url": "https://poolside.ai/assets/laguna/laguna-m1-xs2-technical-report.pdf",
+          "note": "poolside technical report includes Robert McHardy among contributors to the Laguna model release."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1bz0tp1",
+    "displayName": "Robert Patrick",
+    "headline": "Venture CTO at UP.Labs building AI, data, and mobility startups.",
+    "company": "UP.Labs",
+    "title": "CTO",
+    "location": "Santa Monica, California, United States",
+    "tags": ["UP.Labs", "venture building", "AI engineering", "data platforms", "mobility startups"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, UCLA Anderson, and public video/event sources consistently identify Rob Patrick as a Venture CTO / CTO at UP.Labs.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Venture CTO at UP.Labs with an AI, data, and engineering leadership background. Relevant for founders and operators working on venture studios, enterprise AI startups, mobility, agentic systems, and technical due diligence.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/robjpatrick",
+          "note": "Public profile identifies Rob Patrick as a CTO, AI and engineering executive, venture builder, and UP.Labs leader."
+        },
+        {
+          "label": "UCLA Anderson mentors page",
+          "url": "https://www.anderson.ucla.edu/about/centers/price-center-for-entrepreneurship-and-innovation/anderson-venture-accelerator/mentors-and-advisors",
+          "note": "Mentor listing identifies Rob Patrick as Venture CTO at UP.Labs."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Distillery client testimonial",
+          "url": "https://www.youtube.com/watch?v=kh07TtK4m3M",
+          "note": "Video description names Rob Patrick as Venture CTO at UP.Labs."
+        },
+        {
+          "label": "Mesh profile",
+          "url": "https://me.sh/profile/rob-patrick",
+          "note": "Aggregated public profile summarizes his UP.Labs Venture CTO role and startup-advisor background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "04ahl2f",
+    "displayName": "Roberto Milev",
+    "headline": "Chief Architect at Navan leading platform architecture and AI transformation.",
+    "company": "Navan",
+    "title": "Chief Architect",
+    "location": "Walnut Creek, California, United States",
+    "tags": ["Navan", "enterprise architecture", "AI transformation", "platform architecture", "SaaS"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Navan Tech writing, The Org, and conference speaker pages consistently identify Roberto Milev as Chief Architect at Navan.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief Architect at Navan focused on platform architecture, AI innovation, and architecture transformation across SaaS systems. Good match for conversations on enterprise AI adoption, cloud architecture, architecture governance, and technical leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/robertomilev",
+          "note": "Public profile identifies him as Navan Chief Architect working on AI and platform transformation."
+        },
+        {
+          "label": "Navan Tech article",
+          "url": "https://medium.com/navan-tech/3-tips-for-a-successful-hackathon-91450a23917e",
+          "note": "Navan Tech article by Roberto Milev describes him as Navan's chief architect and discusses AI hackathon work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/navan/org-chart/roberto-milev",
+          "note": "Org profile lists Roberto Milev as Chief Architect at Navan and summarizes prior architecture roles."
+        },
+        {
+          "label": "Unlock Rijeka speaker profile",
+          "url": "https://www.unlock-rijeka.com/govornik/roberto-milev/",
+          "note": "Conference speaker page identifies him as Chief Architect at Navan with long-running architecture leadership experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0oy7lf0",
+    "displayName": "Rodrigo Coelho",
+    "headline": "CEO of Edge & Node working on The Graph, onchain data infrastructure, and agentic commerce.",
+    "company": "Edge & Node",
+    "title": "CEO",
+    "location": "San Francisco Bay Area, United States",
+    "tags": ["Edge & Node", "The Graph", "blockchain data", "web3 infrastructure", "agentic commerce"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Edge & Node ecosystem pages, The Graph event pages, and multiple interviews consistently identify Rodrigo Coelho as CEO of Edge & Node.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO of Edge & Node, the initial team behind The Graph, working on blockchain data infrastructure for enterprises and AI-agent commerce. Strong match for conversations on onchain data, agent payments, web3 infrastructure, compliance, and decentralized protocols.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/rodrigoco",
+          "note": "Public profile identifies Rodrigo Coelho as CEO at Edge & Node and working on The Graph."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/rodventures",
+          "note": "Public social profile describes him as CEO of Edge & Node and part of The Graph founding team."
+        },
+        {
+          "label": "The Graph SmartCon event",
+          "url": "https://thegraph.com/events/chainlinks-smartcon/",
+          "note": "The Graph event page lists Rodrigo Coelho presenting enterprise-grade onchain data as Edge & Node CEO."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "MERGE speaker profile",
+          "url": "https://www.mmerge.io/speaker/rodrigo-coelho",
+          "note": "Conference profile identifies Rodrigo Coelho as CEO at Edge & Node."
+        },
+        {
+          "label": "HackerNoon interview",
+          "url": "https://hackernoon.com/how-edge-and-nodes-rodrigo-coelho-is-reimagining-the-web-with-the-graph",
+          "note": "Interview profile covers his role leading Edge & Node and work with The Graph."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1n5poxr",
+    "displayName": "Rodrigo Garcia",
+    "headline": "VP of Engineering at Slack leading platform, developer experience, and automation engineering.",
+    "company": "Slack",
+    "title": "VP of Engineering",
+    "location": "New York, New York, United States",
+    "tags": ["Slack", "platform engineering", "developer experience", "automation", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, InformationWeek, The New Stack, LeadDev, and regional media sources consistently identify Rod / Rodrigo Garcia as a Slack engineering VP.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of Engineering at Slack focused on platform, developer experience, workflows, and automation. Useful match for conversations on engineering leadership, collaboration software, developer platforms, AI agents in the workplace, and scaling product engineering teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/rodgarcias",
+          "note": "Public profile identifies Rod Garcia as VP of Engineering at Slack in New York."
+        },
+        {
+          "label": "InformationWeek author profile",
+          "url": "https://www.informationweek.com/author/rod-garcia",
+          "note": "Author bio identifies Rod Garcia as a Slack VP of Software Engineering leading Developer Experience and Workflows Automation engineering."
+        },
+        {
+          "label": "The New Stack author profile",
+          "url": "https://thenewstack.io/author/rod-garcia/",
+          "note": "Author bio identifies him as a Slack vice president of software engineering focused on the automation platform."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LeadDev profile",
+          "url": "https://leaddev.com/community/rod-garcia",
+          "note": "Speaker/community profile describes his Slack engineering leadership and prior roles at Squarespace, Shutterstock, and American Express."
+        },
+        {
+          "label": "DFLIVE profile",
+          "url": "https://dflive.cl/los-chilenos-que-son-parte-de-las-empresas-tecnologicas-mas-grandes-del-mundo/",
+          "note": "Regional media profile identifies Rodrigo Garcia as a Chilean VP of Engineering at Slack."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "13rqnni",
+    "displayName": "Rodrigo Moreira",
+    "headline": "VP of Engineering at VTEX working on ecommerce platforms and production AI-agent workflows.",
+    "company": "VTEX",
+    "title": "VP of Engineering",
+    "location": "New York, New York, United States",
+    "tags": ["VTEX", "ecommerce", "AI agents", "platform engineering", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, AWS, The Org, and public posts consistently identify Rodrigo Moreira as VP of Engineering at VTEX, with current work on AI agents for ecommerce.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of Engineering at VTEX focused on ecommerce platform engineering and AI-agent development workflows. Good match for conversations on marketplace infrastructure, GenAI in engineering organizations, agent orchestration, and scaling commerce platforms.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/rodrigo-moreira-7947092b",
+          "note": "Public profile identifies Rodrigo Moreira as VP of Engineering and advisor at VTEX."
+        },
+        {
+          "label": "LinkedIn role announcement",
+          "url": "https://www.linkedin.com/posts/rodrigo-moreira-7947092b_i-am-grateful-to-share-that-i-have-stepped-activity-7394856254998872064-mlCF",
+          "note": "Public post announces his move into the VP of Engineering role at VTEX."
+        },
+        {
+          "label": "AWS AgentCore announcement",
+          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-is-now-generally-available-go-from-idea-to-production-grade-agent-in-minutes/",
+          "note": "AWS customer quote identifies Rodrigo Moreira as VP of Engineering at VTEX discussing AI agents for ecommerce."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org VTEX listing",
+          "url": "https://theorg.com/org/vtex/teams/solutions-engineering",
+          "note": "Org listing includes Rodrigo Moreira as VP of Engineering at VTEX."
+        },
+        {
+          "label": "Techzine AgentCore coverage",
+          "url": "https://www.techzine.eu/news/infrastructure/140725/aws-bedrock-agentcore-gets-managed-harness-and-cli-for-ai-agents/",
+          "note": "Coverage repeats his VTEX VP Engineering role and AI-agent platform quote."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1rw1u60",
+    "displayName": "Rodrigo Perenha",
+    "headline": "CTO and co-founder of Kamino building finance and operations infrastructure for Latin American businesses.",
+    "company": "Kamino",
+    "title": "CTO",
+    "location": "Sao Paulo, Brazil",
+    "tags": ["Kamino", "fintech", "Latin America", "startup infrastructure", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, investor portfolio pages, The Org, and funding coverage consistently identify Rodrigo Perenha as Kamino co-founder and CTO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and co-founder of Kamino, a financial and corporate operations platform for high-growth Latin American businesses. Relevant for conversations on fintech infrastructure, startup finance operations, LatAm SaaS, and engineering leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/perenha",
+          "note": "Public profile identifies Rodrigo Perenha as CTO and founder at Kamino in Sao Paulo."
+        },
+        {
+          "label": "Flourish Ventures portfolio",
+          "url": "https://flourishventures.com/investment-portfolio/kamino/",
+          "note": "Investor portfolio page lists Rodrigo Perenha as Kamino co-founder and CTO."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/kamino/org-chart/rodrigo-perenha",
+          "note": "Org profile summarizes his Kamino leadership and prior engineering career."
+        },
+        {
+          "label": "Bloomberg Linea funding coverage",
+          "url": "https://www.bloomberglinea.com/english/brazil-based-kamino-raises-61m-to-explore-infrastructure-for-startups/",
+          "note": "Funding article names Rodrigo Perenha as former Mercado Pago CTO recruited to start Kamino's operation."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0fb8xsv",
+    "displayName": "Rodrigo Villatoro",
+    "headline": "Principal machine-learning scientist at Skyscanner focused on ranking, recommendations, and GenAI.",
+    "company": "Skyscanner",
+    "title": "Principal Data Scientist",
+    "location": "Barcelona, Spain",
+    "tags": ["Skyscanner", "recommendation systems", "ranking", "machine learning", "travel tech"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, GitHub, Skyscanner research publication, and The Org consistently identify Rodrigo Villatoro as a Skyscanner principal ML/data scientist.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal machine-learning scientist at Skyscanner working on ranking, recommendations, and GenAI for travel discovery. Strong match for conversations on recommender systems, personalization, ML platform adoption, and travel marketplace experimentation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://es.linkedin.com/in/rodrigovillatoro",
+          "note": "Public profile identifies him as Principal Machine Learning Scientist at Skyscanner focused on ranking, recommendations, and GenAI."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/RodrigoVillatoro",
+          "note": "Developer profile describes him as a data scientist at Skyscanner."
+        },
+        {
+          "label": "RecTour 2024 paper",
+          "url": "https://ceur-ws.org/Vol-3886/industry.pdf",
+          "note": "Industry paper lists Rodrigo Villatoro as Principal Data Scientist at Skyscanner and covers centralized destination recommendations."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org Skyscanner data team",
+          "url": "https://theorg.com/org/skyscanner/teams/data-engineering-and-analysis",
+          "note": "Org listing places Rodrigo Villatoro on Skyscanner's data engineering and analysis team as Principal Machine Learning Scientist."
+        },
+        {
+          "label": "Startup Intros Skyscanner profile",
+          "url": "https://startupintros.com/orgs/skyscanner",
+          "note": "Company profile lists Rodrigo Villatoro as a Principal Data Scientist among Skyscanner leadership / key people."
+        }
+      ]
+    }
+  }
+]

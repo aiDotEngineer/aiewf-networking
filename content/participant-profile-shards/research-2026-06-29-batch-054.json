@@ -1,0 +1,714 @@
+[
+  {
+    "lookupKey": "1dwdrsb",
+    "displayName": "Kanish Manuja",
+    "headline": "Principal software engineer working on LLM, realtime voice, and conversational AI systems at Twilio",
+    "company": "Twilio",
+    "title": "Principal Software Engineer",
+    "location": "Greater Seattle Area",
+    "tags": ["conversational AI", "LLMOps", "voice AI", "Twilio", "speaker"],
+    "confidence": "high",
+    "confidenceNote": "AI Engineer schedule, LinkedIn/public posts, JustAI, and Microsoft author page all align on identity and technical focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal Software Engineer at Twilio focused on conversational AI, LLM/MLOps, realtime voice LLMs, speech-to-speech, and speech-to-text systems. He is speaking at AI Engineer World's Fair 2026 on productionizing LLM gateways, and his public technical footprint includes prior Microsoft OData engineering posts.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AI Engineer World's Fair 2026 schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises",
+          "note": "Lists Kanish Manuja of Twilio Inc. as Principal Software Engineer and speaker for 'Productionizing LLM Gateways'."
+        },
+        {
+          "label": "LinkedIn post by Kanish Manuja",
+          "url": "https://www.linkedin.com/posts/kanish-manuja-a99bb923_a-decade-and-a-half-ago-i-wrote-my-first-activity-7334477818254282754-6I_L",
+          "note": "Person-authored post describes hands-on work building AI products, realtime voice LLMs, S2S, and STT."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "JustAI advisory board",
+          "url": "https://justai.in/advisory-board/",
+          "note": "Lists Kanish Manuja as Principal Software Engineer, Flex AI, Twilio."
+        },
+        {
+          "label": "Microsoft Developer Blogs author page",
+          "url": "https://devblogs.microsoft.com/odata/author/kamanuja/",
+          "note": "Shows prior Microsoft software engineering authorship on OData topics."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1co0dg2",
+    "displayName": "Karan Vaidya",
+    "headline": "Co-founder and CTO of Composio, building integration and tool infrastructure for AI agents",
+    "company": "Composio",
+    "title": "Co-founder",
+    "location": "San Francisco Bay Area / Bengaluru",
+    "tags": ["AI agents", "developer tools", "integrations", "MCP", "speaker"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, AI Engineer schedule, LinkedIn, Forbes India, and Lightspeed sources consistently identify him as Composio co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Composio, a developer-focused platform for connecting AI agents and LLMs to external tools. He previously worked at Google and Rubrik, studied at IIT Bombay, and is speaking at AI Engineer World's Fair 2026 on the tool execution layer for agents.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Karan Vaidya personal site",
+          "url": "https://kvaidya.com/",
+          "note": "Self-published profile lists him as Co-founder and CTO of Composio with Google, Rubrik, and IIT Bombay background."
+        },
+        {
+          "label": "AI Engineer World's Fair 2026 schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises",
+          "note": "Lists Karan Vaidya, Composio co-founder, speaking on the tool execution layer for agents."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes India profile of Composio",
+          "url": "https://www.forbesindia.com/article/ai-special-2025/soham-ganatra-and-karan-vaidyas-composio-enabling-ai-systems-to-talk-to-each-other-and-the-real-world/96246/1",
+          "note": "Profiles Soham Ganatra and Karan Vaidya as Composio co-founders building AI-agent integration infrastructure."
+        },
+        {
+          "label": "Lightspeed investment note",
+          "url": "https://lsvp.com/stories/investing-in-composio-building-the-backbone-of-ai-agent-intelligence/",
+          "note": "Names Karan Vaidya as Composio co-founder and describes the company's agent infrastructure focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0zpml85",
+    "displayName": "Karl Hughes",
+    "headline": "Founder and CEO of Draft.dev, helping developer-tool companies build technical content and growth engines",
+    "company": "Draft.dev",
+    "title": "CEO",
+    "location": "Chicago, IL",
+    "tags": ["developer marketing", "technical content", "founder", "developer tools", "content strategy"],
+    "confidence": "high",
+    "confidenceNote": "Company about page, personal blog, Heavybit profile, DEV profile, and LinkedIn search snippet align on founder/CEO role and Chicago location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Draft.dev, a technical content agency for developer tools and platforms. A former startup CTO and engineering leader, he now focuses on developer marketing, content strategy, and growth systems for technical audiences.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Draft.dev about page",
+          "url": "https://draft.dev/about",
+          "note": "Company page says Draft.dev was founded in 2020 by former CTO Karl Hughes and serves developer tools and platforms."
+        },
+        {
+          "label": "Karl Hughes personal blog",
+          "url": "https://www.karllhughes.com/posts/rebuilding-draftdev",
+          "note": "Karl writes as CEO about repositioning Draft.dev around technical content marketing engines."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Heavybit community profile",
+          "url": "https://www.heavybit.com/community/karl-hughes",
+          "note": "Lists Karl Hughes as Founder and CEO of Draft.dev with prior engineering leadership background."
+        },
+        {
+          "label": "DEV Community profile",
+          "url": "https://dev.to/karllhughes",
+          "note": "Person-specific profile lists him as startup CTO, writer, founder of Draft.dev, and Chicago-based."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0f08b07",
+    "displayName": "Karthick Thyagarajan",
+    "headline": "Rockwell Automation business process and tools leader with agile, process improvement, and global product-development experience",
+    "company": "Rockwell Automation",
+    "title": "Director, Business Process & Tools",
+    "location": "Milwaukee, WI",
+    "tags": ["business process", "agile", "automation", "process improvement", "Rockwell Automation"],
+    "confidence": "medium",
+    "confidenceNote": "Rockwell sustainability report and LinkedIn/search snippets support current title; Scrum Alliance profile provides person-specific career history at Rockwell.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Business Process and Tools at Rockwell Automation. His public profile shows a long Rockwell career across project management, scrum leadership, product ownership, release management, and business process improvement.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Scrum Alliance member profile",
+          "url": "https://www.scrumalliance.org/members/203144",
+          "note": "Person-specific profile lists Rockwell Automation career history and agile/process improvement credentials."
+        },
+        {
+          "label": "Rockwell Automation 2024 Sustainability Report",
+          "url": "https://literature.rockwellautomation.com/idc/groups/literature/documents/br/esap-br035_-en-p.pdf",
+          "note": "Names Karthick Thyagarajan as GVCC member and Director, Business Process and Tools."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/karthicktk",
+          "note": "Person-specific professional profile for Karthick Thyagarajan with Rockwell-related credentials."
+        },
+        {
+          "label": "LinkedIn hiring post mentioning Karthick Thyagarajan",
+          "url": "https://www.linkedin.com/posts/damian-klimczak_%F0%9D%97%AA%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%B2-%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%BF%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-%F0%9D%97%B6%F0%9D%97%BB-%F0%9D%97%A3%F0%9D%97%BC%F0%9D%97%B9%F0%9D%97%AE%F0%9D%97%BB-activity-7420131352278347778-9man",
+          "note": "Mentions collaboration with Karthick on a Business Process & Tools Lead search spanning process design, automation, and AI."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "08zjdke",
+    "displayName": "Karthik Akula",
+    "headline": "Co-founder and CTO of ReDEFY, building applied AI and agentic delivery systems for Salesforce implementations",
+    "company": "ReDEFY",
+    "title": "CTO",
+    "location": "Orlando, FL",
+    "tags": ["Salesforce", "Agentforce", "applied AI", "enterprise AI", "consulting"],
+    "confidence": "high",
+    "confidenceNote": "ReDEFY about page, launch release, LinkedIn profile/search results, and founder launch posts consistently identify him as CTO and co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of ReDEFY, an Applied AI Salesforce Consulting Partner. He focuses on enterprise AI, Salesforce Agentforce, agent outcome visibility, and agentic implementation systems for faster, more traceable Salesforce delivery.",
+    "sources": {
+      "primary": [
+        {
+          "label": "ReDEFY about page",
+          "url": "https://redefy.com/about",
+          "note": "Company page lists Karthik Akula as Co-founder and CTO and describes ReDEFY's agentic Salesforce delivery model."
+        },
+        {
+          "label": "ReDEFY launch release",
+          "url": "https://www.prnewswire.com/news-releases/redefy-launches-as-the-first-applied-ai-salesforce-partner-bringing-the-agent-outcome-engine-and-the-agentic-implementation-engine-to-elevate-the-salesforce-ecosystem-302723840.html",
+          "note": "Announcement names Karthik Akula as CTO and co-founder of ReDEFY."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/karthikakula",
+          "note": "Person-specific profile lists CTO and Co-founder, ReDEFY, with AI engineering and Salesforce ontology focus."
+        },
+        {
+          "label": "Founder launch post by Manosh Chakravorty",
+          "url": "https://www.linkedin.com/posts/chakravorty_salesforce-agentforce-redefy-activity-7442299867827240961-5Rtt",
+          "note": "Co-founder launch post says Karthik Akula and Manosh Chakravorty left their careers to build ReDEFY."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16jw8wo",
+    "displayName": "Karthik Ramasamy",
+    "headline": "CTO and co-founder building AI document workflows at AI Drive / AI PDF",
+    "company": "AI Drive",
+    "title": "CTO and Co-Founder",
+    "location": "Sunnyvale, CA",
+    "tags": ["AI documents", "GPT builder", "machine learning", "startup founder", "legaltech"],
+    "confidence": "high",
+    "confidenceNote": "Company press page, event speaker bio, and Business Insider coverage all tie him to AI Drive / AI PDF and the same founder role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO and co-founder of AI Drive / AI PDF, focused on AI document management and GPT-based document workflows. Previously led ML work at Google, Uber, and LinkedIn, including on-device computer vision and TensorBoard-related infrastructure. Useful connection for applied LLM products, GPT distribution, AI document workflows, and legal/professional productivity use cases.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AI Drive press release",
+          "url": "https://myaidrive.com/press-releases/office-opening-ceremony",
+          "note": "Company source names Karthik Ramasamy as CTO of AI PDF and describes AI PDF / AI Drive's document AI product."
+        },
+        {
+          "label": "GPTs Builders Summit speaker page",
+          "url": "https://luma.com/q25qntfb",
+          "note": "Speaker bio lists him as CTO and co-founder of AI Drive and AI PDF GPT, with prior ML leadership at Google, Uber, and LinkedIn."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Business Insider",
+          "url": "https://www.businessinsider.com/developers-adding-ads-and-affiliate-links-to-their-chatgpt-apps-2024-6",
+          "note": "Reports on Silveira and Ramasamy building Ai Drive from a GPT Store document-analysis product."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "05t9p5c",
+    "displayName": "Karthik Ranganathan",
+    "headline": "Co-founder and Co-CEO of Yugabyte, building distributed SQL infrastructure for cloud-native applications",
+    "company": "YugabyteDB",
+    "title": "CEO",
+    "location": "Palo Alto, CA",
+    "tags": ["distributed systems", "databases", "open source", "PostgreSQL", "infrastructure", "speaker"],
+    "confidence": "high",
+    "confidenceNote": "Yugabyte leadership page, Forbes profile, and QCon speaker bio consistently identify him as a Yugabyte co-founder and current Co-CEO/Co-Founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and Co-CEO of Yugabyte, the company behind YugabyteDB, a distributed SQL database for cloud-native transactional workloads. Earlier at Facebook/Meta, he worked on distributed databases including Cassandra and HBase, and he remains a public speaker on resilient data infrastructure for AI and cloud systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Yugabyte leadership page",
+          "url": "https://www.yugabyte.com/about/",
+          "note": "Company page lists Karthik Ranganathan as Co-Founder and Co-CEO and describes Yugabyte's Facebook database origins."
+        },
+        {
+          "label": "QCon San Francisco speaker page",
+          "url": "https://qconsf.com/speakers/karthik-ranganathan",
+          "note": "Speaker bio identifies him as Co-CEO and Co-Founder at Yugabyte and covers his Cassandra/HBase background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes Technology Council profile",
+          "url": "https://councils.forbes.com/profile/Karthik-Ranganathan-CEO-Co-Founder-Yugabyte/4c25d0c5-6f95-4569-a8bd-3b1434c49828",
+          "note": "Profile lists him as CEO and Co-Founder of Yugabyte with database and open-source expertise."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16zb3my",
+    "displayName": "Karthik Suresh",
+    "headline": "AI product executive and exited founder working on agentic AI at ZoomInfo",
+    "company": "ZoomInfo",
+    "title": "Senior Director of Product",
+    "location": "San Francisco, CA",
+    "tags": ["agentic AI", "product management", "startup founder", "workflow automation", "GTM"],
+    "confidence": "high",
+    "confidenceNote": "CMU alumni article, DoubleO company page, LinkedIn snippet, and public podcast profiles align on his DoubleO/Ignition founder background and current ZoomInfo role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior product leader at ZoomInfo focused on agentic AI after co-founding DoubleO.ai, an AI-agent workflow automation company acquired into ZoomInfo. Also co-founded Ignition, an AI-powered go-to-market/product platform, and has prior product/startup experience across Craft, Meta, finance, and multiple exits.",
+    "sources": {
+      "primary": [
+        {
+          "label": "DoubleO.ai about page",
+          "url": "https://www.doubleo.ai/about",
+          "note": "Company page lists Karthik Suresh as CTO and Co-Founder of DoubleO.ai."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/karthiksureshlbs",
+          "note": "Public profile snippet lists Senior Director of Product Management, Agentic AI at ZoomInfo after DoubleO AI acquisition."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Carnegie Mellon INI alumni article",
+          "url": "https://www.cmu.edu/ini/news/2025/kartik-suresh-sells-second-startup.html",
+          "note": "CMU reports that Suresh sold DoubleO.ai to ZoomInfo and is a Senior Product Director there working on AI."
+        },
+        {
+          "label": "Kitcaster profile",
+          "url": "https://kitcaster.com/karthik-suresh/",
+          "note": "Public profile summarizes his DoubleO.ai co-founder/CTO role, San Francisco location, and prior product background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0im40c4",
+    "displayName": "Kate Deyneka",
+    "headline": "Founder building Reelful, an agentic video editor for social content",
+    "company": "Reelful",
+    "title": "Founder & CEO",
+    "location": "San Francisco, CA",
+    "tags": ["founder", "agentic video", "consumer AI", "generative media", "former Snap"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, product site, LinkedIn result, and AI Engineer schedule align on Reelful and founder role; schedule uses Ekaterina Deyneka, matching Kate.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Reelful, an agentic video editor that turns camera-roll media into narrated, captioned social videos. Previously worked on video generation as an ML engineer and applied researcher at Snapchat. Useful match for consumer AI, generative media, and solo-founder conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Kate Deyneka personal site",
+          "url": "https://www.katedeyneka.com/",
+          "note": "Identifies her as an ML engineer turned founder building Reelful; notes prior Snapchat video-generation work."
+        },
+        {
+          "label": "Reelful product site",
+          "url": "https://www.reelful.app/",
+          "note": "Describes Reelful as agentic video creation for social media."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/katedeyneka",
+          "note": "Search result identifies Kate Deyneka as Founder at Reelful and former ML engineer at Snapchat."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Kate+Deyneka",
+          "note": "Schedule source for her Reelful founder/speaker context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1if8iai",
+    "displayName": "Katelyn Lesse",
+    "headline": "Head of Engineering for Claude Platform at Anthropic",
+    "company": "Anthropic",
+    "title": "Head of Engineering, Claude Platform",
+    "location": "San Francisco, CA",
+    "tags": ["Anthropic", "Claude Platform", "platform engineering", "agents", "developer platforms"],
+    "confidence": "high",
+    "confidenceNote": "Anthropic, AI Engineer, podcast, and LinkedIn sources consistently identify her as leading Claude/Anthropic platform engineering.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads engineering for Anthropic's Claude Platform, with public talks and interviews focused on agent infrastructure, harness engineering, and reliable production AI systems. Previously led engineering at Stripe before joining Anthropic.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Anthropic events page",
+          "url": "https://www.anthropic.com/events/aws-re-invent-2025",
+          "note": "Official Anthropic page lists Katelyn Lesse as Head of Platform at Anthropic."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/katelynlesse",
+          "note": "Search result identifies her as Head of Platform Engineering at Anthropic."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Katelyn+Lesse",
+          "note": "Lists her as Head of Engineering, Claude Platform for the 'Tokens Should Have Jobs' session."
+        },
+        {
+          "label": "Day One podcast episode",
+          "url": "https://dayone.fm/episode/learn-how-to-use-ai-at-its-exponential-with-claude-s-head-of-engineering-platform/",
+          "note": "Guest page identifies her as Head of Engineering, Platform, Anthropic and discusses her Stripe-to-Anthropic path."
+        },
+        {
+          "label": "AI & I podcast episode",
+          "url": "https://podcasts.apple.com/us/podcast/the-secrets-of-claudes-platform-from-the-team-who-built-it/id1719789201?i=1000766844063",
+          "note": "Episode description names her as head of engineering for the Claude platform."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "12lb3t5",
+    "displayName": "Katherine Lewis",
+    "headline": "Engineering strategy leader at Lawrence Livermore National Laboratory",
+    "company": "LLNL",
+    "title": "Deputy for Strategy and Implementation",
+    "location": "Livermore, CA",
+    "tags": ["LLNL", "engineering leadership", "HPC", "simulation", "national laboratory"],
+    "confidence": "high",
+    "confidenceNote": "Official LLNL people and Data Science Institute pages confirm identity, career history, and current engineering deputy role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering Deputy for Strategy and Implementation at LLNL. Longtime LLNL technical leader with work spanning parallel mesh generation, weapons simulation and computing, design physics, and computing leadership. Relevant for national-lab AI, simulation, HPC, and engineering-strategy conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LLNL People profile",
+          "url": "https://people.llnl.gov/lewis66",
+          "note": "Official profile for Katie/Katherine Lewis; states she joined Engineering in 2024 as Deputy for Strategy and Implementation."
+        },
+        {
+          "label": "LLNL Data Science Institute profile",
+          "url": "https://data-science.llnl.gov/our-mission/meet-our-scientists",
+          "note": "Official LLNL page summarizes her LLNL career, mathematics background, and leadership roles."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "National Academies / NCBI workshop bio",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK570309/",
+          "note": "Describes Katherine Lewis as an LLNL division leader working on simulation, quality, and AI/ML for physics simulations."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/katielewisllnl",
+          "note": "Search result matches current LLNL engineering deputy title and Livermore location."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "15upt5k",
+    "displayName": "Kaushik Ravi",
+    "headline": "Founder and CEO of Onefinnet, focused on AI-enabled finance talent and networking",
+    "company": "Onefinnet",
+    "title": "Founder & CEO",
+    "location": "New York, NY",
+    "tags": ["finance AI", "private equity", "investment banking", "talent platform", "founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and multiple Onefinnet pages align on founder/CEO role, PE/IB background, and Onefinnet finance-talent focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Onefinnet, a finance talent, networking, and training platform. Background includes private equity and investment banking, with Onefinnet programming aimed at MBA and professional PE/IB recruiting. Useful for finance AI, talent-marketplace, and professional-networking discussions.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/kravi2",
+          "note": "Identifies him as CEO of Onefinnet with private equity and Goldman Sachs background."
+        },
+        {
+          "label": "Onefinnet cohort page",
+          "url": "https://onefinnet.com/events/cohort",
+          "note": "Lists sessions led by Kaushik Ravi, Founder & CEO of Onefinnet and PE/IB leader."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Onefinnet workshop page",
+          "url": "https://onefinnet.com/event/6971e4d74604a521b6830c2b",
+          "note": "Lists Kaushik Ravi as Founder & CEO, Onefinnet, and former Goldman Sachs PE & IB VP."
+        },
+        {
+          "label": "Elevate founder page",
+          "url": "https://www.elevatelab.org/copy-of-about-team",
+          "note": "Earlier related profile identifies him as founder of Elevate with private equity and Goldman Sachs experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fg1z7q",
+    "displayName": "Kayton Parekh",
+    "headline": "SVP, Head of Technology at Capital Markets Gateway",
+    "company": "Capital Markets Gateway",
+    "title": "Head of Technology",
+    "location": "Seattle, US",
+    "tags": ["fintech", "capital markets", "engineering leadership", "enterprise SaaS"],
+    "confidence": "high",
+    "confidenceNote": "Company leadership page, LinkedIn, and older personal/company references consistently identify him as CMG technology/engineering leadership in Seattle.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology executive leading engineering and technology at Capital Markets Gateway, a fintech platform for equity capital markets workflows. Background is in scaling engineering organizations for enterprise SaaS and finance-technology products.",
+    "sources": {
+      "primary": [
+        {
+          "label": "CMG leadership page",
+          "url": "https://cmgx.io/who-we-are/",
+          "note": "Lists Kayton Parekh as SVP, Head of Technology."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/kaytonparekh",
+          "note": "Identifies him with CMG and describes building and scaling technology organizations for enterprise SaaS."
+        },
+        {
+          "label": "Personal site",
+          "url": "https://sites.google.com/site/kaytonparekh",
+          "note": "Older self-authored page ties him to a finance technology startup in Seattle and computer science background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CMG careers page",
+          "url": "https://www.cmgx.io/careers/",
+          "note": "Includes Kayton Parekh quote as VP of Engineering."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/cmg/org-chart/kayton-parekh",
+          "note": "Profiles him as engineering leadership at CMG."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0wqvglz",
+    "displayName": "Keegan McCallum",
+    "headline": "Founder of uRun, building inference infrastructure for interactive AI",
+    "company": "uRun",
+    "title": "Founder",
+    "location": "",
+    "tags": ["AI infrastructure", "inference", "real-time video", "ML systems", "founder"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, uRun job postings, and public launch posts consistently identify him as uRun founder focused on interactive AI inference infrastructure.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of uRun, an inference cloud for interactive AI and real-time media. Previously worked on inference infrastructure at Luma AI, including scaling generative-video workloads during Dream Machine's launch.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/keeganmccallum3",
+          "note": "Lists him as founder of uRun, building the inference cloud for interactive media."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/keeganmccallum3",
+          "note": "Describes work on inference infrastructure for the interactive era and links uRun."
+        },
+        {
+          "label": "uRun launch post",
+          "url": "https://www.linkedin.com/posts/keeganmccallum3_urun-activity-7450592516116242432-0-Ke",
+          "note": "First-person launch context for uRun's real-time video and interactive inference positioning."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "uRun Ashby job posting",
+          "url": "https://jobs.ashbyhq.com/Urun/05607d45-9f25-4ee0-b04d-e61d9a140d0f",
+          "note": "States uRun was founded by Keegan McCallum and describes his inference-scaling background."
+        },
+        {
+          "label": "Founding team post",
+          "url": "https://www.linkedin.com/posts/keeganmccallum3_urun-is-a-three-person-bet-myself-two-activity-7462532552080150529-R-rO",
+          "note": "Describes the founding team and his Luma AI inference infrastructure work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03jbfov",
+    "displayName": "Keenan Marshall",
+    "headline": "CTO at SOLVE Fixed Income",
+    "company": "SOLVE",
+    "title": "CTO",
+    "location": "Stamford, US",
+    "tags": ["fixed income", "fintech", "cloud systems", "software architecture", "technology leadership"],
+    "confidence": "high",
+    "confidenceNote": "SOLVE's team page and LinkedIn corroborate the CTO role; SOLVE page provides detailed professional background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief Technology Officer at SOLVE, overseeing product development plus client and technology-partner integrations. Brings 20+ years across software design, implementation, cloud-based systems integration, parallel architecture, and project management.",
+    "sources": {
+      "primary": [
+        {
+          "label": "SOLVE team profile",
+          "url": "https://solvefixedincome.com/team-members/keenan-marshall/",
+          "note": "Official bio lists him as CTO and describes product, integration, and systems background."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/keenan-marshall-ba13905",
+          "note": "Identifies him with SOLVE and Rochester Institute of Technology."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "SOLVE team directory",
+          "url": "https://solvefixedincome.com/team-members/",
+          "note": "Repeats CTO role and professional summary."
+        },
+        {
+          "label": "LinkedIn post",
+          "url": "https://www.linkedin.com/posts/keenan-marshall-ba13905_announcing-solves-corporate-bond-weekly-activity-6715334216177000448-QLTV",
+          "note": "Public LinkedIn activity labels him Chief Technology Officer at SOLVE."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pkgklw",
+    "displayName": "Keerthanen Ravichandran",
+    "headline": "Senior Software Engineer at Trafigura",
+    "company": "Trafigura",
+    "title": "Software Engineer",
+    "location": "London, GB",
+    "tags": ["software engineering", "front-end engineering", "data engineering", "commodities trading", "hackathons"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, X, and The Org align on Trafigura engineering work, but public detail is relatively sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineer at Trafigura working around front-office UI, data, and analytics engineering. Public profiles also point to hackathon and front-end engineering interests.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/keerthanen-ravichandran",
+          "note": "Lists him as Senior Software Engineer at Trafigura with front-end UI engineering interests."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/keerthanenr",
+          "note": "Public profile places him in London and references building at Trafigura."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org team page",
+          "url": "https://theorg.com/org/trafigura-group/teams/front-office-data-engineering",
+          "note": "Lists Keerthanen Ravichandran in Trafigura front-office data and analytics engineering."
+        },
+        {
+          "label": "LinkedIn post index",
+          "url": "https://www.linkedin.com/posts/keerthanen-ravichandran_innovation-tech-science-activity-6740030215784816640-R870",
+          "note": "Public LinkedIn post page labels him Senior Software Engineer at Trafigura."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1sgz9va",
+    "displayName": "Keheliya Gallaba",
+    "headline": "Staff Researcher at Centre for Software Excellence, Huawei Canada",
+    "company": "Centre for Software Excellence",
+    "title": "Staff Researcher",
+    "location": "Kingston, ON, Canada",
+    "tags": ["software engineering research", "foundation models", "programming languages", "CI/CD", "mining software repositories"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, CV, conference profile, Google Scholar, and ACM pages consistently identify his software engineering research role and interests.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Staff Researcher at the Centre for Software Excellence, Huawei Canada, working at the intersection of foundation models and software engineering. Research background spans mining software repositories, CI/CD, programming languages, and empirical software engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://keheliya.github.io/",
+          "note": "Self-authored profile describes software engineering research interests and prior industry/research roles."
+        },
+        {
+          "label": "CV",
+          "url": "https://keheliya.github.io/cv_keheliya_gallaba.pdf",
+          "note": "Lists current Staff Researcher role at Waterloo Centre for Software Excellence, Huawei Canada, in Kingston."
+        },
+        {
+          "label": "MSR 2026 profile",
+          "url": "https://2026.msrconf.org/profile/keheliyagallaba",
+          "note": "Conference profile lists affiliation, country, personal site, GitHub, X, and research interests."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?hl=en&user=FF_M_CEAAAAJ",
+          "note": "Scholar profile lists software engineering, programming languages, mining software repositories, and continuous delivery."
+        },
+        {
+          "label": "ACM author page",
+          "url": "https://dl.acm.org/doi/10.1145/3809500",
+          "note": "Recent ACM paper lists him with Centre for Software Excellence and ORCID."
+        },
+        {
+          "label": "Software REBELs profile",
+          "url": "https://rebels.cs.uwaterloo.ca/member/keheliya.html",
+          "note": "Research group page lists publications in continuous integration and software engineering."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,310 @@
+[
+  {
+    "lookupKey": "1vw7rmr",
+    "displayName": "Walter Denk",
+    "headline": "Denk AI consultant building production AI systems from strategy through delivery",
+    "company": "Denk AI Consulting",
+    "title": "Freelancer",
+    "location": "Ulm, DE",
+    "tags": ["AI consulting", "agentic AI", "data science", "production AI", "automation", "industrial AI"],
+    "confidence": "high",
+    "confidenceNote": "Personal Denk AI site, LinkedIn, and XING sources consistently identify Walter Denk as an AI/data-science consultant with prior hands-on industrial AI experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Freelance AI consultant behind Denk AI, focused on taking AI projects from idea to production. Useful match for agentic workflows, practical automation, AI strategy, and data-science delivery across industrial and enterprise contexts.",
+    "sources": {
+      "primary": [
+        {"label": "Denk AI site", "url": "https://denkfabrik.tech/en/", "note": "Personal site identifies Walter Denk as an AI consultant who builds AI projects from idea to production."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/walter-denk-5a609b6a/", "note": "Public profile describes 10+ years building AI and data-science systems across finance, pharma, automotive, and other domains."}
+      ],
+      "secondary": [
+        {"label": "XING profile", "url": "https://www.xing.com/profile/Walter_Denk2", "note": "Profile lists senior data-science and big-data consulting roles, including Bayer and Capgemini experience."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0serdbr",
+    "displayName": "Wei Liu",
+    "headline": "UWA computer science associate professor researching NLP, knowledge discovery, and deep learning",
+    "company": "The University of Western Australia",
+    "title": "Associate Professor",
+    "location": "Perth, AU",
+    "tags": ["NLP", "knowledge graphs", "deep learning", "data mining", "academic research", "UWA"],
+    "confidence": "high",
+    "confidenceNote": "UWA profile, Google Scholar, and external speaker/profile pages consistently identify Wei Liu as an Associate Professor in Computer Science at The University of Western Australia.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Associate Professor in UWA computer science working on natural language processing, knowledge discovery, knowledge graphs, deep learning, and sequential data mining. Good match for research conversations around applied NLP and AI methods.",
+    "sources": {
+      "primary": [
+        {"label": "UWA profile", "url": "https://research-repository.uwa.edu.au/en/persons/wei-liu/", "note": "University profile identifies Wei Liu as a full-time teaching and research academic in UWA Computer Science and Software Engineering."},
+        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=o_u17HMAAAAJ", "note": "Verified Scholar profile lists Wei Liu as Associate Professor, Computer Science, The University of Western Australia."}
+      ],
+      "secondary": [
+        {"label": "UWA Uniview article", "url": "https://www.uwa.edu.au/news/article/2024/uniview/winter/the-words-inside-the-numbers", "note": "UWA article describes Wei Liu's NLP specialty within the School of Physics, Maths and Computing."},
+        {"label": "Maintenance.org.au profile", "url": "https://www.maintenance.org.au/people/individuals/wei-liu/", "note": "External profile summarizes her work on NLP, knowledge graphs, deep learning, and forecasting."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0z4hq3z",
+    "displayName": "Wen Wu",
+    "headline": "Amazon principal TPM-ML driving machine-learning programs for fraud and abuse prevention",
+    "company": "Amazon.com",
+    "title": "Principal TPM",
+    "location": "Seattle, US",
+    "tags": ["Amazon", "technical program management", "machine learning", "fraud prevention", "trust and safety", "ML delivery"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and Amazon public posts consistently identify Wen Wu with Amazon ML technical program management; the exact current Principal TPM wording is primarily from LinkedIn and the attendee row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Principal TPM-ML at Amazon working on machine-learning programs for preventing fraudulent and abusive transactions. Relevant for ML program delivery, trust-and-safety systems, and taking applied ML from ideation to production.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/wen-wu-a6193490", "note": "Public profile identifies Wen Wu as Principal TPM-ML at Amazon and describes ML work on fraud and abuse prevention."},
+        {"label": "Wen Wu LinkedIn post", "url": "https://www.linkedin.com/posts/wen-wu-a6193490_wow-its-such-an-honor-to-be-posted-here-activity-6829665271763083264-KJbH", "note": "Personal post shares Amazon's feature on Wen driving key ML programs."}
+      ],
+      "secondary": [
+        {"label": "Amazon LinkedIn post", "url": "https://www.linkedin.com/posts/amazon_wen-is-a-technical-program-manager-driving-activity-6829429600125243392-drX9", "note": "Amazon post describes Wen as a Technical Program Manager driving machine-learning programs from ideation to production."},
+        {"label": "LinkedIn directory", "url": "https://www.linkedin.com/pub/dir/Wen/Wu/us-0-United-States", "note": "Directory result repeats Principal TPM-ML at Amazon in Seattle."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "03sgwtz",
+    "displayName": "Will Bryk",
+    "headline": "Exa co-founder and CEO building search infrastructure for AI agents",
+    "company": "Exa",
+    "title": "Co-founder and CEO",
+    "location": "San Francisco, US",
+    "tags": ["Exa", "AI search", "agent infrastructure", "search APIs", "startup leadership", "AI products"],
+    "confidence": "high",
+    "confidenceNote": "Exa, LinkedIn, investor/media, and event sources consistently identify Will Bryk as Exa's co-founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Exa, building search infrastructure and APIs for AI products and agents. Strong match for conversations about agentic search, AI-native data access, startup scaling, and developer-facing infrastructure.",
+    "sources": {
+      "primary": [
+        {"label": "Exa about page", "url": "https://exa.ai/about", "note": "Company page lists Will Bryk as CEO and describes Exa as search infrastructure for AI."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/william-bryk", "note": "Public profile identifies Will Bryk as CEO and co-founder at Exa in San Francisco."},
+        {"label": "X profile", "url": "https://x.com/WilliamBryk", "note": "Public social profile is tied to Exa announcements and AI search infrastructure."}
+      ],
+      "secondary": [
+        {"label": "YouTube interview", "url": "https://www.youtube.com/watch?v=GG77NdMC3kk", "note": "Interview identifies Will Bryk as co-founder and CEO of Exa and discusses building an AI search engine."},
+        {"label": "LinkedIn EO Studio post", "url": "https://www.linkedin.com/posts/eo-studio_meet-will-bryk-co-founder-and-ceo-of-exa-activity-7330585618600681476-JiCp", "note": "Media post profiles Will Bryk as Exa co-founder and CEO."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0z6ebfv",
+    "displayName": "Will St. Pierre",
+    "headline": "Whale Rock Capital analyst focused on technology investment research",
+    "company": "Whale Rock Capital",
+    "title": "Analyst",
+    "location": "Boston, US",
+    "tags": ["technology investing", "Whale Rock Capital", "public equities", "private technology companies", "investment research", "AI markets"],
+    "confidence": "low",
+    "confidenceNote": "Public sources match the name to Whale Rock Capital, but several show student or incoming/summer analyst wording rather than a confirmed full-time Analyst title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Analyst profile associated with Whale Rock Capital, a Boston-based investment adviser focused on global technology, media, and telecom companies. Useful for conversations about AI market structure, technology investing, and late-stage/public company research.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/will-st-pierre", "note": "Public profile connects Will St. Pierre to Whale Rock Capital Management as a summer analyst intern and computer science/business student."}
+      ],
+      "secondary": [
+        {"label": "SignalHire company page", "url": "https://www.signalhire.com/companies/whale-rock-capital-management-llc", "note": "Company directory lists Will St Pierre among Whale Rock Capital Management employees as an incoming summer analyst intern."},
+        {"label": "Whale Rock Capital website", "url": "https://www.whalerockcapital.com/", "note": "Firm site describes Whale Rock as a Boston-based registered investment adviser focused on technology, media, and telecom sectors."},
+        {"label": "LinkedIn directory", "url": "https://www.linkedin.com/pub/dir/will/st%2Bpierre/us-0-United-States", "note": "Directory result repeats the Whale Rock Capital Management association for Will St. Pierre."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0tw7bj1",
+    "displayName": "Win Bolton",
+    "headline": "TradeStation IT and business services leader supporting brokerage technology operations",
+    "company": "TradeStation",
+    "title": "SVP",
+    "location": "Plantation, US",
+    "tags": ["TradeStation", "IT leadership", "brokerage technology", "business services", "systems engineering", "technology operations"],
+    "confidence": "medium",
+    "confidenceNote": "The Org and TradeStation-adjacent executive directories consistently list Win Bolton in TradeStation IT/business technology leadership; public sources vary between VP and SVP titles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior TradeStation technology leader in IT and business services, with background in QA, automation, systems engineering, and brokerage technology operations. Relevant for trading-platform reliability, enterprise IT, and operational leadership conversations.",
+    "sources": {
+      "primary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/tradestation/org-chart/win-bolton", "note": "Profile lists Win Bolton as SVP, IT and Business Services at TradeStation."},
+        {"label": "The Org leadership team", "url": "https://theorg.com/org/tradestation/teams/leadership-team-1", "note": "TradeStation leadership-team page lists Win Bolton as SVP, IT and Business Services."}
+      ],
+      "secondary": [
+        {"label": "Comparably profile", "url": "https://www.comparably.com/companies/tradestation/win-bolton", "note": "Executive profile says Win Bolton serves as VP, Business Technology Services at TradeStation Securities."},
+        {"label": "TradeStation LinkedIn post", "url": "https://www.linkedin.com/posts/meena-mani-digitaltechnology_tradestation-teamwork-leadership-activity-7220158578374885376-dGpY", "note": "TradeStation leader publicly names Win Bolton among IT responders after a major operational incident."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0xexqgc",
+    "displayName": "Wojciech Pluta",
+    "headline": "Oracle technical product marketing director explaining AI, agents, and cloud app development",
+    "company": "Oracle",
+    "title": "Director of AI Technical Product Marketing",
+    "location": "Cracow, PL",
+    "tags": ["Oracle", "technical product marketing", "AI agents", "MCP", "A2A", "cloud application development"],
+    "confidence": "high",
+    "confidenceNote": "Oracle author, event, and blog sources consistently identify Wojtek/Wojciech Pluta as a Director of Technical Product Marketing at Oracle working on AI developer topics.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Oracle technical product marketing director focused on AI developer adoption, cloud application development, and agent protocols such as MCP and A2A. Good match for Oracle AI, developer GTM, RAG, and enterprise agent architecture conversations.",
+    "sources": {
+      "primary": [
+        {"label": "Oracle author page", "url": "https://blogs.oracle.com/authors/wojciechpluta/", "note": "Oracle author page lists Wojtek Pluta as Director, Technical Product Marketing."},
+        {"label": "Oracle agent protocols blog", "url": "https://blogs.oracle.com/developers/the-agent-communication-matrix-when-mcp-a2a-and-plain-rest-each-win", "note": "Oracle developer blog credits Wojtek Pluta as Director, Technical Product Marketing on an MCP/A2A agent architecture article."},
+        {"label": "GitHub profile", "url": "https://github.com/WSPluta", "note": "Public GitHub profile under WSPluta provides a technical-development footprint matching Oracle developer content."}
+      ],
+      "secondary": [
+        {"label": "Oracle CloudWorld sessions blog", "url": "https://blogs.oracle.com/developers/5-sessions-to-see-at-ocw-2024-developer-content", "note": "Oracle blog lists Wojciech Pluta as Director, Technical Product Marketing for developer and AI topics."},
+        {"label": "Oracle developer coaching page", "url": "https://www.oracle.com/ua/cloud/events/developer-coaching/on-demand/", "note": "Oracle event page lists Wojciech Pluta on Oracle Code Assist and cloud application-development sessions."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ylg780",
+    "displayName": "Wolfram Ravenwolf",
+    "headline": "Weights & Biases by CoreWeave AI evangelist building WolfBench and model-evaluation workflows",
+    "company": "Weights & Biases by CoreWeave",
+    "title": "AI Evangelist",
+    "location": "Germany",
+    "tags": ["Weights & Biases", "CoreWeave", "model evaluation", "AI agents", "WolfBench", "ThursdAI"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub, X, LinkedIn, W&B event, and WolfBench sources consistently identify Wolfram Ravenwolf as an AI evangelist connected to Weights & Biases by CoreWeave.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI Evangelist at Weights & Biases by CoreWeave, known for WolfBench, model evaluation, AI-agent benchmarking, and ThursdAI community work. Strong match for evals, benchmark methodology, W&B Weave, agent reliability, and open-model analysis.",
+    "sources": {
+      "primary": [
+        {"label": "Personal site", "url": "https://ravenwolf.ai/", "note": "Personal site identifies Wolfram Ravenwolf as an AI evangelist, engineer, consultant, researcher, and ThursdAI co-host."},
+        {"label": "GitHub profile", "url": "https://github.com/WolframRavenwolf", "note": "GitHub profile says AI Evangelist at Weights & Biases by CoreWeave and links WolfBench work."},
+        {"label": "X profile", "url": "https://x.com/WolframRvnwlf?lang=en", "note": "Public profile lists AI Evangelist at CoreWeave and Weights & Biases, ThursdAI co-host, and model evaluator."}
+      ],
+      "secondary": [
+        {"label": "Weights & Biases AI Engineer event page", "url": "https://wandb.ai/site/resources/events/ai-engineer-worlds-fair/?aad=BAhJIlN7InR5cGUiOiJjb3Vyc2UiLCJ1cmwiOiJodHRwczovL3dhbmRiLmFpL3NpdGUvY291cnNlcy9hZ2VudHMiLCJpZCI6MTcwODgwOTU1fQ%3D%3D--3161bda8b168a4ab19367e678efcf4f60962a6da", "note": "W&B event page lists Wolfram Ravenwolf as AI Evangelist, Weights & Biases by CoreWeave."},
+        {"label": "WolfBench", "url": "https://wolfbench.ai/", "note": "WolfBench describes the benchmark as by Wolfram Ravenwolf and notes CoreWeave-sponsored inference and W&B Weave tracking."},
+        {"label": "Daytona case study", "url": "https://www.daytona.io/customers/wolfbench", "note": "Case study identifies Wolfram Ravenwolf as AI Evangelist at CoreWeave and describes WolfBench scaling work."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "05q20lq",
+    "displayName": "Wyatt Barnett",
+    "headline": "NCTA technology enablement leader applying AI, MCP, and automation to association workflows",
+    "company": "NCTA",
+    "title": "VP Technology Enablement",
+    "location": "Washington, DC, US",
+    "tags": ["NCTA", "technology enablement", "MCP", "AI workflows", "association technology", "content curation"],
+    "confidence": "high",
+    "confidenceNote": "NCTA org directory, Box community, event pages, Substack, and Cable Center/Syndeo sources consistently identify Wyatt Barnett as VP or leader of Technology Enablement at NCTA.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of Technology Enablement at NCTA, working on AI-enabled workflows, MCP, content curation, and modernizing association operations. Useful match for practical AI adoption, workflow automation, and non-technical executive enablement.",
+    "sources": {
+      "primary": [
+        {"label": "NCTA The Org technology team", "url": "https://theorg.com/org/ncta-the-internet-television-association/teams/technology-and-it", "note": "NCTA technology team page lists Wyatt Barnett as Vice President Technology Enablement."},
+        {"label": "Box Community introduction", "url": "https://community.box.com/support-forum-47/introduction-wyatt-barnett-tech-enablement-at-ncta-9615", "note": "Post says Wyatt Barnett leads Technology Enablement at NCTA - The Internet and Television Association in Washington, DC."},
+        {"label": "The Zeitgeist Distilled", "url": "https://news.zeitgeistdistilled.com/", "note": "Substack identifies The Zeitgeist Distilled as written by Wyatt Barnett."}
+      ],
+      "secondary": [
+        {"label": "FlexOS MCP event", "url": "https://www.flexos.work/event/demo-day-7-mcp-in-action---connecting-your-data-and-ai", "note": "Event page lists Wyatt Barnett, VP of Technology Enablement at NCTA, leading a session on MCP and AI workflows."},
+        {"label": "Syndeo CX Archive", "url": "https://syndeoinstitute.org/discover/library-collections/cx-archive/panel-session-3/", "note": "Panel page describes him as a 25-year NCTA veteran and VP for technology enablement working on AI customer-experience initiatives."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "10efcb3",
+    "displayName": "Yael Sherman",
+    "headline": "Amazon software development manager with engineering leadership and AR product delivery experience",
+    "company": "Amazon",
+    "title": "Sr. Software Development Manager",
+    "location": "New York, US",
+    "tags": ["Amazon", "software development management", "engineering leadership", "augmented reality", "product delivery", "team leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public directory sources match Yael Sherman to Amazon software development management in New York; exact seniority is from the attendee row and not independently confirmed in strong public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software development manager at Amazon with public signals around engineering leadership and AR-related product work. Relevant for conversations about managing product engineering teams, applied computer vision or AR features, and enterprise-scale software delivery.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/yaelsherman", "note": "Public profile identifies Yael Sherman with Amazon in New York and describes software engineering and team-leadership experience."},
+        {"label": "Amazon AR LinkedIn post", "url": "https://www.linkedin.com/posts/puneet-puri-b82b857_ar-augmentedreality-amazon-activity-7074958476652785664-NUhU", "note": "Amazon-related AR product post names Yael Sherman among contributors to a product launch."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn directory", "url": "https://www.linkedin.com/pub/dir/Yael/Sherman", "note": "Directory result lists Yael Sherman as Software Development Manager at Amazon in New York, NY."},
+        {"label": "HiCounselor hiring database", "url": "https://hicounselor.com/we-are-hiring-database?company=&location=&per_page=221", "note": "Public database entry lists Yael Sherman at Amazon in New York as Software Development Manager."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0vamjwd",
+    "displayName": "Yali Sassoon",
+    "headline": "Snowplow co-founder and CTO helping teams create behavioral data for AI and advanced analytics",
+    "company": "Snowplow",
+    "title": "CTO",
+    "location": "London, UK",
+    "tags": ["Snowplow", "data infrastructure", "behavioral analytics", "AI data", "real-time data", "startup leadership"],
+    "confidence": "high",
+    "confidenceNote": "Snowplow, LinkedIn, Companies House, podcast, and event sources consistently identify Yali Sassoon as Snowplow co-founder and CTO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Snowplow, focused on creating high-quality behavioral data for AI, advanced analytics, and real-time decisioning. Strong match for data infrastructure, analytics workflows, event pipelines, and AI-ready customer data.",
+    "sources": {
+      "primary": [
+        {"label": "Snowplow about page", "url": "https://snowplow.io/about-us", "note": "Company leadership page lists Yali Sassoon as Chief Technology Officer and co-founder."},
+        {"label": "LinkedIn profile", "url": "https://uk.linkedin.com/in/yalisassoon", "note": "Public profile identifies Yali Sassoon as co-founder and CTO of Snowplow, focused on data for AI and advanced analytics."},
+        {"label": "Companies House", "url": "https://find-and-update.company-information.service.gov.uk/officers/2DxjWqljFEAmWzmmCI4qO_yTzVM/appointments", "note": "UK corporate filing lists Yali Sassoon as a director of Snowplow Analytics Limited."}
+      ],
+      "secondary": [
+        {"label": "Snowplow CDO Magazine event", "url": "https://snowplow.io/events/cdo-magazine-interview-with-kalyani", "note": "Snowplow event identifies Yali Sassoon as CTO and co-founder and frames the discussion around data infrastructure for advanced AI."},
+        {"label": "Chief Data Officer Exchange profile", "url": "https://www.aidataanalytics.network/events-chief-data-officer-exchange/speakers/yali-sassoon", "note": "Speaker profile identifies him as co-founder and CTO of Snowplow Analytics."},
+        {"label": "Spotify podcast episode", "url": "https://open.spotify.com/episode/62zXoVyEpTO4JZ17maHxxn", "note": "Podcast episode describes Yali Sassoon as CTO and co-founder of Snowplow discussing LLMs in analytics workflows."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0t3ort5",
+    "displayName": "Yannis Ioannidis",
+    "headline": "ACM president and University of Athens professor advancing open computing research and data systems",
+    "company": "Association for Computing Machinery (ACM)",
+    "title": "President",
+    "location": "New York & Athens, GR",
+    "tags": ["ACM", "computer science", "databases", "open access", "academic leadership", "University of Athens"],
+    "confidence": "high",
+    "confidenceNote": "ACM, Athena Research Center, University of Athens, LinkedIn, and Google Scholar sources consistently identify Yannis Ioannidis as ACM President and professor in Athens.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "President of ACM and Professor of Informatics and Telecommunications at the University of Athens, with a long research record in databases and computing systems. Strong match for open-access computing research, academic leadership, data systems, and global CS community conversations.",
+    "sources": {
+      "primary": [
+        {"label": "ACM officer bio", "url": "https://www.acm.org/about-acm/officer-bios", "note": "ACM lists Yannis Ioannidis as ACM President and professor at the University of Athens."},
+        {"label": "Athena Research Center profile", "url": "https://www.athenarc.gr/en/people/61", "note": "Profile identifies him as ACM President, University of Athens professor, and associated faculty at Athena Research Center."},
+        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=MIfpzUQAAAAJ", "note": "Scholar profile lists Yannis Ioannidis with University of Athens and Athena Research Center."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn profile", "url": "https://gr.linkedin.com/in/yannis-ioannidis-b718a78", "note": "Public profile identifies him as President of ACM and Professor of Informatics and Telecommunications."},
+        {"label": "OpenAIRE interview", "url": "https://www.openaire.eu/opening-computing-research-to-the-world-acm-moves-to-100-open-access", "note": "Interview describes ACM's 2026 open-access transition and identifies Yannis Ioannidis as ACM President."},
+        {"label": "University of Athens announcement", "url": "https://www.di.uoa.gr/en/highlights/ACMpresident", "note": "University announcement describes his election as ACM President and prior ACM service."}
+      ]
+    }
+  }
+]

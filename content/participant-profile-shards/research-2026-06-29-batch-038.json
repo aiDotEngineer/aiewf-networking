@@ -1,0 +1,887 @@
+[
+  {
+    "lookupKey": "1gwn17i",
+    "displayName": "Chandan Bansal",
+    "headline": "Platform engineering leader at Evinova, AstraZeneca's health-tech business",
+    "company": "Evinova",
+    "title": "Director of Platform Engineering",
+    "location": "Washington DC-Baltimore Area, US",
+    "tags": ["Platform Engineering", "HealthTech", "Life Sciences", "Cloud", "Clinical Trials", "Engineering Leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Role, company, location, education, and certifications are supported by LinkedIn; Evinova/AstraZeneca context is corroborated by an AstraZeneca hiring post naming Chandan Bansal, but public person-specific sources are limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Platform Engineering at Evinova, the AstraZeneca health-tech company focused on digital products for life sciences and clinical trials. Chandan appears to work at the intersection of cloud/platform engineering, regulated healthcare technology, and engineering team scaling.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/chandan-bansal-95186331",
+          "note": "Lists Chandan Bansal in the Washington DC-Baltimore area with experience at Evinova, education at Virginia Tech, and AWS/Java certifications."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/Chandan/Bansal",
+          "note": "Directory result identifies Chandan Bansal as Director, Platform Engineering at Evinova | AstraZeneca."
+        },
+        {
+          "label": "AstraZeneca LinkedIn post",
+          "url": "https://www.linkedin.com/posts/astrazeneca_healthtech-digitaltransformation-lifesciences-activity-7360923568462860289-fjmM",
+          "note": "AstraZeneca post about Evinova careers names Chandan Bansal among Evinova-related people and describes Evinova's digital health/life-sciences focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "11m6mg0",
+    "displayName": "Charlie Guo",
+    "headline": "Developer Experience Engineer at OpenAI and author of Artificial Ignorance",
+    "company": "OpenAI",
+    "title": "Developer Experience Engineer",
+    "location": "Berkeley, California, US",
+    "tags": ["Developer Experience", "OpenAI API", "AI Engineering", "Technical Writing", "Python", "YC Founder", "Newsletter"],
+    "confidence": "high",
+    "confidenceNote": "Role is corroborated by LinkedIn, Substack, OpenAI Developers blog authorship, X, YC, and the AI Engineer schedule.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer Experience Engineer at OpenAI focused on helping builders use AI systems effectively. Charlie also writes Artificial Ignorance, a large AI/software-engineering newsletter, and has founder experience through YC-backed FanHero.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/charlierguo",
+          "note": "Lists Charlie Guo as Developer Experience | Newsletter Author | YC Founder at OpenAI, based in Berkeley."
+        },
+        {
+          "label": "Artificial Ignorance Substack profile",
+          "url": "https://substack.com/@charlieguo",
+          "note": "Charlie describes his writing focus as software engineering and AI and lists his role as Developer Experience Engineer at OpenAI."
+        },
+        {
+          "label": "OpenAI Developers blog author page/post",
+          "url": "https://developers.openai.com/blog/skills-shell-tips",
+          "note": "OpenAI Developers post lists Charlie Guo as an author on agent skills and shell workflow guidance."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator FanHero profile",
+          "url": "https://www.ycombinator.com/companies/fanhero",
+          "note": "YC lists Charlie Guo as a founder and notes his OpenAI Developer Experience role and AI writing."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Erina+Karati",
+          "note": "Schedule lists Charlie Guo as OpenAI Developer Experience Engineer for a workshop session."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0up9anx",
+    "displayName": "Charlie Holtz",
+    "headline": "Founder and CEO of Conductor, building orchestration for teams of AI coding agents",
+    "company": "Conductor",
+    "title": "Founder & CEO",
+    "location": "San Francisco, California, US",
+    "tags": ["AI Coding Agents", "Developer Tools", "Founder", "YC S24", "Replicate", "Agent Orchestration", "Engineering Workflow"],
+    "confidence": "high",
+    "confidenceNote": "Founder/CEO role and background are supported by Conductor's team page, personal site, LinkedIn, YC profile, and recent podcast/video sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Conductor, a Mac app for managing teams of AI coding agents. Previously led growth at Replicate and worked in quantitative finance, giving him a useful blend of developer-tool, AI product, and high-leverage engineering workflow experience.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Conductor team page",
+          "url": "https://www.conductor.build/team",
+          "note": "Lists Charlie Holtz as CEO and Co-Founder and summarizes his Replicate and quantitative research background."
+        },
+        {
+          "label": "Personal website",
+          "url": "https://charlieholtz.com/",
+          "note": "Charlie states he is working on Conductor, previously worked as Hacker in Residence at Replicate, and worked in quantitative finance at Point72."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/charlieholtz",
+          "note": "Lists Charlie Holtz as Founder & CEO at Conductor, based in San Francisco."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/conductor",
+          "note": "YC lists Charlie Holtz as founder and co-founder/CEO of Conductor, with prior Replicate and Point72 background."
+        },
+        {
+          "label": "Mastra AI Agents Hour podcast",
+          "url": "https://mastra.ai/podcasts/how-to-orchestrate-coding-agents-with-conductor-with-charlie-holtz",
+          "note": "Podcast page describes Charlie's work building Conductor for orchestrating coding agents."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wgi8tl",
+    "displayName": "Chen Song",
+    "headline": "Engineering Manager at Two Sigma focused on platform engineering and distributed systems",
+    "company": "Two Sigma Investments",
+    "title": "Engineering Manager",
+    "location": "Jersey City / New York City Area, US",
+    "tags": ["Engineering Management", "Platform Engineering", "Distributed Systems", "Time Series Databases", "Financial Technology", "Infrastructure"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org corroborate the Two Sigma Engineering Manager role; public detail beyond platform/distributed-systems/time-series focus is sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering Manager at Two Sigma with a public profile centered on platform engineering, distributed systems, and time-series database work. Likely a strong match for conversations about scalable infrastructure, production engineering, and data-intensive systems in finance.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/chen-song-62b7698",
+          "note": "Lists Chen Song as Engineering Manager at Two Sigma with focus areas including platform engineering, distributed systems, and time-series databases."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org - Two Sigma Engineering Operations",
+          "url": "https://theorg.com/org/two-sigma/teams/engineering-operations",
+          "note": "Lists Chen Song as an Engineering Manager in Two Sigma's Engineering Operations team."
+        },
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/Chen/Song/us-0-United-States",
+          "note": "Directory result corroborates Chen Song in Jersey City, NJ, associated with Two Sigma and platform/distributed-systems work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "17iooyc",
+    "displayName": "Cherie Kloss",
+    "headline": "Chairman of the Board at CryoFuture and founder of SnapNurse",
+    "company": "CryoFuture",
+    "title": "Chairman of the Board",
+    "location": "San Clemente, California, US",
+    "tags": ["Healthcare", "Fertility", "Cryostorage", "Board Leadership", "Founder", "Healthcare Staffing", "FemTech"],
+    "confidence": "high",
+    "confidenceNote": "CryoFuture's team page, LinkedIn, company press coverage, Westmont, and WBCollaborative all corroborate her CryoFuture role and SnapNurse background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chairman of the Board at CryoFuture, focused on fertility cryostorage and transport. Cherie previously founded SnapNurse, a tech-enabled healthcare staffing platform, and brings healthcare operations, scaling, and board-level growth experience.",
+    "sources": {
+      "primary": [
+        {
+          "label": "CryoFuture team page",
+          "url": "https://cryofuture.com/team/",
+          "note": "Lists Cherie Kloss as Chairman of the Board and notes SnapMedTech/SnapNurse founder background and EY Entrepreneur Of The Year recognition."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/cherie-kloss-724b004",
+          "note": "Lists Cherie Kloss as Chairman and Advisor at CryoFuture."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Business Wire CryoFuture partnership announcement",
+          "url": "https://www.businesswire.com/news/home/20260113999946/en/CryoFuture-Announces-Partnership-with-Liss-Capital-Partners-to-Accelerate-National-Expansion-and-Advance-Cryopreservation-Technology",
+          "note": "Company announcement says CryoFuture was founded by senior embryologist Sean Pae and healthcare executive Cherie Kloss."
+        },
+        {
+          "label": "WBCollaborative profile",
+          "url": "https://www.wbcollaborative.org/women_leaders_tech/cherie-kloss/",
+          "note": "Profiles Cherie Kloss as founder and former CEO of SnapNurse, with healthcare background and EY National Entrepreneur of The Year recognition."
+        },
+        {
+          "label": "Westmont College SnapNurse profile",
+          "url": "https://www.westmont.edu/magazine/spring-2022/snapnurse",
+          "note": "Westmont profile describes Cherie Pae Kloss growing SnapNurse and winning the 2021 EY Entrepreneur of the Year U.S. National Award."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0dfkt3g",
+    "displayName": "Cheryl Ho",
+    "headline": "AI strategy and product management leader at Deloitte",
+    "company": "Deloitte",
+    "title": "Product Owner / Senior Manager, AI Strategy & Product Management",
+    "location": "San Francisco, US",
+    "tags": ["AI strategy", "product management", "consulting", "enterprise transformation"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public people-directory snippets align on Cheryl Ho at Deloitte/Monitor Deloitte in San Francisco with AI strategy/product management; exact attendee-provided Product Owner title is not independently confirmed.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Cheryl works at the intersection of AI strategy, product management, and enterprise consulting at Deloitte. Good match for conversations on turning AI initiatives into governed, client-ready products inside large organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/cherylho23",
+          "note": "Public profile snippet lists Cheryl Ho as Senior Manager at Deloitte/Monitor Deloitte focused on AI Strategy & Product Management in San Francisco."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Cheryl/Ho/us-84-San-Francisco-Bay-Area",
+          "note": "Directory snippet corroborates the San Francisco Bay Area Deloitte/Monitor Deloitte profile."
+        },
+        {
+          "label": "Lead411 Monitor Deloitte colleague listing",
+          "url": "https://www4.lead411.com/Elena_Simpson_71162968.html",
+          "note": "Monitor Deloitte colleague page lists Cheryl Ho as Associate Partner/Senior Manager in AI & Data Strategy."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0eokhjs",
+    "displayName": "Chiaki Tanaka",
+    "headline": "BESW president and SNS marketing educator",
+    "company": "BESW Co., Ltd.",
+    "title": "President / Representative Director",
+    "location": "Taito, Tokyo, JP",
+    "tags": ["SNS marketing", "digital marketing", "Japan market", "founder", "training"],
+    "confidence": "high",
+    "confidenceNote": "BESW company page, SNSCHOOL profile, and LinkedIn/social profiles consistently identify Chiaki Tanaka as BESW's representative director and SNS marketing leader.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chiaki leads BESW, a Tokyo-based SNS marketing and training company. She is useful for matchmaking around Japan market entry, social media operations, content localization, and AI-enabled marketing education.",
+    "sources": {
+      "primary": [
+        {
+          "label": "BESW company profile",
+          "url": "https://bes-japan.co.jp/company",
+          "note": "Official company page names Tanaka Chiaki as representative director and lists BESW's Taito-ku address and services."
+        },
+        {
+          "label": "SNSCHOOL author profile",
+          "url": "https://snsschool.net/author/tanaka-chiaki",
+          "note": "BESW-linked profile describes Tanaka as BESW representative director and SNSCHOOL lead, with company scale and publishing background."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://jp.linkedin.com/in/chiaki-tanaka-14a712180/en",
+          "note": "Public profile states Chiaki Tanaka runs BESW and represents a social network marketing support company in Japan."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "X profile",
+          "url": "https://x.com/c_tanaka1987",
+          "note": "Social profile identifies her as BESW representative and describes SNS marketing, training, and seminar activity."
+        },
+        {
+          "label": "Wantedly BESW profile article",
+          "url": "https://www.wantedly.com/companies/bes-japan/post_articles/357073",
+          "note": "Company recruiting story provides additional background on Tanaka and BESW."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0y9houd",
+    "displayName": "Chris Christoff",
+    "headline": "CIO/CSO and partner at Awesome Motive",
+    "company": "Awesome Motive",
+    "title": "CIO, CSO, Head of Research and Development",
+    "location": "West Palm Beach, US",
+    "tags": ["WordPress", "software leadership", "security", "analytics", "ecommerce", "SaaS"],
+    "confidence": "high",
+    "confidenceNote": "Awesome Motive's official media kit and multiple professional profiles identify Chris Christoff as CIO/CSO/Partner; attendee title adds Head of R&D, which is plausible but less directly corroborated in public snippets.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chris is a senior technology leader at Awesome Motive, the company behind WordPress products including WPBeginner, WPForms, OptinMonster, MonsterInsights, and related tools. Good match for conversations on WordPress-scale SaaS, analytics, security, and product-led growth.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Awesome Motive media kit",
+          "url": "https://awesomemotive.com/media-kit/",
+          "note": "Official fact sheet lists Chris Christoff as CIO/CSO and describes Awesome Motive's brands, staff, and distributed company model."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/chriscct7",
+          "note": "Public profile snippet lists Chris as CIO, CSO, and Partner at Awesome Motive."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/chriscct7",
+          "note": "Profile bio lists CIO, CSO, and Partner at Awesome Motive plus WordPress Core Security and Plugin team work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/awesome-motive/org-chart/chris-christoff",
+          "note": "Org profile summarizes his Awesome Motive role and product responsibilities around analytics and ecommerce."
+        },
+        {
+          "label": "Featured expert profile",
+          "url": "https://featured.com/p/chris-christoff",
+          "note": "Profile identifies him as CIO/CSO at Awesome Motive and co-founder at MonsterInsights."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1n2ow7p",
+    "displayName": "Chris Karlowicz",
+    "headline": "Application development VP at CNA Insurance",
+    "company": "CNA Insurance",
+    "title": "VP, Application Development",
+    "location": "Chicago, US",
+    "tags": ["application development", "insurance technology", "DevOps", "digital platforms", "enterprise systems"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and The Org align on Chris Karlowicz as VP of Application Development at CNA Insurance in the Chicago area; attendee city differs from profile snippet suburb but is company-region consistent.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chris leads application development work at CNA Insurance. He is likely relevant for enterprise technology conversations around insurance platforms, digital portals, DevOps practices, and modernizing regulated-industry application stacks.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/chris-karlowicz",
+          "note": "Public profile snippet lists Chris Karlowicz as VP - Application Development at CNA Insurance with Bradley University background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/cna-insurance/org-chart/chris-karlowicz",
+          "note": "Profile states he has been VP of Application Development at CNA since 2022 and summarizes prior CNA and Allstate roles."
+        },
+        {
+          "label": "The Org CNA Product Operations team",
+          "url": "https://theorg.com/org/cna-insurance/teams/product-operations",
+          "note": "CNA team page lists Chris Karlowicz as VP - Application Development in Product Operations."
+        },
+        {
+          "label": "CNA company overview",
+          "url": "https://www.cna.com/",
+          "note": "Official company site for CNA Insurance context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0agpvoc",
+    "displayName": "Chris Larson",
+    "headline": "Developer at Ulta Beauty",
+    "company": "Ulta Beauty",
+    "title": "Lead Developer",
+    "location": "Bolingbrook, US",
+    "tags": ["retail technology", "software development", "digital commerce", "consumer technology"],
+    "confidence": "low",
+    "confidenceNote": "A LinkedIn profile matches Chris Larson at Ulta Beauty, but public snippets do not independently confirm the exact Lead Developer title; Ulta sources corroborate the Bolingbrook technology and developer context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chris appears to work in software development at Ulta Beauty, whose Bolingbrook-based technology organization supports digital commerce, retail systems, and customer experience platforms. Useful match for practical retail-tech and consumer app engineering conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/chrislarson",
+          "note": "Public profile snippet lists Chris Larson with experience at Ulta Beauty and a Munster location."
+        },
+        {
+          "label": "Ulta Beauty corporate careers",
+          "url": "https://careers.ulta.com/careers/career-areas/corporate",
+          "note": "Official Ulta careers page lists Bolingbrook, IL as a corporate location."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Ulta Lead Mobile Application Developer role",
+          "url": "https://careers.ulta.com/careers/jobs/489339?lang=en-us",
+          "note": "Official job page describes Ulta's Consumer Technology organization and next-generation digital commerce work."
+        },
+        {
+          "label": "Ulta Sr. Software Developer role",
+          "url": "https://careers.ulta.com/teens/jobs/487968?lang=en-us",
+          "note": "Official job page shows software developer roles tied to Ulta's Bolingbrook headquarters."
+        },
+        {
+          "label": "NRF on Ulta digital innovation",
+          "url": "https://nrf.com/blog/how-ulta-beauty-leverages-digital-innovation-customer-connection-and-personalization",
+          "note": "Industry article describes Ulta's ecommerce platform upgrades, digital experience focus, AI, and AR efforts."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1j8oxgi",
+    "displayName": "Chris Simmon",
+    "headline": "Enterprise IT architect focused on application design and retail technology",
+    "company": "Ulta Beauty",
+    "title": "IT Architect",
+    "location": "Bolingbrook, US",
+    "tags": ["enterprise architecture", "retail technology", "application development", "Microsoft stack", "insurance software"],
+    "confidence": "medium",
+    "confidenceNote": "Role and career history are supported by LinkedIn search results and The Org; The Org marks the profile unverified, so keep confidence at medium.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "IT architect at Ulta Beauty with a background in enterprise application design and development. Public profiles describe prior lead and senior application developer work at Ulta and earlier software development experience at Applied Systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/chrissimmon",
+          "note": "Lists Chris Simmon as IT Architect at Ulta Beauty with enterprise application development experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/ulta-beauty/org-chart/chris-simmon",
+          "note": "Summarizes Ulta Beauty IT architect role, prior application developer roles, Applied Systems background, and Western Illinois University education."
+        },
+        {
+          "label": "The Org Architecture Services team",
+          "url": "https://theorg.com/org/ulta-beauty/teams/architecture-services",
+          "note": "Places Chris Simmon in Ulta Beauty's Architecture Services group."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0v17xyi",
+    "displayName": "Chris Zoellick",
+    "headline": "Technology leader applying IT strategy and support to aging-services organizations",
+    "company": "TekHub / Jewish Home",
+    "title": "Chief Technology Officer",
+    "location": "Rochester, US",
+    "tags": ["aging services", "technology strategy", "senior tech support", "cybersecurity awareness", "healthcare IT"],
+    "confidence": "medium",
+    "confidenceNote": "Public evidence strongly supports Chris Zoellick as a Rochester CTO connected to Jewish Home and TekHub services; the submitted TekHub Solutions affiliation is role-relevant but not directly confirmed on a person-specific page.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Rochester-based CTO connected with Jewish Home and TekHub, a technology support program for older adults. Public coverage highlights his work helping seniors with devices, backups, security awareness, and practical tech support.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/czoellick",
+          "note": "Person-specific profile for Chris Zoellick in Rochester."
+        },
+        {
+          "label": "Spectrum News profile mention",
+          "url": "https://spectrumlocalnews.com/nys/rochester/news/2025/08/11/older-adults-technology-help",
+          "note": "Quotes Zoellick as chief technology officer at The Jewish Home and describes his work with TekHub."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "TekHub Solutions website",
+          "url": "https://tekhubsol.com/",
+          "note": "Describes TekHub Solutions as a technology company serving aging-services providers."
+        },
+        {
+          "label": "Jewish Home TekHub page",
+          "url": "https://www.jewishhomeroc.org/tekhub/",
+          "note": "Explains TekHub's senior-focused technology support model in Rochester."
+        },
+        {
+          "label": "LeadingAge New York member news",
+          "url": "https://leadingageny.org/for-members/member-news/?nextNID=EE7CC8EA-F4F7-1786-3A64C718C7391A24&startRow=351",
+          "note": "Mentions Chris Zoellick, chief technology officer, completing LeadingAge New York's IGNITE Leadership Academy."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0cpdauz",
+    "displayName": "Christian Cygnus",
+    "headline": "Software engineering lead working on low-latency trading systems and developer tooling",
+    "company": "IMC Trading",
+    "title": "Lead Software Engineer",
+    "location": "Chicago, US",
+    "tags": ["software engineering", "trading systems", "low latency", "Java", "developer tooling", "University of Illinois"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and IMC-related event sources align on IMC Trading software engineering role; GitHub and personal site support technical background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineering team lead and manager at IMC Trading in Chicago. Public technical footprint includes GitHub projects, University of Illinois computer science background, and an IMC presentation on speed and proprietary trading systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/christian-cygnus",
+          "note": "Lists Christian Cygnus as Software Engineer Team Lead and Manager at IMC Trading in Chicago."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/christophercolumbusdog",
+          "note": "Personal GitHub profile for Christian Cygnus with public software projects and personal website link."
+        },
+        {
+          "label": "Personal website",
+          "url": "https://ccygnus.com/",
+          "note": "Identifies Christian Cygnus and describes computer science studies at the University of Illinois at Urbana-Champaign."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Talent Board IMC presentation",
+          "url": "https://talentboard.io/career-prep-series/gotta-go-fast-speed-at-imc-imc-trading/",
+          "note": "Lists Christian Cygnus as a Software Engineer presenting on speed in proprietary trading at IMC."
+        },
+        {
+          "label": "GitHub project contribution",
+          "url": "https://github.com/Chart-r/chartr",
+          "note": "Lists Christian Cygnus as a contributor to a Node.js/AWS Lambda backend project."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1b6h21a",
+    "displayName": "Christopher Burns",
+    "headline": "Founder building AI-native compliance and developer-first privacy infrastructure",
+    "company": "Inth",
+    "title": "Founder & CEO",
+    "location": "San Francisco / London",
+    "tags": ["privacy infrastructure", "compliance", "developer tools", "open source", "YC P26", "c15t", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Personal website, LinkedIn, YC, GitHub, and company pages consistently identify him as founder of Inth and creator of c15t.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Inth, building AI-native compliance infrastructure for software teams. He created c15t, an open-source consent and privacy SDK, and previously founded Everfund; public profiles emphasize developer-first privacy tooling and compliance-as-code.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website about page",
+          "url": "https://burnedchris.com/about",
+          "note": "Describes Christopher Burns as founder of Inth, creator of c15t, and a second-time founder building compliance infrastructure."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/burnedchris",
+          "note": "Lists him as founder and CEO of Inth, focused on code-native privacy compliance infrastructure."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/burnedchris",
+          "note": "Identifies him as founder of Inth and author of c15t."
+        },
+        {
+          "label": "Inth company blog",
+          "url": "https://inth.com/blog/inth-our-new-name",
+          "note": "Company post authored by Christopher Burns announcing Consent.io becoming Inth."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/inth",
+          "note": "Lists Inth as founded by Christopher Burns and describes the company as privacy compliance infrastructure."
+        },
+        {
+          "label": "Inth LinkedIn company page",
+          "url": "https://www.linkedin.com/company/inth",
+          "note": "Company profile lists Christopher Burns among Inth employees and describes Inth as AI-native compliance for fast-shipping teams."
+        },
+        {
+          "label": "Scaling DevTools podcast",
+          "url": "https://podcasts.apple.com/sg/podcast/christopher-burns-creator-of-c15t-the-developer/id1620866569?i=1000746373404",
+          "note": "Podcast episode focused on Burns as creator of c15t and founder of Consent.io."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jwv0o0",
+    "displayName": "Christopher Lovejoy",
+    "headline": "AI engineer and medical doctor building domain-specific AI systems for healthcare and life sciences",
+    "company": "Anthropic",
+    "title": "Member of Technical Staff",
+    "location": "United Kingdom",
+    "tags": ["AI engineering", "healthcare AI", "LLM applications", "domain expertise", "medical doctor", "evals", "Anthropic"],
+    "confidence": "high",
+    "confidenceNote": "Personal website, LinkedIn, GitHub, X, and AI Engineer schedule all align on Anthropic MTS role and healthcare AI background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Member of Technical Staff at Anthropic and medical doctor turned AI engineer. Previously on the founding team at Anterior, he focuses on AI products for complex domain-specific fields such as healthcare and life sciences, with public talks on expert LLM applications and evals.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://chrislovejoy.me/",
+          "note": "States that Chris Lovejoy is currently Member of Technical Staff at Anthropic and previously founding team at Anterior."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/dr-christopher-lovejoy",
+          "note": "Lists Christopher Lovejoy, MD as Member of Technical Staff at Anthropic with Cambridge background and prior ML/healthcare AI work."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://gist.github.com/chris-lovejoy",
+          "note": "Identifies Chris Lovejoy as Anthropic MTS, previously MD, ML engineer, and founder."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/ChrisLovejoy_",
+          "note": "Verified profile states Member of Technical Staff at Anthropic and prior medical doctor, ML engineer, and founder background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Christopher+Lovejoy",
+          "note": "Lists Christopher Lovejoy as Member of Technical Staff at Anthropic on the public conference schedule."
+        },
+        {
+          "label": "AI Engineer talk transcript",
+          "url": "https://glasp.co/youtube/MRM7oA3JsFs",
+          "note": "Transcript identifies him as a medical doctor turned AI engineer discussing expert-system LLM applications."
+        },
+        {
+          "label": "YouTube channel",
+          "url": "https://www.youtube.com/c/ChrisLovejoy",
+          "note": "Public video footprint includes talks on domain expert LLM apps and mission-critical evals."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0w2c180",
+    "displayName": "Christopher Manning",
+    "headline": "Stanford AI and NLP professor, AIX Ventures investor, and Moonlake AI technical leader focused on world models and language intelligence",
+    "company": "Moonlake AI",
+    "title": "Distinguished Member of Technical Staff",
+    "location": "Stanford, CA, US",
+    "tags": ["natural language processing", "machine learning", "world models", "Stanford AI Lab", "venture investing", "AI research"],
+    "confidence": "high",
+    "confidenceNote": "Stanford profiles strongly verify his academic role and NLP research; AIX and AI Engineer schedule sources support his AIX and Moonlake AI context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Distinguished Member of Technical Staff at Moonlake AI and Thomas M. Siebel Professor in Machine Learning at Stanford. His work spans NLP, AI systems, world models, and early-stage AI investing through AIX Ventures.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Stanford Profiles",
+          "url": "https://profiles.stanford.edu/chris-manning",
+          "note": "Official Stanford profile lists Christopher Manning as Thomas M. Siebel Professor in Machine Learning, SAIL Director, and HAI Associate Director."
+        },
+        {
+          "label": "Stanford NLP Group",
+          "url": "https://nlp.stanford.edu/~manning/",
+          "note": "Personal Stanford NLP page describes his NLP and machine-learning research focus."
+        },
+        {
+          "label": "AIX Ventures article",
+          "url": "https://www.aixventures.com/explaining-deepseek-and-its-implications-with-chris-manning",
+          "note": "AIX Ventures identifies Christopher Manning as an AIX Ventures investing partner."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Christopher+Manning",
+          "note": "Event schedule lists him as Distinguished Member of Technical Staff at Moonlake AI and speaker on practical world-model infrastructure."
+        },
+        {
+          "label": "AIX Ventures LinkedIn post",
+          "url": "https://www.linkedin.com/posts/aixventures_moonlake-interactive-multimodal-world-models-activity-7445910457024073728-wfou",
+          "note": "AIX post references GP Christopher Manning discussing Moonlake AI and interactive multimodal world models."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "175nkfb",
+    "displayName": "Christopher Marshall",
+    "headline": "AI and technology-solutions leader building internal platforms and portfolio enablement for climate and systems-investing teams",
+    "company": "S2G Investments",
+    "title": "Head of AI and Technology Solutions",
+    "location": "Chicago, US",
+    "tags": ["AI platforms", "technology strategy", "portfolio enablement", "marketplaces", "last-mile delivery", "investment operations"],
+    "confidence": "high",
+    "confidenceNote": "S2G team pages and LinkedIn consistently verify his name, current role, employer, and Chicago-area context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Head of AI & Technology Solutions at S2G Investments, leading firm-wide AI platforms, managed services, and portfolio enablement. Prior roles span Walmart GoLocal, DoorDash, William Blair, and Accenture.",
+    "sources": {
+      "primary": [
+        {
+          "label": "S2G team profile",
+          "url": "https://www.s2ginvestments.com/team/chris-marshall",
+          "note": "Official S2G profile lists Chris Marshall as Head of AI & Technology Solutions and summarizes his Walmart GoLocal, DoorDash, William Blair, and Accenture background."
+        },
+        {
+          "label": "S2G team directory",
+          "url": "https://www.s2ginvestments.com/team",
+          "note": "Official team directory lists Chris Marshall in Firm Infrastructure as Head of AI & Technology Solutions."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/christopherjosephmarshall",
+          "note": "Public profile/search result describes his expanded role leading firm-wide AI and technology solutions at S2G."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org S2G data science and technology team",
+          "url": "https://theorg.com/org/s2g-investments/teams/data-science-and-technology",
+          "note": "Org directory lists Christopher Marshall as Head of AI & Technology Solutions on S2G's data science and technology team."
+        },
+        {
+          "label": "ImpactAlpha promotion note",
+          "url": "https://impactalpha.com/the-week-in-impact-investing-orchestration/",
+          "note": "ImpactAlpha notes S2G Ventures promoted Christopher Marshall to head of AI and technology solutions."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0soplh4",
+    "displayName": "Christopher Pesarchick",
+    "headline": "Westfield solutions architect with long-running enterprise technology and systems background",
+    "company": "Westfield",
+    "title": "Architect",
+    "location": "Medina, OH, US",
+    "tags": ["solution architecture", "enterprise systems", "insurance technology", "database systems", "application architecture"],
+    "confidence": "low",
+    "confidenceNote": "LinkedIn and directory evidence support the Westfield solution-architect role, but public person-specific sources are sparse and older technical references only confirm long-term Westfield technology context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Solutions architect at Westfield in Ohio. Public evidence points to enterprise technology and application/database systems work in an insurance-company environment.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/chris-pesarchick-93306117",
+          "note": "Public profile/search result lists Chris Pesarchick as Solutions Architect at Westfield in Westfield Center, Ohio."
+        },
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Pesarchick/us-28-Greater-Cleveland",
+          "note": "LinkedIn directory result lists Chris Pesarchick as Solution Architect at Westfield in Medina, Ohio."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "TWiki user group listing",
+          "url": "https://twiki.org/cgi-bin/view/Codev/TWikiUserGroupsInUS",
+          "note": "Older public technical-community listing associates Chris Pesarchick with Westfield Group in Westfield Center, Ohio."
+        },
+        {
+          "label": "PostgreSQL bug archive",
+          "url": "https://groups.google.com/g/mailing.database.pgsql-bugs/c/iJALG2D3Ea0",
+          "note": "Older PostgreSQL bug archive references Chris Pesarchick in a Westfield Group technical context; sensitive contact text is intentionally not reproduced."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1hz4kj7",
+    "displayName": "Christopher Puzzo",
+    "headline": "Engineering and AI operating advisor with product, platform, and growth-stage software leadership experience",
+    "company": "M33 Growth LLC",
+    "title": "Operating Advisor",
+    "location": "Boston, US",
+    "tags": ["engineering leadership", "AI strategy", "product engineering", "growth-stage software", "technical architecture", "marketplace platforms"],
+    "confidence": "high",
+    "confidenceNote": "M33 team page, LinkedIn, The Org, and FlatWorld announcement align on name, current advisor context, Boston area, and prior product-engineering leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Operating Advisor at M33 Growth focused on engineering and AI. Brings 20+ years building software and leading product and engineering teams across education technology, marketplaces, ecommerce, robotics, and consumer software.",
+    "sources": {
+      "primary": [
+        {
+          "label": "M33 Growth team page",
+          "url": "https://www.m33growth.com/our-team",
+          "note": "Official M33 team page lists Chris Puzzo under Engineering / AI with 20+ years building software and leading teams."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/chrispuzzo",
+          "note": "Public profile/search result lists him as Operating Advisor at M33 Growth and includes prior product and engineering roles."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/m33-growth/org-chart/chris-puzzo",
+          "note": "Org profile lists Chris Puzzo as Operating Advisor at M33 Growth and summarizes engineering, product, and technical-strategy experience."
+        },
+        {
+          "label": "FlatWorld announcement",
+          "url": "https://flatworld.com/flatworld-hires-vice-president-of-product-engineering/",
+          "note": "Company announcement says Chris Puzzo joined FlatWorld as VP of Product & Engineering after engineering leadership roles at Lovepop, Rethink Robotics, Swirl Networks, Vlingo, American Well, and Vgo Software."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0viqi36",
+    "displayName": "Christopher Zook",
+    "headline": "Biotech IT and AI solutions architect supporting lab and enterprise technology in a neuroscience biopharma setting",
+    "company": "Lundbeck",
+    "title": "Solutions Architect",
+    "location": "Bothell, WA, US",
+    "tags": ["biotech IT", "AI solutions", "lab systems", "solutions architecture", "pharmaceutical technology", "brain health"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn evidence supports Christopher Zook's Lundbeck IT and AI solutions-architecture role; Lundbeck and Life Science Washington sources verify the Bothell biotech operating context but are not person-specific.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "IT & AI solutions architect at Lundbeck in the Greater Seattle/Bothell biotech environment. Likely focuses on lab, enterprise, and AI-enabled technology support for neuroscience and biologics work.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/zookchristopher",
+          "note": "Public profile/search result lists Christopher Zook as IT & AI Solutions Architect, Biotech IT, AI Ambassador at Lundbeck in the Greater Seattle Area."
+        },
+        {
+          "label": "LinkedIn directory",
+          "url": "https://www.linkedin.com/pub/dir/Christopher/Zook/us-0-United-States",
+          "note": "LinkedIn directory result lists Christopher Zook as Biotech Lab IT Solutions Architect in Bothell, Washington, at Lundbeck."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Lundbeck US",
+          "url": "https://www.lundbeck.com/us",
+          "note": "Company site describes Lundbeck as a biopharmaceutical company researching and delivering therapies for brain diseases."
+        },
+        {
+          "label": "Life Science Washington Lundbeck member spotlight",
+          "url": "https://lifesciencewa.org/2025/08/12/member-spotlight-lundbeck/",
+          "note": "Member spotlight says Lundbeck's Bothell site is a Center of Excellence for Biologics Process Development and supports broader global biologics programs."
+        },
+        {
+          "label": "Lundbeck LinkedIn culture page",
+          "url": "https://www.linkedin.com/company/lundbeck/life/8c03b5b7-661e-4506-92f2-27f01a797bd5",
+          "note": "Company LinkedIn page notes Lundbeck US has operations in Bothell, Washington."
+        }
+      ]
+    }
+  }
+]

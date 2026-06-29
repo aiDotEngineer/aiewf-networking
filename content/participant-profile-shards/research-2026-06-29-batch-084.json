@@ -1,0 +1,371 @@
+[
+  {
+    "lookupKey": "0ntbsog",
+    "displayName": "Steve McConnell",
+    "headline": "Engineering leader connected to Minty and AddShoppers commerce-marketing engineering.",
+    "company": "Minty",
+    "title": "Engineering Manager",
+    "location": "Huntersville, North Carolina, United States",
+    "tags": ["engineering management", "commerce marketing", "SaaS", "software engineering", "MarTech"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources connect Steven McConnell to Minty/AddShoppers engineering, though sources differ on exact title and location from the participant submission.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Steve McConnell is an engineering leader associated with Minty and AddShoppers, working around commerce-marketing software and engineering execution. Useful match for conversations on small-team engineering management, SaaS delivery, and MarTech systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/steven-mcconnell-0aa02685",
+          "note": "Public profile identifies Steven McConnell as an engineering manager at AddShoppers with Minty experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AddShoppers org chart on The Org",
+          "url": "https://theorg.com/org/addshoppers/org-chart/shawn-king",
+          "note": "Org page lists Steven McConnell in the AddShoppers engineering org under technical leadership."
+        },
+        {
+          "label": "AddShoppers company page on The Org",
+          "url": "https://theorg.com/org/addshoppers",
+          "note": "Company profile describes AddShoppers and shows its connection to Minty leadership."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0hp7epm",
+    "displayName": "Steven Friel",
+    "headline": "Director of Engineering at Booking.com working in travel technology leadership.",
+    "company": "Booking.com",
+    "title": "Director of Engineering",
+    "location": "Manchester, United Kingdom",
+    "tags": ["engineering leadership", "travel tech", "platform engineering", "consumer products", "team leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn public profile and related LinkedIn activity consistently connect Steven Friel to Booking.com engineering leadership, but independent non-LinkedIn evidence was limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Steven Friel is a Booking.com engineering leader based in Manchester. He is a relevant match for discussions about travel platforms, consumer-scale product engineering, engineering-manager hiring, and leading teams inside large digital marketplaces.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/steven-friel",
+          "note": "Public profile connects Steven Friel to Booking.com in Manchester."
+        },
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Steven/Friel",
+          "note": "Directory result lists Steven Friel as Director of Engineering at Booking.com."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn Booking.com hiring repost",
+          "url": "https://www.linkedin.com/posts/steven-friel_engineeringmanagers-hiring-oppurtunity-activity-7019768542296178688-mbGx",
+          "note": "Public activity from his profile is tied to Booking.com engineering-manager hiring."
+        },
+        {
+          "label": "LinkedIn TravelTech event mention",
+          "url": "https://www.linkedin.com/posts/matiasundurraga_just-spent-a-couple-of-days-with-the-incredible-activity-7316732002123075584-lOZ_",
+          "note": "Public post mentions Steven Friel in the context of Booking.com TravelTech and generative AI work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1bdtk4k",
+    "displayName": "Steven Schardt",
+    "headline": "Director and producer exploring film, VR, and technology-driven storytelling.",
+    "company": "Playful Science",
+    "title": "Director",
+    "location": "San Francisco, California, United States",
+    "tags": ["storytelling", "VR", "film production", "creative technology", "science communication"],
+    "confidence": "medium",
+    "confidenceNote": "Multiple sources verify Steven Schardt as a producer/director and immersive-media creator; public evidence for the specific Playful Science affiliation was not found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Steven Schardt is a filmmaker and immersive-media creator whose work spans independent film, VR, and technology-driven storytelling. Useful match for conversations about narrative interfaces, science communication, creative AI, and translating emerging technology into audience-facing experiences.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Film Independent talent profile",
+          "url": "https://www.filmindependent.org/talent/steven-schardt/",
+          "note": "Profile describes Schardt as a producer and writer with film and technology background."
+        },
+        {
+          "label": "Washington Filmworks Innovation Lab",
+          "url": "https://www.washingtonfilmworks.org/blog/spring-2016-innovation-lab-funding-recipients",
+          "note": "Project listing names Steven Schardt as creator/producer of a science-and-technology VR project."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "IMDb profile",
+          "url": "https://www.imdb.com/name/nm2693744/",
+          "note": "Film database lists directing, writing, and production credits."
+        },
+        {
+          "label": "University of Louisville news",
+          "url": "https://www.uoflnews.com/section/arts-and-humanities/symposium-to-focus-on-filmmaking-in-kentucky/",
+          "note": "University news item describes Steven Schardt as a producer-director leading a virtual-reality production session."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0cblr1d",
+    "displayName": "Subbiah Sethuraman",
+    "headline": "Partner and AI technology leader at ZS focused on scaled enterprise AI transformation.",
+    "company": "ZS",
+    "title": "Partner",
+    "location": "India",
+    "tags": ["enterprise AI", "consulting", "scaled AI", "agentic AI", "healthcare analytics", "data platforms"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, AI Engineer World's Fair schedule pages, and Dataiku community materials consistently connect Subbiah Sethuraman to ZS and enterprise AI work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Subbiah Sethuraman is a Partner and AI technology leader at ZS, focused on scaled AI practice and enterprise transformation for global clients. Good match for conversations on agentic AI readiness, consulting delivery models, and moving AI from pilots into production business workflows.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://in.linkedin.com/in/subbiahsethuraman",
+          "note": "Public profile identifies him as an AI and technology leader at ZS leading scaled AI practice."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI",
+          "note": "Conference schedule lists Subbiah Sethuraman as Partner at ZS Associates."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Dataiku community award page",
+          "url": "https://community.dataiku.com/discussion/36666/zs-associates-personalized-client-engagement-transformation-experience-at-scale-for-highest-impact",
+          "note": "ZS Associates team listing includes Subbiah Sethuraman on a personalized client engagement transformation project."
+        },
+        {
+          "label": "LinkedIn Dataiku award post",
+          "url": "https://www.linkedin.com/posts/subbiahsethuraman_dataiku-frontrunner-awards-2025-celebrating-activity-7415067482480271360-nQFI",
+          "note": "Public post is from his profile and describes his AI leadership at ZS."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16na9k8",
+    "displayName": "Sudeep Dua",
+    "headline": "Senior Engineering Manager at Apple working across software, data, machine learning, and AI.",
+    "company": "Apple Inc.",
+    "title": "Senior Engineering Manager",
+    "location": "San Francisco, California, United States",
+    "tags": ["machine learning", "Apple", "health technology", "data engineering", "engineering leadership", "AI"],
+    "confidence": "high",
+    "confidenceNote": "Public LinkedIn and The Org profiles consistently identify Sudeep Dua as a senior engineering manager at Apple working on software, data, ML, and AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sudeep Dua is a senior engineering manager at Apple focused on software, data, machine learning, and AI, with public signals around Apple Watch and health-sensing work. Strong match for conversations about consumer ML systems, health technology, and leading engineering teams inside large-scale product organizations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile/post",
+          "url": "https://www.linkedin.com/posts/sudeep-dua-03768010_apple-announces-apple-watch-series-6-with-activity-6711722122634518529-w4nB",
+          "note": "Public profile activity identifies him as Sr. Engineering Manager for software, data, ML, and AI at Apple."
+        },
+        {
+          "label": "The Org Apple profile",
+          "url": "https://theorg.com/org/apple/org-chart/sudeep-dua",
+          "note": "Profile describes him as Senior Engineering Manager at Apple specializing in software, data, machine learning, and AI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/in/sudeep-dua-03768010",
+          "note": "Public profile URL associated with the same Apple engineering-manager identity."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0os502j",
+    "displayName": "Sudharshan Babu",
+    "headline": "Blitzads co-founder building AI agents for ad creative and performance marketing.",
+    "company": "Blitzads",
+    "title": "Co-Founder",
+    "location": "San Francisco Bay Area, United States",
+    "tags": ["AI video", "creative agents", "ad tech", "performance marketing", "generative AI", "DTC growth"],
+    "confidence": "medium",
+    "confidenceNote": "Sources consistently identify Sudharshan Babu as a Blitzads co-founder, but the participant-provided spelling and CEO title differ from public profiles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sudharshan Babu is a Blitzads co-founder building AI video and creative-agent workflows for ad production at scale. Useful match for conversations about AI-generated UGC, performance creative testing, Meta ads, and applied generative AI in marketing operations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/cbsudux",
+          "note": "Public profile identifies Sudharshan Babu as a Blitzads co-founder building creative AI agents."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/sudu_cb?lang=en",
+          "note": "Public profile says he is building AI video agents for ads and links to Blitzads."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Peerlist company profile",
+          "url": "https://peerlist.io/company/blitzads",
+          "note": "Blitzads profile lists Sudharshan Babu among people at the company."
+        },
+        {
+          "label": "Stackforce talent profile",
+          "url": "https://www.stackforce.co/talent/69b02d6544358c81d94fada9",
+          "note": "Profile summarizes him as a Blitzads co-founder and MarTech/SaaS builder."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "14bx8py",
+    "displayName": "Sumanyu Sharma",
+    "headline": "Founder and CEO of Hamming AI building testing and monitoring infrastructure for voice agents.",
+    "company": "Hamming AI",
+    "title": "Founder & CEO",
+    "location": "San Francisco, California, United States",
+    "tags": ["voice agents", "AI evals", "LLM monitoring", "AI QA", "agent testing", "YC"],
+    "confidence": "high",
+    "confidenceNote": "Hamming AI, Y Combinator, LinkedIn, and media sources consistently identify Sumanyu Sharma as Hamming AI's founder and CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sumanyu Sharma is founder and CEO of Hamming AI, building QA, testing, monitoring, and red-teaming tools for voice and conversational agents. Strong match for conversations on AI reliability, voice-agent production quality, evals, and operationalizing agent trust before launch.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Hamming AI about page",
+          "url": "https://hamming.ai/about",
+          "note": "Company page lists Sumanyu Sharma as Founder and CEO and describes Hamming's voice-agent QA platform."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/sumanyusharma",
+          "note": "Public profile identifies him as Founder and CEO at Hamming AI."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/sumanyu",
+          "note": "Public profile says he is building Hamming AI and notes prior Tesla, Citizen, and Waterloo background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/hamming-ai",
+          "note": "YC profile lists Hamming AI and names Sumanyu as founder and CEO."
+        },
+        {
+          "label": "Deepgram AI Minds podcast",
+          "url": "https://deepgram.com/podcast/ai-minds-048-sumanyu-sharma-co-founder-and-ceo-at-hamming-ai",
+          "note": "Podcast page identifies him as Hamming AI co-founder and CEO and summarizes the product focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ye4cwf",
+    "displayName": "Sunil Gupta",
+    "headline": "Applied AI leader at Blue Cross NC focused on GenAI, ML strategy, and health-tech transformation.",
+    "company": "Blue Cross Blue Shield of NC",
+    "title": "AVP, Applied AI",
+    "location": "Durham, North Carolina, United States",
+    "tags": ["healthcare AI", "GenAI strategy", "machine learning", "responsible AI", "analytics leadership", "MLOps"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources verify Sunil Gupta as a Blue Cross NC AI/ML leader; the submitted AVP title is newer than most public non-LinkedIn evidence found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sunil Gupta leads applied AI and machine-learning work for Blue Cross NC, with experience spanning healthcare, IEEE, Bloomberg, Novus, and Bell Labs. Good match for conversations on responsible GenAI adoption in health insurance, ML platform strategy, and enterprise AI use-case delivery.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/skgupta1984",
+          "note": "Public profile connects him to Blue Cross NC and enterprise GenAI/ML strategy."
+        },
+        {
+          "label": "Duke event calendar",
+          "url": "https://calendar.duke.edu/index?prev_rows=60&rows=80&user_date=02%2F24%2F2022",
+          "note": "Duke event listing names Sunil Gupta as Director of Advanced Analytics and Lead, AI/Machine Learning at Blue Cross NC."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn Duke seminar post",
+          "url": "https://www.linkedin.com/posts/skgupta1984_dukeuniversity-activity-6904170795531071489-nMJq",
+          "note": "Public post describes his Blue Cross NC AI/ML leadership and healthcare analytics work."
+        },
+        {
+          "label": "ContactOut profile",
+          "url": "https://contactout.com/Sunil-Gupta-32386879",
+          "note": "Aggregated public profile lists Blue Cross NC AI/ML Center of Excellence leadership; no contact details used."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "15fny6n",
+    "displayName": "Sunita Verma",
+    "headline": "CTO at Ironclad bringing AI and platform leadership from Google, Character.AI, Yahoo, and Symantec.",
+    "company": "Ironclad",
+    "title": "Chief Technology Officer",
+    "location": "San Francisco Bay Area, United States",
+    "tags": ["AI contracting", "legal tech", "platform engineering", "technical leadership", "enterprise AI", "CTO"],
+    "confidence": "high",
+    "confidenceNote": "Ironclad, LinkedIn, and press coverage consistently identify Sunita Verma as Ironclad CTO with senior technical leadership experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sunita Verma is CTO at Ironclad, leading technology for AI-enabled contracting and enterprise legal workflows. She brings senior technical leadership from Google, Character.AI, Yahoo, and Symantec, making her a strong match for conversations on enterprise AI platforms, legal-tech automation, and CTO-level product engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Ironclad about page",
+          "url": "https://ironcladapp.com/about-us",
+          "note": "Company leadership page lists Sunita Verma as Chief Technology Officer."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/sunita-verma-1a4491",
+          "note": "Public profile identifies her as CTO at Ironclad and references prior Google technical leadership."
+        },
+        {
+          "label": "Ironclad LinkedIn announcement",
+          "url": "https://www.linkedin.com/posts/sunita-verma-1a4491_excited-to-start-a-new-chapter-with-ironclad-activity-7358323966274424832-JOol",
+          "note": "Company announcement welcomes Sunita Verma as CTO."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "PR Newswire leadership announcement",
+          "url": "https://www.prnewswire.com/news-releases/ironclad-taps-former-google-snowflake-docusign-skadden-executives-for-key-leadership-roles-302520979.html",
+          "note": "Press release says she brings 25+ years of technical experience and joins Ironclad as CTO."
+        },
+        {
+          "label": "CXO Spotlight coverage",
+          "url": "https://www.thecxospotlight.com/sunita-verma-appointed-cto-at-ironclad/",
+          "note": "Leadership coverage reports her appointment as Ironclad CTO."
+        }
+      ]
+    }
+  }
+]

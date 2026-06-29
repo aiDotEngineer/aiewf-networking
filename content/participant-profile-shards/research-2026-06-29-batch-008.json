@@ -1,0 +1,217 @@
+[
+  {
+    "lookupKey": "1aofuk8",
+    "displayName": "AKIRA YAMADA",
+    "headline": "Platform business executive building Findy Tools and developer-conference services in Japan",
+    "company": "Findy Inc.",
+    "title": "Executive Officer, Head of Platform Business",
+    "location": "Greater Tokyo Area, Japan",
+    "tags": ["developer tools", "platform business", "tech conferences", "developer relations", "Japan"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and Findy's Wantedly team page align on Findy Tools/platform leadership; exact executive title comes from LinkedIn.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akira is a platform business leader at Findy, focused on Findy Tools, tech-conference infrastructure, and services for engineering organizations in Japan. He is a useful match for conversations on developer-tool GTM, conference ecosystems, and engineering productivity communities.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://jp.linkedin.com/in/akira-yamada",
+          "note": "Lists Akira YAMADA as Executive Officer and Head of Platform Business / Findy Tools at Findy Inc."
+        },
+        {
+          "label": "Findy members page",
+          "url": "https://en-jp.wantedly.com/companies/findy/members",
+          "note": "Lists Akira Yamada under Findy Tools as division head."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Findy Conference LinkedIn post",
+          "url": "https://www.linkedin.com/posts/akira-yamada_findy-conference-%E3%83%86%E3%83%83%E3%82%AF%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%81%AE%E3%83%97%E3%83%A9%E3%83%83%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0-activity-7310880356138721282-l8cs",
+          "note": "Shows his work launching Findy Conference and positioning it for tech conference sponsorship discovery."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1s1e42e",
+    "displayName": "Akram Baharlouei",
+    "headline": "AI4Science and machine-learning engineer with Meta AI, Qualcomm, and Altos Labs experience",
+    "company": "Altos Labs",
+    "title": "Senior Staff Machine Learning Engineer",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["machine learning", "AI4Science", "Meta AI", "TinyML", "edge AI", "wireless systems"],
+    "confidence": "medium",
+    "confidenceNote": "Current Altos Labs senior staff ML role is supported by LinkedIn and The Org; the provided attendee title 'ML Engineer Tech Lead' was not independently confirmed.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akram is a machine-learning engineer working around AI4Science, with prior Meta AI and Qualcomm experience. She is a relevant match for applied ML, efficient model serving, TinyML/edge AI, and research-to-production AI systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akram-baharlouei-61784421",
+          "note": "Profile headline says AI4Science and ex-Meta AI; experience snippet lists Altos Labs and past Meta/Qualcomm roles."
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?hl=en&user=huppfRgAAAAJ",
+          "note": "Lists research interests in machine learning, AI on edge, wireless communications, WiFi, and 5G."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/yalda2009",
+          "note": "Profile bio describes AI/ML at Altos Labs and prior Meta AI and Qualcomm."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Altos Labs Machine Learning team",
+          "url": "https://theorg.com/org/altos-labs/teams/machine-learning",
+          "note": "Lists Akram Baharlouei as Senior Staff Machine Learning Engineer."
+        },
+        {
+          "label": "Meta AI MultiRay blog",
+          "url": "https://ai.meta.com/blog/multiray-large-scale-AI-models/",
+          "note": "Names Akram Baharlouei among contributors to Meta AI work on efficient large-scale ML model serving."
+        },
+        {
+          "label": "IEEE CloudNet 2022 listing",
+          "url": "https://www.wikicfp.com/cfp/servlet/event.showcfp?copyownerid=174603&eventid=159995",
+          "note": "Lists Akram Baharlouei, Meta AI, as tutorial speaker on Tiny ML and Edge Computing."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "05sjimy",
+    "displayName": "Akshay Aggarwal",
+    "headline": "Engineering leader for Agentic Memory and Planning within Google Workspace",
+    "company": "Google",
+    "title": "Engineering Leader, Agents & AI",
+    "location": "Mountain View, CA, US",
+    "tags": ["AI agents", "agentic memory", "Google Workspace", "context management", "agentic search", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn profile and recent posts directly describe leadership of Agentic Memory and Planning within Google Workspace; attendee location aligns with provided data.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Akshay is an engineering leader at Google working on memory, agentic search, and context management for Workspace AI agents. He is a strong match for discussions on long-running agents, memory systems, productivity AI, and engineering teams building frontier AI features at scale.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/akshay95014",
+          "note": "Lists Akshay Aggarwal as an engineering leader for agents and AI at Google, leading Agentic Memory and Planning in Google Workspace."
+        },
+        {
+          "label": "LinkedIn hiring post",
+          "url": "https://www.linkedin.com/posts/akshay95014_software-engineering-manager-ii-agentic-activity-7475699180842164224-J5L0",
+          "note": "Describes hiring for the Agentic Memory and Planning team working on agentic search, complex agent behavior, and modern memory systems."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn post about Google move",
+          "url": "https://www.linkedin.com/posts/akshay95014_about-8-months-ago-i-left-apple-after-8-activity-7447102456062435328-H-Fp",
+          "note": "Provides additional context on joining Google and leading the Agentic Memory and Planning team within Workspace."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1bb8zlo",
+    "displayName": "Alberto Cuevas García",
+    "headline": "Product and AI leader building market-intelligence software for global trade at xNova",
+    "company": "xNova International",
+    "title": "CPO",
+    "location": "Valencia, Spain",
+    "tags": ["product leadership", "AI products", "market intelligence", "international trade", "supply chain", "SaaS"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org list him as CPO, while the xNova company page lists Product Manager; all sources connect him to product and AI at xNova.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Alberto is a product leader at xNova International, a Valencia-based market-intelligence platform for exporting companies. He works on AI projects and product strategy for making global physical trade data more actionable.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://es.linkedin.com/in/alberto-cuevas-garc%C3%ADa-0b3a0a224/en",
+          "note": "Lists Alberto Cuevas García as CPO at xNova International in Valencia."
+        },
+        {
+          "label": "xNova About Us",
+          "url": "https://www.xnovainternational.com/about-us",
+          "note": "Lists Alberto Cuevas as Product Manager, computer engineer specialized in AI and data science, responsible for AI projects."
+        },
+        {
+          "label": "xNova hiring post",
+          "url": "https://www.linkedin.com/posts/activity-7475885981695451136-nkhy",
+          "note": "Describes xNova building a real-time graph of global physical trade with an agentic layer for predictive supply chain and trade finance."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org xNova profile",
+          "url": "https://theorg.com/org/xnova-international/org-chart/amado-villar-orero",
+          "note": "Org chart lists Alberto Cuevas García as CPO."
+        },
+        {
+          "label": "EU-Startups",
+          "url": "https://www.eu-startups.com/2025/01/xnova-secures-e1-million-to-aid-industries-in-expanding-internationally/",
+          "note": "Describes xNova as a market-intelligence platform using international trade data to help exporters find opportunities and risks."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1tyl5d6",
+    "displayName": "Aleksandar Gyorev",
+    "headline": "Platform engineering leader at Two Sigma focused on storage, reliability, data infrastructure, and scalable systems",
+    "company": "Two Sigma",
+    "title": "Vice President, Platform Engineering",
+    "location": "New York, NY, US",
+    "tags": ["platform engineering", "data infrastructure", "reliability", "scalability", "Kubernetes", "financial technology"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Constructor University alumni page, and event listings consistently identify him as a Two Sigma VP/platform engineering leader in New York.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Aleksandar is Vice President in Platform Engineering at Two Sigma, leading work around data storage, reliability, delivery systems, and scalable infrastructure. He is a useful match for platform strategy, infrastructure modernization, Kubernetes operations, and engineering leadership in finance.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/agyorev",
+          "note": "Lists Aleksandar Gyorev as VP, Platform Engineering at Two Sigma, with focus on storage, reliability, and delivery systems."
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/agyorev",
+          "note": "Bio says he is solving problems at Two Sigma."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Constructor University alumni gallery",
+          "url": "https://constructorcampus.org/more/alumni-office/alumni-gallery",
+          "note": "Lists him as Vice President and Platform Engineering Manager at Two Sigma in New York, with expertise in platform engineering and data infrastructure."
+        },
+        {
+          "label": "Voray NYC Tech Leaders Dinner",
+          "url": "https://www.voray.com/events/2024-10-22-nyc-tech-leaders-dinner-cloud-infrastructure-management-opportunities-and-challenges-with-kubernetes",
+          "note": "Lists him as host and Vice President of Enterprise Platform Engineering at Two Sigma Investments for a Kubernetes infrastructure-management dinner."
+        },
+        {
+          "label": "C-Vision AI Agents dinner",
+          "url": "https://www.cvisionintl.com/events/dinner/2026-jan-15-aws-resolve-dinner-new-york-city/",
+          "note": "Lists him as Vice President, Enterprise Platform Engineering at Two Sigma."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,826 @@
+[
+  {
+    "lookupKey": "1ygt4nm",
+    "displayName": "Javier Garza",
+    "headline": "Developer advocate focused on AI security, application security, and developer education",
+    "company": "Snyk",
+    "title": "Staff Developer Advocate",
+    "location": "",
+    "tags": ["AI security", "application security", "DevSecOps", "developer relations", "web performance"],
+    "confidence": "high",
+    "confidenceNote": "Multiple public profiles and conference pages tie Javier Garza to Snyk developer advocacy and AI security education; exact seniority varies between sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer advocate at Snyk working at the intersection of AI security, application security, and developer education. Co-author of O'Reilly's *Learning HTTP/2* and an experienced conference speaker, useful for conversations about secure AI-enabled SDLCs, DevSecOps, and developer community programs.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jjgarza",
+          "note": "Profile identifies Javier Garza as a Developer Advocate at Snyk."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/jjaviergarza",
+          "note": "Public bio describes him as a developer advocate, blogger, speaker, and co-author of Learning HTTP/2."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/Javiergarza/",
+          "note": "Speaker bio lists Developer Advocate at Snyk, AI security community work, O'Reilly authorship, and conference speaking."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Workshops+Day+1",
+          "note": "Event schedule lists Javier Garza from Snyk as a Developer Advocate for an AI Security Engineer workshop."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "167sjgo",
+    "displayName": "Jayashree Atre",
+    "headline": "Technology executive and scale architect at Walmart Global Tech",
+    "company": "Walmart Global Tech",
+    "title": "Vice President, Technology",
+    "location": "Sunnyvale, US",
+    "tags": ["engineering leadership", "retail technology", "platform scaling", "team transformation", "enterprise AI"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and QCon both tie Jayashree Atre to a vice president technology or engineering role at Walmart Global Tech.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Vice President in technology at Walmart Global Tech with a background in scaling technology organizations and retail platforms. Relevant match for leaders working on enterprise AI adoption, platform modernization, and engineering team transformation at large scale.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jayashree-atre-745163",
+          "note": "Profile lists Jayashree Atre as Vice President, Technology at Walmart Global Tech."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "QCon San Francisco speaker profile",
+          "url": "https://qconsf.com/speakers/jayashreeatre",
+          "note": "Conference profile lists her as Vice President, Engineering at Walmart Global Tech."
+        },
+        {
+          "label": "QCon AMA session page",
+          "url": "https://qconsf.com/presentation/oct2022/ama-optimizing-teams",
+          "note": "Session page repeats her Walmart Global Tech VP Engineering affiliation in a team-optimization session."
+        },
+        {
+          "label": "Walmart Global Tech",
+          "url": "https://tech.walmart.com/content/walmart-global-tech/en_us.html",
+          "note": "Company site describes Walmart Global Tech's retail technology, AI, ML, robotics, and platform work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qo7kzl",
+    "displayName": "Jean Sini",
+    "headline": "Investor and former technology executive backing early-stage technical founders",
+    "company": "Irregular Expressions",
+    "title": "General Partner",
+    "location": "New York City, US",
+    "tags": ["pre-seed investing", "technical founders", "engineering leadership", "venture capital", "startup advising"],
+    "confidence": "high",
+    "confidenceNote": "Irregular Expressions, Jean Sini's personal site, LinkedIn, and investor profiles consistently tie him to Irregular Expressions and early-stage technical founder investing.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "General Partner at Irregular Expressions, backing early-stage technical founders with operator-led investing and advice. Former CTO and engineering leader across companies including Mint, Cadre, Fountain, and One Kings Lane; useful for founder, engineering-scaling, and seed-investing conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Irregular Expressions team page",
+          "url": "https://www.irregex.vc/team",
+          "note": "Firm page lists Jean Sini as General Partner and founder of Irregular Expressions."
+        },
+        {
+          "label": "Personal about page",
+          "url": "https://sini.net/about/",
+          "note": "Personal site describes Jean Sini as founding partner of Irregular Expressions and an early-stage technology investor."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jeansini",
+          "note": "Profile lists Irregular Expressions in New York and identifies him as founder or managing partner."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Partech profile",
+          "url": "https://partechpartners.com/team/jean-sini",
+          "note": "Profile summarizes prior engineering executive roles including Mint, Cadre, Fountain, and One Kings Lane."
+        },
+        {
+          "label": "Signal investor profile",
+          "url": "https://signal.nfx.com/investors/jean-sini",
+          "note": "Investor profile lists venture activity and co-investments."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ifib2j",
+    "displayName": "Jean-Denis Greze",
+    "headline": "Co-founder and CEO of Town after engineering leadership roles at Plaid and Dropbox",
+    "company": "Town",
+    "title": "Co-Founder & CEO",
+    "location": "",
+    "tags": ["AI assistants", "productivity software", "fintech", "engineering leadership", "startups"],
+    "confidence": "high",
+    "confidenceNote": "Town, LinkedIn, X, and podcast profiles consistently tie Jean-Denis Greze to Co-Founder or CEO roles at Town and prior Plaid leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Town, an AI assistant and productivity software company. Previously CTO at Plaid and Director of Engineering at Dropbox, making him a strong match for conversations about AI product design, fintech infrastructure, and scaling engineering teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Town article author bio",
+          "url": "https://www.town.com/articles/software-for-everyone",
+          "note": "Town identifies Jean-Denis Greze as CEO and co-founder, formerly CTO at Plaid and Director of Engineering at Dropbox."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/jgreze?lang=en",
+          "note": "Public bio lists him as Co-Founder and CEO at Town, ex-CTO at Plaid, and investor at ASDF Ventures."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jeandenisgreze",
+          "note": "Profile lists a CEO role at Town and prior engineering leadership roles."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Digits founder interview",
+          "url": "https://digits.com/between-two-founders/jean-denis-greze/",
+          "note": "Interview profile describes him as Co-Founder of Town and former CTO of Plaid."
+        },
+        {
+          "label": "Modern CTO profile",
+          "url": "https://moderncto.io/242-jean-denis-greze-head-of-engineering-at-plaid/",
+          "note": "Earlier profile documents Plaid engineering leadership and ASDF Ventures involvement."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0mplu7s",
+    "displayName": "Jed Ashford",
+    "headline": "Product and engineering leader at Angel Studios working across AI, web, and storytelling technology",
+    "company": "Angel Studios",
+    "title": "Principal Technical Operations Lead",
+    "location": "Provo, UT",
+    "tags": ["AI enablement", "technical operations", "product engineering", "Web3", "media technology"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources tie Jed Ashford to Angel Studios and product or engineering work, but the exact current title in the row was not independently matched.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product and engineering operator associated with Angel Studios, with public profiles pointing to AI enablement, product engineering, web3, ticketing, and storytelling technology work. Useful for conversations about media-tech product operations, creator platforms, and practical AI tooling inside product teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jedashford",
+          "note": "Profile identifies Jed Ashford with Angel Studios in a product manager and engineering role focused on AI enablement."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/Jedadoo/with_replies",
+          "note": "Public bio describes him as a product leader and engineer at Angel Studios working on AI, web3, storytelling, SketchAI, ticketing, and NFTs."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/jedashford",
+          "note": "GitHub profile matches the name and Provo, Utah location."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Datanyze Angel company profile",
+          "url": "https://www.datanyze.com/companies/angel/10687918",
+          "note": "Company profile lists Jed Ashford in Angel's executive or engineering leadership context."
+        },
+        {
+          "label": "Instagram EnTech Award post",
+          "url": "https://www.instagram.com/p/DAYqS0mvEuX/",
+          "note": "Public award post references Jed Ashford with Angel Studios' Pay it Forward Program."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "02xcs47",
+    "displayName": "Jed Leidheiser",
+    "headline": "Enterprise investor focused on cybersecurity, AI/ML, cloud, and data infrastructure",
+    "company": "March Capital",
+    "title": "Partner",
+    "location": "Los Angeles, US",
+    "tags": ["venture capital", "cybersecurity", "enterprise software", "cloud infrastructure", "AI/ML", "board advisor"],
+    "confidence": "high",
+    "confidenceNote": "March Capital profile and LinkedIn identify Jed Leidheiser as a Partner at March Capital; multiple secondary investor/event sources support the same affiliation and enterprise investing focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Partner at March Capital with deep enterprise investing and operating experience. Leads cybersecurity investing and is active across AI/ML, cloud, data infrastructure, and enterprise software networks, with board responsibilities including Expel, Immuta, and SpyCloud.",
+    "sources": {
+      "primary": [
+        {
+          "label": "March Capital team profile",
+          "url": "https://marchcp.com/team_member/jed-leidheiser/",
+          "note": "Company profile listing Jed Leidheiser as Partner and describing his enterprise investing focus."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jedleidheiser",
+          "note": "Professional profile identifying him as a March Capital partner."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "NFX Signal investor profile",
+          "url": "https://signal.nfx.com/investors/jed-leidheiser",
+          "note": "Investor database profile connecting Jed Leidheiser to March Capital and enterprise investing."
+        },
+        {
+          "label": "Stubbs Alderton investor roundtable",
+          "url": "https://stubbsalderton.com/join-us-for-the-next-investor-360-roundtable-interview-with-jed-leidheiser-of-march-capital/",
+          "note": "Event listing featuring Jed Leidheiser of March Capital."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1r24eny",
+    "displayName": "Jeevan Pathuri",
+    "headline": "Engineering executive building AI, optimization, and distributed systems for Microsoft cloud supply chain",
+    "company": "Microsoft",
+    "title": "Vice President, Software Engineering",
+    "location": "Redmond, US",
+    "tags": ["software engineering leadership", "AI platforms", "supply chain optimization", "distributed systems", "machine learning", "cloud infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "Microsoft Research and INFORMS sources identify Jeevan Pathuri as a Microsoft engineering leader in cloud supply chain; Microsoft Research explicitly lists him as VP, Software Engineering.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Vice President of Software Engineering at Microsoft working on cloud supply chain systems. Leads large-scale distributed systems, AI/ML, optimization, and agentic platforms used to improve planning, logistics, fulfillment, and infrastructure operations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Microsoft Research video profile",
+          "url": "https://www.microsoft.com/en-us/research/video/microsoft-transforms-its-cloud-supply-chain-with-optimization-and-generative-ai/",
+          "note": "Microsoft page listing Jeevan Pathuri as VP, Software Engineering on cloud supply chain AI work."
+        },
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?hl=en&user=in_x-JMAAAAJ",
+          "note": "Verified Microsoft profile showing research areas including machine learning, AI, distributed systems, and LLMs."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "INFORMS M&SOM practice platform",
+          "url": "https://pubsonline.informs.org/page/msom/microsoft-12-2-2024",
+          "note": "Publication/event page describing Jeevan Pathuri's Microsoft Cloud Supply Chain leadership."
+        },
+        {
+          "label": "Resoundingly Human podcast episode",
+          "url": "https://resoundinglyhuman.com/episodes/big-cloud-bigger-decisions-microsofts-edelman-story/",
+          "note": "Episode page describing him as VP of software engineering for Microsoft's Cloud Supply Chain."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1biu0i8",
+    "displayName": "Jeff Wang",
+    "headline": "Co-founder of Exa, building AI-native web search infrastructure",
+    "company": "Exa",
+    "title": "Co-founder",
+    "location": "San Francisco, US",
+    "tags": ["AI search", "developer tools", "search infrastructure", "startups", "data infrastructure", "LLM applications"],
+    "confidence": "high",
+    "confidenceNote": "Exa's own team page, YC company page, LinkedIn, and investor coverage consistently identify Jeff/Jeffrey Wang as Exa co-founder.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder of Exa, an AI-native search company building web search and retrieval infrastructure for developers and agents. Previously built data and web infrastructure at Plaid after studying computer science and philosophy at Harvard.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Exa about page",
+          "url": "https://exa.ai/about",
+          "note": "Company page listing Jeff Wang as Co-founder and summarizing his Plaid and Harvard background."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/wangzjeff",
+          "note": "Professional profile identifying Jeffrey Wang as cofounder at Exa."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/jeffzwang",
+          "note": "Public social profile associated with Exa-related posts and founder activity."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Y Combinator company profile",
+          "url": "https://www.ycombinator.com/companies/exa",
+          "note": "YC profile listing Exa as founded by William Bryk and Jeffrey Wang."
+        },
+        {
+          "label": "Lightspeed story on Exa",
+          "url": "https://lsvp.com/stories/exa-redesigning-search-for-ai/",
+          "note": "Investor article describing Will Bryk and Jeff Wang as Exa co-founders."
+        },
+        {
+          "label": "TechCrunch funding coverage",
+          "url": "https://techcrunch.com/2024/07/16/exa-raises-17m-lightspeed-nvidia-ycombinator-google-ai-models/",
+          "note": "News coverage tying Jeff Wang to Exa as co-founder."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "013l1ae",
+    "displayName": "Jeff Williams",
+    "headline": "Distinguished engineer at Early Warning working across Zelle and Paze technology",
+    "company": "Early Warning Services",
+    "title": "Sr Distinguished Engineer",
+    "location": "San Francisco, US",
+    "tags": ["distinguished engineering", "payments", "financial technology", "Zelle", "Paze", "software architecture", "robotics"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org consistently identify Jeff Williams as Sr. Distinguished Engineer at Early Warning/Zelle/Paze; public technical detail beyond role and recent hobby robotics posts is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Sr. Distinguished Engineer at Early Warning, associated with Zelle and Paze. Public profile signals senior architecture and engineering leadership in payments infrastructure, with visible interests in embedded systems, robotics, React, OpenCV, and cloud-connected hardware projects.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jeff-williams-8a467859",
+          "note": "Professional profile identifying Jeff Williams at Early Warning."
+        },
+        {
+          "label": "LinkedIn technical post",
+          "url": "https://www.linkedin.com/posts/jeff-williams-8a467859_playing-with-robots-on-weekends-again-the-activity-7431490670336491520-4K4d",
+          "note": "Public post from the same profile with technical robotics and software context."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org engineering excellence team",
+          "url": "https://theorg.com/org/early-warning/teams/engineering-excellence",
+          "note": "Org directory listing Jeff Williams as Sr. Distinguished Engineer at Early Warning."
+        },
+        {
+          "label": "The Org San Francisco office",
+          "url": "https://theorg.com/org/early-warning/offices/san-francisco",
+          "note": "Office directory listing Jeff Williams as Sr. Distinguished Engineer in the San Francisco Early Warning office."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0rulah9",
+    "displayName": "Jelena Obradovic",
+    "headline": "QA engineer at Florence Healthcare",
+    "company": "Florence Healthcare",
+    "title": "QA Engineer",
+    "location": "Belgrade, Serbia",
+    "tags": ["quality assurance", "healthcare software", "clinical research technology", "software testing", "QA process"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org both tie Jelena Obradovic in Belgrade/Serbia to QA work at Florence Healthcare, though the submitted row says QA lead/manager while public sources show QA Engineer.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "QA professional at Florence Healthcare with prior quality assurance experience across software and education-adjacent roles. Useful match for conversations on testing practices, healthcare product quality, clinical research tooling, and QA operations in distributed engineering teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://rs.linkedin.com/in/jelena-obradovic-ba523492",
+          "note": "Public LinkedIn result lists Jelena Obradovic as a Quality Assurance Engineer in Belgrade with Florence Healthcare experience."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/florence-healthcare/org-chart/jelena-obradovic",
+          "note": "Lists Jelena Obradovic as a QA Engineer at Florence Healthcare since December 2022 and summarizes prior QA experience."
+        },
+        {
+          "label": "The Org Florence Healthcare QA/team context",
+          "url": "https://theorg.com/org/florence-healthcare/org-chart/nenad-nastasic",
+          "note": "Florence Healthcare org-chart page references Jelena Obradovic among QA engineers reporting in the QA organization."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jhcmxv",
+    "displayName": "Jeongmyeong Lee",
+    "headline": "Head of Solution Engineering & Research at APTO",
+    "company": "APTO, Inc.",
+    "title": "Head of Solution Engineering & Research",
+    "location": "Japan",
+    "tags": ["AI data infrastructure", "solution engineering", "research engineering", "machine learning", "product development", "VLM data"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, APTO careers page, LinkedIn, and a Findy interview all tie Jeongmyeong Lee to APTO engineering/research leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering and research leader at APTO working on AI data and product development, including large-scale data transfer and processing for vision-language model training. Strong match for AI infrastructure, data operations, applied ML systems, and engineering leadership conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://www.jmlee.in/",
+          "note": "Lists APTO, Inc. role from February 2025 and describes engineering work on Harbest Expert and VLM-training data projects."
+        },
+        {
+          "label": "APTO careers page",
+          "url": "https://apto.co.jp/en/careers/",
+          "note": "APTO profile identifies Jeongmyeong Lee as a software engineer from South Korea who joined APTO in 2025 for product development."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://jp.linkedin.com/in/jeongmyeong-lee-aa9296160",
+          "note": "Public LinkedIn result lists Jeongmyeong Lee as Head of Solution Engineering & Research at APTO, Inc."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Findy APTO engineering interview",
+          "url": "https://findy-code.io/pick-up/interviews/apto-engineer",
+          "note": "Japanese interview names Jeongmyeong Lee as Head of Dev / PM in an APTO discussion about AI data design."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1unxrxd",
+    "displayName": "Jeremiah Lowin",
+    "headline": "Founder & CEO of Prefect and creator of FastMCP",
+    "company": "Prefect",
+    "title": "Founder & CEO",
+    "location": "Washington, DC, United States",
+    "tags": ["workflow orchestration", "data engineering", "open source", "MCP", "AI workflows", "developer tools", "startup leadership"],
+    "confidence": "high",
+    "confidenceNote": "Multiple primary and high-signal sources consistently identify Jeremiah Lowin as Prefect founder and CEO, with public profiles also tying him to FastMCP.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Prefect, building orchestration and workflow tools for data and AI teams, and creator of FastMCP. Strong match for conversations on data infrastructure, agentic workflows, open-source developer tools, MCP adoption, and founder-led engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://jlowin.dev/about",
+          "note": "Jeremiah Lowin describes himself as Founder & CEO of Prefect and references FastMCP."
+        },
+        {
+          "label": "Prefect founder profile",
+          "url": "https://www.prefect.io/blog/how-jeremiah-lowin-turned-a-life-long-question-into-an-industry-leading-startup",
+          "note": "Prefect article identifies Jeremiah Lowin as founder and CEO of Prefect."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/jlowin?lang=en",
+          "note": "Public profile describes Jeremiah Lowin as Founder & CEO at Prefect and creator of FastMCP."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jlowin",
+          "note": "Public LinkedIn result ties Jeremiah Lowin to Prefect and Washington, DC."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "PyData Podcast interview",
+          "url": "https://www.pydata-podcast.com/588778/episodes/3298480-jeremiah-lowin-how-to-navigate-your-startup-through-the-covid-19-pandemic",
+          "note": "Podcast show notes identify Jeremiah Lowin as founder and CEO of Prefect."
+        },
+        {
+          "label": "Datacast interview",
+          "url": "https://jameskle.com/writes/jeremiah-lowin",
+          "note": "Interview page identifies Jeremiah Lowin as Founder & CEO of Prefect."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0c1obno",
+    "displayName": "Jeremy Hodge",
+    "headline": "Founder of Thryv Consulting, building AI and automation systems for growing companies",
+    "company": "Thryv Consulting",
+    "title": "Founder",
+    "location": "Bluffton, South Carolina, United States",
+    "tags": ["AI systems", "automation", "CRM architecture", "fractional CTO", "business systems", "custom software", "operations"],
+    "confidence": "high",
+    "confidenceNote": "Thryv's website, LinkedIn, and CanvasRebel all tie Jeremy Hodge to Thryv Consulting; LinkedIn also ties the role to Bluffton, South Carolina.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Thryv Consulting, focused on custom automation, CRM architecture, and AI systems for founder-led businesses. Useful match for conversations on practical AI implementation, operational systems, revenue workflows, and using agentic coding tools in client delivery.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Thryv Consulting website",
+          "url": "https://thryv.ing/",
+          "note": "Company site identifies Jeremy Hodge as founder and describes his AI, automation, CRM, and custom systems work."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/thejeremyhodge",
+          "note": "Public LinkedIn result lists Jeremy Hodge as founder of Thryv Consulting in Bluffton, South Carolina."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CanvasRebel interview",
+          "url": "https://canvasrebel.com/meet-jeremy-hodge/",
+          "note": "Interview identifies Jeremy Hodge as founder of Thryv Consulting."
+        },
+        {
+          "label": "LinkedIn services listing",
+          "url": "https://www.linkedin.com/services/public-speaking-coaches/us/bluffton-sc",
+          "note": "LinkedIn services page lists Jeremy Hodge in the Hilton Head/Bluffton area and describes Thryv Consulting work as fractional CTO and implementation partner."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1jx3mxz",
+    "displayName": "Jeremy Smith",
+    "headline": "Director of Enterprise Integrations at Alfa Insurance",
+    "company": "Alfa Insurance",
+    "title": "Director Enterprise Integrations",
+    "location": "Montgomery, Alabama, United States",
+    "tags": ["enterprise integrations", "insurance technology", "software delivery", "integration architecture", "developer teams", "enterprise systems"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org both tie Jeremy Smith to Alfa Insurance and the Director Enterprise Integrations role, though public detail is limited beyond role and company.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Enterprise integrations leader at Alfa Insurance, leading teams and integration work across insurance systems. Useful match for conversations on insurance technology, enterprise integration strategy, legacy-to-modern system connectivity, and internal platform delivery.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jeremy-smith-1948804",
+          "note": "Public LinkedIn result lists Jeremy Smith at Alfa Insurance in Montgomery with 500+ connections."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/alfa-insurance/org-chart/jeremy-smith",
+          "note": "Lists Jeremy Smith as Director of Enterprise Integrations at Alfa Insurance and describes leading developer teams on enterprise-wide integration projects."
+        },
+        {
+          "label": "The Org Alfa Insurance Montgomery office",
+          "url": "https://theorg.com/org/alfa-insurance/offices/montgomery",
+          "note": "Alfa Insurance Montgomery office page lists Jeremy Smith as Director Enterprise Integrations."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1sqjhrt",
+    "displayName": "Jeroen van Dalen",
+    "headline": "Founder and Director of AITAI; CEO and Managing Director at Integral",
+    "company": "Australian Institute of Transformation and AI",
+    "title": "Founder & Director",
+    "location": "Perth, Western Australia",
+    "tags": ["AI adoption", "digital transformation", "leadership development", "Australia", "entrepreneurship"],
+    "confidence": "high",
+    "confidenceNote": "AITAI, St Catherine's College, Integral, personal site, and LinkedIn consistently identify Jeroen van Dalen as Founder/Director of the Australian Institute of Transformation and AI; Integral also lists him as CEO/Managing Director.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jeroen van Dalen leads the Australian Institute of Transformation and AI, focused on accelerating practical AI adoption in Australia. He is also CEO and Managing Director at Integral, where he works on digital leadership development across Australia and Asia, with prior applied AI and health-tech startup experience.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AITAI About",
+          "url": "https://www.aitai.org.au/about",
+          "note": "Official AITAI team page lists Jeroen van Dalen as Founder & Director."
+        },
+        {
+          "label": "Personal website",
+          "url": "https://jeroenvandalen.com/",
+          "note": "Personal site states he is Founder & Director of AITAI and CEO of Integral."
+        },
+        {
+          "label": "Integral profile",
+          "url": "https://www.integral.global/people/jeroen-van-dalen",
+          "note": "Company profile lists him as Managing Director/CEO and Founder/Director of AITAI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "St Catherine's College launch announcement",
+          "url": "https://www.stcats.com.au/news-publications/st-catherines-college-launches-the-australian-institute-of-transformation-and-ai",
+          "note": "Launch announcement says AITAI is founded and led by Jeroen van Dalen."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://au.linkedin.com/in/jeroenvandalen",
+          "note": "Public LinkedIn snippet lists Founder & Director, Australian Institute of Transformation and AI."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0vr5rv4",
+    "displayName": "Jess Baker",
+    "headline": "Director of Digital Solutions at RS&H",
+    "company": "RS&H",
+    "title": "Director, Digital Solutions",
+    "location": "Greater Orlando / Jacksonville, Florida",
+    "tags": ["AEC", "digital innovation", "digital twins", "infrastructure", "AI strategy", "program management"],
+    "confidence": "high",
+    "confidenceNote": "RS&H's official announcement, RS&H LinkedIn post, Jess Baker's LinkedIn profile, and industry coverage all tie Jess Baker to digital solutions/innovation leadership at RS&H in Florida.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jess Baker leads digital solutions at RS&H, building a Digital Center of Excellence for intelligent products, digital delivery, and client value in architecture, engineering, and infrastructure. Her public materials emphasize strategy, technology delivery, digital twins, and AI in AEC.",
+    "sources": {
+      "primary": [
+        {
+          "label": "RS&H announcement",
+          "url": "https://www.rsandh.com/resources/rsh-appoints-jess-baker-as-director-of-digital-solutions-to-drive-innovation-and-client-value/",
+          "note": "Official company announcement appoints Jessica 'Jess' Baker, SEP, as Director of Digital Solutions."
+        },
+        {
+          "label": "Jess Baker LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jessbaker",
+          "note": "Public LinkedIn snippet lists Jess Baker with RS&H and digital infrastructure/innovation focus."
+        },
+        {
+          "label": "Jess Baker LinkedIn post",
+          "url": "https://www.linkedin.com/posts/jessbaker_rsandh-infrastructure-its-activity-7406332412319809536-kneO",
+          "note": "Jess Baker describes stepping into the RS&H role and building a Digital Center of Excellence."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "RS&H LinkedIn company post",
+          "url": "https://www.linkedin.com/posts/rs-h_help-us-welcome-jess-baker-sep-as-director-activity-7405245520815968256-vxAs",
+          "note": "Company social post welcomes Jess Baker as Director of Digital Solutions."
+        },
+        {
+          "label": "Engineering Florida article",
+          "url": "https://giraffe-fennel-39nn.squarespace.com/all-articles/the-state-of-ai-in-the-aec-industry",
+          "note": "Industry article quotes RS&H Director of Digital Solutions Jess Baker on AI and digital twins."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1c0yzwr",
+    "displayName": "Jesse Lumarie",
+    "headline": "Software Engineer building AI tools and integrations at Figma",
+    "company": "Figma",
+    "title": "Software Engineer",
+    "location": "Boulder, Colorado",
+    "tags": ["Figma", "AI tools", "developer tools", "MCP", "growth engineering", "design-to-code"],
+    "confidence": "high",
+    "confidenceNote": "Figma's blog, public schedule listing, LinkedIn, X, and GitHub consistently identify Jesse Lumarie as a software engineer at Figma.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jesse Lumarie is a software engineer at Figma working on AI tools, integrations, and developer workflows, including Figma Make and Figma's MCP work. His background includes growth engineering and prior roles at Pinterest, Trunk Club, and other software teams.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Figma Blog",
+          "url": "https://www.figma.com/blog/figma-make-now-on-your-local-code/",
+          "note": "Figma author bio says Jesse Lumarie is a software engineer building AI tools and integrations at Figma."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/jesselumarie",
+          "note": "Public GitHub profile lists Jesse Lumarie as Software Engineer at Figma."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/jesselumarie",
+          "note": "Public X profile says Software Engineer @Figma and lists prior companies."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=AI-Native+Enterprises",
+          "note": "Conference schedule lists Jesse Lumarie as Software Engineer at Figma."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jesselumarie",
+          "note": "Public LinkedIn snippet lists Jesse Lumarie as Software Engineer at Figma in Boulder."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0cgp510",
+    "displayName": "Jessica Zizzamia",
+    "headline": "Head of Product and AI fine-tuning at Vibeslist",
+    "company": "Vibeslist",
+    "title": "Head of Product",
+    "location": "San Francisco, California",
+    "tags": ["AI curation", "hospitality tech", "personalization", "travel", "fine-tuning", "luxury hotels"],
+    "confidence": "medium",
+    "confidenceNote": "Vibeslist's official site lists Jessica Zizzamia as Head of Product and describes her AI curation work; her X profile uses Head of AI Fine-tuning. Sources agree on Vibeslist but differ slightly on current title wording.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jessica Zizzamia works on Vibeslist's AI-powered hospitality curation, combining product work, software engineering, and fine-tuning for personalized luxury travel recommendations. Public coverage describes her role in training and curating Vibeslist's recommendation data.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Vibeslist About",
+          "url": "https://vibeslist.ai/about-us",
+          "note": "Official company page lists Jessica Zizzamia as Head of Product and describes her fine-tuning of AI curation."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/jessica_nicolet",
+          "note": "Public profile identifies Jessica Nicolet Zizzamia as Co-Founder and Head of AI Fine-tuning at Vibeslist.ai."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jessica-nicolet",
+          "note": "Public LinkedIn snippet lists Jessica Nicolet Zizzamia as Head of Product at Vibeslist."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes Italia BrandVoice",
+          "url": "https://forbes.it/2025/09/11/vibeslist-usa-ia-trovare-bar-ristoranti-qualita/",
+          "note": "Coverage names Jessica Zizzamia as a Vibeslist founder and describes her AI model training and curation work."
+        },
+        {
+          "label": "B2BHint company record",
+          "url": "https://b2bhint.com/en/company/us-ca/vibeslist-inc--6465241",
+          "note": "Company data page lists Jessica Zizzamia as an officer/agent for VibesList, Inc."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0bfvff1",
+    "displayName": "Jessie Xu",
+    "headline": "Tech lead manager at Wing with software engineering background",
+    "company": "Wing",
+    "title": "Tech Lead Manager",
+    "location": "San Francisco Bay Area",
+    "tags": ["drone delivery", "software engineering", "flight systems", "autonomous delivery", "technical leadership"],
+    "confidence": "medium",
+    "confidenceNote": "Public LinkedIn profile and LinkedIn posts tie Jessie Xu to Wing, but most available evidence lists Tech Lead Manager rather than the row's Software Engineer title; the profile also shows prior senior software engineering experience.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Jessie Xu is a technical leader at Wing, working in the drone delivery ecosystem with a software engineering background. Public activity points to hiring and team-building around Wing's flight and ground systems engineering work.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/jexu",
+          "note": "Public profile lists Jessie Xu as Tech Lead Manager at Wing in the San Francisco Bay Area, with prior senior software engineering experience."
+        },
+        {
+          "label": "Jessie Xu LinkedIn post about Wing flight systems hiring",
+          "url": "https://www.linkedin.com/posts/ke-jessie-xu-05312515_backend-software-engineering-intern-flight-activity-7257840324910161920-RDtF",
+          "note": "Public post by Jessie Xu promotes Wing backend software engineering intern hiring for flight systems."
+        },
+        {
+          "label": "Jessie Xu LinkedIn post about Wing ground systems hiring",
+          "url": "https://www.linkedin.com/posts/jessie-xu-05312515_technical-program-manager-ground-systems-activity-7305386854629969920-m3Tn",
+          "note": "Public post by Jessie Xu promotes Wing technical program manager hiring for ground systems."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn people directory",
+          "url": "https://www.linkedin.com/pub/dir/Jessie/Xu/us-0-United-States",
+          "note": "Directory snippet lists Jessie Xu as Tech Lead Manager at Wing in the San Francisco Bay Area."
+        }
+      ]
+    }
+  }
+]

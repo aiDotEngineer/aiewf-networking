@@ -1,0 +1,487 @@
+[
+  {
+    "lookupKey": "1yuw1ym",
+    "displayName": "Vikram Kakumani",
+    "headline": "UiPath deputy CTO working on agentic automation, enterprise orchestration, and cloud engineering systems",
+    "company": "UiPath",
+    "title": "Deputy CTO",
+    "location": "Redmond, WA",
+    "tags": ["UiPath", "agentic automation", "enterprise AI", "cloud platforms", "developer platforms", "automation"],
+    "confidence": "high",
+    "confidenceNote": "UiPath event pages, LinkedIn, and UiPath social posts consistently identify Vikram Kakumani as a UiPath technical executive; the Deputy CTO title is directly supported by UiPath event listings.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Deputy CTO at UiPath focused on agentic automation, enterprise orchestration, and cloud-scale engineering systems. Strong match for conversations about AI agents inside enterprise workflows, automation platforms, and developer infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/vikram-kakumani-a53b011",
+          "note": "Professional profile for Vikram Kakumani in Redmond."
+        },
+        {
+          "label": "UiPath FUSION Bengaluru agenda",
+          "url": "https://www.uipath.com/events/fusion/global/bengaluru/agenda",
+          "note": "UiPath agenda lists Vikram Kakumani as Deputy CTO at UiPath on agentic orchestration programming."
+        },
+        {
+          "label": "UiPath FUSION Paris speakers",
+          "url": "https://events.bizzabo.com/794757/page/5440529/speakers",
+          "note": "Event speaker page lists Vikram Kakumani as Deputy CTO at UiPath."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "KuppingerCole speaker profile",
+          "url": "https://www.kuppingercole.com/speakers/1665",
+          "note": "Older speaker bio covers Microsoft identity engineering leadership background."
+        },
+        {
+          "label": "UiPath X post",
+          "url": "https://x.com/UiPath/status/1980677665318400054",
+          "note": "UiPath social post promotes Vikram Kakumani as Deputy CTO for a Gartner session."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qzp8dz",
+    "displayName": "Vincent DiBernardo",
+    "headline": "Product designer and developer at Buildr with UI, UX, branding, and prototyping experience",
+    "company": "Buildr",
+    "title": "Product Designer II",
+    "location": "Los Angeles, CA",
+    "tags": ["product design", "UI/UX", "visual design", "prototyping", "developer tools", "Buildr"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, Dribbble, and public social profiles consistently connect Vincent DiBernardo to Buildr/product design; the exact Product Designer II level is from the participant row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product designer and developer at Buildr with a portfolio spanning UI/UX, branding, prototyping, and product flows. Relevant for design systems, builder workflows, and making technical products easier to use.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/vdibernardo",
+          "note": "Public profile identifies Vincent DiBernardo as a Product Designer and Developer at Buildr in Los Angeles."
+        },
+        {
+          "label": "Dribbble case study",
+          "url": "https://dribbble.com/shots/19051630-Case-Study-Dog-Walking-App",
+          "note": "Design portfolio work by Vincent DiBernardo describing product design, research, user flows, and prototyping."
+        },
+        {
+          "label": "Instagram profile",
+          "url": "https://www.instagram.com/vincentdibernardo/",
+          "note": "Public profile bio identifies him as Product Designer at Buildr."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CreativeMornings attendee profile",
+          "url": "https://creativemornings.com/talks/zoom-zoom-drawing-club/attendees?page=4",
+          "note": "Community profile lists Vincent DiBernardo as a product designer."
+        },
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Vincent/DiBernardo/us-0-United-States",
+          "note": "Directory result repeats Buildr, Los Angeles, and product designer context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wba62p",
+    "displayName": "Vineet Kamdar",
+    "headline": "Amazon leader focused on AWS cloud developer experience, platform evaluations, and developer insights",
+    "company": "Amazon",
+    "title": "Head of Cloud Developer Experience",
+    "location": "Seattle, US",
+    "tags": ["AWS", "developer experience", "cloud platforms", "platform evaluation", "GenAI", "developer insights"],
+    "confidence": "medium",
+    "confidenceNote": "Public evidence strongly matches Vineet Kamdar to Amazon/AWS developer experience leadership, though most corroborating sources are LinkedIn surfaces rather than independent company bios.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Amazon/AWS leader working on cloud developer experience, platform evaluations, and developer insights. Useful match for cloud adoption, AI agent developer workflows, platform quality, and how builders evaluate cloud services.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/vineet-kamdar",
+          "note": "Public profile lists Vineet Kamdar as Head of Cloud Developer Experience and Insights, Platform Evaluations at Amazon."
+        },
+        {
+          "label": "LinkedIn AWS re:Invent post",
+          "url": "https://www.linkedin.com/posts/vineet-kamdar_awsreinvent-reinvent-cloud-activity-7401326751227940864-tx76",
+          "note": "First-person post references AWS re:Invent, cloud, GenAI, agents, and networking."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Vineet/Kamdar",
+          "note": "Directory result repeats the Amazon cloud developer experience and Greater Seattle Area match."
+        },
+        {
+          "label": "ResearchGate Amazon member listing",
+          "url": "https://www.researchgate.net/institution/Amazon/members/31",
+          "note": "Amazon member directory includes Vineet Kamdar among Amazon researchers/members."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1hkqsh1",
+    "displayName": "Vinit Adkar",
+    "headline": "Palo Alto Networks engineering leader working on cloud-delivered security and Prisma Access infrastructure",
+    "company": "Palo Alto Networks",
+    "title": "Sr. Engineering Manager",
+    "location": "Santa Clara, US",
+    "tags": ["cloud security", "Prisma Access", "network security", "distributed systems", "engineering leadership", "Palo Alto Networks"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and related public posts connect Vinit Adkar to Palo Alto Networks and cloud security work; exact Sr. Engineering Manager wording is from the participant row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering leader at Palo Alto Networks working around cloud-delivered security and Prisma Access infrastructure. Good match for cloud security, distributed networking systems, and security platform engineering conversations.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/vinit-adkar-b47b798",
+          "note": "Public profile identifies Vinit Adkar as an engineering leader at Palo Alto Networks in Santa Clara."
+        },
+        {
+          "label": "LinkedIn hiring post",
+          "url": "https://www.linkedin.com/posts/vinit-adkar-b47b798_were-hiring-seeking-skilled-senior-network-activity-7252161152028168192-xbJ4",
+          "note": "First-person post describes hiring for Prisma Access, Palo Alto Networks' cloud-delivered security platform."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "LinkedIn Bay Area directory",
+          "url": "https://www.linkedin.com/pub/dir/%2B/Adkar/us-84-San-Francisco-Bay-Area",
+          "note": "Directory result repeats Vinit Adkar, Palo Alto Networks, and Santa Clara."
+        },
+        {
+          "label": "Saviynt LinkedIn event post",
+          "url": "https://www.linkedin.com/posts/saviynt_ispm-aws-iam-activity-7344062821988515840--e8b",
+          "note": "Public event post references Vinit Adkar in a Palo Alto Networks and cloud identity/security context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "00u09wz",
+    "displayName": "Vinoth Govindarajan",
+    "headline": "OpenAI MTS building data infrastructure, agent-facing platforms, and production agent harnesses",
+    "company": "OpenAI",
+    "title": "Member of Technical Staff",
+    "location": "San Francisco Bay Area",
+    "tags": ["OpenAI", "agent infrastructure", "data infrastructure", "AI agents", "lakehouse", "distributed systems"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Sessionize, QCon, Substack, Scholar, and author pages consistently identify Vinoth Govindarajan as OpenAI technical staff working on data and agent infrastructure.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Member of Technical Staff at OpenAI working on core data infrastructure and agent-facing platforms. He writes about production agent harnesses and has a data systems background spanning lakehouses, catalogs, and open table formats.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/vinothgovindarajan",
+          "note": "Public profile identifies Vinoth Govindarajan as Applied AI at OpenAI."
+        },
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/vino/",
+          "note": "Speaker profile lists him as Member of Technical Staff at OpenAI working on data infrastructure and internal agent-facing platforms."
+        },
+        {
+          "label": "Substack profile",
+          "url": "https://substack.com/%40vingov",
+          "note": "Personal writing profile describes him as a systems engineer at OpenAI and author of The Agent Stack."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "QCon AI Boston speaker page",
+          "url": "https://boston.qcon.ai/speakers/vinothgovindarajan",
+          "note": "Conference profile repeats MTS at OpenAI, core data infrastructure, and agent platform context."
+        },
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?hl=en&user=hDdyOlsAAAAJ",
+          "note": "Verified OpenAI author profile with distributed systems, data lake, and catalog research interests."
+        },
+        {
+          "label": "GitHub book repository",
+          "url": "https://github.com/PacktPublishing/Engineering-Lakehouses-with-Open-Table-Formats",
+          "note": "Repository lists Vinoth Govindarajan among authors/contributors for the lakehouse engineering book."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1q58fto",
+    "displayName": "Vishal Gautam",
+    "headline": "RenaissanceRe AI innovation leader moving insurance automation and agentic AI from pilots into business value",
+    "company": "RenaissanceRe",
+    "title": "VP, AI Innovation Enablement",
+    "location": "London, GB",
+    "tags": ["AI enablement", "insurance", "agentic AI", "automation", "enterprise architecture", "digital transformation"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently connect Vishal Gautam to RenaissanceRe and AI enablement in London; VP wording is from the participant row while some sources show AI Innovation Enablement or AVP automation titles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI innovation leader at RenaissanceRe working on insurance automation, enterprise architecture, and moving AI beyond pilots into durable business value. Good match for insurance AI, agentic workflows, and enterprise enablement.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://uk.linkedin.com/in/vgautam81",
+          "note": "Public profile connects Vishal Gautam to RenaissanceRe in London."
+        },
+        {
+          "label": "LinkedIn directory result",
+          "url": "https://www.linkedin.com/pub/dir/Vishal/Gautam",
+          "note": "Directory result describes him as scaling AI innovation beyond pilots to sustained business value at RenaissanceRe."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/renaissancere/org-chart/vishal-gautam",
+          "note": "Organization profile lists Vishal Gautam in AI Innovation Enablement at RenaissanceRe and summarizes automation and architecture background."
+        },
+        {
+          "label": "RenaissanceRe AI Enablement team",
+          "url": "https://theorg.com/org/renaissancere/teams/ai-enablement",
+          "note": "Team page lists Vishal Gautam under RenaissanceRe AI Enablement."
+        },
+        {
+          "label": "Hitachi Digital Services webinar post",
+          "url": "https://www.linkedin.com/posts/hitachi-digital-services_agenticai-insuranceinnovation-insurtech-activity-7345813442009710592-bhQD",
+          "note": "Webinar post names Vishal Gautam among insurance AI and agentic AI experts from RenRe and partner organizations."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ktj42u",
+    "displayName": "Vivek Raju Muppalla",
+    "headline": "Hippocratic AI engineering leader building production voice agents for healthcare",
+    "company": "Hippocratic AI",
+    "title": "VP of AI Engineering",
+    "location": "Palo Alto, CA",
+    "tags": ["healthcare AI", "voice agents", "AI engineering", "conversational AI", "synthetic data", "clinical AI"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Hippocratic AI, AI Engineer World's Fair, and AI Agent Conference sources consistently identify Vivek Raju Muppalla as Hippocratic AI VP AI Engineering.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of AI Engineering at Hippocratic AI, focused on production voice agents for healthcare. He brings experience across AI-powered products, enterprise LLMs, synthetic data, and safety-sensitive clinical conversation systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/vivekmuppalla",
+          "note": "Public profile connects Vivek Raju Muppalla to Hippocratic AI in Palo Alto."
+        },
+        {
+          "label": "Hippocratic AI blog",
+          "url": "https://hippocraticai.com/building-ai-for-healthcare-conversations-part-1/",
+          "note": "Company blog lists Vivek Muppalla as VP of Engineering at Hippocratic AI on healthcare conversations."
+        },
+        {
+          "label": "AI Agent Conference profile",
+          "url": "https://www.agentconference.com/speaker/Vivek-Raju-Muppalla",
+          "note": "Speaker profile lists him as VP of AI Engineering at Hippocratic AI and summarizes AI product background."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?day=4&session=428",
+          "note": "Event schedule lists Vivek Raju Muppalla as Hippocratic AI VP of AI Engineering."
+        },
+        {
+          "label": "arXiv paper",
+          "url": "https://arxiv.org/html/2603.29893v1",
+          "note": "Healthcare conversational AI paper includes Vivek Muppalla among Hippocratic AI authors."
+        },
+        {
+          "label": "Hippocratic AI LinkedIn post",
+          "url": "https://www.linkedin.com/posts/alicebentinck_what-can-you-learn-from-15-seconds-of-someone-activity-7470791991908265984-bFPl",
+          "note": "Public post names Vivek Raju Muppalla among leading engineers explaining healthcare voice AI constraints."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0p9dilf",
+    "displayName": "Vivek Trivedy",
+    "headline": "LangChain applied research lead building agents, harnesses, evals, and continual-learning systems",
+    "company": "LangChain",
+    "title": "Applied Research Lead",
+    "location": "Philadelphia, PA",
+    "tags": ["LangChain", "agents", "agent harnesses", "evals", "LangGraph", "applied research"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, GitHub, LangChain blog, and event sources consistently connect Vivek Trivedy to LangChain applied research on agents, harnesses, and evals.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Applied research lead at LangChain building agents, harnesses, evals, and continual-learning workflows. Strong match for conversations about LangGraph, deep agents, agent evaluation, and production harness engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://vtrivedy.com/",
+          "note": "Personal site says he is at LangChain leading work on open-source agents and harnesses."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/vivek-trivedy-433509134",
+          "note": "Public profile says he leads Applied Research at LangChain Labs and works on agents, harnesses, and evals."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/vtrivedy",
+          "note": "GitHub profile lists research and engineering at langchain-ai."
+        },
+        {
+          "label": "LangChain blog author page",
+          "url": "https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering",
+          "note": "LangChain article by Vivek Trivedy on deep agents and harness engineering."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Fouad+Matin",
+          "note": "Schedule lists Vivek Trivedy as Applied Research Lead at LangChain Labs."
+        },
+        {
+          "label": "LangChain legal-agent verifiers blog",
+          "url": "https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents",
+          "note": "LangChain research post lists Vivek Trivedy as a LangChain author on efficient verifiers."
+        },
+        {
+          "label": "Google Scholar profile",
+          "url": "https://scholar.google.com/citations?hl=en&user=WU2gjXYAAAAJ",
+          "note": "Scholar profile connects Vivek Trivedy to deep learning and LangChain publications."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1gc2l85",
+    "displayName": "Volodymyr Kuznetsov",
+    "headline": "Cyberhaven co-founder and CTO building AI-era data security and data-flow protection systems",
+    "company": "Cyberhaven",
+    "title": "CTO",
+    "location": "Mountain View, US",
+    "tags": ["cybersecurity", "data security", "DLP", "program analysis", "AI security", "founder"],
+    "confidence": "high",
+    "confidenceNote": "Cyberhaven, EPFL, LinkedIn, SC Media, and security-industry sources consistently identify Volodymyr Kuznetsov as Cyberhaven co-founder and CTO; Mountain View comes from Cyberhaven/company context and participant row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Cyberhaven, building data security systems for modern cloud and AI workflows. His background spans EPFL/UC Berkeley security research, program analysis, data lineage, and enterprise data-loss prevention.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Cyberhaven about page",
+          "url": "https://www.cyberhaven.com/about",
+          "note": "Company leadership page lists Dr. Volodymyr Kuznetsov as Chief Technology Officer."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/volodymyrkuznetsov",
+          "note": "Public profile identifies him as Cyberhaven co-founder and CTO."
+        },
+        {
+          "label": "EPFL profile",
+          "url": "https://dslab.epfl.ch/people/kuznetsov/",
+          "note": "Academic profile lists him as co-founder and CTO at Cyberhaven."
+        },
+        {
+          "label": "Cyberhaven engineering blog",
+          "url": "https://www.cyberhaven.com/engineering-blog",
+          "note": "Cyberhaven engineering posts list Volodymyr Kuznetsov as an author on data tracing and graph analytics."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "DataBreachToday author profile",
+          "url": "https://www.databreachtoday.com/authors/volodymyr-kuznetsov-cto-co-founder-cyberhaven-i-5008",
+          "note": "Industry author bio says he co-founded Cyberhaven and leads it as CTO."
+        },
+        {
+          "label": "SC Media contributor profile",
+          "url": "https://www.scworld.com/contributor/volodymyr-kuznetsov",
+          "note": "Contributor profile describes him as Cyberhaven CTO leading technology vision and product development."
+        },
+        {
+          "label": "Wellfound Cyberhaven people page",
+          "url": "https://wellfound.com/company/cyberhaven/people",
+          "note": "Company people page lists Volodymyr Kuznetsov as founder and CTO."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1r3rdfj",
+    "displayName": "Vyas A",
+    "headline": "Plivo product leader building developer infrastructure for production voice AI agents",
+    "company": "Plivo",
+    "title": "Head of Product",
+    "location": "US",
+    "tags": ["voice AI", "product management", "developer experience", "AI agents", "communications APIs", "Plivo"],
+    "confidence": "high",
+    "confidenceNote": "Sessionize, LinkedIn, Plivo blog, Plivo social posts, and AI Engineer schedule consistently identify Vyas A as a Plivo product leader focused on voice AI agents.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product leader at Plivo working on developer infrastructure for production voice AI agents. Useful contact for voice-agent failure modes, communications APIs, developer experience, and shipping reliable phone-call AI systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/vyas-a/",
+          "note": "Speaker profile lists Vyas A as Head of Product and says he leads product at Plivo."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/narayanvyas",
+          "note": "Public profile identifies Vyas A as Director of Product at Plivo in Seattle."
+        },
+        {
+          "label": "Plivo blog author page",
+          "url": "https://www.plivo.com/blog/ai-voice-agent-platform-vs-chatbot-vs-ivr-reference-guide/",
+          "note": "Plivo article lists Vyas A as Head of Product / Plivo."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Luma event page",
+          "url": "https://luma.com/dihiwe4q",
+          "note": "Voice AI Agents Decoded event lists Vyas A as Head of Product at Plivo."
+        },
+        {
+          "label": "Plivo LinkedIn company post",
+          "url": "https://www.linkedin.com/company/plivo-inc",
+          "note": "Plivo company page post says Vyas A is speaking at AI Engineer about production voice AI agents."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Erina+Karati",
+          "note": "Schedule lists Vyas A as Head of Product at Plivo for a talk on voice agent failure modes."
+        }
+      ]
+    }
+  }
+]

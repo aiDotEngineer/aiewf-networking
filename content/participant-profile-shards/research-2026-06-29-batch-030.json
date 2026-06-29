@@ -1,0 +1,128 @@
+[
+  {
+    "lookupKey": "0o6fe38",
+    "displayName": "Bohan Li",
+    "headline": "Staff Software Engineer at EliseAI working around realtime voice and agentic AI",
+    "company": "EliseAI",
+    "title": "Staff Software Engineer",
+    "location": "Redwood City, CA",
+    "tags": ["staff engineer", "voice AI", "agentic AI", "housing tech", "healthcare AI"],
+    "confidence": "high",
+    "confidenceNote": "AI Engineer World's Fair schedule and LinkedIn-style profile results both match Bohan Li/Bo Li at EliseAI as Staff Software Engineer; public details beyond role are limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Staff Software Engineer at EliseAI, an agentic AI platform for housing and healthcare. Listed on the AI Engineer World's Fair schedule for a talk on realtime voice agents, making him a strong match for conversations about production voice AI, applied agents, and automation-heavy vertical software.",
+    "sources": {
+      "primary": [
+        {"label": "AI Engineer World's Fair 2026 schedule", "url": "https://www.ai.engineer/worldsfair/schedule", "note": "Lists Bohan Li of EliseAI as Staff Software Engineer for 'Realtime Voice Agents with Frontier Intelligence.'"},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bohan-li-7290b74a", "note": "Search result identifies Bohan Li as Staff Software Engineer at EliseAI, located in Redwood City."},
+        {"label": "EliseAI official site", "url": "https://eliseai.com/", "note": "Company describes its agentic AI platform for property management and healthcare automation."}
+      ],
+      "secondary": [
+        {"label": "Office Hours profile", "url": "https://officehours.com/bohan-li", "note": "Lists work experience including EliseAI Staff Software Engineer and prior engineering roles."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ks08o4",
+    "displayName": "Bogdan Gaza",
+    "headline": "Co-Founder and CTO at DatologyAI, building automated data curation for model training",
+    "company": "DatologyAI",
+    "title": "Co-Founder and CTO",
+    "location": "Redwood City, CA",
+    "tags": ["founder", "CTO", "data curation", "model training", "infrastructure"],
+    "confidence": "high",
+    "confidenceNote": "DatologyAI's official team page, LinkedIn, X, and event schedule all align on Bogdan Gaza as DatologyAI co-founder/CTO; location inferred from company footprint rather than a personal primary source.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-Founder and CTO at DatologyAI, where he works on automated data curation for training better, faster, and smaller AI models. Previously CTO/co-founder of Moonsense, with infrastructure engineering and management experience at Amazon and Twitter.",
+    "sources": {
+      "primary": [
+        {"label": "DatologyAI about page", "url": "https://www.datologyai.com/about", "note": "Official team page names Bogdan Gaza as Co-Founder, CTO and notes prior Moonsense, Amazon, and Twitter experience."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bogdangaza", "note": "Identifies Bogdan Gaza as co-founder and CTO at DatologyAI."},
+        {"label": "X profile", "url": "https://x.com/hurrycane", "note": "Profile says co-founder and CTO at DatologyAI."}
+      ],
+      "secondary": [
+        {"label": "AI Engineer World's Fair 2026 schedule", "url": "https://www.ai.engineer/worldsfair/schedule", "note": "Lists Bogdan Gaza for a session titled 'Running a 20T-Token Data Pipeline: Infrastructure Lessons from Production.'"},
+        {"label": "Radical Ventures portfolio page", "url": "https://radical.vc/portfolio/datologyai/", "note": "Lists Bogdan Gaza among DatologyAI founders."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1f6laos",
+    "displayName": "Boominathan Shanmugam",
+    "headline": "Founder and CEO of Ligaments AI Company, focused on enterprise AI foundations and vertical AI platforms",
+    "company": "Ligaments AI Company",
+    "title": "CEO",
+    "location": "Dallas, TX, US",
+    "tags": ["founder", "CEO", "enterprise AI", "AI platforms", "telecom AI"],
+    "confidence": "medium",
+    "confidenceNote": "Role and company are well supported by LinkedIn and company sources; Dallas is user-provided while company headquarters are listed as Prosper, Texas.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Ligaments AI Company, building enterprise AI foundations, composable AI solution stacks, and vertical AI platforms. Useful contact for enterprise AI adoption, telecom/fiber AI workflows, and practical AI systems tied to measurable business outcomes.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/boomis", "note": "Identifies Boominathan Shanmugam as Founder and CEO of Ligaments AI Company focused on enterprise AI foundations and vertical AI platforms."},
+        {"label": "Ligaments AI official site", "url": "https://ligaments.ai/", "note": "Company describes enterprise-focused AI work including small language models, BYOM architectures, measurable business outcomes, and enablement."},
+        {"label": "Ligaments AI LinkedIn company page", "url": "https://www.linkedin.com/company/ligaments-ai", "note": "Company page lists Boominathan Shanmugam among employees and describes Ligaments AI as an enterprise AI solutions company headquartered in Prosper, Texas."}
+      ],
+      "secondary": [
+        {"label": "Boominathan Shanmugam LinkedIn post", "url": "https://www.linkedin.com/posts/boomis_at-ligamentsai-we-empower-enterprises-across-activity-7259365593361862656-QCCD", "note": "Post describes Ligaments.ai work across telecommunications, healthcare, insurance, shipping, and manufacturing, plus NVIDIA Inception participation."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "03dgto4",
+    "displayName": "Brad Taylor",
+    "headline": "Fractional CTO and advisor for healthtech, fintech, climate, and AI-driven startups",
+    "company": "Oak & Co, LLC",
+    "title": "Fractional CTO",
+    "location": "San Francisco, CA",
+    "tags": ["fractional CTO", "healthtech", "fintech", "engineering leadership", "startup advisor"],
+    "confidence": "high",
+    "confidenceNote": "Oak & Co, LinkedIn search results, and Health2047/TCGen bios consistently match Brad Taylor as fractional CTO/advisor with prior CTO and fintech leadership roles.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Fractional CTO and advisor through Oak & Co, helping founders with technical strategy, engineering leadership, infrastructure, security, and product execution. Former CTO at Galileo Health and Nursa, with earlier leadership work at Marqeta through IPO.",
+    "sources": {
+      "primary": [
+        {"label": "Oak & Co official site", "url": "https://oakandco.io/", "note": "Brad Taylor's site describes fractional CTO and Head of Product work for founders across healthcare, fintech, and climate tech."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bradtaylor4", "note": "Search result identifies Brad Taylor as Fractional CTO for Healthtech and Fintech Founders at Oak & Co."}
+      ],
+      "secondary": [
+        {"label": "Health2047 leadership bio", "url": "https://health2047.com/leadership/brad-taylor/", "note": "Describes Brad as an advisor and engineering/product executive with CTO roles at Galileo Health and Nursa, plus Marqeta leadership experience."},
+        {"label": "TCGen principal bio", "url": "https://www.tcgen.com/about-tcgen/brad-taylor/", "note": "Corroborates fractional CTO/advisor work and prior CTO roles at Nursa and Galileo."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pog7wb",
+    "displayName": "Bradley Zeller",
+    "headline": "Senior Staff Software Engineer at Buildr, an AI-powered preconstruction platform for general contractors",
+    "company": "Buildr",
+    "title": "Senior Staff Software Engineer",
+    "location": "Carpinteria, CA",
+    "tags": ["staff engineer", "construction tech", "preconstruction", "AI workspace", "SaaS"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn-style results confirm Bradley Zeller at Buildr, but public primary sources show 'Software Engineer' while Growjo lists 'Senior Staff Software Engineer'; title confidence is medium.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Software engineer at Buildr, which builds an AI-powered preconstruction workspace for general contractors. Likely useful for discussions around construction SaaS, workflow-heavy vertical software, CRM/estimating systems, and AI features embedded into operational tools.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/bradleyrzeller", "note": "Identifies Bradley Zeller as a Software Engineer at Buildr, located in Carpinteria."},
+        {"label": "Buildr official site", "url": "https://buildr.com/", "note": "Buildr describes itself as an AI-powered preconstruction platform for general contractors."},
+        {"label": "Buildr LinkedIn company page", "url": "https://www.linkedin.com/company/buildrtech", "note": "Company page lists Bradley Zeller among Buildr employees and describes Buildr's AI preconstruction workspace."}
+      ],
+      "secondary": [
+        {"label": "Growjo Buildr profile", "url": "https://growjo.com/company/Buildr", "note": "Lists Bradley Zeller as Senior Staff Software Engineer at Buildr."}
+      ]
+    }
+  }
+]

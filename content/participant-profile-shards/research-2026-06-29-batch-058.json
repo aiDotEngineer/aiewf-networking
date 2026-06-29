@@ -1,0 +1,942 @@
+[
+  {
+    "lookupKey": "0cftoiv",
+    "displayName": "Lu Zhang",
+    "headline": "OpenAI inference systems engineer focused on production LLM routing",
+    "company": "OpenAI",
+    "title": "Member of Technical Staff",
+    "location": "",
+    "tags": ["openai", "inference", "llm infrastructure", "routing"],
+    "confidence": "medium",
+    "confidenceNote": "OpenAI and AI Engineer sources connect this Lu Zhang to inference work, but the name is common and public personal-profile detail is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Lu Zhang is listed by OpenAI among GPT-4o inference-compute contributors and is scheduled at AI Engineer World's Fair for a production LLM inference-routing talk. Public sources support an OpenAI inference-infrastructure profile; the profile stays terse because independent personal sources are limited.",
+    "sources": {
+      "primary": [
+        {
+          "label": "OpenAI GPT-4o contributions",
+          "url": "https://openai.com/gpt-4o-contributions/",
+          "note": "Lists Lu Zhang under inference-compute contributors."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Inference",
+          "note": "Lists Lu Zhang, Member of Technical Staff at OpenAI, on production LLM inference routing."
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "01ijdfu",
+    "displayName": "Lucas Palma",
+    "headline": "Information security manager at Nubank working on product, mobile, and AI security",
+    "company": "Nubank",
+    "title": "Information Security Manager",
+    "location": "Brazil",
+    "tags": ["cybersecurity", "AI security", "mobile security", "product security", "Nubank"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn profile/posts, event listing, and secondary profile consistently match the row facts and person.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Lucas Palma leads security work at Nubank across product security, mobile security, and AI security. His public posts describe hiring for AI Security and Mobile Security teams and speaking internally about secure AI-first development.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/lucaspalma/pt",
+          "note": "Identifies Lucas Palma at Nubank in Sao Paulo state."
+        },
+        {
+          "label": "LinkedIn AI Security hiring post",
+          "url": "https://www.linkedin.com/posts/lucaspalma_hiring-infosec-cybersecurity-activity-7323287976543711233-YHeW",
+          "note": "Describes his Nubank AI Security and Mobile Security teams."
+        },
+        {
+          "label": "LinkedIn AI Developer Experience Summit post",
+          "url": "https://www.linkedin.com/posts/lucaspalma_ai-aisecurity-cybersecurity-activity-7463534124868362240-ovZw",
+          "note": "Describes speaking at Nubank about building securely in an AI-first world."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI",
+          "note": "Lists Lucas Palma, Information Security Manager at Nubank, speaking on vetting AI skills."
+        },
+        {
+          "label": "Stackforce profile",
+          "url": "https://www.stackforce.co/talent/lucas-palma-ceo-69d9d59e1b697b7deb08950d",
+          "note": "Summarizes Nubank information-security roles and product/mobile/AI security focus."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1y7tau5",
+    "displayName": "Lucas Pulliza",
+    "headline": "Founder and CEO of Lateral Yield building AI tools for investors",
+    "company": "Lateral Yield",
+    "title": "Founder",
+    "location": "New York, NY",
+    "tags": ["founder", "AI copilots", "investing", "private equity", "Lateral Yield"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, and GitHub all point to the same person, company, and AI-investing focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Lucas Pulliza is founder and CEO of Lateral Yield. His public profiles describe work on investor world models and on-prem AI copilots for professors and investors, with earlier experience in private equity and at BCG.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/lucas-pulliza",
+          "note": "Lists Lucas Pulliza as founder and CEO of Lateral Yield."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/lucas_pulliza",
+          "note": "Bio says he is building investor world models at Lateral Yield."
+        },
+        {
+          "label": "GitHub profile snippet",
+          "url": "https://github.com/orgs/EndexAI/followers",
+          "note": "GitHub user lucaspulliza-nyc describes building on-prem AI copilots for professors and investors."
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "lookupKey": "1u8anvh",
+    "displayName": "Lucas Wargha",
+    "headline": "Software engineering manager and technical leader at FamilySearch",
+    "company": "FamilySearch, International",
+    "title": "Manager, Software Dev.",
+    "location": "",
+    "tags": ["engineering management", "software engineering", "FamilySearch", "hiring", "JavaScript"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, FamilySearch org-chart data, and public posts consistently identify the same person and role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Lucas Wargha is a FamilySearch technical leader and software engineering manager. His public posts focus on software-engineering hiring, JavaScript, greenfield development, and practical AI productivity for engineers.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/lucaswargha",
+          "note": "Lists Lucas Wargha as a technical leader at FamilySearch."
+        },
+        {
+          "label": "LinkedIn interviewing post",
+          "url": "https://www.linkedin.com/posts/lucaswargha_hiring-software-engineers-in-2025-what-actually-activity-7388791994468384768-OZPA",
+          "note": "Shows his software-engineering hiring perspective."
+        },
+        {
+          "label": "LinkedIn graduation post",
+          "url": "https://www.linkedin.com/posts/lucaswargha_im-thrilled-to-announce-that-i-graduated-activity-6761853932160581632-jJeo",
+          "note": "Confirms a software-engineering degree from BYU-Idaho."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org: FamilySearch software engineering",
+          "url": "https://theorg.com/org/familysearch-inc/teams/software-engineering",
+          "note": "Lists Lucas Wargha as Software Engineering Manager at FamilySearch."
+        },
+        {
+          "label": "The Org: FamilySearch org chart",
+          "url": "https://theorg.com/org/familysearch-inc/org-chart/scott-soward",
+          "note": "Shows Lucas Wargha in FamilySearch engineering-management context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ewawuj",
+    "displayName": "Lucio Santana",
+    "headline": "Product and AI leader at Woba focused on workplace and corporate real estate platforms",
+    "company": "Woba",
+    "title": "VP of Product",
+    "location": "Belo Horizonte, Brazil",
+    "tags": ["product management", "AI", "workplace", "corporate real estate", "Woba"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn profile, Woba company page, and Woba/LinkedIn posts align with the row facts, though public title appears as Head of Product as well as row VP of Product.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Lucio Santana is publicly listed as Head of Product at Woba with a focus on artificial intelligence, innovation, and inclusion. Woba and Lucio's public posts connect him to WOS, Woba's AI-native workplace and corporate real estate operating-system work.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/luciocs/pt",
+          "note": "Lists Lucio Santana as Head of Product at Woba in Belo Horizonte."
+        },
+        {
+          "label": "Lucio Santana LinkedIn WOS post",
+          "url": "https://pt.linkedin.com/posts/luciocs_corporaterealestate-facilities-ia-activity-7473167667865251840-Auba",
+          "note": "Connects Lucio to Woba/WOS and corporate real estate, facilities, workplace, and AI topics."
+        },
+        {
+          "label": "Woba LinkedIn company page",
+          "url": "https://br.linkedin.com/company/woba-br",
+          "note": "Describes WOS as an AI-native workplace platform."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Woba Instagram Expo InfraFM reel",
+          "url": "https://www.instagram.com/reel/DZcnuvGJw4d/",
+          "note": "Woba post references Lucio and WOS in the corporate real estate/facilities AI context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ln4yqm",
+    "displayName": "Ludovico Loreti",
+    "headline": "Chief AI and information security officer at Curti, focused on cybersecurity and AI risk",
+    "company": "Curti Costruzioni Meccaniche S.p.A.",
+    "title": "Chief AI & Information Security Officer",
+    "location": "Castel Bolognese, Italy",
+    "tags": ["cybersecurity", "AI security", "red team", "CISO", "defence aerospace"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, X, GitHub, and speaker-page evidence consistently match the row facts and identity.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ludovico Loreti presents himself as n4pst3r, a red-teamer, builder, teacher, and security/AI leader. His public site says he leads security and AI for a defence and aerospace group, and LinkedIn identifies him as Chief AI & Information Security Officer at Curti.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal site",
+          "url": "https://lloreti.pro/",
+          "note": "Identifies Ludovico Loreti aka n4pst3r and describes current security and AI leadership work."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://it.linkedin.com/in/ludovico-loreti-a9009361",
+          "note": "Lists Chief AI & Information Security Officer at Curti."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/LudovicoLoreti",
+          "note": "Public profile for Ludovico Loreti using the n4pst3r identity."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/ludovicoloreti",
+          "note": "Linked from his personal site as his GitHub identity."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "We Make Future speaker page",
+          "url": "https://www.wemakefuture.it/r/67a128a8d4222bc6274340bd/",
+          "note": "Older speaker page identifies him as a cybersecurity expert and Cyber Security Architect."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wk7glx",
+    "displayName": "Luis Eterovick",
+    "headline": "Head of product growth at Arena",
+    "company": "Arena",
+    "title": "Head of Product",
+    "location": "Sao Paulo, Brazil",
+    "tags": ["product", "growth", "AI", "ecommerce", "SaaS"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name sources match Arena, Sao Paulo, and product leadership; one source uses Head of Product while LinkedIn uses Head of Product Growth.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Luis Eterovick is a Sao Paulo-based product leader at Arena. Public sources connect him to Arena product leadership and AI/ecommerce work including Commerce AI, with prior product-management and software-engineering background.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/eterovick/pt",
+          "note": "Lists Head of Product Growth at Arena in Sao Paulo."
+        },
+        {
+          "label": "LinkedIn Commerce AI post",
+          "url": "https://www.linkedin.com/posts/eterovick_commerce-ai-shake-up-e-commerce-turn-content-activity-7184188464546934789-5oo1",
+          "note": "First-person post says he joined Arena and worked on Commerce AI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/arena-im/org-chart/luis-eterovick",
+          "note": "Lists Luis Eterovick as Head of Product at Arena since June 2023."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "16fkhew",
+    "displayName": "Manav Vasavada",
+    "headline": "Netflix software engineer working on backend and streaming infrastructure",
+    "company": "Netflix Inc",
+    "title": "Staff Software Engineer",
+    "location": "Los Gatos, CA",
+    "tags": ["software engineering", "Netflix", "streaming", "backend", "open source"],
+    "confidence": "medium",
+    "confidenceNote": "Exact name and Netflix match; public title appears as Senior Software Engineer while the participant row says Staff Software Engineer.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Manav Vasavada is publicly listed as a Netflix software engineer in Los Gatos, with previous Microsoft experience. GitHub evidence ties the manavvasavada handle to Netflix Conductor contributions, and a Netflix engineering post names him in live-streaming engineering work.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/manavvasavada",
+          "note": "Public profile result lists Netflix, Los Gatos, and Senior Software Engineer."
+        },
+        {
+          "label": "Netflix Conductor GitHub discussion",
+          "url": "https://github.com/Netflix/conductor/discussions/2504",
+          "note": "Netflix Conductor release notes credit @manavvasavada on a Conductor change."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Netflix live-streaming team LinkedIn post",
+          "url": "https://www.linkedin.com/posts/kcasella_netflix-on-twitter-activity-7038220760791846912-SiRl",
+          "note": "Netflix engineering post names Manav Vasavada among edge engineers involved in live-streaming work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0acdn3o",
+    "displayName": "Manik Sachdeva",
+    "headline": "Firefly Enterprise product and engineering leader at Adobe",
+    "company": "Adobe",
+    "title": "Director of Engineering & Emerging Technology",
+    "location": "",
+    "tags": ["Adobe", "Firefly", "product engineering", "video AI", "generative AI"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name sources match Adobe and product/engineering leadership; row title is consistent with secondary profile wording though LinkedIn headline uses Firefly Enterprise Product & Engineering.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Manik Sachdeva works on Adobe Firefly Enterprise product and engineering, including video AI and 3D/digital twin workflows. Public sources also describe him as a product and engineering executive with earlier leadership roles at Around, TokBox, and Nexmo/Vonage.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/maniksachdeva",
+          "note": "Public profile result lists Firefly Enterprise Product & Engineering at Adobe."
+        },
+        {
+          "label": "LinkedIn Adobe Video AI hiring post",
+          "url": "https://www.linkedin.com/posts/maniksachdeva_applied-ml-research-engineer-video-ai-activity-7384291278567587841-g-jl",
+          "note": "First-person post describes building Video AI products within Firefly Enterprise."
+        },
+        {
+          "label": "LinkedIn Adobe 3D Digital Twin post",
+          "url": "https://www.linkedin.com/posts/maniksachdeva_at-adobe-summit-we-launched-our-3d-digital-activity-7452799561640886272-6YW8",
+          "note": "First-person post describes launching Adobe 3D Digital Twin Solution with NVIDIA Omniverse."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/adobe-systems/org-chart/manik-sachdeva",
+          "note": "Lists Manik Sachdeva as Director of Engineering & Emerging Technology at Adobe."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "193uk41",
+    "displayName": "Manish Kapur",
+    "headline": "Sonar product and solutions marketing leader focused on AI-assisted software development",
+    "company": "Sonar",
+    "title": "VP, Product & Solutions",
+    "location": "Austin, TX",
+    "tags": ["Sonar", "developer tools", "AI code", "product marketing", "DevSecOps"],
+    "confidence": "high",
+    "confidenceNote": "Exact-name sources match Sonar and VP/product-solutions role; public sources are company-adjacent and person-specific.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Manish Kapur is a Sonar product and solutions marketing leader focused on AI-assisted software development, code quality, and developer trust. Recent public activity includes Sonar content on agentic development governance and AI code verification.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/mkapur",
+          "note": "Public profile lists VP at Sonar, Product and Solutions Marketing."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/kapmani?lang=en",
+          "note": "Public result says he leads product strategy and go-to-market at Sonar."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Sonar webinar page",
+          "url": "https://www.sonarsource.com/resources/webinars/meet-gitar-ai-code-review-joins-sonar/",
+          "note": "Sonar resource describes Gitar and SonarQube AI code-verification context."
+        },
+        {
+          "label": "Software Engineering Daily podcast",
+          "url": "https://podcasts.apple.com/fr/podcast/hype-and-reality-of-the-ai-coding-shift/id1019576853?i=1000763223379&l=en-GB",
+          "note": "Episode description names Manish Kapur as VP of Product Marketing and Developer Relations at Sonar."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ph9ok3",
+    "displayName": "Manoj Arigela",
+    "headline": "Distinguished engineer for agentic AI at CVS Health",
+    "company": "cvs health",
+    "title": "Distinguished Engineer Agentic AI",
+    "location": "Dallas, TX",
+    "tags": ["agentic AI", "healthcare AI", "analytics platforms", "cloud data", "enterprise AI"],
+    "confidence": "high",
+    "confidenceNote": "Exact name and CVS Health role match LinkedIn; additional person-specific sources support AI/cloud focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Manoj Arigela is a CVS Health engineering leader focused on agentic AI, analytics, and AI platform work. His public writing emphasizes hands-on agentic AI learning, multi-agent systems, and enterprise AI implementation.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/manoj-arigela",
+          "note": "Lists Manoj Arigela as Distinguished Engineer Agentic AI at CVS Health."
+        },
+        {
+          "label": "Medium article",
+          "url": "https://medium.com/@saimanoj.a/building-smarter-faster-why-every-business-needs-master-agent-templates-for-ai-success-d8c024326ac5",
+          "note": "Person-authored agentic AI article by Manoj Arigela."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "IEEE Cloud Summit 2022 industry talk",
+          "url": "https://www.ieeecloudsummit.org/industry-talk",
+          "note": "Lists Manoj Arigela of CVS Health speaking on cloud data discovery, governance, lineage, and DLP."
+        },
+        {
+          "label": "LinkedIn AI fluency post",
+          "url": "https://www.linkedin.com/posts/manoj-arigela_ai-microlearning-agenticai-activity-7349243435125547009-l8DM",
+          "note": "Person-specific post on agentic AI and multi-agent systems."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0emyr5z",
+    "displayName": "Manoj Nair",
+    "headline": "CTO and chief innovation officer at Snyk",
+    "company": "Snyk",
+    "title": "CTO & Chief Innovation Officer",
+    "location": "United States",
+    "tags": ["application security", "agentic AI security", "software supply chain", "cloud", "SaaS"],
+    "confidence": "high",
+    "confidenceNote": "Exact name, company, and title are confirmed by Snyk and LinkedIn; multiple first-party and reputable secondary sources cover his current focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Manoj Nair leads Snyk's emerging technologies and solutions work, including incubation and future acquisition strategy. Public Snyk and media sources position him around AI-native application security, agentic security, cloud, SaaS, and software supply-chain risk.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Snyk contributor profile",
+          "url": "https://snyk.io/contributors/manoj-nair/",
+          "note": "Lists Manoj Nair as Chief Innovation Officer and CTO at Snyk."
+        },
+        {
+          "label": "Snyk leadership page",
+          "url": "https://snyk.io/about/leadership/",
+          "note": "Snyk first-party leadership bio for Manoj Nair."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/mnair1",
+          "note": "Lists Manoj Nair as CTO and Chief Innovation Officer at Snyk."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Dark Reading interview",
+          "url": "https://www.darkreading.com/application-security/ai-is-redefining-software-supply-chain-security",
+          "note": "Covers Nair's views on AI-driven software supply-chain security."
+        },
+        {
+          "label": "theCUBE AI Security Summit interview",
+          "url": "https://www.thecube.net/events/snyk/the-ai-security-summit-2025/content/Videos/3dcf1e7f-bb9e-41f2-8f95-efa04f4f7d1e",
+          "note": "Interview with Manoj Nair on Snyk Evo and agentic security orchestration."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0q0sdq8",
+    "displayName": "Manu Bhalla",
+    "headline": "Senior engineering leader in AI, pricing, and data at Underdog Sports",
+    "company": "Underdog Sports",
+    "title": "Sr Director of Engineering, AI, Pricing and Data",
+    "location": "Boston, MA",
+    "tags": ["sports tech", "engineering leadership", "mobile gaming", "pricing", "data"],
+    "confidence": "medium",
+    "confidenceNote": "Name and Underdog engineering move are supported, and DraftKings engineering history is person-specific; exact current Underdog title is from the participant row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Manu Bhalla is publicly tied to Underdog's engineering organization after prior engineering leadership at DraftKings. DraftKings sources identify him as a Director of Engineering who worked on mobile gaming/native product experiences; the exact current Underdog title comes from the participant row.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Underdog LinkedIn post",
+          "url": "https://www.linkedin.com/posts/underdogfantasy_jon-nguyen-and-manu-bhalla-have-moved-to-activity-7244393961555947521-dHrB",
+          "note": "Underdog welcomes Manu Bhalla to its team and references engineering growth."
+        },
+        {
+          "label": "DraftKings LinkedIn post",
+          "url": "https://www.linkedin.com/posts/draftkings-inc-_exciting-ways-we-are-creating-gaming-experiences-activity-7089970758231171073-TCKA",
+          "note": "Identifies Manu Bhalla as Director of Engineering and describes mobile gaming/native product work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "EGR North America report",
+          "url": "https://www.egr.global/northamerica/news/exclusive-underdog-bolsters-engineering-team-with-ex-draftkings-heads/",
+          "note": "Reports Manu Bhalla joining Underdog from DraftKings as part of engineering hiring."
+        },
+        {
+          "label": "DraftKings Life Podcast directory",
+          "url": "https://directory.libsyn.com/shows/view/id/draftkingslife",
+          "note": "Lists a DraftKings Life episode featuring Manu Bhalla on building mobile games."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1iu6379",
+    "displayName": "Marcin Waligora",
+    "headline": "Executive software engineering leader at MTN Group",
+    "company": "MTN",
+    "title": "Executive: Software Engineering",
+    "location": "Cape Town, South Africa",
+    "tags": ["software engineering", "telecom", "digital transformation", "engineering leadership", "Africa tech"],
+    "confidence": "high",
+    "confidenceNote": "Exact name, company, and executive software-engineering role are confirmed by MTN first-party sources and LinkedIn.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Marcin Waligora is MTN Group's Executive: Software Engineering and leads MTN Software Solutions. MTN says he joined in March 2023 with more than 20 years of IT experience after prior work at Citigroup.",
+    "sources": {
+      "primary": [
+        {
+          "label": "MTN appointment announcement",
+          "url": "https://www.mtn.com/mtn-group-announces-appointment-of-executive-software-engineering/",
+          "note": "MTN announces Marcin Waligora as Executive: Software Engineering."
+        },
+        {
+          "label": "MTN Software Solutions intern announcement",
+          "url": "https://www.mtn.com/mtn-welcomes-25-talented-young-people-to-develop-in-house-software-solutions/",
+          "note": "MTN describes Waligora as Group Executive: Software Engineering leading MTN Software Solutions."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://za.linkedin.com/in/waligoram",
+          "note": "Person profile for Marcin Waligora with MTN Group executive leadership."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "ITWeb appointment coverage",
+          "url": "https://www.itweb.co.za/article/waligora-joins-mtn-as-software-engineering-exec/JBwErvn3anB76Db2",
+          "note": "Reports MTN's appointment and prior Citigroup background."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/mtn-group-ltd/org-chart/marcin-waligora",
+          "note": "Summarizes current Global Head of Software Engineering role and prior Citi experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0u28r1l",
+    "displayName": "Márcio Santos",
+    "headline": "CTO and co-founder at Facio",
+    "company": "Facio",
+    "title": "CTO",
+    "location": "Sao Paulo, Brazil",
+    "tags": ["fintech", "CTO", "payroll lending", "AWS", "machine learning"],
+    "confidence": "high",
+    "confidenceNote": "Exact name, Facio affiliation, and CTO/co-founder role are confirmed by LinkedIn and multiple Facio/company sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Márcio Vinicius dos Santos is CTO and co-founder of Facio, a Brazilian fintech focused on employee financial services. Facio's own site lists Márcio Santos on the team, and Facio press material names him as a founder who previously worked at AWS.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/marcio-vinicius-dos-santos",
+          "note": "Lists Márcio Vinicius dos Santos as CTO and Co-Founder at Facio."
+        },
+        {
+          "label": "Facio about page",
+          "url": "https://facio.com.br/sobre-a-facio/",
+          "note": "Facio first-party team page includes Márcio Santos."
+        },
+        {
+          "label": "Facio press page",
+          "url": "https://facio.com.br/imprensa/",
+          "note": "Names Márcio dos Santos as a founder and notes prior AWS work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Startups.com.br funding article",
+          "url": "https://startups.com.br/negocios/fintech-facio-levanta-5-milhoes-e-prepara-fundo-de-divida/",
+          "note": "Reports Facio funding and identifies Márcio Santos as a founder who worked at AWS."
+        },
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/facio/org-chart/marcio-vinicius-dos-santos",
+          "note": "Lists him as Co-Founder and CTO at Facio with prior AWS and Zocdoc experience."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "19w4uq1",
+    "displayName": "Marek Janetzke",
+    "headline": "Founder and CEO of Lucid Labs GmbH",
+    "company": "Lucid Labs GmbH",
+    "title": "Founder",
+    "location": "Berlin, Germany",
+    "tags": ["AI agents", "AI consulting", "entrepreneurship", "legal tech", "workflow automation"],
+    "confidence": "high",
+    "confidenceNote": "Exact name and Lucid Labs founder/CEO role are confirmed by Lucid Labs first-party pages and corroborated by secondary sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Marek Janetzke is founder and CEO of Lucid Labs, a Berlin-based AI consulting and implementation firm focused on productive AI agents for mid-market companies. Lucid Labs says he has 15+ years of technology, entrepreneurship, and AI experience, including prior CEO work at Flightright.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Lucid Labs homepage",
+          "url": "https://www.lucidlabs.de/en/",
+          "note": "States Marek Janetzke founded Lucid Labs and leads AI-agent work for mid-market companies."
+        },
+        {
+          "label": "Lucid Labs about page",
+          "url": "https://www.lucidlabs.de/en/about-us",
+          "note": "First-party bio describes Janetzke as founder, entrepreneur, and AI strategist."
+        },
+        {
+          "label": "Lucid Labs keynote page",
+          "url": "https://www.lucidlabs.de/en/keynote-speaker-marek-janetzke",
+          "note": "Positions him as CEO of Lucid Labs and AI keynote speaker."
+        },
+        {
+          "label": "Lucid Labs imprint",
+          "url": "https://www.lucidlabs.de/en/imprint",
+          "note": "Lists Lucid Labs GmbH as represented by Marek Janetzke."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "DUP Magazin article",
+          "url": "https://www.dup-magazin.de/technologie/ki-agenten-sind-die-neuen-mitarbeitenden",
+          "note": "Identifies Janetzke as CEO of Lucid Labs and co-founder of Flightright."
+        },
+        {
+          "label": "F6S Lucid Labs profile",
+          "url": "https://www.f6s.com/company/lucid-labs",
+          "note": "Lists Marek Janetzke as founder and managing director of Lucid Labs in Berlin."
+        },
+        {
+          "label": "Flightright leadership-change PDF",
+          "url": "https://assets.flightright.net/public/uploads/cms/serve/press/DE/171204_CEO-Wechsel%2Bbei%2BFlightright.pdf",
+          "note": "Press material references Marek Janetzke as former CEO moving to the advisory board."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0827dmf",
+    "displayName": "Maria Gorskikh",
+    "headline": "Cofounder/CEO at Maritime and Project NANDA researcher focused on agentic web infrastructure",
+    "company": "Maritime",
+    "title": "CEO",
+    "location": "San Francisco, CA",
+    "tags": ["AI agents", "agentic web", "protocols", "MIT", "startup founder"],
+    "confidence": "high",
+    "confidenceNote": "Multiple person-specific sources align on Maritime, Project NANDA, and AI agents; CEO title is supported by LinkedIn while some event pages use cofounder/researcher wording.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Maria Gorskikh works on AI agents, agent communication protocols, and human-AI collaboration. Public sources identify her as a Maritime cofounder and Project NANDA contributor, with MIT-related teaching and workshop activity around AI agents.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website: research",
+          "url": "https://mariagorskikh.com/research",
+          "note": "Describes her work on agent communication protocols and Project NANDA research."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/mariagorskikh",
+          "note": "Lists Cofounder at Maritime and researcher/agentic-web focus."
+        },
+        {
+          "label": "Project NANDA",
+          "url": "https://projectnanda.org/",
+          "note": "Lists Maria Gorskikh as a contributor."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "MIT Technology Review EmTech speaker page",
+          "url": "https://event.technologyreview.com/emtech-mit-2025/speaker/1928379/maria-gorskikh",
+          "note": "Speaker bio cites founder/researcher work in AI infrastructure and human-AI collaboration."
+        },
+        {
+          "label": "Imagination in Action speaker page",
+          "url": "https://imaginationinaction.co/2605whoop/speakers/maria-gorskikh",
+          "note": "Identifies her as Project NANDA researcher, MIT visiting lecturer, and Maritime cofounder."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1v249v7",
+    "displayName": "Mariano Dilascio",
+    "headline": "Director of engineering at FPT Software focused on AI-first engineering and delivery",
+    "company": "FPT Software",
+    "title": "Director of Engineering",
+    "location": "San Jose, Costa Rica",
+    "tags": ["engineering leadership", "AI-first engineering", "enterprise AI", "delivery", "global teams"],
+    "confidence": "medium",
+    "confidenceNote": "Sources are person-specific and align with the row, but most detailed corroboration is from LinkedIn/company social posts rather than standalone company bio pages.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mariano Dilascio is publicly identified as a Director of Engineering at FPT Software/FPT Americas. FPT company posts describe him as leading AI-first engineering practices, training, and delivery models for US-market work.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/mdilascio",
+          "note": "Identifies him as Director of Engineering at FPT Software with AI-first engineering focus."
+        },
+        {
+          "label": "FPT Software Career LinkedIn post",
+          "url": "https://www.linkedin.com/posts/fptsoftwarecareer_fptpeople-ai-technology-activity-7425386722357751808-XcGt",
+          "note": "Company post profiles him as FPT Americas Director of Engineering and AI-first strategy leader."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "FPT Americas LinkedIn post",
+          "url": "https://www.linkedin.com/posts/fpt-software-americas_partnership-collaboration-digitaltransformation-activity-7437997648858236528-yxHL",
+          "note": "Mentions him in FPT/Conga delivery collaboration context."
+        },
+        {
+          "label": "FPT Latin America LinkedIn post",
+          "url": "https://www.linkedin.com/posts/fpt-software-latam_bestshore-globaldelivery-fptlatam-activity-7392599469759979521-g9lt",
+          "note": "Shows FPT LatAm engagement around global delivery."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "03xr00s",
+    "displayName": "Marius Moscovici",
+    "headline": "Founder and CEO of Metric Insights, focused on BI governance and analytics adoption",
+    "company": "Metric Insights",
+    "title": "CEO",
+    "location": "San Francisco, CA",
+    "tags": ["business intelligence", "data governance", "analytics", "enterprise software", "founder CEO"],
+    "confidence": "high",
+    "confidenceNote": "Company resources, speaker pages, and contributor bios consistently identify him as Metric Insights founder/CEO.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Marius Moscovici is the founder and CEO of Metric Insights. His public work centers on business intelligence portals, BI governance, data governance, and helping organizations make analytics assets discoverable and trusted.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Metric Insights webinar page",
+          "url": "https://www.metricinsights.com/resources/top-7-lies-we-tell-ourselves-about-data-governance/",
+          "note": "Identifies him as Metric Insights CEO in a data-governance webinar."
+        },
+        {
+          "label": "Metric Insights BI maturity resource",
+          "url": "https://www.metricinsights.com/resources/business-intelligence-maturity-the-foundation-for-advanced-analytics/",
+          "note": "Lists him as CEO and Founder of Metric Insights."
+        },
+        {
+          "label": "Metric Insights AI BI Concierge post",
+          "url": "https://www.metricinsights.com/blog/metric-insights-integrates-with-ai-to-enable-conversational-bi-discovery-with-the-release-of-its-bi-concierge/",
+          "note": "Quotes him as Founder and CEO on AI-enabled BI discovery."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "World Economic Forum contributor page",
+          "url": "https://www.weforum.org/stories/authors/marius-moscovici/",
+          "note": "Identifies him as founder and CEO of Metric Insights."
+        },
+        {
+          "label": "TechCon 365 speaker page",
+          "url": "https://techcon365.com/Seattle/component/content/article/849-marius-moscovici",
+          "note": "Speaker bio cites analytics and data-warehousing background."
+        },
+        {
+          "label": "Novel Capital profile",
+          "url": "https://novelcapital.com/marius-moscovici-founder-ceo-metric-insights/",
+          "note": "Founder/CEO profile for Metric Insights."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1kmdcbl",
+    "displayName": "Mark Epling",
+    "headline": "BYU IT administration leader and information-technology director",
+    "company": "BYU",
+    "title": "IT Director",
+    "location": "Provo, UT",
+    "tags": ["higher-ed IT", "IT administration", "applications engineering", "technology operations"],
+    "confidence": "medium",
+    "confidenceNote": "Two person-specific sources support the BYU IT identity, but public detail beyond role and institution is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mark Epling is listed by BYU Assessment and Planning in IT Administration. His LinkedIn profile describes him as an experienced Director of Information Technology; additional public detail is limited.",
+    "sources": {
+      "primary": [
+        {
+          "label": "BYU Assessment and Planning directory",
+          "url": "https://assessmentandplanning.byu.edu/directory/mark-epling",
+          "note": "Official BYU directory entry listing Mark Epling in IT Administration."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/mark-epling-40329910",
+          "note": "Describes him as an experienced Director of Information Technology at Brigham Young University."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "BYU ASUR Council page",
+          "url": "https://assessmentandplanning.byu.edu/our-committee",
+          "note": "Lists Mark Epling under IT Administration."
+        },
+        {
+          "label": "Wiza profile",
+          "url": "https://wiza.co/d/brigham-young-university/ce4a/mark-epling",
+          "note": "Secondary profile lists him at Brigham Young University in applications engineering."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "19tv9gy",
+    "displayName": "Mark LaPorta",
+    "headline": "Chief data scientist at Defilade Capital Management",
+    "company": "Defilade Capital Management",
+    "title": "Chief Data Scientist",
+    "location": "Emeryville, CA",
+    "tags": ["data science", "investment management", "quantitative finance", "capital management"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and SEC Form ADV corroborate the identity and role, but there are few additional public person-specific sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mark LaPorta is publicly listed as Chief Data Scientist at Defilade Capital. Public sources tie him to Defilade Capital and Columbia University; further person-specific public material is sparse.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/mark-laporta-91782539",
+          "note": "Identifies him as Chief Data Scientist at Defilade Capital."
+        },
+        {
+          "label": "SEC Form ADV for Defilade Capital Management",
+          "url": "https://reports.adviserinfo.sec.gov/reports/ADV/337997/PDF/337997.pdf",
+          "note": "Regulatory filing lists Mark Anthony LaPorta as Chief Data Scientist."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Fingale Defilade Capital profile",
+          "url": "https://fingale.com/firms/defilade-capital-management",
+          "note": "Secondary firm profile repeats the Chief Data Scientist listing from Form ADV."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0zvdd5d",
+    "displayName": "Mark Szarka",
+    "headline": "Deloitte senior manager and AI innovation leader focused on strategy and agentic AI",
+    "company": "Deloitte",
+    "title": "AI Leader",
+    "location": "New York, NY",
+    "tags": ["AI strategy", "agentic AI", "consulting", "innovation", "enterprise transformation"],
+    "confidence": "high",
+    "confidenceNote": "Deloitte first-party profile and Deloitte article attribution align with LinkedIn and event/publication sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Mark Szarka is a Senior Manager and AI & Innovation Leader at Deloitte, based in New York. Deloitte and event/publication sources associate him with AI strategy, agentic AI enterprise adoption, hybrid AI, and innovation/product leadership.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Deloitte profile",
+          "url": "https://www.deloitte.com/us/en/about/people/profiles.mark-szarka%2B68dc031f.html",
+          "note": "Official Deloitte profile lists him as Senior Manager, AI & Innovation Leader, in New York."
+        },
+        {
+          "label": "Deloitte agentic AI adoption guide",
+          "url": "https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/articles/agentic-ai-enterprise-adoption-guide.html",
+          "note": "Deloitte article lists him among AI contributors/authors."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/mszarka",
+          "note": "Identifies him as a leader in Deloitte's Strategy & AI practice."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Indiana University Kelley analytics post",
+          "url": "https://blogs.iu.edu/kelleybizanalytics/2024/09/06/redesigning-productivity-in-the-age-of-cognitive-acceleration/",
+          "note": "Recaps a presentation by Mark Szarka on generative AI and productivity."
+        },
+        {
+          "label": "Deloitte AI360 YouTube episode",
+          "url": "https://www.youtube.com/watch?v=UsEds6xvW6Q",
+          "note": "Lists him as a Deloitte senior manager discussing hybrid AI."
+        },
+        {
+          "label": "Deloitte AI X post",
+          "url": "https://x.com/DeloitteAI/status/1825578475106779221",
+          "note": "DeloitteAI post references his AI and strategy work."
+        }
+      ]
+    }
+  }
+]

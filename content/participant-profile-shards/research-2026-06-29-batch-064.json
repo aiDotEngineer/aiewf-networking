@@ -1,0 +1,207 @@
+[
+  {
+    "lookupKey": "0q45h8f",
+    "displayName": "Nick Nisi",
+    "headline": "Developer experience engineer focused on authentication, TypeScript, AI-assisted development, and developer tooling.",
+    "company": "WorkOS",
+    "title": "Developer Experience Engineer",
+    "location": "Omaha, Nebraska, US",
+    "tags": ["developer experience", "TypeScript", "authentication", "AI tooling", "conference organizer", "technical content"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, GitHub profile, LinkedIn, and WorkOS-authored content consistently identify Nick Nisi as a WorkOS developer experience engineer with TypeScript, DX, and AI/evals interests.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Developer experience engineer at WorkOS helping developers build with authentication and modern web tooling. Nick is a long-time TypeScript advocate, conference organizer, streamer, and technical writer with recent work around AI-assisted development and practical LLM eval workflows.",
+    "sources": {
+      "primary": [
+        { "label": "Personal website", "url": "https://nicknisi.com/", "note": "Personal homepage lists WorkOS developer experience role, TypeScript focus, talks, and DX writing." },
+        { "label": "Personal about page", "url": "https://nicknisi.com/about/", "note": "Bio describes Nick as a Developer Experience Engineer at WorkOS and notes TypeScript/community work." },
+        { "label": "GitHub profile", "url": "https://github.com/nicknisi", "note": "Profile states he is a Developer Experience Engineer at WorkOS building tools, docs, and authentication experiences." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nicknisi", "note": "Lists WorkOS and Developer and Agent Experiences role." }
+      ],
+      "secondary": [
+        { "label": "WorkOS blog author page/article", "url": "https://workos.com/blog/writing-my-first-evals", "note": "WorkOS republishes Nick's evals article, reinforcing AI/evaluation interests." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1el0xkc",
+    "displayName": "Nick Wood",
+    "headline": "Software engineering and architecture leader working across AI platforms, cloud engineering, and digital health technology.",
+    "company": "Abbott",
+    "title": "Director, Engineering and Architecture",
+    "location": "Greater Chicago Area, US",
+    "tags": ["software engineering leadership", "architecture", "AI platforms", "GenAI", "cloud engineering", "health technology"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and related public posts consistently connect Nick Wood with Abbott, software engineering leadership, AI/GenAI platforms, and cloud engineering; exact current title has some public-source variation.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Technology leader at Abbott focused on software engineering, architecture, AI and GenAI platforms, cloud engineering, and technology strategy. Useful match for conversations about enterprise AI adoption in regulated health and medical-device environments.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nickwooduk", "note": "Lists Abbott experience, Greater Chicago location, and software engineering, architecture, AI platforms, and cloud engineering focus." },
+        { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/nickwooduk_leadership-whartonexecutiveeducation-professionaldevelopment-activity-7210760625243705344-MJZg", "note": "Shows Nick Wood's software engineering leadership and AI/GenAI platform positioning." }
+      ],
+      "secondary": [
+        { "label": "3BL Media article", "url": "https://www.3blmedia.com/news/workplace-where-collaboration-innovation", "note": "Mentions Nick Wood as Director, Digital Software Engineering in Abbott innovation context." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0jqljkt",
+    "displayName": "Nicolas LECLUSE",
+    "headline": "CTO at Sixense Digital working on digital infrastructure monitoring, asset management, and inspection products.",
+    "company": "Sixense Digital",
+    "title": "CTO",
+    "location": "Greater Paris Metropolitan Region, France",
+    "tags": ["CTO", "infrastructure monitoring", "asset management", "digital inspection", "construction technology", "Sixense"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, The Org, Sixense-related posts, and app-store metadata consistently connect Nicolas LECLUSE to Sixense Digital CTO/product leadership.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CTO at Sixense Digital, working on digital products for infrastructure monitoring, inspections, and asset management. Nicolas is connected to Sixense's Beyond platform ecosystem and innovation work across civil infrastructure and monitoring use cases.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://fr.linkedin.com/in/nicolas-lecluse-a3488752", "note": "Lists Nicolas LECLUSE with Sixense Group experience and Paris-area location." },
+        { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/nicolas-lecluse-a3488752_conseilsdepartementaux-sixense-platformsolutions-activity-6816409597209780225-mm44", "note": "Identifies him as CTO - Sixense Digital and references Beyond Asset work." },
+        { "label": "Apple App Store - Beyond Monitoring", "url": "https://apps.apple.com/fr/app/beyond-monitoring/id1585550329?l=en-GB", "note": "Lists SIXENSE DIGITAL as provider for a monitoring product in the Sixense digital portfolio." }
+      ],
+      "secondary": [
+        { "label": "The Org - Sixense HQ", "url": "https://theorg.com/org/sixense/offices/hq", "note": "Lists Nicolas LECLUSE as CTO - Sixense Digital." },
+        { "label": "Sixense Group innovation awards", "url": "https://www.sixense-group.com/en/newsroom/soletanche-freyssinet-2023-innovation-awards-sixense-wins-multiple-awards", "note": "Names LECLUSE Nicolas among contributors to a Beyond Monitoring innovation award." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1fenung",
+    "displayName": "Nidhi Vyas",
+    "headline": "Google DeepMind product leader translating frontier AI research into multimodal Gemini and responsible AI products.",
+    "company": "Google DeepMind",
+    "title": "Product Lead",
+    "location": "Cupertino, California, US",
+    "tags": ["product leadership", "Google DeepMind", "Gemini", "multimodal AI", "responsible AI", "SynthID"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Sessionize, Google DeepMind blog acknowledgements, and research profiles consistently support Google DeepMind product leadership, Gemini/multimodal work, and SynthID product delivery.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product leader at Google DeepMind focused on turning frontier AI research into products people use. Nidhi has worked on multimodal Gemini-powered experiences and responsible AI efforts such as SynthID, with a background spanning Apple, CMU, and NLP research.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/nidhivyas", "note": "Lists Google DeepMind, ex-Apple and CMU background, and product work." },
+        { "label": "Sessionize speaker profile", "url": "https://sessionize.com/nidhi/", "note": "Describes Nidhi as a Google DeepMind product leader who has built and launched multimodal Gemini-powered experiences." },
+        { "label": "Google DeepMind SynthID blog", "url": "https://deepmind.google/blog/identifying-ai-generated-images-with-synthid/", "note": "Thanks Nidhi Vyas for driving product delivery for SynthID." }
+      ],
+      "secondary": [
+        { "label": "Google Scholar profile", "url": "https://scholar.google.com/citations?hl=en&user=F9-rZXkAAAAJ", "note": "Research profile affiliated with Google DeepMind, covering machine learning and NLP." },
+        { "label": "Nature article record", "url": "https://www.nature.com/articles/s41586-024-08025-4", "note": "SynthID-Text publication context for Google DeepMind watermarking work." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ugaoq2",
+    "displayName": "Niels Rogge",
+    "headline": "Machine learning engineer at Hugging Face focused on open-source Transformers, computer vision, multimodal models, and making AI accessible.",
+    "company": "Hugging Face",
+    "title": "Machine Learning Engineer",
+    "location": "Belgium",
+    "tags": ["machine learning", "Hugging Face", "Transformers", "open source", "computer vision", "multimodal AI"],
+    "confidence": "high",
+    "confidenceNote": "Hugging Face, GitHub, LinkedIn, X, and VAIA profiles consistently identify Niels Rogge as an ML engineer at Hugging Face with open-source AI and Transformers work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Machine learning engineer at Hugging Face working on open-source AI, especially Transformers, computer vision, multimodal models, and model accessibility. Niels is active across the Hugging Face ecosystem, GitHub, and public technical education.",
+    "sources": {
+      "primary": [
+        { "label": "Hugging Face profile", "url": "https://huggingface.co/nielsr", "note": "Profile lists Niels Rogge and links to GitHub, LinkedIn, and personal site; states interest in making AI accessible." },
+        { "label": "GitHub profile", "url": "https://github.com/nielsrogge", "note": "States he works as an ML engineer at Hugging Face on the open-source team and contributes to Transformers." },
+        { "label": "X profile", "url": "https://x.com/NielsRogge?lang=en", "note": "Identifies him as ML Engineer at Hugging Face and KU Leuven graduate." }
+      ],
+      "secondary": [
+        { "label": "VAIA expert profile", "url": "https://www.vaia.be/en/experts/niels-rogge", "note": "Describes his Hugging Face ML engineering work across LLMs, computer vision, time series, and accessible AI." },
+        { "label": "Hugging Face blog post", "url": "https://huggingface.co/blog/nielsr/contributing-to-transformers-with-codex", "note": "Authored technical post describing his Transformers contributions and broader Hugging Face work." },
+        { "label": "LinkedIn profile", "url": "https://be.linkedin.com/in/niels-rogge-a3b7a3127", "note": "Lists machine learning engineering work at ML6 and Hugging Face." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "05n9ueo",
+    "displayName": "Nik Blosser",
+    "headline": "Oregon's first Chief Privacy Officer and AI Strategist, shaping statewide privacy, data protection, and AI governance.",
+    "company": "State of Oregon",
+    "title": "Chief Privacy Officer and AI Strategist",
+    "location": "Oregon, US",
+    "tags": ["AI governance", "privacy", "public sector", "data protection", "state government", "policy"],
+    "confidence": "high",
+    "confidenceNote": "Official Oregon newsroom announcement and multiple government-technology/local-news sources consistently identify Nik Blosser as Oregon's Chief Privacy Officer and AI Strategist.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Oregon's first Chief Privacy Officer and AI Strategist, responsible for shaping state strategy around privacy, data protection, and AI. Nik is a useful match for public-sector AI governance, privacy programs, and responsible AI adoption in government.",
+    "sources": {
+      "primary": [
+        { "label": "Oregon Newsroom announcement", "url": "https://apps.oregon.gov/oregon-newsroom/OR/DAS/Posts/Post/state-cio-announces-the-first-chief-privacy-officer", "note": "Official announcement appointing Nik Blosser as Oregon's first Chief Privacy Officer and AI Strategist." }
+      ],
+      "secondary": [
+        { "label": "GovTech coverage", "url": "https://www.govtech.com/workforce/oregon-names-inaugural-chief-privacy-officer-ai-strategist", "note": "Reports on Blosser's appointment and role leading privacy and AI planning." },
+        { "label": "StateScoop coverage", "url": "https://statescoop.com/oregon-chief-privacy-officer-ai-strategist-nik-blosser/", "note": "Summarizes the new role's focus on privacy, data protection, and AI strategy." },
+        { "label": "KATU interview coverage", "url": "https://katu.com/news/local/meet-oregon-chief-privacy-officer-nik-blosser-ai-strategist", "note": "Local interview coverage describing his work as Oregon's first CPO and AI strategist." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "09so0w3",
+    "displayName": "Nikhil Tayal",
+    "headline": "Founder building Kriy.AI, a self-learning AI agent platform for delegated work.",
+    "company": "KriyAI, Inc.",
+    "title": "Founder / CEO",
+    "location": "San Francisco Bay Area, US",
+    "tags": ["AI agents", "startup founder", "delegated work", "agent reliability", "self-learning systems", "entrepreneurship"],
+    "confidence": "medium",
+    "confidenceNote": "Public evidence from LinkedIn directory snippets, X profile, SJSU event promotion, and company-directory records supports the KriyAI founder identity, but there is limited first-party company web presence available.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder building Kriy.AI, described publicly as a hosted self-learning AI agent platform for delegated work. Nikhil appears focused on agent reliability, memory/learning loops, and practical AI-agent workflows for production use.",
+    "sources": {
+      "primary": [
+        { "label": "X profile", "url": "https://x.com/Alloutnikhil", "note": "Profile describes Nikhil Tayal as building Kriy.AI for self-learning AI agents for delegated work." },
+        { "label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Nikhil/Tayal", "note": "Directory snippet lists Nikhil Tayal as building Kriy.AI with KriyAI, Inc. and San Francisco Bay Area location." }
+      ],
+      "secondary": [
+        { "label": "SJSU AI & Machine Learning Club event post", "url": "https://www.instagram.com/p/DIZ2nW-SoTg/", "note": "Promotes guest speaker Nikhil Tayal discussing reliable AI agents and KriyAI." },
+        { "label": "California company directory", "url": "https://ca.ltddir.com/KRIYA/2", "note": "Lists KriyAI LLC and Nikhil Tayal as associated agent; used only as supporting entity evidence." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0d8otdo",
+    "displayName": "Nikita Tkachenko",
+    "headline": "Founder of Evalyn, applying AI to audit customer-service conversations; also an author and educator in data analysis and prompt engineering.",
+    "company": "Evalyn",
+    "title": "Founder",
+    "location": "San Francisco, California, US",
+    "tags": ["AI startup founder", "customer-service analytics", "conversation auditing", "data analysis", "prompt engineering", "education"],
+    "confidence": "high",
+    "confidenceNote": "USF and Golden Gate University sources directly connect Nikita Tkachenko to Evalyn.ai; arXiv and Springer/Apress sources support his research, San Francisco location, and data-analysis author profile.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Evalyn, an AI company focused on auditing customer-service conversations. Nikita also teaches prompt engineering, conducts research, and authored *Data Insight Foundations: Step-by-Step Data Analysis with R* through Apress.",
+    "sources": {
+      "primary": [
+        { "label": "USF news profile", "url": "https://www.usfca.edu/news/students-co-author-study-land-jobs", "note": "States Nikita Tkachenko runs Evalyn, which uses AI to audit customer-service conversations, and teaches prompt engineering." },
+        { "label": "Golden Gate University event", "url": "https://ggu.edu/event/my-journey-launching-ai-startup-international-student/", "note": "Event page describes Prof. Nikita Tkachenko's journey building AI startup Evalyn.ai." },
+        { "label": "arXiv paper", "url": "https://arxiv.org/html/2505.01527v2", "note": "Lists Nikita Tkachenko with Evalyn affiliation in a research publication." }
+      ],
+      "secondary": [
+        { "label": "Springer/Apress book page", "url": "https://link.springer.com/book/10.1007/979-8-8688-0580-6", "note": "Author page for Nikita Tkachenko's 2025 Apress book on data analysis with R." },
+        { "label": "Apress GitHub repository", "url": "https://github.com/Apress/Data-Insight-Foundations", "note": "Publisher repository accompanying Nikita Tkachenko's Data Insight Foundations book." }
+      ]
+    }
+  }
+]

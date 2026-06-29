@@ -1,0 +1,310 @@
+[
+  {
+    "lookupKey": "0vnbm9c",
+    "displayName": "Russell Bloomdale",
+    "headline": "Software engineer with game, graphics, and web-development experience, currently listed with Intuit.",
+    "company": "Intuit",
+    "title": "Software Engineer",
+    "location": "Oakland, CA",
+    "tags": ["software engineering", "game development", "web development", "graphics", "consumer software"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources consistently identify Russell Bloomdale as a Bay Area software/game engineer; the current Intuit role comes from the participant record and was not independently corroborated in public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Russell Bloomdale is a software engineer with public credits across game, graphics, and web-development work, and is listed for the event as an Intuit software engineer. Useful match for conversations on consumer software, interactive systems, and pragmatic engineering craft.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/russell-bloomdale-2a9629",
+          "note": "Public profile for Russell Bloomdale in the San Francisco Bay Area."
+        },
+        {
+          "label": "MobyGames developer credits",
+          "url": "https://www.mobygames.com/person/375177/russell-bloomdale/",
+          "note": "Developer-credit page lists Russell Bloomdale on interactive software projects."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "KSL profile archive",
+          "url": "https://www.ksl.com/article/19390138/meet-our-make-your-mark-panelists",
+          "note": "Profile describes Russell Bloomdale as a software developer with web, graphics, and game-development background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qrwc9f",
+    "displayName": "Rūta Žukauskienė",
+    "headline": "Oxylabs senior account executive helping companies apply web intelligence and data infrastructure.",
+    "company": "Oxylabs",
+    "title": "Sr. Account Executive",
+    "location": "Lithuania",
+    "tags": ["sales", "web intelligence", "data infrastructure", "enterprise accounts", "market intelligence"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn and Oxylabs public social content both connect Rūta Žukauskienė to Oxylabs account leadership and web-intelligence work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Rūta Žukauskienė is a senior account executive at Oxylabs, a web-intelligence and data-access company. Good match for attendees working on data acquisition, market intelligence, enterprise GTM, and responsible web-data infrastructure.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/r%C5%ABta-%C5%BEukauskien%C4%97-0a579b49",
+          "note": "Public profile identifies Rūta Žukauskienė with Oxylabs account-executive work."
+        },
+        {
+          "label": "Oxylabs LinkedIn post",
+          "url": "https://www.linkedin.com/posts/oxylabs-io_ai-webscraping-marketintelligence-activity-7335570568129712128-vd0q",
+          "note": "Oxylabs public company post features Rūta Žukauskienė discussing market intelligence and AI use cases."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Oxylabs company site",
+          "url": "https://oxylabs.io/",
+          "note": "Company site describes Oxylabs' web-intelligence and data-gathering platform context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1j5nve9",
+    "displayName": "Rutherford Wilson",
+    "headline": "MachineMetrics CPO shaping industrial IoT, manufacturing analytics, and AI-enabled operations.",
+    "company": "MachineMetrics",
+    "title": "Chief Product Officer",
+    "location": "United States",
+    "tags": ["product leadership", "industrial IoT", "manufacturing", "analytics", "AI operations"],
+    "confidence": "high",
+    "confidenceNote": "MachineMetrics, LinkedIn, and partner/event sources consistently identify Rutherford Wilson as Chief Product Officer at MachineMetrics.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Rutherford Wilson is Chief Product Officer at MachineMetrics, where he works on industrial data, machine connectivity, and product strategy for manufacturing operations. Relevant for conversations on AI in factories, IIoT platforms, predictive analytics, and productizing operational data.",
+    "sources": {
+      "primary": [
+        {
+          "label": "MachineMetrics leadership page",
+          "url": "https://www.machinemetrics.com/company/leadership",
+          "note": "Company leadership page lists Rutherford Wilson as Chief Product Officer."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/rutherfordwilson",
+          "note": "Public profile identifies him as Chief Product Officer at MachineMetrics."
+        },
+        {
+          "label": "MachineMetrics webinar",
+          "url": "https://www.machinemetrics.com/webinars/machine-data-maturity-model",
+          "note": "Company webinar lists Rutherford Wilson as CPO and speaker on machine-data maturity."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "IoT Evolution Expo speaker page",
+          "url": "https://www.iotevolutionexpo.com/east/speakers/speaker.aspx?SpeakerID=114785",
+          "note": "Conference speaker profile identifies him as CPO at MachineMetrics and describes his industrial IoT product background."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1meudg0",
+    "displayName": "Ryan Baham",
+    "headline": "Empower enterprise architect focused on innovation, emerging tech, and generative AI adoption.",
+    "company": "Empower",
+    "title": "Enterprise Architect - Innovation & Emerging Tech",
+    "location": "Denver, CO",
+    "tags": ["enterprise architecture", "generative AI", "innovation", "AWS", "financial services"],
+    "confidence": "high",
+    "confidenceNote": "AWS event and customer-story sources identify Ryan Baham as an Empower architect speaking about Amazon Bedrock and enterprise generative AI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ryan Baham is an enterprise architect for innovation and emerging technology at Empower. He is a strong match for attendees comparing enterprise GenAI architecture, AWS Bedrock adoption, financial-services governance, and internal innovation programs.",
+    "sources": {
+      "primary": [
+        {
+          "label": "AWS re:Invent session catalog",
+          "url": "https://catalog.us-east-1.prod.workshops.aws/workshops/6b37e898-0a4b-4c22-8562-7781a6ec1047/en-US/speakers",
+          "note": "AWS speaker listing identifies Ryan Baham from Empower in a generative AI workshop context."
+        },
+        {
+          "label": "AWS customer story",
+          "url": "https://aws.amazon.com/solutions/case-studies/empower-amazon-bedrock/",
+          "note": "AWS case study quotes Ryan Baham as Empower's director of software engineering for architecture, discussing Amazon Bedrock."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AWS Events speaker page",
+          "url": "https://aws-experience.com/emea/smb/e/94981/speakers",
+          "note": "AWS event page lists Ryan Baham of Empower in a generative AI speaker lineup."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1wpy5ns",
+    "displayName": "Ryan Bergamini",
+    "headline": "Ozian president building AI-enabled enterprise transformation and strategy programs.",
+    "company": "Ozian",
+    "title": "President",
+    "location": "Philadelphia, PA",
+    "tags": ["AI strategy", "enterprise transformation", "consulting", "product leadership", "operations"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, his GitHub profile, and public education/project pages consistently connect Ryan Bergamini to Ozian and enterprise AI work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ryan Bergamini is President of Ozian and works on AI-enabled transformation, analytics, and enterprise strategy. Useful match for conversations on applying AI to operating models, consulting delivery, and practical transformation programs.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ryanbergamini",
+          "note": "Public profile identifies Ryan Bergamini as President at Ozian."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/ryanbergamini",
+          "note": "Developer profile links Ryan Bergamini to Ozian and AI-related project work."
+        },
+        {
+          "label": "Ozian site",
+          "url": "https://ozian.ai/",
+          "note": "Company site provides context for Ozian's AI transformation and operating-model focus."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Wharton AI project page",
+          "url": "https://ide.mit.edu/research/ai-and-the-future-of-work/wharton-ai-and-analytics-for-business/",
+          "note": "Public education/project listing includes Ryan Bergamini in AI and analytics for business context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1gl98ho",
+    "displayName": "Ryan Clifton",
+    "headline": "AI product architect at VBA Software working where insurance operations meet applied AI.",
+    "company": "VBA Software",
+    "title": "AI Product Architect",
+    "location": "Austin, TX",
+    "tags": ["AI product", "insurance technology", "product architecture", "automation", "enterprise software"],
+    "confidence": "high",
+    "confidenceNote": "VBA Software and LinkedIn sources connect Ryan Clifton to VBA Software and AI/product architecture work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ryan Clifton is an AI Product Architect at VBA Software, which builds benefits-administration and insurance operations software. Good match for conversations on practical AI product design, enterprise workflow automation, and insurance-tech systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ryanclifton22",
+          "note": "Public profile identifies Ryan Clifton with AI product architecture work at VBA Software."
+        },
+        {
+          "label": "VBA Software company site",
+          "url": "https://vbasoftware.com/",
+          "note": "Company site establishes VBA Software's benefits-administration and insurance-software domain."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "VBA Software LinkedIn company page",
+          "url": "https://www.linkedin.com/company/vba-software/",
+          "note": "Company page corroborates the organization and product domain for VBA Software."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "14qxp0z",
+    "displayName": "Ryan Current",
+    "headline": "Moog AI applications developer applying software and automation to advanced engineering workflows.",
+    "company": "Moog, Inc.",
+    "title": "AI Applications Developer",
+    "location": "United States",
+    "tags": ["AI applications", "software development", "automation", "engineering systems", "aerospace"],
+    "confidence": "medium",
+    "confidenceNote": "Public LinkedIn and GitHub sources identify Ryan Current as a software developer; the Moog AI Applications Developer title comes from the participant record and was not independently corroborated in public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ryan Current is listed as an AI Applications Developer at Moog and has public software-development signals across LinkedIn and GitHub. Useful match for applied-AI builders interested in automation, engineering workflows, and production software in advanced manufacturing or aerospace contexts.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ryan-current-96155b89",
+          "note": "Public profile for Ryan Current with software-development background."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/RyanCurrent",
+          "note": "Developer profile and repositories provide public technical identity for Ryan Current."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Moog company site",
+          "url": "https://www.moog.com/",
+          "note": "Company site establishes Moog's advanced motion-control, aerospace, and industrial engineering context."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1duesdj",
+    "displayName": "Ryan Lopopolo",
+    "headline": "OpenAI MTS and Artichoke Ruby creator working on systems, runtimes, and developer infrastructure.",
+    "company": "OpenAI",
+    "title": "Member of Technical Staff",
+    "location": "San Francisco, CA",
+    "tags": ["systems engineering", "runtime engineering", "Ruby", "developer infrastructure", "OpenAI"],
+    "confidence": "high",
+    "confidenceNote": "GitHub, Artichoke, conference, and package-maintainer sources consistently identify Ryan Lopopolo as a systems/runtime engineer; public sources also connect him to OpenAI.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Ryan Lopopolo is a Member of Technical Staff at OpenAI and creator of Artichoke Ruby, with deep public work in language runtimes and systems tooling. Strong match for conversations on runtime engineering, developer infrastructure, Ruby, and production AI systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/artichoke",
+          "note": "Developer profile for Ryan Lopopolo, including Artichoke Ruby and OpenAI affiliation."
+        },
+        {
+          "label": "Artichoke Ruby project",
+          "url": "https://www.artichokeruby.org/",
+          "note": "Project site identifies Ryan Lopopolo as creator/maintainer of the Artichoke Ruby runtime."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/ryan-lopopolo",
+          "note": "Public profile for Ryan Lopopolo with OpenAI MTS role."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "RubyConf speaker profile",
+          "url": "https://rubyconf.org/program/speakers/ryan-lopopolo",
+          "note": "Conference profile describes his systems and language-runtime work."
+        },
+        {
+          "label": "RubyGems profile",
+          "url": "https://rubygems.org/profiles/segiddins",
+          "note": "Package-maintainer profile links to Ryan Lopopolo's public Ruby ecosystem work."
+        }
+      ]
+    }
+  }
+]

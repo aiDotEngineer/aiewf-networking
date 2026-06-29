@@ -1,0 +1,231 @@
+[
+  {
+    "lookupKey": "0bjbl4y",
+    "displayName": "Snigdha Sinha",
+    "headline": "Engineering executive scaling fintech and payments platforms",
+    "company": "Early Warning",
+    "title": "VP Of Engineering",
+    "location": "Chicago, US",
+    "tags": ["engineering leadership", "fintech", "payments", "data platforms", "scaling teams"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, her own LinkedIn announcement, The Org, and executive-directory results consistently identify Snigdha Sinha as VP of Engineering at Early Warning/Paze; Chicago-area location is inferred from public Park Ridge, Illinois profile evidence.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of Engineering at Early Warning/Paze, focused on scaling fintech and payments engineering organizations. Prior public profile evidence connects her to data-solutions and engineering leadership roles at Adyen and PayPal/Braintree.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/snigdha-sinha-2090a24", "note": "Public profile identifies Snigdha Sinha at Early Warning, with University of Michigan background and Chicago-area location."},
+        {"label": "LinkedIn announcement", "url": "https://www.linkedin.com/posts/snigdha-sinha-2090a24_newbeginnings-leadership-fintech-activity-7353034191032213505-aLdN", "note": "Her post says she started as VP of Engineering at Paze, Early Warning, and is building in payments."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/early-warning/org-chart/snigdha-sinha", "note": "Profile lists her as VP of Engineering at Early Warning and summarizes prior Adyen and PayPal/Braintree leadership roles."},
+        {"label": "Datanyze Early Warning profile", "url": "https://www.datanyze.com/companies/early-warning/77728180", "note": "Company directory result lists Snigdha Sinha as Vice President, Engineering at Early Warning."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0c1h6el",
+    "displayName": "Solomon Abiola",
+    "headline": "Applied AI product and governance leader working on mission-critical enterprise workflows",
+    "company": "Novartis",
+    "title": "AI Product Director",
+    "location": "Cambridge, US",
+    "tags": ["AI product", "responsible AI", "healthcare AI", "AI governance", "enterprise AI", "public sector AI"],
+    "confidence": "medium",
+    "confidenceNote": "The Black Tech Collective profile directly places him at Novartis as Director and AI Use Case Lead, while LinkedIn and Aspen Policy Academy corroborate the same Solomon Abiola identity and AI/governance background; the exact participant title AI Product Director is treated as attendee-provided rather than independently confirmed verbatim.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI product leader at Novartis working on U.S. Commercial AI use cases and enterprise adoption. Former Maryland AI/ML policy and governance leader and AWS research science lead with dual PhDs spanning computer science and translational biomedical sciences.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/solomonabiola", "note": "Public profile describes Solomon Abiola as an AI product leader and builder with dual PhDs and AI systems focus."},
+        {"label": "The Black Tech Collective profile", "url": "https://theblacktechcollective.org/about/leadership/solomon-abiola", "note": "Profile says he serves as Director and AI Use Case Lead at Novartis, driving AI initiatives across U.S. Commercial operations."}
+      ],
+      "secondary": [
+        {"label": "Aspen Policy Academy profile", "url": "https://aspenpolicyacademy.org/person/solomon-abiola/", "note": "Profile identifies him as an AI/ML policy and governance director for Maryland with prior AWS, EcoMap, Tetra, and AI-health PhD background."},
+        {"label": "LinkedIn article", "url": "https://www.linkedin.com/pulse/from-engineering-aerospace-tech-healthcare-ai-cross-disciplinary-mkojf", "note": "Public article summarizes his dual PhD background and AI-in-healthcare expertise."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1s93jaw",
+    "displayName": "Son Tung Nguyen",
+    "headline": "Founder building AI-native affiliate and SaaS growth infrastructure",
+    "company": "Affitor LLC",
+    "title": "Founder & CEO",
+    "location": "San Francisco, US",
+    "tags": ["affiliate marketing", "SaaS", "AI agents", "developer tools", "growth infrastructure", "Stripe"],
+    "confidence": "low",
+    "confidenceNote": "Public evidence links Son Tung Nguyen to Affitor LLC d/b/a Kyma API and public Son Piaz/Nguyen Tung Son social profiles to founding Affitor, but the name variant means the identity match should be reviewed before participant approval.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder working on Affitor, an AI-native affiliate network for SaaS companies. Public product materials emphasize agent-friendly workflows, open affiliate-program data, Stripe-native tracking, and SaaS partnership growth.",
+    "sources": {
+      "primary": [
+        {"label": "Kyma API terms", "url": "https://kymaapi.com/terms", "note": "Terms page names Son Tung Nguyen as DMCA agent for Affitor LLC d/b/a Kyma API at a San Francisco address."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sonpiaz", "note": "Public profile for Son Piaz says he is the founder of Affitor and describes Affitor LLC as an affiliate marketing platform."},
+        {"label": "Affitor website", "url": "https://affitor.com/", "note": "Company site describes Affitor as an AI-native affiliate network built for SaaS companies and partnerships."}
+      ],
+      "secondary": [
+        {"label": "Affitor GitHub organization", "url": "https://github.com/Affitor", "note": "GitHub organization describes Affitor as AI-native affiliate marketing for SaaS with agent-first tools and open-source affiliate workflows."},
+        {"label": "Public Facebook profile/post", "url": "https://www.facebook.com/me.nguyentungson/", "note": "Public social profile text for Nguyen Tung Son references Affitor as an affiliate platform he built, supporting the name-variant match."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1j333fs",
+    "displayName": "Sony Manuel",
+    "headline": "Engineering director leading developer platform and enterprise software teams",
+    "company": "Rubrik, Inc.",
+    "title": "Senior Engineering Director",
+    "location": "Bengaluru, IN",
+    "tags": ["engineering leadership", "developer platforms", "enterprise software", "cloud data security", "platform engineering"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and The Org align on Sony Manuel at Rubrik in a senior engineering leadership role; exact title wording differs between Senior Director of Engineering and the attendee-provided Senior Engineering Director.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior engineering leader at Rubrik working on developer platform and enterprise software teams. Public career history connects him to engineering leadership roles at Rubrik, Oracle, Sun Microsystems, and earlier software-development organizations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://in.linkedin.com/in/sonymanuel", "note": "Public profile identifies Sony Manuel at Rubrik in Bengaluru with developer-platform and product-management leadership context."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/rubrik/org-chart/sony-manuel", "note": "Profile lists him as Senior Director of Engineering at Rubrik and summarizes prior Oracle, Sun Microsystems, and SIP Technologies experience."},
+        {"label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/Sony/Manuel", "note": "Directory result lists Sony Manuel as Senior Director Of Engineering at Rubrik, Inc. in Bengaluru."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0zzyges",
+    "displayName": "Sreejith Gireesan",
+    "headline": "Enterprise IT strategy leader applying generative AI, cloud, and security architecture",
+    "company": "Selective Insurance",
+    "title": "AVP",
+    "location": "Branchville, US",
+    "tags": ["enterprise IT strategy", "generative AI", "cloud migration", "security architecture", "insurance technology"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, The Org, and LinkedIn activity consistently identify Sreejith Gireesan as an assistant vice president at Selective Insurance focused on enterprise strategy, generative AI, cloud, and security; public sources do not strongly verify Branchville beyond Selective Insurance context.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Assistant vice president at Selective Insurance focused on enterprise IT strategy, generative AI, cloud migration, and security architecture. Useful match for conversations on AI adoption inside regulated insurance and enterprise technology organizations.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/sreejithgireesan", "note": "Public profile lists him as Assistant Vice President for enterprise IT strategy, generative AI, and security at Selective Insurance."},
+        {"label": "LinkedIn post", "url": "https://www.linkedin.com/posts/sreejithgireesan_smallbusinesses-cybersecurity-activity-6779936280663875584-g0wR", "note": "Public post shows his profile title as Assistant Vice President for enterprise strategy and execution, cloud, generative AI, and security."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/selective-insurance/org-chart/sreejith-gireesan", "note": "Profile lists him as Assistant Vice President for Enterprise Strategy and Execution at Selective Insurance and describes cloud, security, and generative AI initiatives."},
+        {"label": "Selective Insurance LinkedIn post", "url": "https://www.linkedin.com/posts/sreejithgireesan_check-out-this-job-at-selective-insurance-activity-7041144218836230144-UWO3", "note": "Public repost connects his Selective Insurance network and enterprise data and analytics architecture context."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1bgrwf7",
+    "displayName": "Stefania Druga",
+    "headline": "AI research scientist studying self-improving agents, creative AI, and learning with AI",
+    "company": "Sakana.ai",
+    "title": "Research Scientist",
+    "location": "Tokyo, JP",
+    "tags": ["AI research", "self-improving agents", "AI education", "creative AI", "multimodal AI", "human-AI learning"],
+    "confidence": "high",
+    "confidenceNote": "Personal portfolio, LinkedIn, OpenReview, and conference pages consistently identify Stefania Druga as a Sakana AI research scientist with prior Google DeepMind and AI-learning research background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Research Scientist at Sakana AI working on self-improving research agents. Her broader research spans creative AI applications, AI education, multimodal systems, and how people learn with and about AI.",
+    "sources": {
+      "primary": [
+        {"label": "Personal portfolio", "url": "https://stefania11.github.io/", "note": "Portfolio says she is a Staff Research Scientist at Sakana.ai RSI Lab working on self-improving research agents."},
+        {"label": "LinkedIn profile", "url": "https://jp.linkedin.com/in/drugastefania", "note": "Public profile identifies her as Research Scientist at Sakana.ai, formerly AI Research Scientist at Google DeepMind, based in Tokyo."},
+        {"label": "OpenReview profile", "url": "https://openreview.net/profile?id=~Stefania_Druga1", "note": "OpenReview lists her as Researcher at Sakana AI with prior Google/DeepMind history and links to homepage and Scholar."}
+      ],
+      "secondary": [
+        {"label": "Open Source Summit Japan keynote", "url": "https://ossjapan2025.sched.com/event/2AEus/keynote-what-is-learning-in-the-ai-era-stefania-druga-research-scientist-sakana-ai", "note": "Conference page describes her as a Sakana AI research scientist formerly at Google DeepMind working on multimodal AI applications."},
+        {"label": "The Data Exchange episode", "url": "https://thedataexchange.media/stefania-druga-sakana-ai/", "note": "Episode page identifies her as a Sakana AI research scientist discussing AI copilots, young learners, and AI design."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "11uxk3b",
+    "displayName": "Steffan Saxton-Williams",
+    "headline": "AI delivery and strategy lead for marketing, communications, and responsible AI adoption",
+    "company": "Four Agency Worldwide",
+    "title": "Head of AI",
+    "location": "London, GB",
+    "tags": ["AI strategy", "marketing technology", "responsible AI", "AI fluency", "communications", "program delivery"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, The Org, and public LinkedIn posts consistently connect him to AI delivery and strategy at Four Agency Worldwide; the attendee title Head of AI is not independently verified verbatim, so title confidence is medium.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI delivery and strategy lead at Four Agency Worldwide, working on generative AI adoption, AI fluency, marketing innovation, and responsible AI programs for communications and agency teams.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://uk.linkedin.com/in/steffan-saxton-williams-631b77167", "note": "Public profile lists him as AI delivery director at Four Agency Worldwide in London."},
+        {"label": "LinkedIn AI adoption post", "url": "https://www.linkedin.com/posts/steffan-saxton-williams-631b77167_maicon2025-aitransformation-marketing-activity-7384579094153228288-0crg", "note": "Public post shows his AI delivery director title and commentary on AI adoption and marketing transformation."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/four-agency-worldwide/org-chart/steffan-saxton-williams", "note": "Profile describes him as an AI delivery director and founding member of the Responsible AI Council focused on generative AI innovation, training, and strategy."},
+        {"label": "Four AI Fluency Framework post", "url": "https://www.linkedin.com/posts/lukealexander_they-say-organisational-leaders-shouldnt-activity-7383853088044138497-8CY7", "note": "Colleague post thanks Steffan Saxton-Williams for work on Four's AI Fluency Framework."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "0z6fflg",
+    "displayName": "Stephan Zheng",
+    "headline": "AI founder building reliable agents for search, verification, and scientific co-invention",
+    "company": "Asari AI",
+    "title": "CEO",
+    "location": "San Francisco, US",
+    "tags": ["AI agents", "verification", "search", "reinforcement learning", "multi-agent systems", "AI for science"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, MIT CSAIL, Caltech, and Contra all consistently identify Stephan Zheng as founder/CEO of Asari AI in San Francisco with AI-agent and AI Economist research background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder and CEO of Asari AI, building AI agents for reliable co-invention through search and rigorous verification. Previously led Salesforce Research's AI Economist work using deep reinforcement learning and multi-agent simulations for economic policy design.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://www.stephanzheng.com/", "note": "Personal site says he is founder and CEO of Asari AI, building AI agents to co-invent the future, and previously led the AI Economist team."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/stephanzheng", "note": "Public profile identifies him as founder and CEO of Asari AI in San Francisco."}
+      ],
+      "secondary": [
+        {"label": "MIT CSAIL event", "url": "https://www.csail.mit.edu/event/towards-reliable-co-inventors-through-search-and-rigorous-verification", "note": "MIT event lists Stephan Zheng as founder and CEO of Asari AI and describes work on reliable AI agents, search, and verification."},
+        {"label": "Caltech news", "url": "https://www.caltech.edu/about/news/helping-ai-systems-recover-from-mistakes-and-find-optimal-solutions", "note": "Caltech article identifies him as founder and CEO of Asari AI and quotes him on the EnCompass framework for agent systems."},
+        {"label": "Contra profile", "url": "https://contra.com/stephan_zheng_2zkjfsqq/about", "note": "Profile lists Stephan Zheng as CEO at Asari AI in San Francisco and links Asari AI."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1gw9ayj",
+    "displayName": "Stephen Chin",
+    "headline": "Developer relations executive connecting graph databases, GraphRAG, and AI developer communities",
+    "company": "Neo4j",
+    "title": "VP of Developer Relations",
+    "location": "",
+    "tags": ["developer relations", "Neo4j", "GraphRAG", "graph databases", "AI communities", "technical evangelism"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, Neo4j event pages, Devnexus, and other conference bios consistently identify Stephen Chin as Neo4j VP of Developer Relations and a frequent AI/developer-community speaker; location was not verified from strong public sources.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "VP of Developer Relations at Neo4j, focused on graph databases, GraphRAG, AI developer education, and developer-community strategy. Frequent conference chair, keynote speaker, and author across Java, DevRel, and graph/AI topics.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/steveonjava", "note": "Public profile identifies Stephen Chin as VP of Developer Relations at Neo4j and conference chair for LF AI & Data Foundation."},
+        {"label": "Neo4j webinar page", "url": "https://go.neo4j.com/WBR-EDU-260324-Context-Graphs_Registration.html", "note": "Neo4j page lists Stephen Chin as Vice President, Developer Relations and summarizes his author and keynote background."},
+        {"label": "Neo4j NODES speaker page", "url": "https://neo4j.com/nodes2024/agenda/welcome-to-nodes-2024-3/", "note": "Neo4j event page lists him as Vice President of Developer Relations, Neo4j."}
+      ],
+      "secondary": [
+        {"label": "Devnexus speaker profile", "url": "https://devnexus.com/speakers/stephen-chin", "note": "Conference bio identifies him as Neo4j VP of Developer Relations, LF AI & Data Foundation conference chair, and author of upcoming GraphRAG work."},
+        {"label": "DeveloperRelations.com talk", "url": "https://developerrelations.com/talks/engaged-developer-funnel/", "note": "Talk page lists him as VP of Developer Relations at Neo4j and summarizes his DevRel strategy work."},
+        {"label": "Saltmarch speaker profile", "url": "https://saltmarch.com/speaker/stephen-chin", "note": "Speaker profile repeats his Neo4j VP Developer Relations role and AI-first programming sessions."}
+      ]
+    }
+  }
+]

@@ -1,0 +1,693 @@
+[
+  {
+    "lookupKey": "0dhthww",
+    "displayName": "Laurynas Rekasius",
+    "headline": "AI and data leader building cost-conscious applied AI for family technology products",
+    "company": "In Tandem",
+    "title": "Head of AI & Data",
+    "location": "Portland, OR",
+    "tags": ["applied AI", "LLMs", "AI product strategy", "family technology", "data science"],
+    "confidence": "high",
+    "confidenceNote": "Public sources consistently identify Laurynas Rekasius as an AI leader at In Tandem/OurFamilyWizard; title appears as Head of AI & Data on LinkedIn and Director of AI on OurFamilyWizard.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads applied AI and data work at In Tandem, the parent company behind OurFamilyWizard, Cozi, FamilyWall, and Custody Navigator. His public writing focuses on practical, cost-effective AI deployments, including sentiment analysis, text rewriting, OCR, and fine-tuned LLM systems for sensitive family-technology use cases.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/rekasius",
+          "note": "Lists Head of AI & Data, In Tandem, and prior AI/data roles."
+        },
+        {
+          "label": "OurFamilyWizard author profile",
+          "url": "https://www.ourfamilywizard.com/author/laurynas-rekasius",
+          "note": "Company author page describing his Director of AI role and AI systems work across In Tandem brands."
+        },
+        {
+          "label": "Laurynas Rekasius personal blog",
+          "url": "https://www.laurynasrekasius.com/p/deploying-ai-cost-effectively-a-practical",
+          "note": "First-person technical/business writeup on deploying AI cost-effectively."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "In Tandem company site",
+          "url": "https://www.intandem.com/",
+          "note": "Confirms In Tandem brand family and family-technology positioning."
+        },
+        {
+          "label": "OurFamilyWizard In Tandem launch announcement",
+          "url": "https://www.newswire.com/news/ourfamilywizard-launches-new-parent-company-in-tandem-22427670",
+          "note": "Confirms In Tandem as parent company of OurFamilyWizard, Cozi, FamilyWall, and Custody Navigator."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1im78ck",
+    "displayName": "Lee Goldsworthy",
+    "headline": "Fractional CTO and software-engineering strategy advisor focused on AI orchestration and engineering velocity",
+    "company": "AI Orchestration Labs",
+    "title": "CEO",
+    "location": "Australia",
+    "tags": ["AI orchestration", "fractional CTO", "engineering leadership", "startup scaling", "software delivery"],
+    "confidence": "medium",
+    "confidenceNote": "Multiple sources confirm Lee Goldsworthy's AI orchestration and CTO advisory work; public sources found did not clearly confirm the submitted CEO title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Advises startups and technology leaders on engineering strategy, software delivery, and AI-led orchestration. He is listed by Orchestration Labs as leading revenue-led strategy and by CTO Directory as a Fractional CTO focused on engineering velocity, AI orchestration, and CTO coaching.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Orchestration Labs team page",
+          "url": "https://orchlab.ai/",
+          "note": "Lists Lee Goldsworthy under revenue-led strategy and describes his work aligning technology strategy with growth."
+        },
+        {
+          "label": "Personal website bio",
+          "url": "https://leegold.com/about/",
+          "note": "First-person profile describing 20 years in technology and fractional CTO work since 2023."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/leegoldsworthy",
+          "note": "Public profile snippets identify him as a Fractional CTO working with AI-native startup launches."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "CTO Directory profile",
+          "url": "https://ctodirectory.com/profile/lee-goldsworthy-g0grtz",
+          "note": "Independent directory profile summarizing his Fractional CTO, AI orchestration, and engineering velocity focus."
+        },
+        {
+          "label": "OrchLab.ai LinkedIn company page",
+          "url": "https://au.linkedin.com/company/orchlab",
+          "note": "Company page describes Orchestration Labs' focus on transforming software engineering with AI."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1w01r8z",
+    "displayName": "Lena Hall",
+    "headline": "Developer relations and AI strategy leader focused on practical AI adoption, cloud, and production architectures",
+    "company": "Akamai",
+    "title": "Senior Director, Developer Relations",
+    "location": "Greater Seattle Area",
+    "tags": ["developer relations", "AI strategy", "cloud computing", "data engineering", "developer education"],
+    "confidence": "high",
+    "confidenceNote": "Akamai, Forbes Councils, LinkedIn, and conference sources consistently identify Lena Hall as a senior Akamai developer/AI leader and speaker.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads developer and AI strategy work at Akamai after senior developer-relations and data/AI roles at AWS and Microsoft. Her public work centers on practical AI adoption, data engineering, cloud architecture, and helping developers move AI systems from experiments to production.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/lena-hall",
+          "note": "Lists Senior Director, Developers & AI at Akamai, Forbes Tech Council, Droid AI co-founder, and prior AWS/Microsoft roles."
+        },
+        {
+          "label": "Akamai developer blog author bio",
+          "url": "https://www.akamai.com/blog/developers/built-rag-bot-decode-airline-bureaucracy",
+          "note": "Akamai-hosted bio describing her practical AI adoption, data engineering, cloud, and technical leadership experience."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/lenadroid",
+          "note": "Public social profile identifies her as Senior Director, Developers & AI and co-founder of Droid AI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes Councils profile",
+          "url": "https://councils.forbes.com/profile/Lena-Hall-Senior-Director-Developer-AI-Strategy-Akamai-Technologies/16f17461-6620-4bfa-833a-0e0a6e027467",
+          "note": "Summarizes Akamai role, prior AWS/Microsoft leadership, Droid AI co-founder status, and speaker activity."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?q=Fouad+Matin",
+          "note": "Lists Lena Hall - Akamai as a speaker for Agent Frameworks Considered Harmful."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1hvdzjq",
+    "displayName": "Leo Mehr",
+    "headline": "Ramp engineering director leading forward-deployed engineering and agent platform work",
+    "company": "Ramp",
+    "title": "Director of Engineering",
+    "location": "San Francisco, CA",
+    "tags": ["engineering leadership", "forward deployed engineering", "agent platforms", "fintech", "enterprise growth"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, Ramp Builders, and FDE Hub consistently confirm Leo Mehr's Ramp engineering leadership and FDE focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Engineering at Ramp, where he leads forward-deployed engineering and agent-platform efforts. Before Ramp, he co-founded Lumos and worked across machine learning, distributed systems, and high-frequency trading; his recent writing and interviews focus on scaling FDE teams and AI-enabled enterprise engineering.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://leomehr.com/",
+          "note": "First-person profile identifying him as Director of Engineering at Ramp and former Lumos co-founder."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/leomehr",
+          "note": "Lists Director of Engineering at Ramp, Stanford background, and San Francisco location."
+        },
+        {
+          "label": "Ramp Builders blog post",
+          "url": "https://builders.ramp.com/post/forward-deployed-engineering",
+          "note": "Ramp-hosted article by Leo Mehr on forward-deployed engineering."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "FDE Hub interview",
+          "url": "https://www.fdehub.org/p/explore-then-exploit-a-conversation",
+          "note": "Interview states he leads FDE at Ramp, runs the Agent Developer Platform team, and previously co-founded Lumos."
+        },
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI",
+          "note": "Lists Leo Mehr, Ramp Director of Engineering, speaking on how FDE is done at Ramp."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "146dpg3",
+    "displayName": "Leo Wei",
+    "headline": "Data scientist focused on public-safety data at UL Standards & Engagement",
+    "company": "ULSE",
+    "title": "Data Scientist",
+    "location": "Evanston, IL",
+    "tags": ["data science", "public safety", "fire safety", "standards"],
+    "confidence": "medium",
+    "confidenceNote": "Name, employer, and data role are corroborated by ULSE and LinkedIn/The Org; limited public biographical detail beyond the role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Data scientist at UL Standards & Engagement working with safety and standards data. Public ULSE coverage notes his work presenting regional fire statistics and standards context in a COPANT co-hosted fire-safety webinar.",
+    "sources": {
+      "primary": [
+        {
+          "label": "ULSE International Standards 2024 Year in Review",
+          "url": "https://ulse.org/insight/international-standards-2024-year-in-review/",
+          "note": "Names Leo Wei as a ULSE Data Scientist presenting fire statistics and standards context."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/leo-wei-106b31194",
+          "note": "Lists Leo Wei as Senior Data Analyst at UL Standards & Engagement."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org - UL Standards & Engagement Data Science team",
+          "url": "https://theorg.com/org/ul-standards-engagement/teams/data-science",
+          "note": "Lists Leo Wei on ULSE's data science team as Data Scientist."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0lfxorn",
+    "displayName": "Leonardo Machado",
+    "headline": "Visagio co-founder and partner working across AI, analytics, and management engineering",
+    "company": "Visagio",
+    "title": "Co-founder and Managing Partner",
+    "location": "Rio de Janeiro, BR",
+    "tags": ["consulting", "AI", "analytics", "operations", "Rio de Janeiro"],
+    "confidence": "high",
+    "confidenceNote": "Visagio author bio and LinkedIn corroborate identity, company, founder role, and Rio location; older secondary source uses Managing Partner.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and partner at Visagio with a long consulting track record across management engineering, operations, supply chain, organizational redesign, analytics, and AI. Also appears as an organizer in Rio's AI Salon community.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/lrmachado",
+          "note": "Lists Leonardo Machado as Co-Founder | Partner at Visagio in Rio de Janeiro."
+        },
+        {
+          "label": "Visagio author bio",
+          "url": "https://www.visagio.com/insights/inteligencia-artificial-conceitos-e-insights-para-a-transformacao-digital-das-empresas",
+          "note": "Visagio bio describes him as a founding partner with extensive management engineering project work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Salon Rio #13",
+          "url": "https://luma.com/aisalon13",
+          "note": "Lists Leonardo Machado as a host of AI Salon Rio."
+        },
+        {
+          "label": "Business News profile",
+          "url": "https://www.businessnews.com.au/Person/Leonardo-Machado",
+          "note": "Lists prior Co-Founder, Managing Partner role at Visagio."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0gr4sag",
+    "displayName": "Leonardo Zizzamia",
+    "headline": "CEO of Vibeslist, building AI events intelligence for luxury hospitality",
+    "company": "Vibeslist",
+    "title": "CEO",
+    "location": "San Francisco, CA",
+    "tags": ["AI", "hospitality", "events intelligence", "web performance", "Coinbase"],
+    "confidence": "high",
+    "confidenceNote": "Company site, LinkedIn, X, and GitHub consistently identify him as Vibeslist CEO; prior Coinbase engineering background is independently supported.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "CEO of Vibeslist, an AI events-intelligence product for luxury hospitality. Previously worked on data infrastructure and web performance at Coinbase, and maintains a visible engineering footprint through GitHub and web-performance writing.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Vibeslist About",
+          "url": "https://vibeslist.ai/about-us",
+          "note": "Company page describes Vibeslist leadership and Leonardo's Coinbase infrastructure background."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/leonardo-zizzamia-0978a922",
+          "note": "Lists him as CEO at Vibeslist with a luxury-hospitality events-intelligence focus."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/zizzamia",
+          "note": "Identifies him as building Vibeslist.ai and links to his technical work."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Coinbase Engineering Blog",
+          "url": "https://www.coinbase.com/blog/performance-vitals-a-unified-scoring-system-to-guide-performance-health-and-prioritization",
+          "note": "Coinbase-authored article by Leonardo on performance metrics and prioritization."
+        },
+        {
+          "label": "HTTP Archive Web Almanac author profile",
+          "url": "https://almanac.httparchive.org/en/2020/resource-hints",
+          "note": "Author profile describes his Coinbase staff engineering and web-performance work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0gow1j9",
+    "displayName": "Leticia Dornelas",
+    "headline": "AWS senior solutions architect focused on cloud architecture, GenAI, serverless, and financial-services customers",
+    "company": "AWS",
+    "title": "Senior Solutions Architect",
+    "location": "Sao Paulo, BR",
+    "tags": ["AWS", "solutions architecture", "generative AI", "serverless", "financial services"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, AWS-authored posts, and event speaker pages corroborate her AWS solutions architect role and technical focus areas.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Solutions Architect at AWS in Brazil. Public AWS and event bios point to work across distributed cloud architectures, GenAI, serverless, databases, event-driven architecture, and support for financial-market customers.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://br.linkedin.com/in/leticiadornelas",
+          "note": "Lists Leticia Dornelas as Sr Solutions Architect at Amazon Web Services."
+        },
+        {
+          "label": "AWS Brasil Blog author bio",
+          "url": "https://aws.amazon.com/pt/blogs/aws-brasil/converta-documentos-e-media-utilizando-inteligencia-artificial/",
+          "note": "AWS bio describes her as a solutions architect with distributed systems and ML/serverless interests."
+        },
+        {
+          "label": "AWS Brasil Blog - Amplify IP restriction",
+          "url": "https://aws.amazon.com/pt/blogs/aws-brasil/restrinja-acesso-via-ip-para-seu-aws-amplify/",
+          "note": "AWS post credits her as Arquiteta de Soluções, AWS Brasil."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "devopsdays Belem 2025 speaker profile",
+          "url": "https://devopsdays.org/events/2025-belem/speakers/leticia-dornelas",
+          "note": "Speaker bio says she is a Solutions Architect at AWS supporting financial-market customers."
+        },
+        {
+          "label": "AWS Initiate Sao Paulo 2023 agenda",
+          "url": "https://pages.awscloud.com/LATAM-public-T3-initiate-saopaulo-2023-reg-event.html",
+          "note": "Lists Leticia Dornelas as an AWS solutions architect speaking on big data and analytics."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "14176sq",
+    "displayName": "Liad Yosef",
+    "headline": "AI lead, software architect, and co-creator of MCP Apps",
+    "company": "MCP Apps",
+    "title": "Co-creator",
+    "location": "Tel Aviv-Yafo, IL",
+    "tags": ["MCP", "agentic AI", "developer tools", "software architecture", "speaker"],
+    "confidence": "high",
+    "confidenceNote": "LinkedIn, X, GitHub, GitNation, and monday.com engineering sources consistently tie him to MCP Apps/MCP-UI, GitMCP, and Tel Aviv/Israel.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI lead and software architect focused on human-agent interfaces. Public speaker and co-creator of MCP Apps/MCP-UI, with related open-source work around GitMCP and UI over MCP.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://il.linkedin.com/in/liadyosef",
+          "note": "Lists Liad Yosef as AI Lead, Co-Creator MCP Apps, Software Architect, and keynote speaker."
+        },
+        {
+          "label": "X profile",
+          "url": "https://x.com/liadyosef",
+          "note": "Profile identifies him as building agentic interactions and co-creator of MCP Apps."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/liady",
+          "note": "Tel Aviv-based profile with pinned MCP-UI and GitMCP repositories."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "GitNation speaker profile",
+          "url": "https://gitnation.com/person/liad_yosef",
+          "note": "Speaker bio describes MCP-UI, MCP Apps Steering Committee, GitMCP, and AI lead background."
+        },
+        {
+          "label": "monday.com Engineering",
+          "url": "https://engineering.monday.com/from-prompts-to-clicks-shipping-mcp-apps-in-production/",
+          "note": "Engineering article credits Ido Salomon and Liad Yosef with MCP-UI work and related MCP Apps prototype."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0uzl9md",
+    "displayName": "Lina Colucci",
+    "headline": "Co-founder and CEO of Lemon Slice, building interactive video avatars for AI agents",
+    "company": "Lemon Slice",
+    "title": "Co-founder and CEO",
+    "location": "San Francisco, CA",
+    "tags": ["AI video", "interactive avatars", "synthetic media", "YC W24", "founder"],
+    "confidence": "high",
+    "confidenceNote": "Multiple strong sources tie Lina Colucci to Lemon Slice as founder/CEO and describe her prior AI-founder background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CEO of Lemon Slice, a YC W24 frontier AI lab building real-time interactive video avatars for voice agents and chatbots. Previously founded Infinity AI and EDGE Analytics, and has a PhD from the Harvard-MIT HST program.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Lina Colucci personal site",
+          "url": "https://linacolucci.com/about/",
+          "note": "Personal bio naming her as co-founder and CEO of Lemon Slice with prior EDGE Analytics and Infinity AI background."
+        },
+        {
+          "label": "Y Combinator company profile: LemonSlice",
+          "url": "https://www.ycombinator.com/companies/lemonslice",
+          "note": "YC profile lists LemonSlice, San Francisco, W24, and Lina Colucci as founder."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "TechCrunch: Lemon Slice funding",
+          "url": "https://techcrunch.com/2025/12/23/lemon-slice-nabs-10-5m-from-yc-and-matrix-to-build-out-its-digital-avatar-tech/",
+          "note": "Reports Lemon Slice funding, product focus, and founding team."
+        },
+        {
+          "label": "PR Newswire: Lemon Slice launch",
+          "url": "https://www.prnewswire.com/news-releases/lemon-slice-debuts-with-10-5m-in-funding-and-unveils-real-time-interactive-avatars-302648920.html",
+          "note": "Company launch release quotes Colucci as co-founder and CEO and describes Lemon Slice-2."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1hkd1j5",
+    "displayName": "Lisa Longman",
+    "headline": "Director of Bloom / Director of Innovation at St Catherine's College-backed youth innovation programs",
+    "company": "St Catherine's College INC",
+    "title": "Director of Innovation",
+    "location": "Perth, Western Australia",
+    "tags": ["youth innovation", "entrepreneurship education", "social enterprise", "innovation programs", "Western Australia"],
+    "confidence": "high",
+    "confidenceNote": "Official Bloom and St Catherine's pages identify her role; third-party program and advisory sources describe her innovation and entrepreneurship work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of Bloom, the Centre for Youth Innovation powered by St Catherine's College. Works on youth entrepreneurship and enterprise-skills programs for young Western Australians, with a background spanning social and commercial enterprise.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Bloom: About / Team",
+          "url": "https://www.bloom.org.au/about",
+          "note": "Official Bloom team page lists Lisa Longman as Director of Innovation and describes Bloom's St Catherine's-backed youth innovation work."
+        },
+        {
+          "label": "St Catherine's College: Our People",
+          "url": "https://www.stcats.com.au/about-us/our-people",
+          "note": "Official St Catherine's leadership page lists Lisa Longman as Director of Bloom."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "YEAWA Advisory Board",
+          "url": "https://yeawa.com.au/about/advisory-board/",
+          "note": "Person-specific bio describing Longman's Bloom role, enterprise-skills work, and enterprise background."
+        },
+        {
+          "label": "CommBank community story",
+          "url": "https://www.commbank.com.au/brighter/community-stories/the-kids-with-a-plan-to-prevent-scams.html",
+          "note": "Quotes Longman as Bloom's director of innovation on empowering young changemakers."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0e0o7ni",
+    "displayName": "Loretta Stokes",
+    "headline": "Engineering leader focused on scalable software, AI product capabilities, and high-impact teams",
+    "company": "8:00 AM",
+    "title": "Senior Engineering Manager",
+    "location": "Austin, US",
+    "tags": ["engineering leadership", "AI engineering", "software platforms", "women in tech"],
+    "confidence": "medium",
+    "confidenceNote": "Current 8am role is supported by LinkedIn and SheTO; older leadership/community details are supported by secondary profiles but location is taken from the supplied row.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior AI engineering manager at 8am with a background leading software teams and platform work. Public profiles emphasize scalable software, AI innovation, team leadership, and prior community work supporting women in technology.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://www.linkedin.com/in/lorettastokes",
+          "note": "Lists Loretta Stokes as Senior AI Engineering Manager at 8am and describes an engineering leadership focus."
+        },
+        {
+          "label": "SheTO LinkedIn post",
+          "url": "https://www.linkedin.com/posts/sheto_sheto-shetowins-womenintech-activity-7423032292547272704-cS44",
+          "note": "Community post celebrating her Senior AI Engineering Manager role at 8am."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "The Org profile",
+          "url": "https://theorg.com/org/8am/org-chart/loretta-stokes",
+          "note": "Summarizes her 8am AI role, prior Eventbrite and Schneider Electric experience, and Women Get IT program-chair work."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "14rl3z5",
+    "displayName": "Lotem Fridman",
+    "headline": "AI engineering lead helping monday.com teams adopt and operationalize AI-assisted software development",
+    "company": "monday.com",
+    "title": "Internal AI Lead",
+    "location": "Tel Aviv, IL",
+    "tags": ["AI engineering", "developer productivity", "agentic coding", "code review", "engineering leadership"],
+    "confidence": "high",
+    "confidenceNote": "Role, company, location, and AI-development focus are corroborated by LinkedIn, event pages, and webinar listings.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Internal AI and AI engineering lead at monday.com, focused on bringing AI tools into engineering workflows. Recent public talks cover AI code generation, AI-assisted onboarding, and how teams preserve review quality as AI increases development velocity.",
+    "sources": {
+      "primary": [
+        {
+          "label": "LinkedIn profile",
+          "url": "https://il.linkedin.com/in/lotemfridman",
+          "note": "Lists Internal AI Lead at monday.com in the Tel Aviv District."
+        },
+        {
+          "label": "LinkedIn post by Lotem Fridman",
+          "url": "https://www.linkedin.com/posts/lotemfridman_a-few-of-days-ago-we-hosted-a-cursor-community-activity-7409858192295325696-CyCT",
+          "note": "Describes his monday.com onboarding session for engineers on building with AI and agentic IDEs."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Qodo webinar page",
+          "url": "https://www.qodo.ai/webinar/the-new-code-review-culture-how-teams-turn-ai-velocity-into-quality/",
+          "note": "Lists Lotem Fridman as AI Engineering Lead at monday.com for a webinar on AI velocity and code review quality."
+        },
+        {
+          "label": "Luma event page",
+          "url": "https://luma.com/3pu6mjva",
+          "note": "Lists his talk 'Under the Hood of AI Code Generation' as AI Engineering Lead at monday.com in Tel Aviv."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1w1uwvg",
+    "displayName": "Lotte Verheyden",
+    "headline": "Langfuse product and developer-relations operator helping teams observe, evaluate, and improve AI agents",
+    "company": "Langfuse (acquired by Clickhouse)",
+    "title": "Product Marketing Engineer",
+    "location": "San Francisco, US",
+    "tags": ["LLM observability", "AI agents", "developer relations", "evaluation", "open source"],
+    "confidence": "high",
+    "confidenceNote": "Langfuse, GitHub, Sessionize, and AI Engineer schedule sources consistently tie her to Langfuse/ClickHouse, San Francisco, and agent/evaluation topics.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Product marketing and developer-relations contributor at Langfuse, now part of ClickHouse. Her public work centers on AI-agent observability, evaluations, Langfuse education, and helping developers turn agent workflows into reliable production systems.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Langfuse team page",
+          "url": "https://langfuse.com/about/about",
+          "note": "Lists Lotte Verheyden as Product Marketing Engineer with LinkedIn, X, and GitHub links."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/Lotte-Verheyden",
+          "note": "Shows @langfuse affiliation, San Francisco location, and Langfuse-related public work."
+        },
+        {
+          "label": "Sessionize speaker profile",
+          "url": "https://sessionize.com/lotte-verheyden/",
+          "note": "Lists Devrel at Langfuse (ClickHouse), San Francisco, and AI agents/evals/observability topics."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "AI Engineer World's Fair schedule",
+          "url": "https://www.ai.engineer/worldsfair/schedule?track=Local+AI",
+          "note": "Lists her as a ClickHouse speaker for 'Continuously improving agents with Langfuse.'"
+        },
+        {
+          "label": "Langfuse blog author page result",
+          "url": "https://langfuse.com/blog/2026-06-09-ai-is-eating-ai-engineering",
+          "note": "Shows her authoring Langfuse content about automating parts of the AI engineering loop."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "00ukqlw",
+    "displayName": "Louis Landry",
+    "headline": "Teradata CTO driving open, connected data-platform strategy for the AI era",
+    "company": "Teradata",
+    "title": "Chief Technology Officer",
+    "location": "San Diego, US",
+    "tags": ["enterprise data", "AI strategy", "cloud analytics", "platform architecture", "technology leadership"],
+    "confidence": "high",
+    "confidenceNote": "Teradata leadership and press pages directly confirm title and responsibilities; additional interviews corroborate AI and platform focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief Technology Officer at Teradata, responsible for technology vision and innovation strategy. His public profile emphasizes open and connected data architectures, cloud analytics, and applying generative AI to enterprise data platforms.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Teradata leadership profile",
+          "url": "https://www.teradata.com/about-us/leadership/louis-landry",
+          "note": "Official executive profile naming him Chief Technology Officer and describing his AI/data-platform remit."
+        },
+        {
+          "label": "Teradata press release",
+          "url": "https://www.teradata.com/press-releases/2024/teradata-elevates-louis-landry-to-chief-technology-officer",
+          "note": "Announces his promotion to CTO and summarizes prior Teradata leadership roles."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Forbes Councils profile",
+          "url": "https://councils.forbes.com/profile/Louis-Landry-Chief-Technology-Officer-Teradata/2e7a3ad6-8c72-4906-8f21-e910c1b6027d",
+          "note": "Describes his enterprise data-platform and AI-era leadership focus."
+        },
+        {
+          "label": "Authority Magazine interview",
+          "url": "https://medium.com/authority-magazine/louis-landry-of-teradata-on-how-artificial-intelligence-can-solve-business-problems-36c9b628e5c7",
+          "note": "Interview profile on how he approaches AI business problems as Teradata CTO."
+        }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0x5gj54",
+    "displayName": "Louis-Francois Bouchard",
+    "headline": "Towards AI co-founder and CTO teaching practical AI engineering, LLM systems, agents, and production reliability",
+    "company": "Towards AI",
+    "title": "Co-founder and CTO",
+    "location": "Montreal, CA",
+    "tags": ["AI education", "LLM engineering", "agents", "RAG", "developer training", "Mila"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, GitHub, and Towards AI Academy consistently confirm role, background, and practical AI-engineering focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and CTO of Towards AI and creator behind What's AI. He teaches practical AI engineering through courses, writing, video, and community programs, with public work spanning LLM products, RAG, agents, evaluation, deployment, and production reliability.",
+    "sources": {
+      "primary": [
+        {
+          "label": "Personal website",
+          "url": "https://www.louisbouchard.ai/",
+          "note": "Identifies him as Louis-Francois Bouchard, What's AI, co-founder at Towards AI, and ex-PhD at Mila."
+        },
+        {
+          "label": "About page",
+          "url": "https://www.louisbouchard.ai/about/",
+          "note": "States he works on Towards AI as co-founder and CTO, building AI courses and consulting."
+        },
+        {
+          "label": "GitHub profile",
+          "url": "https://github.com/louisfb01",
+          "note": "Describes his practical AI engineering focus and CTO/co-founder role at Towards AI."
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Towards AI Academy about page",
+          "url": "https://academy.towardsai.net/pages/about-us",
+          "note": "Lists Louis-Francois Bouchard as Co-founder and CTO and frames his work around production-grade AI systems."
+        },
+        {
+          "label": "LinkedIn profile",
+          "url": "https://ca.linkedin.com/in/whats-ai",
+          "note": "Lists co-founder at Towards AI, ex-PhD student at Mila, and AI education channels."
+        }
+      ]
+    }
+  }
+]

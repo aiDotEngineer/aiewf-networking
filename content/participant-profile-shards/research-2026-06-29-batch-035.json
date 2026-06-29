@@ -1,0 +1,129 @@
+[
+  {
+    "lookupKey": "15qn5bg",
+    "displayName": "Calvin Giroud",
+    "headline": "Head of forward-deployed engineering / GTM at Cognition",
+    "company": "Cognition",
+    "title": "Head of FDE / GTM",
+    "location": "San Francisco, CA, US",
+    "tags": ["AI engineering", "forward deployed engineering", "GTM", "developer tools", "agentic software engineering", "Devin"],
+    "confidence": "high",
+    "confidenceNote": "Public LinkedIn and X profiles confirm Cognition; event and secondary listings identify him around GTM/FDE rather than a generic AI Engineer title.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Works at Cognition on bringing Devin and agentic software engineering into customer environments. His public footprint sits at the intersection of engineering, GTM, and forward-deployed AI adoption, useful for conversations about AI coding agents, enterprise deployment, and developer-workflow change.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/calvin-giroud-9667a8100", "note": "Lists Calvin Giroud at Cognition with Carnegie Mellon background and San Francisco location."},
+        {"label": "X profile", "url": "https://x.com/calvingiroud", "note": "Profile snippet describes GTM at Cognition and prior founder/engineering work."},
+        {"label": "GitHub profile", "url": "https://github.com/cg-cognition", "note": "GitHub account under the name Calvin Giroud with Cognition-associated handle."}
+      ],
+      "secondary": [
+        {"label": "Luma event page", "url": "https://luma.com/lzk5s1td", "note": "Speaker listing describes Calvin as Head of FDE at Cognition."},
+        {"label": "Neo Team page", "url": "https://neo.com/team", "note": "Lists Calvin Giroud as Cognition, GTM."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "090r9yc",
+    "displayName": "Cameron Foster",
+    "headline": "Chief Strategy Officer at GLG",
+    "company": "GLG",
+    "title": "Chief Strategy Officer",
+    "location": "New York City, NY, US",
+    "tags": ["strategy", "corporate development", "financial leadership", "expert networks", "business services", "M&A"],
+    "confidence": "high",
+    "confidenceNote": "GLG's leadership page directly confirms title, company, career background, and New York City location.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Leads global strategy and development at GLG. He brings strategy, transformation, finance, corporate development, and investment experience from GLG, Covetrus, iHeartMedia, Alvarez & Marsal, Observer Capital, Irving Place Capital, and Citigroup.",
+    "sources": {
+      "primary": [
+        {"label": "GLG leadership profile", "url": "https://glginsights.com/about/people/cameron-foster/", "note": "Official GLG profile confirms CSO role, responsibilities, prior roles, Duke education, and New York City residence."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/cameron-foster82", "note": "Public profile snippet lists Chief Strategy Officer at GLG and prior strategy/finance roles."}
+      ],
+      "secondary": [
+        {"label": "The Org profile", "url": "https://theorg.com/org/glginsights/org-chart/cameron-foster", "note": "Lists Cameron Foster as GLG Chief Strategy Officer in New York."},
+        {"label": "GLG About page", "url": "https://glg.com/about", "note": "GLG leadership roster includes Cameron Foster as Chief Strategy Officer."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "1qgopaa",
+    "displayName": "Camille Lambert",
+    "headline": "AI product leader for capital markets and asset management",
+    "company": "Agentive Labs",
+    "title": "AI Product Manager",
+    "location": "Los Angeles, CA, US",
+    "tags": ["AI product management", "capital markets", "fixed income", "asset management", "AI governance", "workflow automation", "regulated industries"],
+    "confidence": "medium",
+    "confidenceNote": "Public sources strongly support AI product and capital-markets specialization, but company branding appears as Agentive Labs in LinkedIn snippets and Applied Agents on the public site.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Builds and advises on AI workflows for regulated finance, especially fixed income. Her background combines Citi Global Securitized Markets experience, data and AI product work, AWS credentials, and practical AI governance for teams adopting agents and assistants.",
+    "sources": {
+      "primary": [
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/camillelambert", "note": "Public snippets identify Camille as an AI Product Manager / Head of AI / fractional CAIO focused on capital markets and asset management, with Agentive Labs listed."},
+        {"label": "Applied Agents website", "url": "https://applied-agents.ai/", "note": "Practice site describes AI advisory and build work for fixed income, with background in Citi securitized markets, AI product work, AWS credentials, and AI governance."}
+      ],
+      "secondary": [
+        {"label": "LinkedIn post profile card", "url": "https://www.linkedin.com/posts/camillelambert_senior-product-manager-experimentation-activity-7413644828938412032-pWt2", "note": "Profile card references Senior AI Product Manager experience and Disney/Citi background."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "19b6tdp",
+    "displayName": "Carl Youngblood",
+    "headline": "President and co-founder of the Mormon Transhumanist Association",
+    "company": "Mormon Transhumanist Association",
+    "title": "President",
+    "location": "Provo, UT, US",
+    "tags": ["transhumanism", "religion and technology", "philosophy", "software engineering", "blockchain", "nonprofit leadership", "science and faith"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, and MTA-related sources consistently confirm his MTA leadership, Provo location, and software/blockchain background.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Co-founder and president of the Mormon Transhumanist Association, where he explores the intersection of science, technology, religion, and human flourishing. He also has more than 25 years of full-stack engineering experience, including AWS blockchain work, Cisco, Omniture, Divvy, and blockchain infrastructure.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://www.youngbloods.org/", "note": "Confirms MTA co-founder/president role, Provo location, software engineering background, AWS blockchain work, and other career details."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/carlyoungblood", "note": "Public snippet lists President & CEO at Mormon Transhumanist Association in Provo."},
+        {"label": "Mormon Transhumanist Association", "url": "https://transfigurism.org/", "note": "Organization Carl co-founded and leads."}
+      ],
+      "secondary": [
+        {"label": "Reddit AMA", "url": "https://www.reddit.com/r/mormon/comments/sgjb7x/ama_carl_youngblood_president_of_the_mormon/", "note": "Carl introduces himself as MTA co-founder and current president."},
+        {"label": "Faith Matters interview", "url": "https://www.faithmatters.org/p/carl-youngblood-mormons-in-the-metaverse", "note": "Discusses Carl's role in the Mormon Transhumanist Association and technology-faith themes."}
+      ]
+    }
+  },
+  {
+    "lookupKey": "033zked",
+    "displayName": "Carlos Rene",
+    "headline": "Founder of FIWORK and builder in AI, blockchain, and prediction markets",
+    "company": "FIWORK",
+    "title": "Founder",
+    "location": "San Jose, Costa Rica",
+    "tags": ["AI agents", "blockchain", "Cardano", "Midnight", "prediction markets", "R&D studio", "DeFi", "startup leadership"],
+    "confidence": "high",
+    "confidenceNote": "Personal site and ecosystem sources identify Carlos Rene Cerrato as founder/CEO of FIWORK, based in Costa Rica, with AI and blockchain focus.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of FIWORK and CEO of DEGA, working across AI automations, prediction markets, blockchain infrastructure, and autonomous agents. His public profiles emphasize R&D and software development for Midnight, EVM protocols, Cardano, and enterprise-style AI systems.",
+    "sources": {
+      "primary": [
+        {"label": "Personal website", "url": "https://carlosrene.io/", "note": "Identifies Carlos Rene Cerrato as engineer, AI maximalist, builder, CEO at DEGA and FIWORK, based in Costa Rica."},
+        {"label": "FIWORK website", "url": "https://fiwork.co/", "note": "Company linked from Carlos's personal site as his R&D and software development studio."},
+        {"label": "LinkedIn profile", "url": "https://www.linkedin.com/in/ccerrato147/", "note": "Linked from Carlos's personal site and Catalyst proposals as Carlos Rene / FIWORK founder."}
+      ],
+      "secondary": [
+        {"label": "Project Catalyst proposal", "url": "https://projectcatalyst.io/funds/15/midnight-compact-dapps/atlas-midnights-next-generation-yield-layer", "note": "Lists Carlos Rene as FIWORK Founder & Technical Lead and describes his AI, startups, and enterprise systems background."},
+        {"label": "Midnight ecosystem blog", "url": "https://midnight.network/blog/midnight-expands-ecosystem-partnerships-system-integrators", "note": "Quotes Carlos Cerrato as CEO of FIWORK in a Midnight ecosystem partnership announcement."}
+      ]
+    }
+  }
+]

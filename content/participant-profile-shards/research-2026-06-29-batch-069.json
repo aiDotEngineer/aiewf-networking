@@ -1,0 +1,232 @@
+[
+  {
+    "lookupKey": "171blp3",
+    "displayName": "Pavan Maguluri",
+    "headline": "Senior AI/ML engineering leader at Optum focused on LLMs, agentic workflows, automation, and healthcare platforms.",
+    "company": "Optum",
+    "title": "Sr Director, AI/ML Engineering",
+    "location": "Chicago, Illinois, United States",
+    "tags": ["AI engineering", "healthcare platforms", "LLMs", "agentic workflows", "automation", "engineering leadership"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn profile and public posts match the Optum AI/ML engineering role and current AI-agent focus; older research/publication sources support a technical background but not the current role.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Senior Director of AI/ML Engineering at Optum working on AI transformation, LLMs, agentic workflows, chatbots, automation, and healthcare platforms at scale. Useful match for healthcare AI, enterprise AI adoption, AI engineering management, and practical agent workflows.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/if-then", "note": "Identifies him as Sr Director, AI/ML Engineering at Optum with AI transformation, LLM, agentic workflow, chatbot, and automation focus." },
+        { "label": "LinkedIn post on AI agents", "url": "https://www.linkedin.com/posts/if-then_theres-a-lot-of-hype-right-now-that-ai-activity-7429734644482285568-Z0p2", "note": "Shows his recent writing on AI agents, software engineering judgment, and production-grade systems." },
+        { "label": "LinkedIn post on local PII scrubbing app", "url": "https://www.linkedin.com/posts/if-then_weekend-fun-project-thanks-claude-fixed-activity-7428973880435699712-Ge7L", "note": "Describes an AI-adjacent local app for document PII detection and redaction." }
+      ],
+      "secondary": [
+        { "label": "ACM publication page", "url": "https://dl.acm.org/doi/10.1145/2896377.2901491", "note": "Lists Pavan Maguluri as a co-author on mobile web energy-consumption research from Stony Brook." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "121n907",
+    "displayName": "Pavel Myakov",
+    "headline": "Founder of NewMindStart, building online education and creator-led digital learning from Dubai.",
+    "company": "NewMindStart",
+    "title": "Founder",
+    "location": "Dubai, United Arab Emirates",
+    "tags": ["founder", "online education", "digital creator", "consumer learning", "Dubai", "startup building"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public social profiles consistently connect Pavel Myakov to NewMindStart and Dubai; independent company detail is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of NewMindStart, an online education and digital-learning business. Relevant for attendees interested in consumer education, creator-led products, international audience building, and early-stage startup distribution.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://ae.linkedin.com/in/pavel-myakov", "note": "Lists Pavel Myakov as Founder at NewMindStart in Dubai." },
+        { "label": "Facebook profile", "url": "https://www.facebook.com/pavel.myakov/", "note": "Public profile lists Dubai, NewMindStart, and founder role." },
+        { "label": "Instagram profile", "url": "https://www.instagram.com/myakov_pavel/", "note": "Public profile references NewMindStart and Dubai-oriented creator activity." }
+      ],
+      "secondary": [
+        { "label": "BetaList profile", "url": "https://betalist.com/%40myakov", "note": "Earlier startup profile for Pavel Myakov describes him as a CEO/co-founder and maker of multiple startups." },
+        { "label": "ScamAdviser NewMindStart page", "url": "https://www.scamadviser.com/nl/check-website-old/newmindstart.com", "note": "Domain profile identifies NewMindStart as an online courses website with Dubai registration context." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0o24d7i",
+    "displayName": "Pavel Tkachyk",
+    "headline": "Founder of SiteScopeAI and MIT Sloan Fellow applying AI and data to construction project pipelines.",
+    "company": "SiteScopeAI",
+    "title": "Founder & CEO",
+    "location": "Cambridge / Boston, Massachusetts, United States",
+    "tags": ["construction tech", "AI", "data centers", "infrastructure", "MIT Sloan", "founder"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public posts match Pavel Tkachyk to SiteScopeAI, MIT Sloan, construction, and AI; CEO title is row-sourced while founder/startup evidence is public.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder building SiteScopeAI around better project pipelines for general contractors, with recent public work on data-center project intelligence and construction decision timing. Good match for construction tech, AI for infrastructure, data products, and founder conversations.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/pavel-tkachyk", "note": "Lists SiteScopeAI, MIT Sloan School of Management, and a Greater Boston construction/AI positioning." },
+        { "label": "LinkedIn post on SiteScopeAI and data centers", "url": "https://www.linkedin.com/posts/pavel-tkachyk_texas-is-loud-the-data-center-map-is-wider-activity-7459632093241696256-0Eex", "note": "Describes SiteScope as surfacing early signals for general contractors around data-center projects." },
+        { "label": "LinkedIn post on MIT Sloan Fellows MBA", "url": "https://www.linkedin.com/posts/pavel-tkachyk_one-month-into-my-mit-sloan-fellows-mba-and-activity-7349048504473772032-dkus", "note": "Confirms MIT Sloan Fellows MBA context and data-driven business-decision focus." }
+      ],
+      "secondary": [
+        { "label": "MIT Media Lab course mention", "url": "https://www.linkedin.com/posts/nadiashalaby_had-a-blast-lecturing-at-mit-media-lab-course-activity-7397409233463386113-VIm8", "note": "Mentions SiteScope as a construction AI student-team case study including Pavel Tkachyk." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1pqt8j1",
+    "displayName": "Pedro Goiozo",
+    "headline": "AI specialist at Viver de IA creating practical business AI content, courses, podcasts, and agent demos in Brazil.",
+    "company": "Viver de IA",
+    "title": "AI Specialist",
+    "location": "Florianopolis, Brazil",
+    "tags": ["AI education", "business AI", "content", "Manus AI", "growth", "Brazil"],
+    "confidence": "high",
+    "confidenceNote": "Instagram, YouTube, and public video/event sources consistently identify Pedro Goiozo as an AI specialist associated with Viver de IA and Manus AI content.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "AI specialist at Viver de IA producing practical AI-for-business education, podcasts, live content, and tool walkthroughs, including Manus AI coverage. Useful match for AI education, GTM use cases, Portuguese-language AI adoption, and practical agent tooling.",
+    "sources": {
+      "primary": [
+        { "label": "Instagram profile", "url": "https://www.instagram.com/pedrogoiozo/", "note": "Public profile identifies him as an AI specialist at Viver de IA." },
+        { "label": "YouTube channel", "url": "https://www.youtube.com/%40pedrogoiozo", "note": "Channel features Pedro Goiozo and Viver de IA content, including AI-in-practice and podcast work." },
+        { "label": "YouTube video description", "url": "https://www.youtube.com/watch?v=eJpMmPEfSVo", "note": "Video metadata links to Pedro Goiozo social profiles and describes him as an applied business AI specialist." }
+      ],
+      "secondary": [
+        { "label": "Instagram Manus AI reel", "url": "https://www.instagram.com/reel/DFMRR2UuCl4/", "note": "Public reel describes him as Head of Content at Viver de IA and a Manus AI ambassador in Brazil." },
+        { "label": "Winning by Design GTM AI Story Library", "url": "https://winningbydesign.com/wp-content/uploads/2025/05/WbD-Internal-AI-Story-Library-Slide-Outlines-3-3.pdf", "note": "Includes Pedro Goiozo in an Academia Lendaria AI SDR story, supporting practical AI GTM experience." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1ce3pw7",
+    "displayName": "Perry Hollowell",
+    "headline": "Chief Strategy Officer and Head of Sustainable Investing at CFI Partners.",
+    "company": "CFI Partners",
+    "title": "Chief Strategy Officer",
+    "location": "Chicago, Illinois, United States",
+    "tags": ["investment management", "sustainable investing", "strategy", "credit investing", "ESG", "finance"],
+    "confidence": "high",
+    "confidenceNote": "CFI Partners, WEF, LinkedIn, and CFI policy documents consistently identify him as Chief Strategy Officer and Head of Sustainable Investing.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief Strategy Officer and Head of Sustainable Investing at CFI Partners, focused on firm strategy and responsible-investing integration across credit and investment strategies. Strong match for investment management, sustainable investing, strategy, and finance conversations.",
+    "sources": {
+      "primary": [
+        { "label": "CFI Partners team page", "url": "https://www.cfipartners.com/team", "note": "Lists Perry Hollowell as Chief Strategy Officer and Head of Sustainable Investing." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/perryhollowell", "note": "Identifies him as Chief Strategy Officer and Head of Sustainable Investing at CFI Partners." },
+        { "label": "CFI Responsible Investment Policy", "url": "https://www.cfipartners.com/pdf/Responsible_Investment_Policy_Apr_2025_final.pdf", "note": "Names Perry Hollowell as Chief Strategy Officer and Head of Sustainable Investing chairing the RI Committee." }
+      ],
+      "secondary": [
+        { "label": "World Economic Forum profile", "url": "https://www.weforum.org/people/orenzo-perry-hollowell/", "note": "Profiles him as Chief Strategy Officer and Head of Sustainable Investing at CFI Partners." },
+        { "label": "The Org profile", "url": "https://theorg.com/org/chicago-fundamental-investment-partners-cfip/org-chart/perry-hollowell", "note": "Summarizes his CFI Partners sustainable investing and equities leadership role." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "1hqoznb",
+    "displayName": "Peter Bronez",
+    "headline": "Chief Data Officer at In-Q-Tel focused on data leadership and national-security technology.",
+    "company": "In-Q-Tel",
+    "title": "Chief Data Officer",
+    "location": "Washington, District of Columbia / Arlington, Virginia, United States",
+    "tags": ["data leadership", "national security", "venture capital", "technology strategy", "analytics", "IQT"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn and public directories match Peter Bronez to IQT and Chief Data Officer; detailed first-party IQT biography was not found.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Chief Data Officer at In-Q-Tel, the strategic investor serving national-security technology needs. Relevant for conversations on data strategy, trusted technology, analytics leadership, and AI adoption in high-stakes environments.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/peterbronez", "note": "Lists Peter Bronez with In-Q-Tel experience and Arlington location." },
+        { "label": "LinkedIn post", "url": "https://www.linkedin.com/posts/peterbronez_technology-architect-cloud-software-operations-activity-6556646666424905728-JAIK", "note": "Public post header identifies him as Chief Data Officer at IQT." }
+      ],
+      "secondary": [
+        { "label": "Lead411 profile", "url": "https://www4.lead411.com/Peter_Bronez_206963412.html", "note": "Business directory lists Peter Bronez as Chief Data Officer at In-Q-Tel in Arlington." },
+        { "label": "2026 directory PDF", "url": "https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2026-02/2026_dow_directory_update_1.pdf", "note": "Directory excerpt lists Peter Bronez as Chief Data Officer." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "078ezy4",
+    "displayName": "Peter Cappetto",
+    "headline": "Engineering manager and technical leader working on tools for Pokemon GO after deep computer-vision and game-platform experience.",
+    "company": "Niantic",
+    "title": "Engineering Manager - Tools",
+    "location": "Bellevue, Washington, United States",
+    "tags": ["mobile gaming", "developer tools", "engineering management", "computer vision", "3D systems", "Niantic"],
+    "confidence": "high",
+    "confidenceNote": "Personal site, LinkedIn, and org-directory sources consistently identify him as a technical leader with Niantic engineering-manager experience and prior computer-vision/game work.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Engineering manager at Niantic working with tools for Pokemon GO, with prior technical leadership across medical computer vision, 3D systems, VR, and game backends. Good match for mobile gaming, internal tools, computer vision, and engineering-management conversations.",
+    "sources": {
+      "primary": [
+        { "label": "Personal resume", "url": "https://www.petercappetto.com/resume", "note": "Details his technical leadership, computer-vision, 3D, VR, and game-engineering background." },
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/petercappetto", "note": "Identifies him as a staff software engineer and technical leader with Niantic experience working on Pokemon GO tools." },
+        { "label": "LinkedIn Niantic announcement", "url": "https://www.linkedin.com/posts/petercappetto_iam-excited-to-announce-that-today-marks-activity-7226740355239436289-86PM", "note": "Public post announces his first day as Engineering Manager at Niantic." }
+      ],
+      "secondary": [
+        { "label": "The Org Niantic Bellevue office", "url": "https://theorg.com/org/niantic/offices/seattle-bellevue", "note": "Lists Peter Cappetto as an Engineering Manager in Niantic's Bellevue office." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0a9zf2p",
+    "displayName": "Philip Agenmonmen",
+    "headline": "Independent AI consultant, AI engineer, angel investor, and founder of Pinnacle Prompts.",
+    "company": "Pinnacle Prompts",
+    "title": "Founder",
+    "location": "Aberdeen, Scotland, United Kingdom",
+    "tags": ["AI consulting", "AI engineering", "angel investing", "prompt engineering", "AI transformation", "founder"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn, public posts, Instagram, and company-directory sources align on the AI consultant/founder identity; independent company detail is relatively sparse.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Founder of Pinnacle Prompts and independent AI consultant/engineer working on practical AI products, agent workflows, and AI transformation. Useful match for AI implementation, prompt and eval workflows, consulting, and early-stage AI investing.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://uk.linkedin.com/in/philip-agenmonmen", "note": "Identifies him as an independent AI consultant, AI engineer, angel investor, and founder linked to Pinnacle Prompts." },
+        { "label": "LinkedIn AI project principles post", "url": "https://www.linkedin.com/posts/philip-agenmonmen_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7435146079433629697-4_U2", "note": "Shows his public writing on AI project principles, AI consulting, and lead AI engineering lessons." },
+        { "label": "Instagram profile", "url": "https://www.instagram.com/zephilip/", "note": "Public profile lists Philip Agenmonmen as founder and angel investor." }
+      ],
+      "secondary": [
+        { "label": "Prospeo company profile", "url": "https://prospeo.io/c/pinnacle-prompts", "note": "Lists Pinnacle Prompts and Philip Agenmonmen as founder/key contact." },
+        { "label": "Datalumina Academy page", "url": "https://academy.datalumina.com/", "note": "Includes Philip Agenmonmen as a Senior AI Engineer in public student/testimonial context." }
+      ]
+    }
+  },
+  {
+    "lookupKey": "0ci8i1e",
+    "displayName": "Philip Karpowich",
+    "headline": "Director of AI and Analytics at Liberty Mutual Investments focused on applied AI, enterprise knowledge, and governance.",
+    "company": "Liberty Mutual Investments",
+    "title": "Director, AI and Analytics",
+    "location": "Tampa, Florida, United States",
+    "tags": ["applied AI", "analytics", "investment management", "enterprise AI", "governance", "Microsoft AI"],
+    "confidence": "medium",
+    "confidenceNote": "LinkedIn profile and public articles/posts consistently identify him as Director of AI and Analytics at Liberty Mutual Investments; non-LinkedIn corroboration is limited.",
+    "participantApproved": false,
+    "aiGenerated": true,
+    "lastResearchedAt": "2026-06-29",
+    "bioMarkdown": "Director of AI and Analytics at Liberty Mutual Investments, publicly writing about enterprise AI adoption, internal knowledge connectors, AI governance, SLM/LLM architecture, and Microsoft AI tooling. Good match for applied AI in financial services and governed enterprise deployments.",
+    "sources": {
+      "primary": [
+        { "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/philip-karpowich-02620039", "note": "Lists him as Director, AI and Analytics at Liberty Mutual Investments." },
+        { "label": "LinkedIn article", "url": "https://www.linkedin.com/pulse/shifting-horizon-redefining-outcomes-age-rapid-tech-philip-karpowich-m8uoe", "note": "Public article by Philip Karpowich with Director, AI and Analytics at Liberty Mutual Investments byline." },
+        { "label": "LinkedIn post on Deep Research SharePoint connector", "url": "https://www.linkedin.com/posts/philip-karpowich-02620039_one-of-the-biggest-hurdles-ive-seen-to-activity-7328824961664512001-Brox", "note": "Shows his work evaluating enterprise AI connectors for proprietary knowledge." }
+      ],
+      "secondary": [
+        { "label": "LinkedIn directory result", "url": "https://www.linkedin.com/pub/dir/%2B/Karpowich", "note": "Directory result matches Philip Karpowich to Director, AI and Analytics at Liberty Mutual Investments in Tampa." },
+        { "label": "ContactOut Liberty Mutual Investments listing", "url": "https://contactout.com/adonay-b-38704", "note": "Business-profile page includes Philip Karpowich among Liberty Mutual Investments people as Director, AI and Analytics." }
+      ]
+    }
+  }
+]
