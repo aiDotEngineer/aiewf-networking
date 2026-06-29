@@ -90,14 +90,6 @@ function minuteLabel(minute: number) {
   return `${hour12}:${mins.toString().padStart(2, "0")} ${suffix}`;
 }
 
-function escapeHtml(value: string) {
-  return value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
-}
-
 function validatePositiveInteger(name: string, value: number) {
   if (!Number.isInteger(value) || value <= 0) {
     throw new Error(`${name} must be a positive integer.`);
@@ -816,6 +808,11 @@ async function createOrJoinMeetingForRequest(
   return meetingId;
 }
 
+// Magic-link email is delivered through the AI Engineer email relay
+// (POST /api/email/send on the Cloudflare app), which sends via the account's
+// send_email binding / Resend fallback. Convex actions run on Convex's runtime
+// and can't bind to Cloudflare's send_email directly, so we relay over HTTP
+// guarded by a shared secret.
 async function sendMagicLinkEmail({
   displayName,
   email,
@@ -825,18 +822,15 @@ async function sendMagicLinkEmail({
   email: string;
   link: string;
 }) {
-  const safeDisplayName = escapeHtml(displayName);
-  const safeLink = escapeHtml(link);
-  const response = await fetch("https://api.resend.com/emails", {
+  const response = await fetch(env.EMAIL_RELAY_URL, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${env.RESEND_API_KEY}`,
+      Authorization: `Bearer ${env.EMAIL_RELAY_SECRET}`,
       "Content-Type": "application/json",
       "User-Agent": "aiewf-networking/1.0",
     },
     body: JSON.stringify({
-      from: env.RESEND_FROM_EMAIL,
-      to: [email],
+      to: email,
       subject: "Your AIE World Fair networking login",
       text: [
         `Hi ${displayName},`,
@@ -846,18 +840,12 @@ async function sendMagicLinkEmail({
         "",
         "This link expires in 15 minutes and can be used once.",
       ].join("\n"),
-      html: [
-        `<p>Hi ${safeDisplayName},</p>`,
-        `<p>Use this secure link to open the AIE World Fair networking room:</p>`,
-        `<p><a href="${safeLink}">Open networking room</a></p>`,
-        `<p>This link expires in 15 minutes and can be used once.</p>`,
-      ].join(""),
     }),
   });
 
   if (!response.ok) {
     const detail = await response.text();
-    throw new Error(`Could not send login email. Resend returned ${response.status}: ${detail.slice(0, 180)}`);
+    throw new Error(`Could not send login email. Email relay returned ${response.status}: ${detail.slice(0, 180)}`);
   }
 }
 
