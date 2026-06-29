@@ -1459,22 +1459,31 @@ function DirectoryView({
   const [reason, setReason] = useState("");
   const deferredQuery = useDeferredValue(query);
   const [lastAction, setLastAction] = useState<{ mode: RequestMode; name: string } | null>(null);
-  const activeOutgoingForDay = requests.filter(
-    (request) =>
-      request.requesterAccountId === actor._id &&
-      request.date === date &&
-      activeOutgoingStatus(request.status),
+  const activeOutgoingForDay = useMemo(
+    () => requests.filter(
+      (request) =>
+        request.requesterAccountId === actor._id &&
+        request.date === date &&
+        activeOutgoingStatus(request.status),
+    ),
+    [actor._id, date, requests],
   );
-  const activeOutgoingInterests = interests.filter(
-    (interest) =>
-      interest.requesterAccountId === actor._id &&
-      activeOutgoingStatus(interest.status),
+  const activeOutgoingInterests = useMemo(
+    () => interests.filter(
+      (interest) =>
+        interest.requesterAccountId === actor._id &&
+        activeOutgoingStatus(interest.status),
+    ),
+    [actor._id, interests],
   );
   const atCap = activeOutgoingForDay.length >= settings.outgoingRequestCapPerDay;
-  const openTargetIds = new Set([
-    ...activeOutgoingForDay.map((request) => request.targetAccountId),
-    ...activeOutgoingInterests.map((interest) => interest.targetAccountId),
-  ]);
+  const openTargetIds = useMemo(
+    () => new Set([
+      ...activeOutgoingForDay.map((request) => request.targetAccountId),
+      ...activeOutgoingInterests.map((interest) => interest.targetAccountId),
+    ]),
+    [activeOutgoingForDay, activeOutgoingInterests],
+  );
   const normalizedQuery = deferredQuery.trim().toLowerCase();
   const actorProfile = useMemo(() => participantProfileFor(actor), [actor]);
   const directoryItems = useMemo(() => participants
@@ -1503,27 +1512,30 @@ function DirectoryView({
         tracks,
       };
     }), [actor, actorProfile, participants]);
-  const filtered: DirectoryItem[] = directoryItems
-    .filter((item) => ticketFilter === "all" || item.participant.ticketCategory === ticketFilter)
-    .filter((item) => {
-      if (profileFilter === "researched") return Boolean(item.profile);
-      if (profileFilter === "sourced") return Boolean(item.profile && sourceCount(item.profile) >= 2);
-      if (profileFilter === "pending") return !item.profile;
-      return true;
-    })
-    .filter((item) => trackFilter === "all" || item.tracks.some((track) => track.name === trackFilter))
-    .filter((item) => !normalizedQuery || item.searchText.includes(normalizedQuery))
-    .sort((a, b) => {
-      if (sortMode === "recommended") {
-        return b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName);
-      }
-      if (sortMode === "sources") {
-        const sourceDelta = (b.profile ? sourceCount(b.profile) : 0) - (a.profile ? sourceCount(a.profile) : 0);
-        return sourceDelta || b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName);
-      }
-      if (sortMode === "name") return a.participant.displayName.localeCompare(b.participant.displayName);
-      return a.participant.company.localeCompare(b.participant.company) || a.participant.displayName.localeCompare(b.participant.displayName);
-    });
+  const filtered: DirectoryItem[] = useMemo(
+    () => directoryItems
+      .filter((item) => ticketFilter === "all" || item.participant.ticketCategory === ticketFilter)
+      .filter((item) => {
+        if (profileFilter === "researched") return Boolean(item.profile);
+        if (profileFilter === "sourced") return Boolean(item.profile && sourceCount(item.profile) >= 2);
+        if (profileFilter === "pending") return !item.profile;
+        return true;
+      })
+      .filter((item) => trackFilter === "all" || item.tracks.some((track) => track.name === trackFilter))
+      .filter((item) => !normalizedQuery || item.searchText.includes(normalizedQuery))
+      .sort((a, b) => {
+        if (sortMode === "recommended") {
+          return b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName);
+        }
+        if (sortMode === "sources") {
+          const sourceDelta = (b.profile ? sourceCount(b.profile) : 0) - (a.profile ? sourceCount(a.profile) : 0);
+          return sourceDelta || b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName);
+        }
+        if (sortMode === "name") return a.participant.displayName.localeCompare(b.participant.displayName);
+        return a.participant.company.localeCompare(b.participant.company) || a.participant.displayName.localeCompare(b.participant.displayName);
+      }),
+    [directoryItems, normalizedQuery, profileFilter, sortMode, ticketFilter, trackFilter],
+  );
   const selectedItem =
     filtered.find((item) => item.participant._id === selectedId) ??
     filtered.find((item) => item.participant._id !== actor._id) ??
@@ -1556,26 +1568,29 @@ function DirectoryView({
     reason,
     requestMode,
   });
-  const starterPicks = filtered
+  const starterPicks = useMemo(() => filtered
     .filter((item) => item.profile && !openTargetIds.has(item.participant._id))
     .filter((item) => normalizedQuery || !hasLowValueDiscoveryFocus(item.participant, item.profile))
     .sort((a, b) => {
       const sourceDelta = (b.profile ? sourceCount(b.profile) : 0) - (a.profile ? sourceCount(a.profile) : 0);
       return b.rank - a.rank || sourceDelta || a.participant.displayName.localeCompare(b.participant.displayName);
     })
-    .slice(0, 5);
-  const shortlist = shortlistIds
+    .slice(0, 5), [filtered, normalizedQuery, openTargetIds]);
+  const shortlist = useMemo(() => shortlistIds
     .map((id) => filtered.find((item) => item.participant._id === id))
     .filter((item): item is DirectoryItem => Boolean(item))
-    .slice(0, 4);
-  const companyGroups = companyDirectoryGroups(filtered);
-  const engagementStats = {
+    .slice(0, 4), [filtered, shortlistIds]);
+  const companyGroups = useMemo(
+    () => viewMode === "company" ? companyDirectoryGroups(filtered) : [],
+    [filtered, viewMode],
+  );
+  const engagementStats = useMemo(() => ({
     researched: filtered.filter((item) => item.profile).length,
     pending: filtered.filter((item) => !item.profile).length,
     sourceRich: filtered.filter((item) => item.profile && sourceCount(item.profile) >= 2).length,
     greatLeads: filtered.filter((item) => item.rank >= 18 || (item.profile && sourceCount(item.profile) >= 3)).length,
     openActions: activeOutgoingForDay.length + activeOutgoingInterests.length,
-  };
+  }), [activeOutgoingForDay.length, activeOutgoingInterests.length, filtered]);
 
   function resetFilters() {
     setQuery("");
@@ -1872,35 +1887,32 @@ function DirectoryView({
               </div>
             </div>
           )}
-          {viewMode === "company"
-            ? companyGroups.map((group) => (
-                <CompanyGroupCard
-                  key={group.company}
-                  activeTargetIds={openTargetIds}
-                  disabled={actionPending || Boolean(previewMode)}
-                  group={group}
-                  onQuickInterest={quickRegisterInterest}
-                  onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
-                  onShortlist={toggleShortlist}
-                  selectedId={selected?._id ?? null}
-                  shortlistIds={shortlistIds}
-                />
-              ))
-            : filtered.map(({ match, participant, profile }) => (
-                <ParticipantCard
-                  key={participant._id}
-                  activeRequestOpen={openTargetIds.has(participant._id)}
-                  disabled={actionPending || Boolean(previewMode)}
-                  isSelected={selected?._id === participant._id}
-                  match={match}
-                  onShortlist={() => toggleShortlist(participant)}
-                  onQuickInterest={() => quickRegisterInterest(participant)}
-                  participant={participant}
-                  profile={profile}
-                  shortlisted={shortlistIds.includes(participant._id)}
-                  onClick={() => selectParticipant(participant, { primeReason: true })}
-                />
-              ))}
+          {viewMode === "company" ? (
+            companyGroups.map((group) => (
+              <CompanyGroupCard
+                key={group.company}
+                activeTargetIds={openTargetIds}
+                disabled={actionPending || Boolean(previewMode)}
+                group={group}
+                onQuickInterest={quickRegisterInterest}
+                onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
+                onShortlist={toggleShortlist}
+                selectedId={selected?._id ?? null}
+                shortlistIds={shortlistIds}
+              />
+            ))
+          ) : (
+            <ParticipantResultsList
+              activeTargetIds={openTargetIds}
+              disabled={actionPending || Boolean(previewMode)}
+              items={filtered}
+              onQuickInterest={quickRegisterInterest}
+              onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
+              onShortlist={toggleShortlist}
+              selectedId={selected?._id ?? null}
+              shortlistIds={shortlistIds}
+            />
+          )}
         </div>
       </section>
 
@@ -2452,6 +2464,88 @@ function ParticipantCard({
           </button>
         </div>
       </div>
+    </div>
+  );
+}
+
+function ParticipantResultsList({
+  activeTargetIds,
+  disabled,
+  items,
+  onQuickInterest,
+  onSelect,
+  onShortlist,
+  selectedId,
+  shortlistIds,
+}: {
+  activeTargetIds: Set<Id<"accounts">>;
+  disabled: boolean;
+  items: DirectoryItem[];
+  onQuickInterest: (participant: Account) => void;
+  onSelect: (participant: Account) => void;
+  onShortlist: (participant: Account) => void;
+  selectedId: Id<"accounts"> | null;
+  shortlistIds: Array<Id<"accounts">>;
+}) {
+  const shouldWindow = items.length > 40;
+  const estimatePx = 98;
+  const overscan = 10;
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [range, setRange] = useState({ end: 40, start: 0 });
+
+  useEffect(() => {
+    if (!shouldWindow) return;
+
+    let frame = 0;
+    const updateRange = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const container = containerRef.current;
+        if (!container) return;
+        const top = container.getBoundingClientRect().top + window.scrollY;
+        const viewportTop = window.scrollY;
+        const viewportBottom = viewportTop + window.innerHeight;
+        const start = Math.max(0, Math.floor((viewportTop - top) / estimatePx) - overscan);
+        const end = Math.min(items.length, Math.ceil((viewportBottom - top) / estimatePx) + overscan);
+        setRange((current) => current.start === start && current.end === end ? current : { end, start });
+      });
+    };
+
+    updateRange();
+    window.addEventListener("scroll", updateRange, { passive: true });
+    window.addEventListener("resize", updateRange);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", updateRange);
+      window.removeEventListener("resize", updateRange);
+    };
+  }, [items.length, shouldWindow]);
+
+  const start = shouldWindow ? Math.min(range.start, items.length) : 0;
+  const end = shouldWindow ? Math.min(Math.max(range.end, start), items.length) : items.length;
+  const paddingTop = start * estimatePx;
+  const paddingBottom = Math.max(0, (items.length - end) * estimatePx);
+  const visibleItems = shouldWindow ? items.slice(start, end) : items;
+
+  return (
+    <div ref={containerRef} className="grid gap-1.5">
+      {paddingTop > 0 && <div aria-hidden="true" style={{ height: paddingTop }} />}
+      {visibleItems.map(({ match, participant, profile }) => (
+        <ParticipantCard
+          key={participant._id}
+          activeRequestOpen={activeTargetIds.has(participant._id)}
+          disabled={disabled}
+          isSelected={selectedId === participant._id}
+          match={match}
+          onShortlist={() => onShortlist(participant)}
+          onQuickInterest={() => onQuickInterest(participant)}
+          participant={participant}
+          profile={profile}
+          shortlisted={shortlistIds.includes(participant._id)}
+          onClick={() => onSelect(participant)}
+        />
+      ))}
+      {paddingBottom > 0 && <div aria-hidden="true" style={{ height: paddingBottom }} />}
     </div>
   );
 }
