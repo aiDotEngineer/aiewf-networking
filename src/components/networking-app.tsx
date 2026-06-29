@@ -74,14 +74,18 @@ type ImportBatch = Doc<"importBatches">;
 type Bootstrap = {
   settings: Settings;
   actor: Account;
-  accounts: Array<Account | null>;
   participants: Array<Account | null>;
   myAvailability: AvailabilitySlot[];
-  allAvailability: AvailabilitySlot[];
   requests: MeetingRequest[];
   meetings: Meeting[];
   importBatches: ImportBatch[];
   slotLabels: Array<{ minute: number; label: string }>;
+};
+type AdminParticipantsResult = {
+  participants: Array<Account | null>;
+  limit: number;
+  totalMatches: number;
+  hasMore: boolean;
 };
 type PublicConfig = {
   settings: Settings | null;
@@ -540,7 +544,6 @@ export function NetworkingApp() {
                 actionPending={actionPending}
                 actor={actor}
                 importBatches={data.importBatches}
-                participants={visibleAccounts(data.participants)}
                 meetings={data.meetings}
                 requests={data.requests}
                 runAction={runAction}
@@ -1563,7 +1566,6 @@ function AdminView({
   demoLoginEnabled,
   importBatches,
   meetings,
-  participants,
   requests,
   runAction,
   sessionToken,
@@ -1574,7 +1576,6 @@ function AdminView({
   actor: Account;
   demoLoginEnabled: boolean;
   importBatches: ImportBatch[];
-  participants: Account[];
   meetings: Meeting[];
   requests: MeetingRequest[];
   runAction: RunAction;
@@ -1586,6 +1587,12 @@ function AdminView({
   const upsertParticipants = useMutation(api.networking.upsertParticipantsFromRows);
   const setParticipantOptIn = useMutation(api.networking.setParticipantOptIn);
   const resetDemoData = useMutation(api.networking.resetDemoData);
+  const [participantSearch, setParticipantSearch] = useState("");
+  const adminParticipants = useQuery(api.networking.listAdminParticipants, {
+    sessionToken,
+    search: participantSearch,
+  }) as AdminParticipantsResult | undefined;
+  const participants = visibleAccounts(adminParticipants?.participants);
   const [form, setForm] = useState({
     dayStartMinute: settings.dayStartMinute,
     dayEndMinute: settings.dayEndMinute,
@@ -1653,9 +1660,41 @@ function AdminView({
         </form>
 
         <section className="border border-white/10 bg-[#101010]">
-          <SectionHeader icon={<Users size={17} />} title="Participant inventory" detail={`${participants.length} rows`} />
+          <SectionHeader
+            icon={<Users size={17} />}
+            title="Participant inventory"
+            detail={
+              adminParticipants
+                ? `${adminParticipants.totalMatches} matches`
+                : "loading"
+            }
+          />
+          <div className="border-b border-white/10 p-3">
+            <div className="relative">
+              <Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-white/35" size={16} />
+              <input
+                value={participantSearch}
+                onChange={(event) => setParticipantSearch(event.target.value)}
+                className="input pl-9"
+                placeholder="Search name, email, company, ticket"
+              />
+            </div>
+            {adminParticipants?.hasMore && (
+              <p className="mt-2 text-xs text-white/45">
+                Showing first {adminParticipants.limit}. Narrow the search to manage a specific participant.
+              </p>
+            )}
+          </div>
           <div className="grid gap-3 p-3">
-            {participants.slice(0, 60).map((participant) => (
+            {adminParticipants === undefined && (
+              <div className="flex items-center gap-2 text-sm text-white/50">
+                <Loader2 className="animate-spin" size={16} /> Loading participants
+              </div>
+            )}
+            {adminParticipants !== undefined && participants.length === 0 && (
+              <p className="text-sm text-white/50">No participants match that search.</p>
+            )}
+            {participants.map((participant) => (
               <div key={participant._id} className="grid gap-3 border border-white/10 bg-black/25 p-3 md:grid-cols-[minmax(0,1fr)_auto]">
                 <div className="min-w-0">
                   <div className="flex flex-wrap items-center gap-2">

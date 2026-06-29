@@ -25,6 +25,7 @@ const SESSION_TTL_MS = 1000 * 60 * 60 * 24 * 14;
 const MAGIC_LINK_TTL_MS = 1000 * 60 * 15;
 const MAGIC_LINK_HASH_SALT = "aiewf-networking-magic-link-v1";
 const MAX_IMPORT_ROWS = 2000;
+const ADMIN_PARTICIPANT_LIMIT = 120;
 const ACTIVE_REQUEST_STATUSES = new Set(["pending", "countered", "accepted"]);
 const MISSING_VALUES = new Set(["", "n/a", "na", "none", "null"]);
 const ADMIN_EMAILS = new Set([
@@ -1078,14 +1079,14 @@ export const getBootstrap = query({
     if (!settings) return null;
 
     const visibleParticipants =
-      actor.role === "admin"
-        ? await ctx.db.query("accounts").take(1800)
-        : await ctx.db
+      actor.role === "participant"
+        ? await ctx.db
             .query("accounts")
             .withIndex("by_signedUp_and_directoryOptIn", (q) =>
               q.eq("signedUp", true).eq("directoryOptIn", true),
             )
-            .take(1800);
+            .take(1800)
+        : [];
 
     const myAvailability =
       actor.role === "participant"
@@ -1101,11 +1102,6 @@ export const getBootstrap = query({
               ),
             )
           ).flat()
-        : [];
-
-    const allAvailability =
-      actor.role === "admin"
-        ? await ctx.db.query("participantAvailability").take(3000)
         : [];
 
     let requests: Array<Doc<"meetingRequests">> = [];
@@ -1170,14 +1166,10 @@ export const getBootstrap = query({
     return {
       settings,
       actor: accountSummary(actor),
-      accounts: (await ctx.db.query("accounts").take(200))
-        .filter((account) => account.active)
-        .map(accountSummary),
       participants: visibleParticipants
         .filter((account) => account.role === "participant" && account.active)
         .map(accountSummary),
       myAvailability,
-      allAvailability,
       requests: await Promise.all(uniqueRequests.map((request) => requestWithPeople(ctx, request))),
       meetings: await Promise.all(uniqueMeetings.map((meeting) => meetingWithParticipants(ctx, meeting))),
       importBatches,
@@ -1192,6 +1184,46 @@ export const getBootstrap = query({
           return { minute, label: minuteLabel(minute) };
         },
       ),
+    };
+  },
+});
+
+export const listAdminParticipants = query({
+  args: {
+    sessionToken: v.string(),
+    search: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const actor = await requireActor(ctx, args.sessionToken);
+    requireAdmin(actor);
+    const search = args.search.trim().toLowerCase();
+    const accounts = await ctx.db
+      .query("accounts")
+      .withIndex("by_role", (q) => q.eq("role", "participant"))
+      .take(1800);
+    const matches = accounts
+      .filter((account) => {
+        if (!account.active) return false;
+        if (!search) return true;
+        return [
+          account.displayName,
+          account.email,
+          account.company,
+          account.title,
+          account.ticketType,
+          account.registrationStatus,
+        ]
+          .join(" ")
+          .toLowerCase()
+          .includes(search);
+      })
+      .sort((a, b) => a.displayName.localeCompare(b.displayName));
+    const participants = matches.slice(0, ADMIN_PARTICIPANT_LIMIT).map(accountSummary);
+    return {
+      participants,
+      limit: ADMIN_PARTICIPANT_LIMIT,
+      totalMatches: matches.length,
+      hasMore: matches.length > participants.length,
     };
   },
 });
