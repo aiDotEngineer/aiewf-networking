@@ -26,9 +26,10 @@ import type { DataModel } from "./dataModel.js";
  */
 type Env = {
   readonly APP_BASE_URL: string;
+  readonly EMAIL_RELAY_FROM: string | undefined;
+  readonly EMAIL_RELAY_SECRET: string;
+  readonly EMAIL_RELAY_URL: string;
   readonly ENABLE_DEMO_LOGIN: string | undefined;
-  readonly RESEND_API_KEY: string;
-  readonly RESEND_FROM_EMAIL: string;
 };
 
 /**

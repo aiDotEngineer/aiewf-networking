@@ -16,6 +16,7 @@
 # next.js
 /.next/
 /out/
+/.open-next/
 
 # production
 /build
@@ -23,6 +24,7 @@
 # misc
 .DS_Store
 *.pem
+networkingdata.csv
 
 # debug
 npm-debug.log*
@@ -32,6 +34,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.wrangler/
 
 # vercel
 .vercel
@@ -39,3 +42,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+worker-configuration.d.ts

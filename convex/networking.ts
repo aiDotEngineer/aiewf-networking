@@ -27,6 +27,12 @@ const MAGIC_LINK_HASH_SALT = "aiewf-networking-magic-link-v1";
 const MAX_IMPORT_ROWS = 2000;
 const ACTIVE_REQUEST_STATUSES = new Set(["pending", "countered", "accepted"]);
 const MISSING_VALUES = new Set(["", "n/a", "na", "none", "null"]);
+const ADMIN_EMAILS = new Set([
+  "phlo@ai.engineer",
+  "adlin@ai.engineer",
+  "lia@ai.engineer",
+  "swyx@ai.engineer",
+]);
 
 const meetingStatusValidator = v.union(
   v.literal("confirmed"),
@@ -88,14 +94,6 @@ function minuteLabel(minute: number) {
   const suffix = hour >= 12 ? "PM" : "AM";
   const hour12 = hour % 12 === 0 ? 12 : hour % 12;
   return `${hour12}:${mins.toString().padStart(2, "0")} ${suffix}`;
-}
-
-function escapeHtml(value: string) {
-  return value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
 }
 
 function validatePositiveInteger(name: string, value: number) {
@@ -825,18 +823,16 @@ async function sendMagicLinkEmail({
   email: string;
   link: string;
 }) {
-  const safeDisplayName = escapeHtml(displayName);
-  const safeLink = escapeHtml(link);
-  const response = await fetch("https://api.resend.com/emails", {
+  const response = await fetch(env.EMAIL_RELAY_URL, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${env.RESEND_API_KEY}`,
+      Authorization: `Bearer ${env.EMAIL_RELAY_SECRET}`,
       "Content-Type": "application/json",
       "User-Agent": "aiewf-networking/1.0",
     },
     body: JSON.stringify({
-      from: env.RESEND_FROM_EMAIL,
-      to: [email],
+      ...(env.EMAIL_RELAY_FROM ? { from: env.EMAIL_RELAY_FROM } : {}),
+      to: email,
       subject: "Your AIE World Fair networking login",
       text: [
         `Hi ${displayName},`,
@@ -846,18 +842,17 @@ async function sendMagicLinkEmail({
         "",
         "This link expires in 15 minutes and can be used once.",
       ].join("\n"),
-      html: [
-        `<p>Hi ${safeDisplayName},</p>`,
-        `<p>Use this secure link to open the AIE World Fair networking room:</p>`,
-        `<p><a href="${safeLink}">Open networking room</a></p>`,
-        `<p>This link expires in 15 minutes and can be used once.</p>`,
-      ].join(""),
     }),
   });
 
   if (!response.ok) {
     const detail = await response.text();
-    throw new Error(`Could not send login email. Resend returned ${response.status}: ${detail.slice(0, 180)}`);
+    throw new Error(`Could not send login email. Email relay returned ${response.status}: ${detail.slice(0, 180)}`);
+  }
+
+  const result = (await response.json().catch(() => null)) as { delivered?: boolean; provider?: string } | null;
+  if (result?.delivered === false || result?.provider === "none") {
+    throw new Error("Could not send login email. Email relay did not deliver the message.");
   }
 }
 
@@ -1708,12 +1703,16 @@ export const upsertParticipantsFromRows = mutation({
             directoryOptIn: false,
             profileComplete: normalized.profileComplete,
           };
+      const role =
+        ADMIN_EMAILS.has(normalized.email) || existing?.role === "admin"
+          ? ("admin" as const)
+          : ("participant" as const);
       const fields = {
         email: normalized.email,
         displayName: preserved.displayName || normalized.email,
         firstName: normalized.firstName,
         lastName: normalized.lastName,
-        role: "participant" as const,
+        role,
         title: preserved.title,
         company: preserved.company,
         ticketType: normalized.ticketType,
