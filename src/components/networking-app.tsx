@@ -1316,7 +1316,12 @@ function Navigation({
     { id: "display", label: "Room display", icon: <Monitor size={16} /> },
     { id: "admin", label: "Admin", icon: <Settings2 size={16} /> },
   ];
-  const items = allItems.filter((item) => item.id !== "admin" || (actor.role === "admin" && !adminViewingAsParticipant));
+  const items = allItems.filter((item) => {
+    if (item.id === "admin" || item.id === "display") {
+      return actor.role === "admin" && !adminViewingAsParticipant;
+    }
+    return true;
+  });
   const activeItem = items.find((item) => item.id === activeView) ?? items[0];
 
   return (
