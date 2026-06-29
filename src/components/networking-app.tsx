@@ -45,7 +45,7 @@ import {
   X,
 } from "lucide-react";
 import QRCode from "qrcode";
-import { FormEvent, ReactNode, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, ReactNode, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, useTransition } from "react";
 
 type Account = {
   _id: Id<"accounts">;
@@ -1454,10 +1454,12 @@ function DirectoryView({
   const [date, setDate] = useState(settings.startDate);
   const [requestMode, setRequestMode] = useState<RequestMode>("slot");
   const [selectedId, setSelectedId] = useState<Id<"accounts"> | null>(null);
+  const [hoveredId, setHoveredId] = useState<Id<"accounts"> | null>(null);
   const [shortlistIds, setShortlistIds] = useState<Array<Id<"accounts">>>([]);
   const [selectedSlot, setSelectedSlot] = useState<number | "">("");
   const [reason, setReason] = useState("");
   const deferredQuery = useDeferredValue(query);
+  const [, startDirectoryTransition] = useTransition();
   const [lastAction, setLastAction] = useState<{ mode: RequestMode; name: string } | null>(null);
   const activeOutgoingForDay = useMemo(
     () => requests.filter(
@@ -1545,6 +1547,10 @@ function DirectoryView({
     api.networking.getParticipantAvailability,
     selected ? { accountId: selected._id, date } : "skip",
   ) as AvailabilitySlot[] | undefined;
+  useQuery(
+    api.networking.getParticipantAvailability,
+    hoveredId && hoveredId !== selected?._id ? { accountId: hoveredId, date } : "skip",
+  ) as AvailabilitySlot[] | undefined;
   const availableSlots = (availability ?? []).filter((slot) => slot.available && slot.groupOpen !== false);
   const fallbackSlot: number | "" = availableSlots.length > 0 ? availableSlots[0].startMinute : "";
   const effectiveSelectedSlot: number | "" =
@@ -1605,18 +1611,26 @@ function DirectoryView({
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  function warmParticipant(participant: Account) {
+    if (participant._id === hoveredId) return;
+    startDirectoryTransition(() => setHoveredId(participant._id));
+  }
+
   function selectParticipant(participant: Account, options?: { primeInterest?: boolean; primeReason?: boolean }) {
     const profile = participantProfileFor(participant);
     setSelectedId(participant._id);
-    setSelectedSlot("");
-    if (options?.primeInterest) {
-      setRequestMode("interest");
-    }
-    if (options?.primeInterest || options?.primeReason) {
-      setReason((current) =>
-        current.trim() ? current : meetingReasonSuggestions(actor, participant, actorProfile, profile)[0],
-      );
-    }
+    startDirectoryTransition(() => {
+      setHoveredId(participant._id);
+      setSelectedSlot("");
+      if (options?.primeInterest) {
+        setRequestMode("interest");
+      }
+      if (options?.primeInterest || options?.primeReason) {
+        setReason((current) =>
+          current.trim() ? current : meetingReasonSuggestions(actor, participant, actorProfile, profile)[0],
+        );
+      }
+    });
   }
 
   function quickRegisterInterest(participant: Account) {
@@ -1858,6 +1872,7 @@ function DirectoryView({
             picks={starterPicks}
             selectedId={selected?._id ?? null}
             onSelect={(participant) => selectParticipant(participant, { primeInterest: true })}
+            onWarm={warmParticipant}
           />
         )}
         {shortlist.length > 0 && (
@@ -1865,6 +1880,7 @@ function DirectoryView({
             items={shortlist}
             onClear={() => setShortlistIds([])}
             onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
+            onWarm={warmParticipant}
             selectedId={selected?._id ?? null}
           />
         )}
@@ -1897,6 +1913,7 @@ function DirectoryView({
                 onQuickInterest={quickRegisterInterest}
                 onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
                 onShortlist={toggleShortlist}
+                onWarm={warmParticipant}
                 selectedId={selected?._id ?? null}
                 shortlistIds={shortlistIds}
               />
@@ -1909,6 +1926,7 @@ function DirectoryView({
               onQuickInterest={quickRegisterInterest}
               onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
               onShortlist={toggleShortlist}
+              onWarm={warmParticipant}
               selectedId={selected?._id ?? null}
               shortlistIds={shortlistIds}
             />
@@ -2269,6 +2287,7 @@ function CompanyGroupCard({
   onQuickInterest,
   onSelect,
   onShortlist,
+  onWarm,
   selectedId,
   shortlistIds,
 }: {
@@ -2278,6 +2297,7 @@ function CompanyGroupCard({
   onQuickInterest: (participant: Account) => void;
   onSelect: (participant: Account) => void;
   onShortlist: (participant: Account) => void;
+  onWarm: (participant: Account) => void;
   selectedId: Id<"accounts"> | null;
   shortlistIds: Array<Id<"accounts">>;
 }) {
@@ -2312,10 +2332,11 @@ function CompanyGroupCard({
                 selectedId === participant._id
                   ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
                   : "border-white/10 bg-[#101010] hover:border-white/25",
-              )}
-              key={participant._id}
-            >
-              <button className="min-w-0 text-left" onClick={() => onSelect(participant)} type="button">
+            )}
+            key={participant._id}
+            onPointerEnter={() => onWarm(participant)}
+          >
+            <button className="min-w-0 text-left" onClick={() => onSelect(participant)} type="button">
                 <div className="flex min-w-0 flex-wrap items-center gap-2">
                   <span className="truncate text-sm font-semibold leading-5 text-white">{participant.displayName}</span>
                   <StatusBadge status={participant.ticketCategory} />
@@ -2369,6 +2390,7 @@ function ParticipantCard({
   onClick,
   onQuickInterest,
   onShortlist,
+  onWarm,
   participant,
   profile,
   shortlisted,
@@ -2380,6 +2402,7 @@ function ParticipantCard({
   onClick: () => void;
   onQuickInterest: () => void;
   onShortlist: () => void;
+  onWarm: () => void;
   participant: Account;
   profile: DisplayParticipantProfile | null;
   shortlisted: boolean;
@@ -2400,6 +2423,8 @@ function ParticipantCard({
           : "border-white/10 bg-black/25 hover:border-white/25 hover:bg-white/[0.045]",
       )}
       onClick={onClick}
+      onFocus={onWarm}
+      onPointerEnter={onWarm}
       role="button"
       tabIndex={0}
       onKeyDown={(event) => {
@@ -2475,6 +2500,7 @@ function ParticipantResultsList({
   onQuickInterest,
   onSelect,
   onShortlist,
+  onWarm,
   selectedId,
   shortlistIds,
 }: {
@@ -2484,6 +2510,7 @@ function ParticipantResultsList({
   onQuickInterest: (participant: Account) => void;
   onSelect: (participant: Account) => void;
   onShortlist: (participant: Account) => void;
+  onWarm: (participant: Account) => void;
   selectedId: Id<"accounts"> | null;
   shortlistIds: Array<Id<"accounts">>;
 }) {
@@ -2543,6 +2570,7 @@ function ParticipantResultsList({
           profile={profile}
           shortlisted={shortlistIds.includes(participant._id)}
           onClick={() => onSelect(participant)}
+          onWarm={() => onWarm(participant)}
         />
       ))}
       {paddingBottom > 0 && <div aria-hidden="true" style={{ height: paddingBottom }} />}
@@ -2552,10 +2580,12 @@ function ParticipantResultsList({
 
 function StarterPicks({
   onSelect,
+  onWarm,
   picks,
   selectedId,
 }: {
   onSelect: (participant: Account) => void;
+  onWarm: (participant: Account) => void;
   picks: Array<{ match: MatchSignal; participant: Account; profile: DisplayParticipantProfile | null }>;
   selectedId: Id<"accounts"> | null;
 }) {
@@ -2581,6 +2611,8 @@ function StarterPicks({
               )}
               key={participant._id}
               onClick={() => onSelect(participant)}
+              onFocus={() => onWarm(participant)}
+              onPointerEnter={() => onWarm(participant)}
               type="button"
             >
               <div>
@@ -2614,11 +2646,13 @@ function ShortlistTray({
   items,
   onClear,
   onSelect,
+  onWarm,
   selectedId,
 }: {
   items: Array<{ match: MatchSignal; participant: Account; profile: DisplayParticipantProfile | null }>;
   onClear: () => void;
   onSelect: (participant: Account) => void;
+  onWarm: (participant: Account) => void;
   selectedId: Id<"accounts"> | null;
 }) {
   return (
@@ -2642,6 +2676,8 @@ function ShortlistTray({
               )}
               key={participant._id}
               onClick={() => onSelect(participant)}
+              onFocus={() => onWarm(participant)}
+              onPointerEnter={() => onWarm(participant)}
               type="button"
             >
               <div className="truncate text-xs font-semibold text-white">{participant.displayName}</div>
