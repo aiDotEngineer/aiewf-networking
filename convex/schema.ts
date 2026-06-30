@@ -221,6 +221,13 @@ export default defineSchema({
     ])
     .index("by_date_and_startMinute", ["date", "startMinute"]),
 
+  meetingMessages: defineTable({
+    meetingId: v.id("meetings"),
+    senderAccountId: v.id("accounts"),
+    body: v.string(),
+    createdAt: v.number(),
+  }).index("by_meetingId", ["meetingId"]),
+
   importBatches: defineTable({
     importedByAccountId: v.id("accounts"),
     kind: v.string(),

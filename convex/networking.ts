@@ -2501,3 +2501,86 @@ export const moveMeeting = mutation({
     return { updated: true };
   },
 });
+
+const MAX_MESSAGE_LENGTH = 2000;
+
+async function requireMeetingMember(
+  ctx: QueryCtx | MutationCtx,
+  sessionToken: string,
+  meetingId: Id<"meetings">,
+) {
+  const actor = await requireActor(ctx, sessionToken);
+  const meeting = await ctx.db.get(meetingId);
+  if (!meeting) throw new Error("Meeting not found.");
+  const participants = await ctx.db
+    .query("meetingParticipants")
+    .withIndex("by_meetingId", (q) => q.eq("meetingId", meetingId))
+    .take(10);
+  const isMember = participants.some(
+    (participant) => participant.accountId === actor._id,
+  );
+  if (actor.role !== "admin" && !isMember) {
+    throw new Error("Only meeting participants can use this chat.");
+  }
+  return { actor, meeting };
+}
+
+export const listMeetingMessages = query({
+  args: { sessionToken: v.string(), meetingId: v.id("meetings") },
+  handler: async (ctx, args) => {
+    const { actor } = await requireMeetingMember(
+      ctx,
+      args.sessionToken,
+      args.meetingId,
+    );
+    const messages = await ctx.db
+      .query("meetingMessages")
+      .withIndex("by_meetingId", (q) => q.eq("meetingId", args.meetingId))
+      .order("asc")
+      .take(200);
+    const overrides = await getProfileOverrideMap(
+      ctx,
+      messages.map((message) => message.senderAccountId),
+    );
+    const senders = await Promise.all(
+      messages.map((message) => ctx.db.get(message.senderAccountId)),
+    );
+    return messages.map((message, index) => ({
+      _id: message._id,
+      body: message.body,
+      createdAt: message.createdAt,
+      isMine: message.senderAccountId === actor._id,
+      sender: accountSummary(senders[index], overrides.get(message.senderAccountId)),
+    }));
+  },
+});
+
+export const sendMeetingMessage = mutation({
+  args: {
+    sessionToken: v.string(),
+    meetingId: v.id("meetings"),
+    body: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const { actor, meeting } = await requireMeetingMember(
+      ctx,
+      args.sessionToken,
+      args.meetingId,
+    );
+    if (meeting.status === "cancelled") {
+      throw new Error("This meeting has been cancelled.");
+    }
+    const body = args.body.trim();
+    if (!body) throw new Error("Message cannot be empty.");
+    if (body.length > MAX_MESSAGE_LENGTH) {
+      throw new Error("Message is too long.");
+    }
+    const messageId = await ctx.db.insert("meetingMessages", {
+      meetingId: args.meetingId,
+      senderAccountId: actor._id,
+      body,
+      createdAt: now(),
+    });
+    return { messageId };
+  },
+});
