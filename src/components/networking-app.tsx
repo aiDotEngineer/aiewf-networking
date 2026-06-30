@@ -1795,16 +1795,16 @@ function DirectoryView({
             }}
           />
         )}
-        <div className="border-b border-white/10 px-4 py-3">
-          <div className="inline-grid grid-cols-2 border border-white/10 bg-black/30 p-1">
+        <div className="flex border-b border-white/10 px-4 py-2 sm:justify-end">
+          <div className="inline-grid w-full max-w-xs grid-cols-2 border border-white/10 bg-black/30 p-0.5 sm:w-auto">
             {([
-              ["company", "Company first", "Browse organizations and what they do"],
-              ["people", "People first", "Browse individual attendees"],
+              ["company", "Companies", "Browse organizations and what they do"],
+              ["people", "People", "Browse individual attendees"],
             ] as const).map(([mode, label, description]) => (
               <button
                 aria-pressed={viewMode === mode}
                 className={cn(
-                  "flex min-h-10 items-center justify-center px-3 text-center text-xs font-semibold uppercase tracking-[0.12em] transition sm:min-w-44",
+                  "flex min-h-8 items-center justify-center px-3 text-center text-[11px] font-semibold uppercase tracking-[0.08em] transition sm:min-w-28",
                   viewMode === mode
                     ? "bg-[#f8e18e] text-black"
                     : "text-white/55 hover:bg-white/[0.06] hover:text-white",
@@ -2813,15 +2813,39 @@ function StarterPicks({
   picks: Array<{ match: MatchSignal; participant: Account; profile: DisplayParticipantProfile | null }>;
   selectedId: Id<"accounts"> | null;
 }) {
+  const selectedPickId = selectedId && picks.some(({ participant }) => participant._id === selectedId)
+    ? selectedId
+    : "";
+
+  function selectPick(participantId: string) {
+    const pick = picks.find(({ participant }) => participant._id === participantId);
+    if (!pick) return;
+    onWarm(pick.participant);
+    onSelect(pick.participant);
+  }
+
   return (
     <div className="min-w-0 border-b border-white/10 bg-black/20 px-3 py-2">
       <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
         <div>
           <div className="text-xs font-semibold uppercase tracking-[0.12em] text-[#f8e18e]">Quick start</div>
-          <div className="mt-1 text-xs leading-5 text-white/45">Optional suggested intros. Scroll sideways or skip to the full directory below.</div>
+          <div className="mt-1 text-xs leading-5 text-white/45">Optional suggested intros. Pick one or skip to the full directory below.</div>
         </div>
       </div>
-      <div className="max-w-full min-w-0 overflow-x-auto overscroll-x-contain pb-1">
+      <select
+        aria-label="Quick start suggestion"
+        className="input sm:hidden"
+        onChange={(event) => selectPick(event.target.value)}
+        value={selectedPickId}
+      >
+        <option value="">Select a suggested intro...</option>
+        {picks.map(({ match, participant, profile }) => (
+          <option key={participant._id} value={participant._id}>
+            {participant.displayName} · {participant.company || profile?.company || match.reasons[0] || "Suggested intro"}
+          </option>
+        ))}
+      </select>
+      <div className="hidden max-w-full min-w-0 overflow-x-auto overscroll-x-contain pb-1 sm:block">
         <div className="flex w-max gap-2">
         {picks.map(({ match, participant, profile }) => {
           const schedule = participantSpeakerSchedule(participant);
