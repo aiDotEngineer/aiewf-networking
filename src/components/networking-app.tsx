@@ -1489,6 +1489,7 @@ function DirectoryView({
   const [, startDirectoryTransition] = useTransition();
   const [lastAction, setLastAction] = useState<{ mode: RequestMode; name: string } | null>(null);
   const [showProfilePrompt, setShowProfilePrompt] = useState(false);
+  const [detailsParticipant, setDetailsParticipant] = useState<Account | null>(null);
   const activeOutgoingForDay = useMemo(
     () => requests.filter(
       (request) =>
@@ -1655,6 +1656,11 @@ function DirectoryView({
     });
   }
 
+  function openDetails(participant: Account) {
+    selectParticipant(participant, { primeReason: true });
+    setDetailsParticipant(participant);
+  }
+
   function quickRegisterInterest(participant: Account) {
     const profile = participantProfileFor(participant);
     const suggestions = meetingReasonSuggestions(actor, participant, actorProfile, profile);
@@ -1769,6 +1775,22 @@ function DirectoryView({
             onGoToProfile={() => {
               setShowProfilePrompt(false);
               onGoToProfile();
+            }}
+          />
+        )}
+        {detailsParticipant && (
+          <ParticipantDetailsModal
+            participant={detailsParticipant}
+            bookable={detailsParticipant.hasAvailability}
+            disabled={actionPending || Boolean(previewMode)}
+            requestOpen={openTargetIds.has(detailsParticipant._id)}
+            shortlisted={shortlistIds.includes(detailsParticipant._id)}
+            onClose={() => setDetailsParticipant(null)}
+            onShortlist={() => toggleShortlist(detailsParticipant)}
+            onRequest={() => {
+              const target = detailsParticipant;
+              setDetailsParticipant(null);
+              quickRegisterInterest(target);
             }}
           />
         )}
@@ -1930,6 +1952,7 @@ function DirectoryView({
                 group={group}
                 onQuickInterest={quickRegisterInterest}
                 onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
+                onShowDetails={openDetails}
                 onShortlist={toggleShortlist}
                 onWarm={warmParticipant}
                 selectedId={selected?._id ?? null}
@@ -1943,6 +1966,7 @@ function DirectoryView({
               items={filtered}
               onQuickInterest={quickRegisterInterest}
               onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
+              onShowDetails={openDetails}
               onShortlist={toggleShortlist}
               onWarm={warmParticipant}
               selectedId={selected?._id ?? null}
@@ -2319,6 +2343,69 @@ function RequestSuccessModal({
   );
 }
 
+function ParticipantDetailsModal({
+  bookable,
+  disabled,
+  onClose,
+  onRequest,
+  onShortlist,
+  participant,
+  requestOpen,
+  shortlisted,
+}: {
+  bookable: boolean;
+  disabled: boolean;
+  onClose: () => void;
+  onRequest: () => void;
+  onShortlist: () => void;
+  participant: Account;
+  requestOpen: boolean;
+  shortlisted: boolean;
+}) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/70 p-4" onClick={onClose}>
+      <div
+        className="my-auto flex max-h-[88vh] w-full max-w-2xl flex-col border border-white/15 bg-[#0c0c0c] shadow-xl"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <div className="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-3">
+          <div className="text-xs font-semibold uppercase tracking-[0.12em] text-[#f8e18e]">Participant details</div>
+          <button aria-label="Close" className="text-white/45 hover:text-white" onClick={onClose} type="button">
+            <X size={18} />
+          </button>
+        </div>
+        <div className="min-w-0 overflow-y-auto p-4">
+          <ParticipantDetailPanel participant={participant} />
+        </div>
+        <div className="flex flex-wrap items-center justify-end gap-2 border-t border-white/10 px-4 py-3">
+          <button className="button-quiet h-9 min-h-9 px-3 text-sm" onClick={onClose} type="button">
+            Close
+          </button>
+          <button
+            className={cn(
+              "button-quiet h-9 min-h-9 px-3 text-sm",
+              shortlisted && "border-[#f8e18e]/45 bg-[#f8e18e]/10 text-[#f8e18e]",
+            )}
+            onClick={onShortlist}
+            type="button"
+          >
+            {shortlisted ? "Saved" : "Save"}
+          </button>
+          <button
+            className="button-primary h-9 min-h-9 px-3 text-sm"
+            disabled={disabled || requestOpen || !bookable}
+            onClick={onRequest}
+            title={bookable ? undefined : "This person hasn't opted in to being booked yet."}
+            type="button"
+          >
+            <Send size={15} /> Request meeting
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function DiscoverySummary({
   onShowPending,
   onShowRecommended,
@@ -2404,6 +2491,7 @@ function CompanyGroupCard({
   group,
   onQuickInterest,
   onSelect,
+  onShowDetails,
   onShortlist,
   onWarm,
   selectedId,
@@ -2414,6 +2502,7 @@ function CompanyGroupCard({
   group: CompanyGroup;
   onQuickInterest: (participant: Account) => void;
   onSelect: (participant: Account) => void;
+  onShowDetails: (participant: Account) => void;
   onShortlist: (participant: Account) => void;
   onWarm: (participant: Account) => void;
   selectedId: Id<"accounts"> | null;
@@ -2468,7 +2557,7 @@ function CompanyGroupCard({
                 </div>
               </button>
               <div className="flex flex-wrap gap-2 md:justify-end">
-                <button className="button-quiet h-8 min-h-8 px-2 text-xs" onClick={() => onSelect(participant)} type="button">
+                <button className="button-quiet h-8 min-h-8 px-2 text-xs" onClick={() => onShowDetails(participant)} type="button">
                   Details
                 </button>
                 <button
@@ -2512,6 +2601,7 @@ function ParticipantCard({
   match,
   onClick,
   onQuickInterest,
+  onShowDetails,
   onShortlist,
   onWarm,
   participant,
@@ -2525,6 +2615,7 @@ function ParticipantCard({
   match: MatchSignal;
   onClick: () => void;
   onQuickInterest: () => void;
+  onShowDetails: () => void;
   onShortlist: () => void;
   onWarm: () => void;
   participant: Account;
@@ -2579,7 +2670,7 @@ function ParticipantCard({
             className="button-quiet h-8 min-h-8 px-2 text-xs"
             onClick={(event) => {
               event.stopPropagation();
-              onClick();
+              onShowDetails();
             }}
             type="button"
           >
@@ -2627,6 +2718,7 @@ function ParticipantResultsList({
   items,
   onQuickInterest,
   onSelect,
+  onShowDetails,
   onShortlist,
   onWarm,
   selectedId,
@@ -2637,6 +2729,7 @@ function ParticipantResultsList({
   items: DirectoryItem[];
   onQuickInterest: (participant: Account) => void;
   onSelect: (participant: Account) => void;
+  onShowDetails: (participant: Account) => void;
   onShortlist: (participant: Account) => void;
   onWarm: (participant: Account) => void;
   selectedId: Id<"accounts"> | null;
@@ -2694,6 +2787,7 @@ function ParticipantResultsList({
           isSelected={selectedId === participant._id}
           match={match}
           onShortlist={() => onShortlist(participant)}
+          onShowDetails={() => onShowDetails(participant)}
           onQuickInterest={() => onQuickInterest(participant)}
           participant={participant}
           profile={profile}
@@ -2733,7 +2827,7 @@ function StarterPicks({
           return (
             <button
               className={cn(
-                "grid min-h-28 w-[320px] flex-none content-between gap-2 border p-3 text-left transition",
+                "grid min-h-28 w-[320px] min-w-0 flex-none content-between gap-2 overflow-hidden border p-3 text-left transition",
                 selectedId === participant._id
                   ? "border-[#f8e18e]/70 bg-[#f8e18e]/10"
                   : "border-white/10 bg-[#101010] hover:border-[#f8e18e]/45 hover:bg-[#f8e18e]/5",
@@ -2744,21 +2838,21 @@ function StarterPicks({
               onPointerEnter={() => onWarm(participant)}
               type="button"
             >
-              <div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="truncate text-sm font-semibold leading-5 text-white">{participant.displayName}</span>
+              <div className="min-w-0">
+                <div className="flex min-w-0 flex-wrap items-center gap-2">
+                  <span className="min-w-0 truncate text-sm font-semibold leading-5 text-white">{participant.displayName}</span>
                   {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
                 </div>
-                <div className="mt-1 text-xs leading-5 text-white/55">
+                <div className="mt-1 truncate text-xs leading-5 text-white/55">
                   {participant.title || profile?.title || "Title TBD"} · {participant.company || profile?.company || "Company TBD"}
                 </div>
                 <div className="mt-2 line-clamp-2 text-xs leading-5 text-white/45">
                   {profile?.displayHeadline || participant.networkingIntent || "Researched profile"}
                 </div>
               </div>
-              <div className="flex flex-wrap items-center gap-2">
+              <div className="min-w-0">
                 {match.reasons.slice(0, 1).map((reason) => (
-                  <span className="truncate text-[11px] leading-5 text-white/38" key={reason}>{reason}</span>
+                  <span className="block truncate text-[11px] leading-5 text-white/38" key={reason}>{reason}</span>
                 ))}
               </div>
             </button>
