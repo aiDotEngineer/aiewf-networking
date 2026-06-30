@@ -21,6 +21,7 @@ import {
   Building2,
   Check,
   CheckCircle2,
+  ChevronLeft,
   ChevronRight,
   Circle,
   Clock3,
@@ -1491,6 +1492,8 @@ function DirectoryView({
   const [lastAction, setLastAction] = useState<{ mode: RequestMode; name: string } | null>(null);
   const [showProfilePrompt, setShowProfilePrompt] = useState(false);
   const [detailsParticipant, setDetailsParticipant] = useState<Account | null>(null);
+  const [page, setPage] = useState(0);
+  const resultsTopRef = useRef<HTMLDivElement | null>(null);
   const activeOutgoingForDay = useMemo(
     () => requests.filter(
       (request) =>
@@ -1615,6 +1618,33 @@ function DirectoryView({
     () => viewMode === "company" ? companyDirectoryGroups(filtered) : [],
     [filtered, viewMode],
   );
+  const pageSize = viewMode === "company" ? 12 : 25;
+  const totalResults = viewMode === "company" ? companyGroups.length : filtered.length;
+  const pageCount = Math.max(1, Math.ceil(totalResults / pageSize));
+  const filterKey = `${viewMode}|${normalizedQuery}|${profileFilter}|${sortMode}|${ticketFilter}|${trackFilter}`;
+  const [lastFilterKey, setLastFilterKey] = useState(filterKey);
+  let activePage = page;
+  if (filterKey !== lastFilterKey) {
+    setLastFilterKey(filterKey);
+    setPage(0);
+    activePage = 0;
+  }
+  const currentPage = Math.min(activePage, pageCount - 1);
+  const pageStart = currentPage * pageSize;
+  const pageEnd = Math.min(pageStart + pageSize, totalResults);
+  const pagedCompanyGroups = useMemo(
+    () => companyGroups.slice(pageStart, pageEnd),
+    [companyGroups, pageEnd, pageStart],
+  );
+  const pagedItems = useMemo(
+    () => filtered.slice(pageStart, pageEnd),
+    [filtered, pageEnd, pageStart],
+  );
+
+  function goToPage(next: number) {
+    setPage(next);
+    resultsTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
   const engagementStats = useMemo(() => ({
     researched: filtered.filter((item) => item.profile).length,
     pending: filtered.filter((item) => !item.profile).length,
@@ -1925,9 +1955,11 @@ function DirectoryView({
             selectedId={selected?._id ?? null}
           />
         )}
-        <div className="flex items-center justify-between border-b border-white/10 bg-[#0b0b0b] px-3 py-2">
+        <div ref={resultsTopRef} className="flex scroll-mt-4 items-center justify-between gap-2 border-b border-white/10 bg-[#0b0b0b] px-3 py-2">
           <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/50">
-            Directory results · {viewMode === "company" ? `${companyGroups.length} companies` : `${filtered.length} people`}
+            {totalResults === 0
+              ? viewMode === "company" ? "0 companies" : "0 people"
+              : `${pageStart + 1}–${pageEnd} of ${totalResults} ${viewMode === "company" ? "companies" : "people"}`}
           </div>
           <div className="text-[11px] text-white/35">
             Sorted by {sortMode === "recommended" ? "recommended order" : sortMode}
@@ -1945,7 +1977,7 @@ function DirectoryView({
             </div>
           )}
           {viewMode === "company" ? (
-            companyGroups.map((group) => (
+            pagedCompanyGroups.map((group) => (
               <CompanyGroupCard
                 key={group.company}
                 activeTargetIds={openTargetIds}
@@ -1964,7 +1996,7 @@ function DirectoryView({
             <ParticipantResultsList
               activeTargetIds={openTargetIds}
               disabled={actionPending || Boolean(previewMode)}
-              items={filtered}
+              items={pagedItems}
               onQuickInterest={quickRegisterInterest}
               onSelect={(participant) => selectParticipant(participant, { primeReason: true })}
               onShowDetails={openDetails}
@@ -1975,6 +2007,7 @@ function DirectoryView({
             />
           )}
         </div>
+        <PaginationControls onChange={goToPage} page={currentPage} pageCount={pageCount} />
       </section>
 
       <form onSubmit={submitRequest} className="border border-white/10 bg-[#101010] p-4 xl:sticky xl:top-4 xl:self-start">
@@ -2340,6 +2373,75 @@ function RequestSuccessModal({
           </button>
         </div>
       </div>
+    </div>
+  );
+}
+
+function paginationRange(page: number, pageCount: number): Array<number | "gap"> {
+  if (pageCount <= 7) return Array.from({ length: pageCount }, (_, index) => index);
+  const last = pageCount - 1;
+  const candidates = [0, last, page - 1, page, page + 1].filter((value) => value >= 0 && value <= last);
+  const sorted = [...new Set(candidates)].sort((a, b) => a - b);
+  const result: Array<number | "gap"> = [];
+  let previous: number | null = null;
+  for (const value of sorted) {
+    if (previous !== null && value - previous > 1) result.push("gap");
+    result.push(value);
+    previous = value;
+  }
+  return result;
+}
+
+function PaginationControls({
+  onChange,
+  page,
+  pageCount,
+}: {
+  onChange: (page: number) => void;
+  page: number;
+  pageCount: number;
+}) {
+  if (pageCount <= 1) return null;
+  return (
+    <div className="flex flex-wrap items-center justify-center gap-1.5 border-t border-white/10 bg-[#0b0b0b] px-3 py-3">
+      <button
+        className="button-quiet h-8 min-h-8 px-2 text-xs"
+        disabled={page <= 0}
+        onClick={() => onChange(page - 1)}
+        type="button"
+      >
+        <ChevronLeft size={14} /> Prev
+      </button>
+      {paginationRange(page, pageCount).map((entry, index) =>
+        entry === "gap" ? (
+          <span className="px-1 text-xs text-white/35" key={`gap-${index}`}>
+            …
+          </span>
+        ) : (
+          <button
+            aria-current={entry === page ? "page" : undefined}
+            className={cn(
+              "h-8 min-h-8 min-w-8 border px-2 text-xs transition",
+              entry === page
+                ? "border-[#f8e18e]/70 bg-[#f8e18e]/10 text-[#f8e18e]"
+                : "border-white/10 text-white/60 hover:border-white/25 hover:text-white",
+            )}
+            key={entry}
+            onClick={() => onChange(entry)}
+            type="button"
+          >
+            {entry + 1}
+          </button>
+        ),
+      )}
+      <button
+        className="button-quiet h-8 min-h-8 px-2 text-xs"
+        disabled={page >= pageCount - 1}
+        onClick={() => onChange(page + 1)}
+        type="button"
+      >
+        Next <ChevronRight size={14} />
+      </button>
     </div>
   );
 }
