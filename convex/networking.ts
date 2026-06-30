@@ -1553,6 +1553,30 @@ export const listAdminParticipants = query({
   },
 });
 
+export const listDirectoryPreviewParticipants = query({
+  args: { sessionToken: v.string() },
+  handler: async (ctx, args) => {
+    const actor = await requireActor(ctx, args.sessionToken);
+    requireAdmin(actor);
+    const accounts = await ctx.db
+      .query("accounts")
+      .withIndex("by_signedUp_and_directoryOptIn", (q) =>
+        q.eq("signedUp", true).eq("directoryOptIn", true),
+      )
+      .take(1800);
+    const participants = accounts.filter(
+      (account) => account.role === "participant" && account.active,
+    );
+    const overrides = await getProfileOverrideMap(
+      ctx,
+      participants.map((account) => account._id),
+    );
+    return participants.map((account) =>
+      accountSummary(account, overrides.get(account._id)),
+    );
+  },
+});
+
 export const getParticipantAvailability = query({
   args: { accountId: v.id("accounts"), date: v.string() },
   handler: async (ctx, args) => {

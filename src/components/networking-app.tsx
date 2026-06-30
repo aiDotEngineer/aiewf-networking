@@ -113,6 +113,7 @@ type AdminParticipantsResult = {
   totalMatches: number;
   hasMore: boolean;
 };
+type DirectoryPreviewParticipantsResult = Array<Account | null>;
 type PublicConfig = {
   settings: Settings | null;
   demoLoginEnabled: boolean;
@@ -890,9 +891,9 @@ export function NetworkingApp() {
   ) as RoomDisplayData | null | undefined;
   const adminViewingAsParticipant = data?.actor.role === "admin" && adminParticipantPreview;
   const adminPreviewParticipants = useQuery(
-    api.networking.listAdminParticipants,
-    adminViewingAsParticipant && sessionToken ? { sessionToken, search: "" } : "skip",
-  ) as AdminParticipantsResult | undefined;
+    api.networking.listDirectoryPreviewParticipants,
+    adminViewingAsParticipant && sessionToken ? { sessionToken } : "skip",
+  ) as DirectoryPreviewParticipantsResult | undefined;
 
   const runAction: RunAction = async (task, success) => {
     if (actionLockRef.current) return false;
@@ -960,7 +961,7 @@ export function NetworkingApp() {
     ? { ...actor, role: "participant" as const }
     : actor;
   const participants = adminViewingAsParticipant
-    ? visibleAccounts(adminPreviewParticipants?.participants)
+    ? visibleAccounts(adminPreviewParticipants)
     : visibleAccounts(data.participants);
   const stats = dashboardStats(data, participants);
 
