@@ -2247,6 +2247,78 @@ export const backfillParticipantDirectoryOptIn = mutation({
   },
 });
 
+export const addMissingParticipants = internalMutation({
+  args: {
+    rows: v.array(
+      v.object({
+        firstName: v.string(),
+        lastName: v.string(),
+        email: v.string(),
+        registrationStatus: v.string(),
+        ticketCategory: v.union(
+          v.literal("leadership"),
+          v.literal("speaker"),
+          v.literal("sponsor"),
+          v.literal("other"),
+        ),
+      }),
+    ),
+    directoryVisible: v.boolean(),
+  },
+  handler: async (ctx, args) => {
+    const settings = await requireSettings(ctx);
+    let inserted = 0;
+    let skipped = 0;
+    const insertedEmails: string[] = [];
+    for (const row of args.rows) {
+      const email = row.email.trim().toLowerCase();
+      if (!email || !email.includes("@")) {
+        skipped += 1;
+        continue;
+      }
+      const existing = await ctx.db
+        .query("accounts")
+        .withIndex("by_email", (q) => q.eq("email", email))
+        .unique();
+      if (existing) {
+        skipped += 1;
+        continue;
+      }
+      const firstName = row.firstName.trim();
+      const lastName = row.lastName.trim();
+      const displayName = `${firstName} ${lastName}`.trim() || email;
+      const accountId = await ctx.db.insert("accounts", {
+        email,
+        displayName,
+        firstName,
+        lastName,
+        role: "participant",
+        title: "",
+        company: "",
+        ticketType: "",
+        ticketCategory: row.ticketCategory,
+        registrationStatus: row.registrationStatus,
+        profileImageUrl: "",
+        city: "",
+        country: "",
+        companySize: "",
+        networkingIntent: "",
+        topics: [],
+        signedUp: args.directoryVisible,
+        directoryOptIn: args.directoryVisible,
+        profileComplete: false,
+        active: true,
+        updatedAt: now(),
+      });
+      await insertAvailabilityForAllSlots(ctx, accountId, settings);
+      await recomputeHasAvailability(ctx, accountId);
+      inserted += 1;
+      insertedEmails.push(email);
+    }
+    return { inserted, skipped, insertedEmails };
+  },
+});
+
 export const backfillHasAvailability = mutation({
   args: { sessionToken: v.string() },
   handler: async (ctx, args) => {
