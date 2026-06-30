@@ -76,6 +76,7 @@ export default defineSchema({
     signedUp: v.boolean(),
     directoryOptIn: v.boolean(),
     profileComplete: v.boolean(),
+    hasAvailability: v.optional(v.boolean()),
     active: v.boolean(),
     rawImportJson: v.optional(v.string()),
     updatedAt: v.number(),

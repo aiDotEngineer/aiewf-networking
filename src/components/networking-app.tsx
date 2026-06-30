@@ -16,10 +16,13 @@ import { speakerScheduleMap, type SpeakerScheduleInfo } from "@/lib/worldsfair-s
 import { speakerTrackMap } from "@/lib/worldsfair-speaker-tracks";
 import { useAction, useMutation, useQuery } from "convex/react";
 import {
+  AlertCircle,
   CalendarDays,
   Building2,
   Check,
+  CheckCircle2,
   ChevronRight,
+  Circle,
   Clock3,
   Database,
   Download,
@@ -68,6 +71,7 @@ type Account = {
   signedUp: boolean;
   directoryOptIn: boolean;
   profileComplete: boolean;
+  hasAvailability: boolean;
   active: boolean;
   profileOverride: ParticipantProfileOverride | null;
 };
@@ -720,7 +724,7 @@ function actionReadiness({
 }): ActionReadiness {
   if (openTarget) {
     return {
-      detail: "You already have an open request or interest with this participant.",
+      detail: "You already have an open meeting request with this participant.",
       ready: false,
       title: "Already queued",
     };
@@ -734,20 +738,20 @@ function actionReadiness({
   }
   if (requestMode === "slot" && atCap) {
     return {
-      detail: "Timed request cap reached for this day. Register interest instead.",
+      detail: "Timed request cap reached for this day. Send a request for any open time instead.",
       ready: false,
-      title: "Use interest",
+      title: "Request any time",
     };
   }
   if (requestMode === "slot" && availableSlotCount === 0) {
     return {
-      detail: "They have no open slots on this day. Register interest and the app can schedule later.",
+      detail: "They have no open slots on this day. Send a request for any open time and the app can schedule later.",
       ready: false,
       title: "No open slot",
     };
   }
   return {
-    detail: requestMode === "interest" ? "Interest is ready to register." : "Timed request is ready to send.",
+    detail: requestMode === "interest" ? "Meeting request is ready to send." : "Timed request is ready to send.",
     ready: true,
     title: "Ready",
   };
@@ -786,6 +790,7 @@ export function NetworkingApp() {
       : "directory";
   });
   const [adminParticipantPreview, setAdminParticipantPreview] = useState(false);
+  const [profileModalDismissed, setProfileModalDismissed] = useState(false);
   const [notice, setNotice] = useState<string | null>(() => initialAuthToken ? "Verifying login link..." : null);
   const [actionPending, setActionPending] = useState(false);
   const [sessionPending, setSessionPending] = useState(Boolean(initialAuthToken));
@@ -985,6 +990,26 @@ export function NetworkingApp() {
             </button>
           </div>
         )}
+        {displayActor.role === "participant" && !bookingReadiness(displayActor).complete && (
+          <ProfileCompletionBanner
+            actor={displayActor}
+            onGoToProfile={() => setActiveView("profile")}
+            highlighted={activeView !== "profile"}
+          />
+        )}
+        {displayActor.role === "participant" &&
+          !bookingReadiness(displayActor).complete &&
+          !profileModalDismissed &&
+          activeView !== "profile" && (
+            <ProfileCompletionModal
+              actor={displayActor}
+              onClose={() => setProfileModalDismissed(true)}
+              onGoToProfile={() => {
+                setProfileModalDismissed(true);
+                setActiveView("profile");
+              }}
+            />
+          )}
         <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[220px_minmax(0,1fr)]">
           <Navigation
             actor={actor}
@@ -1129,7 +1154,7 @@ function LoginView({
       <div className="mx-auto grid min-h-[calc(100vh-40px)] w-full max-w-[1120px] place-items-center px-4 py-8">
         <section className="grid w-full max-w-xl gap-4 border border-white/10 bg-[#101010] p-5">
           <div>
-            <div className="font-mono text-xs text-[#f8e18e]">$ ai.engineer/wf/networking</div>
+            <div className="font-mono text-xs text-[#f8e18e]">https://network.aieconf.com/</div>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight">Networking Room</h1>
             <p className="mt-2 text-sm leading-6 text-white/55">
               Sign in with the email on your AIE World Fair registration.
@@ -1221,7 +1246,7 @@ function Header({
     <header className="grid gap-3 border border-white/10 bg-[#101010] p-3 sm:grid-cols-[1fr_auto] sm:p-4">
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-2 text-xs text-white/55">
-          <span className="font-mono text-[#f8e18e]">$ ai.engineer/wf/networking</span>
+          <span className="font-mono text-[#f8e18e]">https://network.aieconf.com/</span>
           <span className="hidden sm:inline">·</span>
           <span>Peer booking room</span>
         </div>
@@ -1388,7 +1413,7 @@ function Navigation({
         </button>
       )}
       <div className="mt-4 hidden border-t border-white/10 pt-4 text-xs leading-5 text-white/45 lg:block">
-        Opt-in participants request time or register interest with each other. Accepted groups take one table, up to four people.
+        Opt-in participants request a meeting time or send a request for any open time to each other. Accepted groups take one table, up to four people.
       </div>
     </aside>
   );
@@ -1466,6 +1491,7 @@ function DirectoryView({
   const deferredQuery = useDeferredValue(query);
   const [, startDirectoryTransition] = useTransition();
   const [lastAction, setLastAction] = useState<{ mode: RequestMode; name: string } | null>(null);
+  const [showProfilePrompt, setShowProfilePrompt] = useState(false);
   const activeOutgoingForDay = useMemo(
     () => requests.filter(
       (request) =>
@@ -1644,7 +1670,11 @@ function DirectoryView({
     const quickReason = reason.trim() || suggestions[0] || `Interested in ${participant.displayName}'s work.`;
     selectParticipant(participant, { primeInterest: true });
     setReason(quickReason);
-    if (actionPending || previewMode || !actor.profileComplete || !actor.directoryOptIn || openTargetIds.has(participant._id)) return;
+    if (!bookingReadiness(actor).complete) {
+      setShowProfilePrompt(true);
+      return;
+    }
+    if (actionPending || previewMode || openTargetIds.has(participant._id)) return;
     void runAction(
       () =>
         createMeetingInterest({
@@ -1653,7 +1683,7 @@ function DirectoryView({
           reason: quickReason,
           context: `${actor.title}, ${actor.company}`,
         }),
-      `Interest registered with ${participant.displayName}.`,
+      `Meeting request sent to ${participant.displayName}.`,
     ).then((completed) => {
       if (completed) {
         setLastAction({ mode: "interest", name: participant.displayName });
@@ -1674,6 +1704,10 @@ function DirectoryView({
   function submitRequest(event: FormEvent) {
     event.preventDefault();
     if (previewMode || !selected || openTargetIds.has(selected._id)) return;
+    if (!bookingReadiness(actor).complete) {
+      setShowProfilePrompt(true);
+      return;
+    }
     if (requestMode === "slot" && (effectiveSelectedSlot === "" || atCap)) return;
     void runAction(
       () => {
@@ -1697,9 +1731,7 @@ function DirectoryView({
           context: `${actor.title}, ${actor.company}`,
         });
       },
-      requestMode === "interest"
-        ? `Interest registered with ${selected.displayName}.`
-        : `Request sent to ${selected.displayName}.`,
+      `Meeting request sent to ${selected.displayName}.`,
     ).then((completed) => {
       if (completed) {
         setLastAction({ mode: requestMode, name: selected.displayName });
@@ -1730,29 +1762,23 @@ function DirectoryView({
           </div>
         )}
         {lastAction && (
-          <div className="grid gap-3 border-b border-emerald-300/20 bg-emerald-300/10 p-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
-            <div>
-              <div className="text-sm font-semibold text-emerald-100">
-                {lastAction.mode === "interest" ? "Interest registered" : "Request sent"} with {lastAction.name}
-              </div>
-              <div className="mt-1 text-xs leading-5 text-emerald-100/70">
-                Most people only need one or two strong meetings. Pick one more high-fit person or review your open requests.
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              <button className="button-quiet h-8 min-h-8 px-2 text-xs" onClick={() => setLastAction(null)} type="button">
-                Pick one more
-              </button>
-              <button className="button-quiet h-8 min-h-8 px-2 text-xs" onClick={onGoToRequests} type="button">
-                View requests
-              </button>
-            </div>
-          </div>
+          <RequestSuccessModal
+            action={lastAction}
+            onClose={() => setLastAction(null)}
+            onGoToRequests={() => {
+              setLastAction(null);
+              onGoToRequests();
+            }}
+          />
         )}
-        {(!actor.profileComplete || !actor.directoryOptIn) && (
-          <ColdStartBanner
+        {showProfilePrompt && (
+          <ProfileCompletionModal
             actor={actor}
-            onGoToProfile={onGoToProfile}
+            onClose={() => setShowProfilePrompt(false)}
+            onGoToProfile={() => {
+              setShowProfilePrompt(false);
+              onGoToProfile();
+            }}
           />
         )}
         <div className="border-b border-white/10 px-4 py-3">
@@ -1764,7 +1790,7 @@ function DirectoryView({
               <button
                 aria-pressed={viewMode === mode}
                 className={cn(
-                  "min-h-10 px-3 text-left text-xs font-semibold uppercase tracking-[0.12em] transition sm:min-w-44",
+                  "flex min-h-10 items-center justify-center px-3 text-center text-xs font-semibold uppercase tracking-[0.12em] transition sm:min-w-44",
                   viewMode === mode
                     ? "bg-[#f8e18e] text-black"
                     : "text-white/55 hover:bg-white/[0.06] hover:text-white",
@@ -1779,7 +1805,7 @@ function DirectoryView({
             ))}
           </div>
         </div>
-        <div className="grid gap-3 border-b border-white/10 p-4 md:grid-cols-[minmax(0,1fr)_150px_150px_150px_150px] xl:grid-cols-[minmax(0,1fr)_170px_150px_150px_150px_150px]">
+        <div className="grid gap-3 border-b border-white/10 p-4">
           <Field label="Search">
             <input
               className="input"
@@ -1788,46 +1814,48 @@ function DirectoryView({
               placeholder="Company, track, name, product..."
             />
           </Field>
-          <Field label="Track">
-            <select className="input" value={trackFilter} onChange={(event) => setTrackFilter(event.target.value)}>
-              <option value="all">All tracks</option>
-              {allTrackNames.map((track) => (
-                <option key={track} value={track}>{track}</option>
-              ))}
-            </select>
-          </Field>
-          <Field label="Ticket">
-            <select className="input" value={ticketFilter} onChange={(event) => setTicketFilter(event.target.value)}>
-              <option value="all">All tickets</option>
-              <option value="leadership">Leadership</option>
-              <option value="speaker">Speaker</option>
-              <option value="sponsor">Sponsor</option>
-              <option value="other">Other</option>
-            </select>
-          </Field>
-          <Field label="Profile">
-            <select className="input" value={profileFilter} onChange={(event) => setProfileFilter(event.target.value as ProfileFilter)}>
-              <option value="all">All profiles</option>
-              <option value="sourced">2+ sources</option>
-              <option value="researched">Researched</option>
-              <option value="pending">Needs research</option>
-            </select>
-          </Field>
-          <Field label="Sort">
-            <select className="input" value={sortMode} onChange={(event) => setSortMode(event.target.value as DirectorySort)}>
-              <option value="recommended">Recommended</option>
-              <option value="sources">Most sourced</option>
-              <option value="company">Company</option>
-              <option value="name">Name</option>
-            </select>
-          </Field>
-          <Field label="Date">
-            <select className="input" value={date} onChange={(event) => setDate(event.target.value)}>
-              {eventDateEntries(settings).map(([value, label]) => (
-                <option key={value} value={value}>{label}</option>
-              ))}
-            </select>
-          </Field>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+            <Field label="Track">
+              <select className="input" value={trackFilter} onChange={(event) => setTrackFilter(event.target.value)}>
+                <option value="all">All tracks</option>
+                {allTrackNames.map((track) => (
+                  <option key={track} value={track}>{track}</option>
+                ))}
+              </select>
+            </Field>
+            <Field label="Ticket">
+              <select className="input" value={ticketFilter} onChange={(event) => setTicketFilter(event.target.value)}>
+                <option value="all">All tickets</option>
+                <option value="leadership">Leadership</option>
+                <option value="speaker">Speaker</option>
+                <option value="sponsor">Sponsor</option>
+                <option value="other">Other</option>
+              </select>
+            </Field>
+            <Field label="Profile">
+              <select className="input" value={profileFilter} onChange={(event) => setProfileFilter(event.target.value as ProfileFilter)}>
+                <option value="all">All profiles</option>
+                <option value="sourced">2+ sources</option>
+                <option value="researched">Researched</option>
+                <option value="pending">Needs research</option>
+              </select>
+            </Field>
+            <Field label="Sort">
+              <select className="input" value={sortMode} onChange={(event) => setSortMode(event.target.value as DirectorySort)}>
+                <option value="recommended">Recommended</option>
+                <option value="sources">Most sourced</option>
+                <option value="company">Company</option>
+                <option value="name">Name</option>
+              </select>
+            </Field>
+            <Field label="Date">
+              <select className="input" value={date} onChange={(event) => setDate(event.target.value)}>
+                {eventDateEntries(settings).map(([value, label]) => (
+                  <option key={value} value={value}>{label}</option>
+                ))}
+              </select>
+            </Field>
+          </div>
         </div>
         <div className="grid gap-3 border-b border-white/10 px-4 py-3 md:grid-cols-[minmax(0,1fr)_220px_auto] md:items-end">
           <div className="text-xs leading-5 text-white/42">
@@ -1962,7 +1990,7 @@ function DirectoryView({
             />
             <div className="border-t border-white/10 pt-3">
               <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
-                <Send size={16} /> Request meeting
+                <Send size={16} /> Send a meeting request
               </div>
               <div className="mt-1 text-xs text-white/45">
                 {activeOutgoingForDay.length}/{settings.outgoingRequestCapPerDay} timed requests for {dateLabels[date]}
@@ -1992,7 +2020,7 @@ function DirectoryView({
                 onClick={() => setRequestMode("interest")}
                 type="button"
               >
-                <UserCheck size={15} /> Register interest
+                <UserCheck size={15} /> Any open time
               </button>
             </div>
             {requestMode === "slot" ? (
@@ -2037,7 +2065,7 @@ function DirectoryView({
               </Field>
             ) : (
               <div className="border border-white/10 bg-black/25 p-3 text-sm leading-6 text-white/55">
-                Register interest without choosing a time. If they accept, the app schedules the earliest event slot where both of you are available.
+                Send your meeting request without choosing a time. If they accept, the app schedules the earliest event slot where both of you are available.
               </div>
             )}
             <div className="grid gap-2">
@@ -2075,7 +2103,7 @@ function DirectoryView({
               }
               type="submit"
             >
-              <Send size={16} /> {requestMode === "interest" ? "Register interest" : "Send request"}
+              <Send size={16} /> Send request
             </button>
             {previewMode && <p className="text-xs leading-5 text-white/45">Switch to an actual participant session to request meetings.</p>}
             {requestMode === "slot" && atCap && <p className="text-xs leading-5 text-white/45">Request cap reached for this day.</p>}
@@ -2149,7 +2177,7 @@ function MeetingDecisionPanel({
           <MessageSquareText size={15} /> Use suggested note
         </button>
         <button className="button-quiet justify-center" onClick={onRegisterInterest} type="button">
-          <UserCheck size={15} /> Register interest
+          <UserCheck size={15} /> Request any open time
         </button>
       </div>
       {starterSuggestions.length > 0 && (
@@ -2173,29 +2201,138 @@ function MeetingDecisionPanel({
   );
 }
 
-function ColdStartBanner({
+function bookingReadiness(actor: Account) {
+  const missing: Array<{ key: string; label: string }> = [];
+  if (!actor.profileComplete) {
+    missing.push({ key: "profile", label: "Confirm your name, company, and title" });
+  }
+  if (!actor.hasAvailability) {
+    missing.push({ key: "schedule", label: "Set your availability so people can book time with you" });
+  }
+  if (!actor.directoryOptIn) {
+    missing.push({ key: "directory", label: "Show yourself in the booking directory" });
+  }
+  return { complete: missing.length === 0, missing };
+}
+
+function ProfileCompletionBanner({
   actor,
   onGoToProfile,
+  highlighted,
 }: {
   actor: Account;
   onGoToProfile: () => void;
+  highlighted: boolean;
 }) {
-  const missing = [
-    !actor.profileComplete ? "confirm your profile" : "",
-    !actor.directoryOptIn ? "show yourself in the directory" : "",
-    !actor.networkingIntent.trim() && actor.topics.length === 0 ? "add who you want to meet" : "",
-  ].filter(Boolean);
+  const { missing } = bookingReadiness(actor);
   return (
-    <div className="grid gap-3 border-b border-[#f8e18e]/25 bg-[#f8e18e]/10 p-3 md:grid-cols-[minmax(0,1fr)_auto] md:items-center">
+    <div
+      className={cn(
+        "grid gap-3 border p-3 md:grid-cols-[minmax(0,1fr)_auto] md:items-center",
+        highlighted
+          ? "border-[#f8e18e]/45 bg-[#f8e18e]/15"
+          : "border-[#f8e18e]/25 bg-[#f8e18e]/10",
+      )}
+    >
       <div>
-        <div className="text-sm font-semibold text-[#f8e18e]">Unlock booking in under a minute</div>
-        <div className="mt-1 text-xs leading-5 text-[#f8e18e]/75">
-          {missing.length ? missing.join(" · ") : "Set your availability and add a specific meeting intent so others know why to accept."}
+        <div className="flex items-center gap-2 text-sm font-semibold text-[#f8e18e]">
+          <AlertCircle size={15} /> Complete your profile so people can book you
+        </div>
+        <div className="mt-1 text-xs leading-5 text-[#f8e18e]/80">
+          {missing.map((item) => item.label).join(" · ")}
         </div>
       </div>
       <button className="button-primary h-9 min-h-9 px-3 text-xs" onClick={onGoToProfile} type="button">
-        <UserCheck size={14} /> Fix profile
+        <UserCheck size={14} /> Complete profile
       </button>
+    </div>
+  );
+}
+
+function ProfileCompletionModal({
+  actor,
+  onClose,
+  onGoToProfile,
+}: {
+  actor: Account;
+  onClose: () => void;
+  onGoToProfile: () => void;
+}) {
+  const { missing } = bookingReadiness(actor);
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
+      <div className="w-full max-w-md border border-[#f8e18e]/35 bg-[#0c0c0c] p-5 shadow-xl">
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex items-center gap-2 text-base font-semibold text-[#f8e18e]">
+            <AlertCircle size={18} /> Finish setting up your profile
+          </div>
+          <button aria-label="Dismiss" className="text-white/45 hover:text-white" onClick={onClose} type="button">
+            <X size={18} />
+          </button>
+        </div>
+        <p className="mt-3 text-sm leading-6 text-white/70">
+          Your profile isn&apos;t ready yet. People can only request meetings with you once
+          you&apos;ve completed these steps — especially adding your availability:
+        </p>
+        <ul className="mt-3 grid gap-2">
+          {missing.map((item) => (
+            <li key={item.key} className="flex items-start gap-2 text-sm leading-6 text-white/80">
+              <Circle size={8} className="mt-2 shrink-0 text-[#f8e18e]" /> {item.label}
+            </li>
+          ))}
+        </ul>
+        <div className="mt-5 flex flex-wrap justify-end gap-2">
+          <button className="button-quiet h-9 min-h-9 px-3 text-sm" onClick={onClose} type="button">
+            Later
+          </button>
+          <button className="button-primary h-9 min-h-9 px-3 text-sm" onClick={onGoToProfile} type="button">
+            <UserCheck size={15} /> Complete profile now
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RequestSuccessModal({
+  action,
+  onClose,
+  onGoToRequests,
+}: {
+  action: { mode: RequestMode; name: string };
+  onClose: () => void;
+  onGoToRequests: () => void;
+}) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
+      <div className="w-full max-w-md border border-emerald-300/35 bg-[#0c0c0c] p-5 shadow-xl">
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex items-center gap-2 text-base font-semibold text-emerald-200">
+            <CheckCircle2 size={18} /> Meeting request sent to {action.name}
+          </div>
+          <button aria-label="Dismiss" className="text-white/45 hover:text-white" onClick={onClose} type="button">
+            <X size={18} />
+          </button>
+        </div>
+        <p className="mt-3 text-sm leading-6 text-white/70">
+          {action.name} now needs to <span className="font-semibold text-white/90">accept</span> your
+          request before a time slot is booked.
+          {action.mode === "interest"
+            ? " Once they accept, the app schedules the earliest slot where you're both free."
+            : " Once they accept, your selected slot is confirmed."}
+        </p>
+        <p className="mt-2 text-sm leading-6 text-white/70">
+          Track its status anytime in the <span className="font-semibold text-white/90">Requests</span> tab.
+        </p>
+        <div className="mt-5 flex flex-wrap justify-end gap-2">
+          <button className="button-quiet h-9 min-h-9 px-3 text-sm" onClick={onClose} type="button">
+            Keep browsing
+          </button>
+          <button className="button-primary h-9 min-h-9 px-3 text-sm" onClick={onGoToRequests} type="button">
+            <ListChecks size={15} /> View my requests
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -2368,17 +2505,23 @@ function CompanyGroupCard({
                   onClick={() => onShortlist(participant)}
                   type="button"
                 >
-                  {shortlistIds.includes(participant._id) ? "Saved" : "Maybe"}
+                  {shortlistIds.includes(participant._id) ? "Saved" : "Save"}
                 </button>
                 <button
                   className="button-quiet h-8 min-h-8 px-2 text-xs"
-                  disabled={disabled || activeTargetIds.has(participant._id)}
+                  disabled={disabled || activeTargetIds.has(participant._id) || !participant.hasAvailability}
                   onClick={() => onQuickInterest(participant)}
+                  title={participant.hasAvailability ? undefined : "This person hasn't opted in to being booked yet."}
                   type="button"
                 >
-                  Interest
+                  Request meeting
                 </button>
               </div>
+              {!participant.hasAvailability && (
+                <p className="text-[11px] leading-4 text-white/40 md:col-start-2 md:text-right">
+                  Not opted in to booking yet
+                </p>
+              )}
             </div>
           );
         })}
@@ -2389,6 +2532,7 @@ function CompanyGroupCard({
 
 function ParticipantCard({
   activeRequestOpen,
+  bookable,
   disabled,
   isSelected,
   match,
@@ -2401,6 +2545,7 @@ function ParticipantCard({
   shortlisted,
 }: {
   activeRequestOpen: boolean;
+  bookable: boolean;
   disabled: boolean;
   isSelected: boolean;
   match: MatchSignal;
@@ -2479,20 +2624,26 @@ function ParticipantCard({
             }}
             type="button"
           >
-            {shortlisted ? "Saved" : "Maybe"}
+            {shortlisted ? "Saved" : "Save"}
           </button>
           <button
             className="button-quiet h-8 min-h-8 px-2 text-xs"
-            disabled={disabled || activeRequestOpen}
+            disabled={disabled || activeRequestOpen || !bookable}
             onClick={(event) => {
               event.stopPropagation();
               onQuickInterest();
             }}
+            title={bookable ? undefined : "This person hasn't opted in to being booked yet."}
             type="button"
           >
-            Interest
+            Request meeting
           </button>
         </div>
+        {!bookable && (
+          <p className="text-right text-[11px] leading-4 text-white/40">
+            Not opted in to booking yet
+          </p>
+        )}
       </div>
     </div>
   );
@@ -2566,6 +2717,7 @@ function ParticipantResultsList({
         <ParticipantCard
           key={participant._id}
           activeRequestOpen={activeTargetIds.has(participant._id)}
+          bookable={participant.hasAvailability}
           disabled={disabled}
           isSelected={selectedId === participant._id}
           match={match}
@@ -2663,7 +2815,7 @@ function ShortlistTray({
   return (
     <div className="border-b border-white/10 bg-[#0d0d0d] px-3 py-2">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">Maybe list</div>
+        <div className="text-xs font-semibold uppercase tracking-[0.12em] text-white/45">Saved list</div>
         <button className="button-quiet h-7 min-h-7 px-2 text-[11px]" onClick={onClear} type="button">
           Clear
         </button>
@@ -3187,8 +3339,16 @@ function ProfileView({
               Remove sources that are wrong; add corrected public links before confirming.
             </div>
           </div>
-          <Toggle label="Show me in the booking directory" checked={form.directoryOptIn} onChange={(value) => setForm({ ...form, directoryOptIn: value })} />
-          <Toggle label="Approve researched directory profile" checked={form.participantApproved} onChange={(value) => setForm({ ...form, participantApproved: value })} />
+          <div className="sm:col-span-2">
+            <Toggle
+              label="Hide me from the booking directory"
+              checked={!form.directoryOptIn}
+              onChange={(value) => setForm({ ...form, directoryOptIn: !value })}
+            />
+            <p className="mt-1 text-xs leading-5 text-white/45">
+              You&apos;re listed by default so people can request meetings with you. Check this to opt out of the directory.
+            </p>
+          </div>
         </div>
         <div className="border-t border-white/10 p-4">
           <button className="button-primary" disabled={actionPending} type="submit">
@@ -3277,7 +3437,7 @@ function RequestsView({
                   <h3 className="font-semibold">
                     {item.requester?.displayName ?? "Requester"} → {item.target?.displayName ?? "Participant"}
                   </h3>
-                  <Badge>{isInterest ? "interest" : "timed request"}</Badge>
+                  <Badge>{isInterest ? "any-time request" : "timed request"}</Badge>
                   <StatusBadge status={item.status} />
                   <span className="text-xs text-white/45">
                     {isInterest ? "Next mutual slot" : `${dateLabels[item.date]} · ${minuteLabel(item.preferredStartMinute)}`}

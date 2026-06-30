@@ -20,7 +20,7 @@ import {
 
 const SETTINGS_KEY = "default";
 const EVENT_DATES = ["2026-06-30", "2026-07-01"];
-const DEMO_SCHEMA_VERSION = 2;
+const DEMO_SCHEMA_VERSION = 3;
 const SESSION_TTL_MS = 1000 * 60 * 60 * 24 * 14;
 const MAGIC_LINK_TTL_MS = 1000 * 60 * 15;
 const MAGIC_LINK_HASH_SALT = "aiewf-networking-magic-link-v1";
@@ -215,6 +215,7 @@ function accountSummary(
     signedUp: account.signedUp,
     directoryOptIn: account.directoryOptIn,
     profileComplete: account.profileComplete,
+    hasAvailability: account.hasAvailability ?? false,
     active: account.active,
     profileOverride: profileOverrideSummary(override),
   };
@@ -604,6 +605,27 @@ async function insertAvailabilityForAllSlots(
   }
 }
 
+async function accountHasOpenAvailability(
+  ctx: QueryCtx | MutationCtx,
+  accountId: Id<"accounts">,
+) {
+  for (const date of EVENT_DATES) {
+    const slots = await ctx.db
+      .query("participantAvailability")
+      .withIndex("by_accountId_and_date", (q) =>
+        q.eq("accountId", accountId).eq("date", date),
+      )
+      .take(200);
+    if (slots.some((slot) => slot.available)) return true;
+  }
+  return false;
+}
+
+async function recomputeHasAvailability(ctx: MutationCtx, accountId: Id<"accounts">) {
+  const hasAvailability = await accountHasOpenAvailability(ctx, accountId);
+  await ctx.db.patch(accountId, { hasAvailability, updatedAt: now() });
+}
+
 async function insertDemoData(ctx: MutationCtx) {
   const timestamp = now();
   const settingsId = await ctx.db.insert("eventSettings", {
@@ -740,6 +762,9 @@ async function insertDemoData(ctx: MutationCtx) {
   const participantIds: Record<string, Id<"accounts">> = {};
   for (const seed of participantSeeds) {
     const profileComplete = Boolean(seed.displayName && seed.company && seed.title);
+    // Demo: this participant is listed in the directory but has not opened any
+    // booking times yet, so the UI can show the "not available for booking" state.
+    const bookable = profileComplete && seed.email !== "mateo@retailgrid.test";
     const id = await ctx.db.insert("accounts", {
       ...seed,
       role: "participant",
@@ -749,11 +774,12 @@ async function insertDemoData(ctx: MutationCtx) {
       signedUp: profileComplete,
       directoryOptIn: profileComplete,
       profileComplete,
+      hasAvailability: bookable,
       active: true,
       updatedAt: timestamp,
     });
     participantIds[seed.email] = id;
-    await insertAvailabilityForAllSlots(ctx, id, settings);
+    if (bookable) await insertAvailabilityForAllSlots(ctx, id, settings);
   }
 
   const groupRequestId = await ctx.db.insert("meetingRequests", {
@@ -1745,16 +1771,17 @@ export const setMyAvailability = mutation({
       .unique();
     if (existing) {
       await ctx.db.patch(existing._id, { available: args.available, updatedAt: now() });
-      return { updated: true };
+    } else {
+      await ctx.db.insert("participantAvailability", {
+        accountId: actor._id,
+        date: args.date,
+        startMinute: args.startMinute,
+        endMinute: args.startMinute + settings.slotMinutes,
+        available: args.available,
+        updatedAt: now(),
+      });
     }
-    await ctx.db.insert("participantAvailability", {
-      accountId: actor._id,
-      date: args.date,
-      startMinute: args.startMinute,
-      endMinute: args.startMinute + settings.slotMinutes,
-      available: args.available,
-      updatedAt: now(),
-    });
+    await recomputeHasAvailability(ctx, actor._id);
     return { updated: true };
   },
 });
@@ -1805,6 +1832,7 @@ export const setMyDayAvailability = mutation({
       if (existing) await ctx.db.patch(existing._id, fields);
       else await ctx.db.insert("participantAvailability", fields);
     }
+    await recomputeHasAvailability(ctx, actor._id);
     return { updated: true };
   },
 });
@@ -2190,6 +2218,26 @@ export const backfillParticipantDirectoryOptIn = mutation({
         profileComplete: true,
         updatedAt: timestamp,
       });
+      updated += 1;
+    }
+    return { updated };
+  },
+});
+
+export const backfillHasAvailability = mutation({
+  args: { sessionToken: v.string() },
+  handler: async (ctx, args) => {
+    const actor = await requireActor(ctx, args.sessionToken);
+    requireAdmin(actor);
+    const participants = await ctx.db
+      .query("accounts")
+      .withIndex("by_role", (q) => q.eq("role", "participant"))
+      .take(1800);
+    let updated = 0;
+    for (const participant of participants) {
+      const hasAvailability = await accountHasOpenAvailability(ctx, participant._id);
+      if (participant.hasAvailability === hasAvailability) continue;
+      await ctx.db.patch(participant._id, { hasAvailability, updatedAt: now() });
       updated += 1;
     }
     return { updated };
