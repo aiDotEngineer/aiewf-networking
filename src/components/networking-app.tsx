@@ -26,7 +26,6 @@ import {
   Clock3,
   Database,
   Download,
-  ExternalLink,
   Gauge,
   Import,
   Lightbulb,
@@ -149,9 +148,9 @@ type RoomDisplayData = {
 type View = "directory" | "profile" | "requests" | "schedule" | "admin" | "display";
 type RunAction = (task: () => Promise<unknown>, success: string) => Promise<boolean>;
 type RequestMode = "slot" | "interest";
-type DirectorySort = "recommended" | "company" | "name" | "sources";
+type DirectorySort = "recommended" | "company" | "name";
 type DirectoryViewMode = "company" | "people";
-type ProfileFilter = "all" | "researched" | "sourced" | "pending";
+type ProfileFilter = "all" | "researched" | "pending";
 type MatchSignal = {
   reasons: string[];
   score: number;
@@ -655,7 +654,6 @@ function participantMatch(
   if (participantProfile) {
     const sources = sourceCount(participantProfile);
     score += Math.min(sources, 8);
-    if (sources) reasons.push(`${sources} sources`);
     if (participantProfile.confidence === "high") score += 4;
   }
   if (participant.ticketCategory === "speaker") {
@@ -699,10 +697,9 @@ function conversationStarters(
   participantProfile: DisplayParticipantProfile | null,
 ) {
   const suggestions = meetingReasonSuggestions(actor, participant, actorProfile, participantProfile);
-  const sourceLead = participantProfile?.sources.primary[0] ?? participantProfile?.sources.secondary[0] ?? null;
   return [
     suggestions[0],
-    sourceLead ? `Ask about ${sourceLead.label}: ${sourceLead.note}` : suggestions[1],
+    suggestions[1],
     participantProfile?.displayTags[0]
       ? `Compare notes on ${participantProfile.displayTags.slice(0, 2).join(" and ")}.`
       : suggestions[2],
@@ -1550,7 +1547,6 @@ function DirectoryView({
       .filter((item) => ticketFilter === "all" || item.participant.ticketCategory === ticketFilter)
       .filter((item) => {
         if (profileFilter === "researched") return Boolean(item.profile);
-        if (profileFilter === "sourced") return Boolean(item.profile && sourceCount(item.profile) >= 2);
         if (profileFilter === "pending") return !item.profile;
         return true;
       })
@@ -1559,10 +1555,6 @@ function DirectoryView({
       .sort((a, b) => {
         if (sortMode === "recommended") {
           return b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName);
-        }
-        if (sortMode === "sources") {
-          const sourceDelta = (b.profile ? sourceCount(b.profile) : 0) - (a.profile ? sourceCount(a.profile) : 0);
-          return sourceDelta || b.rank - a.rank || a.participant.displayName.localeCompare(b.participant.displayName);
         }
         if (sortMode === "name") return a.participant.displayName.localeCompare(b.participant.displayName);
         return a.participant.company.localeCompare(b.participant.company) || a.participant.displayName.localeCompare(b.participant.displayName);
@@ -1624,7 +1616,6 @@ function DirectoryView({
   const engagementStats = useMemo(() => ({
     researched: filtered.filter((item) => item.profile).length,
     pending: filtered.filter((item) => !item.profile).length,
-    sourceRich: filtered.filter((item) => item.profile && sourceCount(item.profile) >= 2).length,
     greatLeads: filtered.filter((item) => item.rank >= 18 || (item.profile && sourceCount(item.profile) >= 3)).length,
     openActions: activeOutgoingForDay.length + activeOutgoingInterests.length,
   }), [activeOutgoingForDay.length, activeOutgoingInterests.length, filtered]);
@@ -1835,7 +1826,6 @@ function DirectoryView({
             <Field label="Profile">
               <select className="input" value={profileFilter} onChange={(event) => setProfileFilter(event.target.value as ProfileFilter)}>
                 <option value="all">All profiles</option>
-                <option value="sourced">2+ sources</option>
                 <option value="researched">Researched</option>
                 <option value="pending">Needs research</option>
               </select>
@@ -1843,7 +1833,6 @@ function DirectoryView({
             <Field label="Sort">
               <select className="input" value={sortMode} onChange={(event) => setSortMode(event.target.value as DirectorySort)}>
                 <option value="recommended">Recommended</option>
-                <option value="sources">Most sourced</option>
                 <option value="company">Company</option>
                 <option value="name">Name</option>
               </select>
@@ -1859,7 +1848,7 @@ function DirectoryView({
         </div>
         <div className="grid gap-3 border-b border-white/10 px-4 py-3 md:grid-cols-[minmax(0,1fr)_220px_auto] md:items-end">
           <div className="text-xs leading-5 text-white/42">
-            Tracks come from the World Fair speaker schedule when available, then profile/source inference for non-speakers.
+            Tracks come from the World Fair speaker schedule when available.
           </div>
           {viewMode === "company" ? (
             <Field label="Jump to company">
@@ -1885,10 +1874,6 @@ function DirectoryView({
         </div>
         <DiscoverySummary
           stats={engagementStats}
-          onShowSourced={() => {
-            setProfileFilter("sourced");
-            setSortMode("recommended");
-          }}
           onShowPending={() => {
             setProfileFilter("pending");
             setSortMode("name");
@@ -2135,11 +2120,9 @@ function MeetingDecisionPanel({
   reasonSuggestions: string[];
   starterSuggestions: string[];
 }) {
-  const sourceTotal = profile ? sourceCount(profile) : 0;
   const tags = (profile?.displayTags.length ? profile.displayTags : participant.topics).slice(0, 5);
   const primaryReason =
     match?.reasons[0] ??
-    (sourceTotal ? `${sourceTotal} public sources` : null) ??
     participant.networkingIntent ??
     participant.title;
   return (
@@ -2155,7 +2138,6 @@ function MeetingDecisionPanel({
         </div>
       </div>
       <div className="mt-3 flex flex-wrap gap-2">
-        {profile && <Badge>{sourceTotal} sources</Badge>}
         {profile && <Badge>{profile.confidence} confidence</Badge>}
         {match?.reasons.slice(0, 2).map((reason) => <Badge key={reason}>{reason}</Badge>)}
       </div>
@@ -2340,25 +2322,19 @@ function RequestSuccessModal({
 function DiscoverySummary({
   onShowPending,
   onShowRecommended,
-  onShowSourced,
   onReviewActions,
   stats,
 }: {
   onShowPending: () => void;
   onShowRecommended: () => void;
-  onShowSourced: () => void;
   onReviewActions: () => void;
-  stats: { greatLeads: number; openActions: number; pending: number; researched: number; sourceRich: number };
+  stats: { greatLeads: number; openActions: number; pending: number; researched: number };
 }) {
   return (
-    <div className="grid gap-2 border-b border-white/10 bg-black/20 p-3 sm:grid-cols-4">
+    <div className="grid gap-2 border-b border-white/10 bg-black/20 p-3 sm:grid-cols-3">
       <button className="border border-white/10 bg-[#101010] p-2 text-left transition hover:border-[#f8e18e]/45" onClick={onShowRecommended} type="button">
         <div className="text-lg font-semibold text-white">{stats.greatLeads}</div>
         <div className="text-[11px] uppercase tracking-[0.12em] text-white/45">recommended</div>
-      </button>
-      <button className="border border-white/10 bg-[#101010] p-2 text-left transition hover:border-[#f8e18e]/45" onClick={onShowSourced} type="button">
-        <div className="text-lg font-semibold text-white">{stats.sourceRich}</div>
-        <div className="text-[11px] uppercase tracking-[0.12em] text-white/45">2+ sources</div>
       </button>
       <button className="border border-white/10 bg-[#101010] p-2 text-left transition hover:border-[#f8e18e]/45" onClick={onReviewActions} type="button">
         <div className="text-lg font-semibold text-white">{stats.openActions}</div>
@@ -2454,7 +2430,6 @@ function CompanyGroupCard({
             <Building2 className="text-[#f8e18e]" size={17} />
             <h3 className="truncate text-base font-semibold leading-6 text-white">{group.company}</h3>
             <Badge>{group.items.length} people</Badge>
-            <Badge>{group.sourceTotal} sources</Badge>
           </div>
           <p className="mt-2 max-w-4xl text-sm leading-6 text-white/58">{group.description}</p>
           {group.tracks.length > 0 && (
@@ -2483,7 +2458,6 @@ function CompanyGroupCard({
                   <span className="truncate text-sm font-semibold leading-5 text-white">{participant.displayName}</span>
                   <StatusBadge status={participant.ticketCategory} />
                   {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
-                  {profile && <Badge>{sourceCount(profile)} sources</Badge>}
                   {activeTargetIds.has(participant._id) && <Badge>request open</Badge>}
                 </div>
                 <div className="mt-1 truncate text-xs leading-5 text-white/50">
@@ -2563,7 +2537,6 @@ function ParticipantCard({
       ? participant.topics
       : [participant.city, participant.country].filter(Boolean);
   const schedule = participantSpeakerSchedule(participant);
-  const sourceTotal = profile ? sourceCount(profile) : 0;
   return (
     <div
       className={cn(
@@ -2588,7 +2561,6 @@ function ParticipantCard({
           <h3 className="truncate text-sm font-semibold leading-5 text-white md:text-[15px]">{participant.displayName}</h3>
           <StatusBadge status={participant.ticketCategory} />
           {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
-          {profile && <Badge>{sourceTotal} sources</Badge>}
           {activeRequestOpen && <Badge>request open</Badge>}
         </div>
         <p className="mt-1 truncate text-sm leading-5 text-white/62">
@@ -2776,7 +2748,6 @@ function StarterPicks({
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="truncate text-sm font-semibold leading-5 text-white">{participant.displayName}</span>
                   {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
-                  {profile && <Badge>{sourceCount(profile)} sources</Badge>}
                 </div>
                 <div className="mt-1 text-xs leading-5 text-white/55">
                   {participant.title || profile?.title || "Title TBD"} · {participant.company || profile?.company || "Company TBD"}
@@ -2841,7 +2812,6 @@ function ShortlistTray({
               <div className="mt-1 truncate text-[11px] text-white/45">{participant.company || profile?.company || "Company TBD"}</div>
               <div className="mt-2 flex flex-wrap gap-1.5">
                 {schedule && <Badge>{speakerScheduleLabel(schedule)}</Badge>}
-                {profile && <Badge>{sourceCount(profile)} src</Badge>}
               </div>
             </button>
           );
@@ -2895,7 +2865,7 @@ function ParticipantDetailPanel({ participant }: { participant: Account }) {
         <div className="border border-white/10 bg-black/25 p-3">
           <div className="text-sm font-semibold text-white/75">Research pending</div>
           <p className="mt-2 text-sm leading-6 text-white/50">
-            No researched profile or sources have been added for this participant yet. Current row data is limited to ticket,
+            No researched profile has been added for this participant yet. Current row data is limited to ticket,
             company, title, and location.
           </p>
           <TagRow items={[participant.networkingIntent, ...participant.topics].filter(Boolean)} />
@@ -2919,14 +2889,11 @@ function ParticipantProfilePanel({
       </div>
     );
   }
-  const primaryCount = profile.sources.primary.length;
-  const secondaryCount = profile.sources.secondary.length;
   return (
     <section className="border border-white/10 bg-black/25 p-3">
       <div className="flex flex-wrap items-center gap-2">
         <Badge>{profileBadgeLabel(profile)}</Badge>
         <Badge>{profile.confidence} confidence</Badge>
-        <Badge>{sourceCount(profile)} sources</Badge>
       </div>
       <h3 className="mt-3 text-sm font-semibold leading-6 text-white/85">{profile.displayHeadline}</h3>
       <div className="mt-2 whitespace-pre-line text-sm leading-6 text-white/62">
@@ -2935,70 +2902,12 @@ function ParticipantProfilePanel({
       <TagRow items={profile.displayTags} />
       {!compact && (
         <div className="mt-3 border-t border-white/10 pt-3">
-          <div className="grid gap-2 sm:grid-cols-3">
-            <div className="border border-white/10 bg-black/25 p-2">
-              <div className="text-sm font-semibold text-white">{primaryCount}</div>
-              <div className="text-[11px] uppercase tracking-[0.12em] text-white/40">primary</div>
-            </div>
-            <div className="border border-white/10 bg-black/25 p-2">
-              <div className="text-sm font-semibold text-white">{secondaryCount}</div>
-              <div className="text-[11px] uppercase tracking-[0.12em] text-white/40">secondary</div>
-            </div>
-            <div className="border border-white/10 bg-black/25 p-2">
-              <div className="text-sm font-semibold text-white">{profile.confidence}</div>
-              <div className="text-[11px] uppercase tracking-[0.12em] text-white/40">confidence</div>
-            </div>
-          </div>
-          <p className="mt-3 text-xs leading-5 text-white/42">
+          <p className="text-xs leading-5 text-white/42">
             {profile.confidenceNote}
           </p>
         </div>
       )}
-      <ProfileSourceList profile={profile} compact={compact} />
     </section>
-  );
-}
-
-function ProfileSourceList({
-  compact,
-  profile,
-}: {
-  compact?: boolean;
-  profile: DisplayParticipantProfile;
-}) {
-  const groups: Array<[string, typeof profile.sources.primary]> = [
-    ["Primary socials / blogs / company", profile.sources.primary],
-    ["Secondary / related", profile.sources.secondary],
-  ];
-  return (
-    <div className="mt-3 grid gap-3 border-t border-white/10 pt-3">
-      {groups.map(([label, sources]) => {
-        const visibleSources = compact ? sources.slice(0, 4) : sources;
-        if (!visibleSources.length) return null;
-        return (
-          <div key={label}>
-            <div className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/40">{label}</div>
-            <div className="mt-2 grid gap-2">
-              {visibleSources.map((source) => (
-                <a
-                  key={source.url}
-                  className="group grid gap-1 border border-white/10 bg-black/30 p-2 text-xs text-white/62 transition hover:border-[#f8e18e]/45 hover:text-white"
-                  href={source.url}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <span className="flex items-center gap-1 font-semibold text-white/80">
-                    {source.label}
-                    <ExternalLink className="opacity-55 transition group-hover:opacity-100" size={12} />
-                  </span>
-                  {!compact && <span className="leading-5 text-white/45">{source.note}</span>}
-                </a>
-              ))}
-            </div>
-          </div>
-        );
-      })}
-    </div>
   );
 }
 
@@ -3314,32 +3223,6 @@ function ProfileView({
             </Field>
           </div>
           <div className="sm:col-span-2">
-            <Field label="Primary sources">
-              <textarea
-                className="input min-h-28 resize-y"
-                value={form.profilePrimarySources}
-                onChange={(event) => setForm({ ...form, profilePrimarySources: event.target.value })}
-                placeholder="Label | URL | Note"
-              />
-            </Field>
-            <div className="mt-1 text-xs leading-5 text-white/38">
-              One source per line: label | URL | note.
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <Field label="Secondary sources">
-              <textarea
-                className="input min-h-28 resize-y"
-                value={form.profileSecondarySources}
-                onChange={(event) => setForm({ ...form, profileSecondarySources: event.target.value })}
-                placeholder="Label | URL | Note"
-              />
-            </Field>
-            <div className="mt-1 text-xs leading-5 text-white/38">
-              Remove sources that are wrong; add corrected public links before confirming.
-            </div>
-          </div>
-          <div className="sm:col-span-2">
             <Toggle
               label="Hide me from the booking directory"
               checked={!form.directoryOptIn}
@@ -3358,7 +3241,7 @@ function ProfileView({
       </form>
 
       <section className="border border-white/10 bg-[#101010]">
-        <SectionHeader icon={<Search size={17} />} title="Research preview" detail={researchedProfile ? "sources shown in directory" : "not researched"} />
+        <SectionHeader icon={<Search size={17} />} title="Research preview" detail={researchedProfile ? "shown in directory" : "not researched"} />
         <div className="p-4">
           <ParticipantProfilePanel profile={researchedProfile} />
         </div>
