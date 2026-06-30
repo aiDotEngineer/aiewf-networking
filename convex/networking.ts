@@ -2336,6 +2336,7 @@ export const upsertParticipantsFromRows = mutation({
         const accountId = await ctx.db.insert("accounts", fields);
         const settings = await requireSettings(ctx);
         await insertAvailabilityForAllSlots(ctx, accountId, settings);
+        await recomputeHasAvailability(ctx, accountId);
         inserted += 1;
       }
     }
