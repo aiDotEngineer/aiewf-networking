@@ -9,6 +9,7 @@
  */
 
 import type * as authHelpers from "../authHelpers.js";
+import type * as maintenance from "../maintenance.js";
 import type * as networking from "../networking.js";
 
 import type {
@@ -19,6 +20,7 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   authHelpers: typeof authHelpers;
+  maintenance: typeof maintenance;
   networking: typeof networking;
 }>;
 
