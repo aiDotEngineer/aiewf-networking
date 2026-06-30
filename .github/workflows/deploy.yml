@@ -12,6 +12,8 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      CONVEX_DEPLOY_KEY: ${{ secrets.CONVEX_DEPLOY_KEY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,9 +29,12 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Deploy Convex backend (functions + schema)
+        if: ${{ env.CONVEX_DEPLOY_KEY != '' }}
         run: pnpm exec convex deploy -y
-        env:
-          CONVEX_DEPLOY_KEY: ${{ secrets.CONVEX_DEPLOY_KEY }}
+
+      - name: Warn if Convex deploy key is missing
+        if: ${{ env.CONVEX_DEPLOY_KEY == '' }}
+        run: echo "::warning::CONVEX_DEPLOY_KEY secret not set — skipping Convex backend deploy. Add it in repo Settings → Secrets → Actions to auto-deploy Convex functions/schema."
 
       - name: Deploy Cloudflare frontend
         run: pnpm run deploy
