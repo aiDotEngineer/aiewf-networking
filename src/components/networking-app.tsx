@@ -1014,7 +1014,6 @@ export function NetworkingApp() {
             actor={actor}
             activeView={activeView}
             adminViewingAsParticipant={adminViewingAsParticipant}
-            onAdminViewModeChange={setAdminViewMode}
             onChange={setActiveView}
           />
           <section className="min-w-0">
@@ -1351,13 +1350,11 @@ function Navigation({
   activeView,
   adminViewingAsParticipant,
   actor,
-  onAdminViewModeChange,
   onChange,
 }: {
   activeView: View;
   adminViewingAsParticipant: boolean;
   actor: Account;
-  onAdminViewModeChange: (enabled: boolean) => void;
   onChange: (view: View) => void;
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -1425,21 +1422,6 @@ function Navigation({
           </button>
         ))}
       </nav>
-      {actor.role === "admin" && (
-        <button
-          className={cn(
-            "mt-2 hidden h-10 w-full items-center justify-center gap-2 border px-3 text-xs font-semibold uppercase tracking-[0.12em] transition lg:flex",
-            adminViewingAsParticipant
-              ? "border-[#f8e18e]/60 bg-[#f8e18e]/12 text-[#f8e18e]"
-              : "border-white/10 bg-black/25 text-white/55 hover:border-[#f8e18e]/45 hover:text-white",
-          )}
-          onClick={() => onAdminViewModeChange(!adminViewingAsParticipant)}
-          type="button"
-        >
-          {adminViewingAsParticipant ? <Settings2 size={14} /> : <UserCheck size={14} />}
-          {adminViewingAsParticipant ? "Admin view" : "Participant view"}
-        </button>
-      )}
       <div className="mt-4 hidden border-t border-white/10 pt-4 text-xs leading-5 text-white/45 lg:block">
         Opt-in participants request a meeting time or send a request for any open time to each other. Accepted groups take one table, up to four people.
       </div>
