@@ -36,7 +36,6 @@ const ADMIN_EMAILS = new Set([
   "sherry@peek.money",
   "sherry@65labs.org",
   "agrim@65labs.org",
-  "agrim.singh@gmail.com",
 ]);
 
 const meetingStatusValidator = v.union(
