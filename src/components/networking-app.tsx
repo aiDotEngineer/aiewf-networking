@@ -3710,10 +3710,132 @@ function ScheduleView({
                 </button>
               )}
             </div>
+            <MeetingChat
+              actor={actor}
+              meetingId={meeting._id}
+              previewMode={previewMode}
+              sessionToken={sessionToken}
+            />
           </article>
         ))}
       </div>
     </section>
+  );
+}
+
+function MeetingChat({
+  actor,
+  meetingId,
+  previewMode,
+  sessionToken,
+}: {
+  actor: Account;
+  meetingId: Id<"meetings">;
+  previewMode?: boolean;
+  sessionToken: string;
+}) {
+  const messages = useQuery(api.networking.listMeetingMessages, {
+    sessionToken,
+    meetingId,
+  });
+  const sendMessage = useMutation(api.networking.sendMeetingMessage);
+  const [draft, setDraft] = useState("");
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const node = scrollRef.current;
+    if (node) node.scrollTop = node.scrollHeight;
+  }, [messages]);
+
+  const submit = useCallback(
+    async (event: FormEvent) => {
+      event.preventDefault();
+      const body = draft.trim();
+      if (!body || sending || previewMode) return;
+      setSending(true);
+      setError(null);
+      try {
+        await sendMessage({ sessionToken, meetingId, body });
+        setDraft("");
+      } catch (caught) {
+        setError(userFacingError(caught));
+      } finally {
+        setSending(false);
+      }
+    },
+    [draft, meetingId, previewMode, sendMessage, sending, sessionToken],
+  );
+
+  return (
+    <div className="grid gap-2 border-t border-white/10 pt-3">
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/45">
+        <MessageSquareText size={14} /> Chat
+      </div>
+      <div ref={scrollRef} className="max-h-52 space-y-2 overflow-y-auto pr-1">
+        {messages === undefined ? (
+          <div className="text-xs text-white/40">Loading messages…</div>
+        ) : messages.length === 0 ? (
+          <div className="text-xs text-white/40">
+            No messages yet. Say hello to coordinate your meeting.
+          </div>
+        ) : (
+          messages.map((message) => (
+            <div
+              key={message._id}
+              className={cn("flex", message.isMine && "justify-end")}
+            >
+              <div
+                className={cn(
+                  "max-w-[80%] border px-3 py-2",
+                  message.isMine
+                    ? "border-[#f8e18e]/40 bg-[#f8e18e]/10"
+                    : "border-white/10 bg-black/30",
+                )}
+              >
+                <div className="text-[11px] text-white/45">
+                  {message.isMine
+                    ? "You"
+                    : message.sender?.displayName ?? "Participant"}{" "}
+                  · {editedAtLabel(message.createdAt)}
+                </div>
+                <div className="mt-1 whitespace-pre-wrap break-words text-sm text-white/85">
+                  {message.body}
+                </div>
+              </div>
+            </div>
+          ))
+        )}
+      </div>
+      <form className="flex gap-2" onSubmit={submit}>
+        <input
+          aria-label="Message your match"
+          className="small-input flex-1"
+          disabled={sending || previewMode || actor.role === "admin"}
+          maxLength={2000}
+          onChange={(event) => setDraft(event.target.value)}
+          placeholder={
+            actor.role === "admin"
+              ? "Admins can read but not post"
+              : previewMode
+                ? "Chat disabled in preview"
+                : "Message your match…"
+          }
+          value={draft}
+        />
+        <button
+          className="button-primary"
+          disabled={
+            sending || previewMode || actor.role === "admin" || !draft.trim()
+          }
+          type="submit"
+        >
+          <Send size={15} /> Send
+        </button>
+      </form>
+      {error && <div className="text-xs text-red-300">{error}</div>}
+    </div>
   );
 }
 
