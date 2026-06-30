@@ -1089,7 +1089,35 @@ export function NetworkingApp() {
           </section>
         </div>
       </div>
+      <SiteFooter />
     </main>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="mx-auto w-full max-w-[1520px] px-3 py-6 sm:px-5 lg:px-6">
+      <div className="border-t border-white/10 pt-4 text-center text-xs text-white/40">
+        Powered by{" "}
+        <a
+          className="text-white/60 underline-offset-2 hover:text-white/80 hover:underline"
+          href="https://convex.dev"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Convex
+        </a>{" "}
+        and{" "}
+        <a
+          className="text-white/60 underline-offset-2 hover:text-white/80 hover:underline"
+          href="https://devin.ai"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Devin
+        </a>
+      </div>
+    </footer>
   );
 }
 
@@ -1215,6 +1243,7 @@ function LoginView({
           )}
         </section>
       </div>
+      <SiteFooter />
     </main>
   );
 }
